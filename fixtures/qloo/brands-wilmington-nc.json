@@ -1,0 +1,281 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "local_color",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Abrand&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Wilmington%2C%20NC&signal.location.radius=25000&take=20",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:brand",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "signal.location.query": "Wilmington, NC",
+      "signal.location.radius": 25000,
+      "take": 20
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "B44CB639-CB3E-4931-ABA5-4A2F5B2DAAAC",
+          "name": "Dancing Gnome",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.65,
+          "properties": {
+            "description": "Sharpsburg brewery with a hazy-IPA reputation and a taproom crowd that skews young."
+          },
+          "query": {
+            "affinity": 0.945
+          }
+        },
+        {
+          "entity_id": "71C078FF-47AA-457A-9A09-520E27E4A265",
+          "name": "Fender",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.454,
+          "properties": {
+            "description": "Guitar maker beloved by the acoustic and indie scene."
+          },
+          "query": {
+            "affinity": 0.885
+          }
+        },
+        {
+          "entity_id": "A9788DFF-927F-4229-8494-CC28180A6B5C",
+          "name": "East End Brewing Company",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.73,
+          "properties": {
+            "description": "Long-running Pittsburgh craft brewery in Larimer known for its Big Hop IPA and growler culture."
+          },
+          "query": {
+            "affinity": 0.88
+          }
+        },
+        {
+          "entity_id": "ABCCC90D-D407-428B-99C4-E3010A39A0C7",
+          "name": "Bodo's Bagels",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.61,
+          "properties": {},
+          "tags": [],
+          "query": {
+            "affinity": 0.828
+          }
+        },
+        {
+          "entity_id": "7C8DF92F-D4B9-45DE-9144-A0E36C0C6897",
+          "name": "REI",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.79,
+          "properties": {
+            "description": "Outdoor gear co-op with a member dividend."
+          },
+          "query": {
+            "affinity": 0.821
+          }
+        },
+        {
+          "entity_id": "F4D0AB50-60CD-4B17-BF5B-3224D267EB2B",
+          "name": "Allbirds",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.54,
+          "properties": {
+            "description": "Wool sneaker brand with a sustainability pitch."
+          },
+          "query": {
+            "affinity": 0.813
+          }
+        },
+        {
+          "entity_id": "7B6FB381-3093-4C50-A15E-6D21EA7E78E7",
+          "name": "Counter Culture Coffee",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.762,
+          "properties": {
+            "description": "Durham-based specialty roaster served in cafes across the Triangle."
+          },
+          "query": {
+            "affinity": 0.806
+          }
+        },
+        {
+          "entity_id": "6DB3B04B-3AA1-43A1-A5BE-93F17E0380AE",
+          "name": "Ellwood Thompson's",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.72,
+          "properties": {
+            "description": "Richmond's independent natural-foods grocery in Carytown."
+          },
+          "query": {
+            "affinity": 0.788
+          }
+        },
+        {
+          "entity_id": "79105CB8-2649-4620-A2F8-0B53D5B8A831",
+          "name": "Fjallraven",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.71,
+          "properties": {
+            "description": "Swedish outdoor brand known for the Kanken backpack."
+          },
+          "query": {
+            "affinity": 0.778
+          }
+        },
+        {
+          "entity_id": "753F76AB-F8F3-4DB9-9076-5541D45875DF",
+          "name": "Trader Joe's",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.83,
+          "properties": {
+            "description": "Grocery chain known for cheap wine, frozen dumplings, and friendly cashiers."
+          },
+          "query": {
+            "affinity": 0.767
+          }
+        },
+        {
+          "entity_id": "AC8120D3-F632-4821-92A3-70E5C4A3343C",
+          "name": "Subaru",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.84,
+          "properties": {
+            "description": "Carmaker whose all-wheel-drive wagons are a fixture at trailheads and farmers markets."
+          },
+          "query": {
+            "affinity": 0.712
+          }
+        },
+        {
+          "entity_id": "F6C143D1-37EF-44A6-8D0F-91E39C7B16CF",
+          "name": "The Veil Brewing Co.",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.65,
+          "properties": {
+            "description": "Richmond brewery known for hazy IPAs and long release-day lines."
+          },
+          "query": {
+            "affinity": 0.698
+          }
+        },
+        {
+          "entity_id": "D44CBBD6-C6E8-455A-94B4-88B6A05B0591",
+          "name": "Blundstone",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.73,
+          "properties": {
+            "description": "Tasmanian pull-on boot brand beloved by people who walk a lot."
+          },
+          "query": {
+            "affinity": 0.67
+          }
+        },
+        {
+          "entity_id": "47D5D80A-D8DA-4F3A-A4DF-A99635B1BCB7",
+          "name": "Warby Parker",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.61,
+          "properties": {
+            "description": "Direct-to-consumer eyewear brand with a try-at-home program."
+          },
+          "query": {
+            "affinity": 0.653
+          }
+        },
+        {
+          "entity_id": "F25F0B67-D992-40AE-8BAB-E7F62F5437C3",
+          "name": "Hardywood Park Craft Brewery",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.78,
+          "properties": {
+            "description": "Richmond craft brewery whose Gingerbread Stout release is a local holiday."
+          },
+          "query": {
+            "affinity": 0.653
+          }
+        },
+        {
+          "entity_id": "2838B3D8-5C49-4AF5-AA58-12015277F479",
+          "name": "Doc Martens",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.49,
+          "properties": {
+            "description": "British boot brand with a permanent place in music subcultures."
+          },
+          "query": {
+            "affinity": 0.625
+          }
+        },
+        {
+          "entity_id": "B95C6A49-82F6-4084-AFB9-CF08C2A11114",
+          "name": "Blue Ridge Mountain Sports",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.77,
+          "properties": {},
+          "tags": [],
+          "query": {
+            "affinity": 0.619
+          }
+        },
+        {
+          "entity_id": "DD53783B-58F7-4D99-9969-D937382FDB61",
+          "name": "Hyperion Espresso",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.48,
+          "properties": {
+            "description": "Fredericksburg, VA coffee roaster with a loyal Virginia following."
+          },
+          "query": {
+            "affinity": 0.616
+          }
+        },
+        {
+          "entity_id": "2E81D31D-5CDE-44C1-8D6B-7EB80C542675",
+          "name": "Ledbury",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.53,
+          "properties": {
+            "description": "Richmond-based menswear label known for well-cut shirts."
+          },
+          "query": {
+            "affinity": 0.564
+          }
+        },
+        {
+          "entity_id": "140AED23-2F58-4FA0-B636-C9D5D473E429",
+          "name": "Blue Bottle Coffee",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.6,
+          "properties": {
+            "description": "Third-wave coffee chain with minimalist cafes."
+          },
+          "query": {
+            "affinity": 0.559
+          }
+        }
+      ]
+    }
+  }
+}

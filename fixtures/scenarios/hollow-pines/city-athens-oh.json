@@ -1,0 +1,722 @@
+{
+  "city": "Athens, OH",
+  "home": "Richmond, VA",
+  "comps": [
+    {
+      "id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+      "name": "Big Thief",
+      "type": "urn:entity:artist",
+      "popularity": 0.93
+    },
+    {
+      "id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+      "name": "Waxahatchee",
+      "type": "urn:entity:artist",
+      "popularity": 0.88
+    },
+    {
+      "id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "name": "Adrianne Lenker",
+      "type": "urn:entity:artist",
+      "popularity": 0.85
+    }
+  ],
+  "rooms": [
+    {
+      "id": "BFEFBC66-5CBA-4940-9859-5905AB4DD079",
+      "name": "The Union Bar & Grill",
+      "type": "urn:entity:place",
+      "subtype": "urn:entity:place:music_venue",
+      "affinity": 0.93,
+      "popularity": 0.72,
+      "rating": 4.3,
+      "price_level": 1,
+      "address": "18 W Union St, Athens, OH 45701",
+      "city": "Athens",
+      "description": "Court Street-adjacent club that has hosted touring indie and punk acts for decades, with a stage upstairs and a long bar below.",
+      "tags": [
+        "Music Venue",
+        "Bar With Live Music"
+      ],
+      "why": [
+        "Big Thief (80%)",
+        "Waxahatchee (79%)",
+        "Adrianne Lenker (72%)"
+      ]
+    },
+    {
+      "id": "BA5A9238-1E93-47E3-AC97-CF635BCE46AE",
+      "name": "Casa Nueva",
+      "type": "urn:entity:place",
+      "subtype": "urn:entity:place:music_venue",
+      "affinity": 0.89,
+      "popularity": 0.68,
+      "rating": 4.6,
+      "price_level": 2,
+      "address": "6 W State St, Athens, OH 45701",
+      "city": "Athens",
+      "description": "Worker-owned cantina with a back room that books folk, roots and indie bands most weekends.",
+      "tags": [
+        "Music Venue",
+        "Bar With Live Music"
+      ],
+      "why": [
+        "Big Thief (77%)",
+        "Waxahatchee (70%)",
+        "Adrianne Lenker (68%)"
+      ]
+    },
+    {
+      "id": "89B773CA-ECBB-46FD-9AB9-2BEC743AFD15",
+      "name": "Stuart's Opera House",
+      "type": "urn:entity:place",
+      "subtype": "urn:entity:place:concert_hall",
+      "affinity": 0.84,
+      "popularity": 0.81,
+      "rating": 4.8,
+      "price_level": 3,
+      "address": "52 Public Square, Nelsonville, OH 45764",
+      "city": "Athens",
+      "description": "Restored 1879 opera house a short drive up Route 33 that presents national folk and Americana tours and runs the Nelsonville Music Festival.",
+      "tags": [
+        "Concert Hall",
+        "Music Venue"
+      ],
+      "why": [
+        "Big Thief (73%)",
+        "Waxahatchee (66%)",
+        "Adrianne Lenker (59%)"
+      ]
+    },
+    {
+      "id": "4BDAB269-390C-40AA-9698-5796D8D279CF",
+      "name": "Donkey Coffee & Espresso",
+      "type": "urn:entity:place",
+      "subtype": "urn:entity:place:music_venue",
+      "affinity": 0.8,
+      "popularity": 0.6,
+      "rating": 4.7,
+      "price_level": 1,
+      "address": "17 1/2 W Washington St, Athens, OH 45701",
+      "city": "Athens",
+      "description": "Coffeehouse with a small listening-room stage for singer-songwriter nights and open mics.",
+      "tags": [
+        "Music Venue"
+      ],
+      "why": [
+        "Big Thief (64%)",
+        "Waxahatchee (62%)",
+        "Adrianne Lenker (55%)"
+      ]
+    },
+    {
+      "id": "BCEB979E-BC75-457E-9F98-7487D0035056",
+      "name": "Jackie O's Taproom & Brewery",
+      "type": "urn:entity:place",
+      "subtype": "urn:entity:place:bar",
+      "affinity": 0.75,
+      "popularity": 0.7,
+      "rating": 4.6,
+      "price_level": 2,
+      "address": "25 Campbell St, Athens, OH 45701",
+      "city": "Athens",
+      "description": "Production brewery and taproom with a stage and outdoor space for touring bands and local showcases.",
+      "tags": [
+        "Bar With Live Music",
+        "Music Venue"
+      ],
+      "why": [
+        "Big Thief (60%)",
+        "Waxahatchee (53%)",
+        "Adrianne Lenker (51%)"
+      ]
+    },
+    {
+      "id": "1354EB31-64EA-40D3-AFE2-C92D1C491BA9",
+      "name": "Templeton-Blackburn Alumni Memorial Auditorium",
+      "type": "urn:entity:place",
+      "subtype": "urn:entity:place:concert_hall",
+      "affinity": 0.71,
+      "popularity": 0.55,
+      "rating": 4.5,
+      "price_level": 3,
+      "address": "1 College Green, Athens, OH 45701",
+      "city": "Athens",
+      "description": "Ohio University's 1,700-seat hall on College Green, used for larger touring shows and campus performing-arts series.",
+      "tags": [
+        "Concert Hall"
+      ],
+      "why": [
+        "Big Thief (50%)",
+        "Waxahatchee (48%)",
+        "Adrianne Lenker (41%)"
+      ]
+    },
+    {
+      "id": "21FCA098-DD9A-4B1C-9240-8604E91E5B37",
+      "name": "The Smiling Skull Saloon",
+      "type": "urn:entity:place",
+      "subtype": "urn:entity:place:bar",
+      "affinity": 0.66,
+      "popularity": 0.47,
+      "rating": 4.2,
+      "price_level": 1,
+      "address": "108 W Union St, Athens, OH 45701",
+      "city": "Athens",
+      "description": "Low-ceilinged dive that puts rock, garage and folk-punk bands on a floor-level stage.",
+      "tags": [
+        "Bar With Live Music",
+        "Bar"
+      ],
+      "why": [
+        "Big Thief (46%)",
+        "Waxahatchee (39%)",
+        "Adrianne Lenker (37%)"
+      ]
+    },
+    {
+      "id": "29660854-9BD1-4910-BBDE-FE368E2AF128",
+      "name": "Little Fish Brewing Company",
+      "type": "urn:entity:place",
+      "subtype": "urn:entity:place:bar",
+      "affinity": 0.62,
+      "popularity": 0.5,
+      "rating": 4.7,
+      "price_level": 2,
+      "address": "8675 Armitage Rd, Athens, OH 45701",
+      "city": "Athens",
+      "description": "Farmhouse brewery on the edge of town with an outdoor stage that hosts acoustic and roots acts in warm months.",
+      "tags": [
+        "Bar With Live Music"
+      ],
+      "why": [
+        "Big Thief (42%)",
+        "Waxahatchee (35%)",
+        "Adrianne Lenker (30%)"
+      ]
+    }
+  ],
+  "promo": [
+    {
+      "kind": "record store",
+      "places": [
+        {
+          "id": "F836F9B5-2618-44B7-83BD-CC25E125FA03",
+          "name": "Haffa's Records",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:record_store",
+          "affinity": 0.91,
+          "popularity": 0.58,
+          "rating": 4.8,
+          "price_level": 2,
+          "address": "15 W Union St, Athens, OH 45701",
+          "city": "Athens",
+          "description": "Longtime independent record shop near Court Street with new and used vinyl and show flyers in the window.",
+          "tags": [
+            "Record Store"
+          ],
+          "why": [
+            "Big Thief (80%)",
+            "Waxahatchee (78%)",
+            "Adrianne Lenker (71%)"
+          ]
+        },
+        {
+          "id": "A406251B-1613-455A-9284-AE8F8982DFB4",
+          "name": "Blue Eagle Music",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:record_store",
+          "affinity": 0.74,
+          "popularity": 0.42,
+          "rating": 4.7,
+          "price_level": 2,
+          "address": "40 N Court St, Athens, OH 45701",
+          "city": "Athens",
+          "description": "Instrument and music shop that stocks records and knows every player in the Hocking Valley.",
+          "tags": [
+            "Record Store"
+          ],
+          "why": [
+            "Big Thief (58%)",
+            "Waxahatchee (51%)",
+            "Adrianne Lenker (49%)"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "coffee shop",
+      "places": [
+        {
+          "id": "5D56C779-1488-4C2B-8D62-4D25B294AD71",
+          "name": "Donkey Coffee & Espresso",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:coffee_shop",
+          "affinity": 0.88,
+          "popularity": 0.66,
+          "rating": 4.7,
+          "price_level": 1,
+          "address": "17 1/2 W Washington St, Athens, OH 45701",
+          "city": "Athens",
+          "description": "Fair-trade coffeehouse and community hangout that doubles as a bulletin board for everything happening in town.",
+          "tags": [
+            "Coffee Shop",
+            "Cafe"
+          ],
+          "why": [
+            "Big Thief (78%)",
+            "Waxahatchee (71%)",
+            "Adrianne Lenker (69%)"
+          ]
+        },
+        {
+          "id": "312291EC-6611-4373-9A5D-66D64ED289AD",
+          "name": "Court Street Coffee",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:coffee_shop",
+          "affinity": 0.77,
+          "popularity": 0.52,
+          "rating": 4.5,
+          "price_level": 1,
+          "address": "36 N Court St, Athens, OH 45701",
+          "city": "Athens",
+          "description": "Quiet uptown cafe with big windows, local art on the walls and a rack for flyers.",
+          "tags": [
+            "Coffee Shop"
+          ],
+          "why": [
+            "Big Thief (60%)",
+            "Waxahatchee (58%)",
+            "Adrianne Lenker (51%)"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "bookstore",
+      "places": [
+        {
+          "id": "F4C38ADB-DAB3-4646-A8AB-4419291C6243",
+          "name": "Little Professor Book Center",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:bookstore",
+          "affinity": 0.85,
+          "popularity": 0.5,
+          "rating": 4.6,
+          "price_level": 2,
+          "address": "65 S Court St, Athens, OH 45701",
+          "city": "Athens",
+          "description": "Independent bookstore on Court Street with a strong regional and literary section.",
+          "tags": [
+            "Bookstore"
+          ],
+          "why": [
+            "Big Thief (71%)",
+            "Waxahatchee (69%)",
+            "Adrianne Lenker (62%)"
+          ]
+        },
+        {
+          "id": "F0D4ADCE-6FF6-421C-B451-D022DC1E2236",
+          "name": "Athens Book Center",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:bookstore",
+          "affinity": 0.68,
+          "popularity": 0.38,
+          "rating": 4.4,
+          "price_level": 1,
+          "address": "74 E State St, Athens, OH 45701",
+          "city": "Athens",
+          "description": "Used and new bookshop with a deep stock of music biographies and local history.",
+          "tags": [
+            "Bookstore"
+          ],
+          "why": [
+            "Big Thief (49%)",
+            "Waxahatchee (42%)",
+            "Adrianne Lenker (40%)"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "dive bar",
+      "places": [
+        {
+          "id": "A94CF6CE-FB0D-4A54-AAAB-82280D6CE99C",
+          "name": "The Smiling Skull Saloon",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:dive_bar",
+          "affinity": 0.83,
+          "popularity": 0.47,
+          "rating": 4.2,
+          "price_level": 1,
+          "address": "108 W Union St, Athens, OH 45701",
+          "city": "Athens",
+          "description": "Cash-friendly dive with cheap pitchers and a crowd that shows up for local bands.",
+          "tags": [
+            "Dive Bar",
+            "Bar"
+          ],
+          "why": [
+            "Big Thief (69%)",
+            "Waxahatchee (62%)",
+            "Adrianne Lenker (60%)"
+          ]
+        },
+        {
+          "id": "B74B2C61-5985-4A22-A16E-F1E7A89FDD72",
+          "name": "Tony's Tavern",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:dive_bar",
+          "affinity": 0.71,
+          "popularity": 0.45,
+          "rating": 4.4,
+          "price_level": 1,
+          "address": "7 W State St, Athens, OH 45701",
+          "city": "Athens",
+          "description": "Narrow, no-frills tavern beloved by faculty and townies alike.",
+          "tags": [
+            "Dive Bar",
+            "Bar"
+          ],
+          "why": [
+            "Big Thief (51%)",
+            "Waxahatchee (49%)",
+            "Adrianne Lenker (42%)"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "vintage shop",
+      "places": [
+        {
+          "id": "CB25DF55-6EE3-4838-A5ED-E84762D9349B",
+          "name": "Athens Underground",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:vintage_store",
+          "affinity": 0.8,
+          "popularity": 0.44,
+          "rating": 4.5,
+          "price_level": 1,
+          "address": "20 S Court St, Athens, OH 45701",
+          "city": "Athens",
+          "description": "Basement vintage and thrift shop below Court Street, popular with students hunting show outfits.",
+          "tags": [
+            "Vintage Store",
+            "Thrift Store"
+          ],
+          "why": [
+            "Big Thief (67%)",
+            "Waxahatchee (60%)",
+            "Adrianne Lenker (53%)"
+          ]
+        },
+        {
+          "id": "442CBB5D-32EA-48E0-9A36-94183703029B",
+          "name": "Mountain Laurel Gifts & Consignment",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:vintage_store",
+          "affinity": 0.66,
+          "popularity": 0.36,
+          "rating": 4.3,
+          "price_level": 2,
+          "address": "15 S Court St, Athens, OH 45701",
+          "city": "Athens",
+          "description": "Consignment and vintage boutique mixing Appalachian crafts with secondhand clothing.",
+          "tags": [
+            "Vintage Store"
+          ],
+          "why": [
+            "Big Thief (47%)",
+            "Waxahatchee (40%)",
+            "Adrianne Lenker (33%)"
+          ]
+        }
+      ]
+    }
+  ],
+  "who": {
+    "age": {
+      "24_and_younger": 0.33,
+      "25_to_29": 0.5,
+      "30_to_34": 0.51,
+      "35_to_44": 0.24,
+      "45_to_54": 0.02,
+      "55_and_older": -0.26
+    },
+    "gender": {
+      "female": 0.25,
+      "male": -0.1
+    },
+    "strongestAge": "30_to_34",
+    "suggestions": [
+      "Fans of your comps here index highest at 30 to 34; consider pitching rooms and promo partners that already draw that crowd.",
+      "The under-25 band is also positive; consider asking rooms whether an all-ages or early show is an option.",
+      "The 55-and-older band indexes low; consider a later set time if the room offers a choice."
+    ]
+  },
+  "localColor": {
+    "brands": [
+      {
+        "id": "47D5D80A-D8DA-4F3A-A4DF-A99635B1BCB7",
+        "name": "Warby Parker",
+        "cityAffinity": 0.73,
+        "homeAffinity": 0.679,
+        "delta": 0.051
+      },
+      {
+        "id": "79105CB8-2649-4620-A2F8-0B53D5B8A831",
+        "name": "Fjallraven",
+        "cityAffinity": 0.79,
+        "homeAffinity": 0.753,
+        "delta": 0.037
+      },
+      {
+        "id": "B33E9033-D54B-4B07-A439-14C0322C161D",
+        "name": "Levi's",
+        "cityAffinity": 0.83,
+        "homeAffinity": 0.808,
+        "delta": 0.022
+      },
+      {
+        "id": "52039753-DD87-4F1B-8D75-3F55850FAD13",
+        "name": "La Colombe",
+        "cityAffinity": 0.75,
+        "homeAffinity": 0.734,
+        "delta": 0.016
+      },
+      {
+        "id": "CA29596C-A583-4C49-8B03-1FCE2A53EA05",
+        "name": "Carhartt",
+        "cityAffinity": 0.64,
+        "homeAffinity": 0.624,
+        "delta": 0.016
+      }
+    ],
+    "shows": [
+      {
+        "id": "DB8450A9-DDD4-4A01-8081-D65A68F670C9",
+        "name": "Detroiters",
+        "cityAffinity": 0.86,
+        "homeAffinity": 0.781,
+        "delta": 0.079
+      },
+      {
+        "id": "F504DFDE-7861-486D-9F48-C6422671C57A",
+        "name": "Reservation Dogs",
+        "cityAffinity": 0.91,
+        "homeAffinity": 0.892,
+        "delta": 0.018
+      },
+      {
+        "id": "656078D4-7298-439C-B517-153F264014E1",
+        "name": "Somebody Somewhere",
+        "cityAffinity": 0.88,
+        "homeAffinity": 0.873,
+        "delta": 0.007
+      },
+      {
+        "id": "CBBD7C4F-EE93-4B17-8B5B-5251E5F73EB7",
+        "name": "Hacks",
+        "cityAffinity": 0.81,
+        "homeAffinity": 0.818,
+        "delta": -0.008
+      },
+      {
+        "id": "A13215E0-C764-4D72-A2B1-801211C74A37",
+        "name": "Twin Peaks",
+        "cityAffinity": 0.79,
+        "homeAffinity": 0.799,
+        "delta": -0.009
+      }
+    ]
+  },
+  "locality": {
+    "id": "A2E17860-5E9F-45CE-ADCB-27399A13BEED",
+    "name": "Athens",
+    "state": "OH",
+    "label": "Athens, OH",
+    "rank": 11,
+    "affinity": 0.862,
+    "population": 23843,
+    "lat": 39.329,
+    "lon": -82.101,
+    "overIndex": true,
+    "why": [
+      "Adrianne Lenker (67%)",
+      "Big Thief (54%)",
+      "Waxahatchee (47%)"
+    ]
+  },
+  "card": {
+    "summary": "Athens, OH ranks 11th for your comps with an affinity of 0.862, and it over-indexes for this sound. Adrianne Lenker is the strongest comp here at 67%, with Big Thief at 54% and Waxahatchee at 47%.",
+    "rooms_note": "The Union Bar & Grill tops the room list at 0.93 affinity, driven most by fans of Big Thief (80%), with Waxahatchee close behind at 79%.",
+    "promo_note": "Record stores are the strongest promo group, led by Haffa's Records at 0.91 affinity with Big Thief fans at 80%, so start your flyer and listening-copy run there.",
+    "who_note": "Fans of your comps around Athens, OH index highest at 30 to 34 (0.51), with 25 to 29 right behind (0.50), so consider pitching rooms and promo partners that already draw that late-twenties-to-early-thirties crowd.",
+    "local_color_note": "Detroiters shows the biggest lift over Richmond, VA (+0.079), and Warby Parker leads the brands (+0.051), which hints that a dry, Midwestern sense of humor and a clean, considered look could land on the poster and merch table.",
+    "promo_copy": [
+      "If Big Thief is on your turntable, this one's coming to Athens, OH soon.",
+      "For Adrianne Lenker and Waxahatchee fans in Athens: a new act worth catching."
+    ],
+    "caution": "These are aggregate taste affinities for fans of your comps, not attendance or sales data, so confirm capacity, age policy, and date availability directly with each room before booking or promoting."
+  },
+  "receipts": [
+    {
+      "id": "rmv3fdnh9-40",
+      "tool": "find_rooms",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Athens%2C+OH&filter.location.radius=15000&filter.tags=urn%3Atag%3Acategory%3Aplace%3Alive_music_venue%2Curn%3Atag%3Agenre%3Aplace%3Abar%3Alive_music%2Curn%3Atag%3Agenre%3Aplace%3Aconcert_hall%2Curn%3Atag%3Agenre%3Aplace%3Amusic_venue&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=8&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 8,
+      "top": [
+        {
+          "name": "The Union Bar & Grill",
+          "affinity": 0.93
+        },
+        {
+          "name": "Casa Nueva",
+          "affinity": 0.89
+        },
+        {
+          "name": "Stuart's Opera House",
+          "affinity": 0.84
+        }
+      ]
+    },
+    {
+      "id": "rmv3fdnh9-41",
+      "tool": "find_promo_partners",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Athens%2C+OH&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abar%2Curn%3Atag%3Agenre%3Aplace%3Abookstore%2Curn%3Atag%3Agenre%3Aplace%3Acafe%2Curn%3Atag%3Agenre%3Aplace%3Acoffee_shop%2Curn%3Atag%3Agenre%3Aplace%3Adive_bar%2Curn%3Atag%3Agenre%3Aplace%3Arecord_store%2Curn%3Atag%3Agenre%3Aplace%3Athrift_store%2Curn%3Atag%3Agenre%3Aplace%3Avintage_store&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&diversify.by=properties.subtype&diversify.take=2&sort_by=affinity&take=12&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 12,
+      "top": [
+        {
+          "name": "Haffa's Records",
+          "affinity": 0.91
+        },
+        {
+          "name": "Donkey Coffee & Espresso",
+          "affinity": 0.88
+        },
+        {
+          "name": "Little Professor Book Center",
+          "affinity": 0.85
+        }
+      ]
+    },
+    {
+      "id": "rmv3fdnh9-42",
+      "tool": "who_shows_up",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Ademographics&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Athens%2C+OH&signal.location.radius=25000",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 3,
+      "top": []
+    },
+    {
+      "id": "rmv3fdnh9-43",
+      "tool": "local_color",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Abrand&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Athens%2C+OH&signal.location.radius=25000&take=20",
+      "mode": "demo",
+      "status": 200,
+      "ms": 1,
+      "resultCount": 20,
+      "top": [
+        {
+          "name": "Patagonia",
+          "affinity": 0.9
+        },
+        {
+          "name": "Subaru",
+          "affinity": 0.88
+        },
+        {
+          "name": "Trader Joe's",
+          "affinity": 0.86
+        }
+      ]
+    },
+    {
+      "id": "rmv3fdnh9-44",
+      "tool": "local_color",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Atv_show&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Athens%2C+OH&signal.location.radius=25000&take=20",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 20,
+      "top": [
+        {
+          "name": "Reservation Dogs",
+          "affinity": 0.91
+        },
+        {
+          "name": "Fleabag",
+          "affinity": 0.89
+        },
+        {
+          "name": "Somebody Somewhere",
+          "affinity": 0.88
+        }
+      ]
+    },
+    {
+      "id": "rmv3fdnh9-45",
+      "tool": "local_color",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Abrand&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Richmond%2C+VA&signal.location.radius=25000&take=20",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 20,
+      "top": [
+        {
+          "name": "Patagonia",
+          "affinity": 0.9
+        },
+        {
+          "name": "Subaru",
+          "affinity": 0.882
+        },
+        {
+          "name": "Trader Joe's",
+          "affinity": 0.863
+        }
+      ]
+    },
+    {
+      "id": "rmv3fdnh9-46",
+      "tool": "local_color",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Atv_show&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Richmond%2C+VA&signal.location.radius=25000&take=20",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 20,
+      "top": [
+        {
+          "name": "Fleabag",
+          "affinity": 0.91
+        },
+        {
+          "name": "Reservation Dogs",
+          "affinity": 0.892
+        },
+        {
+          "name": "Somebody Somewhere",
+          "affinity": 0.873
+        }
+      ]
+    }
+  ]
+}

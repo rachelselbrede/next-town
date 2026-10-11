@@ -1,0 +1,283 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "local_color",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Abrand&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Knoxville%2C%20TN&signal.location.radius=25000&take=20",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:brand",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "signal.location.query": "Knoxville, TN",
+      "signal.location.radius": 25000,
+      "take": 20
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "81FF9E58-99F1-4C63-9F2F-7D85FA8D6964",
+          "name": "Patagonia",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.85,
+          "properties": {
+            "description": "Patagonia, a brand fans of your comps around Knoxville over-index on."
+          },
+          "query": {
+            "affinity": 0.9
+          }
+        },
+        {
+          "entity_id": "AC8120D3-F632-4821-92A3-70E5C4A3343C",
+          "name": "Subaru",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.83,
+          "properties": {
+            "description": "Subaru, a brand fans of your comps around Knoxville over-index on."
+          },
+          "query": {
+            "affinity": 0.882
+          }
+        },
+        {
+          "entity_id": "7C8DF92F-D4B9-45DE-9144-A0E36C0C6897",
+          "name": "REI",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.81,
+          "properties": {
+            "description": "REI, a brand fans of your comps around Knoxville over-index on."
+          },
+          "query": {
+            "affinity": 0.863
+          }
+        },
+        {
+          "entity_id": "753F76AB-F8F3-4DB9-9076-5541D45875DF",
+          "name": "Trader Joe's",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.79,
+          "properties": {
+            "description": "Trader Joe's, a brand fans of your comps around Knoxville over-index on."
+          },
+          "query": {
+            "affinity": 0.845
+          }
+        },
+        {
+          "entity_id": "B33E9033-D54B-4B07-A439-14C0322C161D",
+          "name": "Levi's",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.77,
+          "properties": {
+            "description": "Levi's, a brand fans of your comps around Knoxville over-index on."
+          },
+          "query": {
+            "affinity": 0.826
+          }
+        },
+        {
+          "entity_id": "D44CBBD6-C6E8-455A-94B4-88B6A05B0591",
+          "name": "Blundstone",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.75,
+          "properties": {
+            "description": "Blundstone, a brand fans of your comps around Knoxville over-index on."
+          },
+          "query": {
+            "affinity": 0.808
+          }
+        },
+        {
+          "entity_id": "79105CB8-2649-4620-A2F8-0B53D5B8A831",
+          "name": "Fjallraven",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.73,
+          "properties": {
+            "description": "Fjallraven, a brand fans of your comps around Knoxville over-index on."
+          },
+          "query": {
+            "affinity": 0.789
+          }
+        },
+        {
+          "entity_id": "1E64D934-320B-4FB7-921B-58DB10BE96EA",
+          "name": "Birkenstock",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.71,
+          "properties": {
+            "description": "Birkenstock, a brand fans of your comps around Knoxville over-index on."
+          },
+          "query": {
+            "affinity": 0.771
+          }
+        },
+        {
+          "entity_id": "DE18DE0C-9F8E-4202-97D3-3BC28EFE0BC1",
+          "name": "Yee-Haw Brewing",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.69,
+          "properties": {
+            "description": "Yee-Haw Brewing, a brand fans of your comps around Knoxville over-index on."
+          },
+          "query": {
+            "affinity": 0.753
+          }
+        },
+        {
+          "entity_id": "46C6D46A-8D86-4E6B-8182-CDEFE7BDF6E2",
+          "name": "Mast General Store",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.67,
+          "properties": {
+            "description": "Mast General Store, a brand fans of your comps around Knoxville over-index on."
+          },
+          "query": {
+            "affinity": 0.734
+          }
+        },
+        {
+          "entity_id": "47D5D80A-D8DA-4F3A-A4DF-A99635B1BCB7",
+          "name": "Warby Parker",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.65,
+          "properties": {
+            "description": "Warby Parker, a brand fans of your comps around Knoxville over-index on."
+          },
+          "query": {
+            "affinity": 0.716
+          }
+        },
+        {
+          "entity_id": "52039753-DD87-4F1B-8D75-3F55850FAD13",
+          "name": "La Colombe",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.63,
+          "properties": {
+            "description": "La Colombe, a brand fans of your comps around Knoxville over-index on."
+          },
+          "query": {
+            "affinity": 0.697
+          }
+        },
+        {
+          "entity_id": "8A2CADA8-8D71-4DDD-B5EF-37A3A669B3E7",
+          "name": "Elkmont Exchange",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.61,
+          "properties": {
+            "description": "Elkmont Exchange, a brand fans of your comps around Knoxville over-index on."
+          },
+          "query": {
+            "affinity": 0.679
+          }
+        },
+        {
+          "entity_id": "F4D0AB50-60CD-4B17-BF5B-3224D267EB2B",
+          "name": "Allbirds",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.59,
+          "properties": {
+            "description": "Allbirds, a brand fans of your comps around Knoxville over-index on."
+          },
+          "query": {
+            "affinity": 0.661
+          }
+        },
+        {
+          "entity_id": "CA29596C-A583-4C49-8B03-1FCE2A53EA05",
+          "name": "Carhartt",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.57,
+          "properties": {
+            "description": "Carhartt, a brand fans of your comps around Knoxville over-index on."
+          },
+          "query": {
+            "affinity": 0.642
+          }
+        },
+        {
+          "entity_id": "77A44329-E6C9-4084-B3AC-1A104C4A4BE6",
+          "name": "Honest Tea",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.55,
+          "properties": {
+            "description": "Honest Tea, a brand fans of your comps around Knoxville over-index on."
+          },
+          "query": {
+            "affinity": 0.624
+          }
+        },
+        {
+          "entity_id": "72795289-101D-483A-ABFC-3FD532F35925",
+          "name": "Three Rivers Market",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.53,
+          "properties": {
+            "description": "Three Rivers Market, a brand fans of your comps around Knoxville over-index on."
+          },
+          "query": {
+            "affinity": 0.605
+          }
+        },
+        {
+          "entity_id": "CC32F29D-F291-40D1-A315-06E800B57645",
+          "name": "Hydro Flask",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.51,
+          "properties": {
+            "description": "Hydro Flask, a brand fans of your comps around Knoxville over-index on."
+          },
+          "query": {
+            "affinity": 0.587
+          }
+        },
+        {
+          "entity_id": "C9667048-9036-4149-A3E5-F41066A75FAD",
+          "name": "Darn Tough",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.49,
+          "properties": {
+            "description": "Darn Tough, a brand fans of your comps around Knoxville over-index on."
+          },
+          "query": {
+            "affinity": 0.568
+          }
+        },
+        {
+          "entity_id": "ABFE4826-67C1-47AC-9572-D50A5A7A0D8B",
+          "name": "Blue Apron",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.47,
+          "properties": {
+            "description": "Blue Apron, a brand fans of your comps around Knoxville over-index on."
+          },
+          "query": {
+            "affinity": 0.55
+          }
+        }
+      ]
+    }
+  }
+}

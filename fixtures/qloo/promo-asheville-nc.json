@@ -1,0 +1,596 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_promo_partners",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?diversify.by=properties.subtype&diversify.take=2&feature.explainability=true&filter.location.query=Asheville%2C%20NC&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abar%2Curn%3Atag%3Agenre%3Aplace%3Abookstore%2Curn%3Atag%3Agenre%3Aplace%3Acafe%2Curn%3Atag%3Agenre%3Aplace%3Acoffee_shop%2Curn%3Atag%3Agenre%3Aplace%3Adive_bar%2Curn%3Atag%3Agenre%3Aplace%3Arecord_store%2Curn%3Atag%3Agenre%3Aplace%3Athrift_store%2Curn%3Atag%3Agenre%3Aplace%3Avintage_store&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=12",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Asheville, NC",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:genre:place:bar,urn:tag:genre:place:bookstore,urn:tag:genre:place:cafe,urn:tag:genre:place:coffee_shop,urn:tag:genre:place:dive_bar,urn:tag:genre:place:record_store,urn:tag:genre:place:thrift_store,urn:tag:genre:place:vintage_store",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "diversify.by": "properties.subtype",
+      "diversify.take": 2,
+      "sort_by": "affinity",
+      "take": 12,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "93F0B359-EC0C-4DFA-A5FD-21E33B7FA208",
+          "name": "Harvest Records",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:record_store",
+          "popularity": 0.71,
+          "properties": {
+            "description": "West Asheville record shop with a deep indie and folk selection and a long history of in-store performances.",
+            "address": "415 Haywood Rd, Asheville, NC 28806",
+            "geocode": {
+              "name": "Asheville",
+              "city": "Asheville",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.8,
+            "price_level": 2,
+            "website": "https://www.harvest-records.com"
+          },
+          "tags": [
+            {
+              "name": "Record Store",
+              "tag_id": "urn:tag:genre:place:record_store",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.92,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.79
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.68
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.63
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "9FE9DBB0-9FCF-4A69-9822-1776D5FF3786",
+          "name": "High Five Coffee",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:coffee_shop",
+          "popularity": 0.63,
+          "properties": {
+            "description": "Local roaster with a bright, busy Broadway cafe where the morning crowd skews young and artsy.",
+            "address": "13 Rankin Ave, Asheville, NC 28801",
+            "geocode": {
+              "name": "Asheville",
+              "city": "Asheville",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Coffee Shop",
+              "tag_id": "urn:tag:genre:place:coffee_shop",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Cafe",
+              "tag_id": "urn:tag:genre:place:cafe",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.88,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.7
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.6
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.56
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "FA657A23-92E7-4C9A-A5F4-760954DDFB0C",
+          "name": "Malaprop's Bookstore/Cafe",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:bookstore",
+          "popularity": 0.76,
+          "properties": {
+            "description": "Downtown independent bookstore and cafe, the city's go-to spot for author readings and flyer boards.",
+            "address": "55 Haywood St, Asheville, NC 28801",
+            "geocode": {
+              "name": "Asheville",
+              "city": "Asheville",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.8,
+            "price_level": 2,
+            "website": "https://www.malaprops.com"
+          },
+          "tags": [
+            {
+              "name": "Bookstore",
+              "tag_id": "urn:tag:genre:place:bookstore",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.86,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.68
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.59
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.57
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "E32648A3-8396-49D7-B42E-012512083F90",
+          "name": "The Double Crown",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:dive_bar",
+          "popularity": 0.55,
+          "properties": {
+            "description": "West Asheville dive with a jukebox, cheap beer, and DJ nights that pull the same crowd as the folk shows.",
+            "address": "375 Haywood Rd, Asheville, NC 28806",
+            "geocode": {
+              "name": "Asheville",
+              "city": "Asheville",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Dive Bar",
+              "tag_id": "urn:tag:genre:place:dive_bar",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Bar",
+              "tag_id": "urn:tag:genre:place:bar",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.83,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.65
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.58
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.5
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "363E468B-B436-4524-A133-403D0A0B9EC4",
+          "name": "Hip Replacements",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:vintage_store",
+          "popularity": 0.46,
+          "properties": {
+            "description": "Downtown vintage boutique with curated clothing from several decades.",
+            "address": "72 N Lexington Ave, Asheville, NC 28801",
+            "geocode": {
+              "name": "Asheville",
+              "city": "Asheville",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Vintage Store",
+              "tag_id": "urn:tag:genre:place:vintage_store",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.8,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.6
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.55
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.48
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "6FDBB6F9-EB37-41F1-9078-E47F8CE1FDBC",
+          "name": "Static Age Records",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:record_store",
+          "popularity": 0.49,
+          "properties": {
+            "description": "Downtown punk and indie record shop with a small performance space in the back.",
+            "address": "110 N Lexington Ave, Asheville, NC 28801",
+            "geocode": {
+              "name": "Asheville",
+              "city": "Asheville",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Record Store",
+              "tag_id": "urn:tag:genre:place:record_store",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.78,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.62
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.52
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.47
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "091940AD-4473-478E-902D-A7B2FAD0E353",
+          "name": "Odd's Cafe",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:coffee_shop",
+          "popularity": 0.41,
+          "properties": {
+            "description": "West Asheville neighborhood coffee shop with a community board and a loyal regulars crowd.",
+            "address": "800 Haywood Rd, Asheville, NC 28806",
+            "geocode": {
+              "name": "Asheville",
+              "city": "Asheville",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Coffee Shop",
+              "tag_id": "urn:tag:genre:place:coffee_shop",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Cafe",
+              "tag_id": "urn:tag:genre:place:cafe",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.75,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.56
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.5
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.46
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "55F9AAEB-7273-44EA-BBFF-8A117D6BA226",
+          "name": "Firestorm Books",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:bookstore",
+          "popularity": 0.44,
+          "properties": {
+            "description": "Worker-owned radical bookstore and community space in West Asheville that hosts readings and small shows.",
+            "address": "1022 Haywood Rd, Asheville, NC 28806",
+            "geocode": {
+              "name": "Asheville",
+              "city": "Asheville",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Bookstore",
+              "tag_id": "urn:tag:genre:place:bookstore",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.72,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.53
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.47
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.51
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "4811E905-0118-4D1C-9445-B560B61FBE49",
+          "name": "Burger Bar",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:dive_bar",
+          "popularity": 0.38,
+          "properties": {
+            "description": "Tiny no-frills bar on Broadway, a late-night stop for musicians after downtown shows.",
+            "address": "1 Craven St, Asheville, NC 28806",
+            "geocode": {
+              "name": "Asheville",
+              "city": "Asheville",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.4,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Dive Bar",
+              "tag_id": "urn:tag:genre:place:dive_bar",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Bar",
+              "tag_id": "urn:tag:genre:place:bar",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.69,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.5
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.44
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.4
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "8E1985D0-B589-42AC-A206-2962D308DC36",
+          "name": "The Regeneration Station",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:vintage_store",
+          "popularity": 0.5,
+          "properties": {
+            "description": "Sprawling vintage and antique market in the Biltmore Village area with dozens of vendor booths.",
+            "address": "26 Glendale Ave, Asheville, NC 28803",
+            "geocode": {
+              "name": "Asheville",
+              "city": "Asheville",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Vintage Store",
+              "tag_id": "urn:tag:genre:place:vintage_store",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Thrift Store",
+              "tag_id": "urn:tag:genre:place:thrift_store",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.66,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.47
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.42
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.38
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "CF4B6C7F-F85D-4E05-9E8A-E3B49E82A0CB",
+          "name": "Trade and Lore Coffee",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:coffee_shop",
+          "popularity": 0.43,
+          "properties": {
+            "description": "Downtown cafe with a book-lined wall and a strong local following among writers and students.",
+            "address": "37 Wall St, Asheville, NC 28801",
+            "geocode": {
+              "name": "Asheville",
+              "city": "Asheville",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Coffee Shop",
+              "tag_id": "urn:tag:genre:place:coffee_shop",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.64,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.45
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.41
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.39
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "090642E3-E276-4BF4-A00B-BF38AD41A504",
+          "name": "Voltage Records",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:record_store",
+          "popularity": 0.35,
+          "properties": {
+            "description": "North Asheville used-vinyl shop with deep crates and fair prices.",
+            "address": "90 N Lexington Ave, Asheville, NC 28801",
+            "geocode": {
+              "name": "Asheville",
+              "city": "Asheville",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.4,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Record Store",
+              "tag_id": "urn:tag:genre:place:record_store",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.62,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.43
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.39
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.35
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

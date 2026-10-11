@@ -1,0 +1,424 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_rooms",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?feature.explainability=true&filter.location.query=Charlottesville%2C%20VA&filter.location.radius=15000&filter.tags=urn%3Atag%3Acategory%3Aplace%3Alive_music_venue%2Curn%3Atag%3Agenre%3Aplace%3Abar%3Alive_music%2Curn%3Atag%3Agenre%3Aplace%3Aconcert_hall%2Curn%3Atag%3Agenre%3Aplace%3Amusic_venue&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=8",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Charlottesville, VA",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:category:place:live_music_venue,urn:tag:genre:place:bar:live_music,urn:tag:genre:place:concert_hall,urn:tag:genre:place:music_venue",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "sort_by": "affinity",
+      "take": 8,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "3664B532-E711-46FE-99CF-CFE395D727E0",
+          "name": "The Jefferson Theater",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:concert_hall",
+          "popularity": 0.86,
+          "properties": {
+            "description": "A restored 1912 vaudeville house on the Downtown Mall that is the city's main mid-size stop for touring indie and folk acts.",
+            "address": "110 E Main St, Charlottesville, VA 22902",
+            "geocode": {
+              "name": "Charlottesville",
+              "city": "Charlottesville",
+              "admin1_region": "VA",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 2,
+            "website": "https://jeffersontheater.com"
+          },
+          "tags": [
+            {
+              "name": "Concert Hall",
+              "tag_id": "urn:tag:genre:place:concert_hall",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Live Music Venue",
+              "tag_id": "urn:tag:category:place:live_music_venue",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.93,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.763
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.632
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.558
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "1FDBE482-8B9E-47B5-B58B-591E6BCB9153",
+          "name": "The Southern Cafe & Music Hall",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:music_venue",
+          "popularity": 0.78,
+          "properties": {
+            "description": "An intimate downtown room with a standing floor and a listening-room feel, booking singer-songwriters and indie bands most nights of the week.",
+            "address": "103 S 1st St, Charlottesville, VA 22902",
+            "geocode": {
+              "name": "Charlottesville",
+              "city": "Charlottesville",
+              "admin1_region": "VA",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 2,
+            "website": "https://thesoutherncville.com"
+          },
+          "tags": [
+            {
+              "name": "Music Venue",
+              "tag_id": "urn:tag:genre:place:music_venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Live Music Venue",
+              "tag_id": "urn:tag:category:place:live_music_venue",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.886,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.766
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.562
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.551
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "BB6637BD-FB97-46A1-AB04-E2EEE4E3D5F1",
+          "name": "Sprint Pavilion",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:concert_hall",
+          "popularity": 0.82,
+          "properties": {
+            "description": "The open-air amphitheater at the east end of the Downtown Mall, home to the free Fridays After Five series and summer touring shows.",
+            "address": "700 E Main St, Charlottesville, VA 22902",
+            "geocode": {
+              "name": "Charlottesville",
+              "city": "Charlottesville",
+              "admin1_region": "VA",
+              "country_code": "US"
+            },
+            "business_rating": 4.4,
+            "price_level": 2,
+            "website": "https://sprintpavilion.com"
+          },
+          "tags": [
+            {
+              "name": "Concert Hall",
+              "tag_id": "urn:tag:genre:place:concert_hall",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Live Music Venue",
+              "tag_id": "urn:tag:category:place:live_music_venue",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.841,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.77
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.492
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.545
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "698635CB-7161-43CE-BF88-FF43AA1D85F9",
+          "name": "The Paramount Theater",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:concert_hall",
+          "popularity": 0.8,
+          "properties": {
+            "description": "A 1931 movie palace turned seated performing arts theater, the room for a quiet, attentive full-band night.",
+            "address": "215 E Main St, Charlottesville, VA 22902",
+            "geocode": {
+              "name": "Charlottesville",
+              "city": "Charlottesville",
+              "admin1_region": "VA",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 3,
+            "website": "https://theparamount.net"
+          },
+          "tags": [
+            {
+              "name": "Concert Hall",
+              "tag_id": "urn:tag:genre:place:concert_hall",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.797,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.674
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.522
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.488
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "AF4C0066-2DE0-48CA-92A9-2A528EE95C54",
+          "name": "The Front Porch",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:music_venue",
+          "popularity": 0.52,
+          "properties": {
+            "description": "A nonprofit roots-music school with a small listening room that hosts folk, old-time and songwriter showcases.",
+            "address": "221 E Water St, Charlottesville, VA 22902",
+            "geocode": {
+              "name": "Charlottesville",
+              "city": "Charlottesville",
+              "admin1_region": "VA",
+              "country_code": "US"
+            },
+            "business_rating": 4.8,
+            "price_level": 1,
+            "website": "https://frontporchcville.org"
+          },
+          "tags": [
+            {
+              "name": "Music Venue",
+              "tag_id": "urn:tag:genre:place:music_venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Live Music Venue",
+              "tag_id": "urn:tag:category:place:live_music_venue",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.753,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.677
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.452
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.482
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "52EB9058-5289-4D9C-B285-55929DC86374",
+          "name": "Starr Hill Brewery Downtown",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:bar",
+          "popularity": 0.6,
+          "properties": {
+            "description": "The hometown brewery's taproom keeps a stage for local and touring bands, continuing the live-music tradition of the original Starr Hill music hall.",
+            "address": "946 Grady Ave, Charlottesville, VA 22903",
+            "geocode": {
+              "name": "Charlottesville",
+              "city": "Charlottesville",
+              "admin1_region": "VA",
+              "country_code": "US"
+            },
+            "business_rating": 4.3,
+            "price_level": 2,
+            "website": "https://starrhill.com"
+          },
+          "tags": [
+            {
+              "name": "Live Music Bar",
+              "tag_id": "urn:tag:genre:place:bar:live_music",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Bar",
+              "tag_id": "urn:tag:genre:place:bar",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.709,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.581
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.482
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.425
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "0C744B5D-653C-4E59-99EE-D4A60CEB2915",
+          "name": "Champion Brewing Company",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:bar",
+          "popularity": 0.55,
+          "properties": {
+            "description": "A downtown brewery with a patio and a regular slate of punk, indie and bluegrass shows.",
+            "address": "324 6th St SE, Charlottesville, VA 22902",
+            "geocode": {
+              "name": "Charlottesville",
+              "city": "Charlottesville",
+              "admin1_region": "VA",
+              "country_code": "US"
+            },
+            "business_rating": 4.3,
+            "price_level": 2,
+            "website": "https://championbrewingcompany.com"
+          },
+          "tags": [
+            {
+              "name": "Live Music Bar",
+              "tag_id": "urn:tag:genre:place:bar:live_music",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Bar",
+              "tag_id": "urn:tag:genre:place:bar",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.664,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.585
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.412
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.419
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "D9973B0F-BAF4-4603-95DE-BD67B1089741",
+          "name": "Old Cabell Hall",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:concert_hall",
+          "popularity": 0.47,
+          "properties": {
+            "description": "The University of Virginia's historic concert hall on the Lawn, a reverent seated room used for acoustic and chamber-style shows.",
+            "address": "1 McCormick Rd, Charlottesville, VA 22903",
+            "geocode": {
+              "name": "Charlottesville",
+              "city": "Charlottesville",
+              "admin1_region": "VA",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Concert Hall",
+              "tag_id": "urn:tag:genre:place:concert_hall",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.62,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.588
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.342
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.412
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

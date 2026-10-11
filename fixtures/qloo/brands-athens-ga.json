@@ -1,0 +1,281 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "local_color",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Abrand&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Athens%2C%20GA&signal.location.radius=25000&take=20",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:brand",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "signal.location.query": "Athens, GA",
+      "signal.location.radius": 25000,
+      "take": 20
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "52039753-DD87-4F1B-8D75-3F55850FAD13",
+          "name": "La Colombe",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.67,
+          "properties": {
+            "description": "Philadelphia coffee roaster with canned draft lattes in every co-op."
+          },
+          "query": {
+            "affinity": 0.94
+          }
+        },
+        {
+          "entity_id": "F25F0B67-D992-40AE-8BAB-E7F62F5437C3",
+          "name": "Hardywood Park Craft Brewery",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.78,
+          "properties": {
+            "description": "Richmond craft brewery whose Gingerbread Stout release is a local holiday."
+          },
+          "query": {
+            "affinity": 0.916
+          }
+        },
+        {
+          "entity_id": "753F76AB-F8F3-4DB9-9076-5541D45875DF",
+          "name": "Trader Joe's",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.83,
+          "properties": {
+            "description": "Grocery chain known for cheap wine, frozen dumplings, and friendly cashiers."
+          },
+          "query": {
+            "affinity": 0.897
+          }
+        },
+        {
+          "entity_id": "1E64D934-320B-4FB7-921B-58DB10BE96EA",
+          "name": "Birkenstock",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.66,
+          "properties": {
+            "description": "German sandal maker with a cork footbed and a cult following."
+          },
+          "query": {
+            "affinity": 0.896
+          }
+        },
+        {
+          "entity_id": "18FD9FA8-5BBD-42E1-B44D-6A714881FD7F",
+          "name": "Burial Beer Co.",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.625,
+          "properties": {},
+          "tags": [],
+          "query": {
+            "affinity": 0.873
+          }
+        },
+        {
+          "entity_id": "73286F09-B908-4751-84C8-BD72BA7EB170",
+          "name": "Wedge Brewing Company",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.45,
+          "properties": {},
+          "tags": [],
+          "query": {
+            "affinity": 0.826
+          }
+        },
+        {
+          "entity_id": "E0901060-7262-4D47-95A2-3AE9A009277F",
+          "name": "Highland Brewing Company",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.75,
+          "properties": {},
+          "tags": [],
+          "query": {
+            "affinity": 0.81
+          }
+        },
+        {
+          "entity_id": "F4D0AB50-60CD-4B17-BF5B-3224D267EB2B",
+          "name": "Allbirds",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.54,
+          "properties": {
+            "description": "Wool sneaker brand with a sustainability pitch."
+          },
+          "query": {
+            "affinity": 0.778
+          }
+        },
+        {
+          "entity_id": "81FF9E58-99F1-4C63-9F2F-7D85FA8D6964",
+          "name": "Patagonia",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.85,
+          "properties": {
+            "description": "Outdoor apparel brand with a loud environmental mission."
+          },
+          "query": {
+            "affinity": 0.73
+          }
+        },
+        {
+          "entity_id": "47D5D80A-D8DA-4F3A-A4DF-A99635B1BCB7",
+          "name": "Warby Parker",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.61,
+          "properties": {
+            "description": "Direct-to-consumer eyewear brand with a try-at-home program."
+          },
+          "query": {
+            "affinity": 0.716
+          }
+        },
+        {
+          "entity_id": "CC32F29D-F291-40D1-A315-06E800B57645",
+          "name": "Hydro Flask",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.55,
+          "properties": {
+            "description": "Insulated water bottles covered in stickers from venues and record stores."
+          },
+          "query": {
+            "affinity": 0.708
+          }
+        },
+        {
+          "entity_id": "6DB3B04B-3AA1-43A1-A5BE-93F17E0380AE",
+          "name": "Ellwood Thompson's",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.72,
+          "properties": {
+            "description": "Richmond's independent natural-foods grocery in Carytown."
+          },
+          "query": {
+            "affinity": 0.707
+          }
+        },
+        {
+          "entity_id": "09ED0C0E-A72F-4DB9-8F61-F88B1A491EAB",
+          "name": "Hocking Hills Canopy Tours",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.59,
+          "properties": {
+            "description": "Hocking Hills Canopy Tours: a brand fans of these comps around Athens, OH over-index on."
+          },
+          "tags": [],
+          "query": {
+            "affinity": 0.691
+          }
+        },
+        {
+          "entity_id": "CA29596C-A583-4C49-8B03-1FCE2A53EA05",
+          "name": "Carhartt",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.55,
+          "properties": {
+            "description": "Workwear brand adopted by musicians and carpenters alike."
+          },
+          "query": {
+            "affinity": 0.66
+          }
+        },
+        {
+          "entity_id": "7C8DF92F-D4B9-45DE-9144-A0E36C0C6897",
+          "name": "REI",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.79,
+          "properties": {
+            "description": "Outdoor gear co-op with a member dividend."
+          },
+          "query": {
+            "affinity": 0.626
+          }
+        },
+        {
+          "entity_id": "DD53783B-58F7-4D99-9969-D937382FDB61",
+          "name": "Hyperion Espresso",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.48,
+          "properties": {
+            "description": "Fredericksburg, VA coffee roaster with a loyal Virginia following."
+          },
+          "query": {
+            "affinity": 0.61
+          }
+        },
+        {
+          "entity_id": "140AED23-2F58-4FA0-B636-C9D5D473E429",
+          "name": "Blue Bottle Coffee",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.6,
+          "properties": {
+            "description": "Third-wave coffee chain with minimalist cafes."
+          },
+          "query": {
+            "affinity": 0.605
+          }
+        },
+        {
+          "entity_id": "D44CBBD6-C6E8-455A-94B4-88B6A05B0591",
+          "name": "Blundstone",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.73,
+          "properties": {
+            "description": "Tasmanian pull-on boot brand beloved by people who walk a lot."
+          },
+          "query": {
+            "affinity": 0.602
+          }
+        },
+        {
+          "entity_id": "2838B3D8-5C49-4AF5-AA58-12015277F479",
+          "name": "Doc Martens",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.49,
+          "properties": {
+            "description": "British boot brand with a permanent place in music subcultures."
+          },
+          "query": {
+            "affinity": 0.57
+          }
+        },
+        {
+          "entity_id": "2F0226A6-5920-4EE7-9C9C-FB2B1522C413",
+          "name": "Iron City Beer",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.49,
+          "properties": {
+            "description": "Pittsburgh's hometown lager, a dive-bar ironic-and-sincere order."
+          },
+          "query": {
+            "affinity": 0.559
+          }
+        }
+      ]
+    }
+  }
+}

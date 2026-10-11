@@ -1,0 +1,9 @@
+.DS_Store
+.agents/
+.claude/
+.dev.vars
+.env
+.wrangler/
+dist/
+node_modules/
+site/

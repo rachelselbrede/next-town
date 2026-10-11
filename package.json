@@ -1,0 +1,35 @@
+{
+  "name": "next-town",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Find the towns that already love you. A tour-routing agent for independent acts, built on the Qloo taste graph and Claude.",
+  "scripts": {
+    "dev": "node scripts/dev-node.mjs",
+    "dev:worker": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "node --test tests/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "fixtures": "node scripts/scaffold-fixtures.mjs hollow-pines && node scripts/bundle-fixtures.mjs",
+    "record": "node scripts/record.mjs",
+    "verify": "node scripts/verify.mjs",
+    "build:static": "node scripts/build-static.mjs"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.133.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261011.1",
+    "esbuild": "^0.28.2",
+    "typescript": "^7.0.2",
+    "wrangler": "^4.149.0"
+  },
+  "engines": {
+    "node": ">=22.18"
+  },
+  "license": "MIT",
+  "allowScripts": {
+    "fsevents@2.3.3": true,
+    "workerd@1.20261006.1": true
+  }
+}

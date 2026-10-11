@@ -1,0 +1,589 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_promo_partners",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?diversify.by=properties.subtype&diversify.take=2&feature.explainability=true&filter.location.query=Columbus%2C%20OH&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abar%2Curn%3Atag%3Agenre%3Aplace%3Abookstore%2Curn%3Atag%3Agenre%3Aplace%3Acafe%2Curn%3Atag%3Agenre%3Aplace%3Acoffee_shop%2Curn%3Atag%3Agenre%3Aplace%3Adive_bar%2Curn%3Atag%3Agenre%3Aplace%3Arecord_store%2Curn%3Atag%3Agenre%3Aplace%3Athrift_store%2Curn%3Atag%3Agenre%3Aplace%3Avintage_store&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=12",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Columbus, OH",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:genre:place:bar,urn:tag:genre:place:bookstore,urn:tag:genre:place:cafe,urn:tag:genre:place:coffee_shop,urn:tag:genre:place:dive_bar,urn:tag:genre:place:record_store,urn:tag:genre:place:thrift_store,urn:tag:genre:place:vintage_store",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "diversify.by": "properties.subtype",
+      "diversify.take": 2,
+      "sort_by": "affinity",
+      "take": 12,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "B52A8E91-545C-451D-B58E-C02D5DBE47C1",
+          "name": "Used Kids Records",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:record_store",
+          "popularity": 0.68,
+          "properties": {
+            "description": "The campus-area record shop since the eighties, now on Summit next to Rumba.",
+            "address": "2500 Summit St, Columbus, OH 43202",
+            "geocode": {
+              "name": "Columbus",
+              "city": "Columbus",
+              "admin1_region": "OH",
+              "country_code": "US"
+            },
+            "business_rating": 4.82,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Record Store",
+              "tag_id": "urn:tag:genre:place:record_store",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.89,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.73
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.67
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.65
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "42E36C7A-71CC-4202-9EF2-121F5E656DA1",
+          "name": "Spoonful Records",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:record_store",
+          "popularity": 0.71,
+          "properties": {
+            "description": "Downtown new-and-used shop with in-store shows.",
+            "address": "116 E Long St, Columbus, OH 43215",
+            "geocode": {
+              "name": "Columbus",
+              "city": "Columbus",
+              "admin1_region": "OH",
+              "country_code": "US"
+            },
+            "business_rating": 4.9,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Record Store",
+              "tag_id": "urn:tag:genre:place:record_store",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.86,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.74
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.68
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.6
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "48AA7667-AE67-4343-9B59-0E376177127F",
+          "name": "Lost Weekend Records",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:record_store",
+          "popularity": 0.49,
+          "properties": {
+            "description": "Clintonville vinyl shop a few blocks from Ace of Cups.",
+            "address": "2960 N High St, Columbus, OH 43202",
+            "geocode": {
+              "name": "Columbus",
+              "city": "Columbus",
+              "admin1_region": "OH",
+              "country_code": "US"
+            },
+            "business_rating": 4.47,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Record Store",
+              "tag_id": "urn:tag:genre:place:record_store",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.85,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.74
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.62
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.57
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "9EC6F866-3CCB-48B5-8AE9-DC82B0A4C86E",
+          "name": "Fox in the Snow Café",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:coffee_shop",
+          "popularity": 0.76,
+          "properties": {
+            "description": "Italian Village bakery-café with a long morning line and a community board.",
+            "address": "1031 N 4th St, Columbus, OH 43201",
+            "geocode": {
+              "name": "Columbus",
+              "city": "Columbus",
+              "admin1_region": "OH",
+              "country_code": "US"
+            },
+            "business_rating": 4.67,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Coffee Shop",
+              "tag_id": "urn:tag:genre:place:coffee_shop",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Cafe",
+              "tag_id": "urn:tag:genre:place:cafe",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.82,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.66
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.63
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.57
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "F9F4D267-F986-45F3-90D1-0D075C9DF864",
+          "name": "Stauf's Coffee Roasters",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:coffee_shop",
+          "popularity": 0.56,
+          "properties": {
+            "description": "Grandview roaster around the corner from Woodlands and Natalie's.",
+            "address": "1277 Grandview Ave, Columbus, OH 43212",
+            "geocode": {
+              "name": "Columbus",
+              "city": "Columbus",
+              "admin1_region": "OH",
+              "country_code": "US"
+            },
+            "business_rating": 4.78,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Coffee Shop",
+              "tag_id": "urn:tag:genre:place:coffee_shop",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Cafe",
+              "tag_id": "urn:tag:genre:place:cafe",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.8,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.68
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.61
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.52
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "FEFEB3C2-1345-4DB6-AB1A-85108C8583BB",
+          "name": "The Book Loft of German Village",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:bookstore",
+          "popularity": 0.46,
+          "properties": {
+            "description": "Thirty-two rooms of books; the events board sees every neighborhood walker.",
+            "address": "631 S 3rd St, Columbus, OH 43206",
+            "geocode": {
+              "name": "Columbus",
+              "city": "Columbus",
+              "admin1_region": "OH",
+              "country_code": "US"
+            },
+            "business_rating": 4.42,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Bookstore",
+              "tag_id": "urn:tag:genre:place:bookstore",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.78,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.67
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.61
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.51
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "8922B1BA-A06C-42DB-A8C1-DA47A300E4F2",
+          "name": "Prologue Bookshop",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:bookstore",
+          "popularity": 0.77,
+          "properties": {
+            "description": "Short North independent with an evening reading series.",
+            "address": "841 N High St, Columbus, OH 43215",
+            "geocode": {
+              "name": "Columbus",
+              "city": "Columbus",
+              "admin1_region": "OH",
+              "country_code": "US"
+            },
+            "business_rating": 4.62,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Bookstore",
+              "tag_id": "urn:tag:genre:place:bookstore",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.75,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.65
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.53
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.47
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "17861631-3C53-47D4-82E6-BBE1FD3E9119",
+          "name": "Dick's Den",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:dive_bar",
+          "popularity": 0.84,
+          "properties": {
+            "description": "Clintonville jazz dive; the after-show bar for the Ace of Cups block.",
+            "address": "2417 N High St, Columbus, OH 43202",
+            "geocode": {
+              "name": "Columbus",
+              "city": "Columbus",
+              "admin1_region": "OH",
+              "country_code": "US"
+            },
+            "business_rating": 4.86,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Dive Bar",
+              "tag_id": "urn:tag:genre:place:dive_bar",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Bar",
+              "tag_id": "urn:tag:genre:place:bar",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.73,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.61
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.56
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.43
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "ED554875-12CC-46AB-B17D-E7E792FD5841",
+          "name": "Café Bourbon St",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:dive_bar",
+          "popularity": 0.48,
+          "properties": {
+            "description": "Punk-leaning dive with a tiny stage and a poster-covered wall.",
+            "address": "2216 Summit St, Columbus, OH 43201",
+            "geocode": {
+              "name": "Columbus",
+              "city": "Columbus",
+              "admin1_region": "OH",
+              "country_code": "US"
+            },
+            "business_rating": 4.89,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Dive Bar",
+              "tag_id": "urn:tag:genre:place:dive_bar",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Bar",
+              "tag_id": "urn:tag:genre:place:bar",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.71,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.59
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.51
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.44
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "71E81B51-7C1C-4EB2-967B-F321EABEA0A0",
+          "name": "Flower Child",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:vintage_store",
+          "popularity": 0.56,
+          "properties": {
+            "description": "Big mid-century vintage store in Italian Village.",
+            "address": "233 E 5th Ave, Columbus, OH 43201",
+            "geocode": {
+              "name": "Columbus",
+              "city": "Columbus",
+              "admin1_region": "OH",
+              "country_code": "US"
+            },
+            "business_rating": 4.29,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Vintage Store",
+              "tag_id": "urn:tag:genre:place:vintage_store",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.7,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.58
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.52
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.4
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "2BAB8B7D-BA2E-4081-BC03-4CD8F13381AC",
+          "name": "Rag-O-Rama",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:vintage_store",
+          "popularity": 0.7,
+          "properties": {
+            "description": "Clintonville resale shop with a steady student crowd.",
+            "address": "3301 N High St, Columbus, OH 43202",
+            "geocode": {
+              "name": "Columbus",
+              "city": "Columbus",
+              "admin1_region": "OH",
+              "country_code": "US"
+            },
+            "business_rating": 4.53,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Vintage Store",
+              "tag_id": "urn:tag:genre:place:vintage_store",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.67,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.56
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.48
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.38
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "651CB1A2-4D51-4E44-8415-9542C90F3997",
+          "name": "Boomerang Room Vintage",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:vintage_store",
+          "popularity": 0.76,
+          "properties": {
+            "description": "Small vintage shop across High Street from Rag-O-Rama.",
+            "address": "3274 N High St, Columbus, OH 43202",
+            "geocode": {
+              "name": "Columbus",
+              "city": "Columbus",
+              "admin1_region": "OH",
+              "country_code": "US"
+            },
+            "business_rating": 4.59,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Vintage Store",
+              "tag_id": "urn:tag:genre:place:vintage_store",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.64,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.51
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.42
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.35
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

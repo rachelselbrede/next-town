@@ -1,0 +1,609 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_promo_partners",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?diversify.by=properties.subtype&diversify.take=2&feature.explainability=true&filter.location.query=Louisville%2C%20KY&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abar%2Curn%3Atag%3Agenre%3Aplace%3Abookstore%2Curn%3Atag%3Agenre%3Aplace%3Acafe%2Curn%3Atag%3Agenre%3Aplace%3Acoffee_shop%2Curn%3Atag%3Agenre%3Aplace%3Adive_bar%2Curn%3Atag%3Agenre%3Aplace%3Arecord_store%2Curn%3Atag%3Agenre%3Aplace%3Athrift_store%2Curn%3Atag%3Agenre%3Aplace%3Avintage_store&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=12",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Louisville, KY",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:genre:place:bar,urn:tag:genre:place:bookstore,urn:tag:genre:place:cafe,urn:tag:genre:place:coffee_shop,urn:tag:genre:place:dive_bar,urn:tag:genre:place:record_store,urn:tag:genre:place:thrift_store,urn:tag:genre:place:vintage_store",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "diversify.by": "properties.subtype",
+      "diversify.take": 2,
+      "sort_by": "affinity",
+      "take": 12,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "30142F16-D148-4D13-8C6E-E25B640EB234",
+          "name": "Guestroom Records",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:record_store",
+          "popularity": 0.62,
+          "properties": {
+            "description": "Clifton record shop known for indie and folk new releases and in-store performances.",
+            "address": "1806 Frankfort Ave, Louisville, KY 40206",
+            "geocode": {
+              "name": "Guestroom Records",
+              "city": "Louisville",
+              "admin1_region": "KY",
+              "country_code": "US"
+            },
+            "business_rating": 4.8,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Record Store",
+              "tag_id": "urn:tag:genre:place:record_store",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.91,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.736
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.656
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.596
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "AA34D2B0-C96C-43FE-8C8D-2A6864EE1762",
+          "name": "Please & Thank You",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:coffee_shop",
+          "popularity": 0.7,
+          "properties": {
+            "description": "NuLu coffee shop with a record store in back and a reputation for chocolate chip cookies.",
+            "address": "800 E Market St, Louisville, KY 40206",
+            "geocode": {
+              "name": "Please & Thank You",
+              "city": "Louisville",
+              "admin1_region": "KY",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Coffee Shop",
+              "tag_id": "urn:tag:genre:place:coffee_shop",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Cafe",
+              "tag_id": "urn:tag:genre:place:cafe",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.882,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.669
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.589
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.529
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "A4B18F24-2D00-43BC-94AB-80DE5F4F09CA",
+          "name": "Carmichael's Bookstore",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:bookstore",
+          "popularity": 0.68,
+          "properties": {
+            "description": "Louisville's long-running independent bookstore with author events and a staff-picks wall.",
+            "address": "2720 Frankfort Ave, Louisville, KY 40206",
+            "geocode": {
+              "name": "Carmichael's Bookstore",
+              "city": "Louisville",
+              "admin1_region": "KY",
+              "country_code": "US"
+            },
+            "business_rating": 4.8,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Bookstore",
+              "tag_id": "urn:tag:genre:place:bookstore",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.854,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.682
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.602
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.542
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "E1E52B71-8461-428F-92EF-5B71B9975E9B",
+          "name": "Nachbar",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:dive_bar",
+          "popularity": 0.58,
+          "properties": {
+            "description": "Germantown neighborhood bar with a deep beer list, a patio, and occasional acoustic shows.",
+            "address": "969 Charles St, Louisville, KY 40204",
+            "geocode": {
+              "name": "Nachbar",
+              "city": "Louisville",
+              "admin1_region": "KY",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Dive Bar",
+              "tag_id": "urn:tag:genre:place:dive_bar",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Bar",
+              "tag_id": "urn:tag:genre:place:bar",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.825,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.625
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.545
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.485
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "8C2F93D2-3943-4A54-9744-D5C3ADB85362",
+          "name": "Fat Rabbit Vintage",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:vintage_store",
+          "popularity": 0.48,
+          "properties": {
+            "description": "Curated vintage clothing and ephemera in Germantown with a steady crowd of musicians and record collectors.",
+            "address": "1003 E Oak St, Louisville, KY 40204",
+            "geocode": {
+              "name": "Fat Rabbit Vintage",
+              "city": "Louisville",
+              "admin1_region": "KY",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Vintage Store",
+              "tag_id": "urn:tag:genre:place:vintage_store",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Thrift Store",
+              "tag_id": "urn:tag:genre:place:thrift_store",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.797,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.658
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.578
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.518
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "949A0674-E6A7-4831-B2D4-343A662B4FB6",
+          "name": "Better Days Records",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:record_store",
+          "popularity": 0.5,
+          "properties": {
+            "description": "Highlands record store with deep used bins and a knowledgeable counter.",
+            "address": "1591 Bardstown Rd, Louisville, KY 40205",
+            "geocode": {
+              "name": "Better Days Records",
+              "city": "Louisville",
+              "admin1_region": "KY",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Record Store",
+              "tag_id": "urn:tag:genre:place:record_store",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.769,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.621
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.541
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.481
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "50CFBCAF-6372-4E78-A5AF-A2575765FE5C",
+          "name": "Quills Coffee",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:coffee_shop",
+          "popularity": 0.66,
+          "properties": {
+            "description": "Local roaster with a bright Highlands cafe that fills with students and freelancers.",
+            "address": "930 Baxter Ave, Louisville, KY 40204",
+            "geocode": {
+              "name": "Quills Coffee",
+              "city": "Louisville",
+              "admin1_region": "KY",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Coffee Shop",
+              "tag_id": "urn:tag:genre:place:coffee_shop",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Cafe",
+              "tag_id": "urn:tag:genre:place:cafe",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.741,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.595
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.515
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.455
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "E2DD2C76-B15E-4EDF-A2D3-268B3469F364",
+          "name": "Mag Bar",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:dive_bar",
+          "popularity": 0.52,
+          "properties": {
+            "description": "Old Louisville dive with a late kitchen, a jukebox, and a side room that hosts bands.",
+            "address": "1398 S 2nd St, Louisville, KY 40208",
+            "geocode": {
+              "name": "Mag Bar",
+              "city": "Louisville",
+              "admin1_region": "KY",
+              "country_code": "US"
+            },
+            "business_rating": 4.4,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Dive Bar",
+              "tag_id": "urn:tag:genre:place:dive_bar",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Bar",
+              "tag_id": "urn:tag:genre:place:bar",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.713,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.613
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.533
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.473
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "2DFE6222-82EC-4EB9-953F-2B1697FD604A",
+          "name": "Highland Coffee Company",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:coffee_shop",
+          "popularity": 0.54,
+          "properties": {
+            "description": "Neighborhood coffee house on Bardstown Road with a flyer wall and all-day regulars.",
+            "address": "1140 Bardstown Rd, Louisville, KY 40204",
+            "geocode": {
+              "name": "Highland Coffee Company",
+              "city": "Louisville",
+              "admin1_region": "KY",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Coffee Shop",
+              "tag_id": "urn:tag:genre:place:coffee_shop",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Cafe",
+              "tag_id": "urn:tag:genre:place:cafe",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.685,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.556
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.476
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.416
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "4DF7C037-B530-463F-A5C6-7C42CE468730",
+          "name": "Half Price Books",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:bookstore",
+          "popularity": 0.6,
+          "properties": {
+            "description": "Used bookstore and record bins near the Highlands with a browse-for-hours layout.",
+            "address": "1200 Bardstown Rd, Louisville, KY 40204",
+            "geocode": {
+              "name": "Half Price Books",
+              "city": "Louisville",
+              "admin1_region": "KY",
+              "country_code": "US"
+            },
+            "business_rating": 4.4,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Bookstore",
+              "tag_id": "urn:tag:genre:place:bookstore",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.656,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.564
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.484
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.424
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "C5C7C07A-58B3-4876-80E1-43264EBF3BFA",
+          "name": "Derby City Vintage",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:vintage_store",
+          "popularity": 0.42,
+          "properties": {
+            "description": "Highlands vintage shop stocked with denim, band tees, and 70s flannel.",
+            "address": "1600 Bardstown Rd, Louisville, KY 40205",
+            "geocode": {
+              "name": "Derby City Vintage",
+              "city": "Louisville",
+              "admin1_region": "KY",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Vintage Store",
+              "tag_id": "urn:tag:genre:place:vintage_store",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Thrift Store",
+              "tag_id": "urn:tag:genre:place:thrift_store",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.628,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.542
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.462
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.402
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "38E9F183-EC62-4EE6-A3DB-5E6BD53C6531",
+          "name": "Akiko's Bar",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:dive_bar",
+          "popularity": 0.4,
+          "properties": {
+            "description": "Small Bardstown Road dive with a long bar and a crowd that sticks around past last call.",
+            "address": "1046 Bardstown Rd, Louisville, KY 40204",
+            "geocode": {
+              "name": "Akiko's Bar",
+              "city": "Louisville",
+              "admin1_region": "KY",
+              "country_code": "US"
+            },
+            "business_rating": 4.3,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Dive Bar",
+              "tag_id": "urn:tag:genre:place:dive_bar",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Bar",
+              "tag_id": "urn:tag:genre:place:bar",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.6,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.495
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.415
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.355
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

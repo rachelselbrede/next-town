@@ -1,0 +1,1873 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "rank_markets",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?feature.explainability=true&filter.geocode.country_code=US&filter.type=urn%3Aentity%3Alocality&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&take=50",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:locality",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "filter.geocode.country_code": "US",
+      "take": 50,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "E5610BEE-5F1C-4587-874E-2CA7A86DA0F0",
+          "name": "Asheville",
+          "type": "urn:entity:locality",
+          "subtype": "urn:entity:locality:city",
+          "popularity": 0.46,
+          "properties": {
+            "geocode": {
+              "name": "Asheville",
+              "admin1_region": "NC",
+              "country_code": "US"
+            }
+          },
+          "location": {
+            "lat": 35.595,
+            "lon": -82.551
+          },
+          "query": {
+            "affinity": 0.934,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.72
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.57
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.48
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "22913C74-465C-4F1D-8AD7-962C975E3CA5",
+          "name": "Carrboro",
+          "type": "urn:entity:locality",
+          "subtype": "urn:entity:locality:city",
+          "popularity": 0.24,
+          "properties": {
+            "geocode": {
+              "name": "Carrboro",
+              "admin1_region": "NC",
+              "country_code": "US"
+            }
+          },
+          "location": {
+            "lat": 35.91,
+            "lon": -79.075
+          },
+          "query": {
+            "affinity": 0.921,
+            "explainability": {
+              "by_entity": {
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.73
+                },
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.6
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.53
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "C800B6B3-FC9C-4D01-A854-4BA0A2401769",
+          "name": "Athens",
+          "type": "urn:entity:locality",
+          "subtype": "urn:entity:locality:city",
+          "popularity": 0.5,
+          "properties": {
+            "geocode": {
+              "name": "Athens",
+              "admin1_region": "GA",
+              "country_code": "US"
+            }
+          },
+          "location": {
+            "lat": 33.952,
+            "lon": -83.358
+          },
+          "query": {
+            "affinity": 0.918,
+            "explainability": {
+              "by_entity": {
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.75
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.64
+                },
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.5
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "AB4042C7-18A5-4AAC-955A-696E9E6E94E4",
+          "name": "Bloomington",
+          "type": "urn:entity:locality",
+          "subtype": "urn:entity:locality:city",
+          "popularity": 0.42,
+          "properties": {
+            "geocode": {
+              "name": "Bloomington",
+              "admin1_region": "IN",
+              "country_code": "US"
+            }
+          },
+          "location": {
+            "lat": 39.165,
+            "lon": -86.526
+          },
+          "query": {
+            "affinity": 0.905,
+            "explainability": {
+              "by_entity": {
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.67
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.58
+                },
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.46
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "F2CC972E-FAA6-4706-A990-510B8C2BC5A7",
+          "name": "Charlottesville",
+          "type": "urn:entity:locality",
+          "subtype": "urn:entity:locality:city",
+          "popularity": 0.36,
+          "properties": {
+            "geocode": {
+              "name": "Charlottesville",
+              "admin1_region": "VA",
+              "country_code": "US"
+            }
+          },
+          "location": {
+            "lat": 38.029,
+            "lon": -78.477
+          },
+          "query": {
+            "affinity": 0.899,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.68
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.61
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.51
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "B41F6CC4-2A70-4FDA-A0C0-64643169DBAC",
+          "name": "Burlington",
+          "type": "urn:entity:locality",
+          "subtype": "urn:entity:locality:city",
+          "popularity": 0.36,
+          "properties": {
+            "geocode": {
+              "name": "Burlington",
+              "admin1_region": "VT",
+              "country_code": "US"
+            }
+          },
+          "location": {
+            "lat": 44.476,
+            "lon": -73.212
+          },
+          "query": {
+            "affinity": 0.893,
+            "explainability": {
+              "by_entity": {
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.69
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.55
+                },
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.47
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "9AD37427-02E0-4988-96D9-2A2728F6C51A",
+          "name": "Northampton",
+          "type": "urn:entity:locality",
+          "subtype": "urn:entity:locality:city",
+          "popularity": 0.3,
+          "properties": {
+            "geocode": {
+              "name": "Northampton",
+              "admin1_region": "MA",
+              "country_code": "US"
+            }
+          },
+          "location": {
+            "lat": 42.325,
+            "lon": -72.641
+          },
+          "query": {
+            "affinity": 0.887,
+            "explainability": {
+              "by_entity": {
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.71
+                },
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.59
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.53
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "3E6DA49F-C611-4DF0-BDC3-D5269A19A797",
+          "name": "Philadelphia",
+          "type": "urn:entity:locality",
+          "subtype": "urn:entity:locality:city",
+          "popularity": 0.93,
+          "properties": {
+            "geocode": {
+              "name": "Philadelphia",
+              "admin1_region": "PA",
+              "country_code": "US"
+            }
+          },
+          "location": {
+            "lat": 39.953,
+            "lon": -75.165
+          },
+          "query": {
+            "affinity": 0.881,
+            "explainability": {
+              "by_entity": {
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.63
+                },
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.53
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.4
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "C29D96AE-F1C4-4502-93DB-193A963CD3F6",
+          "name": "Durham",
+          "type": "urn:entity:locality",
+          "subtype": "urn:entity:locality:city",
+          "popularity": 0.66,
+          "properties": {
+            "geocode": {
+              "name": "Durham",
+              "admin1_region": "NC",
+              "country_code": "US"
+            }
+          },
+          "location": {
+            "lat": 35.994,
+            "lon": -78.899
+          },
+          "query": {
+            "affinity": 0.874,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.64
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.56
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.45
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "ADBC1247-32F4-4C36-9D4C-C5AD366F8576",
+          "name": "Pittsburgh",
+          "type": "urn:entity:locality",
+          "subtype": "urn:entity:locality:city",
+          "popularity": 0.7,
+          "properties": {
+            "geocode": {
+              "name": "Pittsburgh",
+              "admin1_region": "PA",
+              "country_code": "US"
+            }
+          },
+          "location": {
+            "lat": 40.441,
+            "lon": -79.996
+          },
+          "query": {
+            "affinity": 0.869,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.66
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.51
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.42
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "A2E17860-5E9F-45CE-ADCB-27399A13BEED",
+          "name": "Athens",
+          "type": "urn:entity:locality",
+          "subtype": "urn:entity:locality:city",
+          "popularity": 0.25,
+          "properties": {
+            "geocode": {
+              "name": "Athens",
+              "admin1_region": "OH",
+              "country_code": "US"
+            }
+          },
+          "location": {
+            "lat": 39.329,
+            "lon": -82.101
+          },
+          "query": {
+            "affinity": 0.862,
+            "explainability": {
+              "by_entity": {
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.67
+                },
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.54
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.47
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "6CDABEE7-97D2-4ADE-A6DD-A6E4FF89CD02",
+          "name": "Louisville",
+          "type": "urn:entity:locality",
+          "subtype": "urn:entity:locality:city",
+          "popularity": 0.78,
+          "properties": {
+            "geocode": {
+              "name": "Louisville",
+              "admin1_region": "KY",
+              "country_code": "US"
+            }
+          },
+          "location": {
+            "lat": 38.253,
+            "lon": -85.759
+          },
+          "query": {
+            "affinity": 0.857,
+            "explainability": {
+              "by_entity": {
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.69
+                },
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.58
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.44
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "E1B8E632-F2A1-460F-A1DC-D051565A0F52",
+          "name": "Knoxville",
+          "type": "urn:entity:locality",
+          "subtype": "urn:entity:locality:city",
+          "popularity": 0.58,
+          "properties": {
+            "geocode": {
+              "name": "Knoxville",
+              "admin1_region": "TN",
+              "country_code": "US"
+            }
+          },
+          "location": {
+            "lat": 35.961,
+            "lon": -83.921
+          },
+          "query": {
+            "affinity": 0.851,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.61
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.52
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.4
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "239107F1-26CE-4F51-B7A8-0C241B0B342B",
+          "name": "Harrisonburg",
+          "type": "urn:entity:locality",
+          "subtype": "urn:entity:locality:city",
+          "popularity": 0.33,
+          "properties": {
+            "geocode": {
+              "name": "Harrisonburg",
+              "admin1_region": "VA",
+              "country_code": "US"
+            }
+          },
+          "location": {
+            "lat": 38.45,
+            "lon": -78.869
+          },
+          "query": {
+            "affinity": 0.846,
+            "explainability": {
+              "by_entity": {
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.63
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.56
+                },
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.46
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "38EC53D8-E752-494C-AA79-74F9B3293166",
+          "name": "Ithaca",
+          "type": "urn:entity:locality",
+          "subtype": "urn:entity:locality:city",
+          "popularity": 0.31,
+          "properties": {
+            "geocode": {
+              "name": "Ithaca",
+              "admin1_region": "NY",
+              "country_code": "US"
+            }
+          },
+          "location": {
+            "lat": 42.444,
+            "lon": -76.502
+          },
+          "query": {
+            "affinity": 0.84,
+            "explainability": {
+              "by_entity": {
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.64
+                },
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.5
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.42
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "308C62B1-50D0-4C0E-A054-FA0EEC865D68",
+          "name": "Columbus",
+          "type": "urn:entity:locality",
+          "subtype": "urn:entity:locality:city",
+          "popularity": 0.84,
+          "properties": {
+            "geocode": {
+              "name": "Columbus",
+              "admin1_region": "OH",
+              "country_code": "US"
+            }
+          },
+          "location": {
+            "lat": 39.961,
+            "lon": -82.999
+          },
+          "query": {
+            "affinity": 0.835,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.65
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.53
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.47
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "BB63F67A-5635-4BE4-9492-232FD8900294",
+          "name": "Nashville",
+          "type": "urn:entity:locality",
+          "subtype": "urn:entity:locality:city",
+          "popularity": 0.86,
+          "properties": {
+            "geocode": {
+              "name": "Nashville",
+              "admin1_region": "TN",
+              "country_code": "US"
+            }
+          },
+          "location": {
+            "lat": 36.163,
+            "lon": -86.782
+          },
+          "query": {
+            "affinity": 0.829,
+            "explainability": {
+              "by_entity": {
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.58
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.48
+                },
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.35
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "8D9B8EFD-863A-4377-B5AA-36B73B6ADFC2",
+          "name": "Portland",
+          "type": "urn:entity:locality",
+          "subtype": "urn:entity:locality:city",
+          "popularity": 0.44,
+          "properties": {
+            "geocode": {
+              "name": "Portland",
+              "admin1_region": "ME",
+              "country_code": "US"
+            }
+          },
+          "location": {
+            "lat": 43.659,
+            "lon": -70.257
+          },
+          "query": {
+            "affinity": 0.824,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.59
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.51
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.4
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "BEF2C11B-A92B-4CEA-8B83-1C42D2BD3CEE",
+          "name": "Lexington",
+          "type": "urn:entity:locality",
+          "subtype": "urn:entity:locality:city",
+          "popularity": 0.64,
+          "properties": {
+            "geocode": {
+              "name": "Lexington",
+              "admin1_region": "KY",
+              "country_code": "US"
+            }
+          },
+          "location": {
+            "lat": 38.041,
+            "lon": -84.504
+          },
+          "query": {
+            "affinity": 0.818,
+            "explainability": {
+              "by_entity": {
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.61
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.46
+                },
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.37
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "6778B77B-981F-4039-B94D-F656F0B23C7D",
+          "name": "Wilmington",
+          "type": "urn:entity:locality",
+          "subtype": "urn:entity:locality:city",
+          "popularity": 0.47,
+          "properties": {
+            "geocode": {
+              "name": "Wilmington",
+              "admin1_region": "NC",
+              "country_code": "US"
+            }
+          },
+          "location": {
+            "lat": 34.226,
+            "lon": -77.945
+          },
+          "query": {
+            "affinity": 0.812,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.62
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.49
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.42
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "F48396FA-F82C-46F0-95DC-24279202FC74",
+          "name": "Baltimore",
+          "type": "urn:entity:locality",
+          "subtype": "urn:entity:locality:city",
+          "popularity": 0.78,
+          "properties": {
+            "geocode": {
+              "name": "Baltimore",
+              "admin1_region": "MD",
+              "country_code": "US"
+            }
+          },
+          "location": {
+            "lat": 39.29,
+            "lon": -76.612
+          },
+          "query": {
+            "affinity": 0.807,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.64
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.53
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.39
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "BC5A60FF-055F-4E3B-9FA9-C72EE5B5A6F3",
+          "name": "Washington",
+          "type": "urn:entity:locality",
+          "subtype": "urn:entity:locality:city",
+          "popularity": 0.9,
+          "properties": {
+            "geocode": {
+              "name": "Washington",
+              "admin1_region": "DC",
+              "country_code": "US"
+            }
+          },
+          "location": {
+            "lat": 38.907,
+            "lon": -77.037
+          },
+          "query": {
+            "affinity": 0.802,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.56
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.47
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.35
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "74AD9677-51CB-4B19-9412-8C27883F14AA",
+          "name": "Chicago",
+          "type": "urn:entity:locality",
+          "subtype": "urn:entity:locality:city",
+          "popularity": 0.95,
+          "properties": {
+            "geocode": {
+              "name": "Chicago",
+              "admin1_region": "IL",
+              "country_code": "US"
+            }
+          },
+          "location": {
+            "lat": 41.878,
+            "lon": -87.63
+          },
+          "query": {
+            "affinity": 0.797,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.58
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.51
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.41
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "40A0A66F-D633-4623-8D81-267D879ABE68",
+          "name": "Brooklyn",
+          "type": "urn:entity:locality",
+          "subtype": "urn:entity:locality:city",
+          "popularity": 0.94,
+          "properties": {
+            "geocode": {
+              "name": "Brooklyn",
+              "admin1_region": "NY",
+              "country_code": "US"
+            }
+          },
+          "location": {
+            "lat": 40.678,
+            "lon": -73.944
+          },
+          "query": {
+            "affinity": 0.792,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.59
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.45
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.37
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "43B90ECB-22F8-41ED-96EC-160133D37A8B",
+          "name": "Austin",
+          "type": "urn:entity:locality",
+          "subtype": "urn:entity:locality:city",
+          "popularity": 0.89,
+          "properties": {
+            "geocode": {
+              "name": "Austin",
+              "admin1_region": "TX",
+              "country_code": "US"
+            }
+          },
+          "location": {
+            "lat": 30.267,
+            "lon": -97.743
+          },
+          "query": {
+            "affinity": 0.787,
+            "explainability": {
+              "by_entity": {
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.61
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.49
+                },
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.43
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "E8557E9D-2A9E-43FE-A77C-25A25E57970A",
+          "name": "Charleston",
+          "type": "urn:entity:locality",
+          "subtype": "urn:entity:locality:city",
+          "popularity": 0.56,
+          "properties": {
+            "geocode": {
+              "name": "Charleston",
+              "admin1_region": "SC",
+              "country_code": "US"
+            }
+          },
+          "location": {
+            "lat": 32.776,
+            "lon": -79.931
+          },
+          "query": {
+            "affinity": 0.781,
+            "explainability": {
+              "by_entity": {
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.53
+                },
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.43
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.3
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "B4234763-96AE-4C17-9FF8-0B9E22F5ED32",
+          "name": "Savannah",
+          "type": "urn:entity:locality",
+          "subtype": "urn:entity:locality:city",
+          "popularity": 0.53,
+          "properties": {
+            "geocode": {
+              "name": "Savannah",
+              "admin1_region": "GA",
+              "country_code": "US"
+            }
+          },
+          "location": {
+            "lat": 32.081,
+            "lon": -81.091
+          },
+          "query": {
+            "affinity": 0.776,
+            "explainability": {
+              "by_entity": {
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.55
+                },
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.47
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.36
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "8C5746AD-D03D-402A-B366-2EB8901E7CD8",
+          "name": "Lancaster",
+          "type": "urn:entity:locality",
+          "subtype": "urn:entity:locality:city",
+          "popularity": 0.37,
+          "properties": {
+            "geocode": {
+              "name": "Lancaster",
+              "admin1_region": "PA",
+              "country_code": "US"
+            }
+          },
+          "location": {
+            "lat": 40.038,
+            "lon": -76.306
+          },
+          "query": {
+            "affinity": 0.771,
+            "explainability": {
+              "by_entity": {
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.56
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.41
+                },
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.32
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "C666B8E2-24DB-4F22-8F2D-5C2C75EFDD0E",
+          "name": "Boone",
+          "type": "urn:entity:locality",
+          "subtype": "urn:entity:locality:city",
+          "popularity": 0.23,
+          "properties": {
+            "geocode": {
+              "name": "Boone",
+              "admin1_region": "NC",
+              "country_code": "US"
+            }
+          },
+          "location": {
+            "lat": 36.217,
+            "lon": -81.675
+          },
+          "query": {
+            "affinity": 0.766,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.58
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.45
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.38
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "63B8A564-3976-4699-B68B-B63CB810563B",
+          "name": "Hudson",
+          "type": "urn:entity:locality",
+          "subtype": "urn:entity:locality:city",
+          "popularity": 0.2,
+          "properties": {
+            "geocode": {
+              "name": "Hudson",
+              "admin1_region": "NY",
+              "country_code": "US"
+            }
+          },
+          "location": {
+            "lat": 42.253,
+            "lon": -73.791
+          },
+          "query": {
+            "affinity": 0.761,
+            "explainability": {
+              "by_entity": {
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.59
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.48
+                },
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.34
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "C0E7D491-F6BD-4C80-BC54-23FF151B0941",
+          "name": "Cincinnati",
+          "type": "urn:entity:locality",
+          "subtype": "urn:entity:locality:city",
+          "popularity": 0.7,
+          "properties": {
+            "geocode": {
+              "name": "Cincinnati",
+              "admin1_region": "OH",
+              "country_code": "US"
+            }
+          },
+          "location": {
+            "lat": 39.103,
+            "lon": -84.512
+          },
+          "query": {
+            "affinity": 0.755,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.51
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.42
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.3
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "E9F49EEB-47B7-4DA2-A12E-ACD71E321E62",
+          "name": "Minneapolis",
+          "type": "urn:entity:locality",
+          "subtype": "urn:entity:locality:city",
+          "popularity": 0.76,
+          "properties": {
+            "geocode": {
+              "name": "Minneapolis",
+              "admin1_region": "MN",
+              "country_code": "US"
+            }
+          },
+          "location": {
+            "lat": 44.978,
+            "lon": -93.265
+          },
+          "query": {
+            "affinity": 0.75,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.53
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.46
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.36
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "14CA410A-EEDC-470A-A653-616102DC87C7",
+          "name": "Madison",
+          "type": "urn:entity:locality",
+          "subtype": "urn:entity:locality:city",
+          "popularity": 0.63,
+          "properties": {
+            "geocode": {
+              "name": "Madison",
+              "admin1_region": "WI",
+              "country_code": "US"
+            }
+          },
+          "location": {
+            "lat": 43.073,
+            "lon": -89.401
+          },
+          "query": {
+            "affinity": 0.745,
+            "explainability": {
+              "by_entity": {
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.54
+                },
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.4
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.32
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "30AE6FFC-9C69-40E1-B3D8-4F3AE5EF16CF",
+          "name": "Ann Arbor",
+          "type": "urn:entity:locality",
+          "subtype": "urn:entity:locality:city",
+          "popularity": 0.49,
+          "properties": {
+            "geocode": {
+              "name": "Ann Arbor",
+              "admin1_region": "MI",
+              "country_code": "US"
+            }
+          },
+          "location": {
+            "lat": 42.281,
+            "lon": -83.743
+          },
+          "query": {
+            "affinity": 0.74,
+            "explainability": {
+              "by_entity": {
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.56
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.44
+                },
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.38
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "B73A5919-CC8E-4AE5-BE37-1AFF8C121A55",
+          "name": "Grand Rapids",
+          "type": "urn:entity:locality",
+          "subtype": "urn:entity:locality:city",
+          "popularity": 0.57,
+          "properties": {
+            "geocode": {
+              "name": "Grand Rapids",
+              "admin1_region": "MI",
+              "country_code": "US"
+            }
+          },
+          "location": {
+            "lat": 42.963,
+            "lon": -85.668
+          },
+          "query": {
+            "affinity": 0.734,
+            "explainability": {
+              "by_entity": {
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.48
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.38
+                },
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.25
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "09D82534-1914-489D-85F8-BE15E786CEBC",
+          "name": "Portland",
+          "type": "urn:entity:locality",
+          "subtype": "urn:entity:locality:city",
+          "popularity": 0.84,
+          "properties": {
+            "geocode": {
+              "name": "Portland",
+              "admin1_region": "OR",
+              "country_code": "US"
+            }
+          },
+          "location": {
+            "lat": 45.515,
+            "lon": -122.678
+          },
+          "query": {
+            "affinity": 0.729,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.5
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.42
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.31
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "B87C56DB-9154-4922-B8FC-D286CFABE71F",
+          "name": "Seattle",
+          "type": "urn:entity:locality",
+          "subtype": "urn:entity:locality:city",
+          "popularity": 0.88,
+          "properties": {
+            "geocode": {
+              "name": "Seattle",
+              "admin1_region": "WA",
+              "country_code": "US"
+            }
+          },
+          "location": {
+            "lat": 47.606,
+            "lon": -122.332
+          },
+          "query": {
+            "affinity": 0.724,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.51
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.36
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.27
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "E430A31C-8E9C-4DDA-BB76-EF171BF9E732",
+          "name": "Denver",
+          "type": "urn:entity:locality",
+          "subtype": "urn:entity:locality:city",
+          "popularity": 0.87,
+          "properties": {
+            "geocode": {
+              "name": "Denver",
+              "admin1_region": "CO",
+              "country_code": "US"
+            }
+          },
+          "location": {
+            "lat": 39.739,
+            "lon": -104.99
+          },
+          "query": {
+            "affinity": 0.719,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.53
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.4
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.33
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "D4CB670C-6E0D-416B-BE09-8D8F3AC42069",
+          "name": "Fort Collins",
+          "type": "urn:entity:locality",
+          "subtype": "urn:entity:locality:city",
+          "popularity": 0.52,
+          "properties": {
+            "geocode": {
+              "name": "Fort Collins",
+              "admin1_region": "CO",
+              "country_code": "US"
+            }
+          },
+          "location": {
+            "lat": 40.585,
+            "lon": -105.084
+          },
+          "query": {
+            "affinity": 0.713,
+            "explainability": {
+              "by_entity": {
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.54
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.43
+                },
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.29
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "981D9467-5169-440D-AC87-37E2EDA65077",
+          "name": "Missoula",
+          "type": "urn:entity:locality",
+          "subtype": "urn:entity:locality:city",
+          "popularity": 0.4,
+          "properties": {
+            "geocode": {
+              "name": "Missoula",
+              "admin1_region": "MT",
+              "country_code": "US"
+            }
+          },
+          "location": {
+            "lat": 46.872,
+            "lon": -113.994
+          },
+          "query": {
+            "affinity": 0.708,
+            "explainability": {
+              "by_entity": {
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.47
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.38
+                },
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.26
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "0A56845E-B58A-428B-9854-028B8B88B341",
+          "name": "Boise",
+          "type": "urn:entity:locality",
+          "subtype": "urn:entity:locality:city",
+          "popularity": 0.6,
+          "properties": {
+            "geocode": {
+              "name": "Boise",
+              "admin1_region": "ID",
+              "country_code": "US"
+            }
+          },
+          "location": {
+            "lat": 43.615,
+            "lon": -116.202
+          },
+          "query": {
+            "affinity": 0.703,
+            "explainability": {
+              "by_entity": {
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.48
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.41
+                },
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.31
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "3304972B-CD84-4913-A448-397583155252",
+          "name": "Los Angeles",
+          "type": "urn:entity:locality",
+          "subtype": "urn:entity:locality:city",
+          "popularity": 0.95,
+          "properties": {
+            "geocode": {
+              "name": "Los Angeles",
+              "admin1_region": "CA",
+              "country_code": "US"
+            }
+          },
+          "location": {
+            "lat": 34.052,
+            "lon": -118.244
+          },
+          "query": {
+            "affinity": 0.698,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.5
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.36
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.28
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "4D95EF62-582D-41B5-BBBC-13A4C87C6A02",
+          "name": "Oakland",
+          "type": "urn:entity:locality",
+          "subtype": "urn:entity:locality:city",
+          "popularity": 0.72,
+          "properties": {
+            "geocode": {
+              "name": "Oakland",
+              "admin1_region": "CA",
+              "country_code": "US"
+            }
+          },
+          "location": {
+            "lat": 37.804,
+            "lon": -122.271
+          },
+          "query": {
+            "affinity": 0.692,
+            "explainability": {
+              "by_entity": {
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.51
+                },
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.39
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.33
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "3815E4A5-6CFE-4849-8E50-4ECD18F22899",
+          "name": "Santa Cruz",
+          "type": "urn:entity:locality",
+          "subtype": "urn:entity:locality:city",
+          "popularity": 0.41,
+          "properties": {
+            "geocode": {
+              "name": "Santa Cruz",
+              "admin1_region": "CA",
+              "country_code": "US"
+            }
+          },
+          "location": {
+            "lat": 36.974,
+            "lon": -122.031
+          },
+          "query": {
+            "affinity": 0.687,
+            "explainability": {
+              "by_entity": {
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.44
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.34
+                },
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.21
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "1B6C9A88-5A06-4A2D-98C5-17307E996F19",
+          "name": "Tucson",
+          "type": "urn:entity:locality",
+          "subtype": "urn:entity:locality:city",
+          "popularity": 0.73,
+          "properties": {
+            "geocode": {
+              "name": "Tucson",
+              "admin1_region": "AZ",
+              "country_code": "US"
+            }
+          },
+          "location": {
+            "lat": 32.223,
+            "lon": -110.975
+          },
+          "query": {
+            "affinity": 0.682,
+            "explainability": {
+              "by_entity": {
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.45
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.37
+                },
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.26
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "D6A869F0-D648-4AC4-BDE3-CD3114207DCF",
+          "name": "New Orleans",
+          "type": "urn:entity:locality",
+          "subtype": "urn:entity:locality:city",
+          "popularity": 0.77,
+          "properties": {
+            "geocode": {
+              "name": "New Orleans",
+              "admin1_region": "LA",
+              "country_code": "US"
+            }
+          },
+          "location": {
+            "lat": 29.951,
+            "lon": -90.072
+          },
+          "query": {
+            "affinity": 0.677,
+            "explainability": {
+              "by_entity": {
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.47
+                },
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.32
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.23
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "EF4D973F-9099-4850-A87F-850778975E36",
+          "name": "Birmingham",
+          "type": "urn:entity:locality",
+          "subtype": "urn:entity:locality:city",
+          "popularity": 0.58,
+          "properties": {
+            "geocode": {
+              "name": "Birmingham",
+              "admin1_region": "AL",
+              "country_code": "US"
+            }
+          },
+          "location": {
+            "lat": 33.519,
+            "lon": -86.81
+          },
+          "query": {
+            "affinity": 0.671,
+            "explainability": {
+              "by_entity": {
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.48
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.35
+                },
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.28
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "85B5854D-E43A-4EC7-9B9D-1E4BD94AEAF6",
+          "name": "Saint Louis",
+          "type": "urn:entity:locality",
+          "subtype": "urn:entity:locality:city",
+          "popularity": 0.69,
+          "properties": {
+            "geocode": {
+              "name": "Saint Louis",
+              "admin1_region": "MO",
+              "country_code": "US"
+            }
+          },
+          "location": {
+            "lat": 38.627,
+            "lon": -90.199
+          },
+          "query": {
+            "affinity": 0.666,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.5
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.39
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.25
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "AE43B5F9-600C-46E4-B3F2-9600F8970298",
+          "name": "Lawrence",
+          "type": "urn:entity:locality",
+          "subtype": "urn:entity:locality:city",
+          "popularity": 0.43,
+          "properties": {
+            "geocode": {
+              "name": "Lawrence",
+              "admin1_region": "KS",
+              "country_code": "US"
+            }
+          },
+          "location": {
+            "lat": 38.972,
+            "lon": -95.235
+          },
+          "query": {
+            "affinity": 0.661,
+            "explainability": {
+              "by_entity": {
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.42
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.33
+                },
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.21
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "5FE0670E-041E-417E-BB71-3D440D3B2640",
+          "name": "Omaha",
+          "type": "urn:entity:locality",
+          "subtype": "urn:entity:locality:city",
+          "popularity": 0.72,
+          "properties": {
+            "geocode": {
+              "name": "Omaha",
+              "admin1_region": "NE",
+              "country_code": "US"
+            }
+          },
+          "location": {
+            "lat": 41.257,
+            "lon": -95.935
+          },
+          "query": {
+            "affinity": 0.655,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.44
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.37
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.27
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

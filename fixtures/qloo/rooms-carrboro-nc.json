@@ -1,0 +1,417 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_rooms",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?feature.explainability=true&filter.location.query=Carrboro%2C%20NC&filter.location.radius=15000&filter.tags=urn%3Atag%3Acategory%3Aplace%3Alive_music_venue%2Curn%3Atag%3Agenre%3Aplace%3Abar%3Alive_music%2Curn%3Atag%3Agenre%3Aplace%3Aconcert_hall%2Curn%3Atag%3Agenre%3Aplace%3Amusic_venue&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=8",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Carrboro, NC",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:category:place:live_music_venue,urn:tag:genre:place:bar:live_music,urn:tag:genre:place:concert_hall,urn:tag:genre:place:music_venue",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "sort_by": "affinity",
+      "take": 8,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "469A6A88-DD68-441B-A8D4-B2A7EFBE67C0",
+          "name": "Cat's Cradle",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:music_venue",
+          "popularity": 0.88,
+          "properties": {
+            "description": "The Triangle's landmark 750-cap indie room since 1969, where touring folk and indie acts play the main stage.",
+            "address": "300 E Main St, Carrboro, NC 27510",
+            "geocode": {
+              "name": "Carrboro",
+              "city": "Carrboro",
+              "admin1_region": "North Carolina",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Music Venue",
+              "tag_id": "urn:tag:genre:place:music_venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Live Music Venue",
+              "tag_id": "urn:tag:category:place:live_music_venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.93,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.78
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.66
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.6
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "8680D88A-66C6-4D92-AE27-C876C140729F",
+          "name": "Cat's Cradle Back Room",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:music_venue",
+          "popularity": 0.74,
+          "properties": {
+            "description": "The Cradle's 300-cap side room, a natural first Carrboro stop for quieter singer-songwriter bills.",
+            "address": "300 E Main St, Carrboro, NC 27510",
+            "geocode": {
+              "name": "Carrboro",
+              "city": "Carrboro",
+              "admin1_region": "North Carolina",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Music Venue",
+              "tag_id": "urn:tag:genre:place:music_venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Live Music Venue",
+              "tag_id": "urn:tag:category:place:live_music_venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.89,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.72
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.68
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.64
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "2E1D0D37-BEA1-44E7-AB53-03B026A9BCD5",
+          "name": "Local 506",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:music_venue",
+          "popularity": 0.66,
+          "properties": {
+            "description": "A 250-cap club on West Franklin that books indie, folk, and punk shows most nights of the week.",
+            "address": "506 W Franklin St, Chapel Hill, NC 27516",
+            "geocode": {
+              "name": "Chapel Hill",
+              "city": "Chapel Hill",
+              "admin1_region": "North Carolina",
+              "country_code": "US"
+            },
+            "business_rating": 4.4,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Music Venue",
+              "tag_id": "urn:tag:genre:place:music_venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Live Music Bar",
+              "tag_id": "urn:tag:genre:place:bar:live_music",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.85,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.66
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.7
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.52
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "29A90A41-E2F2-4C64-BBB3-6D6CC2A79E07",
+          "name": "The ArtsCenter",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:concert_hall",
+          "popularity": 0.58,
+          "properties": {
+            "description": "Carrboro's nonprofit arts hall with a seated listening-room theater that suits acoustic and folk sets.",
+            "address": "400 Roberson St, Carrboro, NC 27510",
+            "geocode": {
+              "name": "Carrboro",
+              "city": "Carrboro",
+              "admin1_region": "North Carolina",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Concert Hall",
+              "tag_id": "urn:tag:genre:place:concert_hall",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Live Music Venue",
+              "tag_id": "urn:tag:category:place:live_music_venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.81,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.6
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.58
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.72
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "C8EBB1E7-C83D-43D6-AAF9-669D6C5B68C0",
+          "name": "The Cave",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:bar",
+          "popularity": 0.55,
+          "properties": {
+            "description": "A basement bar on Franklin Street that has hosted intimate local and touring shows for decades.",
+            "address": "452 1/2 W Franklin St, Chapel Hill, NC 27516",
+            "geocode": {
+              "name": "Chapel Hill",
+              "city": "Chapel Hill",
+              "admin1_region": "North Carolina",
+              "country_code": "US"
+            },
+            "business_rating": 4.3,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Live Music Bar",
+              "tag_id": "urn:tag:genre:place:bar:live_music",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Music Venue",
+              "tag_id": "urn:tag:genre:place:music_venue",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.76,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.58
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.62
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.5
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "15C7BE69-694B-4D48-A6EE-3DA1E1F1C9F5",
+          "name": "Memorial Hall",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:concert_hall",
+          "popularity": 0.62,
+          "properties": {
+            "description": "UNC's 1,400-seat performing arts hall, the step-up room when a Carrboro show outgrows the clubs.",
+            "address": "114 E Cameron Ave, Chapel Hill, NC 27514",
+            "geocode": {
+              "name": "Chapel Hill",
+              "city": "Chapel Hill",
+              "admin1_region": "North Carolina",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 3
+          },
+          "tags": [
+            {
+              "name": "Concert Hall",
+              "tag_id": "urn:tag:genre:place:concert_hall",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.71,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.55
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.46
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.6
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "F033F4E3-A650-4897-9EAC-BCCB803DA746",
+          "name": "Steel String Brewery",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:bar",
+          "popularity": 0.49,
+          "properties": {
+            "description": "A neighborhood taproom off Main Street with a small stage for local bluegrass, folk, and songwriter nights.",
+            "address": "106 S Greensboro St, Carrboro, NC 27510",
+            "geocode": {
+              "name": "Carrboro",
+              "city": "Carrboro",
+              "admin1_region": "North Carolina",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Live Music Bar",
+              "tag_id": "urn:tag:genre:place:bar:live_music",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.66,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.5
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.56
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.42
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "3CBE31DB-35E4-4669-B60C-3AB3D08D4A5D",
+          "name": "Nightlight",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:music_venue",
+          "popularity": 0.41,
+          "properties": {
+            "description": "A small DIY-minded room near Rosemary Street known for experimental, folk, and bedroom-pop bills.",
+            "address": "405 1/2 W Rosemary St, Chapel Hill, NC 27516",
+            "geocode": {
+              "name": "Chapel Hill",
+              "city": "Chapel Hill",
+              "admin1_region": "North Carolina",
+              "country_code": "US"
+            },
+            "business_rating": 4.2,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Music Venue",
+              "tag_id": "urn:tag:genre:place:music_venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Live Music Bar",
+              "tag_id": "urn:tag:genre:place:bar:live_music",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.62,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.44
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.4
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.58
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

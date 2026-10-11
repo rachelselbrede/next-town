@@ -1,0 +1,427 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_rooms",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?feature.explainability=true&filter.location.query=Pittsburgh%2C%20PA&filter.location.radius=15000&filter.tags=urn%3Atag%3Acategory%3Aplace%3Alive_music_venue%2Curn%3Atag%3Agenre%3Aplace%3Abar%3Alive_music%2Curn%3Atag%3Agenre%3Aplace%3Aconcert_hall%2Curn%3Atag%3Agenre%3Aplace%3Amusic_venue&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=8",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Pittsburgh, PA",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:category:place:live_music_venue,urn:tag:genre:place:bar:live_music,urn:tag:genre:place:concert_hall,urn:tag:genre:place:music_venue",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "sort_by": "affinity",
+      "take": 8,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "FD45ACDD-F4E6-4BB1-B9F6-FFA3A845E532",
+          "name": "Mr. Smalls Theatre",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:music_venue",
+          "popularity": 0.82,
+          "properties": {
+            "description": "A converted church turned mid-size room in Millvale, long the first Pittsburgh stop for touring indie bands on the way up.",
+            "address": "400 Lincoln Ave, Millvale, PA 15209",
+            "geocode": {
+              "name": "Millvale",
+              "city": "Pittsburgh",
+              "admin1_region": "PA",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Music Venue",
+              "tag_id": "urn:tag:genre:place:music_venue",
+              "type": "urn:tag:genre"
+            },
+            {
+              "name": "Live Music Venue",
+              "tag_id": "urn:tag:category:place:live_music_venue",
+              "type": "urn:tag:category"
+            }
+          ],
+          "query": {
+            "affinity": 0.93,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.78
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.66
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.61
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "3AF93E6B-7BE7-458C-9CF6-CA83C4F16392",
+          "name": "Club Café",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:bar",
+          "popularity": 0.64,
+          "properties": {
+            "description": "An intimate seated listening room on the South Side built for songwriters, with the quietest audience in the city.",
+            "address": "56-58 S 12th St, Pittsburgh, PA 15203",
+            "geocode": {
+              "name": "South Side",
+              "city": "Pittsburgh",
+              "admin1_region": "PA",
+              "country_code": "US"
+            },
+            "business_rating": 4.4,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Bar with Live Music",
+              "tag_id": "urn:tag:genre:place:bar:live_music",
+              "type": "urn:tag:genre"
+            },
+            {
+              "name": "Music Venue",
+              "tag_id": "urn:tag:genre:place:music_venue",
+              "type": "urn:tag:genre"
+            }
+          ],
+          "query": {
+            "affinity": 0.89,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.62
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.74
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.69
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "40C7C8C2-A02B-4485-80F4-2785C5157484",
+          "name": "Thunderbird Café & Music Hall",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:music_venue",
+          "popularity": 0.71,
+          "properties": {
+            "description": "A two-level Lawrenceville hall with a big stage, a cafe out front, and a crowd that comes out for roots and indie-folk bills.",
+            "address": "4053 Butler St, Pittsburgh, PA 15201",
+            "geocode": {
+              "name": "Lawrenceville",
+              "city": "Pittsburgh",
+              "admin1_region": "PA",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Music Venue",
+              "tag_id": "urn:tag:genre:place:music_venue",
+              "type": "urn:tag:genre"
+            },
+            {
+              "name": "Live Music Venue",
+              "tag_id": "urn:tag:category:place:live_music_venue",
+              "type": "urn:tag:category"
+            }
+          ],
+          "query": {
+            "affinity": 0.86,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.71
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.58
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.55
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "BE622DDC-6473-402C-993C-8CF5AFE20D5A",
+          "name": "Spirit",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:bar",
+          "popularity": 0.6,
+          "properties": {
+            "description": "A former Moose lodge in Lawrenceville with a pizza counter downstairs and a sweaty, low-stage hall upstairs for indie shows.",
+            "address": "242 51st St, Pittsburgh, PA 15201",
+            "geocode": {
+              "name": "Lawrenceville",
+              "city": "Pittsburgh",
+              "admin1_region": "PA",
+              "country_code": "US"
+            },
+            "business_rating": 4.3,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Bar with Live Music",
+              "tag_id": "urn:tag:genre:place:bar:live_music",
+              "type": "urn:tag:genre"
+            },
+            {
+              "name": "Music Venue",
+              "tag_id": "urn:tag:genre:place:music_venue",
+              "type": "urn:tag:genre"
+            }
+          ],
+          "query": {
+            "affinity": 0.82,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.66
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.52
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.6
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "FDE10392-328B-452A-8392-D0072840DC1F",
+          "name": "Carnegie of Homestead Music Hall",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:concert_hall",
+          "popularity": 0.74,
+          "properties": {
+            "description": "A restored 1898 Carnegie library music hall with a thousand seats and warm acoustics, a step-up room for acts that have outgrown clubs.",
+            "address": "510 E 10th Ave, Munhall, PA 15120",
+            "geocode": {
+              "name": "Munhall",
+              "city": "Pittsburgh",
+              "admin1_region": "PA",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 3
+          },
+          "tags": [
+            {
+              "name": "Concert Hall",
+              "tag_id": "urn:tag:genre:place:concert_hall",
+              "type": "urn:tag:genre"
+            },
+            {
+              "name": "Live Music Venue",
+              "tag_id": "urn:tag:category:place:live_music_venue",
+              "type": "urn:tag:category"
+            }
+          ],
+          "query": {
+            "affinity": 0.77,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.58
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.49
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.47
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "8BEBE643-810A-4A37-B37D-4C66E5F63E1A",
+          "name": "Roxian Theatre",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:concert_hall",
+          "popularity": 0.69,
+          "properties": {
+            "description": "A 1929 movie palace in McKees Rocks reopened as a standing-room theater that books indie headliners on their second or third pass through town.",
+            "address": "425 Chartiers Ave, McKees Rocks, PA 15136",
+            "geocode": {
+              "name": "McKees Rocks",
+              "city": "Pittsburgh",
+              "admin1_region": "PA",
+              "country_code": "US"
+            },
+            "business_rating": 4.4,
+            "price_level": 3
+          },
+          "tags": [
+            {
+              "name": "Concert Hall",
+              "tag_id": "urn:tag:genre:place:concert_hall",
+              "type": "urn:tag:genre"
+            },
+            {
+              "name": "Music Venue",
+              "tag_id": "urn:tag:genre:place:music_venue",
+              "type": "urn:tag:genre"
+            }
+          ],
+          "query": {
+            "affinity": 0.72,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.55
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.44
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.41
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "594A62B8-6462-4B18-9F43-767616D2CEFB",
+          "name": "Mr. Roboto Project",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:music_venue",
+          "popularity": 0.38,
+          "properties": {
+            "description": "A volunteer-run, all-ages DIY space on Penn Avenue where a lot of Pittsburgh bands played their first show.",
+            "address": "5106 Penn Ave, Pittsburgh, PA 15224",
+            "geocode": {
+              "name": "Garfield",
+              "city": "Pittsburgh",
+              "admin1_region": "PA",
+              "country_code": "US"
+            },
+            "business_rating": 4.2,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Music Venue",
+              "tag_id": "urn:tag:genre:place:music_venue",
+              "type": "urn:tag:genre"
+            },
+            {
+              "name": "Live Music Venue",
+              "tag_id": "urn:tag:category:place:live_music_venue",
+              "type": "urn:tag:category"
+            }
+          ],
+          "query": {
+            "affinity": 0.67,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.49
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.41
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.52
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "B1A6B41B-852D-491F-B74C-2D96D4476C9E",
+          "name": "Trace Brewing",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:bar",
+          "popularity": 0.46,
+          "properties": {
+            "description": "A Bloomfield brewery with a small corner stage and a patio that hosts low-key acoustic and indie shows on weekends.",
+            "address": "4312 Main St, Pittsburgh, PA 15224",
+            "geocode": {
+              "name": "Bloomfield",
+              "city": "Pittsburgh",
+              "admin1_region": "PA",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Bar with Live Music",
+              "tag_id": "urn:tag:genre:place:bar:live_music",
+              "type": "urn:tag:genre"
+            },
+            {
+              "name": "Bar",
+              "tag_id": "urn:tag:genre:place:bar",
+              "type": "urn:tag:genre"
+            }
+          ],
+          "query": {
+            "affinity": 0.62,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.4
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.46
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.37
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

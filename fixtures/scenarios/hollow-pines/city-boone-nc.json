@@ -1,0 +1,720 @@
+{
+  "city": "Boone, NC",
+  "home": "Richmond, VA",
+  "comps": [
+    {
+      "id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+      "name": "Big Thief",
+      "type": "urn:entity:artist",
+      "popularity": 0.93
+    },
+    {
+      "id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+      "name": "Waxahatchee",
+      "type": "urn:entity:artist",
+      "popularity": 0.88
+    },
+    {
+      "id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "name": "Adrianne Lenker",
+      "type": "urn:entity:artist",
+      "popularity": 0.85
+    }
+  ],
+  "rooms": [
+    {
+      "id": "A1557D37-06D2-4CD7-BEE2-17E95BF6F0D5",
+      "name": "Boone Saloon",
+      "type": "urn:entity:place",
+      "subtype": "urn:entity:place:live_music_bar",
+      "affinity": 0.91,
+      "popularity": 0.52,
+      "rating": 4.6,
+      "price_level": 1,
+      "address": "489 W King St, Boone, NC 28607",
+      "city": "Boone",
+      "description": "King Street bar with the town's steadiest live calendar; touring folk acts play upstairs.",
+      "tags": [
+        "Live Music Bar"
+      ],
+      "why": [
+        "Big Thief (78%)",
+        "Waxahatchee (71%)",
+        "Adrianne Lenker (64%)"
+      ]
+    },
+    {
+      "id": "3FD000D6-C7FF-458D-B872-9E83ECE788D8",
+      "name": "Appalachian Theatre of the High Country",
+      "type": "urn:entity:place",
+      "subtype": "urn:entity:place:concert_hall",
+      "affinity": 0.87,
+      "popularity": 0.54,
+      "rating": 4.3,
+      "price_level": 1,
+      "address": "559 W King St, Boone, NC 28607",
+      "city": "Boone",
+      "description": "Restored 1938 theatre downtown; the seated room when a bar show is too small.",
+      "tags": [
+        "Concert Hall"
+      ],
+      "why": [
+        "Big Thief (71%)",
+        "Waxahatchee (70%)",
+        "Adrianne Lenker (60%)"
+      ]
+    },
+    {
+      "id": "81660ABD-C459-4CDA-B9A4-5093539F9B7D",
+      "name": "Lily's Snack Bar",
+      "type": "urn:entity:place",
+      "subtype": "urn:entity:place:live_music_bar",
+      "affinity": 0.84,
+      "popularity": 0.57,
+      "rating": 4.56,
+      "price_level": 1,
+      "address": "455 Blowing Rock Rd, Boone, NC 28607",
+      "city": "Boone",
+      "description": "Small bar and patio near campus with weekend sets.",
+      "tags": [
+        "Live Music Bar"
+      ],
+      "why": [
+        "Big Thief (69%)",
+        "Waxahatchee (64%)",
+        "Adrianne Lenker (56%)"
+      ]
+    },
+    {
+      "id": "BF58B435-81EB-403E-8831-030F6A20C099",
+      "name": "The Cardinal",
+      "type": "urn:entity:place",
+      "subtype": "urn:entity:place:live_music_bar",
+      "affinity": 0.8,
+      "popularity": 0.54,
+      "rating": 4.77,
+      "price_level": 1,
+      "address": "1711 US-421, Boone, NC 28607",
+      "city": "Boone",
+      "description": "Roadhouse-style bar with a stage and a crowd that comes for the band.",
+      "tags": [
+        "Live Music Bar"
+      ],
+      "why": [
+        "Big Thief (64%)",
+        "Waxahatchee (61%)",
+        "Adrianne Lenker (54%)"
+      ]
+    },
+    {
+      "id": "99BBC53D-37D6-46AE-86DE-F03311E32ADD",
+      "name": "Lost Province Brewing Co.",
+      "type": "urn:entity:place",
+      "subtype": "urn:entity:place:music_venue",
+      "affinity": 0.76,
+      "popularity": 0.59,
+      "rating": 4.32,
+      "price_level": 2,
+      "address": "130 N Depot St, Boone, NC 28607",
+      "city": "Boone",
+      "description": "Downtown brewery with a stage and an early, all-ages room.",
+      "tags": [
+        "Music Venue",
+        "Live Music Venue"
+      ],
+      "why": [
+        "Big Thief (65%)",
+        "Waxahatchee (57%)",
+        "Adrianne Lenker (51%)"
+      ]
+    },
+    {
+      "id": "4197D3B3-EBC7-40DE-90E3-C239650F7C8D",
+      "name": "Ransom Pub",
+      "type": "urn:entity:place",
+      "subtype": "urn:entity:place:live_music_bar",
+      "affinity": 0.73,
+      "popularity": 0.64,
+      "rating": 4.21,
+      "price_level": 2,
+      "address": "689 W King St, Boone, NC 28607",
+      "city": "Boone",
+      "description": "Gastropub on King Street with acoustic nights.",
+      "tags": [
+        "Live Music Bar"
+      ],
+      "why": [
+        "Big Thief (61%)",
+        "Waxahatchee (52%)",
+        "Adrianne Lenker (48%)"
+      ]
+    },
+    {
+      "id": "7B83FE24-103F-44E0-95DF-EE5DAA49FEBF",
+      "name": "Legends",
+      "type": "urn:entity:place",
+      "subtype": "urn:entity:place:music_venue",
+      "affinity": 0.7,
+      "popularity": 0.55,
+      "rating": 4.85,
+      "price_level": 1,
+      "address": "263 Locust St, Boone, NC 28608",
+      "city": "Boone",
+      "description": "App State's student-run club; the bigger room for a college-town night.",
+      "tags": [
+        "Music Venue",
+        "Live Music Venue"
+      ],
+      "why": [
+        "Big Thief (57%)",
+        "Waxahatchee (51%)",
+        "Adrianne Lenker (43%)"
+      ]
+    },
+    {
+      "id": "26DF9FD9-E95D-4260-99AF-C4B523AC6AE0",
+      "name": "Booneshine Brewing",
+      "type": "urn:entity:place",
+      "subtype": "urn:entity:place:music_venue",
+      "affinity": 0.67,
+      "popularity": 0.47,
+      "rating": 4.68,
+      "price_level": 1,
+      "address": "465 Industrial Park Dr, Boone, NC 28607",
+      "city": "Boone",
+      "description": "Brewery with an outdoor stage on the edge of town.",
+      "tags": [
+        "Music Venue",
+        "Live Music Venue"
+      ],
+      "why": [
+        "Big Thief (53%)",
+        "Waxahatchee (48%)",
+        "Adrianne Lenker (40%)"
+      ]
+    }
+  ],
+  "promo": [
+    {
+      "kind": "record store",
+      "places": [
+        {
+          "id": "34308E89-265A-47CE-8C90-CB368426D864",
+          "name": "Doc's Record Barn",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:record_store",
+          "affinity": 0.89,
+          "popularity": 0.5,
+          "rating": 4.31,
+          "price_level": 1,
+          "address": "699 W King St, Boone, NC 28607",
+          "city": "Boone",
+          "description": "Small used-vinyl shop on King Street that posts every show in the window.",
+          "tags": [
+            "Record Store"
+          ],
+          "why": [
+            "Big Thief (74%)",
+            "Waxahatchee (67%)",
+            "Adrianne Lenker (62%)"
+          ]
+        },
+        {
+          "id": "91272DD9-E48F-4A62-BB82-262B505C63EA",
+          "name": "High Country Records",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:record_store",
+          "affinity": 0.86,
+          "popularity": 0.67,
+          "rating": 4.31,
+          "price_level": 1,
+          "address": "118 Depot St, Boone, NC 28607",
+          "city": "Boone",
+          "description": "Downtown record and tape shop a block from Lost Province.",
+          "tags": [
+            "Record Store"
+          ],
+          "why": [
+            "Big Thief (73%)",
+            "Waxahatchee (65%)",
+            "Adrianne Lenker (60%)"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "coffee shop",
+      "places": [
+        {
+          "id": "2EB07357-170A-4046-9F41-E12F8D362B36",
+          "name": "Espresso News",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:coffee_shop",
+          "affinity": 0.84,
+          "popularity": 0.61,
+          "rating": 4.57,
+          "price_level": 2,
+          "address": "267 Howard St, Boone, NC 28607",
+          "city": "Boone",
+          "description": "The downtown coffee shop where campus and town overlap; a dense flyer wall.",
+          "tags": [
+            "Coffee Shop",
+            "Cafe"
+          ],
+          "why": [
+            "Big Thief (70%)",
+            "Waxahatchee (64%)",
+            "Adrianne Lenker (56%)"
+          ]
+        },
+        {
+          "id": "AED79C7D-7C43-4495-8EC9-DCCCBB1B1F0C",
+          "name": "Hatchet Coffee",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:coffee_shop",
+          "affinity": 0.82,
+          "popularity": 0.48,
+          "rating": 4.68,
+          "price_level": 2,
+          "address": "1104 NC-105, Boone, NC 28607",
+          "city": "Boone",
+          "description": "Roaster and café on the 105 strip with an outdoors-minded crowd.",
+          "tags": [
+            "Coffee Shop",
+            "Cafe"
+          ],
+          "why": [
+            "Big Thief (68%)",
+            "Waxahatchee (62%)",
+            "Adrianne Lenker (52%)"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "bookstore",
+      "places": [
+        {
+          "id": "794AE732-7A1D-4305-8B0F-7A3282F18BAA",
+          "name": "Foggy Pine Books",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:bookstore",
+          "affinity": 0.78,
+          "popularity": 0.57,
+          "rating": 4.39,
+          "price_level": 2,
+          "address": "471 W King St, Boone, NC 28607",
+          "city": "Boone",
+          "description": "Independent bookshop downtown next to Boone Saloon; events board inside the door.",
+          "tags": [
+            "Bookstore"
+          ],
+          "why": [
+            "Big Thief (67%)",
+            "Waxahatchee (58%)",
+            "Adrianne Lenker (50%)"
+          ]
+        },
+        {
+          "id": "D3AB4386-46A4-43E0-9A8F-C3A4C370F018",
+          "name": "Black Bear Books",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:bookstore",
+          "affinity": 0.75,
+          "popularity": 0.8,
+          "rating": 4.3,
+          "price_level": 1,
+          "address": "1081 Blowing Rock Rd, Boone, NC 28607",
+          "city": "Boone",
+          "description": "Used bookstore with a loyal local trade.",
+          "tags": [
+            "Bookstore"
+          ],
+          "why": [
+            "Big Thief (64%)",
+            "Waxahatchee (57%)",
+            "Adrianne Lenker (46%)"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "dive bar",
+      "places": [
+        {
+          "id": "95FE7E39-ECCA-4345-B06D-343A44B20369",
+          "name": "The Local",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:dive_bar",
+          "affinity": 0.73,
+          "popularity": 0.85,
+          "rating": 4.34,
+          "price_level": 1,
+          "address": "179 Howard St, Boone, NC 28607",
+          "city": "Boone",
+          "description": "Howard Street bar with a back patio; the pre-show meetup downtown.",
+          "tags": [
+            "Dive Bar",
+            "Bar"
+          ],
+          "why": [
+            "Big Thief (59%)",
+            "Waxahatchee (53%)",
+            "Adrianne Lenker (44%)"
+          ]
+        },
+        {
+          "id": "186A5070-16A2-4C5E-94D3-1D2AF76E1F66",
+          "name": "Galileo's",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:dive_bar",
+          "affinity": 0.7,
+          "popularity": 0.8,
+          "rating": 4.62,
+          "price_level": 2,
+          "address": "667 W King St, Boone, NC 28607",
+          "city": "Boone",
+          "description": "Bar and grill with trivia nights and a wall for posters.",
+          "tags": [
+            "Dive Bar",
+            "Bar"
+          ],
+          "why": [
+            "Big Thief (56%)",
+            "Waxahatchee (51%)",
+            "Adrianne Lenker (42%)"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "vintage shop",
+      "places": [
+        {
+          "id": "920E0774-4979-461C-AFAE-77B1425294EB",
+          "name": "Anna Banana's",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:vintage_store",
+          "affinity": 0.67,
+          "popularity": 0.66,
+          "rating": 4.73,
+          "price_level": 2,
+          "address": "641 W King St, Boone, NC 28607",
+          "city": "Boone",
+          "description": "Vintage and consignment on King Street; students and townies both.",
+          "tags": [
+            "Vintage Store"
+          ],
+          "why": [
+            "Big Thief (52%)",
+            "Waxahatchee (45%)",
+            "Adrianne Lenker (38%)"
+          ]
+        },
+        {
+          "id": "1DDC0108-594A-46A2-9B44-90B190A5F5A5",
+          "name": "Hospitality House Thrift Store",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:vintage_store",
+          "affinity": 0.65,
+          "popularity": 0.51,
+          "rating": 4.62,
+          "price_level": 1,
+          "address": "1081 Blowing Rock Rd, Boone, NC 28607",
+          "city": "Boone",
+          "description": "Thrift store whose regulars are the same folks who come out to shows.",
+          "tags": [
+            "Vintage Store"
+          ],
+          "why": [
+            "Big Thief (50%)",
+            "Waxahatchee (44%)",
+            "Adrianne Lenker (38%)"
+          ]
+        }
+      ]
+    }
+  ],
+  "who": {
+    "age": {
+      "24_and_younger": 0.17,
+      "25_to_29": 0.48,
+      "30_to_34": 0.49,
+      "35_to_44": 0.37,
+      "45_to_54": 0.08,
+      "55_and_older": -0.24
+    },
+    "gender": {
+      "female": 0.23,
+      "male": -0.11
+    },
+    "strongestAge": "30_to_34",
+    "suggestions": [
+      "Fans of your comps here index highest at 30 to 34; consider pitching rooms and promo partners that already draw that crowd.",
+      "The under-25 band is also positive; consider asking rooms whether an all-ages or early show is an option.",
+      "The 55-and-older band indexes low; consider a later set time if the room offers a choice."
+    ]
+  },
+  "localColor": {
+    "brands": [
+      {
+        "id": "F4D0AB50-60CD-4B17-BF5B-3224D267EB2B",
+        "name": "Allbirds",
+        "cityAffinity": 0.944,
+        "homeAffinity": 0.605,
+        "delta": 0.339
+      },
+      {
+        "id": "F6C143D1-37EF-44A6-8D0F-91E39C7B16CF",
+        "name": "The Veil Brewing Co.",
+        "cityAffinity": 0.918,
+        "homeAffinity": 0.697,
+        "delta": 0.221
+      },
+      {
+        "id": "47D5D80A-D8DA-4F3A-A4DF-A99635B1BCB7",
+        "name": "Warby Parker",
+        "cityAffinity": 0.877,
+        "homeAffinity": 0.679,
+        "delta": 0.198
+      },
+      {
+        "id": "8714B921-EBBE-4527-9393-A785DFC169BF",
+        "name": "Stony Point Fashion Park",
+        "cityAffinity": 0.738,
+        "homeAffinity": 0.642,
+        "delta": 0.096
+      },
+      {
+        "id": "B33E9033-D54B-4B07-A439-14C0322C161D",
+        "name": "Levi's",
+        "cityAffinity": 0.903,
+        "homeAffinity": 0.808,
+        "delta": 0.095
+      }
+    ],
+    "shows": [
+      {
+        "id": "BAF90461-5DF2-4491-9523-F0057E492CF9",
+        "name": "Succession",
+        "cityAffinity": 0.923,
+        "homeAffinity": 0.726,
+        "delta": 0.197
+      },
+      {
+        "id": "BCE6B26E-BD10-41E6-B83B-BBB8AAE55C39",
+        "name": "The Rehearsal",
+        "cityAffinity": 0.792,
+        "homeAffinity": 0.671,
+        "delta": 0.121
+      },
+      {
+        "id": "C224F1C3-59F5-457D-AA64-AE2DE94E82B4",
+        "name": "I May Destroy You",
+        "cityAffinity": 0.734,
+        "homeAffinity": 0.634,
+        "delta": 0.1
+      },
+      {
+        "id": "377A96F7-A073-43FE-B56D-6E3331A4308F",
+        "name": "Gilmore Girls",
+        "cityAffinity": 0.835,
+        "homeAffinity": 0.744,
+        "delta": 0.091
+      },
+      {
+        "id": "E3C6F04F-7F24-4D5C-88C7-79ACD9F57EAC",
+        "name": "The Bear",
+        "cityAffinity": 0.928,
+        "homeAffinity": 0.855,
+        "delta": 0.073
+      }
+    ]
+  },
+  "locality": {
+    "id": "C666B8E2-24DB-4F22-8F2D-5C2C75EFDD0E",
+    "name": "Boone",
+    "state": "NC",
+    "label": "Boone, NC",
+    "rank": 29,
+    "affinity": 0.766,
+    "population": 19115,
+    "lat": 36.217,
+    "lon": -81.675,
+    "overIndex": false,
+    "why": [
+      "Big Thief (58%)",
+      "Waxahatchee (45%)",
+      "Adrianne Lenker (38%)"
+    ]
+  },
+  "card": {
+    "summary": "Boone, NC comes in at rank 29 with an affinity of 0.766 for your comps, and it is not flagged as over-indexing, so treat it as a solid routing stop rather than a standout. Big Thief is the strongest comp here at 58%, with Waxahatchee at 45% and Adrianne Lenker at 38%.",
+    "rooms_note": "Boone Saloon tops the room list at 0.91 affinity, driven mostly by Big Thief at 78%, with Appalachian Theatre of the High Country close behind at 0.87.",
+    "promo_note": "Record stores are the strongest promo group, led by Doc's Record Barn at 0.89 affinity (Big Thief 74%), with High Country Records right behind at 0.86.",
+    "who_note": "Fans of your comps around Boone index highest at 30 to 34 (0.49), with 25 to 29 nearly even at 0.48, so consider pitching rooms and partners that already draw that late-twenties-to-early-thirties crowd.",
+    "local_color_note": "Allbirds shows the biggest lift over Richmond (+0.339), which hints that a clean, understated, outdoorsy look could suit the poster and merch table.",
+    "promo_copy": [
+      "If Big Thief is on your turntable, there's a show coming to Boone you'll want to catch.",
+      "Waxahatchee fans in Boone: new songs are headed your way soon."
+    ],
+    "caution": "These are aggregate taste affinities for fans of your comps, not attendance or sales data, so confirm capacity, age policy, and availability directly with each room."
+  },
+  "receipts": [
+    {
+      "id": "rmv3fds6i-47",
+      "tool": "find_rooms",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Boone%2C+NC&filter.location.radius=15000&filter.tags=urn%3Atag%3Acategory%3Aplace%3Alive_music_venue%2Curn%3Atag%3Agenre%3Aplace%3Abar%3Alive_music%2Curn%3Atag%3Agenre%3Aplace%3Aconcert_hall%2Curn%3Atag%3Agenre%3Aplace%3Amusic_venue&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=8&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 8,
+      "top": [
+        {
+          "name": "Boone Saloon",
+          "affinity": 0.91
+        },
+        {
+          "name": "Appalachian Theatre of the High Country",
+          "affinity": 0.87
+        },
+        {
+          "name": "Lily's Snack Bar",
+          "affinity": 0.84
+        }
+      ]
+    },
+    {
+      "id": "rmv3fds6j-48",
+      "tool": "find_promo_partners",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Boone%2C+NC&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abar%2Curn%3Atag%3Agenre%3Aplace%3Abookstore%2Curn%3Atag%3Agenre%3Aplace%3Acafe%2Curn%3Atag%3Agenre%3Aplace%3Acoffee_shop%2Curn%3Atag%3Agenre%3Aplace%3Adive_bar%2Curn%3Atag%3Agenre%3Aplace%3Arecord_store%2Curn%3Atag%3Agenre%3Aplace%3Athrift_store%2Curn%3Atag%3Agenre%3Aplace%3Avintage_store&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&diversify.by=properties.subtype&diversify.take=2&sort_by=affinity&take=12&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 12,
+      "top": [
+        {
+          "name": "Doc's Record Barn",
+          "affinity": 0.89
+        },
+        {
+          "name": "High Country Records",
+          "affinity": 0.86
+        },
+        {
+          "name": "Espresso News",
+          "affinity": 0.84
+        }
+      ]
+    },
+    {
+      "id": "rmv3fds6j-49",
+      "tool": "who_shows_up",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Ademographics&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Boone%2C+NC&signal.location.radius=25000",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 3,
+      "top": []
+    },
+    {
+      "id": "rmv3fds6j-50",
+      "tool": "local_color",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Abrand&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Boone%2C+NC&signal.location.radius=25000&take=20",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 20,
+      "top": [
+        {
+          "name": "Allbirds",
+          "affinity": 0.944
+        },
+        {
+          "name": "The Veil Brewing Co.",
+          "affinity": 0.918
+        },
+        {
+          "name": "Levi's",
+          "affinity": 0.903
+        }
+      ]
+    },
+    {
+      "id": "rmv3fds6j-51",
+      "tool": "local_color",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Atv_show&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Boone%2C+NC&signal.location.radius=25000&take=20",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 20,
+      "top": [
+        {
+          "name": "Justified",
+          "affinity": 0.942
+        },
+        {
+          "name": "The Bear",
+          "affinity": 0.928
+        },
+        {
+          "name": "Dolly Parton's Heartstrings",
+          "affinity": 0.927
+        }
+      ]
+    },
+    {
+      "id": "rmv3fds6j-52",
+      "tool": "local_color",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Abrand&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Richmond%2C+VA&signal.location.radius=25000&take=20",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 20,
+      "top": [
+        {
+          "name": "Patagonia",
+          "affinity": 0.9
+        },
+        {
+          "name": "Subaru",
+          "affinity": 0.882
+        },
+        {
+          "name": "Trader Joe's",
+          "affinity": 0.863
+        }
+      ]
+    },
+    {
+      "id": "rmv3fds6j-53",
+      "tool": "local_color",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Atv_show&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Richmond%2C+VA&signal.location.radius=25000&take=20",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 20,
+      "top": [
+        {
+          "name": "Fleabag",
+          "affinity": 0.91
+        },
+        {
+          "name": "Reservation Dogs",
+          "affinity": 0.892
+        },
+        {
+          "name": "Somebody Somewhere",
+          "affinity": 0.873
+        }
+      ]
+    }
+  ]
+}

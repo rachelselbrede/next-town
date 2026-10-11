@@ -1,0 +1,282 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "local_color",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Atv_show&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Athens%2C%20GA&signal.location.radius=25000&take=20",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:tv_show",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "signal.location.query": "Athens, GA",
+      "signal.location.radius": 25000,
+      "take": 20
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "A13215E0-C764-4D72-A2B1-801211C74A37",
+          "name": "Twin Peaks",
+          "type": "urn:entity:tv_show",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.81,
+          "properties": {
+            "description": "David Lynch's dreamlike mystery in a logging town."
+          },
+          "query": {
+            "affinity": 0.941
+          }
+        },
+        {
+          "entity_id": "CBBD7C4F-EE93-4B17-8B5B-5251E5F73EB7",
+          "name": "Hacks",
+          "type": "urn:entity:tv_show",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.815,
+          "properties": {
+            "description": "A legendary Vegas comedian and a cancelled young writer need each other."
+          },
+          "query": {
+            "affinity": 0.925
+          }
+        },
+        {
+          "entity_id": "CFB544E5-94AC-4A99-9802-3F5EBFED7210",
+          "name": "Search Party",
+          "type": "urn:entity:tv_show",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.5,
+          "query": {
+            "affinity": 0.907
+          }
+        },
+        {
+          "entity_id": "9F6379AC-3815-4883-B069-902D1283CB5A",
+          "name": "Jury Duty",
+          "type": "urn:entity:tv_show",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.56,
+          "properties": {},
+          "tags": [
+            {
+              "name": "Comedy-Drama",
+              "tag_id": "urn:tag:genre:media:comedy_drama",
+              "type": "urn:tag:genre:media"
+            }
+          ],
+          "query": {
+            "affinity": 0.895
+          }
+        },
+        {
+          "entity_id": "ADC55D1A-2B7B-4B9E-8D1A-E13AD873422E",
+          "name": "Schitt's Creek",
+          "type": "urn:entity:tv_show",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.5,
+          "properties": {
+            "description": "Schitt's Creek (TV series)."
+          },
+          "tags": [],
+          "query": {
+            "affinity": 0.871
+          }
+        },
+        {
+          "entity_id": "D7BD04AA-3B47-4DA4-9E4F-40A542F5B7D1",
+          "name": "Abbott Elementary",
+          "type": "urn:entity:tv_show",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.76,
+          "properties": {
+            "description": "Mockumentary about teachers at an underfunded Philadelphia public school."
+          },
+          "query": {
+            "affinity": 0.834
+          }
+        },
+        {
+          "entity_id": "C224F1C3-59F5-457D-AA64-AE2DE94E82B4",
+          "name": "I May Destroy You",
+          "type": "urn:entity:tv_show",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.685,
+          "properties": {
+            "description": "Michaela Coel's drama about a writer piecing together a night."
+          },
+          "query": {
+            "affinity": 0.803
+          }
+        },
+        {
+          "entity_id": "77CED67D-5DFF-424D-BF27-A9E605304D8F",
+          "name": "Portlandia",
+          "type": "urn:entity:tv_show",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.445,
+          "properties": {},
+          "query": {
+            "affinity": 0.776
+          }
+        },
+        {
+          "entity_id": "E27DD42F-04F6-4D52-80D1-274A159366ED",
+          "name": "Girls5eva",
+          "type": "urn:entity:tv_show",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.625,
+          "properties": {
+            "description": "A one-hit-wonder girl group reunites in their forties."
+          },
+          "query": {
+            "affinity": 0.749
+          }
+        },
+        {
+          "entity_id": "9C5B9553-722E-4271-9A89-BBAAF6E5D37B",
+          "name": "Northern Exposure",
+          "type": "urn:entity:tv_show",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.58,
+          "properties": {
+            "description": "Northern Exposure (TV series)."
+          },
+          "tags": [],
+          "query": {
+            "affinity": 0.733
+          }
+        },
+        {
+          "entity_id": "628B7F67-F053-4D43-A259-869B267583A7",
+          "name": "Russian Doll",
+          "type": "urn:entity:tv_show",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.64,
+          "properties": {
+            "description": "A woman keeps dying and restarting at her own birthday party."
+          },
+          "query": {
+            "affinity": 0.72
+          }
+        },
+        {
+          "entity_id": "DB8450A9-DDD4-4A01-8081-D65A68F670C9",
+          "name": "Detroiters",
+          "type": "urn:entity:tv_show",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.805,
+          "properties": {
+            "description": "Two best friends run a tiny ad agency in Detroit."
+          },
+          "query": {
+            "affinity": 0.716
+          }
+        },
+        {
+          "entity_id": "1726F37E-D9CA-43CC-8B62-4E9AF1FD2C5B",
+          "name": "Severance",
+          "type": "urn:entity:tv_show",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.69,
+          "properties": {
+            "description": "Office workers whose memories are split between work and home."
+          },
+          "query": {
+            "affinity": 0.713
+          }
+        },
+        {
+          "entity_id": "E3C6F04F-7F24-4D5C-88C7-79ACD9F57EAC",
+          "name": "The Bear",
+          "type": "urn:entity:tv_show",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.865,
+          "properties": {
+            "description": "A fine-dining chef takes over his late brother's Chicago sandwich shop."
+          },
+          "query": {
+            "affinity": 0.688
+          }
+        },
+        {
+          "entity_id": "4ED236B4-9453-4512-8981-B49E9BB467A5",
+          "name": "Atlanta",
+          "type": "urn:entity:tv_show",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.82,
+          "properties": {
+            "description": "Donald Glover's surreal comedy about two cousins in the Atlanta rap scene."
+          },
+          "query": {
+            "affinity": 0.687
+          }
+        },
+        {
+          "entity_id": "656078D4-7298-439C-B517-153F264014E1",
+          "name": "Somebody Somewhere",
+          "type": "urn:entity:tv_show",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.87,
+          "properties": {
+            "description": "A woman returns to her Kansas hometown and finds a choir of misfits."
+          },
+          "query": {
+            "affinity": 0.645
+          }
+        },
+        {
+          "entity_id": "33EEB5FD-B57F-4036-99F9-D50F11EF6FE4",
+          "name": "Joe Pera Talks With You",
+          "type": "urn:entity:tv_show",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.74,
+          "query": {
+            "affinity": 0.63
+          }
+        },
+        {
+          "entity_id": "BAF90461-5DF2-4491-9523-F0057E492CF9",
+          "name": "Succession",
+          "type": "urn:entity:tv_show",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.75,
+          "properties": {
+            "description": "A media dynasty's children fight over the throne."
+          },
+          "query": {
+            "affinity": 0.612
+          }
+        },
+        {
+          "entity_id": "F504DFDE-7861-486D-9F48-C6422671C57A",
+          "name": "Reservation Dogs",
+          "type": "urn:entity:tv_show",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.875,
+          "properties": {
+            "description": "Four Indigenous teens in rural Oklahoma dream of California."
+          },
+          "query": {
+            "affinity": 0.61
+          }
+        },
+        {
+          "entity_id": "377A96F7-A073-43FE-B56D-6E3331A4308F",
+          "name": "Gilmore Girls",
+          "type": "urn:entity:tv_show",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.755,
+          "properties": {
+            "description": "Fast-talking mother and daughter in a small Connecticut town."
+          },
+          "query": {
+            "affinity": 0.563
+          }
+        }
+      ]
+    }
+  }
+}

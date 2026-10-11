@@ -1,0 +1,119 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "resolve_act",
+  "canonical": "https://hackathon.api.qloo.com/search?query=Waxahatchee&take=5&types=urn%3Aentity%3Aartist",
+  "query": {
+    "path": "/search",
+    "params": {
+      "query": "Waxahatchee",
+      "types": "urn:entity:artist",
+      "take": 5
+    }
+  },
+  "response": {
+    "results": [
+      {
+        "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+        "name": "Waxahatchee",
+        "type": "urn:entity:artist",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "popularity": 0.88,
+        "properties": {
+          "description": "Katie Crutchfield's indie-folk project, Alabama-born, named for a creek near her childhood home."
+        },
+        "tags": [
+          {
+            "name": "Indie Folk",
+            "tag_id": "urn:tag:genre:music:indie_folk",
+            "type": "urn:tag:genre:music"
+          },
+          {
+            "name": "Americana",
+            "tag_id": "urn:tag:genre:music:americana",
+            "type": "urn:tag:genre:music"
+          },
+          {
+            "name": "Indie Rock",
+            "tag_id": "urn:tag:genre:music:indie_rock",
+            "type": "urn:tag:genre:music"
+          }
+        ]
+      },
+      {
+        "entity_id": "D94D16AF-FCC6-4429-8ABE-871413BEFA32",
+        "name": "Wax Tailor",
+        "type": "urn:entity:artist",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "popularity": 0.47,
+        "properties": {
+          "description": "French producer mixing trip-hop beats with cinematic samples."
+        },
+        "tags": [
+          {
+            "name": "Trip Hop",
+            "tag_id": "urn:tag:genre:music:trip_hop",
+            "type": "urn:tag:genre:music"
+          },
+          {
+            "name": "Electronic",
+            "tag_id": "urn:tag:genre:music:electronic",
+            "type": "urn:tag:genre:music"
+          }
+        ]
+      },
+      {
+        "entity_id": "75B550F3-8299-412D-9B8A-85533DEE3B66",
+        "name": "Wax Idols",
+        "type": "urn:entity:artist",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "popularity": 0.33,
+        "properties": {
+          "description": "Oakland post-punk band led by Hether Fortune."
+        },
+        "tags": [
+          {
+            "name": "Post-Punk",
+            "tag_id": "urn:tag:genre:music:post_punk",
+            "type": "urn:tag:genre:music"
+          },
+          {
+            "name": "Indie Rock",
+            "tag_id": "urn:tag:genre:music:indie_rock",
+            "type": "urn:tag:genre:music"
+          }
+        ]
+      },
+      {
+        "entity_id": "1887C6C9-7B7C-4BF2-B0B5-A5C8F5D74D8D",
+        "name": "Wax Fang",
+        "type": "urn:entity:artist",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "popularity": 0.29,
+        "properties": {
+          "description": "Louisville art-rock band with a taste for big concept records."
+        },
+        "tags": [
+          {
+            "name": "Indie Rock",
+            "tag_id": "urn:tag:genre:music:indie_rock",
+            "type": "urn:tag:genre:music"
+          },
+          {
+            "name": "Psychedelic Rock",
+            "tag_id": "urn:tag:genre:music:psychedelic_rock",
+            "type": "urn:tag:genre:music"
+          }
+        ]
+      }
+    ]
+  }
+}

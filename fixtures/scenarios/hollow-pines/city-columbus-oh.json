@@ -1,0 +1,721 @@
+{
+  "city": "Columbus, OH",
+  "home": "Richmond, VA",
+  "comps": [
+    {
+      "id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+      "name": "Big Thief",
+      "type": "urn:entity:artist",
+      "popularity": 0.93
+    },
+    {
+      "id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+      "name": "Waxahatchee",
+      "type": "urn:entity:artist",
+      "popularity": 0.88
+    },
+    {
+      "id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "name": "Adrianne Lenker",
+      "type": "urn:entity:artist",
+      "popularity": 0.85
+    }
+  ],
+  "rooms": [
+    {
+      "id": "84977C1C-DDD7-43B5-A0A6-8AAFC6B59BE4",
+      "name": "Ace of Cups",
+      "type": "urn:entity:place",
+      "subtype": "urn:entity:place:music_venue",
+      "affinity": 0.9,
+      "popularity": 0.54,
+      "rating": 4.45,
+      "price_level": 1,
+      "address": "2619 N High St, Columbus, OH 43202",
+      "city": "Columbus",
+      "description": "Clintonville club in an old bank; the room indie and folk tours route through.",
+      "tags": [
+        "Music Venue",
+        "Live Music Venue"
+      ],
+      "why": [
+        "Big Thief (77%)",
+        "Waxahatchee (69%)",
+        "Adrianne Lenker (64%)"
+      ]
+    },
+    {
+      "id": "188B90D2-9902-4113-ADA8-E783350764B5",
+      "name": "Rumba Café",
+      "type": "urn:entity:place",
+      "subtype": "urn:entity:place:live_music_bar",
+      "affinity": 0.87,
+      "popularity": 0.74,
+      "rating": 4.89,
+      "price_level": 2,
+      "address": "2507 Summit St, Columbus, OH 43202",
+      "city": "Columbus",
+      "description": "Small Summit Street bar with a stage that suits a quiet, close set.",
+      "tags": [
+        "Live Music Bar"
+      ],
+      "why": [
+        "Big Thief (73%)",
+        "Waxahatchee (68%)",
+        "Adrianne Lenker (61%)"
+      ]
+    },
+    {
+      "id": "7E7D1D93-59E2-49AA-82B0-0032CCB1D940",
+      "name": "Newport Music Hall",
+      "type": "urn:entity:place",
+      "subtype": "urn:entity:place:concert_hall",
+      "affinity": 0.85,
+      "popularity": 0.68,
+      "rating": 4.37,
+      "price_level": 2,
+      "address": "1722 N High St, Columbus, OH 43201",
+      "city": "Columbus",
+      "description": "Campus-strip hall that has hosted touring acts for a century; the step-up room.",
+      "tags": [
+        "Concert Hall"
+      ],
+      "why": [
+        "Big Thief (70%)",
+        "Waxahatchee (63%)",
+        "Adrianne Lenker (57%)"
+      ]
+    },
+    {
+      "id": "CFD2DA3A-1EAF-4339-A25D-2740BB2C3166",
+      "name": "The Basement",
+      "type": "urn:entity:place",
+      "subtype": "urn:entity:place:music_venue",
+      "affinity": 0.81,
+      "popularity": 0.8,
+      "rating": 4.57,
+      "price_level": 2,
+      "address": "391 Neil Ave, Columbus, OH 43215",
+      "city": "Columbus",
+      "description": "Low-ceilinged Arena District club for a first Columbus show.",
+      "tags": [
+        "Music Venue",
+        "Live Music Venue"
+      ],
+      "why": [
+        "Big Thief (68%)",
+        "Waxahatchee (64%)",
+        "Adrianne Lenker (53%)"
+      ]
+    },
+    {
+      "id": "D35BB39C-C2E4-48D9-BF98-FCCB6E0154CA",
+      "name": "A&R Music Bar",
+      "type": "urn:entity:place",
+      "subtype": "urn:entity:place:music_venue",
+      "affinity": 0.79,
+      "popularity": 0.77,
+      "rating": 4.72,
+      "price_level": 2,
+      "address": "391 Neil Ave, Columbus, OH 43215",
+      "city": "Columbus",
+      "description": "Mid-size room next door to The Basement when the draw grows.",
+      "tags": [
+        "Music Venue",
+        "Live Music Venue"
+      ],
+      "why": [
+        "Big Thief (68%)",
+        "Waxahatchee (58%)",
+        "Adrianne Lenker (51%)"
+      ]
+    },
+    {
+      "id": "F553F5AB-31C9-487F-B5B3-53431A8A8FBC",
+      "name": "Skully's Music-Diner",
+      "type": "urn:entity:place",
+      "subtype": "urn:entity:place:live_music_bar",
+      "affinity": 0.76,
+      "popularity": 0.78,
+      "rating": 4.74,
+      "price_level": 1,
+      "address": "1151 N High St, Columbus, OH 43201",
+      "city": "Columbus",
+      "description": "Short North diner and dance bar with a weeknight live stage.",
+      "tags": [
+        "Live Music Bar"
+      ],
+      "why": [
+        "Big Thief (64%)",
+        "Waxahatchee (57%)",
+        "Adrianne Lenker (50%)"
+      ]
+    },
+    {
+      "id": "C28F527F-3CAB-4F4B-B63F-47558C8587CD",
+      "name": "Woodlands Tavern",
+      "type": "urn:entity:place",
+      "subtype": "urn:entity:place:live_music_bar",
+      "affinity": 0.72,
+      "popularity": 0.76,
+      "rating": 4.75,
+      "price_level": 2,
+      "address": "1200 W 3rd Ave, Columbus, OH 43212",
+      "city": "Columbus",
+      "description": "Grandview tavern with a listening-room back half and a folk-friendly calendar.",
+      "tags": [
+        "Live Music Bar"
+      ],
+      "why": [
+        "Big Thief (57%)",
+        "Waxahatchee (52%)",
+        "Adrianne Lenker (45%)"
+      ]
+    },
+    {
+      "id": "CB715AA9-1BA2-4D33-8E62-C0D984694801",
+      "name": "Natalie's Grandview",
+      "type": "urn:entity:place",
+      "subtype": "urn:entity:place:music_venue",
+      "affinity": 0.7,
+      "popularity": 0.83,
+      "rating": 4.5,
+      "price_level": 1,
+      "address": "945 King Ave, Columbus, OH 43212",
+      "city": "Columbus",
+      "description": "Seated listening room with a reputation for songwriter bills.",
+      "tags": [
+        "Music Venue",
+        "Live Music Venue"
+      ],
+      "why": [
+        "Big Thief (55%)",
+        "Waxahatchee (47%)",
+        "Adrianne Lenker (45%)"
+      ]
+    }
+  ],
+  "promo": [
+    {
+      "kind": "record store",
+      "places": [
+        {
+          "id": "B52A8E91-545C-451D-B58E-C02D5DBE47C1",
+          "name": "Used Kids Records",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:record_store",
+          "affinity": 0.89,
+          "popularity": 0.68,
+          "rating": 4.82,
+          "price_level": 1,
+          "address": "2500 Summit St, Columbus, OH 43202",
+          "city": "Columbus",
+          "description": "The campus-area record shop since the eighties, now on Summit next to Rumba.",
+          "tags": [
+            "Record Store"
+          ],
+          "why": [
+            "Big Thief (73%)",
+            "Waxahatchee (67%)",
+            "Adrianne Lenker (65%)"
+          ]
+        },
+        {
+          "id": "42E36C7A-71CC-4202-9EF2-121F5E656DA1",
+          "name": "Spoonful Records",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:record_store",
+          "affinity": 0.86,
+          "popularity": 0.71,
+          "rating": 4.9,
+          "price_level": 2,
+          "address": "116 E Long St, Columbus, OH 43215",
+          "city": "Columbus",
+          "description": "Downtown new-and-used shop with in-store shows.",
+          "tags": [
+            "Record Store"
+          ],
+          "why": [
+            "Big Thief (74%)",
+            "Waxahatchee (68%)",
+            "Adrianne Lenker (60%)"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "coffee shop",
+      "places": [
+        {
+          "id": "9EC6F866-3CCB-48B5-8AE9-DC82B0A4C86E",
+          "name": "Fox in the Snow Café",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:coffee_shop",
+          "affinity": 0.82,
+          "popularity": 0.76,
+          "rating": 4.67,
+          "price_level": 2,
+          "address": "1031 N 4th St, Columbus, OH 43201",
+          "city": "Columbus",
+          "description": "Italian Village bakery-café with a long morning line and a community board.",
+          "tags": [
+            "Coffee Shop",
+            "Cafe"
+          ],
+          "why": [
+            "Big Thief (66%)",
+            "Waxahatchee (63%)",
+            "Adrianne Lenker (57%)"
+          ]
+        },
+        {
+          "id": "F9F4D267-F986-45F3-90D1-0D075C9DF864",
+          "name": "Stauf's Coffee Roasters",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:coffee_shop",
+          "affinity": 0.8,
+          "popularity": 0.56,
+          "rating": 4.78,
+          "price_level": 1,
+          "address": "1277 Grandview Ave, Columbus, OH 43212",
+          "city": "Columbus",
+          "description": "Grandview roaster around the corner from Woodlands and Natalie's.",
+          "tags": [
+            "Coffee Shop",
+            "Cafe"
+          ],
+          "why": [
+            "Big Thief (68%)",
+            "Waxahatchee (61%)",
+            "Adrianne Lenker (52%)"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "bookstore",
+      "places": [
+        {
+          "id": "FEFEB3C2-1345-4DB6-AB1A-85108C8583BB",
+          "name": "The Book Loft of German Village",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:bookstore",
+          "affinity": 0.78,
+          "popularity": 0.46,
+          "rating": 4.42,
+          "price_level": 1,
+          "address": "631 S 3rd St, Columbus, OH 43206",
+          "city": "Columbus",
+          "description": "Thirty-two rooms of books; the events board sees every neighborhood walker.",
+          "tags": [
+            "Bookstore"
+          ],
+          "why": [
+            "Big Thief (67%)",
+            "Waxahatchee (61%)",
+            "Adrianne Lenker (51%)"
+          ]
+        },
+        {
+          "id": "8922B1BA-A06C-42DB-A8C1-DA47A300E4F2",
+          "name": "Prologue Bookshop",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:bookstore",
+          "affinity": 0.75,
+          "popularity": 0.77,
+          "rating": 4.62,
+          "price_level": 2,
+          "address": "841 N High St, Columbus, OH 43215",
+          "city": "Columbus",
+          "description": "Short North independent with an evening reading series.",
+          "tags": [
+            "Bookstore"
+          ],
+          "why": [
+            "Big Thief (65%)",
+            "Waxahatchee (53%)",
+            "Adrianne Lenker (47%)"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "dive bar",
+      "places": [
+        {
+          "id": "17861631-3C53-47D4-82E6-BBE1FD3E9119",
+          "name": "Dick's Den",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:dive_bar",
+          "affinity": 0.73,
+          "popularity": 0.84,
+          "rating": 4.86,
+          "price_level": 1,
+          "address": "2417 N High St, Columbus, OH 43202",
+          "city": "Columbus",
+          "description": "Clintonville jazz dive; the after-show bar for the Ace of Cups block.",
+          "tags": [
+            "Dive Bar",
+            "Bar"
+          ],
+          "why": [
+            "Big Thief (61%)",
+            "Waxahatchee (56%)",
+            "Adrianne Lenker (43%)"
+          ]
+        },
+        {
+          "id": "ED554875-12CC-46AB-B17D-E7E792FD5841",
+          "name": "Café Bourbon St",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:dive_bar",
+          "affinity": 0.71,
+          "popularity": 0.48,
+          "rating": 4.89,
+          "price_level": 1,
+          "address": "2216 Summit St, Columbus, OH 43201",
+          "city": "Columbus",
+          "description": "Punk-leaning dive with a tiny stage and a poster-covered wall.",
+          "tags": [
+            "Dive Bar",
+            "Bar"
+          ],
+          "why": [
+            "Big Thief (59%)",
+            "Waxahatchee (51%)",
+            "Adrianne Lenker (44%)"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "vintage shop",
+      "places": [
+        {
+          "id": "71E81B51-7C1C-4EB2-967B-F321EABEA0A0",
+          "name": "Flower Child",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:vintage_store",
+          "affinity": 0.7,
+          "popularity": 0.56,
+          "rating": 4.29,
+          "price_level": 1,
+          "address": "233 E 5th Ave, Columbus, OH 43201",
+          "city": "Columbus",
+          "description": "Big mid-century vintage store in Italian Village.",
+          "tags": [
+            "Vintage Store"
+          ],
+          "why": [
+            "Big Thief (58%)",
+            "Waxahatchee (52%)",
+            "Adrianne Lenker (40%)"
+          ]
+        },
+        {
+          "id": "2BAB8B7D-BA2E-4081-BC03-4CD8F13381AC",
+          "name": "Rag-O-Rama",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:vintage_store",
+          "affinity": 0.67,
+          "popularity": 0.7,
+          "rating": 4.53,
+          "price_level": 1,
+          "address": "3301 N High St, Columbus, OH 43202",
+          "city": "Columbus",
+          "description": "Clintonville resale shop with a steady student crowd.",
+          "tags": [
+            "Vintage Store"
+          ],
+          "why": [
+            "Big Thief (56%)",
+            "Waxahatchee (48%)",
+            "Adrianne Lenker (38%)"
+          ]
+        }
+      ]
+    }
+  ],
+  "who": {
+    "age": {
+      "24_and_younger": 0.18,
+      "25_to_29": 0.47,
+      "30_to_34": 0.52,
+      "35_to_44": 0.35,
+      "45_to_54": 0.1,
+      "55_and_older": -0.21
+    },
+    "gender": {
+      "female": 0.21,
+      "male": -0.08
+    },
+    "strongestAge": "30_to_34",
+    "suggestions": [
+      "Fans of your comps here index highest at 30 to 34; consider pitching rooms and promo partners that already draw that crowd.",
+      "The under-25 band is also positive; consider asking rooms whether an all-ages or early show is an option.",
+      "The 55-and-older band indexes low; consider a later set time if the room offers a choice."
+    ]
+  },
+  "localColor": {
+    "brands": [
+      {
+        "id": "DD53783B-58F7-4D99-9969-D937382FDB61",
+        "name": "Hyperion Espresso",
+        "cityAffinity": 0.888,
+        "homeAffinity": 0.55,
+        "delta": 0.338
+      },
+      {
+        "id": "F6C143D1-37EF-44A6-8D0F-91E39C7B16CF",
+        "name": "The Veil Brewing Co.",
+        "cityAffinity": 0.915,
+        "homeAffinity": 0.697,
+        "delta": 0.218
+      },
+      {
+        "id": "F4D0AB50-60CD-4B17-BF5B-3224D267EB2B",
+        "name": "Allbirds",
+        "cityAffinity": 0.78,
+        "homeAffinity": 0.605,
+        "delta": 0.175
+      },
+      {
+        "id": "B33E9033-D54B-4B07-A439-14C0322C161D",
+        "name": "Levi's",
+        "cityAffinity": 0.81,
+        "homeAffinity": 0.808,
+        "delta": 0.002
+      },
+      {
+        "id": "79105CB8-2649-4620-A2F8-0B53D5B8A831",
+        "name": "Fjallraven",
+        "cityAffinity": 0.707,
+        "homeAffinity": 0.753,
+        "delta": -0.046
+      }
+    ],
+    "shows": [
+      {
+        "id": "24AF387E-B347-4535-A921-D3B36CC057C9",
+        "name": "Station Eleven",
+        "cityAffinity": 0.946,
+        "homeAffinity": 0.578,
+        "delta": 0.368
+      },
+      {
+        "id": "E27DD42F-04F6-4D52-80D1-274A159366ED",
+        "name": "Girls5eva",
+        "cityAffinity": 0.817,
+        "homeAffinity": 0.56,
+        "delta": 0.257
+      },
+      {
+        "id": "1726F37E-D9CA-43CC-8B62-4E9AF1FD2C5B",
+        "name": "Severance",
+        "cityAffinity": 0.894,
+        "homeAffinity": 0.652,
+        "delta": 0.242
+      },
+      {
+        "id": "628B7F67-F053-4D43-A259-869B267583A7",
+        "name": "Russian Doll",
+        "cityAffinity": 0.75,
+        "homeAffinity": 0.615,
+        "delta": 0.135
+      },
+      {
+        "id": "C224F1C3-59F5-457D-AA64-AE2DE94E82B4",
+        "name": "I May Destroy You",
+        "cityAffinity": 0.761,
+        "homeAffinity": 0.634,
+        "delta": 0.127
+      }
+    ]
+  },
+  "locality": {
+    "id": "308C62B1-50D0-4C0E-A054-FA0EEC865D68",
+    "name": "Columbus",
+    "state": "OH",
+    "label": "Columbus, OH",
+    "rank": 16,
+    "affinity": 0.835,
+    "population": 905939,
+    "lat": 39.961,
+    "lon": -82.999,
+    "overIndex": false,
+    "why": [
+      "Big Thief (65%)",
+      "Adrianne Lenker (53%)",
+      "Waxahatchee (47%)"
+    ]
+  },
+  "card": {
+    "summary": "Columbus, OH ranks 16th on the route with a locality affinity of 0.835, and while it does not over-index, fans of your comps around Columbus show steady interest. Big Thief is the strongest comp driving this market at 65%, followed by Adrianne Lenker at 53% and Waxahatchee at 47%.",
+    "rooms_note": "Ace of Cups is the top room at 0.9 affinity, with Big Thief (77%) driving the match, and Rumba Café follows closely at 0.87.",
+    "promo_note": "Record stores are the strongest promo partner group, led by Used Kids Records (0.89) on Summit next to Rumba Café, with Spoonful Records (0.86) close behind.",
+    "who_note": "Fans of your comps around Columbus index highest at 30 to 34 (0.52), so consider pitching rooms and promo partners that already draw that crowd.",
+    "local_color_note": "Station Eleven shows the biggest lift over Richmond (+0.368), with Hyperion Espresso (+0.338) close behind, hinting that a quiet, literary, slightly post-apocalyptic poster mood or a local-coffee nod at the merch table could land.",
+    "promo_copy": [
+      "For Big Thief fans around Columbus: a new songwriter is coming through town.",
+      "Love Waxahatchee? Ask us about the next folk show in Columbus."
+    ],
+    "caution": "These are aggregate taste affinities, not attendance or sales data, so confirm capacity, age policy, and availability directly with each room."
+  },
+  "receipts": [
+    {
+      "id": "rmv3fdda1-26",
+      "tool": "find_rooms",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Columbus%2C+OH&filter.location.radius=15000&filter.tags=urn%3Atag%3Acategory%3Aplace%3Alive_music_venue%2Curn%3Atag%3Agenre%3Aplace%3Abar%3Alive_music%2Curn%3Atag%3Agenre%3Aplace%3Aconcert_hall%2Curn%3Atag%3Agenre%3Aplace%3Amusic_venue&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=8&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 8,
+      "top": [
+        {
+          "name": "Ace of Cups",
+          "affinity": 0.9
+        },
+        {
+          "name": "Rumba Café",
+          "affinity": 0.87
+        },
+        {
+          "name": "Newport Music Hall",
+          "affinity": 0.85
+        }
+      ]
+    },
+    {
+      "id": "rmv3fdda1-27",
+      "tool": "find_promo_partners",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Columbus%2C+OH&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abar%2Curn%3Atag%3Agenre%3Aplace%3Abookstore%2Curn%3Atag%3Agenre%3Aplace%3Acafe%2Curn%3Atag%3Agenre%3Aplace%3Acoffee_shop%2Curn%3Atag%3Agenre%3Aplace%3Adive_bar%2Curn%3Atag%3Agenre%3Aplace%3Arecord_store%2Curn%3Atag%3Agenre%3Aplace%3Athrift_store%2Curn%3Atag%3Agenre%3Aplace%3Avintage_store&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&diversify.by=properties.subtype&diversify.take=2&sort_by=affinity&take=12&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 12,
+      "top": [
+        {
+          "name": "Used Kids Records",
+          "affinity": 0.89
+        },
+        {
+          "name": "Spoonful Records",
+          "affinity": 0.86
+        },
+        {
+          "name": "Lost Weekend Records",
+          "affinity": 0.85
+        }
+      ]
+    },
+    {
+      "id": "rmv3fdda1-28",
+      "tool": "who_shows_up",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Ademographics&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Columbus%2C+OH&signal.location.radius=25000",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 3,
+      "top": []
+    },
+    {
+      "id": "rmv3fdda1-29",
+      "tool": "local_color",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Abrand&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Columbus%2C+OH&signal.location.radius=25000&take=20",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 20,
+      "top": [
+        {
+          "name": "The Veil Brewing Co.",
+          "affinity": 0.915
+        },
+        {
+          "name": "Hyperion Espresso",
+          "affinity": 0.888
+        },
+        {
+          "name": "Devils Backbone Brewing Company",
+          "affinity": 0.844
+        }
+      ]
+    },
+    {
+      "id": "rmv3fdda1-30",
+      "tool": "local_color",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Atv_show&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Columbus%2C+OH&signal.location.radius=25000&take=20",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 20,
+      "top": [
+        {
+          "name": "Station Eleven",
+          "affinity": 0.946
+        },
+        {
+          "name": "Fleabag",
+          "affinity": 0.936
+        },
+        {
+          "name": "Severance",
+          "affinity": 0.894
+        }
+      ]
+    },
+    {
+      "id": "rmv3fdda1-31",
+      "tool": "local_color",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Abrand&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Richmond%2C+VA&signal.location.radius=25000&take=20",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 20,
+      "top": [
+        {
+          "name": "Patagonia",
+          "affinity": 0.9
+        },
+        {
+          "name": "Subaru",
+          "affinity": 0.882
+        },
+        {
+          "name": "Trader Joe's",
+          "affinity": 0.863
+        }
+      ]
+    },
+    {
+      "id": "rmv3fdda1-32",
+      "tool": "local_color",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Atv_show&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Richmond%2C+VA&signal.location.radius=25000&take=20",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 20,
+      "top": [
+        {
+          "name": "Fleabag",
+          "affinity": 0.91
+        },
+        {
+          "name": "Reservation Dogs",
+          "affinity": 0.892
+        },
+        {
+          "name": "Somebody Somewhere",
+          "affinity": 0.873
+        }
+      ]
+    }
+  ]
+}

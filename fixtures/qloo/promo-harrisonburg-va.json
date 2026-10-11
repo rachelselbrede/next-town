@@ -1,0 +1,604 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_promo_partners",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?diversify.by=properties.subtype&diversify.take=2&feature.explainability=true&filter.location.query=Harrisonburg%2C%20VA&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abar%2Curn%3Atag%3Agenre%3Aplace%3Abookstore%2Curn%3Atag%3Agenre%3Aplace%3Acafe%2Curn%3Atag%3Agenre%3Aplace%3Acoffee_shop%2Curn%3Atag%3Agenre%3Aplace%3Adive_bar%2Curn%3Atag%3Agenre%3Aplace%3Arecord_store%2Curn%3Atag%3Agenre%3Aplace%3Athrift_store%2Curn%3Atag%3Agenre%3Aplace%3Avintage_store&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=12",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Harrisonburg, VA",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:genre:place:bar,urn:tag:genre:place:bookstore,urn:tag:genre:place:cafe,urn:tag:genre:place:coffee_shop,urn:tag:genre:place:dive_bar,urn:tag:genre:place:record_store,urn:tag:genre:place:thrift_store,urn:tag:genre:place:vintage_store",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "diversify.by": "properties.subtype",
+      "diversify.take": 2,
+      "sort_by": "affinity",
+      "take": 12,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "6DED5E1F-F8B8-41D1-82A0-3BEBF67BF78D",
+          "name": "Downtown Records",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:record_store",
+          "popularity": 0.55,
+          "properties": {
+            "description": "New and used vinyl, local releases on consignment, and a bulletin board every band in town uses.",
+            "address": "60 W Water St, Harrisonburg, VA 22801",
+            "geocode": {
+              "name": "Harrisonburg",
+              "city": "Harrisonburg",
+              "admin1_region": "VA",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Record Store",
+              "tag_id": "urn:tag:genre:place:record_store",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.91,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.76
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.68
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.61
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "FA4BEA91-63F8-42E5-AD20-2A65E65BA0A6",
+          "name": "Black Sheep Coffee",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:coffee_shop",
+          "popularity": 0.63,
+          "properties": {
+            "description": "Roaster and cafe in the Ice House building, shared with Pale Fire's taproom.",
+            "address": "217 S Liberty St, Harrisonburg, VA 22801",
+            "geocode": {
+              "name": "Harrisonburg",
+              "city": "Harrisonburg",
+              "admin1_region": "VA",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Coffee Shop",
+              "tag_id": "urn:tag:genre:place:coffee_shop",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Cafe",
+              "tag_id": "urn:tag:genre:place:cafe",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.88,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.72
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.61
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.53
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "0C274BB3-2E3F-496C-9DDC-ED8B3B5720A8",
+          "name": "Downtown Books",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:bookstore",
+          "popularity": 0.48,
+          "properties": {
+            "description": "Used bookstore with a deep fiction and poetry wall and a few shelves of local music.",
+            "address": "49 W Water St, Harrisonburg, VA 22801",
+            "geocode": {
+              "name": "Harrisonburg",
+              "city": "Harrisonburg",
+              "admin1_region": "VA",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Bookstore",
+              "tag_id": "urn:tag:genre:place:bookstore",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.86,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.7
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.56
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.55
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "9E80B536-6D25-4E6F-8239-AC878E4778A7",
+          "name": "Jack Brown's Beer & Burger Joint",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:dive_bar",
+          "popularity": 0.69,
+          "properties": {
+            "description": "Crowded little burger bar with a long tap list and no pretension, right on Main Street.",
+            "address": "80 S Main St, Harrisonburg, VA 22801",
+            "geocode": {
+              "name": "Harrisonburg",
+              "city": "Harrisonburg",
+              "admin1_region": "VA",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Dive Bar",
+              "tag_id": "urn:tag:genre:place:dive_bar",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Bar",
+              "tag_id": "urn:tag:genre:place:bar",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.83,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.66
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.58
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.47
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "78A9FA0C-FD8C-4816-B3D3-262CC6D44D58",
+          "name": "Gift & Thrift",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:vintage_store",
+          "popularity": 0.51,
+          "properties": {
+            "description": "Big nonprofit thrift store run by Mennonite Central Committee; racks of denim and flannel.",
+            "address": "731 Mt Clinton Pike, Harrisonburg, VA 22802",
+            "geocode": {
+              "name": "Harrisonburg",
+              "city": "Harrisonburg",
+              "admin1_region": "VA",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Thrift Store",
+              "tag_id": "urn:tag:genre:place:thrift_store",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Vintage Store",
+              "tag_id": "urn:tag:genre:place:vintage_store",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.81,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.64
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.53
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.49
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "B2719F71-8737-48B7-B066-EF86789D79C4",
+          "name": "Valley Vinyl Exchange",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:record_store",
+          "popularity": 0.38,
+          "properties": {
+            "description": "Small shop of used LPs and cassettes that hosts in-store sets on First Fridays.",
+            "address": "131 W Market St, Harrisonburg, VA 22801",
+            "geocode": {
+              "name": "Harrisonburg",
+              "city": "Harrisonburg",
+              "admin1_region": "VA",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Record Store",
+              "tag_id": "urn:tag:genre:place:record_store",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.78,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.62
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.48
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.43
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "8DD9BC7E-CFC3-4B30-9DD4-5628E58FAA79",
+          "name": "Merge Coffee Co.",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:coffee_shop",
+          "popularity": 0.5,
+          "properties": {
+            "description": "Neighborhood coffee shop that doubles as a quiet daytime workspace for students.",
+            "address": "1725 Reservoir St, Harrisonburg, VA 22801",
+            "geocode": {
+              "name": "Harrisonburg",
+              "city": "Harrisonburg",
+              "admin1_region": "VA",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Coffee Shop",
+              "tag_id": "urn:tag:genre:place:coffee_shop",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.75,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.6
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.52
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.45
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "4EE9D601-E645-4A9D-AE8D-6684A92DC0EF",
+          "name": "Green Valley Book Fair",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:bookstore",
+          "popularity": 0.57,
+          "properties": {
+            "description": "Warehouse-sized discount bookstore south of town that draws people from across the Valley.",
+            "address": "2192 Green Valley Ln, Mt Crawford, VA 22841",
+            "geocode": {
+              "name": "Harrisonburg",
+              "city": "Harrisonburg",
+              "admin1_region": "VA",
+              "country_code": "US"
+            },
+            "business_rating": 4.8,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Bookstore",
+              "tag_id": "urn:tag:genre:place:bookstore",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.73,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.58
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.47
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.39
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "00F2EAFD-0C25-4550-AC4B-A9777A9E3F06",
+          "name": "Billy Jack's Wing & Draft Shack",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:dive_bar",
+          "popularity": 0.54,
+          "properties": {
+            "description": "Late-night wings-and-cans spot that fills with the post-show crowd.",
+            "address": "127 W Market St, Harrisonburg, VA 22801",
+            "geocode": {
+              "name": "Harrisonburg",
+              "city": "Harrisonburg",
+              "admin1_region": "VA",
+              "country_code": "US"
+            },
+            "business_rating": 4.3,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Dive Bar",
+              "tag_id": "urn:tag:genre:place:dive_bar",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Bar",
+              "tag_id": "urn:tag:genre:place:bar",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.7,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.56
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.42
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.41
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "073FA88A-D134-46C0-8CB2-4AE90305C480",
+          "name": "Mercy House Thrift Store",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:vintage_store",
+          "popularity": 0.42,
+          "properties": {
+            "description": "Thrift store supporting a local family shelter, with a well-picked vintage rack.",
+            "address": "1005 S High St, Harrisonburg, VA 22801",
+            "geocode": {
+              "name": "Harrisonburg",
+              "city": "Harrisonburg",
+              "admin1_region": "VA",
+              "country_code": "US"
+            },
+            "business_rating": 4.4,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Thrift Store",
+              "tag_id": "urn:tag:genre:place:thrift_store",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Vintage Store",
+              "tag_id": "urn:tag:genre:place:vintage_store",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.68,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.54
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.46
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.35
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "294B686C-8B9E-40FF-9C49-E134625FF246",
+          "name": "Greenberry's Coffee Co.",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:coffee_shop",
+          "popularity": 0.46,
+          "properties": {
+            "description": "Cafe near campus where flyers for shows actually get read.",
+            "address": "1631 S Main St, Harrisonburg, VA 22801",
+            "geocode": {
+              "name": "Harrisonburg",
+              "city": "Harrisonburg",
+              "admin1_region": "VA",
+              "country_code": "US"
+            },
+            "business_rating": 4.4,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Coffee Shop",
+              "tag_id": "urn:tag:genre:place:coffee_shop",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Cafe",
+              "tag_id": "urn:tag:genre:place:cafe",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.65,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.52
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.41
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.37
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "7E44E875-4180-430F-A025-D5335C427652",
+          "name": "Ruby's Arcade",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:dive_bar",
+          "popularity": 0.49,
+          "properties": {
+            "description": "Basement bar with duckpin bowling, pinball and a crowd that likes a long night.",
+            "address": "165 S Main St, Harrisonburg, VA 22801",
+            "geocode": {
+              "name": "Harrisonburg",
+              "city": "Harrisonburg",
+              "admin1_region": "VA",
+              "country_code": "US"
+            },
+            "business_rating": 4.4,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Bar",
+              "tag_id": "urn:tag:genre:place:bar",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Dive Bar",
+              "tag_id": "urn:tag:genre:place:dive_bar",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.62,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.5
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.36
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.31
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

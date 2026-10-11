@@ -1,0 +1,599 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_promo_partners",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?diversify.by=properties.subtype&diversify.take=2&feature.explainability=true&filter.location.query=Knoxville%2C%20TN&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abar%2Curn%3Atag%3Agenre%3Aplace%3Abookstore%2Curn%3Atag%3Agenre%3Aplace%3Acafe%2Curn%3Atag%3Agenre%3Aplace%3Acoffee_shop%2Curn%3Atag%3Agenre%3Aplace%3Adive_bar%2Curn%3Atag%3Agenre%3Aplace%3Arecord_store%2Curn%3Atag%3Agenre%3Aplace%3Athrift_store%2Curn%3Atag%3Agenre%3Aplace%3Avintage_store&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=12",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Knoxville, TN",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:genre:place:bar,urn:tag:genre:place:bookstore,urn:tag:genre:place:cafe,urn:tag:genre:place:coffee_shop,urn:tag:genre:place:dive_bar,urn:tag:genre:place:record_store,urn:tag:genre:place:thrift_store,urn:tag:genre:place:vintage_store",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "diversify.by": "properties.subtype",
+      "diversify.take": 2,
+      "sort_by": "affinity",
+      "take": 12,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "6D84A202-DE2B-4AD7-858E-E47E0ABBE4BB",
+          "name": "Lost & Found Records",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:record_store",
+          "popularity": 0.6,
+          "properties": {
+            "description": "North Knoxville record shop with deep used bins and a staff that knows every indie-folk release on the wall.",
+            "address": "3710 N Broadway, Knoxville, TN 37917",
+            "geocode": {
+              "name": "Knoxville",
+              "city": "Knoxville",
+              "admin1_region": "TN",
+              "country_code": "US"
+            },
+            "business_rating": 4.8,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Record Store",
+              "tag_id": "urn:tag:genre:place:record_store",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.91,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.76
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.68
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.62
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "054F9DB2-3574-4097-B1C2-19A0EB5F4924",
+          "name": "Wild Love Bakehouse",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:coffee_shop",
+          "popularity": 0.64,
+          "properties": {
+            "description": "Happy Holler bakery and coffee shop with a flyer board that the neighborhood actually reads.",
+            "address": "1625 N Central St, Knoxville, TN 37917",
+            "geocode": {
+              "name": "Knoxville",
+              "city": "Knoxville",
+              "admin1_region": "TN",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Coffee Shop",
+              "tag_id": "urn:tag:genre:place:coffee_shop",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Cafe",
+              "tag_id": "urn:tag:genre:place:cafe",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.882,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.7
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.66
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.54
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "CD4625C9-928F-4C57-96B4-9D75B5653230",
+          "name": "Union Ave Books",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:bookstore",
+          "popularity": 0.56,
+          "properties": {
+            "description": "Downtown independent bookstore that hosts readings and will stock a zine or lyric book for a touring band.",
+            "address": "517 Union Ave, Knoxville, TN 37902",
+            "geocode": {
+              "name": "Knoxville",
+              "city": "Knoxville",
+              "admin1_region": "TN",
+              "country_code": "US"
+            },
+            "business_rating": 4.8,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Bookstore",
+              "tag_id": "urn:tag:genre:place:bookstore",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.854,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.68
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.6
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.58
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "3F9567C7-41E2-4A15-B227-1CA4A3ADF33A",
+          "name": "Central Flats & Taps",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:dive_bar",
+          "popularity": 0.48,
+          "properties": {
+            "description": "Unfussy Happy Holler bar with cheap pints and the kind of regulars who go to shows on weeknights.",
+            "address": "1204 N Central St, Knoxville, TN 37917",
+            "geocode": {
+              "name": "Knoxville",
+              "city": "Knoxville",
+              "admin1_region": "TN",
+              "country_code": "US"
+            },
+            "business_rating": 4.4,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Dive Bar",
+              "tag_id": "urn:tag:genre:place:dive_bar",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Bar",
+              "tag_id": "urn:tag:genre:place:bar",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.825,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.64
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.6
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.46
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "79D40881-AEAC-40BA-921E-2781B8151A53",
+          "name": "Nothing Too Fancy",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:vintage_store",
+          "popularity": 0.5,
+          "properties": {
+            "description": "Downtown shop for locally designed shirts and vintage finds, happy to hang a poster in the window.",
+            "address": "435 Union Ave, Knoxville, TN 37902",
+            "geocode": {
+              "name": "Knoxville",
+              "city": "Knoxville",
+              "admin1_region": "TN",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Vintage Store",
+              "tag_id": "urn:tag:genre:place:vintage_store",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.797,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.62
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.58
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.5
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "04878120-DD78-4387-AE73-8C22652836A0",
+          "name": "Raven Records & Rarities",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:record_store",
+          "popularity": 0.46,
+          "properties": {
+            "description": "Happy Holler vinyl and oddities shop with in-store performances and a soft spot for small-label folk.",
+            "address": "1200 N Central St, Knoxville, TN 37917",
+            "geocode": {
+              "name": "Knoxville",
+              "city": "Knoxville",
+              "admin1_region": "TN",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Record Store",
+              "tag_id": "urn:tag:genre:place:record_store",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.769,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.6
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.56
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.5
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "692980EE-067B-454E-9058-228D8FDF90F0",
+          "name": "Old City Java",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:coffee_shop",
+          "popularity": 0.58,
+          "properties": {
+            "description": "Old City coffee house a block from the clubs, where bands and bar staff overlap the morning after.",
+            "address": "109 S Central St, Knoxville, TN 37902",
+            "geocode": {
+              "name": "Knoxville",
+              "city": "Knoxville",
+              "admin1_region": "TN",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Coffee Shop",
+              "tag_id": "urn:tag:genre:place:coffee_shop",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Cafe",
+              "tag_id": "urn:tag:genre:place:cafe",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.741,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.58
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.54
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.48
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "09F00C46-741C-406F-81B6-4FF1D7323EA4",
+          "name": "Remedy Coffee",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:coffee_shop",
+          "popularity": 0.42,
+          "properties": {
+            "description": "Spacious roaster and cafe near the Old City with communal tables and room for a merch pop-up.",
+            "address": "800 Tyson St, Knoxville, TN 37917",
+            "geocode": {
+              "name": "Knoxville",
+              "city": "Knoxville",
+              "admin1_region": "TN",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Coffee Shop",
+              "tag_id": "urn:tag:genre:place:coffee_shop",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.713,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.55
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.52
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.46
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "B8492C83-9732-473C-A868-424750BA8E33",
+          "name": "The Bottom Bookstore",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:bookstore",
+          "popularity": 0.3,
+          "properties": {
+            "description": "A community bookstore and cafe in East Knoxville that hosts small readings and acoustic nights.",
+            "address": "2019 Martin Luther King Jr Ave, Knoxville, TN 37915",
+            "geocode": {
+              "name": "Knoxville",
+              "city": "Knoxville",
+              "admin1_region": "TN",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Bookstore",
+              "tag_id": "urn:tag:genre:place:bookstore",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.685,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.52
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.48
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.5
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "FDBB9892-B71D-42CB-9618-0301ABAB255F",
+          "name": "Sapphire",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:dive_bar",
+          "popularity": 0.44,
+          "properties": {
+            "description": "Gay Street cocktail-and-dive hybrid with a late crowd that drifts over from the theaters.",
+            "address": "428 S Gay St, Knoxville, TN 37902",
+            "geocode": {
+              "name": "Knoxville",
+              "city": "Knoxville",
+              "admin1_region": "TN",
+              "country_code": "US"
+            },
+            "business_rating": 4.3,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Dive Bar",
+              "tag_id": "urn:tag:genre:place:dive_bar",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Bar",
+              "tag_id": "urn:tag:genre:place:bar",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.656,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.5
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.46
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.42
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "2E1AFD15-079B-4F33-B019-7A007B45F6CA",
+          "name": "Retrospect Vintage",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:vintage_store",
+          "popularity": 0.4,
+          "properties": {
+            "description": "Curated vintage clothing and furniture on North Central with a crowd that overlaps the Old City show-goers.",
+            "address": "1316 N Central St, Knoxville, TN 37917",
+            "geocode": {
+              "name": "Knoxville",
+              "city": "Knoxville",
+              "admin1_region": "TN",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Vintage Store",
+              "tag_id": "urn:tag:genre:place:vintage_store",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Thrift Store",
+              "tag_id": "urn:tag:genre:place:thrift_store",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.628,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.48
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.5
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.44
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "D953B668-172C-48FE-B991-21B68A6098A6",
+          "name": "Hey Bear Cafe",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:coffee_shop",
+          "popularity": 0.36,
+          "properties": {
+            "description": "Bearden-side cafe with a patio and an all-ages crowd, good for an afternoon acoustic set.",
+            "address": "4028 Sutherland Ave, Knoxville, TN 37919",
+            "geocode": {
+              "name": "Knoxville",
+              "city": "Knoxville",
+              "admin1_region": "TN",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Coffee Shop",
+              "tag_id": "urn:tag:genre:place:coffee_shop",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Cafe",
+              "tag_id": "urn:tag:genre:place:cafe",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.6,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.46
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.44
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.4
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

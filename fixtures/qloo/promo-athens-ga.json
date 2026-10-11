@@ -1,0 +1,589 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_promo_partners",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?diversify.by=properties.subtype&diversify.take=2&feature.explainability=true&filter.location.query=Athens%2C%20GA&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abar%2Curn%3Atag%3Agenre%3Aplace%3Abookstore%2Curn%3Atag%3Agenre%3Aplace%3Acafe%2Curn%3Atag%3Agenre%3Aplace%3Acoffee_shop%2Curn%3Atag%3Agenre%3Aplace%3Adive_bar%2Curn%3Atag%3Agenre%3Aplace%3Arecord_store%2Curn%3Atag%3Agenre%3Aplace%3Athrift_store%2Curn%3Atag%3Agenre%3Aplace%3Avintage_store&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=12",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Athens, GA",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:genre:place:bar,urn:tag:genre:place:bookstore,urn:tag:genre:place:cafe,urn:tag:genre:place:coffee_shop,urn:tag:genre:place:dive_bar,urn:tag:genre:place:record_store,urn:tag:genre:place:thrift_store,urn:tag:genre:place:vintage_store",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "diversify.by": "properties.subtype",
+      "diversify.take": 2,
+      "sort_by": "affinity",
+      "take": 12,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "2D01022D-38A8-4248-84C3-6FA83E8EBC3D",
+          "name": "Wuxtry Records",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:record_store",
+          "popularity": 0.78,
+          "properties": {
+            "description": "Downtown shop stocked by people who have been in the bands; in-store sets on request.",
+            "address": "197 E Clayton St, Athens, GA 30601",
+            "geocode": {
+              "name": "Athens",
+              "city": "Athens",
+              "admin1_region": "GA",
+              "country_code": "US"
+            },
+            "business_rating": 4.43,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Record Store",
+              "tag_id": "urn:tag:genre:place:record_store",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.89,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.76
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.72
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.65
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "D17199F2-D580-4035-8C22-0343D3027FE8",
+          "name": "Low Yo Yo Stuff Records",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:record_store",
+          "popularity": 0.69,
+          "properties": {
+            "description": "Used-vinyl shop a door down from the 40 Watt; a poster here is seen by the right people.",
+            "address": "261 W Washington St, Athens, GA 30601",
+            "geocode": {
+              "name": "Athens",
+              "city": "Athens",
+              "admin1_region": "GA",
+              "country_code": "US"
+            },
+            "business_rating": 4.54,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Record Store",
+              "tag_id": "urn:tag:genre:place:record_store",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.87,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.76
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.64
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.61
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "1B25D288-EF74-4C21-AA41-04A8E6B0A143",
+          "name": "Jittery Joe's",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:coffee_shop",
+          "popularity": 0.8,
+          "properties": {
+            "description": "The downtown roaster where show flyers have hung for decades.",
+            "address": "297 E Broad St, Athens, GA 30601",
+            "geocode": {
+              "name": "Athens",
+              "city": "Athens",
+              "admin1_region": "GA",
+              "country_code": "US"
+            },
+            "business_rating": 4.61,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Coffee Shop",
+              "tag_id": "urn:tag:genre:place:coffee_shop",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Cafe",
+              "tag_id": "urn:tag:genre:place:cafe",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.85,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.74
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.66
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.59
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "6F2420B6-65E6-4378-9064-674BB67CF502",
+          "name": "Walker's Coffee & Pub",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:coffee_shop",
+          "popularity": 0.82,
+          "properties": {
+            "description": "Coffee by day and a bar by night across from the campus arch.",
+            "address": "128 College Ave, Athens, GA 30601",
+            "geocode": {
+              "name": "Athens",
+              "city": "Athens",
+              "admin1_region": "GA",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Coffee Shop",
+              "tag_id": "urn:tag:genre:place:coffee_shop",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Cafe",
+              "tag_id": "urn:tag:genre:place:cafe",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.83,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.7
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.64
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.54
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "7D91CA56-F5F5-45F7-A49D-9534FC6C4E79",
+          "name": "Avid Bookshop",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:bookstore",
+          "popularity": 0.72,
+          "properties": {
+            "description": "Independent bookshop with a busy events board and a reading crowd.",
+            "address": "493 Prince Ave, Athens, GA 30601",
+            "geocode": {
+              "name": "Athens",
+              "city": "Athens",
+              "admin1_region": "GA",
+              "country_code": "US"
+            },
+            "business_rating": 4.22,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Bookstore",
+              "tag_id": "urn:tag:genre:place:bookstore",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.81,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.68
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.63
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.54
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "7287A849-F09F-426E-8A85-24545810CCB7",
+          "name": "Normal Books",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:bookstore",
+          "popularity": 0.7,
+          "properties": {
+            "description": "Used books in Normaltown next to the bars the music crowd drinks in.",
+            "address": "1238 Prince Ave, Athens, GA 30601",
+            "geocode": {
+              "name": "Athens",
+              "city": "Athens",
+              "admin1_region": "GA",
+              "country_code": "US"
+            },
+            "business_rating": 4.61,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Bookstore",
+              "tag_id": "urn:tag:genre:place:bookstore",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.79,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.66
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.56
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.49
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "62BDACB1-55E4-4700-961C-424DA785B497",
+          "name": "Normal Bar",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:dive_bar",
+          "popularity": 0.49,
+          "properties": {
+            "description": "Neighborhood bar in Normaltown; the pre-show meetup for anyone on the Prince Avenue side.",
+            "address": "1365 Prince Ave, Athens, GA 30601",
+            "geocode": {
+              "name": "Athens",
+              "city": "Athens",
+              "admin1_region": "GA",
+              "country_code": "US"
+            },
+            "business_rating": 4.83,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Dive Bar",
+              "tag_id": "urn:tag:genre:place:dive_bar",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Bar",
+              "tag_id": "urn:tag:genre:place:bar",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.76,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.62
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.55
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.49
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "62109291-63F6-49AE-8F76-77D26B69570A",
+          "name": "The Manhattan Café",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:dive_bar",
+          "popularity": 0.55,
+          "properties": {
+            "description": "Downtown dive with a jukebox the bands program.",
+            "address": "337 N Hull St, Athens, GA 30601",
+            "geocode": {
+              "name": "Athens",
+              "city": "Athens",
+              "admin1_region": "GA",
+              "country_code": "US"
+            },
+            "business_rating": 4.68,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Dive Bar",
+              "tag_id": "urn:tag:genre:place:dive_bar",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Bar",
+              "tag_id": "urn:tag:genre:place:bar",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.73,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.59
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.52
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.48
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "1FDD6475-515E-462A-92F5-E10C582FFAE6",
+          "name": "Agora Vintage",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:vintage_store",
+          "popularity": 0.76,
+          "properties": {
+            "description": "Vintage and resale downtown; regulars are the same people who buy tickets.",
+            "address": "260 W Clayton St, Athens, GA 30601",
+            "geocode": {
+              "name": "Athens",
+              "city": "Athens",
+              "admin1_region": "GA",
+              "country_code": "US"
+            },
+            "business_rating": 4.78,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Vintage Store",
+              "tag_id": "urn:tag:genre:place:vintage_store",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.71,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.59
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.49
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.46
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "95216405-A6EC-41B4-9148-CCC56E241DD5",
+          "name": "Dynamite Clothing",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:vintage_store",
+          "popularity": 0.46,
+          "properties": {
+            "description": "Vintage clothing shop with a window that faces downtown foot traffic.",
+            "address": "143 N Jackson St, Athens, GA 30601",
+            "geocode": {
+              "name": "Athens",
+              "city": "Athens",
+              "admin1_region": "GA",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Vintage Store",
+              "tag_id": "urn:tag:genre:place:vintage_store",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.69,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.54
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.51
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.45
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "CC0857F2-3C30-49D4-BF90-198DBC1F4430",
+          "name": "Community",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:vintage_store",
+          "popularity": 0.61,
+          "properties": {
+            "description": "Resale and local makers; good for a small poster in the fitting room.",
+            "address": "119 N Jackson St, Athens, GA 30601",
+            "geocode": {
+              "name": "Athens",
+              "city": "Athens",
+              "admin1_region": "GA",
+              "country_code": "US"
+            },
+            "business_rating": 4.3,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Vintage Store",
+              "tag_id": "urn:tag:genre:place:vintage_store",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.67,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.56
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.5
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.43
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "2CAB57B8-EF7F-4C10-8B9E-7F36593ECEB3",
+          "name": "Bizarro-Wuxtry",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:record_store",
+          "popularity": 0.7,
+          "properties": {
+            "description": "Comics-and-records upstairs from Wuxtry; the same crowd, a different poster spot.",
+            "address": "197 E Clayton St, Athens, GA 30601",
+            "geocode": {
+              "name": "Athens",
+              "city": "Athens",
+              "admin1_region": "GA",
+              "country_code": "US"
+            },
+            "business_rating": 4.43,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Record Store",
+              "tag_id": "urn:tag:genre:place:record_store",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.65,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.5
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.46
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.37
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

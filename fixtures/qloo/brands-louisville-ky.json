@@ -1,0 +1,393 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "local_color",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Abrand&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Louisville%2C%20KY&signal.location.radius=25000&take=20",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:brand",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "signal.location.query": "Louisville, KY",
+      "signal.location.radius": 25000,
+      "take": 20
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "81FF9E58-99F1-4C63-9F2F-7D85FA8D6964",
+          "name": "Patagonia",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.85,
+          "properties": {},
+          "tags": [
+            {
+              "name": "Outdoor Apparel",
+              "tag_id": "urn:tag:category:brand:outdoor_apparel",
+              "type": "urn:tag:category:brand"
+            }
+          ],
+          "query": {
+            "affinity": 0.9
+          }
+        },
+        {
+          "entity_id": "AC8120D3-F632-4821-92A3-70E5C4A3343C",
+          "name": "Subaru",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.828,
+          "properties": {},
+          "tags": [
+            {
+              "name": "Automotive",
+              "tag_id": "urn:tag:category:brand:automotive",
+              "type": "urn:tag:category:brand"
+            }
+          ],
+          "query": {
+            "affinity": 0.882
+          }
+        },
+        {
+          "entity_id": "753F76AB-F8F3-4DB9-9076-5541D45875DF",
+          "name": "Trader Joe's",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.806,
+          "properties": {},
+          "tags": [
+            {
+              "name": "Grocery",
+              "tag_id": "urn:tag:category:brand:grocery",
+              "type": "urn:tag:category:brand"
+            }
+          ],
+          "query": {
+            "affinity": 0.863
+          }
+        },
+        {
+          "entity_id": "7C8DF92F-D4B9-45DE-9144-A0E36C0C6897",
+          "name": "REI",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.784,
+          "properties": {},
+          "tags": [
+            {
+              "name": "Outdoor Retail",
+              "tag_id": "urn:tag:category:brand:outdoor_retail",
+              "type": "urn:tag:category:brand"
+            }
+          ],
+          "query": {
+            "affinity": 0.845
+          }
+        },
+        {
+          "entity_id": "B33E9033-D54B-4B07-A439-14C0322C161D",
+          "name": "Levi's",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.762,
+          "properties": {},
+          "tags": [
+            {
+              "name": "Apparel",
+              "tag_id": "urn:tag:category:brand:apparel",
+              "type": "urn:tag:category:brand"
+            }
+          ],
+          "query": {
+            "affinity": 0.826
+          }
+        },
+        {
+          "entity_id": "FBCA9C0E-029F-4C28-87FC-D275BB50E820",
+          "name": "Against the Grain Brewery",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.74,
+          "properties": {
+            "description": "Louisville brewery at Slugger Field with a taproom and a second Highlands location."
+          },
+          "tags": [
+            {
+              "name": "Craft Brewery",
+              "tag_id": "urn:tag:category:brand:craft_brewery",
+              "type": "urn:tag:category:brand"
+            }
+          ],
+          "query": {
+            "affinity": 0.808
+          }
+        },
+        {
+          "entity_id": "79105CB8-2649-4620-A2F8-0B53D5B8A831",
+          "name": "Fjallraven",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.718,
+          "properties": {},
+          "tags": [
+            {
+              "name": "Outdoor Apparel",
+              "tag_id": "urn:tag:category:brand:outdoor_apparel",
+              "type": "urn:tag:category:brand"
+            }
+          ],
+          "query": {
+            "affinity": 0.789
+          }
+        },
+        {
+          "entity_id": "E17FBBA8-94DF-4FE3-853D-0700539EF9C2",
+          "name": "Heine Brothers' Coffee",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.696,
+          "properties": {
+            "description": "Louisville-born fair-trade coffee chain with shops across the city."
+          },
+          "tags": [
+            {
+              "name": "Coffee",
+              "tag_id": "urn:tag:category:brand:coffee",
+              "type": "urn:tag:category:brand"
+            }
+          ],
+          "query": {
+            "affinity": 0.771
+          }
+        },
+        {
+          "entity_id": "47D5D80A-D8DA-4F3A-A4DF-A99635B1BCB7",
+          "name": "Warby Parker",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.674,
+          "properties": {},
+          "tags": [
+            {
+              "name": "Eyewear",
+              "tag_id": "urn:tag:category:brand:eyewear",
+              "type": "urn:tag:category:brand"
+            }
+          ],
+          "query": {
+            "affinity": 0.753
+          }
+        },
+        {
+          "entity_id": "D44CBBD6-C6E8-455A-94B4-88B6A05B0591",
+          "name": "Blundstone",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.652,
+          "properties": {},
+          "tags": [
+            {
+              "name": "Footwear",
+              "tag_id": "urn:tag:category:brand:footwear",
+              "type": "urn:tag:category:brand"
+            }
+          ],
+          "query": {
+            "affinity": 0.734
+          }
+        },
+        {
+          "entity_id": "1E64D934-320B-4FB7-921B-58DB10BE96EA",
+          "name": "Birkenstock",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.63,
+          "properties": {},
+          "tags": [
+            {
+              "name": "Footwear",
+              "tag_id": "urn:tag:category:brand:footwear",
+              "type": "urn:tag:category:brand"
+            }
+          ],
+          "query": {
+            "affinity": 0.716
+          }
+        },
+        {
+          "entity_id": "52039753-DD87-4F1B-8D75-3F55850FAD13",
+          "name": "La Colombe",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.608,
+          "properties": {},
+          "tags": [
+            {
+              "name": "Coffee",
+              "tag_id": "urn:tag:category:brand:coffee",
+              "type": "urn:tag:category:brand"
+            }
+          ],
+          "query": {
+            "affinity": 0.697
+          }
+        },
+        {
+          "entity_id": "36B034D6-2F3B-4EE3-9FDB-4621F1784B2F",
+          "name": "Monnik Beer Co.",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.586,
+          "properties": {
+            "description": "Schnitzelburg brewery and kitchen in Louisville."
+          },
+          "tags": [
+            {
+              "name": "Craft Brewery",
+              "tag_id": "urn:tag:category:brand:craft_brewery",
+              "type": "urn:tag:category:brand"
+            }
+          ],
+          "query": {
+            "affinity": 0.679
+          }
+        },
+        {
+          "entity_id": "3E729925-49C0-412B-9022-4AB6F189D480",
+          "name": "Quills Coffee",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.564,
+          "properties": {
+            "description": "Louisville roaster with cafes in the Highlands and NuLu."
+          },
+          "tags": [
+            {
+              "name": "Coffee",
+              "tag_id": "urn:tag:category:brand:coffee",
+              "type": "urn:tag:category:brand"
+            }
+          ],
+          "query": {
+            "affinity": 0.661
+          }
+        },
+        {
+          "entity_id": "6D1175D1-7DF5-4C87-AFEB-820D0E20389A",
+          "name": "Rainbow Blossom",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.542,
+          "properties": {
+            "description": "Louisville natural foods grocer with several neighborhood stores."
+          },
+          "tags": [
+            {
+              "name": "Natural Grocery",
+              "tag_id": "urn:tag:category:brand:natural_grocery",
+              "type": "urn:tag:category:brand"
+            }
+          ],
+          "query": {
+            "affinity": 0.642
+          }
+        },
+        {
+          "entity_id": "CC32F29D-F291-40D1-A315-06E800B57645",
+          "name": "Hydro Flask",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.52,
+          "properties": {},
+          "tags": [
+            {
+              "name": "Outdoor Gear",
+              "tag_id": "urn:tag:category:brand:outdoor_gear",
+              "type": "urn:tag:category:brand"
+            }
+          ],
+          "query": {
+            "affinity": 0.624
+          }
+        },
+        {
+          "entity_id": "CA29596C-A583-4C49-8B03-1FCE2A53EA05",
+          "name": "Carhartt",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.498,
+          "properties": {},
+          "tags": [
+            {
+              "name": "Workwear",
+              "tag_id": "urn:tag:category:brand:workwear",
+              "type": "urn:tag:category:brand"
+            }
+          ],
+          "query": {
+            "affinity": 0.605
+          }
+        },
+        {
+          "entity_id": "F4D0AB50-60CD-4B17-BF5B-3224D267EB2B",
+          "name": "Allbirds",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.476,
+          "properties": {},
+          "tags": [
+            {
+              "name": "Footwear",
+              "tag_id": "urn:tag:category:brand:footwear",
+              "type": "urn:tag:category:brand"
+            }
+          ],
+          "query": {
+            "affinity": 0.587
+          }
+        },
+        {
+          "entity_id": "F0FD8AD9-68B0-49D9-84CE-66B9F835ADCF",
+          "name": "Toyota",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.454,
+          "properties": {},
+          "tags": [
+            {
+              "name": "Automotive",
+              "tag_id": "urn:tag:category:brand:automotive",
+              "type": "urn:tag:category:brand"
+            }
+          ],
+          "query": {
+            "affinity": 0.568
+          }
+        },
+        {
+          "entity_id": "8A06380C-A034-49D6-AD66-37D7BC5D1AA6",
+          "name": "Kroger",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.432,
+          "properties": {},
+          "tags": [
+            {
+              "name": "Grocery",
+              "tag_id": "urn:tag:category:brand:grocery",
+              "type": "urn:tag:category:brand"
+            }
+          ],
+          "query": {
+            "affinity": 0.55
+          }
+        }
+      ]
+    }
+  }
+}

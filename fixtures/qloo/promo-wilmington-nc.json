@@ -1,0 +1,594 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_promo_partners",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?diversify.by=properties.subtype&diversify.take=2&feature.explainability=true&filter.location.query=Wilmington%2C%20NC&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abar%2Curn%3Atag%3Agenre%3Aplace%3Abookstore%2Curn%3Atag%3Agenre%3Aplace%3Acafe%2Curn%3Atag%3Agenre%3Aplace%3Acoffee_shop%2Curn%3Atag%3Agenre%3Aplace%3Adive_bar%2Curn%3Atag%3Agenre%3Aplace%3Arecord_store%2Curn%3Atag%3Agenre%3Aplace%3Athrift_store%2Curn%3Atag%3Agenre%3Aplace%3Avintage_store&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=12",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Wilmington, NC",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:genre:place:bar,urn:tag:genre:place:bookstore,urn:tag:genre:place:cafe,urn:tag:genre:place:coffee_shop,urn:tag:genre:place:dive_bar,urn:tag:genre:place:record_store,urn:tag:genre:place:thrift_store,urn:tag:genre:place:vintage_store",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "diversify.by": "properties.subtype",
+      "diversify.take": 2,
+      "sort_by": "affinity",
+      "take": 12,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "CE0AC97A-1C1A-4D9A-9E90-012DEF891C06",
+          "name": "Gravity Records",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:record_store",
+          "popularity": 0.6,
+          "properties": {
+            "description": "Castle Street record shop with in-store sets and a deep indie bin.",
+            "address": "612 Castle St, Wilmington, NC 28401",
+            "geocode": {
+              "name": "Wilmington",
+              "city": "Wilmington",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.68,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Record Store",
+              "tag_id": "urn:tag:genre:place:record_store",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.9,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.75
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.69
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.61
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "2ED09206-F6B9-4AA8-AA16-2509BE647DE0",
+          "name": "Yellow Dog Discs",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:record_store",
+          "popularity": 0.6,
+          "properties": {
+            "description": "Used CDs and vinyl on Oleander; a flyer by the register.",
+            "address": "3102 Oleander Dr, Wilmington, NC 28403",
+            "geocode": {
+              "name": "Wilmington",
+              "city": "Wilmington",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.55,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Record Store",
+              "tag_id": "urn:tag:genre:place:record_store",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.87,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.72
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.67
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.58
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "D412154A-8EE5-4E23-997F-D52A072E7053",
+          "name": "Bespoke Coffee & Dry Goods",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:coffee_shop",
+          "popularity": 0.84,
+          "properties": {
+            "description": "Downtown coffee bar a block from Bourgie Nights.",
+            "address": "202 Princess St, Wilmington, NC 28401",
+            "geocode": {
+              "name": "Wilmington",
+              "city": "Wilmington",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.54,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Coffee Shop",
+              "tag_id": "urn:tag:genre:place:coffee_shop",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Cafe",
+              "tag_id": "urn:tag:genre:place:cafe",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.85,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.71
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.63
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.57
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "B39C4186-A411-482C-ABB9-26B17E19B2F5",
+          "name": "Luna Caffè",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:coffee_shop",
+          "popularity": 0.58,
+          "properties": {
+            "description": "Castle Street café next to Gravity Records.",
+            "address": "604 Castle St, Wilmington, NC 28401",
+            "geocode": {
+              "name": "Wilmington",
+              "city": "Wilmington",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.62,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Coffee Shop",
+              "tag_id": "urn:tag:genre:place:coffee_shop",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Cafe",
+              "tag_id": "urn:tag:genre:place:cafe",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.82,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.67
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.6
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.58
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "0C269388-200D-4CA7-A93B-BDC921F16407",
+          "name": "Port City Java",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:coffee_shop",
+          "popularity": 0.78,
+          "properties": {
+            "description": "Local coffee chain's flagship on Front Street.",
+            "address": "21 N Front St, Wilmington, NC 28401",
+            "geocode": {
+              "name": "Wilmington",
+              "city": "Wilmington",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.68,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Coffee Shop",
+              "tag_id": "urn:tag:genre:place:coffee_shop",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Cafe",
+              "tag_id": "urn:tag:genre:place:cafe",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.8,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.66
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.59
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.54
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "D41CD17A-272E-4DE7-A129-F312CBEF74C0",
+          "name": "Old Books on Front Street",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:bookstore",
+          "popularity": 0.51,
+          "properties": {
+            "description": "Sprawling used bookstore downtown with a community board.",
+            "address": "249 N Front St, Wilmington, NC 28401",
+            "geocode": {
+              "name": "Wilmington",
+              "city": "Wilmington",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.52,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Bookstore",
+              "tag_id": "urn:tag:genre:place:bookstore",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.77,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.62
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.55
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.53
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "B2844E4A-D54A-4ADC-BEA3-AC864C6F01C8",
+          "name": "Pomegranate Books",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:bookstore",
+          "popularity": 0.45,
+          "properties": {
+            "description": "Independent bookshop with a reading series.",
+            "address": "4418 Park Ave, Wilmington, NC 28403",
+            "geocode": {
+              "name": "Wilmington",
+              "city": "Wilmington",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.74,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Bookstore",
+              "tag_id": "urn:tag:genre:place:bookstore",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.75,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.62
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.56
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.51
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "9DDE8ECA-20B4-4736-91E6-C482DBC2A3DE",
+          "name": "Barbary Coast",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:dive_bar",
+          "popularity": 0.58,
+          "properties": {
+            "description": "The downtown dive; dark, cheap and full after shows.",
+            "address": "116 S Front St, Wilmington, NC 28401",
+            "geocode": {
+              "name": "Wilmington",
+              "city": "Wilmington",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.69,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Dive Bar",
+              "tag_id": "urn:tag:genre:place:dive_bar",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Bar",
+              "tag_id": "urn:tag:genre:place:bar",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.73,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.6
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.55
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.47
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "BC3F928B-ADCC-4A53-A762-A41E09B97744",
+          "name": "Lula's",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:dive_bar",
+          "popularity": 0.56,
+          "properties": {
+            "description": "Basement bar on Front Street; a poster behind the bar gets read.",
+            "address": "138 S Front St, Wilmington, NC 28401",
+            "geocode": {
+              "name": "Wilmington",
+              "city": "Wilmington",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.47,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Dive Bar",
+              "tag_id": "urn:tag:genre:place:dive_bar",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Bar",
+              "tag_id": "urn:tag:genre:place:bar",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.7,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.6
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.47
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.41
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "4ABA4BA4-18DA-4DCD-8B59-7095D41C70EA",
+          "name": "Second Skin Vintage",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:vintage_store",
+          "popularity": 0.57,
+          "properties": {
+            "description": "Vintage shop on the Castle Street arts strip.",
+            "address": "615 Castle St, Wilmington, NC 28401",
+            "geocode": {
+              "name": "Wilmington",
+              "city": "Wilmington",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.35,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Vintage Store",
+              "tag_id": "urn:tag:genre:place:vintage_store",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.67,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.52
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.48
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.38
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "7169E9F2-61B0-4CC2-A929-54B492C8678D",
+          "name": "Jess James + Co",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:vintage_store",
+          "popularity": 0.46,
+          "properties": {
+            "description": "Vintage and local makers downtown.",
+            "address": "221 N Front St, Wilmington, NC 28401",
+            "geocode": {
+              "name": "Wilmington",
+              "city": "Wilmington",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.82,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Vintage Store",
+              "tag_id": "urn:tag:genre:place:vintage_store",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.65,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.53
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.43
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.38
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "D4E789E7-53AA-42AE-8122-4AB7067610DD",
+          "name": "Edge of Urge",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:vintage_store",
+          "popularity": 0.81,
+          "properties": {
+            "description": "Boutique and vintage mix near the riverfront.",
+            "address": "18 Market St, Wilmington, NC 28401",
+            "geocode": {
+              "name": "Wilmington",
+              "city": "Wilmington",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.83,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Vintage Store",
+              "tag_id": "urn:tag:genre:place:vintage_store",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.63,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.5
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.43
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.37
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

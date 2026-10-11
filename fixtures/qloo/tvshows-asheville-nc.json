@@ -1,0 +1,263 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "local_color",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Atv_show&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Asheville%2C%20NC&signal.location.radius=25000&take=20",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:tv_show",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "signal.location.query": "Asheville, NC",
+      "signal.location.radius": 25000,
+      "take": 20
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "5AF4B18C-7F2E-4D54-B946-C924DBBC0E98",
+          "name": "Fleabag",
+          "type": "urn:entity:tv_show",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.9,
+          "properties": {},
+          "tags": [],
+          "query": {
+            "affinity": 0.91
+          }
+        },
+        {
+          "entity_id": "656078D4-7298-439C-B517-153F264014E1",
+          "name": "Somebody Somewhere",
+          "type": "urn:entity:tv_show",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.88,
+          "properties": {},
+          "tags": [],
+          "query": {
+            "affinity": 0.893
+          }
+        },
+        {
+          "entity_id": "F504DFDE-7861-486D-9F48-C6422671C57A",
+          "name": "Reservation Dogs",
+          "type": "urn:entity:tv_show",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.86,
+          "properties": {},
+          "tags": [],
+          "query": {
+            "affinity": 0.875
+          }
+        },
+        {
+          "entity_id": "E3C6F04F-7F24-4D5C-88C7-79ACD9F57EAC",
+          "name": "The Bear",
+          "type": "urn:entity:tv_show",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.84,
+          "properties": {},
+          "tags": [],
+          "query": {
+            "affinity": 0.858
+          }
+        },
+        {
+          "entity_id": "CBBD7C4F-EE93-4B17-8B5B-5251E5F73EB7",
+          "name": "Hacks",
+          "type": "urn:entity:tv_show",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.82,
+          "properties": {},
+          "tags": [],
+          "query": {
+            "affinity": 0.841
+          }
+        },
+        {
+          "entity_id": "A13215E0-C764-4D72-A2B1-801211C74A37",
+          "name": "Twin Peaks",
+          "type": "urn:entity:tv_show",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.8,
+          "properties": {},
+          "tags": [],
+          "query": {
+            "affinity": 0.823
+          }
+        },
+        {
+          "entity_id": "DB8450A9-DDD4-4A01-8081-D65A68F670C9",
+          "name": "Detroiters",
+          "type": "urn:entity:tv_show",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.78,
+          "properties": {},
+          "tags": [],
+          "query": {
+            "affinity": 0.806
+          }
+        },
+        {
+          "entity_id": "4ED236B4-9453-4512-8981-B49E9BB467A5",
+          "name": "Atlanta",
+          "type": "urn:entity:tv_show",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.76,
+          "properties": {},
+          "tags": [],
+          "query": {
+            "affinity": 0.788
+          }
+        },
+        {
+          "entity_id": "377A96F7-A073-43FE-B56D-6E3331A4308F",
+          "name": "Gilmore Girls",
+          "type": "urn:entity:tv_show",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.74,
+          "properties": {},
+          "tags": [],
+          "query": {
+            "affinity": 0.771
+          }
+        },
+        {
+          "entity_id": "D7BD04AA-3B47-4DA4-9E4F-40A542F5B7D1",
+          "name": "Abbott Elementary",
+          "type": "urn:entity:tv_show",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.72,
+          "properties": {},
+          "tags": [],
+          "query": {
+            "affinity": 0.754
+          }
+        },
+        {
+          "entity_id": "BAF90461-5DF2-4491-9523-F0057E492CF9",
+          "name": "Succession",
+          "type": "urn:entity:tv_show",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.7,
+          "properties": {},
+          "tags": [],
+          "query": {
+            "affinity": 0.736
+          }
+        },
+        {
+          "entity_id": "0E925F8C-19E3-4F7B-A3BE-AE91C3784881",
+          "name": "Heartstopper",
+          "type": "urn:entity:tv_show",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.68,
+          "properties": {},
+          "tags": [],
+          "query": {
+            "affinity": 0.719
+          }
+        },
+        {
+          "entity_id": "B6119090-85AC-4E84-8223-45008C3A45F5",
+          "name": "Justified",
+          "type": "urn:entity:tv_show",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.66,
+          "properties": {},
+          "tags": [],
+          "query": {
+            "affinity": 0.702
+          }
+        },
+        {
+          "entity_id": "E7F79DE3-6AB2-4018-8E5C-6E12DC640FA7",
+          "name": "Chef's Table",
+          "type": "urn:entity:tv_show",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.64,
+          "properties": {},
+          "tags": [],
+          "query": {
+            "affinity": 0.684
+          }
+        },
+        {
+          "entity_id": "F1C619B0-E400-412A-A634-CE002E3CEDF5",
+          "name": "Alone",
+          "type": "urn:entity:tv_show",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.62,
+          "properties": {},
+          "tags": [],
+          "query": {
+            "affinity": 0.667
+          }
+        },
+        {
+          "entity_id": "9C5B9553-722E-4271-9A89-BBAAF6E5D37B",
+          "name": "Northern Exposure",
+          "type": "urn:entity:tv_show",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.6,
+          "properties": {},
+          "tags": [],
+          "query": {
+            "affinity": 0.649
+          }
+        },
+        {
+          "entity_id": "72E9BC0B-598B-43EF-8465-E61AD1CFF1DB",
+          "name": "Parks and Recreation",
+          "type": "urn:entity:tv_show",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.58,
+          "properties": {},
+          "tags": [],
+          "query": {
+            "affinity": 0.632
+          }
+        },
+        {
+          "entity_id": "8846C890-2157-46DE-8C98-84D919CFB824",
+          "name": "Shrinking",
+          "type": "urn:entity:tv_show",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.56,
+          "properties": {},
+          "tags": [],
+          "query": {
+            "affinity": 0.615
+          }
+        },
+        {
+          "entity_id": "7F75EEE6-1524-4148-A801-1648D95D53BF",
+          "name": "The Righteous Gemstones",
+          "type": "urn:entity:tv_show",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.54,
+          "properties": {},
+          "tags": [],
+          "query": {
+            "affinity": 0.597
+          }
+        },
+        {
+          "entity_id": "FDE24F42-EC71-4A40-846D-FD2492C43152",
+          "name": "Our Flag Means Death",
+          "type": "urn:entity:tv_show",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.52,
+          "properties": {},
+          "tags": [],
+          "query": {
+            "affinity": 0.58
+          }
+        }
+      ]
+    }
+  }
+}

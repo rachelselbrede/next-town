@@ -1,0 +1,402 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_rooms",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?feature.explainability=true&filter.location.query=Boone%2C%20NC&filter.location.radius=15000&filter.tags=urn%3Atag%3Acategory%3Aplace%3Alive_music_venue%2Curn%3Atag%3Agenre%3Aplace%3Abar%3Alive_music%2Curn%3Atag%3Agenre%3Aplace%3Aconcert_hall%2Curn%3Atag%3Agenre%3Aplace%3Amusic_venue&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=8",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Boone, NC",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:category:place:live_music_venue,urn:tag:genre:place:bar:live_music,urn:tag:genre:place:concert_hall,urn:tag:genre:place:music_venue",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "sort_by": "affinity",
+      "take": 8,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "A1557D37-06D2-4CD7-BEE2-17E95BF6F0D5",
+          "name": "Boone Saloon",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:live_music_bar",
+          "popularity": 0.52,
+          "properties": {
+            "description": "King Street bar with the town's steadiest live calendar; touring folk acts play upstairs.",
+            "address": "489 W King St, Boone, NC 28607",
+            "geocode": {
+              "name": "Boone",
+              "city": "Boone",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Live Music Bar",
+              "tag_id": "urn:tag:genre:place:bar:live_music",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.91,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.78
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.71
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.64
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "3FD000D6-C7FF-458D-B872-9E83ECE788D8",
+          "name": "Appalachian Theatre of the High Country",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:concert_hall",
+          "popularity": 0.54,
+          "properties": {
+            "description": "Restored 1938 theatre downtown; the seated room when a bar show is too small.",
+            "address": "559 W King St, Boone, NC 28607",
+            "geocode": {
+              "name": "Boone",
+              "city": "Boone",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.3,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Concert Hall",
+              "tag_id": "urn:tag:genre:place:concert_hall",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.87,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.71
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.7
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.6
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "81660ABD-C459-4CDA-B9A4-5093539F9B7D",
+          "name": "Lily's Snack Bar",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:live_music_bar",
+          "popularity": 0.57,
+          "properties": {
+            "description": "Small bar and patio near campus with weekend sets.",
+            "address": "455 Blowing Rock Rd, Boone, NC 28607",
+            "geocode": {
+              "name": "Boone",
+              "city": "Boone",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.56,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Live Music Bar",
+              "tag_id": "urn:tag:genre:place:bar:live_music",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.84,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.69
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.64
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.56
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "BF58B435-81EB-403E-8831-030F6A20C099",
+          "name": "The Cardinal",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:live_music_bar",
+          "popularity": 0.54,
+          "properties": {
+            "description": "Roadhouse-style bar with a stage and a crowd that comes for the band.",
+            "address": "1711 US-421, Boone, NC 28607",
+            "geocode": {
+              "name": "Boone",
+              "city": "Boone",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.77,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Live Music Bar",
+              "tag_id": "urn:tag:genre:place:bar:live_music",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.8,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.64
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.61
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.54
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "99BBC53D-37D6-46AE-86DE-F03311E32ADD",
+          "name": "Lost Province Brewing Co.",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:music_venue",
+          "popularity": 0.59,
+          "properties": {
+            "description": "Downtown brewery with a stage and an early, all-ages room.",
+            "address": "130 N Depot St, Boone, NC 28607",
+            "geocode": {
+              "name": "Boone",
+              "city": "Boone",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.32,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Music Venue",
+              "tag_id": "urn:tag:genre:place:music_venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Live Music Venue",
+              "tag_id": "urn:tag:category:place:live_music_venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.76,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.65
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.57
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.51
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "4197D3B3-EBC7-40DE-90E3-C239650F7C8D",
+          "name": "Ransom Pub",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:live_music_bar",
+          "popularity": 0.64,
+          "properties": {
+            "description": "Gastropub on King Street with acoustic nights.",
+            "address": "689 W King St, Boone, NC 28607",
+            "geocode": {
+              "name": "Boone",
+              "city": "Boone",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.21,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Live Music Bar",
+              "tag_id": "urn:tag:genre:place:bar:live_music",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.73,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.61
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.52
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.48
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "7B83FE24-103F-44E0-95DF-EE5DAA49FEBF",
+          "name": "Legends",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:music_venue",
+          "popularity": 0.55,
+          "properties": {
+            "description": "App State's student-run club; the bigger room for a college-town night.",
+            "address": "263 Locust St, Boone, NC 28608",
+            "geocode": {
+              "name": "Boone",
+              "city": "Boone",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.85,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Music Venue",
+              "tag_id": "urn:tag:genre:place:music_venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Live Music Venue",
+              "tag_id": "urn:tag:category:place:live_music_venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.7,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.57
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.51
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.43
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "26DF9FD9-E95D-4260-99AF-C4B523AC6AE0",
+          "name": "Booneshine Brewing",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:music_venue",
+          "popularity": 0.47,
+          "properties": {
+            "description": "Brewery with an outdoor stage on the edge of town.",
+            "address": "465 Industrial Park Dr, Boone, NC 28607",
+            "geocode": {
+              "name": "Boone",
+              "city": "Boone",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.68,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Music Venue",
+              "tag_id": "urn:tag:genre:place:music_venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Live Music Venue",
+              "tag_id": "urn:tag:category:place:live_music_venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.67,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.53
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.48
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.4
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

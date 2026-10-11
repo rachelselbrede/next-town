@@ -1,0 +1,392 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_rooms",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?feature.explainability=true&filter.location.query=Wilmington%2C%20NC&filter.location.radius=15000&filter.tags=urn%3Atag%3Acategory%3Aplace%3Alive_music_venue%2Curn%3Atag%3Agenre%3Aplace%3Abar%3Alive_music%2Curn%3Atag%3Agenre%3Aplace%3Aconcert_hall%2Curn%3Atag%3Agenre%3Aplace%3Amusic_venue&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=8",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Wilmington, NC",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:category:place:live_music_venue,urn:tag:genre:place:bar:live_music,urn:tag:genre:place:concert_hall,urn:tag:genre:place:music_venue",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "sort_by": "affinity",
+      "take": 8,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "6F43E3B4-AAF0-414A-A925-C2C65EBF977D",
+          "name": "Bourgie Nights",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:music_venue",
+          "popularity": 0.53,
+          "properties": {
+            "description": "Downtown listening room where touring folk and indie bills land first.",
+            "address": "127 Princess St, Wilmington, NC 28401",
+            "geocode": {
+              "name": "Wilmington",
+              "city": "Wilmington",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.73,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Music Venue",
+              "tag_id": "urn:tag:genre:place:music_venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Live Music Venue",
+              "tag_id": "urn:tag:category:place:live_music_venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.91,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.8
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.7
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.63
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "9DD9833B-8FD7-474A-A288-14F99EA5595C",
+          "name": "Reggie's 42nd Street Tavern",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:live_music_bar",
+          "popularity": 0.49,
+          "properties": {
+            "description": "Loud, loyal tavern with a stage and a crowd that shows up on weeknights.",
+            "address": "1415 S 42nd St, Wilmington, NC 28403",
+            "geocode": {
+              "name": "Wilmington",
+              "city": "Wilmington",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.53,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Live Music Bar",
+              "tag_id": "urn:tag:genre:place:bar:live_music",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.88,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.77
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.66
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.62
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "F72814BF-A7DA-44B1-BC67-B3319A5624BC",
+          "name": "Greenfield Lake Amphitheater",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:concert_hall",
+          "popularity": 0.75,
+          "properties": {
+            "description": "Lakeside outdoor amphitheater; the warm-season step-up room.",
+            "address": "1941 Amphitheatre Dr, Wilmington, NC 28401",
+            "geocode": {
+              "name": "Wilmington",
+              "city": "Wilmington",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.83,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Concert Hall",
+              "tag_id": "urn:tag:genre:place:concert_hall",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.84,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.72
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.66
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.58
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "285458DA-BE31-406E-A40F-533A90349CE3",
+          "name": "Brooklyn Arts Center",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:concert_hall",
+          "popularity": 0.51,
+          "properties": {
+            "description": "Converted church with a tall seated room downtown.",
+            "address": "516 N 4th St, Wilmington, NC 28401",
+            "geocode": {
+              "name": "Wilmington",
+              "city": "Wilmington",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.64,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Concert Hall",
+              "tag_id": "urn:tag:genre:place:concert_hall",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.81,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.7
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.64
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.57
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "F7B462AB-2C06-4A6A-95AA-82756EBC44C6",
+          "name": "Satellite Bar & Lounge",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:live_music_bar",
+          "popularity": 0.75,
+          "properties": {
+            "description": "South Front bar with an outdoor stage and a patio crowd.",
+            "address": "120 Greenfield St, Wilmington, NC 28401",
+            "geocode": {
+              "name": "Wilmington",
+              "city": "Wilmington",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.33,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Live Music Bar",
+              "tag_id": "urn:tag:genre:place:bar:live_music",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.78,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.63
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.55
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.49
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "9050F228-E86F-4D38-82FC-0E3EC1E3CDF2",
+          "name": "Palate",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:live_music_bar",
+          "popularity": 0.45,
+          "properties": {
+            "description": "Bottle shop and bar in Brooklyn Arts District with acoustic shows.",
+            "address": "1007 N 4th St, Wilmington, NC 28401",
+            "geocode": {
+              "name": "Wilmington",
+              "city": "Wilmington",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Live Music Bar",
+              "tag_id": "urn:tag:genre:place:bar:live_music",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.76,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.63
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.58
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.46
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "886FD6CE-0432-4484-B4F4-1D61FAC19FEE",
+          "name": "The Whiskey",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:live_music_bar",
+          "popularity": 0.53,
+          "properties": {
+            "description": "Downtown bar on Front Street with a small stage.",
+            "address": "1 S Front St, Wilmington, NC 28401",
+            "geocode": {
+              "name": "Wilmington",
+              "city": "Wilmington",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.69,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Live Music Bar",
+              "tag_id": "urn:tag:genre:place:bar:live_music",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.73,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.61
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.56
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.46
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "CC29D246-04B7-4B57-A0FE-057D15B2CD63",
+          "name": "Live Oak Bank Pavilion",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:concert_hall",
+          "popularity": 0.78,
+          "properties": {
+            "description": "Riverfront amphitheater; the biggest room in town.",
+            "address": "10 Cowan St, Wilmington, NC 28401",
+            "geocode": {
+              "name": "Wilmington",
+              "city": "Wilmington",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Concert Hall",
+              "tag_id": "urn:tag:genre:place:concert_hall",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.7,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.58
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.52
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.43
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

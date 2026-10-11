@@ -1,0 +1,283 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "local_color",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Abrand&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Pittsburgh%2C%20PA&signal.location.radius=25000&take=20",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:brand",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "signal.location.query": "Pittsburgh, PA",
+      "signal.location.radius": 25000,
+      "take": 20
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "81FF9E58-99F1-4C63-9F2F-7D85FA8D6964",
+          "name": "Patagonia",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.85,
+          "properties": {
+            "description": "Outdoor apparel brand known for repair programs and environmental activism."
+          },
+          "query": {
+            "affinity": 0.9
+          }
+        },
+        {
+          "entity_id": "AC8120D3-F632-4821-92A3-70E5C4A3343C",
+          "name": "Subaru",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.83,
+          "properties": {
+            "description": "The all-wheel-drive wagon of choice for the gear-hauling, dog-owning show-goer."
+          },
+          "query": {
+            "affinity": 0.88
+          }
+        },
+        {
+          "entity_id": "753F76AB-F8F3-4DB9-9076-5541D45875DF",
+          "name": "Trader Joe's",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.81,
+          "properties": {
+            "description": "Grocery chain with a cult following for its snacks and cheap wine."
+          },
+          "query": {
+            "affinity": 0.86
+          }
+        },
+        {
+          "entity_id": "7C8DF92F-D4B9-45DE-9144-A0E36C0C6897",
+          "name": "REI",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.79,
+          "properties": {
+            "description": "Outdoor gear co-op with a Pittsburgh store at the SouthSide Works."
+          },
+          "query": {
+            "affinity": 0.84
+          }
+        },
+        {
+          "entity_id": "72503455-6D19-4291-99BC-B7BAE250674B",
+          "name": "Grist House Craft Brewery",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.77,
+          "properties": {
+            "description": "Millvale brewery with a big beer garden a few blocks from Mr. Smalls."
+          },
+          "query": {
+            "affinity": 0.82
+          }
+        },
+        {
+          "entity_id": "B33E9033-D54B-4B07-A439-14C0322C161D",
+          "name": "Levi's",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.75,
+          "properties": {
+            "description": "Denim staple for the flannel-and-jeans crowd."
+          },
+          "query": {
+            "affinity": 0.8
+          }
+        },
+        {
+          "entity_id": "A9788DFF-927F-4229-8494-CC28180A6B5C",
+          "name": "East End Brewing Company",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.73,
+          "properties": {
+            "description": "Long-running Pittsburgh craft brewery in Larimer known for its Big Hop IPA and growler culture."
+          },
+          "query": {
+            "affinity": 0.78
+          }
+        },
+        {
+          "entity_id": "79105CB8-2649-4620-A2F8-0B53D5B8A831",
+          "name": "Fjallraven",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.71,
+          "properties": {
+            "description": "Swedish outdoor brand behind the Kanken backpack seen at every indie show."
+          },
+          "query": {
+            "affinity": 0.76
+          }
+        },
+        {
+          "entity_id": "52039753-DD87-4F1B-8D75-3F55850FAD13",
+          "name": "La Colombe",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.69,
+          "properties": {
+            "description": "Philadelphia-born coffee roaster with cafes across Pennsylvania."
+          },
+          "query": {
+            "affinity": 0.74
+          }
+        },
+        {
+          "entity_id": "D44CBBD6-C6E8-455A-94B4-88B6A05B0591",
+          "name": "Blundstone",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.67,
+          "properties": {
+            "description": "Pull-on Chelsea boots that have become the unofficial footwear of indie-folk fans."
+          },
+          "query": {
+            "affinity": 0.72
+          }
+        },
+        {
+          "entity_id": "B44CB639-CB3E-4931-ABA5-4A2F5B2DAAAC",
+          "name": "Dancing Gnome",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.65,
+          "properties": {
+            "description": "Sharpsburg brewery with a hazy-IPA reputation and a taproom crowd that skews young."
+          },
+          "query": {
+            "affinity": 0.7
+          }
+        },
+        {
+          "entity_id": "47D5D80A-D8DA-4F3A-A4DF-A99635B1BCB7",
+          "name": "Warby Parker",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.63,
+          "properties": {
+            "description": "Direct-to-consumer eyewear brand with a Shadyside storefront."
+          },
+          "query": {
+            "affinity": 0.68
+          }
+        },
+        {
+          "entity_id": "E02ADCAF-5406-4313-BB26-67758B3A101B",
+          "name": "Giant Eagle",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.61,
+          "properties": {
+            "description": "Pittsburgh's hometown regional grocery chain, the default store for anyone living in the city."
+          },
+          "query": {
+            "affinity": 0.67
+          }
+        },
+        {
+          "entity_id": "1E64D934-320B-4FB7-921B-58DB10BE96EA",
+          "name": "Birkenstock",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.59,
+          "properties": {
+            "description": "Cork-footbed sandals, a summer festival standby."
+          },
+          "query": {
+            "affinity": 0.65
+          }
+        },
+        {
+          "entity_id": "9DE83486-ADBD-4F37-A27A-FB06674B0F90",
+          "name": "Prantl's Bakery",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.57,
+          "properties": {
+            "description": "Pittsburgh bakery famous for the burnt almond torte."
+          },
+          "query": {
+            "affinity": 0.63
+          }
+        },
+        {
+          "entity_id": "CC32F29D-F291-40D1-A315-06E800B57645",
+          "name": "Hydro Flask",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.55,
+          "properties": {
+            "description": "Insulated water bottles covered in stickers from venues and record stores."
+          },
+          "query": {
+            "affinity": 0.61
+          }
+        },
+        {
+          "entity_id": "723BD692-EAE6-4058-87C0-8DC8B614511C",
+          "name": "La Prima Espresso",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.53,
+          "properties": {
+            "description": "Pittsburgh roaster in the Strip District with a loyal neighborhood following."
+          },
+          "query": {
+            "affinity": 0.6
+          }
+        },
+        {
+          "entity_id": "F4D0AB50-60CD-4B17-BF5B-3224D267EB2B",
+          "name": "Allbirds",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.51,
+          "properties": {
+            "description": "Wool sneakers popular with the sustainability-minded crowd."
+          },
+          "query": {
+            "affinity": 0.58
+          }
+        },
+        {
+          "entity_id": "2F0226A6-5920-4EE7-9C9C-FB2B1522C413",
+          "name": "Iron City Beer",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.49,
+          "properties": {
+            "description": "Pittsburgh's hometown lager, a dive-bar ironic-and-sincere order."
+          },
+          "query": {
+            "affinity": 0.56
+          }
+        },
+        {
+          "entity_id": "521076DF-3EFD-445E-B86C-B5E4864B2841",
+          "name": "Heinz",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.47,
+          "properties": {
+            "description": "The Pittsburgh condiment company whose name is on the stadium and the history center."
+          },
+          "query": {
+            "affinity": 0.55
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,283 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "local_color",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Abrand&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Carrboro%2C%20NC&signal.location.radius=25000&take=20",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:brand",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "signal.location.query": "Carrboro, NC",
+      "signal.location.radius": 25000,
+      "take": 20
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "79EEE04F-A222-4904-AD68-3BA71F6C4464",
+          "name": "Weaver Street Market",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.85,
+          "properties": {
+            "description": "Carrboro's co-op grocery and lawn, the town square for shows and morning coffee."
+          },
+          "query": {
+            "affinity": 0.9
+          }
+        },
+        {
+          "entity_id": "81FF9E58-99F1-4C63-9F2F-7D85FA8D6964",
+          "name": "Patagonia",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.828,
+          "properties": {
+            "description": "Outdoor apparel brand with a strong following among indie-folk audiences."
+          },
+          "query": {
+            "affinity": 0.882
+          }
+        },
+        {
+          "entity_id": "AC8120D3-F632-4821-92A3-70E5C4A3343C",
+          "name": "Subaru",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.806,
+          "properties": {
+            "description": "Carmaker with a loyal base among outdoorsy, music-festival-going drivers."
+          },
+          "query": {
+            "affinity": 0.863
+          }
+        },
+        {
+          "entity_id": "753F76AB-F8F3-4DB9-9076-5541D45875DF",
+          "name": "Trader Joe's",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.784,
+          "properties": {
+            "description": "Grocery chain popular with young professionals and grad students."
+          },
+          "query": {
+            "affinity": 0.845
+          }
+        },
+        {
+          "entity_id": "7B6FB381-3093-4C50-A15E-6D21EA7E78E7",
+          "name": "Counter Culture Coffee",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.762,
+          "properties": {
+            "description": "Durham-based specialty roaster served in cafes across the Triangle."
+          },
+          "query": {
+            "affinity": 0.826
+          }
+        },
+        {
+          "entity_id": "7C8DF92F-D4B9-45DE-9144-A0E36C0C6897",
+          "name": "REI",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.74,
+          "properties": {
+            "description": "Outdoor co-op retailer with strong affinity in college and trail towns."
+          },
+          "query": {
+            "affinity": 0.808
+          }
+        },
+        {
+          "entity_id": "92AE7889-8825-41F9-9786-BDC1C2B1807A",
+          "name": "Merge Records",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.718,
+          "properties": {
+            "description": "The Durham indie label that grew out of the Chapel Hill scene."
+          },
+          "query": {
+            "affinity": 0.789
+          }
+        },
+        {
+          "entity_id": "79105CB8-2649-4620-A2F8-0B53D5B8A831",
+          "name": "Fjallraven",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.696,
+          "properties": {
+            "description": "Swedish backpack and outdoor clothing brand popular on campus and at shows."
+          },
+          "query": {
+            "affinity": 0.771
+          }
+        },
+        {
+          "entity_id": "B33E9033-D54B-4B07-A439-14C0322C161D",
+          "name": "Levi's",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.674,
+          "properties": {
+            "description": "Denim staple for the indie and folk crowd."
+          },
+          "query": {
+            "affinity": 0.753
+          }
+        },
+        {
+          "entity_id": "D2211532-7B69-4259-9174-37814BEAF070",
+          "name": "Fullsteam Brewery",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.652,
+          "properties": {
+            "description": "Durham brewery known for Southern-ingredient beers and live music nights."
+          },
+          "query": {
+            "affinity": 0.734
+          }
+        },
+        {
+          "entity_id": "52039753-DD87-4F1B-8D75-3F55850FAD13",
+          "name": "La Colombe",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.63,
+          "properties": {
+            "description": "Specialty coffee roaster and canned-latte brand."
+          },
+          "query": {
+            "affinity": 0.716
+          }
+        },
+        {
+          "entity_id": "D44CBBD6-C6E8-455A-94B4-88B6A05B0591",
+          "name": "Blundstone",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.608,
+          "properties": {
+            "description": "Australian boot brand worn by touring musicians everywhere."
+          },
+          "query": {
+            "affinity": 0.697
+          }
+        },
+        {
+          "entity_id": "47D5D80A-D8DA-4F3A-A4DF-A99635B1BCB7",
+          "name": "Warby Parker",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.586,
+          "properties": {
+            "description": "Direct-to-consumer eyewear brand with a young, urban audience."
+          },
+          "query": {
+            "affinity": 0.679
+          }
+        },
+        {
+          "entity_id": "36893AB3-1D7F-462E-8A16-8FDDC01BD4EE",
+          "name": "Great Outdoor Provision Co.",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.564,
+          "properties": {
+            "description": "North Carolina outfitter with a Chapel Hill store near campus."
+          },
+          "query": {
+            "affinity": 0.661
+          }
+        },
+        {
+          "entity_id": "1E64D934-320B-4FB7-921B-58DB10BE96EA",
+          "name": "Birkenstock",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.542,
+          "properties": {
+            "description": "Sandal brand with a long-running crunchy-college-town following."
+          },
+          "query": {
+            "affinity": 0.642
+          }
+        },
+        {
+          "entity_id": "CC32F29D-F291-40D1-A315-06E800B57645",
+          "name": "Hydro Flask",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.52,
+          "properties": {
+            "description": "Insulated bottle brand common on trails and at festivals."
+          },
+          "query": {
+            "affinity": 0.624
+          }
+        },
+        {
+          "entity_id": "C73FFA8F-5C54-4D3C-B005-D446B1E83030",
+          "name": "Carolina Brewery",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.498,
+          "properties": {
+            "description": "Chapel Hill brewpub on Franklin Street, a local since 1995."
+          },
+          "query": {
+            "affinity": 0.605
+          }
+        },
+        {
+          "entity_id": "F4D0AB50-60CD-4B17-BF5B-3224D267EB2B",
+          "name": "Allbirds",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.476,
+          "properties": {
+            "description": "Wool sneaker brand with an eco-minded audience."
+          },
+          "query": {
+            "affinity": 0.587
+          }
+        },
+        {
+          "entity_id": "71C078FF-47AA-457A-9A09-520E27E4A265",
+          "name": "Fender",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.454,
+          "properties": {
+            "description": "Guitar maker beloved by the acoustic and indie scene."
+          },
+          "query": {
+            "affinity": 0.568
+          }
+        },
+        {
+          "entity_id": "EBA1863E-C462-44F3-ADBB-2222A3CF969B",
+          "name": "Stanley",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.432,
+          "properties": {
+            "description": "Drinkware brand with a cult following among young adults."
+          },
+          "query": {
+            "affinity": 0.55
+          }
+        }
+      ]
+    }
+  }
+}

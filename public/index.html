@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Next Town</title>
+  <meta name="description" content="A tour-routing agent for independent acts. Tell it who you sound like and it finds the US towns where that audience already ranks highest, then plans the loop." />
+
+  <!-- Fonts: Fredoka for headings, Nunito for body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" />
+
+  <!-- Leaflet 1.9.4 (the only external script; tiles come from CARTO) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css" crossorigin="" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js" crossorigin=""></script>
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="cards.css" />
+  <link rel="stylesheet" href="print.css" media="print" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%231f4d3a'/%3E%3Ccircle cx='16' cy='16' r='5' fill='%23e8694f'/%3E%3C/svg%3E" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ Header: brand, screen crumbs, mode pill, receipts ============ -->
+  <header class="topbar">
+    <button class="brand" id="brand" type="button" aria-label="Next Town home">
+      <span class="brand-dot" aria-hidden="true"></span>
+      <span class="brand-name">Next Town</span>
+    </button>
+
+    <nav class="crumbs" id="crumbs" aria-label="Screens" hidden>
+      <button type="button" class="crumb" id="nav-route" data-go="route">Route</button>
+      <button type="button" class="crumb" id="nav-tour" data-go="tour" disabled>Tour</button>
+    </nav>
+
+    <div class="topbar-right">
+      <span class="mode-pill" id="mode-pill" title="Where today's answers come from">Checking mode…</span>
+      <button type="button" class="btn btn-ghost btn-sm" id="receipts-toggle" aria-controls="receipts-drawer" aria-expanded="false">
+        Receipts <span class="count" id="receipts-count">0</span>
+      </button>
+      <button type="button" class="btn btn-ghost btn-sm" id="btn-start-over" hidden>Start over</button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ Screen 1: Landing ============ -->
+    <section class="screen screen-landing active" data-screen="landing" aria-labelledby="landing-title">
+      <div class="hero">
+        <p class="eyebrow">A tour-routing agent for independent acts</p>
+        <h1 id="landing-title" class="headline">Find the towns that already love you.</h1>
+        <p class="subhead">Name 1–3 artists you sound like and Next Town asks Qloo where that audience ranks highest, then routes a loop through the small towns the streaming numbers never show you.</p>
+
+        <div class="hero-actions">
+          <button type="button" class="btn btn-primary btn-lg" id="btn-sample">Try it with Hollow Pines</button>
+          <a href="#act-form" class="btn btn-secondary btn-lg" id="btn-live" hidden>Run it live</a>
+        </div>
+        <p class="resume-row" id="resume-row" hidden>
+          <button type="button" class="link-btn" id="resume-link">Resume last tour</button>
+        </p>
+
+        <aside class="sample-card" aria-label="About the sample band">
+          <div class="sample-head">
+            <span class="sample-name" id="sample-name">Hollow Pines</span>
+            <span class="tag tag-fictional" id="sample-fictional">fictional band</span>
+          </div>
+          <p class="sample-blurb" id="sample-blurb"></p>
+          <dl class="sample-facts" id="sample-facts"></dl>
+        </aside>
+      </div>
+
+      <ol class="how" aria-label="How it works">
+        <li><span class="how-n">1</span><div><strong>Resolve your comps.</strong><span>The agent finds each comparable artist in Qloo so the signal is an entity, not a string.</span></div></li>
+        <li><span class="how-n">2</span><div><strong>Rank the localities.</strong><span>Qloo returns the US towns where fans of those comps rank highest. Towns under 250k in the top 20 get a gold over-index badge.</span></div></li>
+        <li><span class="how-n">3</span><div><strong>Route the loop.</strong><span>A drive-capped loop from home, side by side with the "obvious" big-market route, every Qloo call receipted.</span></div></li>
+      </ol>
+
+      <!-- The real form: custom inputs need a live Claude key on the server -->
+      <form class="act-form" id="act-form" novalidate>
+        <div class="form-head">
+          <h2>Or route your own act</h2>
+          <p class="muted" id="form-note">Custom routing runs the agent live and needs an Anthropic key on the server. The sample above works without one.</p>
+        </div>
+
+        <fieldset class="comps-fieldset">
+          <legend>Who do you sound like? <span class="muted">(1–3 artists)</span></legend>
+          <div class="comps-row">
+            <input type="text" id="comp-1" name="comp-1" placeholder="e.g. Big Thief" autocomplete="off" required />
+            <input type="text" id="comp-2" name="comp-2" placeholder="Waxahatchee" autocomplete="off" />
+            <input type="text" id="comp-3" name="comp-3" placeholder="Adrianne Lenker" autocomplete="off" />
+          </div>
+        </fieldset>
+
+        <div class="form-grid">
+          <label>Home city
+            <input type="text" id="home" name="home" placeholder="Richmond, VA" autocomplete="address-level2" required />
+          </label>
+          <label>Days available
+            <input type="number" id="days" name="days" min="3" max="21" value="12" required />
+          </label>
+          <label>Max drive hours / day
+            <input type="number" id="drive-cap" name="drive-cap" min="2" max="10" value="6" required />
+          </label>
+          <label>Format
+            <select id="format" name="format">
+              <option value="music">Music</option>
+              <option value="comedy">Comedy</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary" id="btn-route-form">Route my tour</button>
+          <button type="button" class="btn btn-secondary" id="btn-form-try-sample" hidden>Try the sample instead</button>
+        </div>
+        <p class="form-error" id="form-error" role="alert" hidden></p>
+      </form>
+
+      <p class="fineprint">Qloo results are aggregate taste affinities for fans of your comps in an area. Next Town never claims capacity, age policy, ticket sales, or anything about an individual person.</p>
+    </section>
+
+    <!-- ============ Screen 2: Route (agent log · map · route rail) ============ -->
+    <section class="screen screen-route" data-screen="route" aria-labelledby="route-title">
+      <div class="route-head">
+        <div>
+          <h1 id="route-title" class="screen-title">Planning your route</h1>
+          <p class="screen-sub" id="route-subtitle"></p>
+        </div>
+        <div class="route-head-actions">
+          <span class="run-status" id="run-status" aria-live="polite"></span>
+          <button type="button" class="btn btn-secondary btn-sm" id="btn-skip" hidden>Skip ahead</button>
+          <button type="button" class="btn btn-ghost btn-sm" id="btn-stop" hidden>Stop</button>
+          <button type="button" class="btn btn-primary" id="btn-build-tour" disabled>Build my tour</button>
+        </div>
+      </div>
+      <div class="build-progress" id="build-progress" aria-live="polite" hidden></div>
+
+      <div class="route-grid">
+        <aside class="agent-col" aria-label="Agent log">
+          <div class="col-head"><h2>Agent log</h2><span class="muted"><span data-qloo-count>0</span> Qloo calls</span></div>
+          <div class="agent-log" id="agent-log" aria-live="polite" aria-relevant="additions"></div>
+        </aside>
+
+        <div class="map-col">
+          <div class="map-wrap">
+            <div id="map" class="map" role="region" aria-label="Map of ranked localities and the route"></div>
+            <div class="map-legend" aria-hidden="true">
+              <span><i class="lg-dot"></i> locality, sized by affinity</span>
+              <span><i class="lg-dot lg-gold"></i> over-index town</span>
+              <span><i class="lg-line"></i> your route</span>
+              <span><i class="lg-dot lg-grey"></i> obvious route</span>
+            </div>
+          </div>
+          <div class="agent-closing" id="agent-closing" hidden></div>
+        </div>
+
+        <aside class="rail-col" id="route-rail" aria-label="Route stops"></aside>
+      </div>
+    </section>
+
+    <!-- ============ Screen 3: City playbook (rendered by js/playbook.js) ============ -->
+    <section class="screen screen-playbook" data-screen="playbook" aria-labelledby="playbook-title">
+      <div class="screen-head">
+        <button type="button" class="btn btn-ghost btn-sm" id="btn-back-route">← Back to route</button>
+        <h1 id="playbook-title" class="screen-title">Playbook</h1>
+        <span class="muted" id="playbook-pos"></span>
+      </div>
+      <div class="status-lines" id="playbook-status" aria-live="polite" hidden></div>
+      <div id="playbook-view" class="playbook-view"></div>
+    </section>
+
+    <!-- ============ Screen 4: Tour (itinerary, pitch, print; rendered by js/tour.js) ============ -->
+    <section class="screen screen-tour" data-screen="tour" aria-labelledby="tour-title">
+      <div class="screen-head">
+        <button type="button" class="btn btn-ghost btn-sm" id="btn-tour-back">← Back to route</button>
+        <h1 id="tour-title" class="screen-title">Your tour</h1>
+        <span class="muted" id="tour-status"></span>
+      </div>
+      <div id="tour-view" class="tour-view"></div>
+    </section>
+  </main>
+
+  <!-- Receipts drawer: every Qloo call, with its exact URL (filled by js/receipts.js) -->
+  <aside class="receipts-drawer" id="receipts-drawer" aria-label="Qloo receipts" aria-hidden="true"></aside>
+  <div class="drawer-scrim" id="drawer-scrim" hidden></div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <footer class="foot">
+    <span>Built for the Qloo Agentic Hackathon. Taste data by Qloo, planning by Claude.</span>
+  </footer>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

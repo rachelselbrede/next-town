@@ -1,0 +1,148 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "resolve_act",
+  "canonical": "https://hackathon.api.qloo.com/search?query=Adrianne%20Lenker&take=5&types=urn%3Aentity%3Aartist",
+  "query": {
+    "path": "/search",
+    "params": {
+      "query": "Adrianne Lenker",
+      "types": "urn:entity:artist",
+      "take": 5
+    }
+  },
+  "response": {
+    "results": [
+      {
+        "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+        "name": "Adrianne Lenker",
+        "type": "urn:entity:artist",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "popularity": 0.85,
+        "properties": {
+          "description": "Big Thief's singer and songwriter; her solo records are quiet, acoustic and close-miked."
+        },
+        "tags": [
+          {
+            "name": "Indie Folk",
+            "tag_id": "urn:tag:genre:music:indie_folk",
+            "type": "urn:tag:genre:music"
+          },
+          {
+            "name": "Singer-Songwriter",
+            "tag_id": "urn:tag:genre:music:singer_songwriter",
+            "type": "urn:tag:genre:music"
+          },
+          {
+            "name": "Folk",
+            "tag_id": "urn:tag:genre:music:folk",
+            "type": "urn:tag:genre:music"
+          }
+        ]
+      },
+      {
+        "entity_id": "DA8D767B-F4A1-4501-84D6-2962A71479BC",
+        "name": "Adrianne Lenker & Buck Meek",
+        "type": "urn:entity:artist",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "popularity": 0.41,
+        "properties": {
+          "description": "Duo billing for Lenker's early releases with Big Thief bandmate Buck Meek."
+        },
+        "tags": [
+          {
+            "name": "Indie Folk",
+            "tag_id": "urn:tag:genre:music:indie_folk",
+            "type": "urn:tag:genre:music"
+          },
+          {
+            "name": "Folk",
+            "tag_id": "urn:tag:genre:music:folk",
+            "type": "urn:tag:genre:music"
+          }
+        ]
+      },
+      {
+        "entity_id": "B736B17A-1E04-40F3-9941-0A5F98070003",
+        "name": "Lenka",
+        "type": "urn:entity:artist",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "popularity": 0.58,
+        "properties": {
+          "description": "Australian singer-songwriter whose 2008 single The Show became an indie-pop staple."
+        },
+        "tags": [
+          {
+            "name": "Indie Pop",
+            "tag_id": "urn:tag:genre:music:indie_pop",
+            "type": "urn:tag:genre:music"
+          },
+          {
+            "name": "Pop",
+            "tag_id": "urn:tag:genre:music:pop",
+            "type": "urn:tag:genre:music"
+          }
+        ]
+      },
+      {
+        "entity_id": "7BF5CE05-28AA-4D57-A06C-AA7FABE25E65",
+        "name": "Adrian Younge",
+        "type": "urn:entity:artist",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "popularity": 0.52,
+        "properties": {
+          "description": "Los Angeles composer and producer known for analog soul and the Jazz Is Dead series."
+        },
+        "tags": [
+          {
+            "name": "Soul",
+            "tag_id": "urn:tag:genre:music:soul",
+            "type": "urn:tag:genre:music"
+          },
+          {
+            "name": "Jazz",
+            "tag_id": "urn:tag:genre:music:jazz",
+            "type": "urn:tag:genre:music"
+          },
+          {
+            "name": "Hip Hop",
+            "tag_id": "urn:tag:genre:music:hip_hop",
+            "type": "urn:tag:genre:music"
+          }
+        ]
+      },
+      {
+        "entity_id": "E74C3640-5A8D-44C7-8D27-0D3CDEFAF93B",
+        "name": "Adrian Belew",
+        "type": "urn:entity:artist",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "popularity": 0.49,
+        "properties": {
+          "description": "Guitarist and singer known for King Crimson and a long run of inventive solo albums."
+        },
+        "tags": [
+          {
+            "name": "Progressive Rock",
+            "tag_id": "urn:tag:genre:music:progressive_rock",
+            "type": "urn:tag:genre:music"
+          },
+          {
+            "name": "Art Rock",
+            "tag_id": "urn:tag:genre:music:art_rock",
+            "type": "urn:tag:genre:music"
+          }
+        ]
+      }
+    ]
+  }
+}

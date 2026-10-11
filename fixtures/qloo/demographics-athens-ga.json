@@ -1,0 +1,73 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "who_shows_up",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Ademographics&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Athens%2C%20GA&signal.location.radius=25000",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:demographics",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "signal.location.query": "Athens, GA",
+      "signal.location.radius": 25000
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "demographics": [
+        {
+          "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+          "query": {
+            "age": {
+              "24_and_younger": 0.26,
+              "25_to_29": 0.47,
+              "30_to_34": 0.47,
+              "35_to_44": 0.31,
+              "45_to_54": 0.08,
+              "55_and_older": -0.2
+            },
+            "gender": {
+              "female": 0.21,
+              "male": -0.08
+            }
+          }
+        },
+        {
+          "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+          "query": {
+            "age": {
+              "24_and_younger": 0.17,
+              "25_to_29": 0.48,
+              "30_to_34": 0.53,
+              "35_to_44": 0.34,
+              "45_to_54": 0.07,
+              "55_and_older": -0.23
+            },
+            "gender": {
+              "female": 0.25,
+              "male": -0.1
+            }
+          }
+        },
+        {
+          "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+          "query": {
+            "age": {
+              "24_and_younger": 0.27,
+              "25_to_29": 0.44,
+              "30_to_34": 0.57,
+              "35_to_44": 0.38,
+              "45_to_54": 0.05,
+              "55_and_older": -0.15
+            },
+            "gender": {
+              "female": 0.21,
+              "male": -0.1
+            }
+          }
+        }
+      ]
+    }
+  }
+}

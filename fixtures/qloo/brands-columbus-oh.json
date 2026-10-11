@@ -1,0 +1,283 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "local_color",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Abrand&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Columbus%2C%20OH&signal.location.radius=25000&take=20",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:brand",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "signal.location.query": "Columbus, OH",
+      "signal.location.radius": 25000,
+      "take": 20
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "F6C143D1-37EF-44A6-8D0F-91E39C7B16CF",
+          "name": "The Veil Brewing Co.",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.65,
+          "properties": {
+            "description": "Richmond brewery known for hazy IPAs and long release-day lines."
+          },
+          "query": {
+            "affinity": 0.915
+          }
+        },
+        {
+          "entity_id": "DD53783B-58F7-4D99-9969-D937382FDB61",
+          "name": "Hyperion Espresso",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.48,
+          "properties": {
+            "description": "Fredericksburg, VA coffee roaster with a loyal Virginia following."
+          },
+          "query": {
+            "affinity": 0.888
+          }
+        },
+        {
+          "entity_id": "D43783D2-ABF4-4021-A4C0-6A9DC5B7F743",
+          "name": "Devils Backbone Brewing Company",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.55,
+          "properties": {},
+          "tags": [],
+          "query": {
+            "affinity": 0.844
+          }
+        },
+        {
+          "entity_id": "B33E9033-D54B-4B07-A439-14C0322C161D",
+          "name": "Levi's",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.77,
+          "properties": {
+            "description": "Denim brand with a vintage-friendly back catalog."
+          },
+          "query": {
+            "affinity": 0.81
+          }
+        },
+        {
+          "entity_id": "7B6FB381-3093-4C50-A15E-6D21EA7E78E7",
+          "name": "Counter Culture Coffee",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.762,
+          "properties": {
+            "description": "Durham-based specialty roaster served in cafes across the Triangle."
+          },
+          "query": {
+            "affinity": 0.792
+          }
+        },
+        {
+          "entity_id": "8A2CADA8-8D71-4DDD-B5EF-37A3A669B3E7",
+          "name": "Elkmont Exchange",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.61,
+          "properties": {
+            "description": "Elkmont Exchange, a brand fans of your comps around Knoxville over-index on."
+          },
+          "query": {
+            "affinity": 0.789
+          }
+        },
+        {
+          "entity_id": "F4D0AB50-60CD-4B17-BF5B-3224D267EB2B",
+          "name": "Allbirds",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.54,
+          "properties": {
+            "description": "Wool sneaker brand with a sustainability pitch."
+          },
+          "query": {
+            "affinity": 0.78
+          }
+        },
+        {
+          "entity_id": "7C8DF92F-D4B9-45DE-9144-A0E36C0C6897",
+          "name": "REI",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.79,
+          "properties": {
+            "description": "Outdoor gear co-op with a member dividend."
+          },
+          "query": {
+            "affinity": 0.711
+          }
+        },
+        {
+          "entity_id": "79105CB8-2649-4620-A2F8-0B53D5B8A831",
+          "name": "Fjallraven",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.71,
+          "properties": {
+            "description": "Swedish outdoor brand known for the Kanken backpack."
+          },
+          "query": {
+            "affinity": 0.707
+          }
+        },
+        {
+          "entity_id": "81FF9E58-99F1-4C63-9F2F-7D85FA8D6964",
+          "name": "Patagonia",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.85,
+          "properties": {
+            "description": "Outdoor apparel brand with a loud environmental mission."
+          },
+          "query": {
+            "affinity": 0.696
+          }
+        },
+        {
+          "entity_id": "AC8120D3-F632-4821-92A3-70E5C4A3343C",
+          "name": "Subaru",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.84,
+          "properties": {
+            "description": "Carmaker whose all-wheel-drive wagons are a fixture at trailheads and farmers markets."
+          },
+          "query": {
+            "affinity": 0.678
+          }
+        },
+        {
+          "entity_id": "42822EE9-0CEC-419A-B3E2-CF7F82C4FF6A",
+          "name": "Bandcamp",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.37,
+          "properties": {
+            "description": "Bandcamp: a brand fans of these comps around Harrisonburg over-index on."
+          },
+          "tags": [],
+          "query": {
+            "affinity": 0.668
+          }
+        },
+        {
+          "entity_id": "753F76AB-F8F3-4DB9-9076-5541D45875DF",
+          "name": "Trader Joe's",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.83,
+          "properties": {
+            "description": "Grocery chain known for cheap wine, frozen dumplings, and friendly cashiers."
+          },
+          "query": {
+            "affinity": 0.648
+          }
+        },
+        {
+          "entity_id": "52039753-DD87-4F1B-8D75-3F55850FAD13",
+          "name": "La Colombe",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.67,
+          "properties": {
+            "description": "Philadelphia coffee roaster with canned draft lattes in every co-op."
+          },
+          "query": {
+            "affinity": 0.628
+          }
+        },
+        {
+          "entity_id": "1E64D934-320B-4FB7-921B-58DB10BE96EA",
+          "name": "Birkenstock",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.66,
+          "properties": {
+            "description": "German sandal maker with a cork footbed and a cult following."
+          },
+          "query": {
+            "affinity": 0.614
+          }
+        },
+        {
+          "entity_id": "D44CBBD6-C6E8-455A-94B4-88B6A05B0591",
+          "name": "Blundstone",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.73,
+          "properties": {
+            "description": "Tasmanian pull-on boot brand beloved by people who walk a lot."
+          },
+          "query": {
+            "affinity": 0.601
+          }
+        },
+        {
+          "entity_id": "F25F0B67-D992-40AE-8BAB-E7F62F5437C3",
+          "name": "Hardywood Park Craft Brewery",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.78,
+          "properties": {
+            "description": "Richmond craft brewery whose Gingerbread Stout release is a local holiday."
+          },
+          "query": {
+            "affinity": 0.6
+          }
+        },
+        {
+          "entity_id": "ABFE4826-67C1-47AC-9572-D50A5A7A0D8B",
+          "name": "Blue Apron",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.47,
+          "properties": {
+            "description": "Blue Apron, a brand fans of your comps around Knoxville over-index on."
+          },
+          "query": {
+            "affinity": 0.598
+          }
+        },
+        {
+          "entity_id": "723BD692-EAE6-4058-87C0-8DC8B614511C",
+          "name": "La Prima Espresso",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.53,
+          "properties": {
+            "description": "Pittsburgh roaster in the Strip District with a loyal neighborhood following."
+          },
+          "query": {
+            "affinity": 0.572
+          }
+        },
+        {
+          "entity_id": "140AED23-2F58-4FA0-B636-C9D5D473E429",
+          "name": "Blue Bottle Coffee",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.6,
+          "properties": {
+            "description": "Third-wave coffee chain with minimalist cafes."
+          },
+          "query": {
+            "affinity": 0.571
+          }
+        }
+      ]
+    }
+  }
+}

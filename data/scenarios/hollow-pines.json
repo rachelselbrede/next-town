@@ -1,0 +1,254 @@
+{
+  "id": "hollow-pines",
+  "fictional": true,
+  "act": "Hollow Pines",
+  "blurb": "A fictional indie-folk trio from Richmond, VA, with a first record out and twelve days in April to tour it. Labeled fictional on purpose: the comps are real, the band is not.",
+  "request": {
+    "comps": [
+      "Big Thief",
+      "Waxahatchee",
+      "Adrianne Lenker"
+    ],
+    "home": "Richmond, VA",
+    "days": 12,
+    "driveHoursCap": 6,
+    "format": "music"
+  },
+  "comps": [
+    {
+      "id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+      "name": "Big Thief",
+      "type": "urn:entity:artist",
+      "popularity": 0.93
+    },
+    {
+      "id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+      "name": "Waxahatchee",
+      "type": "urn:entity:artist",
+      "popularity": 0.88
+    },
+    {
+      "id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "name": "Adrianne Lenker",
+      "type": "urn:entity:artist",
+      "popularity": 0.85
+    }
+  ],
+  "localities": [
+    {
+      "label": "Asheville, NC",
+      "affinity": 0.934
+    },
+    {
+      "label": "Carrboro, NC",
+      "affinity": 0.921
+    },
+    {
+      "label": "Athens, GA",
+      "affinity": 0.918
+    },
+    {
+      "label": "Bloomington, IN",
+      "affinity": 0.905
+    },
+    {
+      "label": "Charlottesville, VA",
+      "affinity": 0.899
+    },
+    {
+      "label": "Burlington, VT",
+      "affinity": 0.893
+    },
+    {
+      "label": "Northampton, MA",
+      "affinity": 0.887
+    },
+    {
+      "label": "Philadelphia, PA",
+      "affinity": 0.881
+    },
+    {
+      "label": "Durham, NC",
+      "affinity": 0.874
+    },
+    {
+      "label": "Pittsburgh, PA",
+      "affinity": 0.869
+    },
+    {
+      "label": "Athens, OH",
+      "affinity": 0.862
+    },
+    {
+      "label": "Louisville, KY",
+      "affinity": 0.857
+    },
+    {
+      "label": "Knoxville, TN",
+      "affinity": 0.851
+    },
+    {
+      "label": "Harrisonburg, VA",
+      "affinity": 0.846
+    },
+    {
+      "label": "Ithaca, NY",
+      "affinity": 0.84
+    },
+    {
+      "label": "Columbus, OH",
+      "affinity": 0.835
+    },
+    {
+      "label": "Nashville, TN",
+      "affinity": 0.829
+    },
+    {
+      "label": "Portland, ME",
+      "affinity": 0.824
+    },
+    {
+      "label": "Lexington, KY",
+      "affinity": 0.818
+    },
+    {
+      "label": "Wilmington, NC",
+      "affinity": 0.812
+    },
+    {
+      "label": "Baltimore, MD",
+      "affinity": 0.807
+    },
+    {
+      "label": "Washington, DC",
+      "affinity": 0.802
+    },
+    {
+      "label": "Chicago, IL",
+      "affinity": 0.797
+    },
+    {
+      "label": "Brooklyn, NY",
+      "affinity": 0.792
+    },
+    {
+      "label": "Austin, TX",
+      "affinity": 0.787
+    },
+    {
+      "label": "Charleston, SC",
+      "affinity": 0.781
+    },
+    {
+      "label": "Savannah, GA",
+      "affinity": 0.776
+    },
+    {
+      "label": "Lancaster, PA",
+      "affinity": 0.771
+    },
+    {
+      "label": "Boone, NC",
+      "affinity": 0.766
+    },
+    {
+      "label": "Hudson, NY",
+      "affinity": 0.761
+    },
+    {
+      "label": "Cincinnati, OH",
+      "affinity": 0.755
+    },
+    {
+      "label": "Minneapolis, MN",
+      "affinity": 0.75
+    },
+    {
+      "label": "Madison, WI",
+      "affinity": 0.745
+    },
+    {
+      "label": "Ann Arbor, MI",
+      "affinity": 0.74
+    },
+    {
+      "label": "Grand Rapids, MI",
+      "affinity": 0.734
+    },
+    {
+      "label": "Portland, OR",
+      "affinity": 0.729
+    },
+    {
+      "label": "Seattle, WA",
+      "affinity": 0.724
+    },
+    {
+      "label": "Denver, CO",
+      "affinity": 0.719
+    },
+    {
+      "label": "Fort Collins, CO",
+      "affinity": 0.713
+    },
+    {
+      "label": "Missoula, MT",
+      "affinity": 0.708
+    },
+    {
+      "label": "Boise, ID",
+      "affinity": 0.703
+    },
+    {
+      "label": "Los Angeles, CA",
+      "affinity": 0.698
+    },
+    {
+      "label": "Oakland, CA",
+      "affinity": 0.692
+    },
+    {
+      "label": "Santa Cruz, CA",
+      "affinity": 0.687
+    },
+    {
+      "label": "Tucson, AZ",
+      "affinity": 0.682
+    },
+    {
+      "label": "New Orleans, LA",
+      "affinity": 0.677
+    },
+    {
+      "label": "Birmingham, AL",
+      "affinity": 0.671
+    },
+    {
+      "label": "Saint Louis, MO",
+      "affinity": 0.666
+    },
+    {
+      "label": "Lawrence, KS",
+      "affinity": 0.661
+    },
+    {
+      "label": "Omaha, NE",
+      "affinity": 0.655
+    }
+  ],
+  "playbookCities": [
+    "Charlottesville, VA",
+    "Harrisonburg, VA",
+    "Pittsburgh, PA",
+    "Athens, OH",
+    "Bloomington, IN",
+    "Louisville, KY",
+    "Knoxville, TN",
+    "Asheville, NC",
+    "Carrboro, NC",
+    "Athens, GA",
+    "Columbus, OH",
+    "Boone, NC",
+    "Wilmington, NC"
+  ]
+}

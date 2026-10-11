@@ -1,0 +1,6 @@
+# Copy to .dev.vars for `npm run dev:worker` (wrangler). `npm run dev` (Node) reads the same names from your shell env.
+ANTHROPIC_API_KEY=sk-ant-...
+QLOO_API_KEY=your-hackathon-key
+# demo | live | auto (auto = live when QLOO_API_KEY is set)
+QLOO_MODE=auto
+MODEL=claude-opus-5-5

@@ -1,0 +1,15 @@
+{
+  "_handAuthored": true,
+  "_note": "Place tag ids per group. These are best guesses at the Qloo tag URN format until scripts/verify.ts runs against the real key and rewrites this file from GET /v2/tags results. Each group may hold several tag ids; queries pass them with operator.filter.tags=union.",
+  "groups": {
+    "music_venue": ["urn:tag:genre:place:music_venue", "urn:tag:category:place:live_music_venue"],
+    "concert_hall": ["urn:tag:genre:place:concert_hall"],
+    "live_music_bar": ["urn:tag:genre:place:bar:live_music"],
+    "comedy_club": ["urn:tag:genre:place:comedy_club"],
+    "record_store": ["urn:tag:genre:place:record_store"],
+    "coffee_shop": ["urn:tag:genre:place:coffee_shop", "urn:tag:genre:place:cafe"],
+    "bookstore": ["urn:tag:genre:place:bookstore"],
+    "dive_bar": ["urn:tag:genre:place:dive_bar", "urn:tag:genre:place:bar"],
+    "vintage": ["urn:tag:genre:place:vintage_store", "urn:tag:genre:place:thrift_store"]
+  }
+}

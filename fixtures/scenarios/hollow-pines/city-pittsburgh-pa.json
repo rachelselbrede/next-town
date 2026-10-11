@@ -1,0 +1,727 @@
+{
+  "city": "Pittsburgh, PA",
+  "home": "Richmond, VA",
+  "comps": [
+    {
+      "id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+      "name": "Big Thief",
+      "type": "urn:entity:artist",
+      "popularity": 0.93
+    },
+    {
+      "id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+      "name": "Waxahatchee",
+      "type": "urn:entity:artist",
+      "popularity": 0.88
+    },
+    {
+      "id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "name": "Adrianne Lenker",
+      "type": "urn:entity:artist",
+      "popularity": 0.85
+    }
+  ],
+  "rooms": [
+    {
+      "id": "FD45ACDD-F4E6-4BB1-B9F6-FFA3A845E532",
+      "name": "Mr. Smalls Theatre",
+      "type": "urn:entity:place",
+      "subtype": "urn:entity:place:music_venue",
+      "affinity": 0.93,
+      "popularity": 0.82,
+      "rating": 4.5,
+      "price_level": 2,
+      "address": "400 Lincoln Ave, Millvale, PA 15209",
+      "city": "Pittsburgh",
+      "description": "A converted church turned mid-size room in Millvale, long the first Pittsburgh stop for touring indie bands on the way up.",
+      "tags": [
+        "Music Venue",
+        "Live Music Venue"
+      ],
+      "why": [
+        "Big Thief (78%)",
+        "Waxahatchee (66%)",
+        "Adrianne Lenker (61%)"
+      ]
+    },
+    {
+      "id": "3AF93E6B-7BE7-458C-9CF6-CA83C4F16392",
+      "name": "Club Café",
+      "type": "urn:entity:place",
+      "subtype": "urn:entity:place:bar",
+      "affinity": 0.89,
+      "popularity": 0.64,
+      "rating": 4.4,
+      "price_level": 2,
+      "address": "56-58 S 12th St, Pittsburgh, PA 15203",
+      "city": "Pittsburgh",
+      "description": "An intimate seated listening room on the South Side built for songwriters, with the quietest audience in the city.",
+      "tags": [
+        "Bar with Live Music",
+        "Music Venue"
+      ],
+      "why": [
+        "Big Thief (62%)",
+        "Waxahatchee (74%)",
+        "Adrianne Lenker (69%)"
+      ]
+    },
+    {
+      "id": "40C7C8C2-A02B-4485-80F4-2785C5157484",
+      "name": "Thunderbird Café & Music Hall",
+      "type": "urn:entity:place",
+      "subtype": "urn:entity:place:music_venue",
+      "affinity": 0.86,
+      "popularity": 0.71,
+      "rating": 4.5,
+      "price_level": 2,
+      "address": "4053 Butler St, Pittsburgh, PA 15201",
+      "city": "Pittsburgh",
+      "description": "A two-level Lawrenceville hall with a big stage, a cafe out front, and a crowd that comes out for roots and indie-folk bills.",
+      "tags": [
+        "Music Venue",
+        "Live Music Venue"
+      ],
+      "why": [
+        "Big Thief (71%)",
+        "Waxahatchee (58%)",
+        "Adrianne Lenker (55%)"
+      ]
+    },
+    {
+      "id": "BE622DDC-6473-402C-993C-8CF5AFE20D5A",
+      "name": "Spirit",
+      "type": "urn:entity:place",
+      "subtype": "urn:entity:place:bar",
+      "affinity": 0.82,
+      "popularity": 0.6,
+      "rating": 4.3,
+      "price_level": 1,
+      "address": "242 51st St, Pittsburgh, PA 15201",
+      "city": "Pittsburgh",
+      "description": "A former Moose lodge in Lawrenceville with a pizza counter downstairs and a sweaty, low-stage hall upstairs for indie shows.",
+      "tags": [
+        "Bar with Live Music",
+        "Music Venue"
+      ],
+      "why": [
+        "Big Thief (66%)",
+        "Waxahatchee (52%)",
+        "Adrianne Lenker (60%)"
+      ]
+    },
+    {
+      "id": "FDE10392-328B-452A-8392-D0072840DC1F",
+      "name": "Carnegie of Homestead Music Hall",
+      "type": "urn:entity:place",
+      "subtype": "urn:entity:place:concert_hall",
+      "affinity": 0.77,
+      "popularity": 0.74,
+      "rating": 4.6,
+      "price_level": 3,
+      "address": "510 E 10th Ave, Munhall, PA 15120",
+      "city": "Pittsburgh",
+      "description": "A restored 1898 Carnegie library music hall with a thousand seats and warm acoustics, a step-up room for acts that have outgrown clubs.",
+      "tags": [
+        "Concert Hall",
+        "Live Music Venue"
+      ],
+      "why": [
+        "Big Thief (58%)",
+        "Waxahatchee (49%)",
+        "Adrianne Lenker (47%)"
+      ]
+    },
+    {
+      "id": "8BEBE643-810A-4A37-B37D-4C66E5F63E1A",
+      "name": "Roxian Theatre",
+      "type": "urn:entity:place",
+      "subtype": "urn:entity:place:concert_hall",
+      "affinity": 0.72,
+      "popularity": 0.69,
+      "rating": 4.4,
+      "price_level": 3,
+      "address": "425 Chartiers Ave, McKees Rocks, PA 15136",
+      "city": "Pittsburgh",
+      "description": "A 1929 movie palace in McKees Rocks reopened as a standing-room theater that books indie headliners on their second or third pass through town.",
+      "tags": [
+        "Concert Hall",
+        "Music Venue"
+      ],
+      "why": [
+        "Big Thief (55%)",
+        "Waxahatchee (44%)",
+        "Adrianne Lenker (41%)"
+      ]
+    },
+    {
+      "id": "594A62B8-6462-4B18-9F43-767616D2CEFB",
+      "name": "Mr. Roboto Project",
+      "type": "urn:entity:place",
+      "subtype": "urn:entity:place:music_venue",
+      "affinity": 0.67,
+      "popularity": 0.38,
+      "rating": 4.2,
+      "price_level": 1,
+      "address": "5106 Penn Ave, Pittsburgh, PA 15224",
+      "city": "Pittsburgh",
+      "description": "A volunteer-run, all-ages DIY space on Penn Avenue where a lot of Pittsburgh bands played their first show.",
+      "tags": [
+        "Music Venue",
+        "Live Music Venue"
+      ],
+      "why": [
+        "Big Thief (49%)",
+        "Waxahatchee (41%)",
+        "Adrianne Lenker (52%)"
+      ]
+    },
+    {
+      "id": "B1A6B41B-852D-491F-B74C-2D96D4476C9E",
+      "name": "Trace Brewing",
+      "type": "urn:entity:place",
+      "subtype": "urn:entity:place:bar",
+      "affinity": 0.62,
+      "popularity": 0.46,
+      "rating": 4.5,
+      "price_level": 2,
+      "address": "4312 Main St, Pittsburgh, PA 15224",
+      "city": "Pittsburgh",
+      "description": "A Bloomfield brewery with a small corner stage and a patio that hosts low-key acoustic and indie shows on weekends.",
+      "tags": [
+        "Bar with Live Music",
+        "Bar"
+      ],
+      "why": [
+        "Big Thief (40%)",
+        "Waxahatchee (46%)",
+        "Adrianne Lenker (37%)"
+      ]
+    }
+  ],
+  "promo": [
+    {
+      "kind": "record store",
+      "places": [
+        {
+          "id": "C6754737-C81B-4246-8F18-61C5028C1E27",
+          "name": "The Attic Record Store",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:record_store",
+          "affinity": 0.92,
+          "popularity": 0.55,
+          "rating": 4.7,
+          "price_level": 2,
+          "address": "513 Grant Ave, Millvale, PA 15209",
+          "city": "Pittsburgh",
+          "description": "A three-floor Millvale vinyl shop a block from Mr. Smalls, with a huge used section and staff who know the local bills.",
+          "tags": [
+            "Record Store"
+          ],
+          "why": [
+            "Big Thief (77%)",
+            "Waxahatchee (63%)",
+            "Adrianne Lenker (60%)"
+          ]
+        },
+        {
+          "id": "AF1A7169-09E0-42D5-B6DB-B0F7649C4462",
+          "name": "Jerry's Records",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:record_store",
+          "affinity": 0.9,
+          "popularity": 0.62,
+          "rating": 4.7,
+          "price_level": 2,
+          "address": "2136 Murray Ave, Pittsburgh, PA 15217",
+          "city": "Pittsburgh",
+          "description": "A sprawling second-floor used-vinyl institution in Squirrel Hill, the kind of place fans spend a whole afternoon crate-digging.",
+          "tags": [
+            "Record Store"
+          ],
+          "why": [
+            "Big Thief (72%)",
+            "Waxahatchee (60%)",
+            "Adrianne Lenker (58%)"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "coffee shop",
+      "places": [
+        {
+          "id": "F7EC6D34-5F15-4857-8290-741E01B1762F",
+          "name": "Commonplace Coffee",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:coffee_shop",
+          "affinity": 0.88,
+          "popularity": 0.6,
+          "rating": 4.5,
+          "price_level": 2,
+          "address": "5827 Forbes Ave, Pittsburgh, PA 15217",
+          "city": "Pittsburgh",
+          "description": "A Pittsburgh roaster with neighborhood cafes that post show flyers and pour pour-overs for the laptop-and-headphones crowd.",
+          "tags": [
+            "Coffee Shop",
+            "Cafe"
+          ],
+          "why": [
+            "Big Thief (60%)",
+            "Waxahatchee (70%)",
+            "Adrianne Lenker (66%)"
+          ]
+        },
+        {
+          "id": "71AF01A5-7733-4334-AB7A-BCBFDBD6C274",
+          "name": "Espresso a Mano",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:coffee_shop",
+          "affinity": 0.79,
+          "popularity": 0.54,
+          "rating": 4.6,
+          "price_level": 2,
+          "address": "3623 Butler St, Pittsburgh, PA 15201",
+          "city": "Pittsburgh",
+          "description": "A small Lawrenceville espresso bar on Butler Street, a short walk from Thunderbird, where flyers on the door actually get read.",
+          "tags": [
+            "Coffee Shop",
+            "Cafe"
+          ],
+          "why": [
+            "Big Thief (57%)",
+            "Waxahatchee (60%)",
+            "Adrianne Lenker (63%)"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "bookstore",
+      "places": [
+        {
+          "id": "273ADAE8-89EA-432C-B074-232BB68FD1AB",
+          "name": "White Whale Bookstore",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:bookstore",
+          "affinity": 0.86,
+          "popularity": 0.5,
+          "rating": 4.8,
+          "price_level": 2,
+          "address": "4754 Liberty Ave, Pittsburgh, PA 15224",
+          "city": "Pittsburgh",
+          "description": "An independent Bloomfield bookshop with a strong poetry shelf and a packed reading calendar, a natural fit for songwriter fans.",
+          "tags": [
+            "Bookstore"
+          ],
+          "why": [
+            "Big Thief (64%)",
+            "Waxahatchee (68%)",
+            "Adrianne Lenker (70%)"
+          ]
+        },
+        {
+          "id": "B04816A8-B7B8-4FDB-B3F8-08AA33CF4B8F",
+          "name": "City Books",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:bookstore",
+          "affinity": 0.73,
+          "popularity": 0.4,
+          "rating": 4.7,
+          "price_level": 2,
+          "address": "908 Galveston Ave, Pittsburgh, PA 15233",
+          "city": "Pittsburgh",
+          "description": "Pittsburgh's oldest used bookstore, now on the North Side, with a loyal literary crowd and a small events series.",
+          "tags": [
+            "Bookstore"
+          ],
+          "why": [
+            "Big Thief (52%)",
+            "Waxahatchee (60%)",
+            "Adrianne Lenker (64%)"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "dive bar",
+      "places": [
+        {
+          "id": "CD084664-5B7A-429B-A535-6590DE93C277",
+          "name": "Gooski's",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:dive_bar",
+          "affinity": 0.84,
+          "popularity": 0.52,
+          "rating": 4.4,
+          "price_level": 1,
+          "address": "3117 Brereton St, Pittsburgh, PA 15219",
+          "city": "Pittsburgh",
+          "description": "A Polish Hill dive with cheap pierogi, a loud jukebox, and a back room that has hosted indie and punk shows for decades.",
+          "tags": [
+            "Dive Bar",
+            "Bar"
+          ],
+          "why": [
+            "Big Thief (69%)",
+            "Waxahatchee (55%)",
+            "Adrianne Lenker (50%)"
+          ]
+        },
+        {
+          "id": "62B2B7CE-2948-4028-A81F-46C8BE5375E4",
+          "name": "Kelly's Bar & Lounge",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:dive_bar",
+          "affinity": 0.7,
+          "popularity": 0.46,
+          "rating": 4.3,
+          "price_level": 1,
+          "address": "6012 Penn Circle S, Pittsburgh, PA 15206",
+          "city": "Pittsburgh",
+          "description": "An East Liberty standby with a retro lounge, strong drinks, and the neighborhood's after-show crowd.",
+          "tags": [
+            "Dive Bar",
+            "Bar"
+          ],
+          "why": [
+            "Big Thief (54%)",
+            "Waxahatchee (50%)",
+            "Adrianne Lenker (44%)"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "vintage shop",
+      "places": [
+        {
+          "id": "520005AA-4246-4457-A9CD-558E0C9F4655",
+          "name": "Avalon Exchange",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:vintage_store",
+          "affinity": 0.81,
+          "popularity": 0.48,
+          "rating": 4.3,
+          "price_level": 2,
+          "address": "5858 Forbes Ave, Pittsburgh, PA 15217",
+          "city": "Pittsburgh",
+          "description": "A buy-sell-trade vintage and resale shop in Squirrel Hill that leans flannel, denim, and worn-in boots.",
+          "tags": [
+            "Vintage Store",
+            "Thrift Store"
+          ],
+          "why": [
+            "Big Thief (50%)",
+            "Waxahatchee (63%)",
+            "Adrianne Lenker (57%)"
+          ]
+        },
+        {
+          "id": "1B9E1D4B-57F7-4072-BFB7-6C19FDCDABCE",
+          "name": "Thriftique",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:vintage_store",
+          "affinity": 0.63,
+          "popularity": 0.36,
+          "rating": 4.2,
+          "price_level": 1,
+          "address": "125 51st St, Pittsburgh, PA 15201",
+          "city": "Pittsburgh",
+          "description": "A nonprofit Lawrenceville thrift shop with a well-picked clothing floor and a steady stream of twenty-somethings.",
+          "tags": [
+            "Thrift Store",
+            "Vintage Store"
+          ],
+          "why": [
+            "Big Thief (40%)",
+            "Waxahatchee (53%)",
+            "Adrianne Lenker (47%)"
+          ]
+        }
+      ]
+    }
+  ],
+  "who": {
+    "age": {
+      "24_and_younger": 0.14,
+      "25_to_29": 0.5,
+      "30_to_34": 0.54,
+      "35_to_44": 0.36,
+      "45_to_54": 0.08,
+      "55_and_older": -0.23
+    },
+    "gender": {
+      "female": 0.24,
+      "male": -0.1
+    },
+    "strongestAge": "30_to_34",
+    "suggestions": [
+      "Fans of your comps here index highest at 30 to 34; consider pitching rooms and promo partners that already draw that crowd.",
+      "The 55-and-older band indexes low; consider a later set time if the room offers a choice.",
+      "Affinity leans toward women among fans of your comps here; consider that when choosing which promo partner gets the poster first."
+    ]
+  },
+  "localColor": {
+    "brands": [
+      {
+        "id": "79105CB8-2649-4620-A2F8-0B53D5B8A831",
+        "name": "Fjallraven",
+        "cityAffinity": 0.76,
+        "homeAffinity": 0.753,
+        "delta": 0.007
+      },
+      {
+        "id": "52039753-DD87-4F1B-8D75-3F55850FAD13",
+        "name": "La Colombe",
+        "cityAffinity": 0.74,
+        "homeAffinity": 0.734,
+        "delta": 0.006
+      },
+      {
+        "id": "47D5D80A-D8DA-4F3A-A4DF-A99635B1BCB7",
+        "name": "Warby Parker",
+        "cityAffinity": 0.68,
+        "homeAffinity": 0.679,
+        "delta": 0.001
+      },
+      {
+        "id": "81FF9E58-99F1-4C63-9F2F-7D85FA8D6964",
+        "name": "Patagonia",
+        "cityAffinity": 0.9,
+        "homeAffinity": 0.9,
+        "delta": 0
+      },
+      {
+        "id": "AC8120D3-F632-4821-92A3-70E5C4A3343C",
+        "name": "Subaru",
+        "cityAffinity": 0.88,
+        "homeAffinity": 0.882,
+        "delta": -0.002
+      }
+    ],
+    "shows": [
+      {
+        "id": "656078D4-7298-439C-B517-153F264014E1",
+        "name": "Somebody Somewhere",
+        "cityAffinity": 0.89,
+        "homeAffinity": 0.873,
+        "delta": 0.017
+      },
+      {
+        "id": "E3C6F04F-7F24-4D5C-88C7-79ACD9F57EAC",
+        "name": "The Bear",
+        "cityAffinity": 0.87,
+        "homeAffinity": 0.855,
+        "delta": 0.015
+      },
+      {
+        "id": "D7BD04AA-3B47-4DA4-9E4F-40A542F5B7D1",
+        "name": "Abbott Elementary",
+        "cityAffinity": 0.77,
+        "homeAffinity": 0.763,
+        "delta": 0.007
+      },
+      {
+        "id": "CBBD7C4F-EE93-4B17-8B5B-5251E5F73EB7",
+        "name": "Hacks",
+        "cityAffinity": 0.82,
+        "homeAffinity": 0.818,
+        "delta": 0.002
+      },
+      {
+        "id": "5AF4B18C-7F2E-4D54-B946-C924DBBC0E98",
+        "name": "Fleabag",
+        "cityAffinity": 0.91,
+        "homeAffinity": 0.91,
+        "delta": 0
+      }
+    ]
+  },
+  "locality": {
+    "id": "ADBC1247-32F4-4C36-9D4C-C5AD366F8576",
+    "name": "Pittsburgh",
+    "state": "PA",
+    "label": "Pittsburgh, PA",
+    "rank": 10,
+    "affinity": 0.869,
+    "population": 302955,
+    "lat": 40.441,
+    "lon": -79.996,
+    "overIndex": false,
+    "why": [
+      "Big Thief (66%)",
+      "Adrianne Lenker (51%)",
+      "Waxahatchee (42%)"
+    ]
+  },
+  "card": {
+    "summary": "Pittsburgh ranks 10th on the route with a 0.869 affinity among fans of your comps around Pittsburgh, solid though not flagged as over-indexing. Big Thief is the strongest comp driving it at 66%, with Adrianne Lenker at 51% and Waxahatchee at 42%.",
+    "rooms_note": "Mr. Smalls Theatre in Millvale tops the room list at 0.93 affinity, driven mostly by Big Thief fans at 78%.",
+    "promo_note": "Record stores are the strongest promo group, led by The Attic Record Store at 0.92 affinity (Big Thief 77%), with Jerry's Records close behind at 0.90.",
+    "who_note": "Fans of your comps around Pittsburgh index highest at 30 to 34 (0.54), so consider leading with partners like The Attic Record Store and Commonplace Coffee that already score well with that crowd.",
+    "local_color_note": "Somebody Somewhere edges out home at +0.017 versus Richmond, a small lift, so a quiet, warm, small-town-heart feel on the poster or merch table may land better than anything flashy.",
+    "promo_copy": [
+      "Big Thief fans in Pittsburgh: a new songwriter is coming through town.",
+      "Love Adrianne Lenker? Ask us about the Pittsburgh show, flyers by the register."
+    ],
+    "caution": "These are aggregate taste affinities for fans of your comps, not attendance or sales data, so confirm capacity, age policy, and availability directly with each room."
+  },
+  "receipts": [
+    {
+      "id": "rmv3fd7es-19",
+      "tool": "find_rooms",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Pittsburgh%2C+PA&filter.location.radius=15000&filter.tags=urn%3Atag%3Acategory%3Aplace%3Alive_music_venue%2Curn%3Atag%3Agenre%3Aplace%3Abar%3Alive_music%2Curn%3Atag%3Agenre%3Aplace%3Aconcert_hall%2Curn%3Atag%3Agenre%3Aplace%3Amusic_venue&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=8&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 8,
+      "top": [
+        {
+          "name": "Mr. Smalls Theatre",
+          "affinity": 0.93
+        },
+        {
+          "name": "Club Café",
+          "affinity": 0.89
+        },
+        {
+          "name": "Thunderbird Café & Music Hall",
+          "affinity": 0.86
+        }
+      ]
+    },
+    {
+      "id": "rmv3fd7es-20",
+      "tool": "find_promo_partners",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Pittsburgh%2C+PA&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abar%2Curn%3Atag%3Agenre%3Aplace%3Abookstore%2Curn%3Atag%3Agenre%3Aplace%3Acafe%2Curn%3Atag%3Agenre%3Aplace%3Acoffee_shop%2Curn%3Atag%3Agenre%3Aplace%3Adive_bar%2Curn%3Atag%3Agenre%3Aplace%3Arecord_store%2Curn%3Atag%3Agenre%3Aplace%3Athrift_store%2Curn%3Atag%3Agenre%3Aplace%3Avintage_store&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&diversify.by=properties.subtype&diversify.take=2&sort_by=affinity&take=12&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 12,
+      "top": [
+        {
+          "name": "The Attic Record Store",
+          "affinity": 0.92
+        },
+        {
+          "name": "Jerry's Records",
+          "affinity": 0.9
+        },
+        {
+          "name": "Commonplace Coffee",
+          "affinity": 0.88
+        }
+      ]
+    },
+    {
+      "id": "rmv3fd7es-21",
+      "tool": "who_shows_up",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Ademographics&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Pittsburgh%2C+PA&signal.location.radius=25000",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 3,
+      "top": []
+    },
+    {
+      "id": "rmv3fd7es-22",
+      "tool": "local_color",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Abrand&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Pittsburgh%2C+PA&signal.location.radius=25000&take=20",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 20,
+      "top": [
+        {
+          "name": "Patagonia",
+          "affinity": 0.9
+        },
+        {
+          "name": "Subaru",
+          "affinity": 0.88
+        },
+        {
+          "name": "Trader Joe's",
+          "affinity": 0.86
+        }
+      ]
+    },
+    {
+      "id": "rmv3fd7es-23",
+      "tool": "local_color",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Atv_show&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Pittsburgh%2C+PA&signal.location.radius=25000&take=20",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 20,
+      "top": [
+        {
+          "name": "Fleabag",
+          "affinity": 0.91
+        },
+        {
+          "name": "Somebody Somewhere",
+          "affinity": 0.89
+        },
+        {
+          "name": "The Bear",
+          "affinity": 0.87
+        }
+      ]
+    },
+    {
+      "id": "rmv3fd7es-24",
+      "tool": "local_color",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Abrand&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Richmond%2C+VA&signal.location.radius=25000&take=20",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 20,
+      "top": [
+        {
+          "name": "Patagonia",
+          "affinity": 0.9
+        },
+        {
+          "name": "Subaru",
+          "affinity": 0.882
+        },
+        {
+          "name": "Trader Joe's",
+          "affinity": 0.863
+        }
+      ]
+    },
+    {
+      "id": "rmv3fd7es-25",
+      "tool": "local_color",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Atv_show&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Richmond%2C+VA&signal.location.radius=25000&take=20",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 20,
+      "top": [
+        {
+          "name": "Fleabag",
+          "affinity": 0.91
+        },
+        {
+          "name": "Reservation Dogs",
+          "affinity": 0.892
+        },
+        {
+          "name": "Somebody Somewhere",
+          "affinity": 0.873
+        }
+      ]
+    }
+  ]
+}

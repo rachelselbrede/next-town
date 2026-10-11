@@ -1,0 +1,126 @@
+/* Next Town: print styles. Link with media="print" (or plain; everything is inside @media print).
+   Goals: one page per advance sheet, large readable type, no navigation or drawer, no colors
+   that depend on a dark background. The tour sheet prints the itinerary and pitch on page one,
+   then one page per stop. A single city playbook prints as one page. */
+
+@page {
+  size: letter;
+  margin: 0.6in 0.7in;
+}
+
+@media print {
+  /* ---- hide everything that only makes sense on screen ---- */
+  .no-print,
+  nav,
+  header.topbar, .topbar, .app-header, .site-header,
+  .mode-pill,
+  .receipts, .receipts-drawer,
+  .trace, .agent-log,
+  .map, #map, .leaflet-container,
+  .route-rail,
+  button,
+  [data-screen][hidden],
+  .screen:not(.is-active):not(.active) {
+    display: none !important;
+  }
+
+  /* ---- page basics ---- */
+  html, body {
+    background: #fff !important;
+    color: #000 !important;
+    font-family: "Nunito", system-ui, sans-serif;
+    font-size: 12.5pt;
+    line-height: 1.45;
+  }
+  a { color: inherit; text-decoration: none; }
+  a[href]::after { content: none; }
+  * { box-shadow: none !important; text-shadow: none !important; }
+
+  /* Force light tokens even when the OS is in dark mode. */
+  :root {
+    --nt-cream: #fff;
+    --nt-paper: #fff;
+    --nt-ink: #000;
+    --nt-muted: #444;
+    --nt-forest: #2f5d44;
+    --nt-forest-deep: #234635;
+    --nt-forest-soft: #e6eee9;
+    --nt-gold: #d9a93a;
+    --nt-gold-ink: #000;
+    --nt-coral: #b3432f;
+    --nt-coral-soft: #f6e2de;
+    --nt-line: #bbb;
+  }
+
+  /* ---- shared pieces ---- */
+  .playbook, .tour { max-width: none; padding: 0; }
+  .pb-title { font-size: 26pt; margin: 0 0 4pt; }
+  .pb-card-title { font-size: 15pt; }
+  .pb-pill, .pb-badge-gold { border: 1px solid #000; background: #fff; color: #000; font-size: 9.5pt; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .pb-badge-gold { background: var(--nt-gold); font-weight: 700; }
+  .pb-pill-forest { background: #fff; color: #000; }
+  .pb-chip { border: 1px solid #999; background: #fff; }
+  .pb-chip b { color: #000; }
+  .pb-aff, .pb-bar-track { background: #eee; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .pb-aff-fill, .pb-bar-pos { background: var(--nt-forest); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .pb-bar-neg { background: var(--nt-coral); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .pb-caution, .receipt-note { color: var(--nt-coral); }
+  .pb-query { display: none !important; }
+
+  /* ---- a single city playbook: one page, two columns of cards ---- */
+  .pb-card { border: 1px solid #000; border-radius: 6pt; padding: 8pt 10pt; break-inside: avoid; page-break-inside: avoid; }
+  .pb-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8pt; }
+  .pb-rooms .pb-item:nth-child(n + 6) { display: none; }   /* keep a playbook to one sheet */
+  .pb-foot { font-size: 8.5pt; margin-top: 6pt; }
+
+  /* ---- tour: itinerary + pitch on page one ---- */
+  .tour-card { border: 0; padding: 0; margin: 0 0 12pt; }
+  /* Seven columns must fit a letter page: fixed layout, explicit widths, wrap anywhere. */
+  .tour-table { min-width: 0; width: 100%; table-layout: fixed; font-size: 9.5pt; }
+  .tour-table th, .tour-table td { padding: 3pt 2pt; border-bottom: 1px solid #999; white-space: normal; overflow-wrap: normal; word-break: normal; }
+  .tour-table th { font-size: 8pt; letter-spacing: 0.02em; }
+  .tour-table th:nth-child(1), .tour-table td:nth-child(1) { width: 7%; }
+  .tour-table th:nth-child(2), .tour-table td:nth-child(2) { width: 18%; }
+  .tour-table th:nth-child(3), .tour-table td:nth-child(3) { width: 9%; }
+  .tour-table th:nth-child(4), .tour-table td:nth-child(4) { width: 13%; }
+  .tour-table th:nth-child(5), .tour-table td:nth-child(5) { width: 18%; }
+  .tour-table th:nth-child(6), .tour-table td:nth-child(6) { width: 19%; }
+  .tour-table th:nth-child(7), .tour-table td:nth-child(7) { width: 16%; }
+  .tour-city { white-space: normal; }
+  /* The over-index badge becomes plain bold text in the table; "over-index" may break at its hyphen. */
+  .tour-table .pb-badge-mini { display: inline; background: none; border: 0; padding: 0; font-size: 8.5pt; font-weight: 700; }
+  .tour-table-wrap { overflow: visible; }
+  .tour-row-drive td { background: #f2f2f2; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .tour-city-link { display: inline !important; font: inherit; font-weight: 700; color: #000; background: none; border: 0; padding: 0; text-decoration: none; }
+  .tour-pitch { break-after: page; page-break-after: always; }
+  .tour-pitch-text { font-size: 12.5pt; max-width: none; }
+  .tour-sheets { display: block; margin: 0; }
+  .tour-sheets > .pb-card-title { display: none; }
+
+  /* ---- advance sheets: one page each, big type ---- */
+  .advance-sheet {
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    break-after: page;
+    page-break-after: always;
+    break-inside: avoid;
+    page-break-inside: avoid;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .advance-sheet:last-child { break-after: auto; page-break-after: auto; }
+  .sheet-day { font-size: 11pt; letter-spacing: 0.12em; }
+  .sheet-title { font-size: 30pt; margin: 0 0 4pt; }
+  .sheet-summary { font-size: 12.5pt; max-width: none; }
+  .sheet-grid { grid-template-columns: 1fr 1fr; gap: 10pt 18pt; margin-top: 10pt; flex: 1; }
+  .sheet-block { break-inside: avoid; page-break-inside: avoid; }
+  .sheet-block h3 { font-size: 14pt; margin: 6pt 0 4pt; border-bottom: 1.5px solid #000; padding-bottom: 2pt; }
+  .sheet-block li { font-size: 12pt; margin: 3pt 0; }
+  .sheet-block p { font-size: 12pt; }
+  .sheet-sub, .sheet-fine, .pb-fine { font-size: 9.5pt; color: #444; }
+  .sheet-foot { margin-top: auto; padding-top: 6pt; border-top: 1px solid #000; font-size: 9pt; }
+}

@@ -1,0 +1,281 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "local_color",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Abrand&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Boone%2C%20NC&signal.location.radius=25000&take=20",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:brand",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "signal.location.query": "Boone, NC",
+      "signal.location.radius": 25000,
+      "take": 20
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "F4D0AB50-60CD-4B17-BF5B-3224D267EB2B",
+          "name": "Allbirds",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.54,
+          "properties": {
+            "description": "Wool sneaker brand with a sustainability pitch."
+          },
+          "query": {
+            "affinity": 0.944
+          }
+        },
+        {
+          "entity_id": "F6C143D1-37EF-44A6-8D0F-91E39C7B16CF",
+          "name": "The Veil Brewing Co.",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.65,
+          "properties": {
+            "description": "Richmond brewery known for hazy IPAs and long release-day lines."
+          },
+          "query": {
+            "affinity": 0.918
+          }
+        },
+        {
+          "entity_id": "B33E9033-D54B-4B07-A439-14C0322C161D",
+          "name": "Levi's",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.77,
+          "properties": {
+            "description": "Denim brand with a vintage-friendly back catalog."
+          },
+          "query": {
+            "affinity": 0.903
+          }
+        },
+        {
+          "entity_id": "47D5D80A-D8DA-4F3A-A4DF-A99635B1BCB7",
+          "name": "Warby Parker",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.61,
+          "properties": {
+            "description": "Direct-to-consumer eyewear brand with a try-at-home program."
+          },
+          "query": {
+            "affinity": 0.877
+          }
+        },
+        {
+          "entity_id": "ABCCC90D-D407-428B-99C4-E3010A39A0C7",
+          "name": "Bodo's Bagels",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.61,
+          "properties": {},
+          "tags": [],
+          "query": {
+            "affinity": 0.868
+          }
+        },
+        {
+          "entity_id": "7C8DF92F-D4B9-45DE-9144-A0E36C0C6897",
+          "name": "REI",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.79,
+          "properties": {
+            "description": "Outdoor gear co-op with a member dividend."
+          },
+          "query": {
+            "affinity": 0.862
+          }
+        },
+        {
+          "entity_id": "AC8120D3-F632-4821-92A3-70E5C4A3343C",
+          "name": "Subaru",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.84,
+          "properties": {
+            "description": "Carmaker whose all-wheel-drive wagons are a fixture at trailheads and farmers markets."
+          },
+          "query": {
+            "affinity": 0.79
+          }
+        },
+        {
+          "entity_id": "E02ADCAF-5406-4313-BB26-67758B3A101B",
+          "name": "Giant Eagle",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.61,
+          "properties": {
+            "description": "Pittsburgh's hometown regional grocery chain, the default store for anyone living in the city."
+          },
+          "query": {
+            "affinity": 0.789
+          }
+        },
+        {
+          "entity_id": "8714B921-EBBE-4527-9393-A785DFC169BF",
+          "name": "Stony Point Fashion Park",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.59,
+          "properties": {
+            "description": "Open-air Richmond shopping center on the south side."
+          },
+          "query": {
+            "affinity": 0.738
+          }
+        },
+        {
+          "entity_id": "6DB3B04B-3AA1-43A1-A5BE-93F17E0380AE",
+          "name": "Ellwood Thompson's",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.72,
+          "properties": {
+            "description": "Richmond's independent natural-foods grocery in Carytown."
+          },
+          "query": {
+            "affinity": 0.715
+          }
+        },
+        {
+          "entity_id": "81FF9E58-99F1-4C63-9F2F-7D85FA8D6964",
+          "name": "Patagonia",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.85,
+          "properties": {
+            "description": "Outdoor apparel brand with a loud environmental mission."
+          },
+          "query": {
+            "affinity": 0.713
+          }
+        },
+        {
+          "entity_id": "52039753-DD87-4F1B-8D75-3F55850FAD13",
+          "name": "La Colombe",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.67,
+          "properties": {
+            "description": "Philadelphia coffee roaster with canned draft lattes in every co-op."
+          },
+          "query": {
+            "affinity": 0.692
+          }
+        },
+        {
+          "entity_id": "B95C6A49-82F6-4084-AFB9-CF08C2A11114",
+          "name": "Blue Ridge Mountain Sports",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.77,
+          "properties": {},
+          "tags": [],
+          "query": {
+            "affinity": 0.686
+          }
+        },
+        {
+          "entity_id": "F25F0B67-D992-40AE-8BAB-E7F62F5437C3",
+          "name": "Hardywood Park Craft Brewery",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.78,
+          "properties": {
+            "description": "Richmond craft brewery whose Gingerbread Stout release is a local holiday."
+          },
+          "query": {
+            "affinity": 0.662
+          }
+        },
+        {
+          "entity_id": "6243C06C-6675-425E-B8B8-6396DDDA9C13",
+          "name": "French Broad Chocolate",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.375,
+          "properties": {},
+          "tags": [],
+          "query": {
+            "affinity": 0.662
+          }
+        },
+        {
+          "entity_id": "CF1F4DF2-0EBC-4DDB-B2DA-58092A3E7571",
+          "name": "Oliver Winery",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.28,
+          "properties": {
+            "description": "Oliver Winery: a brand fans of these comps around Bloomington, IN over-index on."
+          },
+          "tags": [],
+          "query": {
+            "affinity": 0.624
+          }
+        },
+        {
+          "entity_id": "7B6FB381-3093-4C50-A15E-6D21EA7E78E7",
+          "name": "Counter Culture Coffee",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.762,
+          "properties": {
+            "description": "Durham-based specialty roaster served in cafes across the Triangle."
+          },
+          "query": {
+            "affinity": 0.603
+          }
+        },
+        {
+          "entity_id": "D44CBBD6-C6E8-455A-94B4-88B6A05B0591",
+          "name": "Blundstone",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.73,
+          "properties": {
+            "description": "Tasmanian pull-on boot brand beloved by people who walk a lot."
+          },
+          "query": {
+            "affinity": 0.576
+          }
+        },
+        {
+          "entity_id": "753F76AB-F8F3-4DB9-9076-5541D45875DF",
+          "name": "Trader Joe's",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.83,
+          "properties": {
+            "description": "Grocery chain known for cheap wine, frozen dumplings, and friendly cashiers."
+          },
+          "query": {
+            "affinity": 0.555
+          }
+        },
+        {
+          "entity_id": "79105CB8-2649-4620-A2F8-0B53D5B8A831",
+          "name": "Fjallraven",
+          "type": "urn:entity:brand",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.71,
+          "properties": {
+            "description": "Swedish outdoor brand known for the Kanken backpack."
+          },
+          "query": {
+            "affinity": 0.553
+          }
+        }
+      ]
+    }
+  }
+}

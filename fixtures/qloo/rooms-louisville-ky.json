@@ -1,0 +1,412 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_rooms",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?feature.explainability=true&filter.location.query=Louisville%2C%20KY&filter.location.radius=15000&filter.tags=urn%3Atag%3Acategory%3Aplace%3Alive_music_venue%2Curn%3Atag%3Agenre%3Aplace%3Abar%3Alive_music%2Curn%3Atag%3Agenre%3Aplace%3Aconcert_hall%2Curn%3Atag%3Agenre%3Aplace%3Amusic_venue&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=8",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Louisville, KY",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:category:place:live_music_venue,urn:tag:genre:place:bar:live_music,urn:tag:genre:place:concert_hall,urn:tag:genre:place:music_venue",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "sort_by": "affinity",
+      "take": 8,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "F0F4F888-8DE0-4767-8AFB-F4F9304C4D57",
+          "name": "Headliners Music Hall",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:music_venue",
+          "popularity": 0.86,
+          "properties": {
+            "description": "Mid-size standing room off Lexington Road that has hosted most touring indie acts passing through Louisville.",
+            "address": "1386 Lexington Rd, Louisville, KY 40206",
+            "geocode": {
+              "name": "Headliners Music Hall",
+              "city": "Louisville",
+              "admin1_region": "KY",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Music Venue",
+              "tag_id": "urn:tag:genre:place:music_venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Live Music Venue",
+              "tag_id": "urn:tag:category:place:live_music_venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.93,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.736
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.656
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.596
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "6A727F29-D379-4B75-97E6-DE18EFACBD88",
+          "name": "Zanzabar",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:bar",
+          "popularity": 0.74,
+          "properties": {
+            "description": "Schnitzelburg bar with pinball, a kitchen, and a back room stage that leans on indie and folk bills.",
+            "address": "2100 S Preston St, Louisville, KY 40217",
+            "geocode": {
+              "name": "Zanzabar",
+              "city": "Louisville",
+              "admin1_region": "KY",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Bar with Live Music",
+              "tag_id": "urn:tag:genre:place:bar:live_music",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Music Venue",
+              "tag_id": "urn:tag:genre:place:music_venue",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.886,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.66
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.58
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.52
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "5158B56A-587E-452A-ABFD-83406FAE388C",
+          "name": "Old Forester's Paristown Hall",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:concert_hall",
+          "popularity": 0.78,
+          "properties": {
+            "description": "Newer hall in the Paristown district with a tall room and clean sound for bigger indie nights.",
+            "address": "724 Brent St, Louisville, KY 40204",
+            "geocode": {
+              "name": "Old Forester's Paristown Hall",
+              "city": "Louisville",
+              "admin1_region": "KY",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Concert Hall",
+              "tag_id": "urn:tag:genre:place:concert_hall",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Live Music Venue",
+              "tag_id": "urn:tag:category:place:live_music_venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.841,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.663
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.583
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.523
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "ACB91000-900C-4385-BA91-1EAA66B49C1F",
+          "name": "Mercury Ballroom",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:music_venue",
+          "popularity": 0.76,
+          "properties": {
+            "description": "Downtown ballroom on Fourth Street that books a broad mix of touring bands.",
+            "address": "611 S 4th St, Louisville, KY 40202",
+            "geocode": {
+              "name": "Mercury Ballroom",
+              "city": "Louisville",
+              "admin1_region": "KY",
+              "country_code": "US"
+            },
+            "business_rating": 4.3,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Music Venue",
+              "tag_id": "urn:tag:genre:place:music_venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Live Music Venue",
+              "tag_id": "urn:tag:category:place:live_music_venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.797,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.596
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.516
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.456
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "1F3E81C3-BBFF-4CBF-A163-F29F1D878211",
+          "name": "Whirling Tiger",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:bar",
+          "popularity": 0.55,
+          "properties": {
+            "description": "Butchertown bar and stage with a loyal local-music crowd and a low door.",
+            "address": "1335 Story Ave, Louisville, KY 40206",
+            "geocode": {
+              "name": "Whirling Tiger",
+              "city": "Louisville",
+              "admin1_region": "KY",
+              "country_code": "US"
+            },
+            "business_rating": 4.4,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "name": "Bar with Live Music",
+              "tag_id": "urn:tag:genre:place:bar:live_music",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "name": "Music Venue",
+              "tag_id": "urn:tag:genre:place:music_venue",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.753,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.62
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.54
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.48
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "E9579697-70BA-4995-B33F-868FB117A464",
+          "name": "Monnik Beer Co.",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:bar",
+          "popularity": 0.5,
+          "properties": {
+            "description": "Schnitzelburg brewery and kitchen that hosts occasional acoustic and small-band nights.",
+            "address": "1036 E Burnett Ave, Louisville, KY 40217",
+            "geocode": {
+              "name": "Monnik Beer Co.",
+              "city": "Louisville",
+              "admin1_region": "KY",
+              "country_code": "US"
+            },
+            "business_rating": 4.4,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "name": "Bar with Live Music",
+              "tag_id": "urn:tag:genre:place:bar:live_music",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.709,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.573
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.493
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.433
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "2314E9C1-56EF-4B79-80A0-47B27A8092C5",
+          "name": "Louisville Palace",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:concert_hall",
+          "popularity": 0.84,
+          "properties": {
+            "description": "Ornate 1928 theater on Fourth Street that seats a few thousand for the biggest folk and indie draws.",
+            "address": "625 S 4th St, Louisville, KY 40202",
+            "geocode": {
+              "name": "Louisville Palace",
+              "city": "Louisville",
+              "admin1_region": "KY",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 3
+          },
+          "tags": [
+            {
+              "name": "Concert Hall",
+              "tag_id": "urn:tag:genre:place:concert_hall",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.664,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.536
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.456
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.396
+                }
+              }
+            }
+          }
+        },
+        {
+          "entity_id": "EDAE8426-3615-4672-9376-9157B6BEF791",
+          "name": "Kentucky Center (Bomhard Theater)",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:concert_hall",
+          "popularity": 0.72,
+          "properties": {
+            "description": "Riverside arts center whose smaller Bomhard Theater suits seated listening-room shows.",
+            "address": "501 W Main St, Louisville, KY 40202",
+            "geocode": {
+              "name": "Kentucky Center (Bomhard Theater)",
+              "city": "Louisville",
+              "admin1_region": "KY",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 3
+          },
+          "tags": [
+            {
+              "name": "Concert Hall",
+              "tag_id": "urn:tag:genre:place:concert_hall",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.62,
+            "explainability": {
+              "by_entity": {
+                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
+                  "name": "Big Thief",
+                  "score": 0.545
+                },
+                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
+                  "name": "Waxahatchee",
+                  "score": 0.465
+                },
+                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
+                  "name": "Adrianne Lenker",
+                  "score": 0.405
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

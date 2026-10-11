@@ -1,0 +1,720 @@
+{
+  "city": "Athens, GA",
+  "home": "Richmond, VA",
+  "comps": [
+    {
+      "id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+      "name": "Big Thief",
+      "type": "urn:entity:artist",
+      "popularity": 0.93
+    },
+    {
+      "id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+      "name": "Waxahatchee",
+      "type": "urn:entity:artist",
+      "popularity": 0.88
+    },
+    {
+      "id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "name": "Adrianne Lenker",
+      "type": "urn:entity:artist",
+      "popularity": 0.85
+    }
+  ],
+  "rooms": [
+    {
+      "id": "32187797-A7DD-450D-969A-870890591D65",
+      "name": "40 Watt Club",
+      "type": "urn:entity:place",
+      "subtype": "urn:entity:place:music_venue",
+      "affinity": 0.9,
+      "popularity": 0.46,
+      "rating": 4.34,
+      "price_level": 1,
+      "address": "285 W Washington St, Athens, GA 30601",
+      "city": "Athens",
+      "description": "The downtown room every Athens band grows up wanting to play; touring indie and folk acts fill the week.",
+      "tags": [
+        "Music Venue",
+        "Live Music Venue"
+      ],
+      "why": [
+        "Big Thief (76%)",
+        "Waxahatchee (72%)",
+        "Adrianne Lenker (63%)"
+      ]
+    },
+    {
+      "id": "2BA8C7CD-A16C-4FA6-B2D5-2CCBF5D002BA",
+      "name": "Georgia Theatre",
+      "type": "urn:entity:place",
+      "subtype": "urn:entity:place:concert_hall",
+      "affinity": 0.88,
+      "popularity": 0.66,
+      "rating": 4.47,
+      "price_level": 2,
+      "address": "215 N Lumpkin St, Athens, GA 30601",
+      "city": "Athens",
+      "description": "Rebuilt downtown theatre with a rooftop stage; the step up when a club show sells through.",
+      "tags": [
+        "Concert Hall"
+      ],
+      "why": [
+        "Big Thief (76%)",
+        "Waxahatchee (69%)",
+        "Adrianne Lenker (64%)"
+      ]
+    },
+    {
+      "id": "41B53BA8-1C20-4BD3-959F-3B7F2A53F8E5",
+      "name": "Caledonia Lounge",
+      "type": "urn:entity:place",
+      "subtype": "urn:entity:place:live_music_bar",
+      "affinity": 0.84,
+      "popularity": 0.49,
+      "rating": 4.4,
+      "price_level": 1,
+      "address": "256 W Clayton St, Athens, GA 30601",
+      "city": "Athens",
+      "description": "Small, loud and loyal: the bar where new bands get their first real crowd.",
+      "tags": [
+        "Live Music Bar"
+      ],
+      "why": [
+        "Big Thief (70%)",
+        "Waxahatchee (66%)",
+        "Adrianne Lenker (56%)"
+      ]
+    },
+    {
+      "id": "3D0B0513-6EA8-4EEE-8C31-3C903A79DE43",
+      "name": "Flicker Theatre & Bar",
+      "type": "urn:entity:place",
+      "subtype": "urn:entity:place:live_music_bar",
+      "affinity": 0.81,
+      "popularity": 0.52,
+      "rating": 4.35,
+      "price_level": 1,
+      "address": "263 W Washington St, Athens, GA 30601",
+      "city": "Athens",
+      "description": "Tiny stage and a front bar that doubles as the listening room for quiet sets.",
+      "tags": [
+        "Live Music Bar"
+      ],
+      "why": [
+        "Big Thief (71%)",
+        "Waxahatchee (58%)",
+        "Adrianne Lenker (52%)"
+      ]
+    },
+    {
+      "id": "C6DA1405-A1E9-48D2-AD70-FA567ED2392A",
+      "name": "Hendershot's",
+      "type": "urn:entity:place",
+      "subtype": "urn:entity:place:music_venue",
+      "affinity": 0.78,
+      "popularity": 0.62,
+      "rating": 4.54,
+      "price_level": 2,
+      "address": "237 Prince Ave, Athens, GA 30601",
+      "city": "Athens",
+      "description": "Coffee bar by day and a seated songwriter room by night on the Prince Avenue strip.",
+      "tags": [
+        "Music Venue",
+        "Live Music Venue"
+      ],
+      "why": [
+        "Big Thief (62%)",
+        "Waxahatchee (56%)",
+        "Adrianne Lenker (51%)"
+      ]
+    },
+    {
+      "id": "AE1A9003-83A4-4CD9-AAB2-FE3DF7FBAFC6",
+      "name": "The Foundry",
+      "type": "urn:entity:place",
+      "subtype": "urn:entity:place:music_venue",
+      "affinity": 0.75,
+      "popularity": 0.48,
+      "rating": 4.66,
+      "price_level": 1,
+      "address": "295 E Dougherty St, Athens, GA 30601",
+      "city": "Athens",
+      "description": "Supper-club room attached to a hotel; good for an early all-ages folk show.",
+      "tags": [
+        "Music Venue",
+        "Live Music Venue"
+      ],
+      "why": [
+        "Big Thief (64%)",
+        "Waxahatchee (56%)",
+        "Adrianne Lenker (51%)"
+      ]
+    },
+    {
+      "id": "D07EBC7C-2495-4F00-BB74-0AF8527130A9",
+      "name": "Nowhere Bar",
+      "type": "urn:entity:place",
+      "subtype": "urn:entity:place:live_music_bar",
+      "affinity": 0.73,
+      "popularity": 0.85,
+      "rating": 4.62,
+      "price_level": 1,
+      "address": "240 N Lumpkin St, Athens, GA 30601",
+      "city": "Athens",
+      "description": "Long downtown bar with a back stage and a regular crowd on weeknights.",
+      "tags": [
+        "Live Music Bar"
+      ],
+      "why": [
+        "Big Thief (58%)",
+        "Waxahatchee (51%)",
+        "Adrianne Lenker (45%)"
+      ]
+    },
+    {
+      "id": "4B548B71-3C03-4055-8D52-F360F7C7B0B7",
+      "name": "Little Kings Shuffle Club",
+      "type": "urn:entity:place",
+      "subtype": "urn:entity:place:live_music_bar",
+      "affinity": 0.69,
+      "popularity": 0.58,
+      "rating": 4.43,
+      "price_level": 2,
+      "address": "223 W Hancock Ave, Athens, GA 30601",
+      "city": "Athens",
+      "description": "Patio-first bar with a small indoor stage; a cheap, friendly weeknight play.",
+      "tags": [
+        "Live Music Bar"
+      ],
+      "why": [
+        "Big Thief (59%)",
+        "Waxahatchee (52%)",
+        "Adrianne Lenker (45%)"
+      ]
+    }
+  ],
+  "promo": [
+    {
+      "kind": "record store",
+      "places": [
+        {
+          "id": "2D01022D-38A8-4248-84C3-6FA83E8EBC3D",
+          "name": "Wuxtry Records",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:record_store",
+          "affinity": 0.89,
+          "popularity": 0.78,
+          "rating": 4.43,
+          "price_level": 1,
+          "address": "197 E Clayton St, Athens, GA 30601",
+          "city": "Athens",
+          "description": "Downtown shop stocked by people who have been in the bands; in-store sets on request.",
+          "tags": [
+            "Record Store"
+          ],
+          "why": [
+            "Big Thief (76%)",
+            "Waxahatchee (72%)",
+            "Adrianne Lenker (65%)"
+          ]
+        },
+        {
+          "id": "D17199F2-D580-4035-8C22-0343D3027FE8",
+          "name": "Low Yo Yo Stuff Records",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:record_store",
+          "affinity": 0.87,
+          "popularity": 0.69,
+          "rating": 4.54,
+          "price_level": 2,
+          "address": "261 W Washington St, Athens, GA 30601",
+          "city": "Athens",
+          "description": "Used-vinyl shop a door down from the 40 Watt; a poster here is seen by the right people.",
+          "tags": [
+            "Record Store"
+          ],
+          "why": [
+            "Big Thief (76%)",
+            "Waxahatchee (64%)",
+            "Adrianne Lenker (61%)"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "coffee shop",
+      "places": [
+        {
+          "id": "1B25D288-EF74-4C21-AA41-04A8E6B0A143",
+          "name": "Jittery Joe's",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:coffee_shop",
+          "affinity": 0.85,
+          "popularity": 0.8,
+          "rating": 4.61,
+          "price_level": 2,
+          "address": "297 E Broad St, Athens, GA 30601",
+          "city": "Athens",
+          "description": "The downtown roaster where show flyers have hung for decades.",
+          "tags": [
+            "Coffee Shop",
+            "Cafe"
+          ],
+          "why": [
+            "Big Thief (74%)",
+            "Waxahatchee (66%)",
+            "Adrianne Lenker (59%)"
+          ]
+        },
+        {
+          "id": "6F2420B6-65E6-4378-9064-674BB67CF502",
+          "name": "Walker's Coffee & Pub",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:coffee_shop",
+          "affinity": 0.83,
+          "popularity": 0.82,
+          "rating": 4.5,
+          "price_level": 2,
+          "address": "128 College Ave, Athens, GA 30601",
+          "city": "Athens",
+          "description": "Coffee by day and a bar by night across from the campus arch.",
+          "tags": [
+            "Coffee Shop",
+            "Cafe"
+          ],
+          "why": [
+            "Big Thief (70%)",
+            "Waxahatchee (64%)",
+            "Adrianne Lenker (54%)"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "bookstore",
+      "places": [
+        {
+          "id": "7D91CA56-F5F5-45F7-A49D-9534FC6C4E79",
+          "name": "Avid Bookshop",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:bookstore",
+          "affinity": 0.81,
+          "popularity": 0.72,
+          "rating": 4.22,
+          "price_level": 2,
+          "address": "493 Prince Ave, Athens, GA 30601",
+          "city": "Athens",
+          "description": "Independent bookshop with a busy events board and a reading crowd.",
+          "tags": [
+            "Bookstore"
+          ],
+          "why": [
+            "Big Thief (68%)",
+            "Waxahatchee (63%)",
+            "Adrianne Lenker (54%)"
+          ]
+        },
+        {
+          "id": "7287A849-F09F-426E-8A85-24545810CCB7",
+          "name": "Normal Books",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:bookstore",
+          "affinity": 0.79,
+          "popularity": 0.7,
+          "rating": 4.61,
+          "price_level": 2,
+          "address": "1238 Prince Ave, Athens, GA 30601",
+          "city": "Athens",
+          "description": "Used books in Normaltown next to the bars the music crowd drinks in.",
+          "tags": [
+            "Bookstore"
+          ],
+          "why": [
+            "Big Thief (66%)",
+            "Waxahatchee (56%)",
+            "Adrianne Lenker (49%)"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "dive bar",
+      "places": [
+        {
+          "id": "62BDACB1-55E4-4700-961C-424DA785B497",
+          "name": "Normal Bar",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:dive_bar",
+          "affinity": 0.76,
+          "popularity": 0.49,
+          "rating": 4.83,
+          "price_level": 1,
+          "address": "1365 Prince Ave, Athens, GA 30601",
+          "city": "Athens",
+          "description": "Neighborhood bar in Normaltown; the pre-show meetup for anyone on the Prince Avenue side.",
+          "tags": [
+            "Dive Bar",
+            "Bar"
+          ],
+          "why": [
+            "Big Thief (62%)",
+            "Waxahatchee (55%)",
+            "Adrianne Lenker (49%)"
+          ]
+        },
+        {
+          "id": "62109291-63F6-49AE-8F76-77D26B69570A",
+          "name": "The Manhattan Café",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:dive_bar",
+          "affinity": 0.73,
+          "popularity": 0.55,
+          "rating": 4.68,
+          "price_level": 2,
+          "address": "337 N Hull St, Athens, GA 30601",
+          "city": "Athens",
+          "description": "Downtown dive with a jukebox the bands program.",
+          "tags": [
+            "Dive Bar",
+            "Bar"
+          ],
+          "why": [
+            "Big Thief (59%)",
+            "Waxahatchee (52%)",
+            "Adrianne Lenker (48%)"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "vintage shop",
+      "places": [
+        {
+          "id": "1FDD6475-515E-462A-92F5-E10C582FFAE6",
+          "name": "Agora Vintage",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:vintage_store",
+          "affinity": 0.71,
+          "popularity": 0.76,
+          "rating": 4.78,
+          "price_level": 2,
+          "address": "260 W Clayton St, Athens, GA 30601",
+          "city": "Athens",
+          "description": "Vintage and resale downtown; regulars are the same people who buy tickets.",
+          "tags": [
+            "Vintage Store"
+          ],
+          "why": [
+            "Big Thief (59%)",
+            "Waxahatchee (49%)",
+            "Adrianne Lenker (46%)"
+          ]
+        },
+        {
+          "id": "95216405-A6EC-41B4-9148-CCC56E241DD5",
+          "name": "Dynamite Clothing",
+          "type": "urn:entity:place",
+          "subtype": "urn:entity:place:vintage_store",
+          "affinity": 0.69,
+          "popularity": 0.46,
+          "rating": 4.7,
+          "price_level": 2,
+          "address": "143 N Jackson St, Athens, GA 30601",
+          "city": "Athens",
+          "description": "Vintage clothing shop with a window that faces downtown foot traffic.",
+          "tags": [
+            "Vintage Store"
+          ],
+          "why": [
+            "Big Thief (54%)",
+            "Waxahatchee (51%)",
+            "Adrianne Lenker (45%)"
+          ]
+        }
+      ]
+    }
+  ],
+  "who": {
+    "age": {
+      "24_and_younger": 0.23,
+      "25_to_29": 0.46,
+      "30_to_34": 0.52,
+      "35_to_44": 0.34,
+      "45_to_54": 0.07,
+      "55_and_older": -0.19
+    },
+    "gender": {
+      "female": 0.22,
+      "male": -0.09
+    },
+    "strongestAge": "30_to_34",
+    "suggestions": [
+      "Fans of your comps here index highest at 30 to 34; consider pitching rooms and promo partners that already draw that crowd.",
+      "The under-25 band is also positive; consider asking rooms whether an all-ages or early show is an option.",
+      "The 55-and-older band indexes low; consider a later set time if the room offers a choice."
+    ]
+  },
+  "localColor": {
+    "brands": [
+      {
+        "id": "52039753-DD87-4F1B-8D75-3F55850FAD13",
+        "name": "La Colombe",
+        "cityAffinity": 0.94,
+        "homeAffinity": 0.734,
+        "delta": 0.206
+      },
+      {
+        "id": "1E64D934-320B-4FB7-921B-58DB10BE96EA",
+        "name": "Birkenstock",
+        "cityAffinity": 0.896,
+        "homeAffinity": 0.716,
+        "delta": 0.18
+      },
+      {
+        "id": "F4D0AB50-60CD-4B17-BF5B-3224D267EB2B",
+        "name": "Allbirds",
+        "cityAffinity": 0.778,
+        "homeAffinity": 0.605,
+        "delta": 0.173
+      },
+      {
+        "id": "F25F0B67-D992-40AE-8BAB-E7F62F5437C3",
+        "name": "Hardywood Park Craft Brewery",
+        "cityAffinity": 0.916,
+        "homeAffinity": 0.826,
+        "delta": 0.09
+      },
+      {
+        "id": "DD53783B-58F7-4D99-9969-D937382FDB61",
+        "name": "Hyperion Espresso",
+        "cityAffinity": 0.61,
+        "homeAffinity": 0.55,
+        "delta": 0.06
+      }
+    ],
+    "shows": [
+      {
+        "id": "E27DD42F-04F6-4D52-80D1-274A159366ED",
+        "name": "Girls5eva",
+        "cityAffinity": 0.749,
+        "homeAffinity": 0.56,
+        "delta": 0.189
+      },
+      {
+        "id": "C224F1C3-59F5-457D-AA64-AE2DE94E82B4",
+        "name": "I May Destroy You",
+        "cityAffinity": 0.803,
+        "homeAffinity": 0.634,
+        "delta": 0.169
+      },
+      {
+        "id": "A13215E0-C764-4D72-A2B1-801211C74A37",
+        "name": "Twin Peaks",
+        "cityAffinity": 0.941,
+        "homeAffinity": 0.799,
+        "delta": 0.142
+      },
+      {
+        "id": "CBBD7C4F-EE93-4B17-8B5B-5251E5F73EB7",
+        "name": "Hacks",
+        "cityAffinity": 0.925,
+        "homeAffinity": 0.818,
+        "delta": 0.107
+      },
+      {
+        "id": "628B7F67-F053-4D43-A259-869B267583A7",
+        "name": "Russian Doll",
+        "cityAffinity": 0.72,
+        "homeAffinity": 0.615,
+        "delta": 0.105
+      }
+    ]
+  },
+  "locality": {
+    "id": "C800B6B3-FC9C-4D01-A854-4BA0A2401769",
+    "name": "Athens",
+    "state": "GA",
+    "label": "Athens, GA",
+    "rank": 3,
+    "affinity": 0.918,
+    "population": 127362,
+    "lat": 33.952,
+    "lon": -83.358,
+    "overIndex": true,
+    "why": [
+      "Waxahatchee (75%)",
+      "Adrianne Lenker (64%)",
+      "Big Thief (50%)"
+    ]
+  },
+  "card": {
+    "summary": "Athens, GA ranks 3 on the route with a 0.918 affinity and over-indexes for your comps, so fans of your comps around Athens show up stronger here than the baseline. Waxahatchee drives it hardest at 75%, followed by Adrianne Lenker at 64% and Big Thief at 50%.",
+    "rooms_note": "The 40 Watt Club tops the room list at a 0.9 affinity, led by fans of Big Thief (76%), with the Georgia Theatre close behind at 0.88.",
+    "promo_note": "Record stores are the strongest promo group, with Wuxtry Records at a 0.89 affinity (Big Thief 76%) and Low Yo Yo Stuff Records right behind at 0.87.",
+    "who_note": "Consider pitching rooms and partners that already draw the 30 to 34 crowd, the strongest band at 0.52, with 25 to 29 close behind at 0.46.",
+    "local_color_note": "La Colombe leads the brands at +0.206 over Richmond and Girls5eva leads the shows at +0.189, which hints that a coffee-shop warmth and a wry, funny tone could land on the poster and merch table.",
+    "promo_copy": [
+      "Big Thief and Waxahatchee fans in Athens: a new act is coming through.",
+      "Into Adrianne Lenker? Look out for this tour stop in Athens, GA."
+    ],
+    "caution": "These are aggregate taste affinities, not attendance or sales data, so confirm capacity, age policy, and availability directly with each room."
+  },
+  "receipts": [
+    {
+      "id": "rmv3fe5xs-68",
+      "tool": "find_rooms",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Athens%2C+GA&filter.location.radius=15000&filter.tags=urn%3Atag%3Acategory%3Aplace%3Alive_music_venue%2Curn%3Atag%3Agenre%3Aplace%3Abar%3Alive_music%2Curn%3Atag%3Agenre%3Aplace%3Aconcert_hall%2Curn%3Atag%3Agenre%3Aplace%3Amusic_venue&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=8&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 8,
+      "top": [
+        {
+          "name": "40 Watt Club",
+          "affinity": 0.9
+        },
+        {
+          "name": "Georgia Theatre",
+          "affinity": 0.88
+        },
+        {
+          "name": "Caledonia Lounge",
+          "affinity": 0.84
+        }
+      ]
+    },
+    {
+      "id": "rmv3fe5xs-69",
+      "tool": "find_promo_partners",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Athens%2C+GA&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abar%2Curn%3Atag%3Agenre%3Aplace%3Abookstore%2Curn%3Atag%3Agenre%3Aplace%3Acafe%2Curn%3Atag%3Agenre%3Aplace%3Acoffee_shop%2Curn%3Atag%3Agenre%3Aplace%3Adive_bar%2Curn%3Atag%3Agenre%3Aplace%3Arecord_store%2Curn%3Atag%3Agenre%3Aplace%3Athrift_store%2Curn%3Atag%3Agenre%3Aplace%3Avintage_store&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&diversify.by=properties.subtype&diversify.take=2&sort_by=affinity&take=12&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 12,
+      "top": [
+        {
+          "name": "Wuxtry Records",
+          "affinity": 0.89
+        },
+        {
+          "name": "Low Yo Yo Stuff Records",
+          "affinity": 0.87
+        },
+        {
+          "name": "Jittery Joe's",
+          "affinity": 0.85
+        }
+      ]
+    },
+    {
+      "id": "rmv3fe5xs-70",
+      "tool": "who_shows_up",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Ademographics&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Athens%2C+GA&signal.location.radius=25000",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 3,
+      "top": []
+    },
+    {
+      "id": "rmv3fe5xs-71",
+      "tool": "local_color",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Abrand&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Athens%2C+GA&signal.location.radius=25000&take=20",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 20,
+      "top": [
+        {
+          "name": "La Colombe",
+          "affinity": 0.94
+        },
+        {
+          "name": "Hardywood Park Craft Brewery",
+          "affinity": 0.916
+        },
+        {
+          "name": "Trader Joe's",
+          "affinity": 0.897
+        }
+      ]
+    },
+    {
+      "id": "rmv3fe5xs-72",
+      "tool": "local_color",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Atv_show&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Athens%2C+GA&signal.location.radius=25000&take=20",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 20,
+      "top": [
+        {
+          "name": "Twin Peaks",
+          "affinity": 0.941
+        },
+        {
+          "name": "Hacks",
+          "affinity": 0.925
+        },
+        {
+          "name": "Search Party",
+          "affinity": 0.907
+        }
+      ]
+    },
+    {
+      "id": "rmv3fe5xs-73",
+      "tool": "local_color",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Abrand&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Richmond%2C+VA&signal.location.radius=25000&take=20",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 20,
+      "top": [
+        {
+          "name": "Patagonia",
+          "affinity": 0.9
+        },
+        {
+          "name": "Subaru",
+          "affinity": 0.882
+        },
+        {
+          "name": "Trader Joe's",
+          "affinity": 0.863
+        }
+      ]
+    },
+    {
+      "id": "rmv3fe5xs-74",
+      "tool": "local_color",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Atv_show&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Richmond%2C+VA&signal.location.radius=25000&take=20",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 20,
+      "top": [
+        {
+          "name": "Fleabag",
+          "affinity": 0.91
+        },
+        {
+          "name": "Reservation Dogs",
+          "affinity": 0.892
+        },
+        {
+          "name": "Somebody Somewhere",
+          "affinity": 0.873
+        }
+      ]
+    }
+  ]
+}

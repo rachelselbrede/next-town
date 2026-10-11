@@ -1,0 +1,148 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "resolve_act",
+  "canonical": "https://hackathon.api.qloo.com/search?query=Big%20Thief&take=5&types=urn%3Aentity%3Aartist",
+  "query": {
+    "path": "/search",
+    "params": {
+      "query": "Big Thief",
+      "types": "urn:entity:artist",
+      "take": 5
+    }
+  },
+  "response": {
+    "results": [
+      {
+        "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+        "name": "Big Thief",
+        "type": "urn:entity:artist",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "popularity": 0.93,
+        "properties": {
+          "description": "Brooklyn indie-folk band fronted by Adrianne Lenker, known for warm, loose, intimate records."
+        },
+        "tags": [
+          {
+            "name": "Indie Folk",
+            "tag_id": "urn:tag:genre:music:indie_folk",
+            "type": "urn:tag:genre:music"
+          },
+          {
+            "name": "Indie Rock",
+            "tag_id": "urn:tag:genre:music:indie_rock",
+            "type": "urn:tag:genre:music"
+          },
+          {
+            "name": "Folk Rock",
+            "tag_id": "urn:tag:genre:music:folk_rock",
+            "type": "urn:tag:genre:music"
+          }
+        ]
+      },
+      {
+        "entity_id": "06B01FD9-F3F5-4901-AF51-0AC492BFC965",
+        "name": "Big Star",
+        "type": "urn:entity:artist",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "popularity": 0.74,
+        "properties": {
+          "description": "Memphis power-pop band from the early 1970s whose records shaped decades of indie rock."
+        },
+        "tags": [
+          {
+            "name": "Power Pop",
+            "tag_id": "urn:tag:genre:music:power_pop",
+            "type": "urn:tag:genre:music"
+          },
+          {
+            "name": "Rock",
+            "tag_id": "urn:tag:genre:music:rock",
+            "type": "urn:tag:genre:music"
+          }
+        ]
+      },
+      {
+        "entity_id": "20FE86B5-72B0-4E56-9B58-D96A410FF4C4",
+        "name": "Big Red Machine",
+        "type": "urn:entity:artist",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "popularity": 0.62,
+        "properties": {
+          "description": "Collaborative project of Justin Vernon and Aaron Dessner with a rotating cast of guests."
+        },
+        "tags": [
+          {
+            "name": "Indie Folk",
+            "tag_id": "urn:tag:genre:music:indie_folk",
+            "type": "urn:tag:genre:music"
+          },
+          {
+            "name": "Indie Rock",
+            "tag_id": "urn:tag:genre:music:indie_rock",
+            "type": "urn:tag:genre:music"
+          },
+          {
+            "name": "Experimental",
+            "tag_id": "urn:tag:genre:music:experimental",
+            "type": "urn:tag:genre:music"
+          }
+        ]
+      },
+      {
+        "entity_id": "ACD74CE4-B1D8-4915-8BA5-386DDFB0A292",
+        "name": "The Big Pink",
+        "type": "urn:entity:artist",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "popularity": 0.44,
+        "properties": {
+          "description": "London electronic rock duo best known for the 2009 single Dominos."
+        },
+        "tags": [
+          {
+            "name": "Indie Rock",
+            "tag_id": "urn:tag:genre:music:indie_rock",
+            "type": "urn:tag:genre:music"
+          },
+          {
+            "name": "Electronic",
+            "tag_id": "urn:tag:genre:music:electronic",
+            "type": "urn:tag:genre:music"
+          }
+        ]
+      },
+      {
+        "entity_id": "3080A8CD-861E-45C3-8445-8312AE2D8FFB",
+        "name": "Big Scary",
+        "type": "urn:entity:artist",
+        "types": [
+          "urn:entity:artist"
+        ],
+        "popularity": 0.38,
+        "properties": {
+          "description": "Melbourne indie duo blending piano-led pop with electronic textures."
+        },
+        "tags": [
+          {
+            "name": "Indie Pop",
+            "tag_id": "urn:tag:genre:music:indie_pop",
+            "type": "urn:tag:genre:music"
+          },
+          {
+            "name": "Indie Rock",
+            "tag_id": "urn:tag:genre:music:indie_rock",
+            "type": "urn:tag:genre:music"
+          }
+        ]
+      }
+    ]
+  }
+}
