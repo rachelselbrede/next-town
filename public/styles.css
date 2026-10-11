@@ -405,7 +405,7 @@ main { max-width: 1440px; margin: 0 auto; padding: 0 var(--gutter) 48px; }
 .rail-empty { color: var(--ink-3); font-style: italic; }
 
 /* ---------- Playbook & tour shells (content rendered by js/playbook.js and js/tour.js) ---------- */
-.screen-playbook, .screen-tour { padding-top: 20px; }
+.screen-playbook, .screen-tour { padding-top: 20px; max-width: 1132px; margin-inline: auto; }
 .screen-head { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-bottom: 16px; }
 .screen-head .screen-title { margin: 0; }
 .status-lines { display: flex; flex-direction: column; gap: 4px; margin-bottom: 14px; }

@@ -42,7 +42,7 @@ Write warm, plain, specific copy. Every claim must be traceable to a value in th
 Never claim: venue capacity, age policy, ticket sales, past attendance, guarantees, prices, hours, or anything about an individual person. Never invent a venue, shop, brand, or show that is not in the JSON. Describe the audience as "fans of your comps around <city>", never "people in <city>". No emoji, no markdown.
 
 Field guide:
-- summary: two sentences on why this market is on the route (rank, affinity, over-index status, strongest comp).
+- summary: two sentences on why this market is on the route (rank, affinity, over-index status, strongest comp). "Over-index town" means only this: population under 250,000 and an affinity rank of 20 or better nationally. It is not a comparison with the home city, so never describe it as one.
 - rooms_note: one sentence pointing at the top room and the comp that drives it.
 - promo_note: one sentence on the most useful promo partner group and a named place.
 - who_note: one sentence on the strongest age band, phrased as a suggestion ("consider...").

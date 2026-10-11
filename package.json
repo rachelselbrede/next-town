@@ -8,7 +8,7 @@
     "dev": "node scripts/dev-node.mjs",
     "dev:worker": "wrangler dev",
     "deploy": "wrangler deploy",
-    "test": "node --test tests/*.test.ts",
+    "test": "node --test --test-timeout=30000 tests/*.test.ts",
     "typecheck": "tsc --noEmit",
     "fixtures": "node scripts/scaffold-fixtures.mjs hollow-pines && node scripts/bundle-fixtures.mjs",
     "record": "node scripts/record.mjs",
