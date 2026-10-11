@@ -66,6 +66,8 @@
   .pb-bar-neg { background: var(--nt-coral); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   .pb-caution, .receipt-note { color: var(--nt-coral); }
   .pb-query { display: none !important; }
+  .foot { display: none; }
+  .pb-card-body { overflow: visible; }   /* local-color tables are never clipped on paper */
 
   /* ---- a single city playbook: one page, two columns of cards ---- */
   .pb-card { border: 1px solid #000; border-radius: 6pt; padding: 8pt 10pt; break-inside: avoid; page-break-inside: avoid; }
@@ -76,8 +78,8 @@
   /* ---- tour: itinerary + pitch on page one ---- */
   .tour-card { border: 0; padding: 0; margin: 0 0 12pt; }
   /* Seven columns must fit a letter page: fixed layout, explicit widths, wrap anywhere. */
-  .tour-table { min-width: 0; width: 100%; table-layout: fixed; font-size: 9.5pt; }
-  .tour-table th, .tour-table td { padding: 3pt 2pt; border-bottom: 1px solid #999; white-space: normal; overflow-wrap: normal; word-break: normal; }
+  .tour-table { min-width: 0; width: 100%; table-layout: fixed; font-size: 8.5pt; }
+  .tour-table th, .tour-table td { padding: 2pt; line-height: 1.25; border-bottom: 1px solid #999; white-space: normal; overflow-wrap: normal; word-break: normal; }
   .tour-table th { font-size: 8pt; letter-spacing: 0.02em; }
   .tour-table th:nth-child(1), .tour-table td:nth-child(1) { width: 7%; }
   .tour-table th:nth-child(2), .tour-table td:nth-child(2) { width: 18%; }
@@ -115,12 +117,18 @@
   .advance-sheet:last-child { break-after: auto; page-break-after: auto; }
   .sheet-day { font-size: 11pt; letter-spacing: 0.12em; }
   .sheet-title { font-size: 30pt; margin: 0 0 4pt; }
-  .sheet-summary { font-size: 12.5pt; max-width: none; }
-  .sheet-grid { grid-template-columns: 1fr 1fr; gap: 10pt 18pt; margin-top: 10pt; flex: 1; }
+  .sheet-summary { font-size: 11.5pt; max-width: none; }
+  .sheet-grid { grid-template-columns: 1fr 1fr; gap: 6pt 18pt; margin-top: 8pt; flex: 1; }
   .sheet-block { break-inside: avoid; page-break-inside: avoid; }
-  .sheet-block h3 { font-size: 14pt; margin: 6pt 0 4pt; border-bottom: 1.5px solid #000; padding-bottom: 2pt; }
-  .sheet-block li { font-size: 12pt; margin: 3pt 0; }
-  .sheet-block p { font-size: 12pt; }
-  .sheet-sub, .sheet-fine, .pb-fine { font-size: 9.5pt; color: #444; }
-  .sheet-foot { margin-top: auto; padding-top: 6pt; border-top: 1px solid #000; font-size: 9pt; }
+  .sheet-block h4 { font-size: 13pt; margin: 6pt 0 3pt; border-bottom: 1.5px solid #000; padding-bottom: 2pt; }
+  .sheet-block li { font-size: 11pt; margin: 2pt 0; }
+  .sheet-block p { font-size: 11pt; }
+  .sheet-sub, .sheet-fine, .pb-fine { font-size: 9pt; color: #444; }
+  .sheet-foot { margin-top: auto; padding-top: 6pt; border-top: 1px solid #000; font-size: 8.5pt; display: flex; flex-wrap: wrap; gap: 2pt 12pt; }
+  .sheet-mode { flex-basis: 100%; }
+  /* A recorded demo says so on paper (app.js sets body.is-recorded / body.is-placeholder from the mode pill). */
+  body.is-recorded.is-placeholder .sheet-mode::before { content: "Recorded demo: Qloo answers are placeholder fixtures. "; font-weight: 700; }
+  body.is-recorded.is-placeholder .sheet-mode:empty { display: block; }
+  body.is-recorded:not(.is-placeholder) .sheet-mode::before { content: "Recorded demo. "; font-weight: 700; }
+  body.is-recorded:not(.is-placeholder) .sheet-mode:empty { display: block; }
 }

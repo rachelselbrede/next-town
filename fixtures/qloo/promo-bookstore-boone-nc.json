@@ -1,0 +1,125 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_promo_partners",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?feature.explainability=true&filter.location.query=Boone%2C%20NC&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abookstore&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Boone, NC",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:genre:place:bookstore",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "sort_by": "affinity",
+      "take": 2,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "794AE732-7A1D-4305-8B0F-7A3282F18BAA",
+          "name": "Foggy Pine Books",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.57,
+          "location": {
+            "lat": 36.217,
+            "lon": -81.675
+          },
+          "properties": {
+            "description": "Independent bookshop downtown next to Boone Saloon; events board inside the door.",
+            "address": "471 W King St, Boone, NC 28607",
+            "geocode": {
+              "name": "Boone",
+              "city": "Boone",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.39,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:bookstore",
+              "name": "Bookstore",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.78,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.67
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.58
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.5
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "D3AB4386-46A4-43E0-9A8F-C3A4C370F018",
+          "name": "Black Bear Books",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.8,
+          "location": {
+            "lat": 36.217,
+            "lon": -81.675
+          },
+          "properties": {
+            "description": "Used bookstore with a loyal local trade.",
+            "address": "1081 Blowing Rock Rd, Boone, NC 28607",
+            "geocode": {
+              "name": "Boone",
+              "city": "Boone",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.3,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:bookstore",
+              "name": "Bookstore",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.75,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.64
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.57
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.46
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

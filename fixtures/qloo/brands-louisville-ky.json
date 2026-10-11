@@ -20,14 +20,14 @@
         {
           "entity_id": "81FF9E58-99F1-4C63-9F2F-7D85FA8D6964",
           "name": "Patagonia",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.85,
           "properties": {},
           "tags": [
             {
+              "id": "urn:tag:category:brand:outdoor_apparel",
               "name": "Outdoor Apparel",
-              "tag_id": "urn:tag:category:brand:outdoor_apparel",
               "type": "urn:tag:category:brand"
             }
           ],
@@ -38,14 +38,14 @@
         {
           "entity_id": "AC8120D3-F632-4821-92A3-70E5C4A3343C",
           "name": "Subaru",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.828,
           "properties": {},
           "tags": [
             {
+              "id": "urn:tag:category:brand:automotive",
               "name": "Automotive",
-              "tag_id": "urn:tag:category:brand:automotive",
               "type": "urn:tag:category:brand"
             }
           ],
@@ -56,14 +56,14 @@
         {
           "entity_id": "753F76AB-F8F3-4DB9-9076-5541D45875DF",
           "name": "Trader Joe's",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.806,
           "properties": {},
           "tags": [
             {
+              "id": "urn:tag:category:brand:grocery",
               "name": "Grocery",
-              "tag_id": "urn:tag:category:brand:grocery",
               "type": "urn:tag:category:brand"
             }
           ],
@@ -74,14 +74,14 @@
         {
           "entity_id": "7C8DF92F-D4B9-45DE-9144-A0E36C0C6897",
           "name": "REI",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.784,
           "properties": {},
           "tags": [
             {
+              "id": "urn:tag:category:brand:outdoor_retail",
               "name": "Outdoor Retail",
-              "tag_id": "urn:tag:category:brand:outdoor_retail",
               "type": "urn:tag:category:brand"
             }
           ],
@@ -92,14 +92,14 @@
         {
           "entity_id": "B33E9033-D54B-4B07-A439-14C0322C161D",
           "name": "Levi's",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.762,
           "properties": {},
           "tags": [
             {
+              "id": "urn:tag:category:brand:apparel",
               "name": "Apparel",
-              "tag_id": "urn:tag:category:brand:apparel",
               "type": "urn:tag:category:brand"
             }
           ],
@@ -110,7 +110,7 @@
         {
           "entity_id": "FBCA9C0E-029F-4C28-87FC-D275BB50E820",
           "name": "Against the Grain Brewery",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.74,
           "properties": {
@@ -118,8 +118,8 @@
           },
           "tags": [
             {
+              "id": "urn:tag:category:brand:craft_brewery",
               "name": "Craft Brewery",
-              "tag_id": "urn:tag:category:brand:craft_brewery",
               "type": "urn:tag:category:brand"
             }
           ],
@@ -130,14 +130,14 @@
         {
           "entity_id": "79105CB8-2649-4620-A2F8-0B53D5B8A831",
           "name": "Fjallraven",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.718,
           "properties": {},
           "tags": [
             {
+              "id": "urn:tag:category:brand:outdoor_apparel",
               "name": "Outdoor Apparel",
-              "tag_id": "urn:tag:category:brand:outdoor_apparel",
               "type": "urn:tag:category:brand"
             }
           ],
@@ -148,7 +148,7 @@
         {
           "entity_id": "E17FBBA8-94DF-4FE3-853D-0700539EF9C2",
           "name": "Heine Brothers' Coffee",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.696,
           "properties": {
@@ -156,8 +156,8 @@
           },
           "tags": [
             {
+              "id": "urn:tag:category:brand:coffee",
               "name": "Coffee",
-              "tag_id": "urn:tag:category:brand:coffee",
               "type": "urn:tag:category:brand"
             }
           ],
@@ -168,14 +168,14 @@
         {
           "entity_id": "47D5D80A-D8DA-4F3A-A4DF-A99635B1BCB7",
           "name": "Warby Parker",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.674,
           "properties": {},
           "tags": [
             {
+              "id": "urn:tag:category:brand:eyewear",
               "name": "Eyewear",
-              "tag_id": "urn:tag:category:brand:eyewear",
               "type": "urn:tag:category:brand"
             }
           ],
@@ -186,14 +186,14 @@
         {
           "entity_id": "D44CBBD6-C6E8-455A-94B4-88B6A05B0591",
           "name": "Blundstone",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.652,
           "properties": {},
           "tags": [
             {
+              "id": "urn:tag:category:brand:footwear",
               "name": "Footwear",
-              "tag_id": "urn:tag:category:brand:footwear",
               "type": "urn:tag:category:brand"
             }
           ],
@@ -204,14 +204,14 @@
         {
           "entity_id": "1E64D934-320B-4FB7-921B-58DB10BE96EA",
           "name": "Birkenstock",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.63,
           "properties": {},
           "tags": [
             {
+              "id": "urn:tag:category:brand:footwear",
               "name": "Footwear",
-              "tag_id": "urn:tag:category:brand:footwear",
               "type": "urn:tag:category:brand"
             }
           ],
@@ -222,14 +222,14 @@
         {
           "entity_id": "52039753-DD87-4F1B-8D75-3F55850FAD13",
           "name": "La Colombe",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.608,
           "properties": {},
           "tags": [
             {
+              "id": "urn:tag:category:brand:coffee",
               "name": "Coffee",
-              "tag_id": "urn:tag:category:brand:coffee",
               "type": "urn:tag:category:brand"
             }
           ],
@@ -240,7 +240,7 @@
         {
           "entity_id": "36B034D6-2F3B-4EE3-9FDB-4621F1784B2F",
           "name": "Monnik Beer Co.",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.586,
           "properties": {
@@ -248,8 +248,8 @@
           },
           "tags": [
             {
+              "id": "urn:tag:category:brand:craft_brewery",
               "name": "Craft Brewery",
-              "tag_id": "urn:tag:category:brand:craft_brewery",
               "type": "urn:tag:category:brand"
             }
           ],
@@ -260,7 +260,7 @@
         {
           "entity_id": "3E729925-49C0-412B-9022-4AB6F189D480",
           "name": "Quills Coffee",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.564,
           "properties": {
@@ -268,8 +268,8 @@
           },
           "tags": [
             {
+              "id": "urn:tag:category:brand:coffee",
               "name": "Coffee",
-              "tag_id": "urn:tag:category:brand:coffee",
               "type": "urn:tag:category:brand"
             }
           ],
@@ -280,7 +280,7 @@
         {
           "entity_id": "6D1175D1-7DF5-4C87-AFEB-820D0E20389A",
           "name": "Rainbow Blossom",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.542,
           "properties": {
@@ -288,8 +288,8 @@
           },
           "tags": [
             {
+              "id": "urn:tag:category:brand:natural_grocery",
               "name": "Natural Grocery",
-              "tag_id": "urn:tag:category:brand:natural_grocery",
               "type": "urn:tag:category:brand"
             }
           ],
@@ -300,14 +300,14 @@
         {
           "entity_id": "CC32F29D-F291-40D1-A315-06E800B57645",
           "name": "Hydro Flask",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.52,
           "properties": {},
           "tags": [
             {
+              "id": "urn:tag:category:brand:outdoor_gear",
               "name": "Outdoor Gear",
-              "tag_id": "urn:tag:category:brand:outdoor_gear",
               "type": "urn:tag:category:brand"
             }
           ],
@@ -318,14 +318,14 @@
         {
           "entity_id": "CA29596C-A583-4C49-8B03-1FCE2A53EA05",
           "name": "Carhartt",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.498,
           "properties": {},
           "tags": [
             {
+              "id": "urn:tag:category:brand:workwear",
               "name": "Workwear",
-              "tag_id": "urn:tag:category:brand:workwear",
               "type": "urn:tag:category:brand"
             }
           ],
@@ -336,14 +336,14 @@
         {
           "entity_id": "F4D0AB50-60CD-4B17-BF5B-3224D267EB2B",
           "name": "Allbirds",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.476,
           "properties": {},
           "tags": [
             {
+              "id": "urn:tag:category:brand:footwear",
               "name": "Footwear",
-              "tag_id": "urn:tag:category:brand:footwear",
               "type": "urn:tag:category:brand"
             }
           ],
@@ -354,14 +354,14 @@
         {
           "entity_id": "F0FD8AD9-68B0-49D9-84CE-66B9F835ADCF",
           "name": "Toyota",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.454,
           "properties": {},
           "tags": [
             {
+              "id": "urn:tag:category:brand:automotive",
               "name": "Automotive",
-              "tag_id": "urn:tag:category:brand:automotive",
               "type": "urn:tag:category:brand"
             }
           ],
@@ -372,14 +372,14 @@
         {
           "entity_id": "8A06380C-A034-49D6-AD66-37D7BC5D1AA6",
           "name": "Kroger",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.432,
           "properties": {},
           "tags": [
             {
+              "id": "urn:tag:category:brand:grocery",
               "name": "Grocery",
-              "tag_id": "urn:tag:category:brand:grocery",
               "type": "urn:tag:category:brand"
             }
           ],

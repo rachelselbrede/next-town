@@ -1,0 +1,135 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_promo_partners",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?feature.explainability=true&filter.location.query=Brooklyn%2C%20NY&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Athrift_store%2Curn%3Atag%3Agenre%3Aplace%3Avintage_store&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Brooklyn, NY",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:genre:place:thrift_store,urn:tag:genre:place:vintage_store",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "sort_by": "affinity",
+      "take": 2,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "DD2A2988-B390-56EE-B09A-9DBBBB902058",
+          "name": "Beacon's Closet",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.68,
+          "location": {
+            "lat": 40.7208,
+            "lon": -73.9578
+          },
+          "properties": {
+            "address": "88 N 11th St, Brooklyn, NY 11249",
+            "geocode": {
+              "name": "Brooklyn",
+              "city": "Brooklyn",
+              "admin1_region": "NY",
+              "country_code": "US"
+            },
+            "business_rating": 4.3,
+            "price_level": 2,
+            "description": "Large resale shop for secondhand clothes in Williamsburg."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:vintage_store",
+              "name": "Vintage Store",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:genre:place:thrift_store",
+              "name": "Thrift Store",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.85,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.83
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.75
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.69
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "9CB26523-B0A6-5035-8E4D-9F034E72A4D7",
+          "name": "Buffalo Exchange",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.57,
+          "location": {
+            "lat": 40.717,
+            "lon": -73.957
+          },
+          "properties": {
+            "address": "504 Driggs Ave, Brooklyn, NY 11211",
+            "geocode": {
+              "name": "Brooklyn",
+              "city": "Brooklyn",
+              "admin1_region": "NY",
+              "country_code": "US"
+            },
+            "business_rating": 4.3,
+            "price_level": 2,
+            "description": "Buy, sell, trade clothing store with a vintage rack."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:vintage_store",
+              "name": "Vintage Store",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:genre:place:thrift_store",
+              "name": "Thrift Store",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.78,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.7
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.78
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.66
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -15,7 +15,13 @@
     // When QLOO_API_KEY is set the server uses live mode automatically unless QLOO_MODE=demo.
     "QLOO_MODE": "auto"
   },
-  "observability": { "enabled": true }
+  "observability": { "enabled": true },
+  // Spend guard for the three branches that call Claude (a live /api/plan run, /api/city when it builds
+  // a playbook with Claude, /api/pitch when it calls Claude): 6 requests per 60 s per client IP.
+  // Recorded replays are never limited. Without this binding (Node dev server, tests) src/index.ts
+  // falls back to an in-memory window per isolate. namespace_id is any positive integer unique to
+  // this Worker; "period" must be 10 or 60.
+  "ratelimits": [{ "name": "LIVE_LIMITER", "namespace_id": "1001", "simple": { "limit": 6, "period": 60 } }]
   // Secrets (set with `npx wrangler secret put NAME`):
   //   ANTHROPIC_API_KEY  - from console.anthropic.com
   //   QLOO_API_KEY       - from the hackathon email

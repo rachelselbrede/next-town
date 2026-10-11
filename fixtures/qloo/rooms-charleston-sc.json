@@ -1,0 +1,468 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_rooms",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?feature.explainability=true&filter.location.query=Charleston%2C%20SC&filter.location.radius=15000&filter.tags=urn%3Atag%3Acategory%3Aplace%3Alive_music_venue%2Curn%3Atag%3Agenre%3Aplace%3Abar%3Alive_music%2Curn%3Atag%3Agenre%3Aplace%3Aconcert_hall%2Curn%3Atag%3Agenre%3Aplace%3Amusic_venue&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=8",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Charleston, SC",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:category:place:live_music_venue,urn:tag:genre:place:bar:live_music,urn:tag:genre:place:concert_hall,urn:tag:genre:place:music_venue",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "sort_by": "affinity",
+      "take": 8,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "32833106-536E-45DF-80B2-D002CC92D33D",
+          "name": "Charleston Music Hall",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.82,
+          "location": {
+            "lat": 32.7866,
+            "lon": -79.9393
+          },
+          "properties": {
+            "description": "Restored 1850s hall on John Street with a seated, quiet-room feel that suits singer-songwriters and folk bills.",
+            "address": "37 John St, Charleston, SC 29403",
+            "geocode": {
+              "name": "Charleston",
+              "city": "Charleston",
+              "admin1_region": "SC",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 2,
+            "website": "https://www.charlestonmusichall.com"
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.92,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.78
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.66
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.61
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "F08DB22F-D293-456A-B170-FAB23D90FBAC",
+          "name": "The Music Farm",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.84,
+          "location": {
+            "lat": 32.7898,
+            "lon": -79.9395
+          },
+          "properties": {
+            "description": "Standing-room club on Ann Street that has hosted touring indie and Americana acts for decades.",
+            "address": "32 Ann St, Charleston, SC 29403",
+            "geocode": {
+              "name": "Charleston",
+              "city": "Charleston",
+              "admin1_region": "SC",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 2,
+            "website": "https://www.musicfarm.com"
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.88,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.75
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.63
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.58
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "F3FAA8E8-79EA-4723-8AD5-CFBC1D74BD1C",
+          "name": "The Royal American",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.74,
+          "location": {
+            "lat": 32.7993,
+            "lon": -79.9488
+          },
+          "properties": {
+            "description": "Low-lit Upper King bar with a back-room stage, a regular stop for indie, folk and rock acts.",
+            "address": "970 Morrison Dr, Charleston, SC 29403",
+            "geocode": {
+              "name": "Charleston",
+              "city": "Charleston",
+              "admin1_region": "SC",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:bar:live_music",
+              "name": "Live Music Bar",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.84,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.71
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.59
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.54
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "3CE1268C-9C80-42E3-BFEC-3FEE8ED2305D",
+          "name": "Charleston Pour House",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.79,
+          "location": {
+            "lat": 32.7336,
+            "lon": -79.9873
+          },
+          "properties": {
+            "description": "Long-running James Island room with a deck stage, known for jam bands, roots and singer-songwriters.",
+            "address": "1977 Maybank Hwy, Charleston, SC 29412",
+            "geocode": {
+              "name": "Charleston",
+              "city": "Charleston",
+              "admin1_region": "SC",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 2,
+            "website": "https://www.charlestonpourhouse.com"
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            },
+            {
+              "id": "urn:tag:genre:place:bar:live_music",
+              "name": "Live Music Bar",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.8,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.68
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.56
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.51
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "A93F32A9-A172-4102-8E4E-DC90253D9E30",
+          "name": "Gaillard Center",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.8,
+          "location": {
+            "lat": 32.7843,
+            "lon": -79.9387
+          },
+          "properties": {
+            "description": "Downtown performance hall with a 1,800-seat auditorium and a smaller recital hall for quieter shows.",
+            "address": "95 Calhoun St, Charleston, SC 29401",
+            "geocode": {
+              "name": "Charleston",
+              "city": "Charleston",
+              "admin1_region": "SC",
+              "country_code": "US"
+            },
+            "business_rating": 4.8,
+            "price_level": 3,
+            "website": "https://www.gaillardcenter.org"
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:concert_hall",
+              "name": "Concert Hall",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.76,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.65
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.53
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.48
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "47AA2DBA-D9E2-4C8D-809F-001680289E32",
+          "name": "Tin Roof",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.66,
+          "location": {
+            "lat": 32.77,
+            "lon": -80.0184
+          },
+          "properties": {
+            "description": "West Ashley bar with a small stage and local and regional bands most nights of the week.",
+            "address": "1117 Magnolia Rd, Charleston, SC 29407",
+            "geocode": {
+              "name": "Charleston",
+              "city": "Charleston",
+              "admin1_region": "SC",
+              "country_code": "US"
+            },
+            "business_rating": 4.4,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:bar:live_music",
+              "name": "Live Music Bar",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.72,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.61
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.49
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.44
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "7F453A0E-F509-4B4F-95DE-6E91074206E2",
+          "name": "The Windjammer",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.68,
+          "location": {
+            "lat": 32.7857,
+            "lon": -79.7948
+          },
+          "properties": {
+            "description": "Oceanfront Isle of Palms bar with a stage and a long history of touring and regional bands.",
+            "address": "1008 Ocean Blvd, Isle of Palms, SC 29451",
+            "geocode": {
+              "name": "Isle of Palms",
+              "city": "Isle of Palms",
+              "admin1_region": "SC",
+              "country_code": "US"
+            },
+            "business_rating": 4.4,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:bar:live_music",
+              "name": "Live Music Bar",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.66,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.56
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.44
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.39
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "30F47F35-D038-4CFB-8ADD-40E92C34BF1C",
+          "name": "North Charleston Performing Arts Center",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.72,
+          "location": {
+            "lat": 32.8667,
+            "lon": -80.0128
+          },
+          "properties": {
+            "description": "Large arena-adjacent theater serving bigger tours that pass through the Lowcountry.",
+            "address": "5001 Coliseum Dr, North Charleston, SC 29418",
+            "geocode": {
+              "name": "North Charleston",
+              "city": "North Charleston",
+              "admin1_region": "SC",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 3
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:concert_hall",
+              "name": "Concert Hall",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.6,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.51
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.39
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.34
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

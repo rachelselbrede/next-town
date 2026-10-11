@@ -7,3 +7,11 @@
 dist/
 node_modules/
 site/
+
+# Qloo data rule ("Do not store Qloo response data in a public repository"): live captures and the
+# recording made against them live under private/ and never enter git. The two generated modules
+# are build artifacts (npm run prepare:data) rebuilt from private/ when present, else from the
+# public placeholder fixtures, so they are not committed either.
+private/
+src/demo/fixtures.generated.ts
+src/recorded.generated.ts

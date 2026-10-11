@@ -16,7 +16,6 @@
       {
         "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
         "name": "Big Thief",
-        "type": "urn:entity:artist",
         "types": [
           "urn:entity:artist"
         ],
@@ -26,18 +25,18 @@
         },
         "tags": [
           {
+            "id": "urn:tag:genre:music:indie_folk",
             "name": "Indie Folk",
-            "tag_id": "urn:tag:genre:music:indie_folk",
             "type": "urn:tag:genre:music"
           },
           {
+            "id": "urn:tag:genre:music:indie_rock",
             "name": "Indie Rock",
-            "tag_id": "urn:tag:genre:music:indie_rock",
             "type": "urn:tag:genre:music"
           },
           {
+            "id": "urn:tag:genre:music:folk_rock",
             "name": "Folk Rock",
-            "tag_id": "urn:tag:genre:music:folk_rock",
             "type": "urn:tag:genre:music"
           }
         ]
@@ -45,7 +44,6 @@
       {
         "entity_id": "06B01FD9-F3F5-4901-AF51-0AC492BFC965",
         "name": "Big Star",
-        "type": "urn:entity:artist",
         "types": [
           "urn:entity:artist"
         ],
@@ -55,13 +53,13 @@
         },
         "tags": [
           {
+            "id": "urn:tag:genre:music:power_pop",
             "name": "Power Pop",
-            "tag_id": "urn:tag:genre:music:power_pop",
             "type": "urn:tag:genre:music"
           },
           {
+            "id": "urn:tag:genre:music:rock",
             "name": "Rock",
-            "tag_id": "urn:tag:genre:music:rock",
             "type": "urn:tag:genre:music"
           }
         ]
@@ -69,7 +67,6 @@
       {
         "entity_id": "20FE86B5-72B0-4E56-9B58-D96A410FF4C4",
         "name": "Big Red Machine",
-        "type": "urn:entity:artist",
         "types": [
           "urn:entity:artist"
         ],
@@ -79,18 +76,18 @@
         },
         "tags": [
           {
+            "id": "urn:tag:genre:music:indie_folk",
             "name": "Indie Folk",
-            "tag_id": "urn:tag:genre:music:indie_folk",
             "type": "urn:tag:genre:music"
           },
           {
+            "id": "urn:tag:genre:music:indie_rock",
             "name": "Indie Rock",
-            "tag_id": "urn:tag:genre:music:indie_rock",
             "type": "urn:tag:genre:music"
           },
           {
+            "id": "urn:tag:genre:music:experimental",
             "name": "Experimental",
-            "tag_id": "urn:tag:genre:music:experimental",
             "type": "urn:tag:genre:music"
           }
         ]
@@ -98,7 +95,6 @@
       {
         "entity_id": "ACD74CE4-B1D8-4915-8BA5-386DDFB0A292",
         "name": "The Big Pink",
-        "type": "urn:entity:artist",
         "types": [
           "urn:entity:artist"
         ],
@@ -108,13 +104,13 @@
         },
         "tags": [
           {
+            "id": "urn:tag:genre:music:indie_rock",
             "name": "Indie Rock",
-            "tag_id": "urn:tag:genre:music:indie_rock",
             "type": "urn:tag:genre:music"
           },
           {
+            "id": "urn:tag:genre:music:electronic",
             "name": "Electronic",
-            "tag_id": "urn:tag:genre:music:electronic",
             "type": "urn:tag:genre:music"
           }
         ]
@@ -122,7 +118,6 @@
       {
         "entity_id": "3080A8CD-861E-45C3-8445-8312AE2D8FFB",
         "name": "Big Scary",
-        "type": "urn:entity:artist",
         "types": [
           "urn:entity:artist"
         ],
@@ -132,13 +127,13 @@
         },
         "tags": [
           {
+            "id": "urn:tag:genre:music:indie_pop",
             "name": "Indie Pop",
-            "tag_id": "urn:tag:genre:music:indie_pop",
             "type": "urn:tag:genre:music"
           },
           {
+            "id": "urn:tag:genre:music:indie_rock",
             "name": "Indie Rock",
-            "tag_id": "urn:tag:genre:music:indie_rock",
             "type": "urn:tag:genre:music"
           }
         ]

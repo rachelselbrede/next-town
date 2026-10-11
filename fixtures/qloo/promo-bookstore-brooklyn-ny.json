@@ -1,0 +1,125 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_promo_partners",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?feature.explainability=true&filter.location.query=Brooklyn%2C%20NY&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abookstore&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Brooklyn, NY",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:genre:place:bookstore",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "sort_by": "affinity",
+      "take": 2,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "4822ADEA-25C9-551B-83E1-482B2BA158FC",
+          "name": "Greenlight Bookstore",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.64,
+          "location": {
+            "lat": 40.6862,
+            "lon": -73.9747
+          },
+          "properties": {
+            "address": "686 Fulton St, Brooklyn, NY 11217",
+            "geocode": {
+              "name": "Brooklyn",
+              "city": "Brooklyn",
+              "admin1_region": "NY",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 2,
+            "description": "Neighborhood bookstore in Fort Greene with a busy reading series."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:bookstore",
+              "name": "Bookstore",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.87,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.85
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.77
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.71
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "423D6AFC-9E07-5E37-8F1E-9B7C12FF554F",
+          "name": "Books Are Magic",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.58,
+          "location": {
+            "lat": 40.6841,
+            "lon": -73.9936
+          },
+          "properties": {
+            "address": "225 Smith St, Brooklyn, NY 11231",
+            "geocode": {
+              "name": "Brooklyn",
+              "city": "Brooklyn",
+              "admin1_region": "NY",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 2,
+            "description": "Independent shop on Smith Street with a back room for author events."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:bookstore",
+              "name": "Bookstore",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.8,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.72
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.8
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.68
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

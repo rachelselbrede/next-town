@@ -45,6 +45,14 @@ const SCENARIO = {
 // How many /api/city streams run at once when "Build my tour" fills in the missing playbooks.
 const CITY_CONCURRENCY = 2;
 
+// Shown verbatim wherever Qloo answers appear while the server's fixtures are hand-written
+// placeholders (the fixture note contains "placeholder"). Judges must never mistake them for live data.
+const PLACEHOLDER_DISCLOSURE =
+  "Until our Qloo API key arrives, the Qloo answers in this demo are hand-written placeholders in Qloo's documented response shape. Place names are real; every score, rating and affinity is invented.";
+
+// What the landing form says when the server has no Qloo key: custom routing is switched off.
+const DEMO_QLOO_FORM_NOTE = "Until our Qloo key arrives, routing your own act is switched off; the Hollow Pines sample shows the whole flow.";
+
 // ---------------------------------------------------------------------------
 // State
 // ---------------------------------------------------------------------------
@@ -68,7 +76,7 @@ function emptyState() {
 }
 
 let state = emptyState();
-let health = { ok: false, qloo: "demo", claude: false, recorded: false, model: "" };
+let health = { ok: false, qloo: "demo", claude: false, recorded: false, model: "", fixtureNote: "", recordedCities: [] };
 
 // Long-lived UI objects.
 let map = null;
@@ -81,6 +89,7 @@ let planAbort = null; // AbortController for the current /api/plan stream
 let currentTurn = 0; // for grouping streamed narration under the right turn
 let runOrigin = "sample"; // "sample" | "live" | "form": decides where a 503 is reported
 const cityBuilds = new Map(); // city label -> Promise<Playbook>, so two clicks never start two streams
+let shownCity = null; // the city the playbook screen is showing; a late build for another city must not overwrite it
 
 const $ = (id) => document.getElementById(id);
 
@@ -96,9 +105,6 @@ async function boot() {
   wireOtherScreens();
 
   receipts = new Receipts($("receipts-drawer"), $("receipts-count"));
-
-  const saved = loadState();
-  if (saved?.route) $("resume-row").hidden = false;
 
   await fetchHealth();
   showScreen("landing");
@@ -125,11 +131,63 @@ async function fetchHealth() {
   } catch {
     /* offline or static preview: stay in the recorded defaults */
   }
-  $("btn-live").hidden = !health.claude;
-  $("form-note").textContent = health.claude
-    ? "Custom routing runs the agent live against Qloo and Claude. Expect a minute or so of streaming."
-    : "This server has no Anthropic key, so custom routing will be declined. The sample above works without one.";
+  const qlooDemo = health.qloo !== "live";
+  // "Run it live" re-runs the sample through the real agent; it needs Claude and, to be honest about
+  // what it shows, live Qloo. Without the Qloo key it stays hidden and custom routing is switched off.
+  $("btn-live").hidden = !health.claude || qlooDemo;
+  $("btn-route-form").disabled = qlooDemo;
+  $("form-note").textContent = qlooDemo
+    ? DEMO_QLOO_FORM_NOTE
+    : health.claude
+      ? "Custom routing runs the agent live against Qloo and Claude. Expect a minute or so of streaming."
+      : "This server has no Anthropic key, so custom routing will be declined. The sample above works without one.";
   updateModePill();
+  updateHonesty();
+}
+
+// ---------------------------------------------------------------------------
+// Honesty: say where the Qloo answers come from, everywhere they appear
+// ---------------------------------------------------------------------------
+
+// The fixture note for what the page is showing: the run's meta event wins, then /api/health.
+function currentFixtureNote() {
+  if (state.meta?.fixtureNote) return state.meta.fixtureNote;
+  if (health.recorded || health.qloo !== "live") return health.fixtureNote || "";
+  return "";
+}
+
+// "" when the answers are live; the disclosure sentence for placeholders; a dated line for captures.
+function disclosureFor(note) {
+  if (!note) return "";
+  if (/placeholder/i.test(note)) return PLACEHOLDER_DISCLOSURE;
+  const captured = /captured\s+(\d{4}-\d{2}-\d{2})/i.exec(note);
+  if (captured) return `Qloo data captured ${captured[1]}; the recorded sample replays those answers.`;
+  return "";
+}
+
+function capturedDate(note) {
+  return /captured\s+(\d{4}-\d{2}-\d{2})/i.exec(note || "")?.[1] || "";
+}
+
+// Landing banner, footer and Receipts subtitle follow the current fixture note.
+function updateHonesty() {
+  const note = currentFixtureNote();
+  const disclosure = disclosureFor(note);
+  const placeholder = /placeholder/i.test(note);
+  const banner = $("placeholder-banner");
+  banner.textContent = placeholder ? PLACEHOLDER_DISCLOSURE : "";
+  banner.hidden = !placeholder;
+  $("foot-text").textContent = disclosure
+    ? `Built for the Qloo Agentic Hackathon. ${disclosure}`
+    : "Built for the Qloo Agentic Hackathon. Taste data by Qloo, planning by Claude.";
+  receipts?.setNote(
+    placeholder
+      ? "Every Qloo request, in order. Until our key arrives these are placeholder answers in Qloo's documented shape."
+      : capturedDate(note)
+        ? `Every Qloo call, in order, replayed from Qloo data captured ${capturedDate(note)}. Key never shown.`
+        : "Every Qloo call, in order. Key never shown.",
+  );
+  document.body.classList.toggle("is-placeholder", placeholder);
 }
 
 // ---------------------------------------------------------------------------
@@ -173,19 +231,30 @@ function modeLabel() {
   const m = state.meta;
   if (m) {
     if (m.recorded) return m.fixtureNote || "Recorded demo";
-    return m.qlooMode === "live" ? "Live: Qloo + Claude" : "Live Claude · Qloo fixtures";
+    return m.qlooMode === "live" ? "Live: Qloo + Claude" : `Live Claude · ${fixtureWords(m.fixtureNote)}`;
   }
+  if (health.recorded) return health.fixtureNote || "Recorded demo";
   if (health.claude && health.qloo === "live") return "Live: Qloo + Claude";
-  if (health.claude) return "Live Claude · Qloo fixtures";
+  if (health.claude) return `Live Claude · ${fixtureWords(health.fixtureNote)}`;
   return "Recorded demo";
+}
+
+// Short words for the Qloo side of a live-Claude run that still answers from fixtures.
+function fixtureWords(note) {
+  if (/placeholder/i.test(note || "")) return "placeholder Qloo data";
+  const date = capturedDate(note);
+  return date ? `Qloo data captured ${date}` : "Qloo fixtures";
 }
 
 function updateModePill() {
   const pill = $("mode-pill");
   const label = modeLabel();
+  const live = label.startsWith("Live");
   pill.textContent = label;
-  pill.classList.toggle("is-live", label.startsWith("Live"));
-  pill.classList.toggle("is-recorded", !label.startsWith("Live"));
+  pill.classList.toggle("is-live", live);
+  pill.classList.toggle("is-recorded", !live);
+  // print.css keys a "Recorded demo" line in the sheet footers off the body.
+  document.body.classList.toggle("is-recorded", !live);
 }
 
 function showScreen(name) {
@@ -193,6 +262,7 @@ function showScreen(name) {
   const onLanding = name === "landing";
   $("crumbs").hidden = onLanding;
   $("btn-start-over").hidden = onLanding;
+  if (onLanding) $("resume-row").hidden = !(state.route || loadState()?.route);
   if (name === "route") $("nav-route").setAttribute("aria-current", "page");
   else $("nav-route").removeAttribute("aria-current");
   if (name === "tour") $("nav-tour").setAttribute("aria-current", "page");
@@ -213,10 +283,7 @@ function tourReady() {
 
 function wireLanding() {
   $("btn-sample").addEventListener("click", () => startSample(true));
-  $("btn-live").addEventListener("click", (e) => {
-    e.preventDefault();
-    startSample(false);
-  });
+  $("btn-live").addEventListener("click", () => startSample(false));
   $("resume-link").addEventListener("click", resumeLast);
   $("btn-form-try-sample").addEventListener("click", () => startSample(true));
   $("act-form").addEventListener("submit", submitForm);
@@ -233,6 +300,14 @@ function submitForm(e) {
   const errEl = $("form-error");
   errEl.hidden = true;
   $("btn-form-try-sample").hidden = true;
+
+  if (health.qloo !== "live") {
+    // The server would answer 503 anyway; say it here without a round trip.
+    errEl.textContent = DEMO_QLOO_FORM_NOTE;
+    errEl.hidden = false;
+    $("btn-form-try-sample").hidden = false;
+    return;
+  }
 
   const comps = ["comp-1", "comp-2", "comp-3"].map((id) => $(id).value.trim()).filter(Boolean);
   const home = $("home").value.trim();
@@ -291,8 +366,9 @@ async function runPlan(request, { fast = false } = {}) {
     if (err?.name === "AbortError") return;
     setRunning(false, "Something went wrong");
     trace?.error(err.message);
-    if (err.status === 503 && runOrigin === "form") {
-      // Custom inputs need Claude; send the judge back to the form with the sample as a kind fallback.
+    if ((err.status === 503 || err.status === 400 || err.status === 429) && runOrigin === "form") {
+      // A declined custom run (no key, a home we couldn't place, or the spend guard): back to the
+      // form with the server's own words and the sample as a kind fallback.
       showScreen("landing");
       $("form-error").textContent = err.message;
       $("form-error").hidden = false;
@@ -323,6 +399,7 @@ function resetRouteScreen() {
   $("route-subtitle").textContent = describeRequest(state.request);
   renderRail();
   updateModePill();
+  updateHonesty();
 }
 
 function describeRequest(r) {
@@ -343,7 +420,8 @@ const planHandlers = {
   meta(m) {
     state.meta = m;
     updateModePill();
-    trace.setMode(m.qlooMode, m.model);
+    updateHonesty();
+    trace.setMode(m.qlooMode, m.model, m.fixtureNote);
     if (m.recorded) {
       $("btn-skip").hidden = false;
       trace.status("Replaying a recorded run of the agent. Skip ahead to see the finished route at once.");
@@ -414,7 +492,8 @@ function appendNarration(delta) {
     el.dataset.turn = String(currentTurn);
     root.appendChild(el);
   }
-  el.textContent += delta;
+  // Appending a node (rather than resetting textContent) keeps the aria-live log announcing only the delta.
+  el.append(document.createTextNode(delta));
   trace.scroll();
 }
 
@@ -424,7 +503,11 @@ function showClosing(text) {
     el.hidden = true;
     return;
   }
-  el.innerHTML = `<span class="label">The agent's read</span>${esc(text)}`;
+  el.innerHTML = "";
+  const label = document.createElement("span");
+  label.className = "label";
+  label.textContent = "The agent's read";
+  el.append(label, document.createTextNode(text));
   el.hidden = false;
 }
 
@@ -450,6 +533,9 @@ function renderRail() {
     dropped: state.dropped,
     obvious: state.obvious,
     showObvious: state.showObvious,
+    // While the sample replays against demo Qloo, only towns with recorded answers can be added;
+    // any other town would open an empty playbook.
+    addable: replayingSample() && qlooIsDemo() && health.recordedCities?.length ? new Set(health.recordedCities) : null,
     onPin,
     onDrop,
     onAdd,
@@ -464,10 +550,21 @@ function onPin(label, pin, { restore = false } = {}) {
     // Restoring a dropped town just lets the planner consider it again.
   } else if (pin) {
     if (!state.pinned.includes(label)) state.pinned.push(label);
+    // Pinning a stop that is already on the loop changes nothing about the loop: record it and
+    // re-render, no re-plan (routing.js also guarantees a pin never reorders the route).
+    if (state.route?.stops?.some((s) => s.label === label)) {
+      renderRail();
+      saveState();
+      return;
+    }
   } else {
     state.pinned = state.pinned.filter((l) => l !== label);
   }
   rerouteLocally();
+}
+
+function qlooIsDemo() {
+  return state.meta ? state.meta.qlooMode !== "live" : health.qloo !== "live";
 }
 
 function onDrop(label) {
@@ -520,6 +617,7 @@ function rerouteLocally() {
 
 // Open a city's playbook, building it first if this session has not seen it yet.
 async function openCity(label) {
+  shownCity = label;
   showScreen("playbook");
   $("playbook-title").textContent = `Playbook: ${label}`;
   $("playbook-pos").textContent = positionLabel(label);
@@ -532,12 +630,15 @@ async function openCity(label) {
   statusEl.innerHTML = "";
   statusEl.hidden = false;
   $("playbook-view").innerHTML = `<div class="card placeholder-card">Asking Qloo about ${esc(label)}…</div>`;
+  // The build may finish after the judge has clicked another stop; only the city still on screen renders.
+  const stillShown = () => shownCity === label;
   try {
-    await buildPlaybook(label, { onStatus: (msg) => appendStatusLine(statusEl, msg) });
+    await buildPlaybook(label, { onStatus: (msg) => stillShown() && appendStatusLine(statusEl, msg) });
+    if (!stillShown()) return;
     statusEl.hidden = true;
     renderPlaybookScreen(label);
   } catch (err) {
-    if (err?.name === "AbortError") return;
+    if (err?.name === "AbortError" || !stillShown()) return;
     statusEl.hidden = true;
     $("playbook-view").innerHTML = `<div class="card placeholder-card">Couldn't build this playbook: ${esc(err.message)}</div>`;
     toast(err.message, { error: true });
@@ -566,6 +667,7 @@ function renderPlaybookScreen(label) {
     hasNext,
     stop: i >= 0 ? stops[i] : null,
     prevLabel: i > 0 ? stops[i - 1].label : state.route?.home?.label,
+    fixtureNote: currentFixtureNote(),
   });
 }
 
@@ -669,8 +771,22 @@ async function buildTour() {
   showTour();
 }
 
+function slimPlaybook(p) {
+  return {
+    city: p.city,
+    rooms: (p.rooms || []).slice(0, 2).map((r) => ({ name: r.name })),
+    promo: (p.promo || []).map((g) => ({ kind: g.kind, places: (g.places || []).slice(0, 1).map((x) => ({ name: x.name })) })),
+    who: p.who ? { strongestAge: p.who.strongestAge } : null,
+  };
+}
+
 async function fetchPitch() {
-  const playbooks = (state.route?.stops || []).map((s) => state.playbooks[s.label]).filter(Boolean);
+  // The pitch only needs each stop's headline (top room, top promo spot, age read), so send that and
+  // keep the body far under the server's 64 KB cap even for a 21-stop tour.
+  const playbooks = (state.route?.stops || [])
+    .map((s) => state.playbooks[s.label])
+    .filter(Boolean)
+    .map(slimPlaybook);
   const res = await fetch("/api/pitch", {
     method: "POST",
     headers: { "content-type": "application/json" },
@@ -707,6 +823,7 @@ function showTour() {
     obvious: state.obvious,
     onOpenCity: (label) => openCity(label),
     onPrint: () => window.print(),
+    fixtureNote: currentFixtureNote(),
   });
 }
 
@@ -776,6 +893,7 @@ function resumeLast() {
   // trace.js counts Qloo calls from tool results, which a restore does not replay.
   document.querySelectorAll("[data-qloo-count]").forEach((n) => (n.textContent = String(state.receipts.length)));
   showClosing(state.closing);
+  if (state.meta) trace.setMode(state.meta.qlooMode, state.meta.model, state.meta.fixtureNote);
   $("route-title").textContent = "Your route";
   $("btn-build-tour").disabled = false;
   renderRail();
@@ -795,8 +913,9 @@ function startOver() {
   state = emptyState();
   receipts.clear();
   setDrawer(false);
-  $("resume-row").hidden = true;
   $("nav-tour").disabled = true;
+  updateModePill();
+  updateHonesty();
   showScreen("landing");
 }
 
@@ -844,7 +963,14 @@ async function postStream(url, body, handlers, { signal } = {}) {
         } catch {
           continue;
         }
-        handlers[type]?.(payload); // a handler may throw (e.g. a server `error` event) to end the stream
+        try {
+          handlers[type]?.(payload);
+        } catch (err) {
+          // The `error` handler may throw on purpose to end the stream; any other render bug is logged
+          // and skipped so one bad event cannot kill the whole run.
+          if (type === "error") throw err;
+          console.error(`Could not render the "${type}" event`, err, payload);
+        }
       }
     }
   } finally {

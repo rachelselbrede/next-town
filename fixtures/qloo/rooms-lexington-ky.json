@@ -1,0 +1,452 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_rooms",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?feature.explainability=true&filter.location.query=Lexington%2C%20KY&filter.location.radius=15000&filter.tags=urn%3Atag%3Acategory%3Aplace%3Alive_music_venue%2Curn%3Atag%3Agenre%3Aplace%3Abar%3Alive_music%2Curn%3Atag%3Agenre%3Aplace%3Aconcert_hall%2Curn%3Atag%3Agenre%3Aplace%3Amusic_venue&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=8",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Lexington, KY",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:category:place:live_music_venue,urn:tag:genre:place:bar:live_music,urn:tag:genre:place:concert_hall,urn:tag:genre:place:music_venue",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "sort_by": "affinity",
+      "take": 8,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "B1074A39-136B-4795-ADCA-E7BC31E8EE21",
+          "name": "The Burl",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.74,
+          "location": {
+            "lat": 38.0511,
+            "lon": -84.5057
+          },
+          "properties": {
+            "description": "Converted rail-yard warehouse with a big stage and patio where touring indie and Americana acts anchor the Lexington calendar.",
+            "address": "375 Thomas St, Lexington, KY 40508",
+            "geocode": {
+              "name": "Lexington",
+              "city": "Lexington",
+              "admin1_region": "KY",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 2,
+            "website": "https://www.theburlky.com"
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.92,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.77
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.65
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.6
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "4A389EA0-2451-416B-B253-3C2585005FC8",
+          "name": "Manchester Music Hall",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.72,
+          "location": {
+            "lat": 38.0431,
+            "lon": -84.5207
+          },
+          "properties": {
+            "description": "Mid-size standing-room hall in the Distillery District, the step-up room for touring indie bands.",
+            "address": "899 Manchester St, Lexington, KY 40508",
+            "geocode": {
+              "name": "Lexington",
+              "city": "Lexington",
+              "admin1_region": "KY",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 2,
+            "website": "https://www.manchestermusichall.com"
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.88,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.72
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.61
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.56
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "3A65DCDE-A5A4-4C98-9BBD-E9D1DE4B0D63",
+          "name": "Cosmic Charlie's",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.6,
+          "location": {
+            "lat": 38.0225,
+            "lon": -84.5055
+          },
+          "properties": {
+            "description": "Intimate rock club on National Avenue with a loyal local crowd and a steady run of up-and-coming touring bands.",
+            "address": "723 National Ave, Lexington, KY 40502",
+            "geocode": {
+              "name": "Lexington",
+              "city": "Lexington",
+              "admin1_region": "KY",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:bar:live_music",
+              "name": "Bar with Live Music",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.84,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.67
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.57
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.52
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "902C543B-53A3-408C-A0AC-522F94501745",
+          "name": "Al's Bar",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.56,
+          "location": {
+            "lat": 38.0527,
+            "lon": -84.4948
+          },
+          "properties": {
+            "description": "Long-running Limestone Street bar and stage that has hosted local and national acts for nearly fifty years.",
+            "address": "601 N Limestone, Lexington, KY 40508",
+            "geocode": {
+              "name": "Lexington",
+              "city": "Lexington",
+              "admin1_region": "KY",
+              "country_code": "US"
+            },
+            "business_rating": 4.4,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:bar:live_music",
+              "name": "Bar with Live Music",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.8,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.63
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.52
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.48
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "78A24C26-4BDD-4153-A4C6-5F3601E40F26",
+          "name": "Lexington Opera House",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.7,
+          "location": {
+            "lat": 38.0467,
+            "lon": -84.5063
+          },
+          "properties": {
+            "description": "Restored 1887 theater downtown, a seated room for acts ready to play to a listening crowd.",
+            "address": "401 W Short St, Lexington, KY 40507",
+            "geocode": {
+              "name": "Lexington",
+              "city": "Lexington",
+              "admin1_region": "KY",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 3
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:concert_hall",
+              "name": "Concert Hall",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.76,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.58
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.48
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.44
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "222E3B65-74E9-44D1-99EC-CCFC50B4C1D2",
+          "name": "Kentucky Theatre",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.66,
+          "location": {
+            "lat": 38.0482,
+            "lon": -84.4945
+          },
+          "properties": {
+            "description": "Historic downtown movie palace that doubles as a concert room for singer-songwriters and folk acts.",
+            "address": "214 E Main St, Lexington, KY 40507",
+            "geocode": {
+              "name": "Lexington",
+              "city": "Lexington",
+              "admin1_region": "KY",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 2,
+            "website": "https://www.kentuckytheatre.com"
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:concert_hall",
+              "name": "Concert Hall",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.72,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.53
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.44
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.4
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "15B431B8-6B48-46BC-948D-0A7C0EFC2293",
+          "name": "Willie's Locally Known",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.42,
+          "location": {
+            "lat": 38.0603,
+            "lon": -84.4901
+          },
+          "properties": {
+            "description": "Neighborhood bar on North Broadway with a small stage and a steady diet of local and regional bands.",
+            "address": "805 N Broadway, Lexington, KY 40505",
+            "geocode": {
+              "name": "Lexington",
+              "city": "Lexington",
+              "admin1_region": "KY",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:bar:live_music",
+              "name": "Bar with Live Music",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.67,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.47
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.39
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.35
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "A3422B84-D1B4-47F7-8DCB-7480B2112D60",
+          "name": "Singletary Center for the Arts",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.58,
+          "location": {
+            "lat": 38.0314,
+            "lon": -84.5051
+          },
+          "properties": {
+            "description": "University of Kentucky concert hall with strong acoustics, used for seated touring shows.",
+            "address": "405 Rose St, Lexington, KY 40506",
+            "geocode": {
+              "name": "Lexington",
+              "city": "Lexington",
+              "admin1_region": "KY",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:concert_hall",
+              "name": "Concert Hall",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.6,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.4
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.32
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.29
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

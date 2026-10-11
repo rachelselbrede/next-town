@@ -24,9 +24,13 @@
         {
           "entity_id": "A5634B56-8A02-476E-AA5A-BA19202673AE",
           "name": "The Bijou Theatre",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:concert_hall",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "popularity": 0.86,
+          "location": {
+            "lat": 35.961,
+            "lon": -83.921
+          },
           "properties": {
             "description": "A restored 1909 theater downtown with warm acoustics that national indie-folk tours treat as a seated listening room.",
             "address": "803 S Gay St, Knoxville, TN 37902",
@@ -41,42 +45,46 @@
           },
           "tags": [
             {
+              "id": "urn:tag:genre:place:concert_hall",
               "name": "Concert Hall",
-              "tag_id": "urn:tag:genre:place:concert_hall",
               "type": "urn:tag:genre:place"
             },
             {
+              "id": "urn:tag:category:place:live_music_venue",
               "name": "Live Music Venue",
-              "tag_id": "urn:tag:category:place:live_music_venue",
               "type": "urn:tag:category:place"
             }
           ],
           "query": {
             "affinity": 0.93,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.78
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.66
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.6
                 }
-              }
+              ]
             }
           }
         },
         {
           "entity_id": "935BF66A-5144-4FB2-9FBD-669A51414D0C",
           "name": "Barley's Taproom & Pizzeria",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:bar",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "popularity": 0.7,
+          "location": {
+            "lat": 35.961,
+            "lon": -83.921
+          },
           "properties": {
             "description": "Old City taproom with a loud upstairs stage that books touring and regional acts most nights of the week.",
             "address": "200 E Jackson Ave, Knoxville, TN 37915",
@@ -91,42 +99,46 @@
           },
           "tags": [
             {
+              "id": "urn:tag:genre:place:bar:live_music",
               "name": "Live Music Bar",
-              "tag_id": "urn:tag:genre:place:bar:live_music",
               "type": "urn:tag:genre:place"
             },
             {
+              "id": "urn:tag:genre:place:bar",
               "name": "Bar",
-              "tag_id": "urn:tag:genre:place:bar",
               "type": "urn:tag:genre:place"
             }
           ],
           "query": {
             "affinity": 0.886,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.7
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.64
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.52
                 }
-              }
+              ]
             }
           }
         },
         {
           "entity_id": "FB337D51-AEEC-4297-A631-D72886F1042D",
           "name": "The Standard",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:music_venue",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "popularity": 0.58,
+          "location": {
+            "lat": 35.961,
+            "lon": -83.921
+          },
           "properties": {
             "description": "A brick-walled Jackson Avenue event room that doubles as a mid-size stage for touring bands and local showcases.",
             "address": "416 W Jackson Ave, Knoxville, TN 37902",
@@ -141,42 +153,46 @@
           },
           "tags": [
             {
+              "id": "urn:tag:genre:place:music_venue",
               "name": "Music Venue",
-              "tag_id": "urn:tag:genre:place:music_venue",
               "type": "urn:tag:genre:place"
             },
             {
+              "id": "urn:tag:category:place:live_music_venue",
               "name": "Live Music Venue",
-              "tag_id": "urn:tag:category:place:live_music_venue",
               "type": "urn:tag:category:place"
             }
           ],
           "query": {
             "affinity": 0.841,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.66
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.58
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.55
                 }
-              }
+              ]
             }
           }
         },
         {
           "entity_id": "5725278F-6F57-4FA8-8F96-8072FED6EE35",
           "name": "Pretentious Beer Company",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:bar",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "popularity": 0.55,
+          "location": {
+            "lat": 35.961,
+            "lon": -83.921
+          },
           "properties": {
             "description": "Old City brewery and glassblowing studio with a small corner stage and a crowd that actually listens.",
             "address": "131 S Central St, Knoxville, TN 37902",
@@ -191,42 +207,46 @@
           },
           "tags": [
             {
+              "id": "urn:tag:genre:place:bar:live_music",
               "name": "Live Music Bar",
-              "tag_id": "urn:tag:genre:place:bar:live_music",
               "type": "urn:tag:genre:place"
             },
             {
+              "id": "urn:tag:genre:place:bar",
               "name": "Bar",
-              "tag_id": "urn:tag:genre:place:bar",
               "type": "urn:tag:genre:place"
             }
           ],
           "query": {
             "affinity": 0.797,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.62
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.6
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.48
                 }
-              }
+              ]
             }
           }
         },
         {
           "entity_id": "77D0459D-FADD-4EA8-8243-EE8C5A229E50",
           "name": "Tennessee Theatre",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:concert_hall",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "popularity": 0.9,
+          "location": {
+            "lat": 35.961,
+            "lon": -83.921
+          },
           "properties": {
             "description": "The grand 1928 movie palace on Gay Street, the room acts graduate to once they have sold out the Bijou.",
             "address": "604 S Gay St, Knoxville, TN 37902",
@@ -241,42 +261,46 @@
           },
           "tags": [
             {
+              "id": "urn:tag:genre:place:concert_hall",
               "name": "Concert Hall",
-              "tag_id": "urn:tag:genre:place:concert_hall",
               "type": "urn:tag:genre:place"
             },
             {
+              "id": "urn:tag:category:place:live_music_venue",
               "name": "Live Music Venue",
-              "tag_id": "urn:tag:category:place:live_music_venue",
               "type": "urn:tag:category:place"
             }
           ],
           "query": {
             "affinity": 0.753,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.64
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.5
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.47
                 }
-              }
+              ]
             }
           }
         },
         {
           "entity_id": "C47AEC29-182D-40EB-8C3E-7BE1026AF006",
           "name": "Preservation Pub",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:bar",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "popularity": 0.62,
+          "location": {
+            "lat": 35.961,
+            "lon": -83.921
+          },
           "properties": {
             "description": "Market Square bar with live music on multiple floors nearly every night and a rooftop that fills after shows.",
             "address": "28 Market Square, Knoxville, TN 37902",
@@ -291,42 +315,46 @@
           },
           "tags": [
             {
+              "id": "urn:tag:genre:place:bar:live_music",
               "name": "Live Music Bar",
-              "tag_id": "urn:tag:genre:place:bar:live_music",
               "type": "urn:tag:genre:place"
             },
             {
+              "id": "urn:tag:genre:place:bar",
               "name": "Bar",
-              "tag_id": "urn:tag:genre:place:bar",
               "type": "urn:tag:genre:place"
             }
           ],
           "query": {
             "affinity": 0.709,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.58
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.54
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.44
                 }
-              }
+              ]
             }
           }
         },
         {
           "entity_id": "D76BA63A-A401-4E38-862A-DF91148956F4",
           "name": "The Open Chord",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:music_venue",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "popularity": 0.42,
+          "location": {
+            "lat": 35.961,
+            "lon": -83.921
+          },
           "properties": {
             "description": "An all-ages music store and listening room out on Kingston Pike that treats songwriters well.",
             "address": "8502 Kingston Pike, Knoxville, TN 37919",
@@ -341,42 +369,46 @@
           },
           "tags": [
             {
+              "id": "urn:tag:genre:place:music_venue",
               "name": "Music Venue",
-              "tag_id": "urn:tag:genre:place:music_venue",
               "type": "urn:tag:genre:place"
             },
             {
+              "id": "urn:tag:category:place:live_music_venue",
               "name": "Live Music Venue",
-              "tag_id": "urn:tag:category:place:live_music_venue",
               "type": "urn:tag:category:place"
             }
           ],
           "query": {
             "affinity": 0.664,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.55
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.5
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.46
                 }
-              }
+              ]
             }
           }
         },
         {
           "entity_id": "93C07E76-9FB6-4ED2-AB21-B8C6071FE3DD",
           "name": "Laurel Theater",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:concert_hall",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "popularity": 0.38,
+          "location": {
+            "lat": 35.961,
+            "lon": -83.921
+          },
           "properties": {
             "description": "A Fort Sanders church turned folk and acoustic listening room, run by Jubilee Community Arts since the 1970s.",
             "address": "1538 Laurel Ave, Knoxville, TN 37916",
@@ -391,33 +423,33 @@
           },
           "tags": [
             {
+              "id": "urn:tag:genre:place:concert_hall",
               "name": "Concert Hall",
-              "tag_id": "urn:tag:genre:place:concert_hall",
               "type": "urn:tag:genre:place"
             },
             {
+              "id": "urn:tag:genre:place:music_venue",
               "name": "Music Venue",
-              "tag_id": "urn:tag:genre:place:music_venue",
               "type": "urn:tag:genre:place"
             }
           ],
           "query": {
             "affinity": 0.62,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.5
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.46
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.52
                 }
-              }
+              ]
             }
           }
         }

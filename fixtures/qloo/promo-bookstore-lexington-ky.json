@@ -1,0 +1,125 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_promo_partners",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?feature.explainability=true&filter.location.query=Lexington%2C%20KY&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abookstore&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Lexington, KY",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:genre:place:bookstore",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "sort_by": "affinity",
+      "take": 2,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "3F4285D5-5C30-4BD2-B216-3B9ED9B75AED",
+          "name": "Wild Fig Books & Coffee",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.45,
+          "location": {
+            "lat": 38.0406,
+            "lon": -84.5037
+          },
+          "properties": {
+            "description": "Independent Lexington bookstore and cafe that hosts author readings and small shows.",
+            "address": "Lexington, KY",
+            "geocode": {
+              "name": "Lexington",
+              "city": "Lexington",
+              "admin1_region": "KY",
+              "country_code": "US"
+            },
+            "business_rating": 4.8,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:bookstore",
+              "name": "Bookstore",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.87,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.73
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.62
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.57
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "86657B62-D774-4679-B767-0D8A9007EEA3",
+          "name": "Joseph-Beth Booksellers",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.5,
+          "location": {
+            "lat": 37.9995,
+            "lon": -84.5287
+          },
+          "properties": {
+            "description": "Large Lexington Green bookstore with a cafe and an events calendar of readings and signings.",
+            "address": "161 Lexington Green Cir, Lexington, KY 40503",
+            "geocode": {
+              "name": "Lexington",
+              "city": "Lexington",
+              "admin1_region": "KY",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:bookstore",
+              "name": "Bookstore",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.7,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.57
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.48
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.44
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

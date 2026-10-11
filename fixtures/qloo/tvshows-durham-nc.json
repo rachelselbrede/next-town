@@ -1,0 +1,261 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "local_color",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Atv_show&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Durham%2C%20NC&signal.location.radius=25000&take=20",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:tv_show",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "signal.location.query": "Durham, NC",
+      "signal.location.radius": 25000,
+      "take": 20
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "5AF4B18C-7F2E-4D54-B946-C924DBBC0E98",
+          "name": "Fleabag",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.9,
+          "properties": {},
+          "query": {
+            "affinity": 0.92
+          }
+        },
+        {
+          "entity_id": "F504DFDE-7861-486D-9F48-C6422671C57A",
+          "name": "Reservation Dogs",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.86,
+          "properties": {},
+          "query": {
+            "affinity": 0.91
+          }
+        },
+        {
+          "entity_id": "656078D4-7298-439C-B517-153F264014E1",
+          "name": "Somebody Somewhere",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.88,
+          "properties": {},
+          "query": {
+            "affinity": 0.89
+          }
+        },
+        {
+          "entity_id": "E3C6F04F-7F24-4D5C-88C7-79ACD9F57EAC",
+          "name": "The Bear",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.84,
+          "properties": {},
+          "query": {
+            "affinity": 0.88
+          }
+        },
+        {
+          "entity_id": "4ED236B4-9453-4512-8981-B49E9BB467A5",
+          "name": "Atlanta",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.76,
+          "properties": {},
+          "query": {
+            "affinity": 0.86
+          }
+        },
+        {
+          "entity_id": "CBBD7C4F-EE93-4B17-8B5B-5251E5F73EB7",
+          "name": "Hacks",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.82,
+          "properties": {},
+          "query": {
+            "affinity": 0.85
+          }
+        },
+        {
+          "entity_id": "937DE301-AC97-46EB-BD17-559D518E8DD6",
+          "name": "Rectify",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.55,
+          "query": {
+            "affinity": 0.83
+          }
+        },
+        {
+          "entity_id": "A13215E0-C764-4D72-A2B1-801211C74A37",
+          "name": "Twin Peaks",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.8,
+          "properties": {},
+          "query": {
+            "affinity": 0.82
+          }
+        },
+        {
+          "entity_id": "D7BD04AA-3B47-4DA4-9E4F-40A542F5B7D1",
+          "name": "Abbott Elementary",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.72,
+          "properties": {},
+          "query": {
+            "affinity": 0.8
+          }
+        },
+        {
+          "entity_id": "377A96F7-A073-43FE-B56D-6E3331A4308F",
+          "name": "Gilmore Girls",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.74,
+          "properties": {},
+          "query": {
+            "affinity": 0.79
+          }
+        },
+        {
+          "entity_id": "BAF90461-5DF2-4491-9523-F0057E492CF9",
+          "name": "Succession",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.7,
+          "properties": {},
+          "query": {
+            "affinity": 0.77
+          }
+        },
+        {
+          "entity_id": "3BF1181E-506F-4909-905E-F87166E9EB80",
+          "name": "Better Things",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.714,
+          "properties": {
+            "description": "Pamela Adlon's wry comedy about a working actress raising three daughters."
+          },
+          "query": {
+            "affinity": 0.76
+          }
+        },
+        {
+          "entity_id": "1726F37E-D9CA-43CC-8B62-4E9AF1FD2C5B",
+          "name": "Severance",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.69,
+          "properties": {
+            "description": "Office workers whose memories are split between work and home."
+          },
+          "query": {
+            "affinity": 0.74
+          }
+        },
+        {
+          "entity_id": "72E9BC0B-598B-43EF-8465-E61AD1CFF1DB",
+          "name": "Parks and Recreation",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.58,
+          "properties": {},
+          "query": {
+            "affinity": 0.73
+          }
+        },
+        {
+          "entity_id": "69B3C272-1C4A-4E37-B557-EF952ABE47F2",
+          "name": "Poker Face",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.54,
+          "properties": {},
+          "tags": [
+            {
+              "id": "urn:tag:genre:media:comedy_drama",
+              "name": "Comedy-Drama",
+              "type": "urn:tag:genre:media"
+            }
+          ],
+          "query": {
+            "affinity": 0.71
+          }
+        },
+        {
+          "entity_id": "3C69D9BE-8D0A-4B69-B3BC-52BEBB189C0F",
+          "name": "Slow Horses",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.7,
+          "properties": {
+            "description": "Spy comedy-drama about a team of disgraced intelligence agents."
+          },
+          "query": {
+            "affinity": 0.7
+          }
+        },
+        {
+          "entity_id": "ECBC7E57-8869-4257-AE7C-68B5D54EAA7B",
+          "name": "Only Murders in the Building",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.77,
+          "properties": {
+            "description": "Three neighbors who love true crime start a podcast about a death in their building."
+          },
+          "query": {
+            "affinity": 0.68
+          }
+        },
+        {
+          "entity_id": "E046DBDF-2886-42D6-8B3D-B0389D7FF7EE",
+          "name": "Normal People",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.654,
+          "properties": {
+            "description": "Quiet Irish romance about two classmates whose lives keep crossing."
+          },
+          "query": {
+            "affinity": 0.67
+          }
+        },
+        {
+          "entity_id": "7DF56BFC-7C18-42AE-97E3-680F3A4C8053",
+          "name": "The Leftovers",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.86,
+          "properties": {
+            "description": "The Leftovers: a TV show fans of these comps around Athens, OH over-index on."
+          },
+          "query": {
+            "affinity": 0.65
+          }
+        },
+        {
+          "entity_id": "434F31AF-D190-4762-8C9B-5266F6D1A699",
+          "name": "Dickinson",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.52,
+          "properties": {},
+          "query": {
+            "affinity": 0.64
+          }
+        }
+      ]
+    }
+  }
+}

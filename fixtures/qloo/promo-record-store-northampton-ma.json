@@ -1,0 +1,125 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_promo_partners",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?feature.explainability=true&filter.location.query=Northampton%2C%20MA&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Arecord_store&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Northampton, MA",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:genre:place:record_store",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "sort_by": "affinity",
+      "take": 2,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "4B301762-3E36-4A8D-BB8E-34D55C5D2CB2",
+          "name": "Turn It Up!",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.5,
+          "location": {
+            "lat": 42.3172,
+            "lon": -72.6332
+          },
+          "properties": {
+            "address": "11 Pleasant St, Northampton, MA 01060",
+            "geocode": {
+              "name": "Northampton",
+              "city": "Northampton",
+              "admin1_region": "MA",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 2,
+            "description": "Northampton shop for new and used vinyl, CDs and local releases."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:record_store",
+              "name": "Record Store",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.9,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.97
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.895
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.843
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "CA6390E9-AD3A-473B-AB9F-799774074BF6",
+          "name": "Mystery Train Records",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.46,
+          "location": {
+            "lat": 42.3741,
+            "lon": -72.5192
+          },
+          "properties": {
+            "address": "9 Amity St, Amherst, MA 01002",
+            "geocode": {
+              "name": "Amherst",
+              "city": "Amherst",
+              "admin1_region": "MA",
+              "country_code": "US"
+            },
+            "business_rating": 4.8,
+            "price_level": 2,
+            "description": "Amherst record store with deep crates of used vinyl and a loyal college crowd."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:record_store",
+              "name": "Record Store",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.84,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.818
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.729
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.835
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -25,8 +25,8 @@
     {
       "id": "6211CB48-C3EC-4C54-9E26-C6F79ACF6F24",
       "name": "The Grey Eagle",
-      "type": "urn:entity:place",
-      "subtype": "urn:entity:place:music_venue",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
       "affinity": 0.93,
       "popularity": 0.82,
       "rating": 4.7,
@@ -38,17 +38,24 @@
         "Music Venue",
         "Live Music Venue"
       ],
+      "tagIds": [
+        "urn:tag:genre:place:music_venue",
+        "urn:tag:category:place:live_music_venue"
+      ],
       "why": [
         "Big Thief (78%)",
         "Waxahatchee (66%)",
         "Adrianne Lenker (61%)"
-      ]
+      ],
+      "lat": 35.595,
+      "lon": -82.551,
+      "region": "NC"
     },
     {
       "id": "1F70FFAC-E1A0-4DDC-BCBA-C28848039BAC",
       "name": "The Orange Peel",
-      "type": "urn:entity:place",
-      "subtype": "urn:entity:place:music_venue",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
       "affinity": 0.89,
       "popularity": 0.88,
       "rating": 4.6,
@@ -60,17 +67,24 @@
         "Music Venue",
         "Concert Hall"
       ],
+      "tagIds": [
+        "urn:tag:genre:place:music_venue",
+        "urn:tag:genre:place:concert_hall"
+      ],
       "why": [
         "Big Thief (74%)",
         "Waxahatchee (58%)",
         "Adrianne Lenker (52%)"
-      ]
+      ],
+      "lat": 35.595,
+      "lon": -82.551,
+      "region": "NC"
     },
     {
       "id": "B0379922-BFB8-4394-8479-B2962A5F8ECB",
       "name": "Harrah's Cherokee Center - Asheville",
-      "type": "urn:entity:place",
-      "subtype": "urn:entity:place:concert_hall",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
       "affinity": 0.85,
       "popularity": 0.74,
       "rating": 4.3,
@@ -81,17 +95,23 @@
       "tags": [
         "Concert Hall"
       ],
+      "tagIds": [
+        "urn:tag:genre:place:concert_hall"
+      ],
       "why": [
         "Big Thief (61%)",
         "Waxahatchee (49%)",
         "Adrianne Lenker (44%)"
-      ]
+      ],
+      "lat": 35.595,
+      "lon": -82.551,
+      "region": "NC"
     },
     {
       "id": "857ECDC8-4C90-4FCA-968D-3F99124B45E8",
       "name": "Eulogy",
-      "type": "urn:entity:place",
-      "subtype": "urn:entity:place:music_venue",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
       "affinity": 0.81,
       "popularity": 0.58,
       "rating": 4.5,
@@ -103,17 +123,24 @@
         "Music Venue",
         "Live Music Venue"
       ],
+      "tagIds": [
+        "urn:tag:genre:place:music_venue",
+        "urn:tag:category:place:live_music_venue"
+      ],
       "why": [
         "Big Thief (66%)",
         "Waxahatchee (57%)",
         "Adrianne Lenker (50%)"
-      ]
+      ],
+      "lat": 35.595,
+      "lon": -82.551,
+      "region": "NC"
     },
     {
       "id": "7FC2B4CC-FCEF-4AF3-B0C8-6C58A3B20525",
       "name": "The Mothlight",
-      "type": "urn:entity:place",
-      "subtype": "urn:entity:place:bar",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
       "affinity": 0.77,
       "popularity": 0.52,
       "rating": 4.4,
@@ -125,17 +152,24 @@
         "Live Music Bar",
         "Music Venue"
       ],
+      "tagIds": [
+        "urn:tag:genre:place:bar:live_music",
+        "urn:tag:genre:place:music_venue"
+      ],
       "why": [
         "Big Thief (63%)",
-        "Waxahatchee (55%)",
-        "Adrianne Lenker (59%)"
-      ]
+        "Adrianne Lenker (59%)",
+        "Waxahatchee (55%)"
+      ],
+      "lat": 35.595,
+      "lon": -82.551,
+      "region": "NC"
     },
     {
       "id": "C6AD191B-92F1-4CF9-9737-F4AEBC534980",
       "name": "Salvage Station",
-      "type": "urn:entity:place",
-      "subtype": "urn:entity:place:music_venue",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
       "affinity": 0.73,
       "popularity": 0.66,
       "rating": 4.5,
@@ -147,17 +181,24 @@
         "Music Venue",
         "Live Music Venue"
       ],
+      "tagIds": [
+        "urn:tag:genre:place:music_venue",
+        "urn:tag:category:place:live_music_venue"
+      ],
       "why": [
         "Big Thief (58%)",
         "Waxahatchee (47%)",
         "Adrianne Lenker (41%)"
-      ]
+      ],
+      "lat": 35.595,
+      "lon": -82.551,
+      "region": "NC"
     },
     {
       "id": "298B04B1-C5F3-4268-9FE5-C8129B864FDA",
       "name": "Jack of the Wood",
-      "type": "urn:entity:place",
-      "subtype": "urn:entity:place:bar",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
       "affinity": 0.67,
       "popularity": 0.6,
       "rating": 4.5,
@@ -169,17 +210,24 @@
         "Live Music Bar",
         "Bar"
       ],
+      "tagIds": [
+        "urn:tag:genre:place:bar:live_music",
+        "urn:tag:genre:place:bar"
+      ],
       "why": [
         "Big Thief (49%)",
-        "Waxahatchee (44%)",
-        "Adrianne Lenker (46%)"
-      ]
+        "Adrianne Lenker (46%)",
+        "Waxahatchee (44%)"
+      ],
+      "lat": 35.595,
+      "lon": -82.551,
+      "region": "NC"
     },
     {
       "id": "4151EE0E-0FD5-43D6-AF6A-BCCD8FA18841",
       "name": "Asheville Music Hall",
-      "type": "urn:entity:place",
-      "subtype": "urn:entity:place:music_venue",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
       "affinity": 0.62,
       "popularity": 0.47,
       "rating": 4.2,
@@ -191,11 +239,18 @@
         "Music Venue",
         "Live Music Venue"
       ],
+      "tagIds": [
+        "urn:tag:genre:place:music_venue",
+        "urn:tag:category:place:live_music_venue"
+      ],
       "why": [
         "Big Thief (45%)",
         "Waxahatchee (40%)",
         "Adrianne Lenker (36%)"
-      ]
+      ],
+      "lat": 35.595,
+      "lon": -82.551,
+      "region": "NC"
     }
   ],
   "promo": [
@@ -205,8 +260,8 @@
         {
           "id": "93F0B359-EC0C-4DFA-A5FD-21E33B7FA208",
           "name": "Harvest Records",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:record_store",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "affinity": 0.92,
           "popularity": 0.71,
           "rating": 4.8,
@@ -217,17 +272,23 @@
           "tags": [
             "Record Store"
           ],
+          "tagIds": [
+            "urn:tag:genre:place:record_store"
+          ],
           "why": [
             "Big Thief (79%)",
             "Waxahatchee (68%)",
             "Adrianne Lenker (63%)"
-          ]
+          ],
+          "lat": 35.595,
+          "lon": -82.551,
+          "region": "NC"
         },
         {
           "id": "6FDBB6F9-EB37-41F1-9078-E47F8CE1FDBC",
           "name": "Static Age Records",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:record_store",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "affinity": 0.78,
           "popularity": 0.49,
           "rating": 4.6,
@@ -238,11 +299,17 @@
           "tags": [
             "Record Store"
           ],
+          "tagIds": [
+            "urn:tag:genre:place:record_store"
+          ],
           "why": [
             "Big Thief (62%)",
             "Waxahatchee (52%)",
             "Adrianne Lenker (47%)"
-          ]
+          ],
+          "lat": 35.595,
+          "lon": -82.551,
+          "region": "NC"
         }
       ]
     },
@@ -252,8 +319,8 @@
         {
           "id": "9FE9DBB0-9FCF-4A69-9822-1776D5FF3786",
           "name": "High Five Coffee",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:coffee_shop",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "affinity": 0.88,
           "popularity": 0.63,
           "rating": 4.6,
@@ -265,17 +332,24 @@
             "Coffee Shop",
             "Cafe"
           ],
+          "tagIds": [
+            "urn:tag:genre:place:coffee_shop",
+            "urn:tag:genre:place:cafe"
+          ],
           "why": [
             "Big Thief (70%)",
             "Waxahatchee (60%)",
             "Adrianne Lenker (56%)"
-          ]
+          ],
+          "lat": 35.595,
+          "lon": -82.551,
+          "region": "NC"
         },
         {
           "id": "091940AD-4473-478E-902D-A7B2FAD0E353",
           "name": "Odd's Cafe",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:coffee_shop",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "affinity": 0.75,
           "popularity": 0.41,
           "rating": 4.6,
@@ -287,11 +361,18 @@
             "Coffee Shop",
             "Cafe"
           ],
+          "tagIds": [
+            "urn:tag:genre:place:coffee_shop",
+            "urn:tag:genre:place:cafe"
+          ],
           "why": [
             "Big Thief (56%)",
             "Waxahatchee (50%)",
             "Adrianne Lenker (46%)"
-          ]
+          ],
+          "lat": 35.595,
+          "lon": -82.551,
+          "region": "NC"
         }
       ]
     },
@@ -301,8 +382,8 @@
         {
           "id": "FA657A23-92E7-4C9A-A5F4-760954DDFB0C",
           "name": "Malaprop's Bookstore/Cafe",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:bookstore",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "affinity": 0.86,
           "popularity": 0.76,
           "rating": 4.8,
@@ -313,17 +394,23 @@
           "tags": [
             "Bookstore"
           ],
+          "tagIds": [
+            "urn:tag:genre:place:bookstore"
+          ],
           "why": [
             "Big Thief (68%)",
             "Waxahatchee (59%)",
             "Adrianne Lenker (57%)"
-          ]
+          ],
+          "lat": 35.595,
+          "lon": -82.551,
+          "region": "NC"
         },
         {
           "id": "55F9AAEB-7273-44EA-BBFF-8A117D6BA226",
           "name": "Firestorm Books",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:bookstore",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "affinity": 0.72,
           "popularity": 0.44,
           "rating": 4.7,
@@ -334,11 +421,17 @@
           "tags": [
             "Bookstore"
           ],
+          "tagIds": [
+            "urn:tag:genre:place:bookstore"
+          ],
           "why": [
             "Big Thief (53%)",
-            "Waxahatchee (47%)",
-            "Adrianne Lenker (51%)"
-          ]
+            "Adrianne Lenker (51%)",
+            "Waxahatchee (47%)"
+          ],
+          "lat": 35.595,
+          "lon": -82.551,
+          "region": "NC"
         }
       ]
     },
@@ -348,8 +441,8 @@
         {
           "id": "E32648A3-8396-49D7-B42E-012512083F90",
           "name": "The Double Crown",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:dive_bar",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "affinity": 0.83,
           "popularity": 0.55,
           "rating": 4.6,
@@ -361,17 +454,24 @@
             "Dive Bar",
             "Bar"
           ],
+          "tagIds": [
+            "urn:tag:genre:place:dive_bar",
+            "urn:tag:genre:place:bar"
+          ],
           "why": [
             "Big Thief (65%)",
             "Waxahatchee (58%)",
             "Adrianne Lenker (50%)"
-          ]
+          ],
+          "lat": 35.595,
+          "lon": -82.551,
+          "region": "NC"
         },
         {
           "id": "4811E905-0118-4D1C-9445-B560B61FBE49",
           "name": "Burger Bar",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:dive_bar",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "affinity": 0.69,
           "popularity": 0.38,
           "rating": 4.4,
@@ -383,11 +483,18 @@
             "Dive Bar",
             "Bar"
           ],
+          "tagIds": [
+            "urn:tag:genre:place:dive_bar",
+            "urn:tag:genre:place:bar"
+          ],
           "why": [
             "Big Thief (50%)",
             "Waxahatchee (44%)",
             "Adrianne Lenker (40%)"
-          ]
+          ],
+          "lat": 35.595,
+          "lon": -82.551,
+          "region": "NC"
         }
       ]
     },
@@ -397,8 +504,8 @@
         {
           "id": "363E468B-B436-4524-A133-403D0A0B9EC4",
           "name": "Hip Replacements",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:vintage_store",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "affinity": 0.8,
           "popularity": 0.46,
           "rating": 4.5,
@@ -409,17 +516,23 @@
           "tags": [
             "Vintage Store"
           ],
+          "tagIds": [
+            "urn:tag:genre:place:vintage_store"
+          ],
           "why": [
             "Big Thief (60%)",
             "Waxahatchee (55%)",
             "Adrianne Lenker (48%)"
-          ]
+          ],
+          "lat": 35.595,
+          "lon": -82.551,
+          "region": "NC"
         },
         {
           "id": "8E1985D0-B589-42AC-A206-2962D308DC36",
           "name": "The Regeneration Station",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:vintage_store",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "affinity": 0.66,
           "popularity": 0.5,
           "rating": 4.5,
@@ -431,33 +544,41 @@
             "Vintage Store",
             "Thrift Store"
           ],
+          "tagIds": [
+            "urn:tag:genre:place:vintage_store",
+            "urn:tag:genre:place:thrift_store"
+          ],
           "why": [
             "Big Thief (47%)",
             "Waxahatchee (42%)",
             "Adrianne Lenker (38%)"
-          ]
+          ],
+          "lat": 35.595,
+          "lon": -82.551,
+          "region": "NC"
         }
       ]
     }
   ],
   "who": {
+    "scope": "comps-overall",
     "age": {
-      "24_and_younger": 0.14,
-      "25_to_29": 0.5,
-      "30_to_34": 0.54,
-      "35_to_44": 0.36,
-      "45_to_54": 0.08,
+      "24_and_younger": 0.23,
+      "25_to_29": 0.49,
+      "30_to_34": 0.51,
+      "35_to_44": 0.32,
+      "45_to_54": 0.06,
       "55_and_older": -0.23
     },
     "gender": {
-      "female": 0.26,
+      "female": 0.24,
       "male": -0.1
     },
     "strongestAge": "30_to_34",
     "suggestions": [
-      "Fans of your comps here index highest at 30 to 34; consider pitching rooms and promo partners that already draw that crowd.",
-      "The 55-and-older band indexes low; consider a later set time if the room offers a choice.",
-      "Affinity leans toward women among fans of your comps here; consider that when choosing which promo partner gets the poster first."
+      "Fans of your comps overall index highest at 30 to 34; consider leading with rooms and promo partners that program for that age range.",
+      "The under-25 band is also positive; consider asking rooms whether an all-ages or early show is an option.",
+      "The 55-and-older band indexes low; consider a later set time if the room offers a choice."
     ]
   },
   "localColor": {
@@ -534,40 +655,51 @@
         "homeAffinity": 0.818,
         "delta": 0.023
       }
-    ]
+    ],
+    "homeAvailable": true
   },
   "locality": {
-    "id": "E5610BEE-5F1C-4587-874E-2CA7A86DA0F0",
+    "id": "6211CB48-C3EC-4C54-9E26-C6F79ACF6F24",
     "name": "Asheville",
-    "state": "NC",
     "label": "Asheville, NC",
     "rank": 1,
     "affinity": 0.934,
+    "state": "NC",
     "population": 94763,
-    "lat": 35.595,
-    "lon": -82.551,
+    "lat": 35.571,
+    "lon": -82.5527,
     "overIndex": true,
     "why": [
       "Big Thief (72%)",
       "Waxahatchee (57%)",
       "Adrianne Lenker (48%)"
-    ]
+    ],
+    "topRoom": {
+      "id": "6211CB48-C3EC-4C54-9E26-C6F79ACF6F24",
+      "name": "The Grey Eagle",
+      "affinity": 0.934,
+      "why": [
+        "Big Thief (72%)",
+        "Waxahatchee (57%)",
+        "Adrianne Lenker (48%)"
+      ]
+    }
   },
   "card": {
-    "summary": "Asheville, NC comes back as the number one ranked market on this run, with an affinity of 0.934 and an over-index flag compared with your home base of Richmond, VA. Big Thief is the strongest comp pulling it there at 72%, followed by Waxahatchee at 57% and Adrianne Lenker at 48%.",
-    "rooms_note": "The Grey Eagle tops the room list at 0.93 affinity, driven mostly by fans of Big Thief (78%), with Waxahatchee (66%) and Adrianne Lenker (61%) close behind.",
-    "promo_note": "Record stores are the strongest promo group here, led by Harvest Records at 0.92 affinity, where Big Thief fans register at 79%.",
-    "who_note": "Fans of your comps around Asheville index highest in the 30 to 34 band (0.54), with 25 to 29 close behind (0.5), so consider pitching rooms and promo partners that already draw that late-twenties-to-early-thirties crowd.",
-    "local_color_note": "Fjallraven and Birkenstock both run 0.055 ahead of Richmond among fans of your comps around Asheville, which hints that an outdoorsy, practical look could suit the poster and merch table.",
+    "summary": "Asheville ranks #1 nationally for fans of your comps, with a locality affinity of 0.934, and it qualifies as an over-index market (population under 250,000 with a national rank of 20 or better). Big Thief is the strongest comp here at 72%, and The Grey Eagle is the top-ranked room.",
+    "rooms_note": "Start with The Grey Eagle, the highest-ranked room at 0.93 affinity, driven most by Big Thief (78%), with The Orange Peel close behind at 0.89.",
+    "promo_note": "Record stores are the strongest promo group, led by Harvest Records at 0.92 affinity with Big Thief at 79%, and Static Age Records is a second option at 0.78.",
+    "who_note": "Fans of your comps overall index highest at 30 to 34 (0.51), with 25 to 29 close behind (0.49), so consider leading with rooms and promo partners that program for that range.",
+    "local_color_note": "Fjallraven and Birkenstock both run 0.055 higher for fans of your comps around Asheville than around Richmond, and Parks and Recreation is up 0.035, which hints that outdoorsy, earthy merch and a touch of warm humor on the poster could land.",
     "promo_copy": [
-      "Big Thief and Waxahatchee fans in Asheville, this one is for you.",
-      "Into Adrianne Lenker? A new folk act is headed to Asheville soon."
+      "Big Thief and Waxahatchee fans in Asheville: new folk on tour, ask us for details.",
+      "Love Adrianne Lenker? A kindred act is coming through Asheville soon."
     ],
-    "caution": "These are aggregate taste affinities, not attendance or sales figures, so confirm capacity, age policy, and availability directly with each room before booking."
+    "caution": "These are aggregate taste affinities, not attendance or sales data, so confirm capacity, age policy, and availability directly with each room."
   },
   "receipts": [
     {
-      "id": "rmv3fdwho-54",
+      "id": "rmv3hvjk3-93",
       "tool": "find_rooms",
       "method": "GET",
       "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Asheville%2C+NC&filter.location.radius=15000&filter.tags=urn%3Atag%3Acategory%3Aplace%3Alive_music_venue%2Curn%3Atag%3Agenre%3Aplace%3Abar%3Alive_music%2Curn%3Atag%3Agenre%3Aplace%3Aconcert_hall%2Curn%3Atag%3Agenre%3Aplace%3Amusic_venue&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=8&feature.explainability=true",
@@ -591,34 +723,10 @@
       ]
     },
     {
-      "id": "rmv3fdwho-55",
-      "tool": "find_promo_partners",
-      "method": "GET",
-      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Asheville%2C+NC&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abar%2Curn%3Atag%3Agenre%3Aplace%3Abookstore%2Curn%3Atag%3Agenre%3Aplace%3Acafe%2Curn%3Atag%3Agenre%3Aplace%3Acoffee_shop%2Curn%3Atag%3Agenre%3Aplace%3Adive_bar%2Curn%3Atag%3Agenre%3Aplace%3Arecord_store%2Curn%3Atag%3Agenre%3Aplace%3Athrift_store%2Curn%3Atag%3Agenre%3Aplace%3Avintage_store&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&diversify.by=properties.subtype&diversify.take=2&sort_by=affinity&take=12&feature.explainability=true",
-      "mode": "demo",
-      "status": 200,
-      "ms": 0,
-      "resultCount": 12,
-      "top": [
-        {
-          "name": "Harvest Records",
-          "affinity": 0.92
-        },
-        {
-          "name": "High Five Coffee",
-          "affinity": 0.88
-        },
-        {
-          "name": "Malaprop's Bookstore/Cafe",
-          "affinity": 0.86
-        }
-      ]
-    },
-    {
-      "id": "rmv3fdwho-56",
+      "id": "rmv3hvjk3-94",
       "tool": "who_shows_up",
       "method": "GET",
-      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Ademographics&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Asheville%2C+NC&signal.location.radius=25000",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Ademographics&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
       "mode": "demo",
       "status": 200,
       "ms": 0,
@@ -626,7 +734,7 @@
       "top": []
     },
     {
-      "id": "rmv3fdwho-57",
+      "id": "rmv3hvjk3-95",
       "tool": "local_color",
       "method": "GET",
       "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Abrand&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Asheville%2C+NC&signal.location.radius=25000&take=20",
@@ -650,7 +758,7 @@
       ]
     },
     {
-      "id": "rmv3fdwho-58",
+      "id": "rmv3hvjk3-96",
       "tool": "local_color",
       "method": "GET",
       "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Atv_show&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Asheville%2C+NC&signal.location.radius=25000&take=20",
@@ -674,7 +782,7 @@
       ]
     },
     {
-      "id": "rmv3fdwho-59",
+      "id": "rmv3hvjk3-97",
       "tool": "local_color",
       "method": "GET",
       "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Abrand&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Richmond%2C+VA&signal.location.radius=25000&take=20",
@@ -698,7 +806,7 @@
       ]
     },
     {
-      "id": "rmv3fdwho-60",
+      "id": "rmv3hvjk3-98",
       "tool": "local_color",
       "method": "GET",
       "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Atv_show&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Richmond%2C+VA&signal.location.radius=25000&take=20",
@@ -718,6 +826,106 @@
         {
           "name": "Somebody Somewhere",
           "affinity": 0.873
+        }
+      ]
+    },
+    {
+      "id": "rmv3hvjk3-99",
+      "tool": "find_promo_partners",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Asheville%2C+NC&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Arecord_store&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 2,
+      "top": [
+        {
+          "name": "Harvest Records",
+          "affinity": 0.92
+        },
+        {
+          "name": "Static Age Records",
+          "affinity": 0.78
+        }
+      ]
+    },
+    {
+      "id": "rmv3hvjk3-100",
+      "tool": "find_promo_partners",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Asheville%2C+NC&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Acafe%2Curn%3Atag%3Agenre%3Aplace%3Acoffee_shop&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 2,
+      "top": [
+        {
+          "name": "High Five Coffee",
+          "affinity": 0.88
+        },
+        {
+          "name": "Odd's Cafe",
+          "affinity": 0.75
+        }
+      ]
+    },
+    {
+      "id": "rmv3hvjk3-101",
+      "tool": "find_promo_partners",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Asheville%2C+NC&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abookstore&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 2,
+      "top": [
+        {
+          "name": "Malaprop's Bookstore/Cafe",
+          "affinity": 0.86
+        },
+        {
+          "name": "Firestorm Books",
+          "affinity": 0.72
+        }
+      ]
+    },
+    {
+      "id": "rmv3hvjk3-102",
+      "tool": "find_promo_partners",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Asheville%2C+NC&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abar%2Curn%3Atag%3Agenre%3Aplace%3Adive_bar&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 2,
+      "top": [
+        {
+          "name": "The Double Crown",
+          "affinity": 0.83
+        },
+        {
+          "name": "Burger Bar",
+          "affinity": 0.69
+        }
+      ]
+    },
+    {
+      "id": "rmv3hvjk3-103",
+      "tool": "find_promo_partners",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Asheville%2C+NC&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Athrift_store%2Curn%3Atag%3Agenre%3Aplace%3Avintage_store&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 2,
+      "top": [
+        {
+          "name": "Hip Replacements",
+          "affinity": 0.8
+        },
+        {
+          "name": "The Regeneration Station",
+          "affinity": 0.66
         }
       ]
     }

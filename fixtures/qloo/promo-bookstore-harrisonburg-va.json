@@ -1,0 +1,125 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_promo_partners",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?feature.explainability=true&filter.location.query=Harrisonburg%2C%20VA&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abookstore&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Harrisonburg, VA",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:genre:place:bookstore",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "sort_by": "affinity",
+      "take": 2,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "0C274BB3-2E3F-496C-9DDC-ED8B3B5720A8",
+          "name": "Downtown Books",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.48,
+          "location": {
+            "lat": 38.45,
+            "lon": -78.869
+          },
+          "properties": {
+            "description": "Used bookstore with a deep fiction and poetry wall and a few shelves of local music.",
+            "address": "49 W Water St, Harrisonburg, VA 22801",
+            "geocode": {
+              "name": "Harrisonburg",
+              "city": "Harrisonburg",
+              "admin1_region": "VA",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:bookstore",
+              "name": "Bookstore",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.86,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.7
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.56
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.55
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "4EE9D601-E645-4A9D-AE8D-6684A92DC0EF",
+          "name": "Green Valley Book Fair",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.57,
+          "location": {
+            "lat": 38.45,
+            "lon": -78.869
+          },
+          "properties": {
+            "description": "Warehouse-sized discount bookstore south of town that draws people from across the Valley.",
+            "address": "2192 Green Valley Ln, Mt Crawford, VA 22841",
+            "geocode": {
+              "name": "Harrisonburg",
+              "city": "Harrisonburg",
+              "admin1_region": "VA",
+              "country_code": "US"
+            },
+            "business_rating": 4.8,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:bookstore",
+              "name": "Bookstore",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.73,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.58
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.47
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.39
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

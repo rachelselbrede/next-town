@@ -1,0 +1,603 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "local_color",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Abrand&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Washington%2C%20DC&signal.location.radius=25000&take=20",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:brand",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "signal.location.query": "Washington, DC",
+      "signal.location.radius": 25000,
+      "take": 20
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "81FF9E58-99F1-4C63-9F2F-7D85FA8D6964",
+          "name": "Patagonia",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.85,
+          "properties": {
+            "description": "Outdoor apparel brand with a loud environmental mission."
+          },
+          "query": {
+            "affinity": 0.91,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.874
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.775
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.815
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "AC8120D3-F632-4821-92A3-70E5C4A3343C",
+          "name": "Subaru",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.84,
+          "properties": {
+            "description": "Carmaker whose all-wheel-drive wagons are a fixture at trailheads and farmers markets."
+          },
+          "query": {
+            "affinity": 0.89,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.776
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.76
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.891
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "410FC0A8-CC28-4A0A-8841-431214C5758A",
+          "name": "Compass Coffee",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.74,
+          "properties": {
+            "description": "DC-born roaster with cafes across the District."
+          },
+          "query": {
+            "affinity": 0.88,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.792
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.837
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.842
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "753F76AB-F8F3-4DB9-9076-5541D45875DF",
+          "name": "Trader Joe's",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.83,
+          "properties": {
+            "description": "Grocery chain known for cheap wine, frozen dumplings, and friendly cashiers."
+          },
+          "query": {
+            "affinity": 0.86,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.897
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.741
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.844
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "B6391816-5F67-49A9-9C1D-BA8CFC6B47CB",
+          "name": "Busboys and Poets",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.72,
+          "properties": {
+            "description": "Restaurant, bookstore and community gathering space with a stage."
+          },
+          "query": {
+            "affinity": 0.85,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.875
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.872
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.822
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "7C8DF92F-D4B9-45DE-9144-A0E36C0C6897",
+          "name": "REI",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.79,
+          "properties": {
+            "description": "Outdoor gear co-op with a member dividend."
+          },
+          "query": {
+            "affinity": 0.83,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.784
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.786
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.736
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "72A9DD8C-179B-40AA-BC6B-CB68F2883327",
+          "name": "Sweetgreen",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.82,
+          "properties": {
+            "description": "Salad chain that started in Georgetown."
+          },
+          "query": {
+            "affinity": 0.81,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.851
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.836
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.733
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "52039753-DD87-4F1B-8D75-3F55850FAD13",
+          "name": "La Colombe",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.67,
+          "properties": {
+            "description": "Philadelphia coffee roaster with canned draft lattes in every co-op."
+          },
+          "query": {
+            "affinity": 0.8,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.837
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.785
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.751
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "1AA5FF53-A492-41F6-8303-89DF5C09DACC",
+          "name": "DC Brau Brewing Company",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.6,
+          "properties": {
+            "description": "District craft brewery with a taproom in Ivy City."
+          },
+          "query": {
+            "affinity": 0.78,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.823
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.66
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.778
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "47D5D80A-D8DA-4F3A-A4DF-A99635B1BCB7",
+          "name": "Warby Parker",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.61,
+          "properties": {
+            "description": "Direct-to-consumer eyewear brand with a try-at-home program."
+          },
+          "query": {
+            "affinity": 0.77,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.724
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.816
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.827
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "140AED23-2F58-4FA0-B636-C9D5D473E429",
+          "name": "Blue Bottle Coffee",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.6,
+          "properties": {
+            "description": "Third-wave coffee chain with minimalist cafes."
+          },
+          "query": {
+            "affinity": 0.75,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.719
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.722
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.744
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "7E4F25E1-B3A9-4B0A-BB91-45E46DE98BE3",
+          "name": "Right Proper Brewing Co.",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.55,
+          "properties": {
+            "description": "Brewpub in Shaw known for its pale ales."
+          },
+          "query": {
+            "affinity": 0.74,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.757
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.703
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.691
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "1E64D934-320B-4FB7-921B-58DB10BE96EA",
+          "name": "Birkenstock",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.66,
+          "properties": {
+            "description": "German sandal maker with a cork footbed and a cult following."
+          },
+          "query": {
+            "affinity": 0.72,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.642
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.74
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.68
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "FB9A782D-22DF-4FC7-ABA9-1A2EA262AC2B",
+          "name": "Ben's Chili Bowl",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.78,
+          "properties": {
+            "description": "U Street half-smoke institution since 1958."
+          },
+          "query": {
+            "affinity": 0.7,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.753
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.753
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.728
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "B33E9033-D54B-4B07-A439-14C0322C161D",
+          "name": "Levi's",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.77,
+          "properties": {
+            "description": "Denim brand with a vintage-friendly back catalog."
+          },
+          "query": {
+            "affinity": 0.69,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.646
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.727
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.637
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "AA63C1DD-01CA-4577-8C56-B3572ED68CB3",
+          "name": "Cava",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.76,
+          "properties": {
+            "description": "Mediterranean fast-casual chain that began in the DC area."
+          },
+          "query": {
+            "affinity": 0.67,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.626
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.543
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.583
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "2838B3D8-5C49-4AF5-AA58-12015277F479",
+          "name": "Doc Martens",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.49,
+          "properties": {
+            "description": "British boot brand with a permanent place in music subcultures."
+          },
+          "query": {
+            "affinity": 0.66,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.579
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.574
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.527
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "440DC502-FB37-4065-8211-B34C986BF49E",
+          "name": "Politics and Prose Bookstore",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.6,
+          "properties": {
+            "description": "Beloved independent bookstore brand with a busy author-event calendar."
+          },
+          "query": {
+            "affinity": 0.64,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.6
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.519
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.65
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "D44CBBD6-C6E8-455A-94B4-88B6A05B0591",
+          "name": "Blundstone",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.73,
+          "properties": {
+            "description": "Tasmanian pull-on boot brand beloved by people who walk a lot."
+          },
+          "query": {
+            "affinity": 0.63,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.621
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.609
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.582
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "79105CB8-2649-4620-A2F8-0B53D5B8A831",
+          "name": "Fjallraven",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.71,
+          "properties": {
+            "description": "Swedish outdoor brand known for the Kanken backpack."
+          },
+          "query": {
+            "affinity": 0.6,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.565
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.558
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.644
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

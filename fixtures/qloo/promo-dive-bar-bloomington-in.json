@@ -1,0 +1,135 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_promo_partners",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?feature.explainability=true&filter.location.query=Bloomington%2C%20IN&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abar%2Curn%3Atag%3Agenre%3Aplace%3Adive_bar&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Bloomington, IN",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:genre:place:bar,urn:tag:genre:place:dive_bar",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "sort_by": "affinity",
+      "take": 2,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "4A2C4703-3591-4DCD-A382-478CF9955178",
+          "name": "The Video Saloon",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.5,
+          "location": {
+            "lat": 39.165,
+            "lon": -86.526
+          },
+          "properties": {
+            "description": "No-frills dive on Walnut Street with a jukebox, cheap pitchers, and a crowd of musicians and regulars.",
+            "address": "105 W 7th St, Bloomington, IN 47404",
+            "business_rating": 4.4,
+            "price_level": 1,
+            "geocode": {
+              "name": "Bloomington",
+              "city": "Bloomington",
+              "admin1_region": "IN",
+              "country_code": "US"
+            }
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:dive_bar",
+              "name": "Dive Bar",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:genre:place:bar",
+              "name": "Bar",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.76,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.63
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.61
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.54
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "2725CAE0-C6FE-477F-8A46-C70A71921E53",
+          "name": "The Atlas Ballroom",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.47,
+          "location": {
+            "lat": 39.165,
+            "lon": -86.526
+          },
+          "properties": {
+            "description": "Dim, friendly bar on the north edge of downtown with vinyl DJ nights and a back room for shows.",
+            "address": "209 S College Ave, Bloomington, IN 47404",
+            "business_rating": 4.3,
+            "price_level": 1,
+            "geocode": {
+              "name": "Bloomington",
+              "city": "Bloomington",
+              "admin1_region": "IN",
+              "country_code": "US"
+            }
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:dive_bar",
+              "name": "Dive Bar",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:genre:place:bar",
+              "name": "Bar",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.74,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.61
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.6
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.53
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

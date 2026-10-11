@@ -1,0 +1,135 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_promo_partners",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?feature.explainability=true&filter.location.query=Baltimore%2C%20MD&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abar%2Curn%3Atag%3Agenre%3Aplace%3Adive_bar&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Baltimore, MD",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:genre:place:bar,urn:tag:genre:place:dive_bar",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "sort_by": "affinity",
+      "take": 2,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "D6F2E302-CA05-40A7-8322-CD0847A5CA8F",
+          "name": "Club Charles",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.45,
+          "location": {
+            "lat": 39.3103,
+            "lon": -76.6165
+          },
+          "properties": {
+            "description": "Dark Station North bar with red-lit booths and a jukebox, a longtime hangout for musicians and artists.",
+            "address": "1724 N Charles St, Baltimore, MD 21201",
+            "geocode": {
+              "name": "Baltimore",
+              "city": "Baltimore",
+              "admin1_region": "MD",
+              "country_code": "US"
+            },
+            "business_rating": 4.4,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:dive_bar",
+              "name": "Dive Bar",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:genre:place:bar",
+              "name": "Bar",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.89,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.78
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.63
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.57
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "50EAA5EB-2FF9-4B26-8F1B-E3C42C2CBE50",
+          "name": "The Horse You Came In On Saloon",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.48,
+          "location": {
+            "lat": 39.2832,
+            "lon": -76.5936
+          },
+          "properties": {
+            "description": "Fells Point saloon on the waterfront with a decades-long run of live music and cheap beer.",
+            "address": "1626 Thames St, Baltimore, MD 21231",
+            "geocode": {
+              "name": "Baltimore",
+              "city": "Baltimore",
+              "admin1_region": "MD",
+              "country_code": "US"
+            },
+            "business_rating": 4.3,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:dive_bar",
+              "name": "Dive Bar",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:genre:place:bar",
+              "name": "Bar",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.82,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.65
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.58
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.51
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

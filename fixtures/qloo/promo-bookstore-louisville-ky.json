@@ -1,0 +1,125 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_promo_partners",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?feature.explainability=true&filter.location.query=Louisville%2C%20KY&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abookstore&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Louisville, KY",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:genre:place:bookstore",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "sort_by": "affinity",
+      "take": 2,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "A4B18F24-2D00-43BC-94AB-80DE5F4F09CA",
+          "name": "Carmichael's Bookstore",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.68,
+          "location": {
+            "lat": 38.253,
+            "lon": -85.759
+          },
+          "properties": {
+            "description": "Louisville's long-running independent bookstore with author events and a staff-picks wall.",
+            "address": "2720 Frankfort Ave, Louisville, KY 40206",
+            "geocode": {
+              "name": "Carmichael's Bookstore",
+              "city": "Louisville",
+              "admin1_region": "KY",
+              "country_code": "US"
+            },
+            "business_rating": 4.8,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:bookstore",
+              "name": "Bookstore",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.854,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.682
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.602
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.542
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "4DF7C037-B530-463F-A5C6-7C42CE468730",
+          "name": "Half Price Books",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.6,
+          "location": {
+            "lat": 38.253,
+            "lon": -85.759
+          },
+          "properties": {
+            "description": "Used bookstore and record bins near the Highlands with a browse-for-hours layout.",
+            "address": "1200 Bardstown Rd, Louisville, KY 40204",
+            "geocode": {
+              "name": "Half Price Books",
+              "city": "Louisville",
+              "admin1_region": "KY",
+              "country_code": "US"
+            },
+            "business_rating": 4.4,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:bookstore",
+              "name": "Bookstore",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.656,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.564
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.484
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.424
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

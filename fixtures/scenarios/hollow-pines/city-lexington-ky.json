@@ -1,0 +1,929 @@
+{
+  "city": "Lexington, KY",
+  "home": "Richmond, VA",
+  "comps": [
+    {
+      "id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+      "name": "Big Thief",
+      "type": "urn:entity:artist",
+      "popularity": 0.93
+    },
+    {
+      "id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+      "name": "Waxahatchee",
+      "type": "urn:entity:artist",
+      "popularity": 0.88
+    },
+    {
+      "id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "name": "Adrianne Lenker",
+      "type": "urn:entity:artist",
+      "popularity": 0.85
+    }
+  ],
+  "rooms": [
+    {
+      "id": "B1074A39-136B-4795-ADCA-E7BC31E8EE21",
+      "name": "The Burl",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
+      "affinity": 0.92,
+      "popularity": 0.74,
+      "rating": 4.6,
+      "price_level": 2,
+      "address": "375 Thomas St, Lexington, KY 40508",
+      "city": "Lexington",
+      "description": "Converted rail-yard warehouse with a big stage and patio where touring indie and Americana acts anchor the Lexington calendar.",
+      "tags": [
+        "Music Venue",
+        "Live Music Venue"
+      ],
+      "tagIds": [
+        "urn:tag:genre:place:music_venue",
+        "urn:tag:category:place:live_music_venue"
+      ],
+      "why": [
+        "Big Thief (77%)",
+        "Waxahatchee (65%)",
+        "Adrianne Lenker (60%)"
+      ],
+      "lat": 38.0511,
+      "lon": -84.5057,
+      "region": "KY"
+    },
+    {
+      "id": "4A389EA0-2451-416B-B253-3C2585005FC8",
+      "name": "Manchester Music Hall",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
+      "affinity": 0.88,
+      "popularity": 0.72,
+      "rating": 4.5,
+      "price_level": 2,
+      "address": "899 Manchester St, Lexington, KY 40508",
+      "city": "Lexington",
+      "description": "Mid-size standing-room hall in the Distillery District, the step-up room for touring indie bands.",
+      "tags": [
+        "Music Venue",
+        "Live Music Venue"
+      ],
+      "tagIds": [
+        "urn:tag:genre:place:music_venue",
+        "urn:tag:category:place:live_music_venue"
+      ],
+      "why": [
+        "Big Thief (72%)",
+        "Waxahatchee (61%)",
+        "Adrianne Lenker (56%)"
+      ],
+      "lat": 38.0431,
+      "lon": -84.5207,
+      "region": "KY"
+    },
+    {
+      "id": "3A65DCDE-A5A4-4C98-9BBD-E9D1DE4B0D63",
+      "name": "Cosmic Charlie's",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
+      "affinity": 0.84,
+      "popularity": 0.6,
+      "rating": 4.6,
+      "price_level": 1,
+      "address": "723 National Ave, Lexington, KY 40502",
+      "city": "Lexington",
+      "description": "Intimate rock club on National Avenue with a loyal local crowd and a steady run of up-and-coming touring bands.",
+      "tags": [
+        "Bar with Live Music",
+        "Music Venue"
+      ],
+      "tagIds": [
+        "urn:tag:genre:place:bar:live_music",
+        "urn:tag:genre:place:music_venue"
+      ],
+      "why": [
+        "Big Thief (67%)",
+        "Waxahatchee (57%)",
+        "Adrianne Lenker (52%)"
+      ],
+      "lat": 38.0225,
+      "lon": -84.5055,
+      "region": "KY"
+    },
+    {
+      "id": "902C543B-53A3-408C-A0AC-522F94501745",
+      "name": "Al's Bar",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
+      "affinity": 0.8,
+      "popularity": 0.56,
+      "rating": 4.4,
+      "price_level": 1,
+      "address": "601 N Limestone, Lexington, KY 40508",
+      "city": "Lexington",
+      "description": "Long-running Limestone Street bar and stage that has hosted local and national acts for nearly fifty years.",
+      "tags": [
+        "Bar with Live Music",
+        "Music Venue"
+      ],
+      "tagIds": [
+        "urn:tag:genre:place:bar:live_music",
+        "urn:tag:genre:place:music_venue"
+      ],
+      "why": [
+        "Big Thief (63%)",
+        "Waxahatchee (52%)",
+        "Adrianne Lenker (48%)"
+      ],
+      "lat": 38.0527,
+      "lon": -84.4948,
+      "region": "KY"
+    },
+    {
+      "id": "78A24C26-4BDD-4153-A4C6-5F3601E40F26",
+      "name": "Lexington Opera House",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
+      "affinity": 0.76,
+      "popularity": 0.7,
+      "rating": 4.7,
+      "price_level": 3,
+      "address": "401 W Short St, Lexington, KY 40507",
+      "city": "Lexington",
+      "description": "Restored 1887 theater downtown, a seated room for acts ready to play to a listening crowd.",
+      "tags": [
+        "Concert Hall",
+        "Live Music Venue"
+      ],
+      "tagIds": [
+        "urn:tag:genre:place:concert_hall",
+        "urn:tag:category:place:live_music_venue"
+      ],
+      "why": [
+        "Big Thief (58%)",
+        "Waxahatchee (48%)",
+        "Adrianne Lenker (44%)"
+      ],
+      "lat": 38.0467,
+      "lon": -84.5063,
+      "region": "KY"
+    },
+    {
+      "id": "222E3B65-74E9-44D1-99EC-CCFC50B4C1D2",
+      "name": "Kentucky Theatre",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
+      "affinity": 0.72,
+      "popularity": 0.66,
+      "rating": 4.7,
+      "price_level": 2,
+      "address": "214 E Main St, Lexington, KY 40507",
+      "city": "Lexington",
+      "description": "Historic downtown movie palace that doubles as a concert room for singer-songwriters and folk acts.",
+      "tags": [
+        "Concert Hall",
+        "Live Music Venue"
+      ],
+      "tagIds": [
+        "urn:tag:genre:place:concert_hall",
+        "urn:tag:category:place:live_music_venue"
+      ],
+      "why": [
+        "Big Thief (53%)",
+        "Waxahatchee (44%)",
+        "Adrianne Lenker (40%)"
+      ],
+      "lat": 38.0482,
+      "lon": -84.4945,
+      "region": "KY"
+    },
+    {
+      "id": "15B431B8-6B48-46BC-948D-0A7C0EFC2293",
+      "name": "Willie's Locally Known",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
+      "affinity": 0.67,
+      "popularity": 0.42,
+      "rating": 4.5,
+      "price_level": 1,
+      "address": "805 N Broadway, Lexington, KY 40505",
+      "city": "Lexington",
+      "description": "Neighborhood bar on North Broadway with a small stage and a steady diet of local and regional bands.",
+      "tags": [
+        "Bar with Live Music"
+      ],
+      "tagIds": [
+        "urn:tag:genre:place:bar:live_music"
+      ],
+      "why": [
+        "Big Thief (47%)",
+        "Waxahatchee (39%)",
+        "Adrianne Lenker (35%)"
+      ],
+      "lat": 38.0603,
+      "lon": -84.4901,
+      "region": "KY"
+    },
+    {
+      "id": "A3422B84-D1B4-47F7-8DCB-7480B2112D60",
+      "name": "Singletary Center for the Arts",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
+      "affinity": 0.6,
+      "popularity": 0.58,
+      "rating": 4.7,
+      "price_level": 2,
+      "address": "405 Rose St, Lexington, KY 40506",
+      "city": "Lexington",
+      "description": "University of Kentucky concert hall with strong acoustics, used for seated touring shows.",
+      "tags": [
+        "Concert Hall"
+      ],
+      "tagIds": [
+        "urn:tag:genre:place:concert_hall"
+      ],
+      "why": [
+        "Big Thief (40%)",
+        "Waxahatchee (32%)",
+        "Adrianne Lenker (29%)"
+      ],
+      "lat": 38.0314,
+      "lon": -84.5051,
+      "region": "KY"
+    }
+  ],
+  "promo": [
+    {
+      "kind": "record store",
+      "places": [
+        {
+          "id": "89B62C67-8E90-45BD-8A11-3A084DB3280D",
+          "name": "POPS Resale",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.88,
+          "popularity": 0.5,
+          "rating": 4.6,
+          "price_level": 2,
+          "address": "1423 Leestown Rd Ste B, Lexington, KY 40511",
+          "city": "Lexington",
+          "description": "Leestown Road shop selling new and used vinyl alongside curated vintage clothing, open since 1996.",
+          "tags": [
+            "Record Store"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:record_store"
+          ],
+          "why": [
+            "Big Thief (74%)",
+            "Waxahatchee (62%)",
+            "Adrianne Lenker (58%)"
+          ],
+          "lat": 38.0709,
+          "lon": -84.5468,
+          "region": "KY"
+        },
+        {
+          "id": "8EAFA2A7-47BD-45EB-B7AC-473453291B99",
+          "name": "Better Days Records",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.74,
+          "popularity": 0.38,
+          "rating": 4.7,
+          "price_level": 2,
+          "address": "Lexington, KY",
+          "city": "Lexington",
+          "description": "Independent Lexington record shop stocked with used and new vinyl.",
+          "tags": [
+            "Record Store"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:record_store"
+          ],
+          "why": [
+            "Big Thief (61%)",
+            "Waxahatchee (51%)",
+            "Adrianne Lenker (47%)"
+          ],
+          "lat": 38.0406,
+          "lon": -84.5037,
+          "region": "KY"
+        }
+      ]
+    },
+    {
+      "kind": "coffee shop",
+      "places": [
+        {
+          "id": "538FCAF2-D3DA-47E1-8517-053BA02F8869",
+          "name": "Magic Beans Coffee Roasters",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.86,
+          "popularity": 0.52,
+          "rating": 4.6,
+          "price_level": 2,
+          "address": "Lexington, KY",
+          "city": "Lexington",
+          "description": "Lexington roaster and cafe with a loyal indie crowd and a community board by the door.",
+          "tags": [
+            "Coffee Shop",
+            "Cafe"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:coffee_shop",
+            "urn:tag:genre:place:cafe"
+          ],
+          "why": [
+            "Big Thief (72%)",
+            "Waxahatchee (61%)",
+            "Adrianne Lenker (56%)"
+          ],
+          "lat": 38.0406,
+          "lon": -84.5037,
+          "region": "KY"
+        },
+        {
+          "id": "C413F53D-9959-40B1-B0D1-8F3B5FBA3D2E",
+          "name": "Common Grounds Coffee House",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.72,
+          "popularity": 0.46,
+          "rating": 4.5,
+          "price_level": 1,
+          "address": "343 E High St, Lexington, KY 40508",
+          "city": "Lexington",
+          "description": "Downtown coffeehouse with a long-running open mic and a regular local-music crowd.",
+          "tags": [
+            "Coffee Shop",
+            "Cafe"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:coffee_shop",
+            "urn:tag:genre:place:cafe"
+          ],
+          "why": [
+            "Big Thief (59%)",
+            "Waxahatchee (50%)",
+            "Adrianne Lenker (46%)"
+          ],
+          "lat": 38.0466,
+          "lon": -84.4902,
+          "region": "KY"
+        }
+      ]
+    },
+    {
+      "kind": "bookstore",
+      "places": [
+        {
+          "id": "3F4285D5-5C30-4BD2-B216-3B9ED9B75AED",
+          "name": "Wild Fig Books & Coffee",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.87,
+          "popularity": 0.45,
+          "rating": 4.8,
+          "price_level": 2,
+          "address": "Lexington, KY",
+          "city": "Lexington",
+          "description": "Independent Lexington bookstore and cafe that hosts author readings and small shows.",
+          "tags": [
+            "Bookstore"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:bookstore"
+          ],
+          "why": [
+            "Big Thief (73%)",
+            "Waxahatchee (62%)",
+            "Adrianne Lenker (57%)"
+          ],
+          "lat": 38.0406,
+          "lon": -84.5037,
+          "region": "KY"
+        },
+        {
+          "id": "86657B62-D774-4679-B767-0D8A9007EEA3",
+          "name": "Joseph-Beth Booksellers",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.7,
+          "popularity": 0.5,
+          "rating": 4.5,
+          "price_level": 2,
+          "address": "161 Lexington Green Cir, Lexington, KY 40503",
+          "city": "Lexington",
+          "description": "Large Lexington Green bookstore with a cafe and an events calendar of readings and signings.",
+          "tags": [
+            "Bookstore"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:bookstore"
+          ],
+          "why": [
+            "Big Thief (57%)",
+            "Waxahatchee (48%)",
+            "Adrianne Lenker (44%)"
+          ],
+          "lat": 37.9995,
+          "lon": -84.5287,
+          "region": "KY"
+        }
+      ]
+    },
+    {
+      "kind": "dive bar",
+      "places": [
+        {
+          "id": "5127600A-51CE-44B3-BC09-73B0B8311512",
+          "name": "The Green Lantern Bar",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.84,
+          "popularity": 0.4,
+          "rating": 4.4,
+          "price_level": 1,
+          "address": "497 W Third St, Lexington, KY 40508",
+          "city": "Lexington",
+          "description": "West Third Street dive with cheap drinks, a jukebox and a regular crowd of local musicians.",
+          "tags": [
+            "Dive Bar",
+            "Bar"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:dive_bar",
+            "urn:tag:genre:place:bar"
+          ],
+          "why": [
+            "Big Thief (70%)",
+            "Waxahatchee (60%)",
+            "Adrianne Lenker (55%)"
+          ],
+          "lat": 38.0529,
+          "lon": -84.5038,
+          "region": "KY"
+        },
+        {
+          "id": "A8C44312-F3B8-45AB-BBA8-B25EBAB9F0E0",
+          "name": "Cheapside Bar & Grill",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.7,
+          "popularity": 0.55,
+          "rating": 4.4,
+          "price_level": 2,
+          "address": "131 Cheapside, Lexington, KY 40507",
+          "city": "Lexington",
+          "description": "Downtown courthouse-square bar with a big patio and a young, music-minded crowd.",
+          "tags": [
+            "Dive Bar",
+            "Bar"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:dive_bar",
+            "urn:tag:genre:place:bar"
+          ],
+          "why": [
+            "Big Thief (57%)",
+            "Waxahatchee (48%)",
+            "Adrianne Lenker (44%)"
+          ],
+          "lat": 38.048,
+          "lon": -84.496,
+          "region": "KY"
+        }
+      ]
+    },
+    {
+      "kind": "vintage shop",
+      "places": [
+        {
+          "id": "A20D5441-DD4F-49ED-825E-FE3B76EFAE8E",
+          "name": "Cold Collection",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.85,
+          "popularity": 0.36,
+          "rating": 4.5,
+          "price_level": 2,
+          "address": "367 Southland Dr, Lexington, KY 40503",
+          "city": "Lexington",
+          "description": "Southland Drive shop of vintage clothing, records, rugs and home furnishings.",
+          "tags": [
+            "Vintage Store"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:vintage_store"
+          ],
+          "why": [
+            "Big Thief (71%)",
+            "Waxahatchee (60%)",
+            "Adrianne Lenker (56%)"
+          ],
+          "lat": 38.0177,
+          "lon": -84.5169,
+          "region": "KY"
+        },
+        {
+          "id": "EBEB7203-5734-4256-8E9E-A30E638CB30E",
+          "name": "Street Scene",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.71,
+          "popularity": 0.3,
+          "rating": 4.5,
+          "price_level": 2,
+          "address": "Lexington, KY",
+          "city": "Lexington",
+          "description": "Vintage shop focused on 1950s through 1970s clothing, jewelry, barware and furniture.",
+          "tags": [
+            "Vintage Store"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:vintage_store"
+          ],
+          "why": [
+            "Big Thief (58%)",
+            "Waxahatchee (49%)",
+            "Adrianne Lenker (45%)"
+          ],
+          "lat": 38.0406,
+          "lon": -84.5037,
+          "region": "KY"
+        }
+      ]
+    }
+  ],
+  "who": {
+    "scope": "comps-overall",
+    "age": {
+      "24_and_younger": 0.23,
+      "25_to_29": 0.49,
+      "30_to_34": 0.51,
+      "35_to_44": 0.32,
+      "45_to_54": 0.06,
+      "55_and_older": -0.23
+    },
+    "gender": {
+      "female": 0.24,
+      "male": -0.1
+    },
+    "strongestAge": "30_to_34",
+    "suggestions": [
+      "Fans of your comps overall index highest at 30 to 34; consider leading with rooms and promo partners that program for that age range.",
+      "The under-25 band is also positive; consider asking rooms whether an all-ages or early show is an option.",
+      "The 55-and-older band indexes low; consider a later set time if the room offers a choice."
+    ]
+  },
+  "localColor": {
+    "brands": [
+      {
+        "id": "1E64D934-320B-4FB7-921B-58DB10BE96EA",
+        "name": "Birkenstock",
+        "cityAffinity": 0.83,
+        "homeAffinity": 0.716,
+        "delta": 0.114
+      },
+      {
+        "id": "F4D0AB50-60CD-4B17-BF5B-3224D267EB2B",
+        "name": "Allbirds",
+        "cityAffinity": 0.67,
+        "homeAffinity": 0.605,
+        "delta": 0.065
+      },
+      {
+        "id": "CA29596C-A583-4C49-8B03-1FCE2A53EA05",
+        "name": "Carhartt",
+        "cityAffinity": 0.686,
+        "homeAffinity": 0.624,
+        "delta": 0.062
+      },
+      {
+        "id": "47D5D80A-D8DA-4F3A-A4DF-A99635B1BCB7",
+        "name": "Warby Parker",
+        "cityAffinity": 0.718,
+        "homeAffinity": 0.679,
+        "delta": 0.039
+      },
+      {
+        "id": "7C8DF92F-D4B9-45DE-9144-A0E36C0C6897",
+        "name": "REI",
+        "cityAffinity": 0.878,
+        "homeAffinity": 0.845,
+        "delta": 0.033
+      }
+    ],
+    "shows": [
+      {
+        "id": "656078D4-7298-439C-B517-153F264014E1",
+        "name": "Somebody Somewhere",
+        "cityAffinity": 0.878,
+        "homeAffinity": 0.873,
+        "delta": 0.005
+      },
+      {
+        "id": "F504DFDE-7861-486D-9F48-C6422671C57A",
+        "name": "Reservation Dogs",
+        "cityAffinity": 0.894,
+        "homeAffinity": 0.892,
+        "delta": 0.002
+      },
+      {
+        "id": "5AF4B18C-7F2E-4D54-B946-C924DBBC0E98",
+        "name": "Fleabag",
+        "cityAffinity": 0.91,
+        "homeAffinity": 0.91,
+        "delta": 0
+      },
+      {
+        "id": "BAF90461-5DF2-4491-9523-F0057E492CF9",
+        "name": "Succession",
+        "cityAffinity": 0.718,
+        "homeAffinity": 0.726,
+        "delta": -0.008
+      },
+      {
+        "id": "E3C6F04F-7F24-4D5C-88C7-79ACD9F57EAC",
+        "name": "The Bear",
+        "cityAffinity": 0.846,
+        "homeAffinity": 0.855,
+        "delta": -0.009
+      }
+    ],
+    "homeAvailable": true
+  },
+  "locality": {
+    "id": "444DABB1-B62B-48E7-8E63-70BF9F0ADBED",
+    "name": "Lexington",
+    "label": "Lexington, KY",
+    "rank": 19,
+    "affinity": 0.818,
+    "state": "KY",
+    "population": 322564,
+    "lat": 38.0407,
+    "lon": -84.4583,
+    "overIndex": false,
+    "why": [
+      "Waxahatchee (61%)",
+      "Adrianne Lenker (46%)",
+      "Big Thief (37%)"
+    ],
+    "topRoom": {
+      "id": "444DABB1-B62B-48E7-8E63-70BF9F0ADBED",
+      "name": "The Burl",
+      "affinity": 0.818,
+      "why": [
+        "Waxahatchee (61%)",
+        "Adrianne Lenker (46%)",
+        "Big Thief (37%)"
+      ]
+    }
+  },
+  "card": {
+    "summary": "Lexington ranks #19 nationally for fans of your comps, with a locality affinity of 0.818, led by Waxahatchee (61%) ahead of Adrianne Lenker (46%) and Big Thief (37%). It does not meet the over-index mark because its population is above 250,000, and The Burl is the top-ranked room in town.",
+    "rooms_note": "Start with The Burl, the top room at 0.92 affinity, where Big Thief (77%) drives the match, with Manchester Music Hall (0.88) close behind.",
+    "promo_note": "Record stores lead the promo list, so start with POPS Resale (0.88 affinity, Big Thief 74%), with Wild Fig Books & Coffee (0.87) as a strong bookstore follow-up.",
+    "who_note": "Fans of your comps overall index highest at 30 to 34 (0.51), with 25 to 29 close behind (0.49), so consider leading with rooms and partners that program for that range.",
+    "local_color_note": "Birkenstock shows the biggest lift over Richmond for fans of your comps around Lexington (0.83 vs. 0.716, +0.114), with Carhartt also up (+0.062), which hints that an earthy, workwear-leaning look could suit the poster and merch table.",
+    "promo_copy": [
+      "Big Thief and Waxahatchee fans in Lexington, new songs are headed your way.",
+      "Love Adrianne Lenker? Lexington, there's a tour stop you'll want to hear about."
+    ],
+    "caution": "These are aggregate taste affinities, not attendance or sales data, so confirm capacity, age policy, and availability directly with each room."
+  },
+  "receipts": [
+    {
+      "id": "rmv3hx4j7-225",
+      "tool": "find_rooms",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Lexington%2C+KY&filter.location.radius=15000&filter.tags=urn%3Atag%3Acategory%3Aplace%3Alive_music_venue%2Curn%3Atag%3Agenre%3Aplace%3Abar%3Alive_music%2Curn%3Atag%3Agenre%3Aplace%3Aconcert_hall%2Curn%3Atag%3Agenre%3Aplace%3Amusic_venue&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=8&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 8,
+      "top": [
+        {
+          "name": "The Burl",
+          "affinity": 0.92
+        },
+        {
+          "name": "Manchester Music Hall",
+          "affinity": 0.88
+        },
+        {
+          "name": "Cosmic Charlie's",
+          "affinity": 0.84
+        }
+      ]
+    },
+    {
+      "id": "rmv3hx4j7-226",
+      "tool": "who_shows_up",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Ademographics&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 3,
+      "top": []
+    },
+    {
+      "id": "rmv3hx4j7-227",
+      "tool": "local_color",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Abrand&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Lexington%2C+KY&signal.location.radius=25000&take=20",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 20,
+      "top": [
+        {
+          "name": "Patagonia",
+          "affinity": 0.91
+        },
+        {
+          "name": "Subaru",
+          "affinity": 0.894
+        },
+        {
+          "name": "REI",
+          "affinity": 0.878
+        }
+      ]
+    },
+    {
+      "id": "rmv3hx4j7-228",
+      "tool": "local_color",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Atv_show&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Lexington%2C+KY&signal.location.radius=25000&take=20",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 20,
+      "top": [
+        {
+          "name": "Fleabag",
+          "affinity": 0.91
+        },
+        {
+          "name": "Reservation Dogs",
+          "affinity": 0.894
+        },
+        {
+          "name": "Somebody Somewhere",
+          "affinity": 0.878
+        }
+      ]
+    },
+    {
+      "id": "rmv3hx4j7-229",
+      "tool": "local_color",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Abrand&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Richmond%2C+VA&signal.location.radius=25000&take=20",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 20,
+      "top": [
+        {
+          "name": "Patagonia",
+          "affinity": 0.9
+        },
+        {
+          "name": "Subaru",
+          "affinity": 0.882
+        },
+        {
+          "name": "Trader Joe's",
+          "affinity": 0.863
+        }
+      ]
+    },
+    {
+      "id": "rmv3hx4j7-230",
+      "tool": "local_color",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Atv_show&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Richmond%2C+VA&signal.location.radius=25000&take=20",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 20,
+      "top": [
+        {
+          "name": "Fleabag",
+          "affinity": 0.91
+        },
+        {
+          "name": "Reservation Dogs",
+          "affinity": 0.892
+        },
+        {
+          "name": "Somebody Somewhere",
+          "affinity": 0.873
+        }
+      ]
+    },
+    {
+      "id": "rmv3hx4j7-231",
+      "tool": "find_promo_partners",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Lexington%2C+KY&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Arecord_store&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 2,
+      "top": [
+        {
+          "name": "POPS Resale",
+          "affinity": 0.88
+        },
+        {
+          "name": "Better Days Records",
+          "affinity": 0.74
+        }
+      ]
+    },
+    {
+      "id": "rmv3hx4j7-232",
+      "tool": "find_promo_partners",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Lexington%2C+KY&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Acafe%2Curn%3Atag%3Agenre%3Aplace%3Acoffee_shop&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 2,
+      "top": [
+        {
+          "name": "Magic Beans Coffee Roasters",
+          "affinity": 0.86
+        },
+        {
+          "name": "Common Grounds Coffee House",
+          "affinity": 0.72
+        }
+      ]
+    },
+    {
+      "id": "rmv3hx4j7-233",
+      "tool": "find_promo_partners",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Lexington%2C+KY&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abookstore&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 2,
+      "top": [
+        {
+          "name": "Wild Fig Books & Coffee",
+          "affinity": 0.87
+        },
+        {
+          "name": "Joseph-Beth Booksellers",
+          "affinity": 0.7
+        }
+      ]
+    },
+    {
+      "id": "rmv3hx4j7-234",
+      "tool": "find_promo_partners",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Lexington%2C+KY&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abar%2Curn%3Atag%3Agenre%3Aplace%3Adive_bar&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 2,
+      "top": [
+        {
+          "name": "The Green Lantern Bar",
+          "affinity": 0.84
+        },
+        {
+          "name": "Cheapside Bar & Grill",
+          "affinity": 0.7
+        }
+      ]
+    },
+    {
+      "id": "rmv3hx4j7-235",
+      "tool": "find_promo_partners",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Lexington%2C+KY&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Athrift_store%2Curn%3Atag%3Agenre%3Aplace%3Avintage_store&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 2,
+      "top": [
+        {
+          "name": "Cold Collection",
+          "affinity": 0.85
+        },
+        {
+          "name": "Street Scene",
+          "affinity": 0.71
+        }
+      ]
+    }
+  ]
+}

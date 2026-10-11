@@ -1,0 +1,135 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_promo_partners",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?feature.explainability=true&filter.location.query=Washington%2C%20DC&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Acafe%2Curn%3Atag%3Agenre%3Aplace%3Acoffee_shop&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Washington, DC",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:genre:place:cafe,urn:tag:genre:place:coffee_shop",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "sort_by": "affinity",
+      "take": 2,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "B05CD9E1-F084-4D20-87D7-386890D2BD13",
+          "name": "Qualia Coffee",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.5,
+          "location": {
+            "lat": 38.9399,
+            "lon": -77.0236
+          },
+          "properties": {
+            "address": "3917 Georgia Ave NW, Washington, DC 20011",
+            "geocode": {
+              "name": "Washington",
+              "city": "Washington",
+              "admin1_region": "DC",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 2,
+            "description": "Petworth roaster with a quiet back room and a community bulletin board."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:coffee_shop",
+              "name": "Coffee Shop",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:genre:place:cafe",
+              "name": "Cafe",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.88,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.808
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.851
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.798
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "678F761C-776C-4EFC-88A9-3B3C00697C3C",
+          "name": "Peregrine Espresso",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.55,
+          "location": {
+            "lat": 38.8869,
+            "lon": -76.9982
+          },
+          "properties": {
+            "address": "660 Pennsylvania Ave SE, Washington, DC 20003",
+            "geocode": {
+              "name": "Washington",
+              "city": "Washington",
+              "admin1_region": "DC",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 2,
+            "description": "Capitol Hill espresso bar with a steady neighborhood regulars crowd."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:coffee_shop",
+              "name": "Coffee Shop",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:genre:place:cafe",
+              "name": "Cafe",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.81,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.761
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.845
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.811
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

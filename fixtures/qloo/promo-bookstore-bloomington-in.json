@@ -1,0 +1,125 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_promo_partners",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?feature.explainability=true&filter.location.query=Bloomington%2C%20IN&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abookstore&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Bloomington, IN",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:genre:place:bookstore",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "sort_by": "affinity",
+      "take": 2,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "3DA86953-5342-4B99-9BE1-5ABA23CDE8F1",
+          "name": "Caveat Emptor",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.52,
+          "location": {
+            "lat": 39.165,
+            "lon": -86.526
+          },
+          "properties": {
+            "description": "Used and rare bookstore on the courthouse square with creaky floors and a loyal, literary crowd.",
+            "address": "112 N Walnut St, Bloomington, IN 47404",
+            "business_rating": 4.8,
+            "price_level": 2,
+            "geocode": {
+              "name": "Bloomington",
+              "city": "Bloomington",
+              "admin1_region": "IN",
+              "country_code": "US"
+            }
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:bookstore",
+              "name": "Bookstore",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.81,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.66
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.65
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.7
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "19D4B882-6054-4EBC-BDDE-550070866D1C",
+          "name": "Morgenstern Books",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.55,
+          "location": {
+            "lat": 39.165,
+            "lon": -86.526
+          },
+          "properties": {
+            "description": "Independent bookstore on the east side with a packed events calendar and a cafe for reading nights.",
+            "address": "849 S Auto Mall Rd, Bloomington, IN 47401",
+            "business_rating": 4.7,
+            "price_level": 2,
+            "geocode": {
+              "name": "Bloomington",
+              "city": "Bloomington",
+              "admin1_region": "IN",
+              "country_code": "US"
+            }
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:bookstore",
+              "name": "Bookstore",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.79,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.64
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.63
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.67
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

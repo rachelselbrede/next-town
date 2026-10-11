@@ -1,0 +1,125 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_promo_partners",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?feature.explainability=true&filter.location.query=Columbus%2C%20OH&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abookstore&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Columbus, OH",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:genre:place:bookstore",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "sort_by": "affinity",
+      "take": 2,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "FEFEB3C2-1345-4DB6-AB1A-85108C8583BB",
+          "name": "The Book Loft of German Village",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.46,
+          "location": {
+            "lat": 39.961,
+            "lon": -82.999
+          },
+          "properties": {
+            "description": "Thirty-two rooms of books; the events board sees every neighborhood walker.",
+            "address": "631 S 3rd St, Columbus, OH 43206",
+            "geocode": {
+              "name": "Columbus",
+              "city": "Columbus",
+              "admin1_region": "OH",
+              "country_code": "US"
+            },
+            "business_rating": 4.42,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:bookstore",
+              "name": "Bookstore",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.78,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.67
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.61
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.51
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "8922B1BA-A06C-42DB-A8C1-DA47A300E4F2",
+          "name": "Prologue Bookshop",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.77,
+          "location": {
+            "lat": 39.961,
+            "lon": -82.999
+          },
+          "properties": {
+            "description": "Short North independent with an evening reading series.",
+            "address": "841 N High St, Columbus, OH 43215",
+            "geocode": {
+              "name": "Columbus",
+              "city": "Columbus",
+              "admin1_region": "OH",
+              "country_code": "US"
+            },
+            "business_rating": 4.62,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:bookstore",
+              "name": "Bookstore",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.75,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.65
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.53
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.47
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

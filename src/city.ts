@@ -1,5 +1,7 @@
-// The city playbook: one page per stop, built from five parallel Qloo calls for the city plus two
-// for the home market (so "local color" can show what this market's fans love MORE than home).
+// The city playbook: one page per stop, built from parallel Qloo calls: rooms, five promo groups
+// (one call per kind), the brands and TV shows for the city and for the home market (so "local
+// color" can show what this market's fans love MORE than home), plus one demographics read for
+// fans of the comps overall (urn:demographics takes no location).
 // The pure helpers (groupPromo, summarizeDemographics, localColorDeltas, fallbackCopy) are exported
 // and unit-tested; buildPlaybook wires them together and emits status/receipt/playbook events.
 
@@ -10,55 +12,30 @@ import { entitiesOf, normalizeAll } from "./qloo.ts";
 import type { AppEvent, CardCopy, Comp, Delta, Demographics, Locality, Playbook, PromoGroup, Receipt } from "./types.ts";
 import * as Q from "./queries.ts";
 import { canonicalUrl } from "./canonical.ts";
-import { toReceipt } from "./tools.ts";
+import { tagsFor, toReceipt } from "./tools.ts";
 import { CARD_SYSTEM } from "./copy.ts";
-import tagsFile from "../data/tags.json" with { type: "json" };
-
-const TAG_GROUPS = tagsFile.groups as Record<string, string[]>;
-const tagsFor = (groups: readonly string[]) => groups.flatMap((g) => TAG_GROUPS[g] ?? []);
 
 // ---- Promo partners: five groups, each a kind of shop that will hang a poster ----
 
-// Words that place a venue in a promo group, checked against its subtype and tag names.
-const PROMO_KEYWORDS: Record<string, string[]> = {
-  record_store: ["record"],
-  coffee_shop: ["coffee", "cafe", "café", "espresso"],
-  bookstore: ["book"],
-  dive_bar: ["dive", "bar", "pub", "tavern"],
-  vintage: ["vintage", "thrift", "consignment", "secondhand"],
-};
-const MAX_PER_GROUP_FALLBACK = 2;
-
-function promoKindOf(place: Rec): string | undefined {
-  const haystack = [place.subtype ?? "", ...place.tags].map((s) => s.toLowerCase().replace(/[_-]+/g, " "));
-  for (const kind of Q.PROMO_TAG_GROUPS) {
-    if (haystack.some((h) => PROMO_KEYWORDS[kind].some((w) => h.includes(w)))) return kind;
-  }
-  return undefined;
-}
-
-// Assign each place to a group by subtype or tags. Places that match nothing are dealt round-robin
-// into the emptiest groups (up to 2 each) so a thin Qloo result still fills the card. Every group is
-// then capped at its two strongest places: that is what the query asks Qloo for (diversify.take=2)
-// and what the card has room for, even when a response (or a tag-based match) returns more.
+// One Qloo call per kind returns up to two places; the kind is known from the call, not guessed
+// from a subtype. A place that comes back for two kinds (a bar that is also a record store) stays
+// in the first group that returned it. Each group is sorted by affinity and capped at two.
 const MAX_PER_GROUP = 2;
-export function groupPromo(places: Rec[]): PromoGroup[] {
-  const buckets = new Map<string, Rec[]>(Q.PROMO_TAG_GROUPS.map((k) => [k, []]));
-  const leftovers: Rec[] = [];
-  for (const p of places) {
-    const kind = promoKindOf(p);
-    if (kind) buckets.get(kind)!.push(p);
-    else leftovers.push(p);
-  }
-  for (const p of leftovers) {
-    const target = [...buckets.entries()].filter(([, v]) => v.length < MAX_PER_GROUP_FALLBACK).sort((a, b) => a[1].length - b[1].length)[0];
-    if (!target) break;
-    target[1].push(p);
-  }
+export function groupPromo(byGroup: Array<{ group: string; places: Rec[] }>): PromoGroup[] {
+  const seen = new Set<string>();
   const byAffinity = (a: Rec, b: Rec) => (b.affinity ?? 0) - (a.affinity ?? 0);
-  return [...buckets.entries()]
-    .filter(([, v]) => v.length > 0)
-    .map(([kind, v]) => ({ kind: Q.PROMO_KIND_LABEL[kind] ?? kind, places: v.sort(byAffinity).slice(0, MAX_PER_GROUP) }));
+  const out: PromoGroup[] = [];
+  for (const { group, places } of byGroup) {
+    const fresh: Rec[] = [];
+    for (const p of [...places].sort(byAffinity)) {
+      if (seen.has(p.id)) continue;
+      seen.add(p.id);
+      fresh.push(p);
+      if (fresh.length === MAX_PER_GROUP) break;
+    }
+    if (fresh.length) out.push({ kind: Q.PROMO_KIND_LABEL[group] ?? group, places: fresh });
+  }
+  return out;
 }
 
 // ---- Who shows up: average the age/gender affinities across comps ----
@@ -100,12 +77,13 @@ export function summarizeDemographics(body: any): Demographics | null {
   if (ranked.length === 0) return null;
   const [strongestAge, strongestValue] = ranked[0];
 
-  // Suggestions, not findings: the data is an affinity index for fans of the comps, not a headcount.
+  // Suggestions, not findings: the data is an affinity index for fans of the comps overall (Qloo's
+  // demographics read takes no location), not a headcount for this city.
   const suggestions: string[] = [];
   if (strongestValue > 0) {
-    suggestions.push(`Fans of your comps here index highest at ${ageBandLabel(strongestAge)}; consider pitching rooms and promo partners that already draw that crowd.`);
+    suggestions.push(`Fans of your comps overall index highest at ${ageBandLabel(strongestAge)}; consider leading with rooms and promo partners that program for that age range.`);
   } else {
-    suggestions.push("No age band indexes positively here; consider treating this as a build-from-scratch market and leaning on the comps' names in promo.");
+    suggestions.push("No age band indexes positively for fans of your comps overall; consider treating this as a build-from-scratch market and leaning on the comps' names in promo.");
   }
   const young = age["24_and_younger"];
   if (typeof young === "number" && young >= 0.15 && strongestAge !== "24_and_younger") {
@@ -119,13 +97,14 @@ export function summarizeDemographics(body: any): Demographics | null {
   const m = gender.male;
   if (typeof f === "number" && typeof m === "number" && Math.abs(f - m) >= 0.2 && suggestions.length < 3) {
     const lean = f > m ? "women" : "men";
-    suggestions.push(`Affinity leans toward ${lean} among fans of your comps here; consider that when choosing which promo partner gets the poster first.`);
+    suggestions.push(`Affinity leans toward ${lean} among fans of your comps overall; consider that when choosing which promo partner gets the poster first.`);
   }
-  return { age, gender, strongestAge, suggestions: suggestions.slice(0, 3) };
+  return { scope: "comps-overall", age, gender, strongestAge, suggestions: suggestions.slice(0, 3) };
 }
 
 // ---- Local color: what this market's fans love more than the home market's ----
 
+// `homeBody` may be null/undefined when the home call failed: every delta is then null.
 export function localColorDeltas(cityBody: any, homeBody: any): Delta[] {
   const homeAffinity = new Map<string, number>();
   for (const e of entitiesOf(homeBody)) {
@@ -164,6 +143,8 @@ type PlaybookData = Omit<Playbook, "card" | "receipts">;
 const pct = (x: number | undefined) => (typeof x === "number" ? `${Math.round(x * 100)}%` : "n/a");
 const joinNames = (names: string[]) => (names.length <= 1 ? names.join("") : `${names.slice(0, -1).join(", ")} and ${names.at(-1)}`);
 
+export const OVER_INDEX_MEANS = "population under 250,000 and a national affinity rank of 20 or better (not a comparison with home)";
+
 // Templated copy built only from the data, used when Claude is unavailable or its call fails.
 export function fallbackCopy(p: PlaybookData): CardCopy {
   const comps = joinNames(p.comps.map((c) => c.name)) || "your comps";
@@ -172,10 +153,11 @@ export function fallbackCopy(p: PlaybookData): CardCopy {
   const firstPromo = p.promo.find((g) => g.places.length);
   const topBrand = p.localColor.brands[0];
   const topShow = p.localColor.shows[0];
+  const homeAvailable = p.localColor.homeAvailable !== false;
 
   const whyRank = loc
-    ? `fans of ${comps} rank it #${loc.rank} in the US with a ${pct(loc.affinity)} affinity${loc.overIndex ? ", and it is a town under 250k where that audience over-indexes" : ""}`
-    : `fans of ${comps} rank it highly in Qloo's locality insights`;
+    ? `its best-matching room${loc.topRoom?.name ? ` (${loc.topRoom.name})` : ""} ranks #${loc.rank} nationally for fans of ${comps} with a ${pct(loc.affinity)} affinity${loc.overIndex ? ", and it is an over-index town: under 250,000 people with a national rank of 20 or better" : ""}`
+    : `fans of ${comps} rank a room there highly in Qloo's place insights`;
   const summary = `${p.city} is on the route because ${whyRank}. Qloo returned ${p.rooms.length} room${p.rooms.length === 1 ? "" : "s"} and ${p.promo.reduce((n, g) => n + g.places.length, 0)} promo partners nearby for that audience.`;
 
   const rooms_note = topRoom
@@ -187,14 +169,19 @@ export function fallbackCopy(p: PlaybookData): CardCopy {
     : "No promo partners came back for this city; a record store or coffee shop near the room is still the usual first ask.";
 
   const who_note = p.who
-    ? `Fans of ${comps} here index highest at ${ageBandLabel(p.who.strongestAge)}; ${p.who.suggestions[0]?.replace(/^Fans of your comps here index highest at [^;]+; /, "") ?? "consider that when picking the room."}`
-    : "Qloo returned no demographic read for this market, so plan the show without assumptions about age.";
+    ? `Fans of ${comps} overall (Qloo's demographics read is not per city) index highest at ${ageBandLabel(p.who.strongestAge)}; ${p.who.suggestions[0]?.replace(/^Fans of your comps overall index highest at [^;]+; /, "") ?? "consider that when picking the room."}`
+    : "Qloo returned no demographic read for fans of your comps, so plan the show without assumptions about age.";
 
   // Only call it a lift over home when we actually have a home affinity to compare against.
   const lifted = [topBrand, topShow].filter((d): d is Delta => !!d && d.delta !== null && d.delta > 0);
   const unranked = [topBrand, topShow].filter((d): d is Delta => !!d && d.delta === null);
   let local_color_note: string;
-  if (lifted.length) {
+  if (!homeAvailable) {
+    const bits = [topBrand, topShow].filter((d): d is Delta => !!d).map((d) => `${d.name} (${pct(d.cityAffinity)})`);
+    local_color_note = bits.length
+      ? `The home comparison is unavailable for this run (the ${p.home} calls did not return), so these are simply what fans of ${comps} around ${p.city} rank highest: ${joinNames(bits)}.`
+      : `The home comparison is unavailable for this run (the ${p.home} calls did not return), and no brands or shows came back for ${p.city}.`;
+  } else if (lifted.length) {
     const bits = lifted.map((d) => `${d.name} (+${Math.round((d.delta as number) * 100)} points vs. ${p.home})`);
     local_color_note = `Fans of ${comps} around ${p.city} over-index on ${joinNames(bits)} compared with ${p.home}; a nod to that on the poster or merch table will land.`;
   } else if (unranked.length) {
@@ -236,19 +223,38 @@ function isCardCopy(x: any): x is CardCopy {
   return !!x && typeof x === "object" && keys.every((k) => typeof x[k] === "string" && x[k].trim()) && Array.isArray(x.promo_copy) && x.promo_copy.every((s: unknown) => typeof s === "string");
 }
 
-// What Claude sees: only the fields it is allowed to cite, trimmed so the call stays small.
-function cardPayload(p: PlaybookData) {
-  const place = (r: Rec) => ({ name: r.name, kind: r.subtype?.split(":").at(-1), affinity: r.affinity, why: r.why, rating: r.rating, description: r.description });
+// What Claude sees: only the fields it is allowed to cite, trimmed so the call stays small, with
+// each number labeled by what it actually means so the copy cannot drift into a bigger claim.
+export function cardPayload(p: PlaybookData) {
+  const place = (r: Rec, kind?: string) => ({ name: r.name, ...(kind ? { kind } : {}), affinity: r.affinity, why: r.why, rating: r.rating, description: r.description });
   const color = (d: Delta) => ({ name: d.name, cityAffinity: d.cityAffinity, homeAffinity: d.homeAffinity, deltaVsHome: d.delta });
+  const homeAvailable = p.localColor.homeAvailable !== false;
   return {
     city: p.city,
     home: p.home,
     comps: p.comps.map((c) => c.name),
-    locality: p.locality ? { rank: p.locality.rank, affinity: p.locality.affinity, population: p.locality.population, overIndex: p.locality.overIndex, why: p.locality.why } : null,
-    rooms: p.rooms.map(place),
-    promo: p.promo.map((g) => ({ kind: g.kind, places: g.places.map(place) })),
-    who: p.who ? { ...p.who, strongestAgeLabel: ageBandLabel(p.who.strongestAge) } : null,
-    localColor: { brands: p.localColor.brands.map(color), shows: p.localColor.shows.map(color) },
+    locality: p.locality
+      ? {
+          nationalAffinityRank: p.locality.rank,
+          affinity: p.locality.affinity,
+          population: p.locality.population,
+          overIndex: p.locality.overIndex,
+          overIndexMeans: OVER_INDEX_MEANS,
+          topRoom: p.locality.topRoom?.name,
+          why: p.locality.why,
+        }
+      : null,
+    rooms: p.rooms.map((r) => place(r)),
+    promo: p.promo.map((g) => ({ kind: g.kind, places: g.places.map((r) => place(r, g.kind)) })),
+    who: p.who
+      ? { ...p.who, scope: "fans of the comps overall, not this city (Qloo's demographics read takes no location)", strongestAgeLabel: ageBandLabel(p.who.strongestAge) }
+      : null,
+    localColor: {
+      homeAvailable,
+      ...(homeAvailable ? {} : { note: `The home comparison is unavailable for this run: the ${p.home} calls failed, so homeAffinity and deltaVsHome are null for every item. Say so; do not say an item is missing from the home list.` }),
+      brands: p.localColor.brands.map(color),
+      shows: p.localColor.shows.map(color),
+    },
   };
 }
 
@@ -281,6 +287,7 @@ export interface BuildPlaybookOptions {
   comps: Comp[];
   locality?: Locality;
   emit: (e: AppEvent | AgentEvent) => void;
+  signal?: AbortSignal; // the request's abort signal: cancels live Qloo calls when the reader leaves
 }
 
 export function noDemoDataCopy(city: string): CardCopy {
@@ -296,11 +303,11 @@ export function noDemoDataCopy(city: string): CardCopy {
 }
 
 export async function buildPlaybook(opts: BuildPlaybookOptions): Promise<Playbook> {
-  const { qloo, client, model, city, home, comps, locality, emit } = opts;
+  const { qloo, client, model, city, home, comps, locality, emit, signal } = opts;
   const compIds = comps.map((c) => c.id);
+  const names: Record<string, string> = Object.fromEntries(comps.filter((c) => c.id && c.name).map((c) => [c.id, c.name]));
   const comedy = comps.some((c) => c.type === "urn:entity:person");
   const venueTags = tagsFor(comedy ? Q.COMEDY_TAG_GROUPS : Q.VENUE_TAG_GROUPS);
-  const promoTags = tagsFor(Q.PROMO_TAG_GROUPS);
   const receipts: Receipt[] = [];
 
   // One request per canonical URL per playbook: when the city IS the home market the local-color
@@ -310,7 +317,7 @@ export async function buildPlaybook(opts: BuildPlaybookOptions): Promise<Playboo
     const key = canonicalUrl(q.path, q.params);
     let p = inflight.get(key);
     if (!p) {
-      p = qloo.get(q.path, q.params).then((r) => {
+      p = qloo.get(q.path, q.params, signal).then((r) => {
         const receipt = toReceipt(q.tool, r);
         receipts.push(receipt);
         emit({ type: "receipt", receipt });
@@ -323,34 +330,44 @@ export async function buildPlaybook(opts: BuildPlaybookOptions): Promise<Playboo
 
   const compNames = comps.map((c) => c.name).join(", ") || "your comps";
   emit({ type: "status", message: `Asking Qloo which rooms fans of ${compNames} love around ${city}...` });
-  emit({ type: "status", message: `Finding record stores, coffee shops, bookstores, dive bars, and vintage shops that audience ranks highly...` });
-  emit({ type: "status", message: `Reading the age and gender affinity for fans of your comps near ${city}...` });
+  emit({ type: "status", message: `Finding record stores, coffee shops, bookstores, dive bars, and vintage shops that audience ranks highly (one call per kind)...` });
+  emit({ type: "status", message: `Reading the age and gender affinity for fans of your comps overall (Qloo's demographics read is not per city)...` });
   emit({ type: "status", message: `Comparing the brands and TV shows they love against ${home}...` });
 
-  const [rooms, promo, who, cityBrands, cityShows, homeBrands, homeShows] = await Promise.all([
+  const promoGroups = [...Q.PROMO_TAG_GROUPS];
+  const [rooms, who, cityBrands, cityShows, homeBrands, homeShows, ...promoResults] = await Promise.all([
     ask(Q.findRooms(compIds, city, venueTags)),
-    ask(Q.findPromoPartners(compIds, city, promoTags)),
-    ask(Q.whoShowsUp(compIds, city)),
+    ask(Q.whoShowsUp(compIds)),
     ask(Q.localColor(compIds, city, "brand")),
     ask(Q.localColor(compIds, city, "tv_show")),
     ask(Q.localColor(compIds, home, "brand")),
     ask(Q.localColor(compIds, home, "tv_show")),
+    ...promoGroups.map((group) => ask(Q.findPromoGroup(compIds, city, tagsFor([group])))),
   ]);
 
+  // The home comparison only exists when both home calls answered; otherwise every delta is null
+  // and the copy says the comparison is unavailable (never "not in the home top list").
+  const homeAvailable = homeBrands.ok && homeShows.ok;
   const data: PlaybookData = {
     city,
     home,
     comps,
-    rooms: normalizeAll(rooms.body, Q.C.TAKE_ROOMS),
-    promo: groupPromo(normalizeAll(promo.body, Q.C.TAKE_PROMO)),
+    rooms: normalizeAll(rooms.body, Q.C.TAKE_ROOMS, names),
+    promo: groupPromo(promoGroups.map((group, i) => ({ group, places: normalizeAll(promoResults[i].body, Q.C.TAKE_PROMO, names) }))),
     who: summarizeDemographics(who.body),
-    localColor: { brands: localColorDeltas(cityBrands.body, homeBrands.body), shows: localColorDeltas(cityShows.body, homeShows.body) },
+    localColor: {
+      brands: localColorDeltas(cityBrands.body, homeAvailable ? homeBrands.body : null),
+      shows: localColorDeltas(cityShows.body, homeAvailable ? homeShows.body : null),
+      homeAvailable,
+    },
     ...(locality ? { locality } : {}),
   };
 
-  // Demo mode with no recorded fixture for any of this city's queries: there is no Qloo data to
-  // describe, so skip Claude and let the UI say plainly that the demo has nothing recorded here.
-  const noDemoData = qloo.mode === "demo" && [rooms, promo, who, cityBrands, cityShows].every((r) => !r.ok && r.status === 404);
+  // Demo mode with no recorded fixture for any of this city's own queries (the demographics read is
+  // shared and the home calls belong to home): there is no Qloo data to describe, so skip Claude and
+  // let the UI say plainly that the demo has nothing recorded here.
+  const cityCalls = [rooms, cityBrands, cityShows, ...promoResults];
+  const noDemoData = qloo.mode === "demo" && cityCalls.every((r) => !r.ok && r.status === 404);
   if (noDemoData) {
     const playbook: Playbook = { ...data, card: noDemoDataCopy(city), receipts, noDemoData: true };
     emit({ type: "playbook", playbook });
@@ -363,7 +380,8 @@ export async function buildPlaybook(opts: BuildPlaybookOptions): Promise<Playboo
     try {
       card = await writeCardCopy(client, model, data);
     } catch (err) {
-      emit({ type: "status", message: `Claude copy unavailable (${err instanceof Error ? err.message : String(err)}); using templated copy.` });
+      console.error("card copy failed:", err);
+      emit({ type: "status", message: "Claude copy unavailable right now; using templated copy." });
       card = fallbackCopy(data);
     }
   } else {

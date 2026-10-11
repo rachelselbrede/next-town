@@ -1,0 +1,125 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_promo_partners",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?feature.explainability=true&filter.location.query=Durham%2C%20NC&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Arecord_store&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Durham, NC",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:genre:place:record_store",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "sort_by": "affinity",
+      "take": 2,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "53101553-83ED-4A51-A94E-5DABDBA57321",
+          "name": "Bull City Records",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.55,
+          "location": {
+            "lat": 36.0067,
+            "lon": -78.923
+          },
+          "properties": {
+            "description": "Independent record shop with new and used vinyl and a steady in-store event calendar.",
+            "address": "1002 Broad St, Durham, NC 27705",
+            "geocode": {
+              "name": "Durham",
+              "city": "Durham",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:record_store",
+              "name": "Record Store",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.91,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.95
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.85
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.81
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "501E0CE5-E652-452A-B83E-F6263ABA5DAA",
+          "name": "Nice Price Books & Records",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.5,
+          "location": {
+            "lat": 35.997,
+            "lon": -78.901
+          },
+          "properties": {
+            "description": "Used books and vinyl shop with crates for browsing.",
+            "address": "Durham, NC 27701",
+            "geocode": {
+              "name": "Durham",
+              "city": "Durham",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:record_store",
+              "name": "Record Store",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.82,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.86
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.76
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.72
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

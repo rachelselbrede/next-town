@@ -1,0 +1,283 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "local_color",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Abrand&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Nashville%2C%20TN&signal.location.radius=25000&take=20",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:brand",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "signal.location.query": "Nashville, TN",
+      "signal.location.radius": 25000,
+      "take": 20
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "81FF9E58-99F1-4C63-9F2F-7D85FA8D6964",
+          "name": "Patagonia",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.85,
+          "properties": {
+            "description": "Outdoor apparel brand with a loud environmental mission."
+          },
+          "query": {
+            "affinity": 0.89
+          }
+        },
+        {
+          "entity_id": "71C078FF-47AA-457A-9A09-520E27E4A265",
+          "name": "Fender",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.8,
+          "properties": {
+            "description": "Electric guitar maker whose instruments show up on nearly every indie stage."
+          },
+          "query": {
+            "affinity": 0.871
+          }
+        },
+        {
+          "entity_id": "753F76AB-F8F3-4DB9-9076-5541D45875DF",
+          "name": "Trader Joe's",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.83,
+          "properties": {
+            "description": "Grocery chain known for cheap wine, frozen dumplings, and friendly cashiers."
+          },
+          "query": {
+            "affinity": 0.851
+          }
+        },
+        {
+          "entity_id": "493700E1-1876-4189-8124-3202626E9085",
+          "name": "Third Man Records",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.74,
+          "properties": {
+            "description": "Jack White's Nashville record label, vinyl pressing plant, and shop."
+          },
+          "query": {
+            "affinity": 0.832
+          }
+        },
+        {
+          "entity_id": "D44CBBD6-C6E8-455A-94B4-88B6A05B0591",
+          "name": "Blundstone",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.73,
+          "properties": {
+            "description": "Tasmanian pull-on boot brand beloved by people who walk a lot."
+          },
+          "query": {
+            "affinity": 0.812
+          }
+        },
+        {
+          "entity_id": "956D054E-15C9-4263-8312-0F59B10FFCAA",
+          "name": "Gibson",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.79,
+          "properties": {
+            "description": "Nashville-built guitar maker with a loyal singer-songwriter following."
+          },
+          "query": {
+            "affinity": 0.793
+          }
+        },
+        {
+          "entity_id": "7C8DF92F-D4B9-45DE-9144-A0E36C0C6897",
+          "name": "REI",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.79,
+          "properties": {
+            "description": "Outdoor gear co-op with a member dividend."
+          },
+          "query": {
+            "affinity": 0.773
+          }
+        },
+        {
+          "entity_id": "B33E9033-D54B-4B07-A439-14C0322C161D",
+          "name": "Levi's",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.77,
+          "properties": {
+            "description": "Denim brand with a vintage-friendly back catalog."
+          },
+          "query": {
+            "affinity": 0.754
+          }
+        },
+        {
+          "entity_id": "42822EE9-0CEC-419A-B3E2-CF7F82C4FF6A",
+          "name": "Bandcamp",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.7,
+          "properties": {
+            "description": "Artist-first music marketplace where indie fans buy records directly."
+          },
+          "query": {
+            "affinity": 0.734
+          }
+        },
+        {
+          "entity_id": "1E64D934-320B-4FB7-921B-58DB10BE96EA",
+          "name": "Birkenstock",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.66,
+          "properties": {
+            "description": "German sandal maker with a cork footbed and a cult following."
+          },
+          "query": {
+            "affinity": 0.715
+          }
+        },
+        {
+          "entity_id": "7A600BC3-6FDC-4911-B491-521473340A81",
+          "name": "Yazoo Brewing Company",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.62,
+          "properties": {
+            "description": "Nashville craft brewery that was one of the first in the city."
+          },
+          "query": {
+            "affinity": 0.695
+          }
+        },
+        {
+          "entity_id": "140AED23-2F58-4FA0-B636-C9D5D473E429",
+          "name": "Blue Bottle Coffee",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.6,
+          "properties": {
+            "description": "Third-wave coffee chain with minimalist cafes."
+          },
+          "query": {
+            "affinity": 0.676
+          }
+        },
+        {
+          "entity_id": "7C6060C9-9DBC-4FA4-B4E2-028826422BB5",
+          "name": "Yeti",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.66,
+          "properties": {
+            "description": "Cooler and drinkware brand popular with touring road-trippers."
+          },
+          "query": {
+            "affinity": 0.656
+          }
+        },
+        {
+          "entity_id": "47D5D80A-D8DA-4F3A-A4DF-A99635B1BCB7",
+          "name": "Warby Parker",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.61,
+          "properties": {
+            "description": "Direct-to-consumer eyewear brand with a try-at-home program."
+          },
+          "query": {
+            "affinity": 0.637
+          }
+        },
+        {
+          "entity_id": "4B613E78-315B-42B2-AE06-4431BF73EB2F",
+          "name": "Jeni's Splendid Ice Creams",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.63,
+          "properties": {
+            "description": "Small-batch ice cream with Nashville scoop shops."
+          },
+          "query": {
+            "affinity": 0.617
+          }
+        },
+        {
+          "entity_id": "2838B3D8-5C49-4AF5-AA58-12015277F479",
+          "name": "Doc Martens",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.49,
+          "properties": {
+            "description": "British boot brand with a permanent place in music subcultures."
+          },
+          "query": {
+            "affinity": 0.598
+          }
+        },
+        {
+          "entity_id": "03522EC7-88A8-4C62-8459-2668BA2886B7",
+          "name": "Jackalope Brewing Company",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.58,
+          "properties": {
+            "description": "Nashville craft brewery with a taproom on 8th Avenue."
+          },
+          "query": {
+            "affinity": 0.578
+          }
+        },
+        {
+          "entity_id": "79105CB8-2649-4620-A2F8-0B53D5B8A831",
+          "name": "Fjallraven",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.53,
+          "properties": {
+            "description": "Swedish outdoor brand known for the Kanken backpack."
+          },
+          "query": {
+            "affinity": 0.559
+          }
+        },
+        {
+          "entity_id": "CA29596C-A583-4C49-8B03-1FCE2A53EA05",
+          "name": "Carhartt",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.5,
+          "properties": {
+            "description": "Workwear brand adopted by musicians and carpenters alike."
+          },
+          "query": {
+            "affinity": 0.539
+          }
+        },
+        {
+          "entity_id": "F4D0AB50-60CD-4B17-BF5B-3224D267EB2B",
+          "name": "Allbirds",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.54,
+          "properties": {
+            "description": "Wool sneaker brand with a sustainability pitch."
+          },
+          "query": {
+            "affinity": 0.52
+          }
+        }
+      ]
+    }
+  }
+}

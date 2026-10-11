@@ -1,0 +1,263 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "local_color",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Abrand&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Charleston%2C%20SC&signal.location.radius=25000&take=20",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:brand",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "signal.location.query": "Charleston, SC",
+      "signal.location.radius": 25000,
+      "take": 20
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "81FF9E58-99F1-4C63-9F2F-7D85FA8D6964",
+          "name": "Patagonia",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.85,
+          "properties": {},
+          "query": {
+            "affinity": 0.91
+          }
+        },
+        {
+          "entity_id": "AC8120D3-F632-4821-92A3-70E5C4A3343C",
+          "name": "Subaru",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.825,
+          "properties": {},
+          "query": {
+            "affinity": 0.892
+          }
+        },
+        {
+          "entity_id": "753F76AB-F8F3-4DB9-9076-5541D45875DF",
+          "name": "Trader Joe's",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.775,
+          "properties": {},
+          "query": {
+            "affinity": 0.873
+          }
+        },
+        {
+          "entity_id": "7C8DF92F-D4B9-45DE-9144-A0E36C0C6897",
+          "name": "REI",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.8,
+          "properties": {},
+          "query": {
+            "affinity": 0.855
+          }
+        },
+        {
+          "entity_id": "D3CDFAF7-7613-48C0-93AF-0473184CF29A",
+          "name": "Firefly Distillery",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.74,
+          "properties": {
+            "description": "Wadmalaw Island distillery behind the sweet tea vodka that put the Lowcountry on bar shelves."
+          },
+          "query": {
+            "affinity": 0.836
+          }
+        },
+        {
+          "entity_id": "C8C0817C-C814-4B98-AAB7-658C144F0B6A",
+          "name": "Holy City Brewing",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.72,
+          "properties": {
+            "description": "North Charleston craft brewery named for the city's nickname, with a big taproom."
+          },
+          "query": {
+            "affinity": 0.818
+          }
+        },
+        {
+          "entity_id": "B33E9033-D54B-4B07-A439-14C0322C161D",
+          "name": "Levi's",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.65,
+          "properties": {},
+          "query": {
+            "affinity": 0.799
+          }
+        },
+        {
+          "entity_id": "D44CBBD6-C6E8-455A-94B4-88B6A05B0591",
+          "name": "Blundstone",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.7,
+          "properties": {},
+          "query": {
+            "affinity": 0.78
+          }
+        },
+        {
+          "entity_id": "459CCB82-1B42-4C79-B926-A2D089B8A6A0",
+          "name": "Palmetto Brewing Company",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.68,
+          "properties": {
+            "description": "One of Charleston's oldest craft breweries, known for Palmetto Amber Ale."
+          },
+          "query": {
+            "affinity": 0.762
+          }
+        },
+        {
+          "entity_id": "1E64D934-320B-4FB7-921B-58DB10BE96EA",
+          "name": "Birkenstock",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.675,
+          "properties": {},
+          "query": {
+            "affinity": 0.744
+          }
+        },
+        {
+          "entity_id": "79105CB8-2649-4620-A2F8-0B53D5B8A831",
+          "name": "Fjallraven",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.725,
+          "properties": {},
+          "query": {
+            "affinity": 0.725
+          }
+        },
+        {
+          "entity_id": "52039753-DD87-4F1B-8D75-3F55850FAD13",
+          "name": "La Colombe",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.6,
+          "properties": {},
+          "query": {
+            "affinity": 0.707
+          }
+        },
+        {
+          "entity_id": "EB7361E9-C6DF-4A56-A087-9A1471DBADAB",
+          "name": "Revelry Brewing Co.",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.6,
+          "properties": {
+            "description": "North Charleston brewery with a loyal local crowd and a rotating tap list."
+          },
+          "query": {
+            "affinity": 0.688
+          }
+        },
+        {
+          "entity_id": "59F63B7E-1F19-40D9-B9A5-A4FB8D53694C",
+          "name": "Callie's Hot Little Biscuit",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.63,
+          "properties": {
+            "description": "Charleston biscuit shop whose sausage-and-cheese biscuits draw lines."
+          },
+          "query": {
+            "affinity": 0.669
+          }
+        },
+        {
+          "entity_id": "47D5D80A-D8DA-4F3A-A4DF-A99635B1BCB7",
+          "name": "Warby Parker",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.575,
+          "properties": {},
+          "query": {
+            "affinity": 0.651
+          }
+        },
+        {
+          "entity_id": "140AED23-2F58-4FA0-B636-C9D5D473E429",
+          "name": "Blue Bottle Coffee",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.6,
+          "properties": {
+            "description": "Third-wave coffee chain with minimalist cafes."
+          },
+          "query": {
+            "affinity": 0.633
+          }
+        },
+        {
+          "entity_id": "D4041791-0E6F-41C9-879B-E8E7EFD59629",
+          "name": "Charleston Tea Garden",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.62,
+          "properties": {
+            "description": "Wadmalaw Island tea plantation, the only large commercial tea farm in North America."
+          },
+          "query": {
+            "affinity": 0.614
+          }
+        },
+        {
+          "entity_id": "CA29596C-A583-4C49-8B03-1FCE2A53EA05",
+          "name": "Carhartt",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.55,
+          "properties": {
+            "description": "Workwear brand adopted by musicians and carpenters alike."
+          },
+          "query": {
+            "affinity": 0.596
+          }
+        },
+        {
+          "entity_id": "67714350-F959-467C-8592-CFC6D7D5C4A9",
+          "name": "Harris Teeter",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.58,
+          "properties": {
+            "description": "Carolina-based grocery chain with a strong presence across the Lowcountry."
+          },
+          "query": {
+            "affinity": 0.577
+          }
+        },
+        {
+          "entity_id": "9B0814F4-F224-4518-951F-D49DC045596E",
+          "name": "Bulls Bay Saltworks",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.5,
+          "properties": {
+            "description": "Small-batch Lowcountry sea salt maker supplying local chefs."
+          },
+          "query": {
+            "affinity": 0.558
+          }
+        }
+      ]
+    }
+  }
+}

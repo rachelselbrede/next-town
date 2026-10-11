@@ -3,7 +3,10 @@
 // every click calls back into app.js, which re-routes locally (js/routing.js) and renders again.
 //
 // Contract: renderRouteRail(el, { route, localities, pinned, dropped, onPin, onDrop, onAdd, onOpenCity,
-//                                 obvious, showObvious, onToggleObvious })
+//                                 obvious, showObvious, onToggleObvious, addable? })
+//   addable  optional Set of labels the "Add a town" picker may offer (demo mode: towns with recorded answers)
+//
+// Drive figures are estimates: straight-line miles x 1.25 road factor at 55 mph (see routing.js).
 
 // The per-night framing shown beside the obvious-route comparison.
 export const FRAMING_SENTENCE =
@@ -23,10 +26,11 @@ export function renderRouteRail(el, opts) {
   }
 
   el.appendChild(renderSummary(route));
+  el.appendChild(h("p", { class: "rail-fine" }, "Drive times are straight-line estimates (x1.25 road factor at 55 mph)."));
   if (obvious) el.appendChild(renderObvious(obvious, showObvious, opts.onToggleObvious));
   el.appendChild(renderStops(route, pinned, opts));
   if (dropped.length) el.appendChild(renderDropped(dropped, opts.onPin));
-  el.appendChild(renderAdd(route, localities, dropped, opts.onAdd));
+  el.appendChild(renderAdd(route, localities, dropped, opts.onAdd, opts.addable));
   if (route.notes?.length) el.appendChild(renderNotes(route.notes));
 }
 
@@ -37,7 +41,7 @@ function renderSummary(route) {
   const stats = [
     [route.stops.length, "stops"],
     [Math.round(route.totalMiles).toLocaleString(), "miles"],
-    [fmtHours(route.totalHours), "driving"],
+    [fmtHours(route.totalHours), "est. driving"],
     [route.driveDays, route.driveDays === 1 ? "drive day" : "drive days"],
   ];
   for (const [value, label] of stats) {
@@ -75,7 +79,8 @@ function renderObvious(obvious, on, onToggle) {
   return card;
 }
 
-function renderStops(route, pinned, { onPin, onDrop, onOpenCity }) {
+function renderStops(route, pinned, { onPin, onDrop, onOpenCity, localities = [] }) {
+  const byLabel = new Map(localities.map((l) => [l.label, l]));
   const section = h("div", {});
   section.appendChild(h("div", { class: "rail-section-title" }, h("span", {}, "Your stops"), h("span", { class: "muted", style: "font-size:0.8rem;font-family:var(--font-body);font-weight:700" }, `${route.days} days from ${route.home?.label ?? "home"}`)));
   const list = h("ol", { class: "stop-list", "aria-label": "Route stops in order" });
@@ -92,17 +97,20 @@ function renderStops(route, pinned, { onPin, onDrop, onOpenCity }) {
     const name = h("button", { type: "button", class: "stop-name", title: "Open the playbook for this town" }, stop.label);
     name.addEventListener("click", () => onOpenCity?.(stop.label, stop));
     main.appendChild(name);
-    if (stop.overIndex) main.appendChild(h("span", { class: "badge-overindex", title: "Population under 250k and affinity rank in the top 20" }, "over-index"));
+    if (stop.overIndex) main.appendChild(h("span", { class: "badge-overindex", title: "Population under 250,000 and a national affinity rank of 20 or better" }, "over-index"));
     if (isPinned) main.appendChild(h("span", { class: "stop-pin-mark" }, "pinned"));
     li.appendChild(main);
 
     const meta = h("div", { class: "stop-meta" });
-    meta.appendChild(h("span", { class: "leg" }, stop.legHours ? `${fmtHours(stop.legHours)} from ${prevLabel}` : "first stop"));
+    meta.appendChild(h("span", { class: "leg" }, stop.legHours ? `${fmtHours(stop.legHours)} est. from ${prevLabel}` : "first stop"));
     if (stop.driveDay) meta.appendChild(h("span", { class: "drive-day" }, "drive day first"));
-    if (typeof stop.rank === "number") meta.appendChild(h("span", {}, `rank #${stop.rank}`));
+    if (typeof stop.rank === "number") meta.appendChild(h("span", { title: "National affinity rank for fans of your comps" }, `rank #${stop.rank}`));
     if (typeof stop.affinity === "number") meta.appendChild(h("span", {}, `${Math.round(stop.affinity * 100)}% affinity`));
     const pop = fmtPop(stop.population);
     if (pop) meta.appendChild(h("span", {}, `pop. ${pop}`));
+    // Markets come from venues: the room that put this town on the list.
+    const topRoom = stop.topRoom?.name || byLabel.get(stop.label)?.topRoom?.name;
+    if (topRoom) meta.appendChild(h("span", { class: "top-room", title: "The room whose affinity ranked this town" }, `top room: ${topRoom}`));
     li.appendChild(meta);
 
     const actions = h("div", { class: "stop-actions" });
@@ -138,14 +146,14 @@ function renderDropped(dropped, onPin) {
   return section;
 }
 
-function renderAdd(route, localities, dropped, onAdd) {
+function renderAdd(route, localities, dropped, onAdd, addable) {
   const inRoute = new Set(route.stops.map((s) => s.label));
   const droppedSet = new Set(dropped);
-  const candidates = localities.filter((l) => typeof l.lat === "number" && !inRoute.has(l.label) && !droppedSet.has(l.label));
+  const candidates = localities.filter((l) => typeof l.lat === "number" && !inRoute.has(l.label) && !droppedSet.has(l.label) && (!addable || addable.has(l.label)));
   const section = h("div", {});
   section.appendChild(h("div", { class: "rail-section-title" }, h("span", {}, "Add a town")));
   if (!candidates.length) {
-    section.appendChild(h("p", { class: "rail-empty" }, "Every ranked town is already on the route."));
+    section.appendChild(h("p", { class: "rail-empty" }, addable ? "Every town with recorded Qloo answers is already on the route." : "Every ranked town is already on the route."));
     return section;
   }
   const row = h("div", { class: "add-row" });
@@ -157,7 +165,7 @@ function renderAdd(route, localities, dropped, onAdd) {
   btn.addEventListener("click", () => onAdd?.(select.value));
   row.append(select, btn);
   section.appendChild(row);
-  section.appendChild(h("p", { class: "muted", style: "font-size:0.8rem;margin:6px 0 0" }, "Adding pins the town; the loop re-plans around it."));
+  section.appendChild(h("p", { class: "muted", style: "font-size:0.8rem;margin:6px 0 0" }, addable ? "Adding pins the town; the loop re-plans around it. The demo lists only towns with recorded Qloo answers." : "Adding pins the town; the loop re-plans around it."));
   return section;
 }
 

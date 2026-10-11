@@ -1,0 +1,467 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_rooms",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?feature.explainability=true&filter.location.query=Baltimore%2C%20MD&filter.location.radius=15000&filter.tags=urn%3Atag%3Acategory%3Aplace%3Alive_music_venue%2Curn%3Atag%3Agenre%3Aplace%3Abar%3Alive_music%2Curn%3Atag%3Agenre%3Aplace%3Aconcert_hall%2Curn%3Atag%3Agenre%3Aplace%3Amusic_venue&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=8",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Baltimore, MD",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:category:place:live_music_venue,urn:tag:genre:place:bar:live_music,urn:tag:genre:place:concert_hall,urn:tag:genre:place:music_venue",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "sort_by": "affinity",
+      "take": 8,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "7D51F9E0-F8BA-41C2-B91E-B9BDA46DA872",
+          "name": "Metro Gallery",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.62,
+          "location": {
+            "lat": 39.3086,
+            "lon": -76.6169
+          },
+          "properties": {
+            "description": "Former church-turned-art-space in Station North where indie and folk bills share the room with local visual artists.",
+            "address": "1700 N Charles St, Baltimore, MD 21201",
+            "geocode": {
+              "name": "Baltimore",
+              "city": "Baltimore",
+              "admin1_region": "MD",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 2,
+            "website": "https://www.metrogallery.org"
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.92,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.74
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.65
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.57
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "9C9447C5-505C-4B34-84F8-03505CD8F351",
+          "name": "Ottobar",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.61,
+          "location": {
+            "lat": 39.3178,
+            "lon": -76.6192
+          },
+          "properties": {
+            "description": "Remington club with a downstairs stage and an upstairs bar, long on indie bills.",
+            "address": "2549 N Howard St, Baltimore, MD 21218",
+            "geocode": {
+              "name": "Baltimore",
+              "city": "Baltimore",
+              "admin1_region": "MD",
+              "country_code": "US"
+            },
+            "business_rating": 4.4,
+            "price_level": 2,
+            "website": "https://theottobar.com"
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.88,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.72
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.61
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.55
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "43260DC6-0A0F-4026-9833-7ED42DDFDB6F",
+          "name": "Creative Alliance",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.55,
+          "location": {
+            "lat": 39.2842,
+            "lon": -76.567
+          },
+          "properties": {
+            "description": "Converted Patterson Theater in Highlandtown with a seated hall for songwriters and a gallery lobby.",
+            "address": "3134 Eastern Ave, Baltimore, MD 21224",
+            "geocode": {
+              "name": "Baltimore",
+              "city": "Baltimore",
+              "admin1_region": "MD",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 2,
+            "website": "https://creativealliance.org"
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.85,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.73
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.6
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.51
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "FC23A833-AB00-48D3-85EC-525BF7DAC017",
+          "name": "The Windup Space",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.44,
+          "location": {
+            "lat": 39.3088,
+            "lon": -76.6176
+          },
+          "properties": {
+            "description": "Small North Avenue bar and stage that books experimental, folk and DIY acts most nights.",
+            "address": "12 W North Ave, Baltimore, MD 21201",
+            "geocode": {
+              "name": "Baltimore",
+              "city": "Baltimore",
+              "admin1_region": "MD",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 1,
+            "website": "https://thewindupspace.com"
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:bar:live_music",
+              "name": "Live Music Bar",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.8,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.65
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.59
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.51
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "7D12C1A6-CB8A-44E8-941D-1E16C453B088",
+          "name": "Cat's Eye Pub",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.5,
+          "location": {
+            "lat": 39.2834,
+            "lon": -76.5929
+          },
+          "properties": {
+            "description": "Fells Point pub with live music seven nights, mostly Irish, roots and Americana.",
+            "address": "1730 Thames St, Baltimore, MD 21231",
+            "geocode": {
+              "name": "Baltimore",
+              "city": "Baltimore",
+              "admin1_region": "MD",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 2,
+            "website": "https://www.catseyepub.com"
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:bar:live_music",
+              "name": "Live Music Bar",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.76,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.63
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.5
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.44
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "869C34F8-AB40-4C66-A5C2-DB0FF93669CB",
+          "name": "The Lyric",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.72,
+          "location": {
+            "lat": 39.3081,
+            "lon": -76.6213
+          },
+          "properties": {
+            "description": "Restored 1894 concert hall in Mount Vernon, the city's room for sold-out singer-songwriters.",
+            "address": "140 W Mount Royal Ave, Baltimore, MD 21201",
+            "geocode": {
+              "name": "Baltimore",
+              "city": "Baltimore",
+              "admin1_region": "MD",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 3,
+            "website": "https://lyricbaltimore.com"
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:concert_hall",
+              "name": "Concert Hall",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.71,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.55
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.45
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.39
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "504CFD2B-EAF6-4A81-84DF-59334F317F24",
+          "name": "Baltimore Soundstage",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.58,
+          "location": {
+            "lat": 39.2866,
+            "lon": -76.6086
+          },
+          "properties": {
+            "description": "Standing-room hall near the Inner Harbor that runs touring indie and rock shows on weekends.",
+            "address": "124 Market Pl, Baltimore, MD 21202",
+            "geocode": {
+              "name": "Baltimore",
+              "city": "Baltimore",
+              "admin1_region": "MD",
+              "country_code": "US"
+            },
+            "business_rating": 4.3,
+            "price_level": 2,
+            "website": "https://baltimoresoundstage.com"
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.66,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.54
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.45
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.37
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "88C48AD5-8CE1-4EF9-B881-E97888428759",
+          "name": "Rams Head Live!",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.66,
+          "location": {
+            "lat": 39.2868,
+            "lon": -76.6082
+          },
+          "properties": {
+            "description": "Large multi-level Power Plant Live room for the bigger touring bills coming through the Mid-Atlantic.",
+            "address": "20 Market Pl, Baltimore, MD 21202",
+            "geocode": {
+              "name": "Baltimore",
+              "city": "Baltimore",
+              "admin1_region": "MD",
+              "country_code": "US"
+            },
+            "business_rating": 4.4,
+            "price_level": 2,
+            "website": "https://www.ramsheadlive.com"
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.61,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.48
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.36
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.34
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

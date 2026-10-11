@@ -1,6 +1,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { runAgent, type AgentEvent, type ToolDef } from "../src/agent.ts";
+import Anthropic from "@anthropic-ai/sdk";
+import { runAgent, friendlyErrorMessage, type AgentEvent, type ToolDef } from "../src/agent.ts";
 
 // A fake Anthropic client: each scripted turn is a list of content blocks the model "returns".
 function fakeClient(turns: Array<{ content: any[]; stop_reason: string }>) {
@@ -109,4 +110,69 @@ test("refusal ends the loop without running tools", async () => {
   const events = await collect(runAgent({ client, model: "m", system: "s", messages: [{ role: "user", content: "go" }], tools: [spy] }));
   assert.equal(ran, false);
   assert.equal(events.at(-1)?.type, "error");
+});
+
+// ---- error sanitization ----
+
+function failingClient(err: unknown) {
+  return {
+    messages: {
+      stream() {
+        return {
+          async *[Symbol.asyncIterator]() {
+            throw err;
+          },
+          async finalMessage() {
+            throw err;
+          },
+        };
+      },
+    },
+  } as any;
+}
+
+test("an Anthropic API error becomes a plain error event naming only the HTTP status", async () => {
+  const quiet = console.error;
+  console.error = () => {};
+  try {
+    const raw = new Anthropic.APIError(529, { type: "overloaded_error" }, "Overloaded req_abc123 (model m, key sk-ant-xyz)", undefined);
+    const events = await collect(runAgent({ client: failingClient(raw), model: "m", system: "s", messages: [{ role: "user", content: "go" }], tools: [echoTool] }));
+    assert.deepEqual(events, [
+      { type: "turn", n: 1 },
+      { type: "error", message: "Claude is unavailable right now (HTTP 529). The Hollow Pines sample still works." },
+    ]);
+
+    const plain = await collect(runAgent({ client: failingClient(new Error("socket hang up at 10.0.0.5")), model: "m", system: "s", messages: [{ role: "user", content: "go" }], tools: [echoTool] }));
+    assert.deepEqual(plain.at(-1), { type: "error", message: "Something went wrong on the server." });
+  } finally {
+    console.error = quiet;
+  }
+});
+
+test("a request cancelled by the caller ends quietly, with no error event", async () => {
+  const controller = new AbortController();
+  const client = {
+    messages: {
+      stream() {
+        return {
+          async *[Symbol.asyncIterator]() {
+            controller.abort();
+            throw Object.assign(new Error("aborted"), { name: "AbortError" });
+          },
+          async finalMessage() {
+            throw new Error("unreachable");
+          },
+        };
+      },
+    },
+  } as any;
+  const events = await collect(runAgent({ client, model: "m", system: "s", messages: [{ role: "user", content: "go" }], tools: [echoTool], signal: controller.signal }));
+  assert.deepEqual(events, [{ type: "turn", n: 1 }]);
+});
+
+test("friendlyErrorMessage never echoes the original text", () => {
+  assert.equal(friendlyErrorMessage(Object.assign(new Error("secret"), { status: 401 })), "Claude is unavailable right now (HTTP 401). The Hollow Pines sample still works.");
+  assert.equal(friendlyErrorMessage(new Anthropic.APIError(undefined, undefined, "Connection error.", undefined)), "Claude is unavailable right now. The Hollow Pines sample still works.");
+  assert.equal(friendlyErrorMessage(new Error("secret")), "Something went wrong on the server.");
+  assert.equal(friendlyErrorMessage("secret"), "Something went wrong on the server.");
 });

@@ -1,0 +1,459 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_rooms",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?feature.explainability=true&filter.location.query=Cincinnati%2C%20OH&filter.location.radius=15000&filter.tags=urn%3Atag%3Acategory%3Aplace%3Alive_music_venue%2Curn%3Atag%3Agenre%3Aplace%3Abar%3Alive_music%2Curn%3Atag%3Agenre%3Aplace%3Aconcert_hall%2Curn%3Atag%3Agenre%3Aplace%3Amusic_venue&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=8",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Cincinnati, OH",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:category:place:live_music_venue,urn:tag:genre:place:bar:live_music,urn:tag:genre:place:concert_hall,urn:tag:genre:place:music_venue",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "sort_by": "affinity",
+      "take": 8,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "C9DD8CF8-85F3-46D9-8FCD-FBDDB8CA93C4",
+          "name": "MOTR Pub",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.78,
+          "location": {
+            "lat": 39.1103,
+            "lon": -84.5146
+          },
+          "properties": {
+            "address": "1345 Main St, Cincinnati, OH 45202",
+            "geocode": {
+              "name": "Cincinnati",
+              "city": "Cincinnati",
+              "admin1_region": "OH",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 2,
+            "description": "Over-the-Rhine rock club with a small stage, cheap beer, and a long run of touring indie and folk acts."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.92,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.96
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.87
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.78
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "7ED53EC8-E95F-49DC-8164-6EAE83EF358B",
+          "name": "The Woodward Theater",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.75,
+          "location": {
+            "lat": 39.1107,
+            "lon": -84.5148
+          },
+          "properties": {
+            "address": "1404 Main St, Cincinnati, OH 45202",
+            "geocode": {
+              "name": "Cincinnati",
+              "city": "Cincinnati",
+              "admin1_region": "OH",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 2,
+            "description": "Restored 1913 movie house on Main Street that now books mid-size indie, folk, and rock tours."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.87,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.93
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.84
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.75
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "BF27CA07-E917-4034-96B8-05885DF12EF1",
+          "name": "Northside Yacht Club",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.62,
+          "location": {
+            "lat": 39.1596,
+            "lon": -84.5385
+          },
+          "properties": {
+            "address": "4231 Spring Grove Ave, Cincinnati, OH 45223",
+            "geocode": {
+              "name": "Cincinnati",
+              "city": "Cincinnati",
+              "admin1_region": "OH",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 1,
+            "description": "Tiny Northside bar and stage, a launchpad for Cincinnati bands and a regular stop for DIY tours."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.82,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.85
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.76
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.67
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "CDEB465F-A210-4EE6-A632-A83F5D00515F",
+          "name": "Bogart's",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.77,
+          "location": {
+            "lat": 39.1296,
+            "lon": -84.5133
+          },
+          "properties": {
+            "address": "2621 Vine St, Cincinnati, OH 45219",
+            "geocode": {
+              "name": "Cincinnati",
+              "city": "Cincinnati",
+              "admin1_region": "OH",
+              "country_code": "US"
+            },
+            "business_rating": 4.4,
+            "price_level": 2,
+            "description": "Long-running Corryville club with a balcony and a wide room, a Cincinnati tour stop since the 1980s."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.77,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.82
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.73
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.64
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "8BE88E25-CE65-4CC0-9FD0-B3A0CE77FD46",
+          "name": "The Comet",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.58,
+          "location": {
+            "lat": 39.1617,
+            "lon": -84.5424
+          },
+          "properties": {
+            "address": "4579 Hamilton Ave, Cincinnati, OH 45223",
+            "geocode": {
+              "name": "Cincinnati",
+              "city": "Cincinnati",
+              "admin1_region": "OH",
+              "country_code": "US"
+            },
+            "business_rating": 4.4,
+            "price_level": 1,
+            "description": "Northside neighborhood bar with a back-room stage and a pizza-and-pinball crowd."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.73,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.75
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.66
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.57
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "2CA61019-B6F4-46D3-804F-3AFC887C455A",
+          "name": "Ludlow Garage",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.6,
+          "location": {
+            "lat": 39.1542,
+            "lon": -84.5419
+          },
+          "properties": {
+            "address": "3725 Hamilton Ave, Cincinnati, OH 45223",
+            "geocode": {
+              "name": "Cincinnati",
+              "city": "Cincinnati",
+              "admin1_region": "OH",
+              "country_code": "US"
+            },
+            "business_rating": 4.3,
+            "price_level": 2,
+            "description": "Former garage in Northside reopened as a standing-room concert hall for indie and roots acts."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.69,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.73
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.64
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.55
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "943A7D88-5CF9-4F5F-92D2-EFEA0DC0ED1A",
+          "name": "Memorial Hall",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.64,
+          "location": {
+            "lat": 39.1088,
+            "lon": -84.5162
+          },
+          "properties": {
+            "address": "1225 Elm St, Cincinnati, OH 45202",
+            "geocode": {
+              "name": "Cincinnati",
+              "city": "Cincinnati",
+              "admin1_region": "OH",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 2,
+            "description": "Historic 1908 hall in Over-the-Rhine with a seated theater, good for quiet, listening-room shows."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.65,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.71
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.62
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.53
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "62BD2791-401F-44C9-99CF-33AC97842176",
+          "name": "Taft Theatre",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.7,
+          "location": {
+            "lat": 39.1029,
+            "lon": -84.5081
+          },
+          "properties": {
+            "address": "317 E 5th St, Cincinnati, OH 45202",
+            "geocode": {
+              "name": "Cincinnati",
+              "city": "Cincinnati",
+              "admin1_region": "OH",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 2,
+            "description": "Downtown theater with a big seated room for established folk and singer-songwriter tours."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.6,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.63
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.54
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.45
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

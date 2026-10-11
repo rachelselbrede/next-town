@@ -24,9 +24,13 @@
         {
           "entity_id": "9D567ED5-B202-4559-9AE7-9EB18F59AB51",
           "name": "The Camel",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:music_venue",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "popularity": 0.74,
+          "location": {
+            "lat": 37.541,
+            "lon": -77.436
+          },
           "properties": {
             "description": "Broad Street club with a tight stage, a solid kitchen, and a calendar full of touring indie and folk acts.",
             "address": "1621 W Broad St, Richmond, VA 23220",
@@ -42,42 +46,46 @@
           },
           "tags": [
             {
+              "id": "urn:tag:genre:place:music_venue",
               "name": "Music Venue",
-              "tag_id": "urn:tag:genre:place:music_venue",
               "type": "urn:tag:genre:place"
             },
             {
+              "id": "urn:tag:category:place:live_music_venue",
               "name": "Live Music Venue",
-              "tag_id": "urn:tag:category:place:live_music_venue",
               "type": "urn:tag:category:place"
             }
           ],
           "query": {
             "affinity": 0.93,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.78
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.675
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.62
                 }
-              }
+              ]
             }
           }
         },
         {
           "entity_id": "61171645-EFFE-4132-B1CF-E660CE928B9A",
           "name": "The National",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:concert_hall",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "popularity": 0.86,
+          "location": {
+            "lat": 37.541,
+            "lon": -77.436
+          },
           "properties": {
             "description": "Restored 1920s downtown theater that hosts mid-size national tours under an ornate ceiling.",
             "address": "708 E Broad St, Richmond, VA 23219",
@@ -93,42 +101,46 @@
           },
           "tags": [
             {
+              "id": "urn:tag:genre:place:concert_hall",
               "name": "Concert Hall",
-              "tag_id": "urn:tag:genre:place:concert_hall",
               "type": "urn:tag:genre:place"
             },
             {
+              "id": "urn:tag:category:place:live_music_venue",
               "name": "Live Music Venue",
-              "tag_id": "urn:tag:category:place:live_music_venue",
               "type": "urn:tag:category:place"
             }
           ],
           "query": {
             "affinity": 0.886,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.72
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.6
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.55
                 }
-              }
+              ]
             }
           }
         },
         {
           "entity_id": "5AAC2588-6CD0-4C4E-943A-4F525ADB114B",
           "name": "The Broadberry",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:music_venue",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "popularity": 0.72,
+          "location": {
+            "lat": 37.541,
+            "lon": -77.436
+          },
           "properties": {
             "description": "Mid-size Scott's Addition-adjacent room known for indie rock, folk, and a good sound system.",
             "address": "2729 W Broad St, Richmond, VA 23220",
@@ -144,42 +156,46 @@
           },
           "tags": [
             {
+              "id": "urn:tag:genre:place:music_venue",
               "name": "Music Venue",
-              "tag_id": "urn:tag:genre:place:music_venue",
               "type": "urn:tag:genre:place"
             },
             {
+              "id": "urn:tag:category:place:live_music_venue",
               "name": "Live Music Venue",
-              "tag_id": "urn:tag:category:place:live_music_venue",
               "type": "urn:tag:category:place"
             }
           ],
           "query": {
             "affinity": 0.841,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.72
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.585
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.54
                 }
-              }
+              ]
             }
           }
         },
         {
           "entity_id": "6C036B65-9410-4F5D-AE99-5C43CDCCE8A2",
           "name": "Richmond Music Hall at Capital Ale House",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:music_venue",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "popularity": 0.63,
+          "location": {
+            "lat": 37.541,
+            "lon": -77.436
+          },
           "properties": {
             "description": "Downtown music room tucked behind a beer hall, comfortable for singer-songwriter and roots bills.",
             "address": "623 E Main St, Richmond, VA 23219",
@@ -194,42 +210,46 @@
           },
           "tags": [
             {
+              "id": "urn:tag:genre:place:music_venue",
               "name": "Music Venue",
-              "tag_id": "urn:tag:genre:place:music_venue",
               "type": "urn:tag:genre:place"
             },
             {
+              "id": "urn:tag:genre:place:bar:live_music",
               "name": "Live Music Bar",
-              "tag_id": "urn:tag:genre:place:bar:live_music",
               "type": "urn:tag:genre:place"
             }
           ],
           "query": {
             "affinity": 0.797,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.7
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.61
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.56
                 }
-              }
+              ]
             }
           }
         },
         {
           "entity_id": "10DAB247-4D31-451B-BD9D-B899E81AE9C5",
           "name": "Gallery5",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:music_venue",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "popularity": 0.58,
+          "location": {
+            "lat": 37.541,
+            "lon": -77.436
+          },
           "properties": {
             "description": "Nonprofit art space in a former firehouse in Jackson Ward that doubles as an all-ages DIY-friendly venue.",
             "address": "200 W Marshall St, Richmond, VA 23220",
@@ -245,42 +265,46 @@
           },
           "tags": [
             {
+              "id": "urn:tag:genre:place:music_venue",
               "name": "Music Venue",
-              "tag_id": "urn:tag:genre:place:music_venue",
               "type": "urn:tag:genre:place"
             },
             {
+              "id": "urn:tag:category:place:live_music_venue",
               "name": "Live Music Venue",
-              "tag_id": "urn:tag:category:place:live_music_venue",
               "type": "urn:tag:category:place"
             }
           ],
           "query": {
             "affinity": 0.753,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.71
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.605
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.56
                 }
-              }
+              ]
             }
           }
         },
         {
           "entity_id": "B1A7A759-74A1-4E3B-A244-6EC003C3AD57",
           "name": "The Tin Pan",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:music_venue",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "popularity": 0.55,
+          "location": {
+            "lat": 37.541,
+            "lon": -77.436
+          },
           "properties": {
             "description": "Seated listening room in the West End with table service and a quiet, attentive crowd.",
             "address": "8982 Quioccasin Rd, Richmond, VA 23229",
@@ -296,42 +320,46 @@
           },
           "tags": [
             {
+              "id": "urn:tag:genre:place:music_venue",
               "name": "Music Venue",
-              "tag_id": "urn:tag:genre:place:music_venue",
               "type": "urn:tag:genre:place"
             },
             {
+              "id": "urn:tag:genre:place:concert_hall",
               "name": "Concert Hall",
-              "tag_id": "urn:tag:genre:place:concert_hall",
               "type": "urn:tag:genre:place"
             }
           ],
           "query": {
             "affinity": 0.709,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.65
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.53
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.49
                 }
-              }
+              ]
             }
           }
         },
         {
           "entity_id": "494F7B1A-23CD-49DF-891C-1F5C00C57DF9",
           "name": "Hardywood Park Craft Brewery",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:bar",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "popularity": 0.69,
+          "location": {
+            "lat": 37.541,
+            "lon": -77.436
+          },
           "properties": {
             "description": "Big-taproom brewery with a stage and outdoor space that books local and regional bands on weekends.",
             "address": "2410 Ownby Ln, Richmond, VA 23220",
@@ -347,42 +375,46 @@
           },
           "tags": [
             {
+              "id": "urn:tag:genre:place:bar:live_music",
               "name": "Live Music Bar",
-              "tag_id": "urn:tag:genre:place:bar:live_music",
               "type": "urn:tag:genre:place"
             },
             {
+              "id": "urn:tag:genre:place:bar",
               "name": "Bar",
-              "tag_id": "urn:tag:genre:place:bar",
               "type": "urn:tag:genre:place"
             }
           ],
           "query": {
             "affinity": 0.664,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.66
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.525
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.49
                 }
-              }
+              ]
             }
           }
         },
         {
           "entity_id": "75D8BD55-97EB-4584-8B1B-D1459FD01996",
           "name": "Cary Street Cafe",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:bar",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "popularity": 0.47,
+          "location": {
+            "lat": 37.541,
+            "lon": -77.436
+          },
           "properties": {
             "description": "Carytown bar with live music most nights and a loyal jam-and-roots regular crowd.",
             "address": "2631 W Cary St, Richmond, VA 23220",
@@ -397,33 +429,33 @@
           },
           "tags": [
             {
+              "id": "urn:tag:genre:place:bar:live_music",
               "name": "Live Music Bar",
-              "tag_id": "urn:tag:genre:place:bar:live_music",
               "type": "urn:tag:genre:place"
             },
             {
+              "id": "urn:tag:genre:place:bar",
               "name": "Bar",
-              "tag_id": "urn:tag:genre:place:bar",
               "type": "urn:tag:genre:place"
             }
           ],
           "query": {
             "affinity": 0.62,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.62
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.53
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.44
                 }
-              }
+              ]
             }
           }
         }

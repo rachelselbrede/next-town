@@ -12,7 +12,7 @@ export const C = {
   TAKE_SEARCH: 5,
   TAKE_MARKETS: 50,
   TAKE_ROOMS: 8,
-  TAKE_PROMO: 12,
+  TAKE_PROMO: 2, // per promo group (one call per kind)
   TAKE_COLOR: 20,
   TAKE_OPENERS: 10,
   RADIUS_PLACE: 15000, // meters: filter.location.radius for rooms and promo partners
@@ -39,13 +39,22 @@ export const findTags = (term: string): Query => ({
   params: { "filter.query": term.trim(), take: 10 },
 });
 
-export const rankMarkets = (compIds: string[]): Query => ({
+// Markets are ranked through venues, not localities: on the hackathon host urn:entity:locality only
+// accepts locality signals ("partially supported"), so ranking towns by artist affinity is not
+// possible directly. Instead: one nationwide place query filtered to live-music venue tags, grouped
+// by city (diversify.by=properties.geocode.city, diversify.take=1). Qloo ranks each group by its
+// highest-affinity entity, so every result is a town represented by its best-matching room.
+export const rankMarkets = (compIds: string[], venueTagIds: string[]): Query => ({
   tool: "rank_markets",
   path: "/v2/insights",
   params: {
-    "filter.type": "urn:entity:locality",
-    "signal.interests.entities": idList(compIds),
+    "filter.type": "urn:entity:place",
+    "filter.tags": idList(venueTagIds),
+    "operator.filter.tags": "union",
     "filter.geocode.country_code": "US",
+    "signal.interests.entities": idList(compIds),
+    "diversify.by": "properties.geocode.city",
+    "diversify.take": 1,
     take: C.TAKE_MARKETS,
     "feature.explainability": "true",
   },
@@ -67,7 +76,9 @@ export const findRooms = (compIds: string[], city: string, tagIds: string[]): Qu
   },
 });
 
-export const findPromoPartners = (compIds: string[], city: string, tagIds: string[]): Query => ({
+// One call per promo kind (record store, coffee shop, ...) with that kind's tag ids. diversify.by
+// only accepts geocode city/metro, so the "two of each kind" shape comes from five small calls.
+export const findPromoGroup = (compIds: string[], city: string, tagIds: string[]): Query => ({
   tool: "find_promo_partners",
   path: "/v2/insights",
   params: {
@@ -77,22 +88,20 @@ export const findPromoPartners = (compIds: string[], city: string, tagIds: strin
     "filter.tags": idList(tagIds),
     "operator.filter.tags": "union",
     "signal.interests.entities": idList(compIds),
-    "diversify.by": "properties.subtype",
-    "diversify.take": 2,
     sort_by: "affinity",
     take: C.TAKE_PROMO,
     "feature.explainability": "true",
   },
 });
 
-export const whoShowsUp = (compIds: string[], city: string): Query => ({
+// urn:demographics takes interest signals only; location is not a documented input. So this is
+// one read for fans of the comps overall, shared by every city playbook, and labeled that way.
+export const whoShowsUp = (compIds: string[]): Query => ({
   tool: "who_shows_up",
   path: "/v2/insights",
   params: {
     "filter.type": "urn:demographics",
     "signal.interests.entities": idList(compIds),
-    "signal.location.query": normalizeCity(city),
-    "signal.location.radius": C.RADIUS_SIGNAL,
   },
 });
 

@@ -1,6 +1,5 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import fs from "node:fs";
 import { canonicalUrl, normalizeCity, slug, idList, QLOO_BASE } from "../src/canonical.ts";
 import * as Q from "../src/queries.ts";
 
@@ -67,10 +66,10 @@ const key = (q: Q.Query) => canonicalUrl(q.path, q.params);
 const builders: Array<[string, (ids: string[], tags: string[]) => Q.Query]> = [
   ["searchAct", () => Q.searchAct("Big Thief", "music")],
   ["findTags", () => Q.findTags("music venue")],
-  ["rankMarkets", (ids) => Q.rankMarkets(ids)],
+  ["rankMarkets", (ids, tags) => Q.rankMarkets(ids, tags)],
   ["findRooms", (ids, tags) => Q.findRooms(ids, "asheville, nc", tags)],
-  ["findPromoPartners", (ids, tags) => Q.findPromoPartners(ids, "asheville, nc", tags)],
-  ["whoShowsUp", (ids) => Q.whoShowsUp(ids, "asheville, nc")],
+  ["findPromoGroup", (ids, tags) => Q.findPromoGroup(ids, "asheville, nc", tags)],
+  ["whoShowsUp", (ids) => Q.whoShowsUp(ids)],
   ["localColor(brand)", (ids) => Q.localColor(ids, "asheville, nc", "brand")],
   ["localColor(tv_show)", (ids) => Q.localColor(ids, "asheville, nc", "tv_show")],
   ["openersToAsk", (ids) => Q.openersToAsk(ids, "asheville, nc")],
@@ -93,9 +92,80 @@ test("city normalization feeds the key, so casing and spacing of the city do not
   assert.ok(a.includes("filter.location.query=Asheville%2C%20NC"));
 });
 
-test("rankMarkets reproduces the canonical recorded in the scaffolded fixture", () => {
-  const fixture = JSON.parse(fs.readFileSync(new URL("../fixtures/qloo/markets-hollow-pines.json", import.meta.url), "utf8"));
-  const q = Q.rankMarkets(shuffled(comps));
-  assert.equal(key(q), fixture.canonical);
-  assert.equal(canonicalUrl(fixture.query.path, fixture.query.params), fixture.canonical);
+// ---- The shared interface: exact parameters per docs.qloo.com (checked by the other modules' owners) ----
+
+test("rankMarkets is a nationwide place query grouped by city, not a locality query", () => {
+  const q = Q.rankMarkets(shuffled(comps), shuffled(tagsA));
+  assert.equal(q.tool, "rank_markets");
+  assert.equal(q.path, "/v2/insights");
+  assert.deepEqual(q.params, {
+    "filter.type": "urn:entity:place",
+    "filter.tags": idList(tagsA),
+    "operator.filter.tags": "union",
+    "filter.geocode.country_code": "US",
+    "signal.interests.entities": idList(comps),
+    "diversify.by": "properties.geocode.city",
+    "diversify.take": 1,
+    take: 50,
+    "feature.explainability": "true",
+  });
+  assert.ok(!("filter.location.query" in q.params), "no location: the whole country is in scope");
+});
+
+test("findPromoGroup asks for two places of one kind near the city, with explainability", () => {
+  const tags = ["urn:tag:genre:place:record_store"];
+  const q = Q.findPromoGroup(comps, "asheville, nc", tags);
+  assert.equal(q.tool, "find_promo_partners");
+  assert.deepEqual(q.params, {
+    "filter.type": "urn:entity:place",
+    "filter.location.query": "Asheville, NC",
+    "filter.location.radius": 15000,
+    "filter.tags": "urn:tag:genre:place:record_store",
+    "operator.filter.tags": "union",
+    "signal.interests.entities": idList(comps),
+    sort_by: "affinity",
+    take: 2,
+    "feature.explainability": "true",
+  });
+  assert.ok(!("diversify.by" in q.params), "properties.subtype is not a valid diversify.by value");
+  // Different kinds are different requests, so each has its own fixture and receipt.
+  assert.notEqual(key(q), key(Q.findPromoGroup(comps, "asheville, nc", ["urn:tag:genre:place:bookstore"])));
+});
+
+test("whoShowsUp takes only the interest signals: location is not a documented demographics input", () => {
+  const q = Q.whoShowsUp(shuffled(comps));
+  assert.equal(q.tool, "who_shows_up");
+  assert.deepEqual(q.params, { "filter.type": "urn:demographics", "signal.interests.entities": idList(comps) });
+  assert.equal(key(q), `${QLOO_BASE}/v2/insights?filter.type=urn%3Ademographics&signal.interests.entities=${encodeURIComponent(idList(comps))}`);
+});
+
+test("the old per-city promo and locality builders are gone", () => {
+  assert.equal((Q as Record<string, unknown>).findPromoPartners, undefined);
+  assert.ok(!JSON.stringify(Q.rankMarkets(comps, tagsA).params).includes("urn:entity:locality"));
+});
+
+test("findRooms, localColor, searchAct, findTags and openersToAsk are unchanged", () => {
+  assert.deepEqual(Q.findRooms(comps, "Boone, NC", tagsA).params, {
+    "filter.type": "urn:entity:place",
+    "filter.location.query": "Boone, NC",
+    "filter.location.radius": 15000,
+    "filter.tags": idList(tagsA),
+    "operator.filter.tags": "union",
+    "signal.interests.entities": idList(comps),
+    sort_by: "affinity",
+    take: 8,
+    "feature.explainability": "true",
+  });
+  assert.deepEqual(Q.localColor(comps, "Boone, NC", "tv_show").params, {
+    "filter.type": "urn:entity:tv_show",
+    "signal.interests.entities": idList(comps),
+    "signal.location.query": "Boone, NC",
+    "signal.location.radius": 25000,
+    take: 20,
+  });
+  assert.deepEqual(Q.searchAct(" Big Thief ", "comedy").params, { query: "Big Thief", types: "urn:entity:person", take: 5 });
+  assert.deepEqual(Q.findTags(" dive bar ").params, { "filter.query": "dive bar", take: 10 });
+  assert.equal(Q.openersToAsk(comps, "Boone, NC").params["filter.popularity.max"], 0.6);
+  assert.deepEqual([...Q.PROMO_TAG_GROUPS], ["record_store", "coffee_shop", "bookstore", "dive_bar", "vintage"]);
+  assert.deepEqual(Object.keys(Q.PROMO_KIND_LABEL), ["record_store", "coffee_shop", "bookstore", "dive_bar", "vintage"]);
 });

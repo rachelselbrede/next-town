@@ -1,0 +1,135 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_promo_partners",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?feature.explainability=true&filter.location.query=Louisville%2C%20KY&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Athrift_store%2Curn%3Atag%3Agenre%3Aplace%3Avintage_store&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Louisville, KY",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:genre:place:thrift_store,urn:tag:genre:place:vintage_store",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "sort_by": "affinity",
+      "take": 2,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "8C2F93D2-3943-4A54-9744-D5C3ADB85362",
+          "name": "Fat Rabbit Vintage",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.48,
+          "location": {
+            "lat": 38.253,
+            "lon": -85.759
+          },
+          "properties": {
+            "description": "Curated vintage clothing and ephemera in Germantown with a steady crowd of musicians and record collectors.",
+            "address": "1003 E Oak St, Louisville, KY 40204",
+            "geocode": {
+              "name": "Fat Rabbit Vintage",
+              "city": "Louisville",
+              "admin1_region": "KY",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:vintage_store",
+              "name": "Vintage Store",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:genre:place:thrift_store",
+              "name": "Thrift Store",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.797,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.658
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.578
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.518
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "C5C7C07A-58B3-4876-80E1-43264EBF3BFA",
+          "name": "Derby City Vintage",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.42,
+          "location": {
+            "lat": 38.253,
+            "lon": -85.759
+          },
+          "properties": {
+            "description": "Highlands vintage shop stocked with denim, band tees, and 70s flannel.",
+            "address": "1600 Bardstown Rd, Louisville, KY 40205",
+            "geocode": {
+              "name": "Derby City Vintage",
+              "city": "Louisville",
+              "admin1_region": "KY",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:vintage_store",
+              "name": "Vintage Store",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:genre:place:thrift_store",
+              "name": "Thrift Store",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.628,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.542
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.462
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.402
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

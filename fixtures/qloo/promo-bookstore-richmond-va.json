@@ -1,0 +1,127 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_promo_partners",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?feature.explainability=true&filter.location.query=Richmond%2C%20VA&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abookstore&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Richmond, VA",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:genre:place:bookstore",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "sort_by": "affinity",
+      "take": 2,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "B48B13D9-E51A-4E3F-9C65-5BF79B080DB2",
+          "name": "Chop Suey Books",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.52,
+          "location": {
+            "lat": 37.541,
+            "lon": -77.436
+          },
+          "properties": {
+            "description": "Two-story new-and-used bookstore in Carytown that hosts readings and small events.",
+            "address": "2913 W Cary St, Richmond, VA 23221",
+            "geocode": {
+              "name": "Richmond",
+              "city": "Richmond",
+              "admin1_region": "VA",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 2,
+            "website": "https://chopsueybooks.com"
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:bookstore",
+              "name": "Bookstore",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.841,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.75
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.66
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.61
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "DCBF2468-1905-404A-A6B9-9D8835CDB149",
+          "name": "Fountain Bookstore",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.55,
+          "location": {
+            "lat": 37.541,
+            "lon": -77.436
+          },
+          "properties": {
+            "description": "Independent bookstore in Shockoe Slip with a busy author-event calendar.",
+            "address": "1312 E Cary St, Richmond, VA 23219",
+            "geocode": {
+              "name": "Richmond",
+              "city": "Richmond",
+              "admin1_region": "VA",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 2,
+            "website": "https://fountainbookstore.com"
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:bookstore",
+              "name": "Bookstore",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.735,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.66
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.57
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.48
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

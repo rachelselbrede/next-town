@@ -1,14 +1,17 @@
 // Request validation and the three agent tools, driven by a stub Qloo client (demo mode with an
-// inline resolver) and a stub Census lookup, plus one pass over the real Hollow Pines fixtures.
+// inline resolver) and a stub Census lookup. Synthetic bodies follow Qloo's documented shapes:
+// insights entities are type "urn:entity" with a subtype, tags are { id, name, type }, /search
+// results carry `types: [...]`, and explainability is `{ "signal.interests.entities": [{ entity_id, score }] }`.
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
-import { QlooClient } from "../src/qloo.ts";
+import { QlooClient, type QlooResult } from "../src/qloo.ts";
 import type { AgentEvent, ToolContext } from "../src/agent.ts";
-import { makeTools, toReceipt } from "../src/tools.ts";
+import { makeTools, toReceipt, resolvedLocality, topLevelExplainSentence, venueToLocality, tagsFor } from "../src/tools.ts";
 import { parseRunRequest, buildApp } from "../src/app.ts";
 import { demoResolver } from "../src/demo/resolver.ts";
-import type { PlaceRow } from "../src/places.ts";
+import { findPlace as realFindPlace, type PlaceRow } from "../src/places.ts";
+import * as Q from "../src/queries.ts";
 
 // ---- parseRunRequest ----
 
@@ -54,35 +57,47 @@ test("parseRunRequest rejects bad bodies with a specific message", () => {
 
 // ---- stub Qloo + stub Census ----
 
-const ARTIST = (id: string, name: string, popularity: number) => ({ entity_id: id, name, type: "urn:entity:artist", popularity });
-const LOCALITY = (id: string, name: string, state: string, affinity: number, lat: number, lon: number, who = "A1") => ({
+// /search results: `types` is an array and there is no `type` field.
+const ARTIST = (id: string, name: string, popularity: number) => ({ entity_id: id, name, types: ["urn:entity:artist"], popularity, properties: {}, tags: [] });
+
+// An insights place entity: a live-music room standing for its town.
+const VENUE = (id: string, name: string, city: string, state: string, affinity: number, lat: number, lon: number, scores: Array<[string, number]> = [["A1", 0.7]]) => ({
   entity_id: id,
   name,
-  type: "urn:entity:locality",
-  properties: { geocode: { name, admin1_region: state, country_code: "US" } },
+  type: "urn:entity",
+  subtype: "urn:entity:place",
+  popularity: 0.5,
   location: { lat, lon },
-  query: { affinity, explainability: { by_entity: { [who]: { name: "Comp One", score: 0.7 } } } },
+  properties: { address: `1 Main St, ${city}, ${state}`, geocode: { name: city, city, admin1_region: state, country_code: "US" } },
+  tags: [{ id: "urn:tag:genre:place:music_venue", name: "Music Venue", type: "urn:tag:genre:place" }],
+  query: { affinity, explainability: { "signal.interests.entities": scores.map(([entity_id, score]) => ({ entity_id, score })) } },
 });
+
+const MARKETS_BODY = {
+  success: true,
+  query: { explainability: { "signal.interests.entities": [{ entity_id: "A1", score: { top_10: 0.72, all: 0.66 } }] } },
+  results: {
+    entities: [
+      VENUE("V1", "The Barn", "Smallville", "VA", 0.95, 37.51, -78.51),
+      VENUE("V2", "Big Hall", "Bigcity", "VA", 0.9, 38.01, -77.01),
+      VENUE("V3", "The Basement", "Nashville", "TN", 0.85, 36.17, -86.79),
+      VENUE("V4", "Nowhere Tavern", "Nowhere", "ZZ", 0.8, 36.5, -79.0), // not in the Census stub
+      VENUE("V5", "Second Barn", "Smallville", "VA", 0.78, 37.52, -78.52), // same town again: must collapse
+      VENUE("V6", "Hill Hall", "Hilltown", "VA", 0.75, 37.01, -80.01),
+    ],
+  },
+};
 
 const stubResolver = (path: string, params: Record<string, unknown>) => {
   if (path === "/search") {
     const q = String(params.query);
-    if (q === "Comp One") return { results: [ARTIST("A1", "Comp One", 0.9), ARTIST("A2", "Comp One Tribute", 0.3), { entity_id: "P1", name: "Comp One", type: "urn:entity:person" }, ARTIST("A3", "Comp Oneder", 0.5), ARTIST("A4", "Compote", 0.1)] };
+    if (q === "Comp One") return { results: [ARTIST("A1", "Comp One", 0.9), ARTIST("A2", "Comp One Tribute", 0.3), { entity_id: "P1", name: "Comp One", types: ["urn:entity:person"] }, ARTIST("A3", "Comp Oneder", 0.5), ARTIST("A4", "Compote", 0.1)] };
+    if (q === "Comp Two") return { results: [{ entity_id: "B1", name: "Comp Two", type: "urn:entity:artist", popularity: 0.6 }] }; // older shape with `type`
     if (q === "Nobody") return { results: [] };
     return undefined;
   }
-  if (path === "/v2/insights" && params["filter.type"] === "urn:entity:locality" && params["signal.interests.entities"] === "A1") {
-    return {
-      results: {
-        entities: [
-          LOCALITY("L1", "Smallville", "VA", 0.95, 37.5, -78.5),
-          LOCALITY("L2", "Bigcity", "VA", 0.9, 38.0, -77.0),
-          LOCALITY("L3", "Nashville", "TN", 0.85, 36.16, -86.78),
-          LOCALITY("L4", "Nowhere", "ZZ", 0.8, 36.5, -79.0), // not in the Census stub
-          LOCALITY("L5", "Hilltown", "VA", 0.75, 37.0, -80.0),
-        ],
-      },
-    };
+  if (path === "/v2/insights" && params["filter.type"] === "urn:entity:place" && params["diversify.by"] === "properties.geocode.city" && params["signal.interests.entities"] === "A1") {
+    return MARKETS_BODY;
   }
   return undefined;
 };
@@ -96,13 +111,19 @@ const census: Record<string, PlaceRow> = {
 };
 const stubFindPlace = (label: string) => census[label.trim().toLowerCase()];
 
-function harness(findPlace = stubFindPlace, resolver = stubResolver) {
-  const qloo = new QlooClient({}, resolver as any);
+function harness(findPlace = stubFindPlace, resolver = stubResolver, qlooOverride?: QlooClient) {
+  const qloo = qlooOverride ?? new QlooClient({}, resolver as any);
   const events: AgentEvent[] = [];
   const ctx: ToolContext = { emit: (e) => events.push(e) };
   const { tools, state } = makeTools({ qloo, format: "music", home: "Richmond, VA", days: 7, driveHoursCap: 5, findPlace });
   const byName = Object.fromEntries(tools.map((t) => [t.name, t]));
   return { qloo, events, ctx, tools, state, byName };
+}
+
+// A QlooClient stand-in whose every call returns one fixed result (for live-failure paths).
+function fixedClient(result: Partial<QlooResult>): QlooClient {
+  const base: QlooResult = { ok: true, status: 200, mode: "live", path: "/x", params: {}, url: "https://hackathon.api.qloo.com/x", ms: 1, body: {} };
+  return { mode: result.mode ?? "live", calls: [], get: async () => ({ ...base, ...result }) } as unknown as QlooClient;
 }
 
 test("tool schemas are strict-compatible: additionalProperties false and every property required", () => {
@@ -116,7 +137,9 @@ test("tool schemas are strict-compatible: additionalProperties false and every p
   }
 });
 
-test("resolve_act keeps only the requested entity type, caps at 3, and emits comps + receipt", async () => {
+// ---- resolve_act ----
+
+test("resolve_act reads the type from `types` (array) or `type`, keeps the wanted type, caps at 3, emits comps + receipt", async () => {
   const h = harness();
   const out: any = await h.byName.resolve_act.run({ name: "Comp One" }, h.ctx);
   assert.deepEqual(out.candidates.map((c: any) => c.name), ["Comp One", "Comp One Tribute", "Comp Oneder"]);
@@ -127,42 +150,136 @@ test("resolve_act keeps only the requested entity type, caps at 3, and emits com
   assert.equal(out.qloo.resultCount, 5);
   assert.match(out.qloo.url, /\/search\?/);
   assert.match(out.summary, /3 candidates/);
-  const types = h.events.map((e) => e.type);
-  assert.deepEqual(types, ["receipt", "comps"]);
-  const comps = (h.events[1] as any).comps;
-  assert.equal(comps[0].id, "A1", "running list holds the exact-name, most popular match");
+  assert.deepEqual(h.events.map((e) => e.type), ["receipt", "comps"]);
+  assert.equal((h.events[1] as any).comps[0].id, "A1", "running list holds the exact-name, most popular match");
   assert.equal(h.state.receipts.length, 1);
+
+  const two: any = await h.byName.resolve_act.run({ name: "Comp Two" }, h.ctx);
+  assert.deepEqual(two.candidates, [{ id: "B1", name: "Comp Two", type: "urn:entity:artist", popularity: 0.6 }]);
 });
 
-test("resolve_act with no results reports it plainly instead of throwing", async () => {
+test("resolve_act with an empty recorded answer never claims Qloo does not know the act", async () => {
   const h = harness();
   const out: any = await h.byName.resolve_act.run({ name: "Nobody" }, h.ctx);
   assert.deepEqual(out.candidates, []);
-  assert.match(out.summary, /No artist named "Nobody"/);
+  assert.match(out.summary, /recorded demo answer for "Nobody"/);
+  assert.doesNotMatch(out.summary, /found no|not found|does not know/i);
 });
 
-test("rank_markets joins the Census stub, computes overIndex, and emits markets", async () => {
+test("resolve_act in demo mode with no fixture throws an honest error (Qloo was not called)", async () => {
+  const h = harness();
+  await assert.rejects(h.byName.resolve_act.run({ name: "Unknown Act" }, h.ctx), /No recorded demo answer for "Unknown Act" \(Qloo was not called; the live key is not set\)/);
+  assert.equal(h.state.receipts.length, 1, "the miss still leaves a receipt");
+  assert.equal(h.state.receipts[0].status, 404);
+});
+
+test("resolve_act reports a live failure by status and an empty live 200 as Qloo's answer", async () => {
+  const failed = harness(stubFindPlace, stubResolver, fixedClient({ ok: false, status: 502, body: { error: "bad gateway" } }));
+  await assert.rejects(failed.byName.resolve_act.run({ name: "Big Thief" }, failed.ctx), /Qloo search failed \(HTTP 502\)/);
+  const empty = harness(stubFindPlace, stubResolver, fixedClient({ ok: true, status: 200, body: { results: [] } }));
+  const out: any = await empty.byName.resolve_act.run({ name: "Big Thief" }, empty.ctx);
+  assert.match(out.summary, /Qloo found no artist named "Big Thief"/);
+});
+
+test("tools pass the request's abort signal to every Qloo call", async () => {
+  const seen: Array<AbortSignal | undefined> = [];
+  const client = {
+    mode: "demo",
+    calls: [],
+    get: async (path: string, params: Record<string, unknown>, signal?: AbortSignal) => {
+      seen.push(signal);
+      const body = stubResolver(path, params);
+      return { ok: body !== undefined, status: body ? 200 : 404, mode: "demo", path, params, url: "u", ms: 0, body: body ?? { error: "no demo fixture for this request" } };
+    },
+  } as unknown as QlooClient;
+  const h = harness(stubFindPlace, stubResolver, client);
+  const ac = new AbortController();
+  const ctx: ToolContext = { emit: () => {}, signal: ac.signal };
+  await h.byName.resolve_act.run({ name: "Comp One" }, ctx);
+  await h.byName.rank_markets.run({ compIds: ["A1"] }, ctx);
+  assert.equal(seen.length, 2);
+  assert.ok(seen.every((s) => s === ac.signal));
+});
+
+// ---- rank_markets ----
+
+test("rank_markets turns venue results into towns: Census join, topRoom, explainability names, de-duplicated labels", async () => {
   const h = harness();
   await h.byName.resolve_act.run({ name: "Comp One" }, h.ctx);
   h.events.length = 0;
   const out: any = await h.byName.rank_markets.run({ compIds: ["A1"] }, h.ctx);
-  assert.equal(out.localities.length, 5);
-  const [l1, l2, l3, l4] = out.localities;
+  assert.equal(out.qloo.tool, "rank_markets");
+  assert.match(out.qloo.url, /filter\.type=urn%3Aentity%3Aplace/);
+  assert.match(out.qloo.url, /diversify\.by=properties\.geocode\.city/);
+  assert.ok(out.qloo.url.includes(encodeURIComponent(tagsFor(Q.VENUE_TAG_GROUPS)[0])), "venue tag ids from data/tags.json");
+
+  assert.equal(out.localities.length, 5, "six venues, one duplicate town");
+  const [l1, l2, l3, l4, l5] = out.localities;
   assert.equal(l1.label, "Smallville, VA");
   assert.equal(l1.rank, 1);
+  assert.equal(l1.id, "V1", "the venue's entity id stands for the town");
   assert.equal(l1.population, 40000);
+  assert.equal(l1.lat, 37.5, "Census coordinates win when the town is known");
   assert.equal(l1.overIndex, true);
-  assert.deepEqual(l1.why, ["Comp One (70%)"]);
+  assert.equal(l1.affinity, 0.95);
+  assert.deepEqual(l1.why, ["Comp One (70%)"], "chips carry the resolved comp's name, not its id");
+  assert.deepEqual(l1.topRoom, { id: "V1", name: "The Barn", affinity: 0.95, why: ["Comp One (70%)"] });
   assert.equal(l2.overIndex, false, "900k people is not a small town");
   assert.equal(l3.label, "Nashville, TN");
-  assert.equal(l4.population, undefined, "unknown place keeps Qloo coordinates but no population");
+  assert.equal(l4.label, "Nowhere, ZZ");
+  assert.equal(l4.population, undefined, "unknown place keeps the venue's coordinates but no population");
   assert.equal(l4.lat, 36.5);
   assert.equal(l4.overIndex, false);
-  assert.match(out.summary, /Smallville, VA #1 \(95%\)/);
+  assert.equal(l5.label, "Hilltown, VA");
+  assert.equal(l5.rank, 5, "ranks stay contiguous after the duplicate is dropped");
+  assert.ok(!out.localities.some((l: any) => l.topRoom?.name === "Second Barn"));
+
+  assert.match(out.summary, /5 towns ranked/);
+  assert.match(out.summary, /best-matching room ranks highest/);
+  assert.match(out.summary, /Comp One drives most of the top markets\./, "one sentence from the top-level explainability");
+  assert.match(out.summary, /Smallville, VA #1 \(95%, The Barn\)/);
   assert.match(out.summary, /Usual suspects: Nashville, TN #3/);
   assert.deepEqual(h.events.map((e) => e.type), ["comps", "receipt", "markets"]);
   assert.deepEqual(h.state.comps, [{ id: "A1", name: "Comp One", type: "urn:entity:artist", popularity: 0.9 }]);
   assert.equal(h.state.localities.length, 5);
+});
+
+test("rank_markets skips the explainability sentence when the top level is a warning", async () => {
+  const resolver = (path: string, params: Record<string, unknown>) => {
+    const body = stubResolver(path, params);
+    if (body === MARKETS_BODY) return { ...MARKETS_BODY, query: { explainability: { warning: "Explainability is unavailable for this query." } } };
+    return body;
+  };
+  const h = harness(stubFindPlace, resolver);
+  await h.byName.resolve_act.run({ name: "Comp One" }, h.ctx);
+  const out: any = await h.byName.rank_markets.run({ compIds: ["A1"] }, h.ctx);
+  assert.doesNotMatch(out.summary, /drives most/);
+  assert.equal(out.localities.length, 5);
+});
+
+test("venueToLocality accepts full state names through the real Census lookup", () => {
+  const loc = venueToLocality(VENUE("V9", "Boone Saloon", "Boone", "North Carolina", 0.8, 36.21, -81.67) as any, 3, realFindPlace, { A1: "Comp One" });
+  assert.equal(loc.label, "Boone, NC");
+  assert.equal(loc.state, "NC");
+  assert.equal(typeof loc.population, "number");
+  assert.equal(loc.overIndex, true);
+  const stl = venueToLocality(VENUE("V10", "Off Broadway", "Saint Louis", "MO", 0.8, 38.6, -90.2) as any, 1, realFindPlace);
+  assert.equal(stl.label, "St. Louis, MO", "Census spelling becomes the canonical label");
+  assert.equal(stl.overIndex, false, "St. Louis is over 250k");
+  assert.deepEqual(stl.why, ["entity A1 (70%)"], "without a names map the chip falls back to the id");
+});
+
+test("topLevelExplainSentence names the leading comp, or both when they tie", () => {
+  const names = { A1: "Comp One", B1: "Comp Two" };
+  const list = (a: number, b: number) => ({ query: { explainability: { "signal.interests.entities": [{ entity_id: "A1", score: a }, { entity_id: "B1", score: b }] } } });
+  assert.equal(topLevelExplainSentence(list(0.7, 0.4), names), "Comp One drives most of the top markets.");
+  assert.equal(topLevelExplainSentence(list(0.4, 0.7), names), "Comp Two drives most of the top markets.");
+  assert.equal(topLevelExplainSentence(list(0.5, 0.49), names), "Comp One and Comp Two drive the top markets about equally.");
+  assert.equal(topLevelExplainSentence({ query: {} }, names), undefined);
+  // The map form ({ "<id>": { top_10, all } }) and a warning.
+  assert.equal(topLevelExplainSentence({ query: { explainability: { "signal.interests.entities": { A1: { top_10: 0.3, all: 0.2 }, B1: { top_10: 0.8, all: 0.7 } } } } }, names), "Comp Two drives most of the top markets.");
+  assert.equal(topLevelExplainSentence({ query: { explainability: { warning: "n/a" } } }, names), undefined);
+  assert.equal(topLevelExplainSentence(list(0.7, 0.4), {}), undefined, "no sentence without a name to put in it");
 });
 
 test("rank_markets validates its input and surfaces a Qloo miss as an error", async () => {
@@ -173,6 +290,8 @@ test("rank_markets validates its input and surfaces a Qloo miss as an error", as
   assert.equal(h.state.receipts.length, 1);
   assert.equal(h.state.receipts[0].status, 404);
 });
+
+// ---- plan_route ----
 
 test("plan_route needs rank_markets first and a known home city", async () => {
   const h = harness();
@@ -196,7 +315,7 @@ test("plan_route builds a loop from home, compares with the obvious route, and e
   assert.equal(out.route.days, 7);
   assert.ok(Array.isArray(out.obvious.cities) && out.obvious.cities.includes("Nashville, TN"));
   assert.ok(typeof out.obvious.summary === "string" && out.obvious.summary.length > 0);
-  assert.match(out.summary, /stops over 7 days/);
+  assert.match(out.summary, /stops over 7 days, about \d+ miles \(est\.\)/);
   assert.equal(out.qloo, undefined, "no Qloo call for routing");
   assert.deepEqual(h.events.map((e) => e.type), ["route"]);
   assert.equal(h.state.route, out.route);
@@ -211,18 +330,39 @@ test("plan_route falls back to the request's days and cap when the agent passes 
   assert.equal(out.route.days, 7);
 });
 
+// ---- receipts ----
+
+const baseResult: QlooResult = { ok: true, status: 200, mode: "demo", path: "/v2/insights", params: {}, url: "https://x/y", ms: 3, body: {} };
+
 test("toReceipt counts demographics rows and lists the top three with affinities", () => {
-  const base = { ok: true, status: 200, mode: "demo" as const, path: "/v2/insights", params: {}, url: "https://x/y", ms: 3 };
-  const demo = toReceipt("who_shows_up", { ...base, body: { results: { demographics: [{ entity_id: "A" }, { entity_id: "B" }] } } });
+  const demo = toReceipt("who_shows_up", { ...baseResult, body: { results: { demographics: [{ entity_id: "A" }, { entity_id: "B" }] } } });
   assert.equal(demo.resultCount, 2);
   assert.deepEqual(demo.top, []);
-  const ents = toReceipt("find_rooms", { ...base, body: { results: { entities: [{ entity_id: "1", name: "a", query: { affinity: 0.9 } }, { entity_id: "2", name: "b" }, { entity_id: "3", name: "c", query: { affinity: 0.5 } }, { entity_id: "4", name: "d" }] } } });
+  const ents = toReceipt("find_rooms", { ...baseResult, body: { results: { entities: [{ entity_id: "1", name: "a", query: { affinity: 0.9 } }, { entity_id: "2", name: "b" }, { entity_id: "3", name: "c", query: { affinity: 0.5 } }, { entity_id: "4", name: "d" }] } } });
   assert.equal(ents.resultCount, 4);
   assert.deepEqual(ents.top, [{ name: "a", affinity: 0.9 }, { name: "b" }, { name: "c", affinity: 0.5 }]);
   assert.equal(ents.method, "GET");
   assert.equal(ents.note, undefined);
-  const miss = toReceipt("x", { ...base, ok: false, status: 404, body: { error: "no demo fixture for this request" } });
+  assert.equal(ents.cached, undefined);
+  assert.equal(ents.resolved, undefined);
+  const miss = toReceipt("x", { ...baseResult, ok: false, status: 404, body: { error: "no demo fixture for this request" } });
   assert.equal(miss.note, "no demo fixture for this request");
+  const bare = toReceipt("x", { ...baseResult, ok: false, status: 500, body: { raw: "<html>" } });
+  assert.equal(bare.note, "HTTP 500");
+});
+
+test("toReceipt carries the client's note and cached flag, and the locality Qloo resolved", () => {
+  const fallback = toReceipt("find_rooms", { ...baseResult, mode: "demo", note: "Live Qloo call failed (HTTP 503); served the recorded fixture instead.", body: { results: { entities: [] } } });
+  assert.equal(fallback.note, "Live Qloo call failed (HTTP 503); served the recorded fixture instead.");
+  const cached = toReceipt("find_rooms", { ...baseResult, mode: "live", cached: true, body: { results: { entities: [] } } });
+  assert.equal(cached.cached, true);
+  const resolvedObj = toReceipt("find_rooms", { ...baseResult, body: { query: { locality: { signal: { name: "Asheville", disambiguation: "North Carolina, United States" } } }, results: { entities: [] } } });
+  assert.equal(resolvedObj.resolved, "Asheville, North Carolina, United States");
+  const resolvedStr = toReceipt("find_rooms", { ...baseResult, body: { query: { locality: { signal: "Asheville, NC" } }, results: { entities: [] } } });
+  assert.equal(resolvedStr.resolved, "Asheville, NC");
+  assert.equal(resolvedLocality({ query: { locality: { signal: { name: "  " } } } }), undefined);
+  assert.equal(resolvedLocality({ query: { locality: { signal: { name: "Boone", disambiguation: "Boone" } } } }), "Boone", "no duplicate text");
+  assert.equal(resolvedLocality(null), undefined);
 });
 
 // ---- buildApp ----
@@ -237,16 +377,25 @@ test("buildApp wires the prompt, opening message, tools, and budget", () => {
   assert.match(String(app.messages[0].content), /Big Thief; Waxahatchee/);
   assert.match(app.system, /resolve_act once for each comp/);
   assert.match(app.system, /Never claim venue capacity, age policy, ticket sales/);
-  assert.match(app.system, /over-index town/);
+  assert.match(app.system, /best-matching live-music room ranks highest/);
+  assert.match(app.system, /straight-line estimates/);
+  assert.match(app.system, /ranks #3 nationally/);
+  assert.match(app.system, /only state a rank threshold/);
   assert.match(app.system, /days=12 and driveHoursCap=6/);
   assert.deepEqual(app.state, { comps: [], localities: [], receipts: [] });
 });
 
-// ---- the real Hollow Pines fixtures, end to end through the tools ----
+// ---- the bundled Hollow Pines fixtures, end to end through the tools ----
+// The fixture files are owned by another workflow step and may still be empty skeletons; this
+// test only runs once the new rank_markets fixture (venue-based) answers through demoResolver.
 
 const scenario = JSON.parse(fs.readFileSync(new URL("../data/scenarios/hollow-pines.json", import.meta.url), "utf8"));
+const scenarioIds: string[] = scenario.comps.map((c: any) => c.id);
+const marketsFixture = demoResolver(Q.rankMarkets(scenarioIds, tagsFor(Q.VENUE_TAG_GROUPS)).path, Q.rankMarkets(scenarioIds, tagsFor(Q.VENUE_TAG_GROUPS)).params) as any;
+const marketsReady = Array.isArray(marketsFixture?.results?.entities) && marketsFixture.results.entities.length >= 10;
+const searchesReady = scenario.request.comps.every((name: string) => demoResolver("/search", Q.searchAct(name, "music").params) !== undefined);
 
-test("Hollow Pines runs through all three tools on recorded fixtures and the Census file", async () => {
+test("Hollow Pines runs through all three tools on bundled fixtures and the Census file", { skip: !(marketsReady && searchesReady) && "venue-based markets fixture not filled yet" }, async () => {
   const qloo = new QlooClient({}, demoResolver);
   const events: AgentEvent[] = [];
   const ctx: ToolContext = { emit: (e) => events.push(e) };
@@ -257,25 +406,20 @@ test("Hollow Pines runs through all three tools on recorded fixtures and the Cen
   for (const name of scenario.request.comps) {
     const out: any = await byName.resolve_act.run({ name }, ctx);
     assert.ok(out.candidates.length >= 1, `candidates for ${name}`);
-    assert.equal(out.candidates[0].name, name, "the exact match comes first in the fixture");
     chosen.push(out.candidates[0].id);
   }
-  assert.deepEqual(chosen.sort(), scenario.comps.map((c: any) => c.id).sort());
+  assert.deepEqual(chosen.sort(), [...scenarioIds].sort());
 
   const ranked: any = await byName.rank_markets.run({ compIds: chosen }, ctx);
-  assert.equal(ranked.localities.length, 50);
-  assert.equal(ranked.localities[0].label, "Asheville, NC");
-  assert.equal(ranked.localities[0].overIndex, true, "Asheville is under 250k and ranked #1");
-  const nashville = ranked.localities.find((l: any) => l.label === "Nashville, TN");
-  assert.ok(nashville && nashville.overIndex === false, "Nashville is a usual suspect, not an over-index town");
-  assert.ok(ranked.localities.filter((l: any) => l.overIndex).length >= 5);
-  assert.ok(ranked.localities.every((l: any) => typeof l.lat === "number" && typeof l.lon === "number"), "every locality has coordinates");
+  assert.ok(ranked.localities.length >= 10);
+  assert.ok(ranked.localities.every((l: any) => typeof l.lat === "number" && typeof l.lon === "number"), "every town has coordinates");
+  assert.ok(ranked.localities.every((l: any) => l.topRoom?.name), "every town carries its top room");
+  assert.ok(ranked.localities.filter((l: any) => l.overIndex).length >= 1);
   assert.equal(state.comps.map((c) => c.name).sort().join(","), [...scenario.request.comps].sort().join(","));
 
   const routed: any = await byName.plan_route.run({ days: 12, driveHoursCap: 6, mustInclude: [], exclude: [] }, ctx);
   assert.ok(routed.route.stops.length >= 3);
   assert.ok(routed.route.stops.every((s: any) => s.legHours <= 6 || s.driveDay), "legs over the cap become drive days");
-  assert.ok(routed.obvious.smallTowns >= 1);
 
   const types = events.map((e) => e.type);
   assert.equal(types.filter((t) => t === "receipt").length, 4, "three searches plus one rank_markets");

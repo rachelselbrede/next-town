@@ -1,0 +1,937 @@
+{
+  "city": "Cincinnati, OH",
+  "home": "Richmond, VA",
+  "comps": [
+    {
+      "id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+      "name": "Big Thief",
+      "type": "urn:entity:artist",
+      "popularity": 0.93
+    },
+    {
+      "id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+      "name": "Waxahatchee",
+      "type": "urn:entity:artist",
+      "popularity": 0.88
+    },
+    {
+      "id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "name": "Adrianne Lenker",
+      "type": "urn:entity:artist",
+      "popularity": 0.85
+    }
+  ],
+  "rooms": [
+    {
+      "id": "C9DD8CF8-85F3-46D9-8FCD-FBDDB8CA93C4",
+      "name": "MOTR Pub",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
+      "affinity": 0.92,
+      "popularity": 0.78,
+      "rating": 4.6,
+      "price_level": 2,
+      "address": "1345 Main St, Cincinnati, OH 45202",
+      "city": "Cincinnati",
+      "description": "Over-the-Rhine rock club with a small stage, cheap beer, and a long run of touring indie and folk acts.",
+      "tags": [
+        "Music Venue",
+        "Live Music Venue"
+      ],
+      "tagIds": [
+        "urn:tag:genre:place:music_venue",
+        "urn:tag:category:place:live_music_venue"
+      ],
+      "why": [
+        "Big Thief (96%)",
+        "Waxahatchee (87%)",
+        "Adrianne Lenker (78%)"
+      ],
+      "lat": 39.1103,
+      "lon": -84.5146,
+      "region": "OH"
+    },
+    {
+      "id": "7ED53EC8-E95F-49DC-8164-6EAE83EF358B",
+      "name": "The Woodward Theater",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
+      "affinity": 0.87,
+      "popularity": 0.75,
+      "rating": 4.6,
+      "price_level": 2,
+      "address": "1404 Main St, Cincinnati, OH 45202",
+      "city": "Cincinnati",
+      "description": "Restored 1913 movie house on Main Street that now books mid-size indie, folk, and rock tours.",
+      "tags": [
+        "Music Venue",
+        "Live Music Venue"
+      ],
+      "tagIds": [
+        "urn:tag:genre:place:music_venue",
+        "urn:tag:category:place:live_music_venue"
+      ],
+      "why": [
+        "Big Thief (93%)",
+        "Waxahatchee (84%)",
+        "Adrianne Lenker (75%)"
+      ],
+      "lat": 39.1107,
+      "lon": -84.5148,
+      "region": "OH"
+    },
+    {
+      "id": "BF27CA07-E917-4034-96B8-05885DF12EF1",
+      "name": "Northside Yacht Club",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
+      "affinity": 0.82,
+      "popularity": 0.62,
+      "rating": 4.5,
+      "price_level": 1,
+      "address": "4231 Spring Grove Ave, Cincinnati, OH 45223",
+      "city": "Cincinnati",
+      "description": "Tiny Northside bar and stage, a launchpad for Cincinnati bands and a regular stop for DIY tours.",
+      "tags": [
+        "Music Venue",
+        "Live Music Venue"
+      ],
+      "tagIds": [
+        "urn:tag:genre:place:music_venue",
+        "urn:tag:category:place:live_music_venue"
+      ],
+      "why": [
+        "Big Thief (85%)",
+        "Waxahatchee (76%)",
+        "Adrianne Lenker (67%)"
+      ],
+      "lat": 39.1596,
+      "lon": -84.5385,
+      "region": "OH"
+    },
+    {
+      "id": "CDEB465F-A210-4EE6-A632-A83F5D00515F",
+      "name": "Bogart's",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
+      "affinity": 0.77,
+      "popularity": 0.77,
+      "rating": 4.4,
+      "price_level": 2,
+      "address": "2621 Vine St, Cincinnati, OH 45219",
+      "city": "Cincinnati",
+      "description": "Long-running Corryville club with a balcony and a wide room, a Cincinnati tour stop since the 1980s.",
+      "tags": [
+        "Music Venue",
+        "Live Music Venue"
+      ],
+      "tagIds": [
+        "urn:tag:genre:place:music_venue",
+        "urn:tag:category:place:live_music_venue"
+      ],
+      "why": [
+        "Big Thief (82%)",
+        "Waxahatchee (73%)",
+        "Adrianne Lenker (64%)"
+      ],
+      "lat": 39.1296,
+      "lon": -84.5133,
+      "region": "OH"
+    },
+    {
+      "id": "8BE88E25-CE65-4CC0-9FD0-B3A0CE77FD46",
+      "name": "The Comet",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
+      "affinity": 0.73,
+      "popularity": 0.58,
+      "rating": 4.4,
+      "price_level": 1,
+      "address": "4579 Hamilton Ave, Cincinnati, OH 45223",
+      "city": "Cincinnati",
+      "description": "Northside neighborhood bar with a back-room stage and a pizza-and-pinball crowd.",
+      "tags": [
+        "Music Venue",
+        "Live Music Venue"
+      ],
+      "tagIds": [
+        "urn:tag:genre:place:music_venue",
+        "urn:tag:category:place:live_music_venue"
+      ],
+      "why": [
+        "Big Thief (75%)",
+        "Waxahatchee (66%)",
+        "Adrianne Lenker (57%)"
+      ],
+      "lat": 39.1617,
+      "lon": -84.5424,
+      "region": "OH"
+    },
+    {
+      "id": "2CA61019-B6F4-46D3-804F-3AFC887C455A",
+      "name": "Ludlow Garage",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
+      "affinity": 0.69,
+      "popularity": 0.6,
+      "rating": 4.3,
+      "price_level": 2,
+      "address": "3725 Hamilton Ave, Cincinnati, OH 45223",
+      "city": "Cincinnati",
+      "description": "Former garage in Northside reopened as a standing-room concert hall for indie and roots acts.",
+      "tags": [
+        "Music Venue",
+        "Live Music Venue"
+      ],
+      "tagIds": [
+        "urn:tag:genre:place:music_venue",
+        "urn:tag:category:place:live_music_venue"
+      ],
+      "why": [
+        "Big Thief (73%)",
+        "Waxahatchee (64%)",
+        "Adrianne Lenker (55%)"
+      ],
+      "lat": 39.1542,
+      "lon": -84.5419,
+      "region": "OH"
+    },
+    {
+      "id": "943A7D88-5CF9-4F5F-92D2-EFEA0DC0ED1A",
+      "name": "Memorial Hall",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
+      "affinity": 0.65,
+      "popularity": 0.64,
+      "rating": 4.7,
+      "price_level": 2,
+      "address": "1225 Elm St, Cincinnati, OH 45202",
+      "city": "Cincinnati",
+      "description": "Historic 1908 hall in Over-the-Rhine with a seated theater, good for quiet, listening-room shows.",
+      "tags": [
+        "Music Venue",
+        "Live Music Venue"
+      ],
+      "tagIds": [
+        "urn:tag:genre:place:music_venue",
+        "urn:tag:category:place:live_music_venue"
+      ],
+      "why": [
+        "Big Thief (71%)",
+        "Waxahatchee (62%)",
+        "Adrianne Lenker (53%)"
+      ],
+      "lat": 39.1088,
+      "lon": -84.5162,
+      "region": "OH"
+    },
+    {
+      "id": "62BD2791-401F-44C9-99CF-33AC97842176",
+      "name": "Taft Theatre",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
+      "affinity": 0.6,
+      "popularity": 0.7,
+      "rating": 4.6,
+      "price_level": 2,
+      "address": "317 E 5th St, Cincinnati, OH 45202",
+      "city": "Cincinnati",
+      "description": "Downtown theater with a big seated room for established folk and singer-songwriter tours.",
+      "tags": [
+        "Music Venue",
+        "Live Music Venue"
+      ],
+      "tagIds": [
+        "urn:tag:genre:place:music_venue",
+        "urn:tag:category:place:live_music_venue"
+      ],
+      "why": [
+        "Big Thief (63%)",
+        "Waxahatchee (54%)",
+        "Adrianne Lenker (45%)"
+      ],
+      "lat": 39.1029,
+      "lon": -84.5081,
+      "region": "OH"
+    }
+  ],
+  "promo": [
+    {
+      "kind": "record store",
+      "places": [
+        {
+          "id": "FF73479D-1464-4991-A028-BDC571A1A2E0",
+          "name": "Shake It Records",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.88,
+          "popularity": 0.61,
+          "rating": 4.8,
+          "price_level": 2,
+          "address": "4156 Hamilton Ave, Cincinnati, OH 45223",
+          "city": "Cincinnati",
+          "description": "Northside indie record store that hosts in-stores and sells local pressings next to the new releases.",
+          "tags": [
+            "Record Store"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:record_store"
+          ],
+          "why": [
+            "Big Thief (90%)",
+            "Waxahatchee (81%)",
+            "Adrianne Lenker (72%)"
+          ],
+          "lat": 39.1568,
+          "lon": -84.5424,
+          "region": "OH"
+        },
+        {
+          "id": "7A573E23-3717-4EBD-99CF-CFFE8B5E3F7A",
+          "name": "Everybody's Records",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.79,
+          "popularity": 0.55,
+          "rating": 4.7,
+          "price_level": 2,
+          "address": "6106 Montgomery Rd, Cincinnati, OH 45213",
+          "city": "Cincinnati",
+          "description": "Pleasant Ridge shop with deep used-vinyl bins and a loyal crate-digging crowd.",
+          "tags": [
+            "Record Store"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:record_store"
+          ],
+          "why": [
+            "Big Thief (83%)",
+            "Waxahatchee (74%)",
+            "Adrianne Lenker (65%)"
+          ],
+          "lat": 39.1894,
+          "lon": -84.4262,
+          "region": "OH"
+        }
+      ]
+    },
+    {
+      "kind": "coffee shop",
+      "places": [
+        {
+          "id": "D4590572-5EB1-4E4A-8AC9-FDC9267391FC",
+          "name": "Coffee Emporium",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.85,
+          "popularity": 0.6,
+          "rating": 4.5,
+          "price_level": 1,
+          "address": "110 E Central Pkwy, Cincinnati, OH 45202",
+          "city": "Cincinnati",
+          "description": "Cincinnati roaster with a Central Parkway cafe and a stack of local show flyers by the door.",
+          "tags": [
+            "Coffee Shop",
+            "Cafe"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:coffee_shop",
+            "urn:tag:genre:place:cafe"
+          ],
+          "why": [
+            "Big Thief (87%)",
+            "Waxahatchee (78%)",
+            "Adrianne Lenker (69%)"
+          ],
+          "lat": 39.1088,
+          "lon": -84.5128,
+          "region": "OH"
+        },
+        {
+          "id": "C945548C-FAC0-4E3C-B6A3-77EEF566AC0D",
+          "name": "Sleepy Bee Cafe",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.74,
+          "popularity": 0.57,
+          "rating": 4.6,
+          "price_level": 2,
+          "address": "3098 Madison Rd, Cincinnati, OH 45209",
+          "city": "Cincinnati",
+          "description": "Oakley cafe known for scratch breakfast and a regular crowd of locals.",
+          "tags": [
+            "Coffee Shop",
+            "Cafe"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:coffee_shop",
+            "urn:tag:genre:place:cafe"
+          ],
+          "why": [
+            "Big Thief (78%)",
+            "Waxahatchee (69%)",
+            "Adrianne Lenker (60%)"
+          ],
+          "lat": 39.1356,
+          "lon": -84.4328,
+          "region": "OH"
+        }
+      ]
+    },
+    {
+      "kind": "bookstore",
+      "places": [
+        {
+          "id": "591959E7-1EC8-41D9-83A8-BC71B52594C5",
+          "name": "Joseph-Beth Booksellers",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.86,
+          "popularity": 0.66,
+          "rating": 4.6,
+          "price_level": 2,
+          "address": "2692 Madison Rd, Cincinnati, OH 45208",
+          "city": "Cincinnati",
+          "description": "Cincinnati's biggest independent bookstore, with a cafe, a calendar of author events, and room for readings.",
+          "tags": [
+            "Bookstore"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:bookstore"
+          ],
+          "why": [
+            "Big Thief (88%)",
+            "Waxahatchee (79%)",
+            "Adrianne Lenker (70%)"
+          ],
+          "lat": 39.1423,
+          "lon": -84.4337,
+          "region": "OH"
+        },
+        {
+          "id": "28CD8982-6D05-42EA-8671-1C0059620289",
+          "name": "Blue Manatee Books",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.76,
+          "popularity": 0.5,
+          "rating": 4.8,
+          "price_level": 2,
+          "address": "3054 Madison Rd, Cincinnati, OH 45209",
+          "city": "Cincinnati",
+          "description": "Oakley independent bookshop with a strong local-author shelf and a friendly events table.",
+          "tags": [
+            "Bookstore"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:bookstore"
+          ],
+          "why": [
+            "Big Thief (80%)",
+            "Waxahatchee (71%)",
+            "Adrianne Lenker (62%)"
+          ],
+          "lat": 39.1356,
+          "lon": -84.4331,
+          "region": "OH"
+        }
+      ]
+    },
+    {
+      "kind": "dive bar",
+      "places": [
+        {
+          "id": "86AEF05B-D1A8-45E7-A14D-30B1B1F3F815",
+          "name": "Arnold's Bar and Grill",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.84,
+          "popularity": 0.64,
+          "rating": 4.6,
+          "price_level": 2,
+          "address": "210 E 8th St, Cincinnati, OH 45202",
+          "city": "Cincinnati",
+          "description": "Cincinnati's oldest bar, a courtyard-and-jazz-night institution downtown.",
+          "tags": [
+            "Dive Bar",
+            "Bar"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:dive_bar",
+            "urn:tag:genre:place:bar"
+          ],
+          "why": [
+            "Big Thief (86%)",
+            "Waxahatchee (77%)",
+            "Adrianne Lenker (68%)"
+          ],
+          "lat": 39.1057,
+          "lon": -84.5086,
+          "region": "OH"
+        },
+        {
+          "id": "4D36D0AD-7FD4-4593-9575-398A7AB48295",
+          "name": "Northside Tavern",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.78,
+          "popularity": 0.54,
+          "rating": 4.5,
+          "price_level": 1,
+          "address": "4163 Hamilton Ave, Cincinnati, OH 45223",
+          "city": "Cincinnati",
+          "description": "Long-standing Northside dive with cheap drinks, a patio, and live bands most nights.",
+          "tags": [
+            "Dive Bar",
+            "Bar"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:dive_bar",
+            "urn:tag:genre:place:bar"
+          ],
+          "why": [
+            "Big Thief (82%)",
+            "Waxahatchee (73%)",
+            "Adrianne Lenker (64%)"
+          ],
+          "lat": 39.1575,
+          "lon": -84.5431,
+          "region": "OH"
+        }
+      ]
+    },
+    {
+      "kind": "vintage shop",
+      "places": [
+        {
+          "id": "8B5408A7-0E4B-4E0E-A91A-B7074D5E605F",
+          "name": "Goodwill Northside",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.75,
+          "popularity": 0.5,
+          "rating": 4,
+          "price_level": 1,
+          "address": "4111 Hamilton Ave, Cincinnati, OH 45223",
+          "city": "Cincinnati",
+          "description": "Neighborhood thrift store that doubles as a source for stage clothes and cheap flannel.",
+          "tags": [
+            "Vintage Store",
+            "Thrift Store"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:vintage_store",
+            "urn:tag:genre:place:thrift_store"
+          ],
+          "why": [
+            "Big Thief (77%)",
+            "Waxahatchee (68%)",
+            "Adrianne Lenker (59%)"
+          ],
+          "lat": 39.156,
+          "lon": -84.542,
+          "region": "OH"
+        },
+        {
+          "id": "94E32AD9-6432-40F6-A583-7BED0F282B7A",
+          "name": "St. Vincent de Paul Thrift Store",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.66,
+          "popularity": 0.48,
+          "rating": 4.1,
+          "price_level": 1,
+          "address": "1125 Bank St, Cincinnati, OH 45214",
+          "city": "Cincinnati",
+          "description": "Big charity thrift store with racks of secondhand denim, jackets, and records.",
+          "tags": [
+            "Vintage Store",
+            "Thrift Store"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:vintage_store",
+            "urn:tag:genre:place:thrift_store"
+          ],
+          "why": [
+            "Big Thief (70%)",
+            "Waxahatchee (61%)",
+            "Adrianne Lenker (52%)"
+          ],
+          "lat": 39.1131,
+          "lon": -84.5435,
+          "region": "OH"
+        }
+      ]
+    }
+  ],
+  "who": {
+    "scope": "comps-overall",
+    "age": {
+      "24_and_younger": 0.23,
+      "25_to_29": 0.49,
+      "30_to_34": 0.51,
+      "35_to_44": 0.32,
+      "45_to_54": 0.06,
+      "55_and_older": -0.23
+    },
+    "gender": {
+      "female": 0.24,
+      "male": -0.1
+    },
+    "strongestAge": "30_to_34",
+    "suggestions": [
+      "Fans of your comps overall index highest at 30 to 34; consider leading with rooms and promo partners that program for that age range.",
+      "The under-25 band is also positive; consider asking rooms whether an all-ages or early show is an option.",
+      "The 55-and-older band indexes low; consider a later set time if the room offers a choice."
+    ]
+  },
+  "localColor": {
+    "brands": [
+      {
+        "id": "2838B3D8-5C49-4AF5-AA58-12015277F479",
+        "name": "Doc Martens",
+        "cityAffinity": 0.587,
+        "homeAffinity": 0.568,
+        "delta": 0.019
+      },
+      {
+        "id": "CA29596C-A583-4C49-8B03-1FCE2A53EA05",
+        "name": "Carhartt",
+        "cityAffinity": 0.642,
+        "homeAffinity": 0.624,
+        "delta": 0.018
+      },
+      {
+        "id": "81FF9E58-99F1-4C63-9F2F-7D85FA8D6964",
+        "name": "Patagonia",
+        "cityAffinity": 0.9,
+        "homeAffinity": 0.9,
+        "delta": 0
+      },
+      {
+        "id": "47D5D80A-D8DA-4F3A-A4DF-A99635B1BCB7",
+        "name": "Warby Parker",
+        "cityAffinity": 0.679,
+        "homeAffinity": 0.679,
+        "delta": 0
+      },
+      {
+        "id": "753F76AB-F8F3-4DB9-9076-5541D45875DF",
+        "name": "Trader Joe's",
+        "cityAffinity": 0.845,
+        "homeAffinity": 0.863,
+        "delta": -0.018
+      }
+    ],
+    "shows": [
+      {
+        "id": "72E9BC0B-598B-43EF-8465-E61AD1CFF1DB",
+        "name": "Parks and Recreation",
+        "cityAffinity": 0.615,
+        "homeAffinity": 0.597,
+        "delta": 0.018
+      },
+      {
+        "id": "5AF4B18C-7F2E-4D54-B946-C924DBBC0E98",
+        "name": "Fleabag",
+        "cityAffinity": 0.91,
+        "homeAffinity": 0.91,
+        "delta": 0
+      },
+      {
+        "id": "F504DFDE-7861-486D-9F48-C6422671C57A",
+        "name": "Reservation Dogs",
+        "cityAffinity": 0.892,
+        "homeAffinity": 0.892,
+        "delta": 0
+      },
+      {
+        "id": "656078D4-7298-439C-B517-153F264014E1",
+        "name": "Somebody Somewhere",
+        "cityAffinity": 0.873,
+        "homeAffinity": 0.873,
+        "delta": 0
+      },
+      {
+        "id": "1726F37E-D9CA-43CC-8B62-4E9AF1FD2C5B",
+        "name": "Severance",
+        "cityAffinity": 0.652,
+        "homeAffinity": 0.652,
+        "delta": 0
+      }
+    ],
+    "homeAvailable": true
+  },
+  "locality": {
+    "id": "C9DD8CF8-85F3-46D9-8FCD-FBDDB8CA93C4",
+    "name": "Cincinnati",
+    "label": "Cincinnati, OH",
+    "rank": 31,
+    "affinity": 0.755,
+    "state": "OH",
+    "population": 309567,
+    "lat": 39.1402,
+    "lon": -84.5058,
+    "overIndex": false,
+    "why": [
+      "Big Thief (51%)",
+      "Waxahatchee (42%)",
+      "Adrianne Lenker (30%)"
+    ],
+    "topRoom": {
+      "id": "C9DD8CF8-85F3-46D9-8FCD-FBDDB8CA93C4",
+      "name": "MOTR Pub",
+      "affinity": 0.755,
+      "why": [
+        "Big Thief (51%)",
+        "Waxahatchee (42%)",
+        "Adrianne Lenker (30%)"
+      ]
+    }
+  },
+  "card": {
+    "summary": "Cincinnati ranks #31 nationally for fans of your comps, with a locality affinity of 0.755 led by Big Thief (51%), followed by Waxahatchee (42%) and Adrianne Lenker (30%). It does not meet the over-index mark (population under 250,000 and a top-20 national rank), but its top room for fans of your comps is MOTR Pub.",
+    "rooms_note": "MOTR Pub is the top room for fans of your comps around Cincinnati at 0.92 affinity, driven most by Big Thief (96%), with The Woodward Theater close behind at 0.87.",
+    "promo_note": "Record stores are the strongest promo partner group, led by Shake It Records in Northside at 0.88 affinity (Big Thief 90%), and its description notes it hosts in-stores.",
+    "who_note": "Fans of your comps overall index highest at 30 to 34 (0.51), with 25 to 29 close behind (0.49), so consider leading with rooms and promo partners that program for that range.",
+    "local_color_note": "Doc Martens (+0.019 vs. Richmond) and Carhartt (+0.018) rank a bit higher with fans of your comps around Cincinnati than at home, hinting that boots-and-workwear styling could suit the poster or merch table, and Parks and Recreation (+0.018) could be a light reference point.",
+    "promo_copy": [
+      "Big Thief and Waxahatchee fans in Cincinnati, this one's for you.",
+      "If Adrianne Lenker is on your turntable, grab a flyer for our Cincinnati date."
+    ],
+    "caution": "These are aggregate taste affinities, not attendance or sales data, so confirm capacity, age policy, and availability directly with each room."
+  },
+  "receipts": [
+    {
+      "id": "rmv3hwl9k-181",
+      "tool": "find_rooms",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Cincinnati%2C+OH&filter.location.radius=15000&filter.tags=urn%3Atag%3Acategory%3Aplace%3Alive_music_venue%2Curn%3Atag%3Agenre%3Aplace%3Abar%3Alive_music%2Curn%3Atag%3Agenre%3Aplace%3Aconcert_hall%2Curn%3Atag%3Agenre%3Aplace%3Amusic_venue&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=8&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 8,
+      "top": [
+        {
+          "name": "MOTR Pub",
+          "affinity": 0.92
+        },
+        {
+          "name": "The Woodward Theater",
+          "affinity": 0.87
+        },
+        {
+          "name": "Northside Yacht Club",
+          "affinity": 0.82
+        }
+      ]
+    },
+    {
+      "id": "rmv3hwl9k-182",
+      "tool": "who_shows_up",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Ademographics&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 3,
+      "top": []
+    },
+    {
+      "id": "rmv3hwl9k-183",
+      "tool": "local_color",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Abrand&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Cincinnati%2C+OH&signal.location.radius=25000&take=20",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 20,
+      "top": [
+        {
+          "name": "Patagonia",
+          "affinity": 0.9
+        },
+        {
+          "name": "Rhinegeist Brewery",
+          "affinity": 0.882
+        },
+        {
+          "name": "Subaru",
+          "affinity": 0.863
+        }
+      ]
+    },
+    {
+      "id": "rmv3hwl9k-184",
+      "tool": "local_color",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Atv_show&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Cincinnati%2C+OH&signal.location.radius=25000&take=20",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 20,
+      "top": [
+        {
+          "name": "Fleabag",
+          "affinity": 0.91
+        },
+        {
+          "name": "Reservation Dogs",
+          "affinity": 0.892
+        },
+        {
+          "name": "Somebody Somewhere",
+          "affinity": 0.873
+        }
+      ]
+    },
+    {
+      "id": "rmv3hwl9k-185",
+      "tool": "local_color",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Abrand&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Richmond%2C+VA&signal.location.radius=25000&take=20",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 20,
+      "top": [
+        {
+          "name": "Patagonia",
+          "affinity": 0.9
+        },
+        {
+          "name": "Subaru",
+          "affinity": 0.882
+        },
+        {
+          "name": "Trader Joe's",
+          "affinity": 0.863
+        }
+      ]
+    },
+    {
+      "id": "rmv3hwl9k-186",
+      "tool": "local_color",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Atv_show&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Richmond%2C+VA&signal.location.radius=25000&take=20",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 20,
+      "top": [
+        {
+          "name": "Fleabag",
+          "affinity": 0.91
+        },
+        {
+          "name": "Reservation Dogs",
+          "affinity": 0.892
+        },
+        {
+          "name": "Somebody Somewhere",
+          "affinity": 0.873
+        }
+      ]
+    },
+    {
+      "id": "rmv3hwl9k-187",
+      "tool": "find_promo_partners",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Cincinnati%2C+OH&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Arecord_store&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 2,
+      "top": [
+        {
+          "name": "Shake It Records",
+          "affinity": 0.88
+        },
+        {
+          "name": "Everybody's Records",
+          "affinity": 0.79
+        }
+      ]
+    },
+    {
+      "id": "rmv3hwl9k-188",
+      "tool": "find_promo_partners",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Cincinnati%2C+OH&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Acafe%2Curn%3Atag%3Agenre%3Aplace%3Acoffee_shop&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 1,
+      "resultCount": 2,
+      "top": [
+        {
+          "name": "Coffee Emporium",
+          "affinity": 0.85
+        },
+        {
+          "name": "Sleepy Bee Cafe",
+          "affinity": 0.74
+        }
+      ]
+    },
+    {
+      "id": "rmv3hwl9k-189",
+      "tool": "find_promo_partners",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Cincinnati%2C+OH&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abookstore&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 2,
+      "top": [
+        {
+          "name": "Joseph-Beth Booksellers",
+          "affinity": 0.86
+        },
+        {
+          "name": "Blue Manatee Books",
+          "affinity": 0.76
+        }
+      ]
+    },
+    {
+      "id": "rmv3hwl9k-190",
+      "tool": "find_promo_partners",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Cincinnati%2C+OH&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abar%2Curn%3Atag%3Agenre%3Aplace%3Adive_bar&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 2,
+      "top": [
+        {
+          "name": "Arnold's Bar and Grill",
+          "affinity": 0.84
+        },
+        {
+          "name": "Northside Tavern",
+          "affinity": 0.78
+        }
+      ]
+    },
+    {
+      "id": "rmv3hwl9k-191",
+      "tool": "find_promo_partners",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Cincinnati%2C+OH&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Athrift_store%2Curn%3Atag%3Agenre%3Aplace%3Avintage_store&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 2,
+      "top": [
+        {
+          "name": "Goodwill Northside",
+          "affinity": 0.75
+        },
+        {
+          "name": "St. Vincent de Paul Thrift Store",
+          "affinity": 0.66
+        }
+      ]
+    }
+  ]
+}

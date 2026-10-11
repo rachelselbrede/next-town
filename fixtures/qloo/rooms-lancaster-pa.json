@@ -1,0 +1,444 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_rooms",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?feature.explainability=true&filter.location.query=Lancaster%2C%20PA&filter.location.radius=15000&filter.tags=urn%3Atag%3Acategory%3Aplace%3Alive_music_venue%2Curn%3Atag%3Agenre%3Aplace%3Abar%3Alive_music%2Curn%3Atag%3Agenre%3Aplace%3Aconcert_hall%2Curn%3Atag%3Agenre%3Aplace%3Amusic_venue&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=8",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Lancaster, PA",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:category:place:live_music_venue,urn:tag:genre:place:bar:live_music,urn:tag:genre:place:concert_hall,urn:tag:genre:place:music_venue",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "sort_by": "affinity",
+      "take": 8,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "BEA5A05E-DA98-4F42-B116-D1B1E22E1703",
+          "name": "Tellus360",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.72,
+          "location": {
+            "lat": 40.0378,
+            "lon": -76.304
+          },
+          "properties": {
+            "address": "24 E King St, Lancaster, PA 17602",
+            "geocode": {
+              "name": "Lancaster",
+              "city": "Lancaster",
+              "admin1_region": "PA",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 2,
+            "description": "Downtown King Street bar and venue with a rooftop, a local-food kitchen, and live music most nights."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:bar:live_music",
+              "name": "Live Music Bar",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.92,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.904
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.931
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.932
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "AA7BCC18-05DE-4B62-ADE4-4D16CACB2818",
+          "name": "Fulton Theatre",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.78,
+          "location": {
+            "lat": 40.0394,
+            "lon": -76.3069
+          },
+          "properties": {
+            "address": "12 N Prince St, Lancaster, PA 17603",
+            "geocode": {
+              "name": "Lancaster",
+              "city": "Lancaster",
+              "admin1_region": "PA",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 3,
+            "description": "Historic downtown theater, one of the oldest working in the country, with a smaller stage for singer-songwriters."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:concert_hall",
+              "name": "Concert Hall",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.86,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.798
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.863
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.821
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "2320BA04-D4C1-4317-A983-B60E8BF1DD47",
+          "name": "Zoetropolis",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.64,
+          "location": {
+            "lat": 40.0415,
+            "lon": -76.3094
+          },
+          "properties": {
+            "address": "112 N Water St, Lancaster, PA 17603",
+            "geocode": {
+              "name": "Lancaster",
+              "city": "Lancaster",
+              "admin1_region": "PA",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 2,
+            "description": "Independent cinema, restaurant and still house that clears the screen for acoustic and indie shows."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.82,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.832
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.692
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.645
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "8A1DC08C-5635-4962-ABC9-4EC693E4412C",
+          "name": "The Ware Center",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.6,
+          "location": {
+            "lat": 40.0397,
+            "lon": -76.3069
+          },
+          "properties": {
+            "address": "42 N Prince St, Lancaster, PA 17603",
+            "geocode": {
+              "name": "Lancaster",
+              "city": "Lancaster",
+              "admin1_region": "PA",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 2,
+            "description": "Millersville University's downtown performing arts space with a quiet, attentive listening room."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:concert_hall",
+              "name": "Concert Hall",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.78,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.737
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.779
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.65
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "858D4EDA-F7A8-411C-8BF1-8E032257D706",
+          "name": "Mickey's Black Box",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.5,
+          "location": {
+            "lat": 40.0383,
+            "lon": -76.3071
+          },
+          "properties": {
+            "address": "Lancaster, PA 17602",
+            "geocode": {
+              "name": "Lancaster",
+              "city": "Lancaster",
+              "admin1_region": "PA",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 1,
+            "description": "Small black-box theater and listening room for emerging artists, with an in-house sound system."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.74,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.72
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.653
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.729
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "C76FACDF-A9BC-4505-9EFC-41A905647D17",
+          "name": "Annie Bailey's Irish Pub",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.58,
+          "location": {
+            "lat": 40.0378,
+            "lon": -76.3045
+          },
+          "properties": {
+            "address": "28 E King St, Lancaster, PA 17602",
+            "geocode": {
+              "name": "Lancaster",
+              "city": "Lancaster",
+              "admin1_region": "PA",
+              "country_code": "US"
+            },
+            "business_rating": 4.3,
+            "price_level": 2,
+            "description": "Long-running King Street pub with a small stage for local bands and weekend acoustic sets."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:bar:live_music",
+              "name": "Live Music Bar",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.7,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.769
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.63
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.72
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "30332F07-7195-4297-AE8A-DCCF238561E7",
+          "name": "Lancaster Dispensing Company",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.52,
+          "location": {
+            "lat": 40.0386,
+            "lon": -76.3076
+          },
+          "properties": {
+            "address": "33 N Market St, Lancaster, PA 17603",
+            "geocode": {
+              "name": "Lancaster",
+              "city": "Lancaster",
+              "admin1_region": "PA",
+              "country_code": "US"
+            },
+            "business_rating": 4.4,
+            "price_level": 2,
+            "description": "Downtown bar in a former dispensary space with a rotating live music calendar and craft taps."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:bar:live_music",
+              "name": "Live Music Bar",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.65,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.542
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.663
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.645
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "6C633832-66BA-4A07-905E-6461856A2708",
+          "name": "Phantom Power",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.47,
+          "location": {
+            "lat": 39.9976,
+            "lon": -76.3544
+          },
+          "properties": {
+            "address": "Millersville, PA 17551",
+            "geocode": {
+              "name": "Millersville",
+              "city": "Millersville",
+              "admin1_region": "PA",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 2,
+            "description": "Millersville events space, music and comedy venue and microbrewery that books touring indie and college acts."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:genre:place:bar:live_music",
+              "name": "Live Music Bar",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.6,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.51
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.591
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.532
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

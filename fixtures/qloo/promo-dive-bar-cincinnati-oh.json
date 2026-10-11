@@ -1,0 +1,135 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_promo_partners",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?feature.explainability=true&filter.location.query=Cincinnati%2C%20OH&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abar%2Curn%3Atag%3Agenre%3Aplace%3Adive_bar&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Cincinnati, OH",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:genre:place:bar,urn:tag:genre:place:dive_bar",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "sort_by": "affinity",
+      "take": 2,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "86AEF05B-D1A8-45E7-A14D-30B1B1F3F815",
+          "name": "Arnold's Bar and Grill",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.64,
+          "location": {
+            "lat": 39.1057,
+            "lon": -84.5086
+          },
+          "properties": {
+            "address": "210 E 8th St, Cincinnati, OH 45202",
+            "geocode": {
+              "name": "Cincinnati",
+              "city": "Cincinnati",
+              "admin1_region": "OH",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 2,
+            "description": "Cincinnati's oldest bar, a courtyard-and-jazz-night institution downtown."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:dive_bar",
+              "name": "Dive Bar",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:genre:place:bar",
+              "name": "Bar",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.84,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.86
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.77
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.68
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "4D36D0AD-7FD4-4593-9575-398A7AB48295",
+          "name": "Northside Tavern",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.54,
+          "location": {
+            "lat": 39.1575,
+            "lon": -84.5431
+          },
+          "properties": {
+            "address": "4163 Hamilton Ave, Cincinnati, OH 45223",
+            "geocode": {
+              "name": "Cincinnati",
+              "city": "Cincinnati",
+              "admin1_region": "OH",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 1,
+            "description": "Long-standing Northside dive with cheap drinks, a patio, and live bands most nights."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:dive_bar",
+              "name": "Dive Bar",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:genre:place:bar",
+              "name": "Bar",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.78,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.82
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.73
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.64
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

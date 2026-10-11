@@ -20,7 +20,7 @@
         {
           "entity_id": "79EEE04F-A222-4904-AD68-3BA71F6C4464",
           "name": "Weaver Street Market",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.85,
           "properties": {
@@ -33,7 +33,7 @@
         {
           "entity_id": "81FF9E58-99F1-4C63-9F2F-7D85FA8D6964",
           "name": "Patagonia",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.828,
           "properties": {
@@ -46,7 +46,7 @@
         {
           "entity_id": "AC8120D3-F632-4821-92A3-70E5C4A3343C",
           "name": "Subaru",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.806,
           "properties": {
@@ -59,7 +59,7 @@
         {
           "entity_id": "753F76AB-F8F3-4DB9-9076-5541D45875DF",
           "name": "Trader Joe's",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.784,
           "properties": {
@@ -72,7 +72,7 @@
         {
           "entity_id": "7B6FB381-3093-4C50-A15E-6D21EA7E78E7",
           "name": "Counter Culture Coffee",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.762,
           "properties": {
@@ -85,7 +85,7 @@
         {
           "entity_id": "7C8DF92F-D4B9-45DE-9144-A0E36C0C6897",
           "name": "REI",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.74,
           "properties": {
@@ -98,7 +98,7 @@
         {
           "entity_id": "92AE7889-8825-41F9-9786-BDC1C2B1807A",
           "name": "Merge Records",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.718,
           "properties": {
@@ -111,7 +111,7 @@
         {
           "entity_id": "79105CB8-2649-4620-A2F8-0B53D5B8A831",
           "name": "Fjallraven",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.696,
           "properties": {
@@ -124,7 +124,7 @@
         {
           "entity_id": "B33E9033-D54B-4B07-A439-14C0322C161D",
           "name": "Levi's",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.674,
           "properties": {
@@ -137,7 +137,7 @@
         {
           "entity_id": "D2211532-7B69-4259-9174-37814BEAF070",
           "name": "Fullsteam Brewery",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.652,
           "properties": {
@@ -150,7 +150,7 @@
         {
           "entity_id": "52039753-DD87-4F1B-8D75-3F55850FAD13",
           "name": "La Colombe",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.63,
           "properties": {
@@ -163,7 +163,7 @@
         {
           "entity_id": "D44CBBD6-C6E8-455A-94B4-88B6A05B0591",
           "name": "Blundstone",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.608,
           "properties": {
@@ -176,7 +176,7 @@
         {
           "entity_id": "47D5D80A-D8DA-4F3A-A4DF-A99635B1BCB7",
           "name": "Warby Parker",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.586,
           "properties": {
@@ -189,7 +189,7 @@
         {
           "entity_id": "36893AB3-1D7F-462E-8A16-8FDDC01BD4EE",
           "name": "Great Outdoor Provision Co.",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.564,
           "properties": {
@@ -202,7 +202,7 @@
         {
           "entity_id": "1E64D934-320B-4FB7-921B-58DB10BE96EA",
           "name": "Birkenstock",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.542,
           "properties": {
@@ -215,7 +215,7 @@
         {
           "entity_id": "CC32F29D-F291-40D1-A315-06E800B57645",
           "name": "Hydro Flask",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.52,
           "properties": {
@@ -228,7 +228,7 @@
         {
           "entity_id": "C73FFA8F-5C54-4D3C-B005-D446B1E83030",
           "name": "Carolina Brewery",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.498,
           "properties": {
@@ -241,7 +241,7 @@
         {
           "entity_id": "F4D0AB50-60CD-4B17-BF5B-3224D267EB2B",
           "name": "Allbirds",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.476,
           "properties": {
@@ -254,7 +254,7 @@
         {
           "entity_id": "71C078FF-47AA-457A-9A09-520E27E4A265",
           "name": "Fender",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.454,
           "properties": {
@@ -267,7 +267,7 @@
         {
           "entity_id": "EBA1863E-C462-44F3-ADBB-2222A3CF969B",
           "name": "Stanley",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.432,
           "properties": {

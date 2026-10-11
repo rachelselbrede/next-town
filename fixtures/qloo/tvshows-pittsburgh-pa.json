@@ -20,7 +20,7 @@
         {
           "entity_id": "5AF4B18C-7F2E-4D54-B946-C924DBBC0E98",
           "name": "Fleabag",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.88,
           "query": {
@@ -30,7 +30,7 @@
         {
           "entity_id": "656078D4-7298-439C-B517-153F264014E1",
           "name": "Somebody Somewhere",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.86,
           "query": {
@@ -40,7 +40,7 @@
         {
           "entity_id": "E3C6F04F-7F24-4D5C-88C7-79ACD9F57EAC",
           "name": "The Bear",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.84,
           "query": {
@@ -50,7 +50,7 @@
         {
           "entity_id": "94517E1E-4D20-4604-A1D6-E4DEA4581FC2",
           "name": "Mare of Easttown",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.82,
           "query": {
@@ -60,7 +60,7 @@
         {
           "entity_id": "F504DFDE-7861-486D-9F48-C6422671C57A",
           "name": "Reservation Dogs",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.8,
           "query": {
@@ -70,7 +70,7 @@
         {
           "entity_id": "CBBD7C4F-EE93-4B17-8B5B-5251E5F73EB7",
           "name": "Hacks",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.78,
           "query": {
@@ -80,7 +80,7 @@
         {
           "entity_id": "4ED236B4-9453-4512-8981-B49E9BB467A5",
           "name": "Atlanta",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.76,
           "query": {
@@ -90,7 +90,7 @@
         {
           "entity_id": "33EEB5FD-B57F-4036-99F9-D50F11EF6FE4",
           "name": "Joe Pera Talks With You",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.74,
           "query": {
@@ -100,7 +100,7 @@
         {
           "entity_id": "D7BD04AA-3B47-4DA4-9E4F-40A542F5B7D1",
           "name": "Abbott Elementary",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.72,
           "query": {
@@ -110,7 +110,7 @@
         {
           "entity_id": "A13215E0-C764-4D72-A2B1-801211C74A37",
           "name": "Twin Peaks",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.7,
           "query": {
@@ -120,7 +120,7 @@
         {
           "entity_id": "641939B0-CB48-4BF8-9DB0-64138C19929D",
           "name": "Mister Rogers' Neighborhood",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.68,
           "query": {
@@ -130,7 +130,7 @@
         {
           "entity_id": "BAF90461-5DF2-4491-9523-F0057E492CF9",
           "name": "Succession",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.66,
           "query": {
@@ -140,7 +140,7 @@
         {
           "entity_id": "DB8450A9-DDD4-4A01-8081-D65A68F670C9",
           "name": "Detroiters",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.64,
           "query": {
@@ -150,7 +150,7 @@
         {
           "entity_id": "DE3DEAD3-1889-4620-BF50-F137ECEE8F97",
           "name": "This Is Us",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.62,
           "query": {
@@ -160,7 +160,7 @@
         {
           "entity_id": "377A96F7-A073-43FE-B56D-6E3331A4308F",
           "name": "Gilmore Girls",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.6,
           "query": {
@@ -170,7 +170,7 @@
         {
           "entity_id": "8846C890-2157-46DE-8C98-84D919CFB824",
           "name": "Shrinking",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.58,
           "query": {
@@ -180,7 +180,7 @@
         {
           "entity_id": "0E925F8C-19E3-4F7B-A3BE-AE91C3784881",
           "name": "Heartstopper",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.56,
           "query": {
@@ -190,7 +190,7 @@
         {
           "entity_id": "BC54CCD9-384D-44FA-9501-168687F7C811",
           "name": "Mythic Quest",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.54,
           "query": {
@@ -200,7 +200,7 @@
         {
           "entity_id": "7F75EEE6-1524-4148-A801-1648D95D53BF",
           "name": "The Righteous Gemstones",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.52,
           "query": {
@@ -210,7 +210,7 @@
         {
           "entity_id": "CFB544E5-94AC-4A99-9802-3F5EBFED7210",
           "name": "Search Party",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.5,
           "query": {

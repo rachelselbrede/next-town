@@ -20,7 +20,7 @@
         {
           "entity_id": "F4D0AB50-60CD-4B17-BF5B-3224D267EB2B",
           "name": "Allbirds",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.54,
           "properties": {
@@ -33,7 +33,7 @@
         {
           "entity_id": "F6C143D1-37EF-44A6-8D0F-91E39C7B16CF",
           "name": "The Veil Brewing Co.",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.65,
           "properties": {
@@ -46,7 +46,7 @@
         {
           "entity_id": "B33E9033-D54B-4B07-A439-14C0322C161D",
           "name": "Levi's",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.77,
           "properties": {
@@ -59,7 +59,7 @@
         {
           "entity_id": "47D5D80A-D8DA-4F3A-A4DF-A99635B1BCB7",
           "name": "Warby Parker",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.61,
           "properties": {
@@ -72,11 +72,10 @@
         {
           "entity_id": "ABCCC90D-D407-428B-99C4-E3010A39A0C7",
           "name": "Bodo's Bagels",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.61,
           "properties": {},
-          "tags": [],
           "query": {
             "affinity": 0.868
           }
@@ -84,7 +83,7 @@
         {
           "entity_id": "7C8DF92F-D4B9-45DE-9144-A0E36C0C6897",
           "name": "REI",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.79,
           "properties": {
@@ -97,7 +96,7 @@
         {
           "entity_id": "AC8120D3-F632-4821-92A3-70E5C4A3343C",
           "name": "Subaru",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.84,
           "properties": {
@@ -110,7 +109,7 @@
         {
           "entity_id": "E02ADCAF-5406-4313-BB26-67758B3A101B",
           "name": "Giant Eagle",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.61,
           "properties": {
@@ -123,7 +122,7 @@
         {
           "entity_id": "8714B921-EBBE-4527-9393-A785DFC169BF",
           "name": "Stony Point Fashion Park",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.59,
           "properties": {
@@ -136,7 +135,7 @@
         {
           "entity_id": "6DB3B04B-3AA1-43A1-A5BE-93F17E0380AE",
           "name": "Ellwood Thompson's",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.72,
           "properties": {
@@ -149,7 +148,7 @@
         {
           "entity_id": "81FF9E58-99F1-4C63-9F2F-7D85FA8D6964",
           "name": "Patagonia",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.85,
           "properties": {
@@ -162,7 +161,7 @@
         {
           "entity_id": "52039753-DD87-4F1B-8D75-3F55850FAD13",
           "name": "La Colombe",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.67,
           "properties": {
@@ -175,11 +174,10 @@
         {
           "entity_id": "B95C6A49-82F6-4084-AFB9-CF08C2A11114",
           "name": "Blue Ridge Mountain Sports",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.77,
           "properties": {},
-          "tags": [],
           "query": {
             "affinity": 0.686
           }
@@ -187,7 +185,7 @@
         {
           "entity_id": "F25F0B67-D992-40AE-8BAB-E7F62F5437C3",
           "name": "Hardywood Park Craft Brewery",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.78,
           "properties": {
@@ -200,11 +198,10 @@
         {
           "entity_id": "6243C06C-6675-425E-B8B8-6396DDDA9C13",
           "name": "French Broad Chocolate",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.375,
           "properties": {},
-          "tags": [],
           "query": {
             "affinity": 0.662
           }
@@ -212,13 +209,12 @@
         {
           "entity_id": "CF1F4DF2-0EBC-4DDB-B2DA-58092A3E7571",
           "name": "Oliver Winery",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.28,
           "properties": {
             "description": "Oliver Winery: a brand fans of these comps around Bloomington, IN over-index on."
           },
-          "tags": [],
           "query": {
             "affinity": 0.624
           }
@@ -226,7 +222,7 @@
         {
           "entity_id": "7B6FB381-3093-4C50-A15E-6D21EA7E78E7",
           "name": "Counter Culture Coffee",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.762,
           "properties": {
@@ -239,7 +235,7 @@
         {
           "entity_id": "D44CBBD6-C6E8-455A-94B4-88B6A05B0591",
           "name": "Blundstone",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.73,
           "properties": {
@@ -252,7 +248,7 @@
         {
           "entity_id": "753F76AB-F8F3-4DB9-9076-5541D45875DF",
           "name": "Trader Joe's",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.83,
           "properties": {
@@ -265,7 +261,7 @@
         {
           "entity_id": "79105CB8-2649-4620-A2F8-0B53D5B8A831",
           "name": "Fjallraven",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.71,
           "properties": {

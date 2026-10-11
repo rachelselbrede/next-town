@@ -25,8 +25,8 @@
     {
       "id": "A5634B56-8A02-476E-AA5A-BA19202673AE",
       "name": "The Bijou Theatre",
-      "type": "urn:entity:place",
-      "subtype": "urn:entity:place:concert_hall",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
       "affinity": 0.93,
       "popularity": 0.86,
       "rating": 4.8,
@@ -38,17 +38,24 @@
         "Concert Hall",
         "Live Music Venue"
       ],
+      "tagIds": [
+        "urn:tag:genre:place:concert_hall",
+        "urn:tag:category:place:live_music_venue"
+      ],
       "why": [
         "Big Thief (78%)",
         "Waxahatchee (66%)",
         "Adrianne Lenker (60%)"
-      ]
+      ],
+      "lat": 35.961,
+      "lon": -83.921,
+      "region": "TN"
     },
     {
       "id": "935BF66A-5144-4FB2-9FBD-669A51414D0C",
       "name": "Barley's Taproom & Pizzeria",
-      "type": "urn:entity:place",
-      "subtype": "urn:entity:place:bar",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
       "affinity": 0.886,
       "popularity": 0.7,
       "rating": 4.5,
@@ -60,17 +67,24 @@
         "Live Music Bar",
         "Bar"
       ],
+      "tagIds": [
+        "urn:tag:genre:place:bar:live_music",
+        "urn:tag:genre:place:bar"
+      ],
       "why": [
         "Big Thief (70%)",
         "Waxahatchee (64%)",
         "Adrianne Lenker (52%)"
-      ]
+      ],
+      "lat": 35.961,
+      "lon": -83.921,
+      "region": "TN"
     },
     {
       "id": "FB337D51-AEEC-4297-A631-D72886F1042D",
       "name": "The Standard",
-      "type": "urn:entity:place",
-      "subtype": "urn:entity:place:music_venue",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
       "affinity": 0.841,
       "popularity": 0.58,
       "rating": 4.4,
@@ -82,17 +96,24 @@
         "Music Venue",
         "Live Music Venue"
       ],
+      "tagIds": [
+        "urn:tag:genre:place:music_venue",
+        "urn:tag:category:place:live_music_venue"
+      ],
       "why": [
         "Big Thief (66%)",
         "Waxahatchee (58%)",
         "Adrianne Lenker (55%)"
-      ]
+      ],
+      "lat": 35.961,
+      "lon": -83.921,
+      "region": "TN"
     },
     {
       "id": "5725278F-6F57-4FA8-8F96-8072FED6EE35",
       "name": "Pretentious Beer Company",
-      "type": "urn:entity:place",
-      "subtype": "urn:entity:place:bar",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
       "affinity": 0.797,
       "popularity": 0.55,
       "rating": 4.6,
@@ -104,17 +125,24 @@
         "Live Music Bar",
         "Bar"
       ],
+      "tagIds": [
+        "urn:tag:genre:place:bar:live_music",
+        "urn:tag:genre:place:bar"
+      ],
       "why": [
         "Big Thief (62%)",
         "Waxahatchee (60%)",
         "Adrianne Lenker (48%)"
-      ]
+      ],
+      "lat": 35.961,
+      "lon": -83.921,
+      "region": "TN"
     },
     {
       "id": "77D0459D-FADD-4EA8-8243-EE8C5A229E50",
       "name": "Tennessee Theatre",
-      "type": "urn:entity:place",
-      "subtype": "urn:entity:place:concert_hall",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
       "affinity": 0.753,
       "popularity": 0.9,
       "rating": 4.8,
@@ -126,17 +154,24 @@
         "Concert Hall",
         "Live Music Venue"
       ],
+      "tagIds": [
+        "urn:tag:genre:place:concert_hall",
+        "urn:tag:category:place:live_music_venue"
+      ],
       "why": [
         "Big Thief (64%)",
         "Waxahatchee (50%)",
         "Adrianne Lenker (47%)"
-      ]
+      ],
+      "lat": 35.961,
+      "lon": -83.921,
+      "region": "TN"
     },
     {
       "id": "C47AEC29-182D-40EB-8C3E-7BE1026AF006",
       "name": "Preservation Pub",
-      "type": "urn:entity:place",
-      "subtype": "urn:entity:place:bar",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
       "affinity": 0.709,
       "popularity": 0.62,
       "rating": 4.3,
@@ -148,17 +183,24 @@
         "Live Music Bar",
         "Bar"
       ],
+      "tagIds": [
+        "urn:tag:genre:place:bar:live_music",
+        "urn:tag:genre:place:bar"
+      ],
       "why": [
         "Big Thief (58%)",
         "Waxahatchee (54%)",
         "Adrianne Lenker (44%)"
-      ]
+      ],
+      "lat": 35.961,
+      "lon": -83.921,
+      "region": "TN"
     },
     {
       "id": "D76BA63A-A401-4E38-862A-DF91148956F4",
       "name": "The Open Chord",
-      "type": "urn:entity:place",
-      "subtype": "urn:entity:place:music_venue",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
       "affinity": 0.664,
       "popularity": 0.42,
       "rating": 4.5,
@@ -170,17 +212,24 @@
         "Music Venue",
         "Live Music Venue"
       ],
+      "tagIds": [
+        "urn:tag:genre:place:music_venue",
+        "urn:tag:category:place:live_music_venue"
+      ],
       "why": [
         "Big Thief (55%)",
         "Waxahatchee (50%)",
         "Adrianne Lenker (46%)"
-      ]
+      ],
+      "lat": 35.961,
+      "lon": -83.921,
+      "region": "TN"
     },
     {
       "id": "93C07E76-9FB6-4ED2-AB21-B8C6071FE3DD",
       "name": "Laurel Theater",
-      "type": "urn:entity:place",
-      "subtype": "urn:entity:place:concert_hall",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
       "affinity": 0.62,
       "popularity": 0.38,
       "rating": 4.7,
@@ -192,11 +241,18 @@
         "Concert Hall",
         "Music Venue"
       ],
+      "tagIds": [
+        "urn:tag:genre:place:concert_hall",
+        "urn:tag:genre:place:music_venue"
+      ],
       "why": [
+        "Adrianne Lenker (52%)",
         "Big Thief (50%)",
-        "Waxahatchee (46%)",
-        "Adrianne Lenker (52%)"
-      ]
+        "Waxahatchee (46%)"
+      ],
+      "lat": 35.961,
+      "lon": -83.921,
+      "region": "TN"
     }
   ],
   "promo": [
@@ -206,8 +262,8 @@
         {
           "id": "6D84A202-DE2B-4AD7-858E-E47E0ABBE4BB",
           "name": "Lost & Found Records",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:record_store",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "affinity": 0.91,
           "popularity": 0.6,
           "rating": 4.8,
@@ -218,17 +274,23 @@
           "tags": [
             "Record Store"
           ],
+          "tagIds": [
+            "urn:tag:genre:place:record_store"
+          ],
           "why": [
             "Big Thief (76%)",
             "Waxahatchee (68%)",
             "Adrianne Lenker (62%)"
-          ]
+          ],
+          "lat": 35.961,
+          "lon": -83.921,
+          "region": "TN"
         },
         {
           "id": "04878120-DD78-4387-AE73-8C22652836A0",
           "name": "Raven Records & Rarities",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:record_store",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "affinity": 0.769,
           "popularity": 0.46,
           "rating": 4.7,
@@ -239,11 +301,17 @@
           "tags": [
             "Record Store"
           ],
+          "tagIds": [
+            "urn:tag:genre:place:record_store"
+          ],
           "why": [
             "Big Thief (60%)",
             "Waxahatchee (56%)",
             "Adrianne Lenker (50%)"
-          ]
+          ],
+          "lat": 35.961,
+          "lon": -83.921,
+          "region": "TN"
         }
       ]
     },
@@ -253,8 +321,8 @@
         {
           "id": "054F9DB2-3574-4097-B1C2-19A0EB5F4924",
           "name": "Wild Love Bakehouse",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:coffee_shop",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "affinity": 0.882,
           "popularity": 0.64,
           "rating": 4.7,
@@ -266,17 +334,24 @@
             "Coffee Shop",
             "Cafe"
           ],
+          "tagIds": [
+            "urn:tag:genre:place:coffee_shop",
+            "urn:tag:genre:place:cafe"
+          ],
           "why": [
             "Big Thief (70%)",
             "Waxahatchee (66%)",
             "Adrianne Lenker (54%)"
-          ]
+          ],
+          "lat": 35.961,
+          "lon": -83.921,
+          "region": "TN"
         },
         {
           "id": "692980EE-067B-454E-9058-228D8FDF90F0",
           "name": "Old City Java",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:coffee_shop",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "affinity": 0.741,
           "popularity": 0.58,
           "rating": 4.6,
@@ -288,11 +363,18 @@
             "Coffee Shop",
             "Cafe"
           ],
+          "tagIds": [
+            "urn:tag:genre:place:coffee_shop",
+            "urn:tag:genre:place:cafe"
+          ],
           "why": [
             "Big Thief (58%)",
             "Waxahatchee (54%)",
             "Adrianne Lenker (48%)"
-          ]
+          ],
+          "lat": 35.961,
+          "lon": -83.921,
+          "region": "TN"
         }
       ]
     },
@@ -302,8 +384,8 @@
         {
           "id": "CD4625C9-928F-4C57-96B4-9D75B5653230",
           "name": "Union Ave Books",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:bookstore",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "affinity": 0.854,
           "popularity": 0.56,
           "rating": 4.8,
@@ -314,17 +396,23 @@
           "tags": [
             "Bookstore"
           ],
+          "tagIds": [
+            "urn:tag:genre:place:bookstore"
+          ],
           "why": [
             "Big Thief (68%)",
             "Waxahatchee (60%)",
             "Adrianne Lenker (58%)"
-          ]
+          ],
+          "lat": 35.961,
+          "lon": -83.921,
+          "region": "TN"
         },
         {
           "id": "B8492C83-9732-473C-A868-424750BA8E33",
           "name": "The Bottom Bookstore",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:bookstore",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "affinity": 0.685,
           "popularity": 0.3,
           "rating": 4.7,
@@ -335,11 +423,17 @@
           "tags": [
             "Bookstore"
           ],
+          "tagIds": [
+            "urn:tag:genre:place:bookstore"
+          ],
           "why": [
             "Big Thief (52%)",
-            "Waxahatchee (48%)",
-            "Adrianne Lenker (50%)"
-          ]
+            "Adrianne Lenker (50%)",
+            "Waxahatchee (48%)"
+          ],
+          "lat": 35.961,
+          "lon": -83.921,
+          "region": "TN"
         }
       ]
     },
@@ -349,8 +443,8 @@
         {
           "id": "3F9567C7-41E2-4A15-B227-1CA4A3ADF33A",
           "name": "Central Flats & Taps",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:dive_bar",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "affinity": 0.825,
           "popularity": 0.48,
           "rating": 4.4,
@@ -362,17 +456,24 @@
             "Dive Bar",
             "Bar"
           ],
+          "tagIds": [
+            "urn:tag:genre:place:dive_bar",
+            "urn:tag:genre:place:bar"
+          ],
           "why": [
             "Big Thief (64%)",
             "Waxahatchee (60%)",
             "Adrianne Lenker (46%)"
-          ]
+          ],
+          "lat": 35.961,
+          "lon": -83.921,
+          "region": "TN"
         },
         {
           "id": "FDBB9892-B71D-42CB-9618-0301ABAB255F",
           "name": "Sapphire",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:dive_bar",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "affinity": 0.656,
           "popularity": 0.44,
           "rating": 4.3,
@@ -384,11 +485,18 @@
             "Dive Bar",
             "Bar"
           ],
+          "tagIds": [
+            "urn:tag:genre:place:dive_bar",
+            "urn:tag:genre:place:bar"
+          ],
           "why": [
             "Big Thief (50%)",
             "Waxahatchee (46%)",
             "Adrianne Lenker (42%)"
-          ]
+          ],
+          "lat": 35.961,
+          "lon": -83.921,
+          "region": "TN"
         }
       ]
     },
@@ -398,8 +506,8 @@
         {
           "id": "79D40881-AEAC-40BA-921E-2781B8151A53",
           "name": "Nothing Too Fancy",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:vintage_store",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "affinity": 0.797,
           "popularity": 0.5,
           "rating": 4.6,
@@ -410,17 +518,23 @@
           "tags": [
             "Vintage Store"
           ],
+          "tagIds": [
+            "urn:tag:genre:place:vintage_store"
+          ],
           "why": [
             "Big Thief (62%)",
             "Waxahatchee (58%)",
             "Adrianne Lenker (50%)"
-          ]
+          ],
+          "lat": 35.961,
+          "lon": -83.921,
+          "region": "TN"
         },
         {
           "id": "2E1AFD15-079B-4F33-B019-7A007B45F6CA",
           "name": "Retrospect Vintage",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:vintage_store",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "affinity": 0.628,
           "popularity": 0.4,
           "rating": 4.6,
@@ -432,31 +546,39 @@
             "Vintage Store",
             "Thrift Store"
           ],
+          "tagIds": [
+            "urn:tag:genre:place:vintage_store",
+            "urn:tag:genre:place:thrift_store"
+          ],
           "why": [
-            "Big Thief (48%)",
             "Waxahatchee (50%)",
+            "Big Thief (48%)",
             "Adrianne Lenker (44%)"
-          ]
+          ],
+          "lat": 35.961,
+          "lon": -83.921,
+          "region": "TN"
         }
       ]
     }
   ],
   "who": {
+    "scope": "comps-overall",
     "age": {
-      "24_and_younger": 0.22,
+      "24_and_younger": 0.23,
       "25_to_29": 0.49,
-      "30_to_34": 0.48,
+      "30_to_34": 0.51,
       "35_to_44": 0.32,
       "45_to_54": 0.06,
       "55_and_older": -0.23
     },
     "gender": {
       "female": 0.24,
-      "male": -0.09
+      "male": -0.1
     },
-    "strongestAge": "25_to_29",
+    "strongestAge": "30_to_34",
     "suggestions": [
-      "Fans of your comps here index highest at 25 to 29; consider pitching rooms and promo partners that already draw that crowd.",
+      "Fans of your comps overall index highest at 30 to 34; consider leading with rooms and promo partners that program for that age range.",
       "The under-25 band is also positive; consider asking rooms whether an all-ages or early show is an option.",
       "The 55-and-older band indexes low; consider a later set time if the room offers a choice."
     ]
@@ -535,40 +657,51 @@
         "homeAffinity": 0.726,
         "delta": 0.013
       }
-    ]
+    ],
+    "homeAvailable": true
   },
   "locality": {
-    "id": "E1B8E632-F2A1-460F-A1DC-D051565A0F52",
+    "id": "A5634B56-8A02-476E-AA5A-BA19202673AE",
     "name": "Knoxville",
-    "state": "TN",
     "label": "Knoxville, TN",
     "rank": 13,
     "affinity": 0.851,
+    "state": "TN",
     "population": 190682,
-    "lat": 35.961,
-    "lon": -83.921,
+    "lat": 35.9707,
+    "lon": -83.9493,
     "overIndex": true,
     "why": [
       "Big Thief (61%)",
       "Waxahatchee (52%)",
       "Adrianne Lenker (40%)"
-    ]
+    ],
+    "topRoom": {
+      "id": "A5634B56-8A02-476E-AA5A-BA19202673AE",
+      "name": "The Bijou Theatre",
+      "affinity": 0.851,
+      "why": [
+        "Big Thief (61%)",
+        "Waxahatchee (52%)",
+        "Adrianne Lenker (40%)"
+      ]
+    }
   },
   "card": {
-    "summary": "Knoxville ranks 13th on the route with a locality affinity of 0.851, and fans of your comps around Knoxville over-index compared with the baseline. Big Thief is the strongest pull here at 61%, followed by Waxahatchee at 52% and Adrianne Lenker at 40%.",
-    "rooms_note": "The Bijou Theatre is the top room at a 0.93 affinity, driven most by Big Thief fans at 78%.",
-    "promo_note": "Record stores are the strongest promo group, led by Lost & Found Records at a 0.91 affinity with Big Thief fans at 76%.",
-    "who_note": "Fans of your comps around Knoxville index highest at 25 to 29 (0.49), with 30 to 34 close behind (0.48), so consider pitching rooms and partners that already draw that late-twenties to early-thirties crowd.",
-    "local_color_note": "Birkenstock runs ahead of Richmond by 0.055 and The Bear by 0.036, which hints that a relaxed, warm, lived-in look could suit the poster and merch table.",
+    "summary": "Knoxville ranks #13 nationally for fans of your comps, with a locality affinity of 0.851, and it over-indexes: a population under 250,000 with a national rank of 20 or better. Big Thief is the strongest comp here at 61%, and The Bijou Theatre is the top-ranked room.",
+    "rooms_note": "The Bijou Theatre leads the room list at 0.93 affinity, driven mostly by Big Thief (78%), with Barley's Taproom & Pizzeria close behind at 0.886.",
+    "promo_note": "Record stores are the strongest promo group, led by Lost & Found Records at 0.91 affinity with Big Thief at 76%, so start your poster and flyer outreach there.",
+    "who_note": "Fans of your comps overall index highest at 30 to 34 (0.51), with 25 to 29 close behind (0.49), so consider leading with rooms and promo partners that program for that age range.",
+    "local_color_note": "Allbirds and Birkenstock both rank higher with fans of your comps around Knoxville than around Richmond (+0.056 and +0.055), and Girls5eva leads the shows at +0.047, which hints that a relaxed, earthy, slightly playful look could suit the poster and merch table.",
     "promo_copy": [
-      "Big Thief and Waxahatchee fans in Knoxville: a new act you should hear is coming.",
-      "Knoxville, if Adrianne Lenker is on repeat, ask us about this upcoming show."
+      "Into Big Thief? A new songwriter is headed to Knoxville soon.",
+      "Waxahatchee fans in Knoxville: ask us about the next show coming through."
     ],
-    "caution": "These are aggregate taste affinities from fans of your comps, not attendance or sales figures, so confirm capacity, age policy, and availability directly with each room."
+    "caution": "These are aggregate taste affinities, not attendance or sales figures, so confirm capacity, age policy, and availability directly with each room."
   },
   "receipts": [
     {
-      "id": "rmv3fe0xu-61",
+      "id": "rmv3hvazt-71",
       "tool": "find_rooms",
       "method": "GET",
       "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Knoxville%2C+TN&filter.location.radius=15000&filter.tags=urn%3Atag%3Acategory%3Aplace%3Alive_music_venue%2Curn%3Atag%3Agenre%3Aplace%3Abar%3Alive_music%2Curn%3Atag%3Agenre%3Aplace%3Aconcert_hall%2Curn%3Atag%3Agenre%3Aplace%3Amusic_venue&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=8&feature.explainability=true",
@@ -592,34 +725,10 @@
       ]
     },
     {
-      "id": "rmv3fe0xu-62",
-      "tool": "find_promo_partners",
-      "method": "GET",
-      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Knoxville%2C+TN&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abar%2Curn%3Atag%3Agenre%3Aplace%3Abookstore%2Curn%3Atag%3Agenre%3Aplace%3Acafe%2Curn%3Atag%3Agenre%3Aplace%3Acoffee_shop%2Curn%3Atag%3Agenre%3Aplace%3Adive_bar%2Curn%3Atag%3Agenre%3Aplace%3Arecord_store%2Curn%3Atag%3Agenre%3Aplace%3Athrift_store%2Curn%3Atag%3Agenre%3Aplace%3Avintage_store&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&diversify.by=properties.subtype&diversify.take=2&sort_by=affinity&take=12&feature.explainability=true",
-      "mode": "demo",
-      "status": 200,
-      "ms": 0,
-      "resultCount": 12,
-      "top": [
-        {
-          "name": "Lost & Found Records",
-          "affinity": 0.91
-        },
-        {
-          "name": "Wild Love Bakehouse",
-          "affinity": 0.882
-        },
-        {
-          "name": "Union Ave Books",
-          "affinity": 0.854
-        }
-      ]
-    },
-    {
-      "id": "rmv3fe0xu-63",
+      "id": "rmv3hvazt-72",
       "tool": "who_shows_up",
       "method": "GET",
-      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Ademographics&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Knoxville%2C+TN&signal.location.radius=25000",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Ademographics&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
       "mode": "demo",
       "status": 200,
       "ms": 0,
@@ -627,7 +736,7 @@
       "top": []
     },
     {
-      "id": "rmv3fe0xu-64",
+      "id": "rmv3hvazt-73",
       "tool": "local_color",
       "method": "GET",
       "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Abrand&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Knoxville%2C+TN&signal.location.radius=25000&take=20",
@@ -651,7 +760,7 @@
       ]
     },
     {
-      "id": "rmv3fe0xu-65",
+      "id": "rmv3hvazt-74",
       "tool": "local_color",
       "method": "GET",
       "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Atv_show&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Knoxville%2C+TN&signal.location.radius=25000&take=20",
@@ -675,7 +784,7 @@
       ]
     },
     {
-      "id": "rmv3fe0xu-66",
+      "id": "rmv3hvazt-75",
       "tool": "local_color",
       "method": "GET",
       "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Abrand&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Richmond%2C+VA&signal.location.radius=25000&take=20",
@@ -699,7 +808,7 @@
       ]
     },
     {
-      "id": "rmv3fe0xu-67",
+      "id": "rmv3hvazt-76",
       "tool": "local_color",
       "method": "GET",
       "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Atv_show&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Richmond%2C+VA&signal.location.radius=25000&take=20",
@@ -719,6 +828,106 @@
         {
           "name": "Somebody Somewhere",
           "affinity": 0.873
+        }
+      ]
+    },
+    {
+      "id": "rmv3hvazt-77",
+      "tool": "find_promo_partners",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Knoxville%2C+TN&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Arecord_store&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 2,
+      "top": [
+        {
+          "name": "Lost & Found Records",
+          "affinity": 0.91
+        },
+        {
+          "name": "Raven Records & Rarities",
+          "affinity": 0.769
+        }
+      ]
+    },
+    {
+      "id": "rmv3hvazt-78",
+      "tool": "find_promo_partners",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Knoxville%2C+TN&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Acafe%2Curn%3Atag%3Agenre%3Aplace%3Acoffee_shop&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 2,
+      "top": [
+        {
+          "name": "Wild Love Bakehouse",
+          "affinity": 0.882
+        },
+        {
+          "name": "Old City Java",
+          "affinity": 0.741
+        }
+      ]
+    },
+    {
+      "id": "rmv3hvazt-79",
+      "tool": "find_promo_partners",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Knoxville%2C+TN&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abookstore&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 2,
+      "top": [
+        {
+          "name": "Union Ave Books",
+          "affinity": 0.854
+        },
+        {
+          "name": "The Bottom Bookstore",
+          "affinity": 0.685
+        }
+      ]
+    },
+    {
+      "id": "rmv3hvazt-80",
+      "tool": "find_promo_partners",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Knoxville%2C+TN&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abar%2Curn%3Atag%3Agenre%3Aplace%3Adive_bar&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 2,
+      "top": [
+        {
+          "name": "Central Flats & Taps",
+          "affinity": 0.825
+        },
+        {
+          "name": "Sapphire",
+          "affinity": 0.656
+        }
+      ]
+    },
+    {
+      "id": "rmv3hvazt-81",
+      "tool": "find_promo_partners",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Knoxville%2C+TN&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Athrift_store%2Curn%3Atag%3Agenre%3Aplace%3Avintage_store&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 2,
+      "top": [
+        {
+          "name": "Nothing Too Fancy",
+          "affinity": 0.797
+        },
+        {
+          "name": "Retrospect Vintage",
+          "affinity": 0.628
         }
       ]
     }

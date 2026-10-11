@@ -5,7 +5,8 @@
 // 1. Copies public/ to site/.
 // 2. Bundles src/static-entry.ts (the real Worker handler, no Anthropic key, Qloo fixtures) for the
 //    browser as site/js/server.bundle.js.
-// 3. Adds site/js/static-shim.js, which answers fetch("/api/...") in the page by calling that handler,
+// 3. Adds site/js/static-shim.js, which answers fetch("/api/...") in the page by calling that handler
+//    (health included, so fixtureNote and recordedCities come from the server code, not a copy here),
 //    and loads it before app.js. app.js itself is unchanged, so the mirror behaves exactly like a
 //    Worker deployed without secrets: the recorded sample works end to end; custom runs explain that
 //    live mode needs the hosted Worker.
@@ -45,11 +46,6 @@ window.fetch = async (input, init) => {
   const url = new URL(typeof input === "string" ? input : input.url, location.href);
   const match = url.origin === location.origin && url.pathname.match(API);
   if (!match) return realFetch(input, init);
-  if (match[1] === "health") {
-    return new Response(JSON.stringify({ ok: true, qloo: "demo", model: "claude-opus-5-5", claude: false, recorded: true, static: true }), {
-      headers: { "content-type": "application/json" },
-    });
-  }
   const signal = init?.signal;
   if (signal?.aborted) throw new DOMException("Aborted", "AbortError");
   const request = new Request(new URL("/api/" + match[1] + url.search, location.origin), init);

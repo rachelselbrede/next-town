@@ -1,0 +1,937 @@
+{
+  "city": "Washington, DC",
+  "home": "Richmond, VA",
+  "comps": [
+    {
+      "id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+      "name": "Big Thief",
+      "type": "urn:entity:artist",
+      "popularity": 0.93
+    },
+    {
+      "id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+      "name": "Waxahatchee",
+      "type": "urn:entity:artist",
+      "popularity": 0.88
+    },
+    {
+      "id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "name": "Adrianne Lenker",
+      "type": "urn:entity:artist",
+      "popularity": 0.85
+    }
+  ],
+  "rooms": [
+    {
+      "id": "0CE05C06-60F7-4F2F-A33F-07F794D4A533",
+      "name": "9:30 Club",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
+      "affinity": 0.92,
+      "popularity": 0.88,
+      "rating": 4.7,
+      "price_level": 2,
+      "address": "815 V St NW, Washington, DC 20001",
+      "city": "Washington",
+      "description": "U Street's flagship standing-room club, the stop every touring indie act hopes to play.",
+      "tags": [
+        "Music Venue",
+        "Live Music Venue"
+      ],
+      "tagIds": [
+        "urn:tag:genre:place:music_venue",
+        "urn:tag:category:place:live_music_venue"
+      ],
+      "why": [
+        "Adrianne Lenker (88%)",
+        "Waxahatchee (88%)",
+        "Big Thief (80%)"
+      ],
+      "lat": 38.9179,
+      "lon": -77.0239,
+      "region": "DC"
+    },
+    {
+      "id": "2E80829F-EAD0-4DBB-93C7-3C07E46C0BD2",
+      "name": "Black Cat",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
+      "affinity": 0.87,
+      "popularity": 0.76,
+      "rating": 4.4,
+      "price_level": 2,
+      "address": "1811 14th St NW, Washington, DC 20009",
+      "city": "Washington",
+      "description": "Two-stage rock club on 14th Street with a long indie and punk calendar.",
+      "tags": [
+        "Live Music Bar",
+        "Live Music Venue"
+      ],
+      "tagIds": [
+        "urn:tag:genre:place:bar:live_music",
+        "urn:tag:category:place:live_music_venue"
+      ],
+      "why": [
+        "Big Thief (90%)",
+        "Adrianne Lenker (78%)",
+        "Waxahatchee (75%)"
+      ],
+      "lat": 38.9145,
+      "lon": -77.0316,
+      "region": "DC"
+    },
+    {
+      "id": "9644B51F-4F3C-41EC-B7A9-9A0290178DB6",
+      "name": "Union Stage",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
+      "affinity": 0.82,
+      "popularity": 0.66,
+      "rating": 4.6,
+      "price_level": 2,
+      "address": "740 Water St SW, Washington, DC 20024",
+      "city": "Washington",
+      "description": "Waterfront listening room with good sight lines and a seated-or-standing floor.",
+      "tags": [
+        "Music Venue",
+        "Live Music Venue"
+      ],
+      "tagIds": [
+        "urn:tag:genre:place:music_venue",
+        "urn:tag:category:place:live_music_venue"
+      ],
+      "why": [
+        "Adrianne Lenker (84%)",
+        "Big Thief (80%)",
+        "Waxahatchee (79%)"
+      ],
+      "lat": 38.8788,
+      "lon": -77.0227,
+      "region": "DC"
+    },
+    {
+      "id": "2D57161B-1C84-4AB9-9248-864CEDD1C57C",
+      "name": "Songbyrd Music House",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
+      "affinity": 0.78,
+      "popularity": 0.62,
+      "rating": 4.5,
+      "price_level": 2,
+      "address": "540 Penn St NE, Washington, DC 20002",
+      "city": "Washington",
+      "description": "Small music house and record cafe near Union Market, built for emerging touring acts.",
+      "tags": [
+        "Live Music Bar",
+        "Live Music Venue"
+      ],
+      "tagIds": [
+        "urn:tag:genre:place:bar:live_music",
+        "urn:tag:category:place:live_music_venue"
+      ],
+      "why": [
+        "Adrianne Lenker (79%)",
+        "Waxahatchee (79%)",
+        "Big Thief (75%)"
+      ],
+      "lat": 38.9086,
+      "lon": -76.9977,
+      "region": "DC"
+    },
+    {
+      "id": "6E7BB590-2839-422C-8B6E-67E128275858",
+      "name": "Lincoln Theatre",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
+      "affinity": 0.74,
+      "popularity": 0.7,
+      "rating": 4.6,
+      "price_level": 3,
+      "address": "1215 U St NW, Washington, DC 20009",
+      "city": "Washington",
+      "description": "Restored 1920s theater on U Street with a seated main floor.",
+      "tags": [
+        "Concert Hall",
+        "Live Music Venue"
+      ],
+      "tagIds": [
+        "urn:tag:genre:place:concert_hall",
+        "urn:tag:category:place:live_music_venue"
+      ],
+      "why": [
+        "Big Thief (75%)",
+        "Waxahatchee (72%)",
+        "Adrianne Lenker (65%)"
+      ],
+      "lat": 38.917,
+      "lon": -77.0289,
+      "region": "DC"
+    },
+    {
+      "id": "7298C5F3-9616-460D-98CC-687956069D18",
+      "name": "DC9 Nightclub",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
+      "affinity": 0.7,
+      "popularity": 0.6,
+      "rating": 4.3,
+      "price_level": 1,
+      "address": "1940 9th St NW, Washington, DC 20001",
+      "city": "Washington",
+      "description": "Four-floor neighborhood club known for up-and-coming indie bands.",
+      "tags": [
+        "Live Music Bar",
+        "Live Music Venue"
+      ],
+      "tagIds": [
+        "urn:tag:genre:place:bar:live_music",
+        "urn:tag:category:place:live_music_venue"
+      ],
+      "why": [
+        "Adrianne Lenker (72%)",
+        "Big Thief (68%)",
+        "Waxahatchee (58%)"
+      ],
+      "lat": 38.9164,
+      "lon": -77.0252,
+      "region": "DC"
+    },
+    {
+      "id": "39739556-1F45-46A6-B055-90F82D380C4E",
+      "name": "Pearl Street Warehouse",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
+      "affinity": 0.65,
+      "popularity": 0.58,
+      "rating": 4.6,
+      "price_level": 2,
+      "address": "33 Pearl St SW, Washington, DC 20024",
+      "city": "Washington",
+      "description": "Intimate Wharf room with a warm sound and a roots-leaning booking slate.",
+      "tags": [
+        "Music Venue",
+        "Live Music Venue"
+      ],
+      "tagIds": [
+        "urn:tag:genre:place:music_venue",
+        "urn:tag:category:place:live_music_venue"
+      ],
+      "why": [
+        "Waxahatchee (67%)",
+        "Adrianne Lenker (65%)",
+        "Big Thief (60%)"
+      ],
+      "lat": 38.8786,
+      "lon": -77.023,
+      "region": "DC"
+    },
+    {
+      "id": "7479CDDD-DF72-40C3-BFC6-A36DDD754781",
+      "name": "The Anthem",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
+      "affinity": 0.6,
+      "popularity": 0.84,
+      "rating": 4.7,
+      "price_level": 3,
+      "address": "901 Wharf St SW, Washington, DC 20024",
+      "city": "Washington",
+      "description": "Large Wharf concert hall; a reach for a first record, a goal for later.",
+      "tags": [
+        "Concert Hall",
+        "Live Music Venue"
+      ],
+      "tagIds": [
+        "urn:tag:genre:place:concert_hall",
+        "urn:tag:category:place:live_music_venue"
+      ],
+      "why": [
+        "Big Thief (60%)",
+        "Adrianne Lenker (51%)",
+        "Waxahatchee (50%)"
+      ],
+      "lat": 38.8795,
+      "lon": -77.0244,
+      "region": "DC"
+    }
+  ],
+  "promo": [
+    {
+      "kind": "record store",
+      "places": [
+        {
+          "id": "A2F59262-3572-42EE-90AC-210FBA0474D5",
+          "name": "Som Records",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.9,
+          "popularity": 0.55,
+          "rating": 4.7,
+          "price_level": 2,
+          "address": "2016 14th St NW, Washington, DC 20009",
+          "city": "Washington",
+          "description": "Compact 14th Street shop with crate-dug vinyl and a loyal in-store crowd.",
+          "tags": [
+            "Record Store"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:record_store"
+          ],
+          "why": [
+            "Big Thief (96%)",
+            "Waxahatchee (95%)",
+            "Adrianne Lenker (92%)"
+          ],
+          "lat": 38.9167,
+          "lon": -77.032,
+          "region": "DC"
+        },
+        {
+          "id": "A1DEF50F-9F84-4624-8106-3427FAF1DC0C",
+          "name": "Crooked Beat Records",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.84,
+          "popularity": 0.5,
+          "rating": 4.6,
+          "price_level": 2,
+          "address": "2318 18th St NW, Washington, DC 20009",
+          "city": "Washington",
+          "description": "Adams Morgan record store stocked with indie, folk and international vinyl.",
+          "tags": [
+            "Record Store"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:record_store"
+          ],
+          "why": [
+            "Big Thief (90%)",
+            "Waxahatchee (80%)",
+            "Adrianne Lenker (72%)"
+          ],
+          "lat": 38.9205,
+          "lon": -77.042,
+          "region": "DC"
+        }
+      ]
+    },
+    {
+      "kind": "coffee shop",
+      "places": [
+        {
+          "id": "B05CD9E1-F084-4D20-87D7-386890D2BD13",
+          "name": "Qualia Coffee",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.88,
+          "popularity": 0.5,
+          "rating": 4.6,
+          "price_level": 2,
+          "address": "3917 Georgia Ave NW, Washington, DC 20011",
+          "city": "Washington",
+          "description": "Petworth roaster with a quiet back room and a community bulletin board.",
+          "tags": [
+            "Coffee Shop",
+            "Cafe"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:coffee_shop",
+            "urn:tag:genre:place:cafe"
+          ],
+          "why": [
+            "Waxahatchee (85%)",
+            "Big Thief (81%)",
+            "Adrianne Lenker (80%)"
+          ],
+          "lat": 38.9399,
+          "lon": -77.0236,
+          "region": "DC"
+        },
+        {
+          "id": "678F761C-776C-4EFC-88A9-3B3C00697C3C",
+          "name": "Peregrine Espresso",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.81,
+          "popularity": 0.55,
+          "rating": 4.6,
+          "price_level": 2,
+          "address": "660 Pennsylvania Ave SE, Washington, DC 20003",
+          "city": "Washington",
+          "description": "Capitol Hill espresso bar with a steady neighborhood regulars crowd.",
+          "tags": [
+            "Coffee Shop",
+            "Cafe"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:coffee_shop",
+            "urn:tag:genre:place:cafe"
+          ],
+          "why": [
+            "Waxahatchee (85%)",
+            "Adrianne Lenker (81%)",
+            "Big Thief (76%)"
+          ],
+          "lat": 38.8869,
+          "lon": -76.9982,
+          "region": "DC"
+        }
+      ]
+    },
+    {
+      "kind": "bookstore",
+      "places": [
+        {
+          "id": "2C3E0D7F-9779-4814-A9EB-6BD27B2903A6",
+          "name": "Politics and Prose",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.91,
+          "popularity": 0.72,
+          "rating": 4.8,
+          "price_level": 2,
+          "address": "5015 Connecticut Ave NW, Washington, DC 20008",
+          "city": "Washington",
+          "description": "Independent bookstore with a basement events space and a famously busy reading calendar.",
+          "tags": [
+            "Bookstore"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:bookstore"
+          ],
+          "why": [
+            "Adrianne Lenker (91%)",
+            "Big Thief (89%)",
+            "Waxahatchee (78%)"
+          ],
+          "lat": 38.959,
+          "lon": -77.0693,
+          "region": "DC"
+        },
+        {
+          "id": "C21FEE68-9953-41D9-A44A-5DD7977373D1",
+          "name": "Kramerbooks & Afterwords Cafe",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.83,
+          "popularity": 0.68,
+          "rating": 4.5,
+          "price_level": 2,
+          "address": "1517 Connecticut Ave NW, Washington, DC 20036",
+          "city": "Washington",
+          "description": "Dupont Circle bookstore and cafe that stays open late.",
+          "tags": [
+            "Bookstore"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:bookstore"
+          ],
+          "why": [
+            "Waxahatchee (77%)",
+            "Adrianne Lenker (77%)",
+            "Big Thief (76%)"
+          ],
+          "lat": 38.9107,
+          "lon": -77.0434,
+          "region": "DC"
+        }
+      ]
+    },
+    {
+      "kind": "dive bar",
+      "places": [
+        {
+          "id": "B5A0535D-EAAB-4F9E-B91C-B815489A2473",
+          "name": "Tune Inn",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.86,
+          "popularity": 0.56,
+          "rating": 4.4,
+          "price_level": 1,
+          "address": "331 1/2 Pennsylvania Ave SE, Washington, DC 20003",
+          "city": "Washington",
+          "description": "Capitol Hill dive with antler-covered walls and cheap pitchers.",
+          "tags": [
+            "Dive Bar",
+            "Bar"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:dive_bar",
+            "urn:tag:genre:place:bar"
+          ],
+          "why": [
+            "Big Thief (84%)",
+            "Waxahatchee (82%)",
+            "Adrianne Lenker (74%)"
+          ],
+          "lat": 38.8869,
+          "lon": -77.0013,
+          "region": "DC"
+        },
+        {
+          "id": "670BF4F3-6DBA-4BC1-B42F-E97ED7EA788F",
+          "name": "The Raven Grill",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.79,
+          "popularity": 0.45,
+          "rating": 4.3,
+          "price_level": 1,
+          "address": "3125 Mt Pleasant St NW, Washington, DC 20010",
+          "city": "Washington",
+          "description": "Mount Pleasant neighborhood dive with a long wooden bar and a jukebox.",
+          "tags": [
+            "Dive Bar",
+            "Bar"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:dive_bar",
+            "urn:tag:genre:place:bar"
+          ],
+          "why": [
+            "Waxahatchee (80%)",
+            "Adrianne Lenker (77%)",
+            "Big Thief (75%)"
+          ],
+          "lat": 38.9317,
+          "lon": -77.0376,
+          "region": "DC"
+        }
+      ]
+    },
+    {
+      "kind": "vintage shop",
+      "places": [
+        {
+          "id": "69908D03-E18A-43D2-BBAE-34D24B30F3D7",
+          "name": "Meeps Fashionmonger",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.85,
+          "popularity": 0.5,
+          "rating": 4.5,
+          "price_level": 2,
+          "address": "2104 18th St NW, Washington, DC 20009",
+          "city": "Washington",
+          "description": "Adams Morgan vintage clothing shop with a costume-y, thrift-adjacent floor.",
+          "tags": [
+            "Vintage Store",
+            "Thrift Store"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:vintage_store",
+            "urn:tag:genre:place:thrift_store"
+          ],
+          "why": [
+            "Waxahatchee (89%)",
+            "Big Thief (81%)",
+            "Adrianne Lenker (76%)"
+          ],
+          "lat": 38.917,
+          "lon": -77.042,
+          "region": "DC"
+        },
+        {
+          "id": "A53E5760-494A-476F-9EFB-66AD4FF775FC",
+          "name": "Secondi",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.77,
+          "popularity": 0.48,
+          "rating": 4.4,
+          "price_level": 2,
+          "address": "1702 Connecticut Ave NW, Washington, DC 20009",
+          "city": "Washington",
+          "description": "Dupont Circle consignment boutique with designer and vintage finds.",
+          "tags": [
+            "Vintage Store",
+            "Thrift Store"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:vintage_store",
+            "urn:tag:genre:place:thrift_store"
+          ],
+          "why": [
+            "Waxahatchee (82%)",
+            "Adrianne Lenker (73%)",
+            "Big Thief (71%)"
+          ],
+          "lat": 38.9132,
+          "lon": -77.046,
+          "region": "DC"
+        }
+      ]
+    }
+  ],
+  "who": {
+    "scope": "comps-overall",
+    "age": {
+      "24_and_younger": 0.23,
+      "25_to_29": 0.49,
+      "30_to_34": 0.51,
+      "35_to_44": 0.32,
+      "45_to_54": 0.06,
+      "55_and_older": -0.23
+    },
+    "gender": {
+      "female": 0.24,
+      "male": -0.1
+    },
+    "strongestAge": "30_to_34",
+    "suggestions": [
+      "Fans of your comps overall index highest at 30 to 34; consider leading with rooms and promo partners that program for that age range.",
+      "The under-25 band is also positive; consider asking rooms whether an all-ages or early show is an option.",
+      "The 55-and-older band indexes low; consider a later set time if the room offers a choice."
+    ]
+  },
+  "localColor": {
+    "brands": [
+      {
+        "id": "2838B3D8-5C49-4AF5-AA58-12015277F479",
+        "name": "Doc Martens",
+        "cityAffinity": 0.66,
+        "homeAffinity": 0.568,
+        "delta": 0.092
+      },
+      {
+        "id": "47D5D80A-D8DA-4F3A-A4DF-A99635B1BCB7",
+        "name": "Warby Parker",
+        "cityAffinity": 0.77,
+        "homeAffinity": 0.679,
+        "delta": 0.091
+      },
+      {
+        "id": "140AED23-2F58-4FA0-B636-C9D5D473E429",
+        "name": "Blue Bottle Coffee",
+        "cityAffinity": 0.75,
+        "homeAffinity": 0.661,
+        "delta": 0.089
+      },
+      {
+        "id": "52039753-DD87-4F1B-8D75-3F55850FAD13",
+        "name": "La Colombe",
+        "cityAffinity": 0.8,
+        "homeAffinity": 0.734,
+        "delta": 0.066
+      },
+      {
+        "id": "81FF9E58-99F1-4C63-9F2F-7D85FA8D6964",
+        "name": "Patagonia",
+        "cityAffinity": 0.91,
+        "homeAffinity": 0.9,
+        "delta": 0.01
+      }
+    ],
+    "shows": [
+      {
+        "id": "628B7F67-F053-4D43-A259-869B267583A7",
+        "name": "Russian Doll",
+        "cityAffinity": 0.64,
+        "homeAffinity": 0.615,
+        "delta": 0.025
+      },
+      {
+        "id": "1726F37E-D9CA-43CC-8B62-4E9AF1FD2C5B",
+        "name": "Severance",
+        "cityAffinity": 0.67,
+        "homeAffinity": 0.652,
+        "delta": 0.018
+      },
+      {
+        "id": "72E9BC0B-598B-43EF-8465-E61AD1CFF1DB",
+        "name": "Parks and Recreation",
+        "cityAffinity": 0.61,
+        "homeAffinity": 0.597,
+        "delta": 0.013
+      },
+      {
+        "id": "24AF387E-B347-4535-A921-D3B36CC057C9",
+        "name": "Station Eleven",
+        "cityAffinity": 0.58,
+        "homeAffinity": 0.578,
+        "delta": 0.002
+      },
+      {
+        "id": "5AF4B18C-7F2E-4D54-B946-C924DBBC0E98",
+        "name": "Fleabag",
+        "cityAffinity": 0.9,
+        "homeAffinity": 0.91,
+        "delta": -0.01
+      }
+    ],
+    "homeAvailable": true
+  },
+  "locality": {
+    "id": "0CE05C06-60F7-4F2F-A33F-07F794D4A533",
+    "name": "Washington",
+    "label": "Washington, DC",
+    "rank": 22,
+    "affinity": 0.802,
+    "state": "DC",
+    "population": 689548,
+    "lat": 38.9042,
+    "lon": -77.0165,
+    "overIndex": false,
+    "why": [
+      "Big Thief (56%)",
+      "Adrianne Lenker (47%)",
+      "Waxahatchee (35%)"
+    ],
+    "topRoom": {
+      "id": "0CE05C06-60F7-4F2F-A33F-07F794D4A533",
+      "name": "9:30 Club",
+      "affinity": 0.802,
+      "why": [
+        "Big Thief (56%)",
+        "Adrianne Lenker (47%)",
+        "Waxahatchee (35%)"
+      ]
+    }
+  },
+  "card": {
+    "summary": "Washington, DC ranks #22 nationally for fans of your comps, with a locality affinity of 0.802, led by Big Thief (56%) ahead of Adrianne Lenker (47%) and Waxahatchee (35%). It does not carry the over-index flag (that needs a population under 250,000 and a top-20 rank), but its top room for fans of your comps is 9:30 Club.",
+    "rooms_note": "9:30 Club tops the room list at 0.92 affinity, driven equally by Adrianne Lenker and Waxahatchee (88% each), with Black Cat close behind at 0.87 on the strength of Big Thief (90%).",
+    "promo_note": "Record stores are the strongest promo group, with Som Records at 0.90 affinity and Big Thief at 96%, though bookstore Politics and Prose (0.91, Adrianne Lenker 91%) is worth a call too.",
+    "who_note": "Fans of your comps overall index highest at 30 to 34 (0.51), with 25 to 29 close behind (0.49), so consider leading with rooms and promo partners that program for that late-twenties-to-early-thirties range.",
+    "local_color_note": "Doc Martens shows the biggest lift over Richmond among fans of your comps around Washington, DC (+0.092, with Warby Parker close at +0.091), hinting that a boot-and-glasses, slightly scuffed visual style could suit the poster and merch table.",
+    "promo_copy": [
+      "Big Thief fans in DC: a new record from the same corner of folk is coming through town.",
+      "If Waxahatchee lives on your turntable, catch our DC night. Ask us at the counter."
+    ],
+    "caution": "These are aggregate taste affinities for fans of your comps, not ticket or attendance data, so confirm capacity, age policy, and date availability directly with each room."
+  },
+  "receipts": [
+    {
+      "id": "rmv3hwfxg-170",
+      "tool": "find_rooms",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Washington%2C+DC&filter.location.radius=15000&filter.tags=urn%3Atag%3Acategory%3Aplace%3Alive_music_venue%2Curn%3Atag%3Agenre%3Aplace%3Abar%3Alive_music%2Curn%3Atag%3Agenre%3Aplace%3Aconcert_hall%2Curn%3Atag%3Agenre%3Aplace%3Amusic_venue&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=8&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 1,
+      "resultCount": 8,
+      "top": [
+        {
+          "name": "9:30 Club",
+          "affinity": 0.92
+        },
+        {
+          "name": "Black Cat",
+          "affinity": 0.87
+        },
+        {
+          "name": "Union Stage",
+          "affinity": 0.82
+        }
+      ]
+    },
+    {
+      "id": "rmv3hwfxg-171",
+      "tool": "who_shows_up",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Ademographics&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 3,
+      "top": []
+    },
+    {
+      "id": "rmv3hwfxg-172",
+      "tool": "local_color",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Abrand&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Washington%2C+DC&signal.location.radius=25000&take=20",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 20,
+      "top": [
+        {
+          "name": "Patagonia",
+          "affinity": 0.91
+        },
+        {
+          "name": "Subaru",
+          "affinity": 0.89
+        },
+        {
+          "name": "Compass Coffee",
+          "affinity": 0.88
+        }
+      ]
+    },
+    {
+      "id": "rmv3hwfxg-173",
+      "tool": "local_color",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Atv_show&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Washington%2C+DC&signal.location.radius=25000&take=20",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 20,
+      "top": [
+        {
+          "name": "Fleabag",
+          "affinity": 0.9
+        },
+        {
+          "name": "Veep",
+          "affinity": 0.89
+        },
+        {
+          "name": "Reservation Dogs",
+          "affinity": 0.87
+        }
+      ]
+    },
+    {
+      "id": "rmv3hwfxg-174",
+      "tool": "local_color",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Abrand&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Richmond%2C+VA&signal.location.radius=25000&take=20",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 20,
+      "top": [
+        {
+          "name": "Patagonia",
+          "affinity": 0.9
+        },
+        {
+          "name": "Subaru",
+          "affinity": 0.882
+        },
+        {
+          "name": "Trader Joe's",
+          "affinity": 0.863
+        }
+      ]
+    },
+    {
+      "id": "rmv3hwfxg-175",
+      "tool": "local_color",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Atv_show&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Richmond%2C+VA&signal.location.radius=25000&take=20",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 20,
+      "top": [
+        {
+          "name": "Fleabag",
+          "affinity": 0.91
+        },
+        {
+          "name": "Reservation Dogs",
+          "affinity": 0.892
+        },
+        {
+          "name": "Somebody Somewhere",
+          "affinity": 0.873
+        }
+      ]
+    },
+    {
+      "id": "rmv3hwfxg-176",
+      "tool": "find_promo_partners",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Washington%2C+DC&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Arecord_store&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 2,
+      "top": [
+        {
+          "name": "Som Records",
+          "affinity": 0.9
+        },
+        {
+          "name": "Crooked Beat Records",
+          "affinity": 0.84
+        }
+      ]
+    },
+    {
+      "id": "rmv3hwfxg-177",
+      "tool": "find_promo_partners",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Washington%2C+DC&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Acafe%2Curn%3Atag%3Agenre%3Aplace%3Acoffee_shop&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 2,
+      "top": [
+        {
+          "name": "Qualia Coffee",
+          "affinity": 0.88
+        },
+        {
+          "name": "Peregrine Espresso",
+          "affinity": 0.81
+        }
+      ]
+    },
+    {
+      "id": "rmv3hwfxg-178",
+      "tool": "find_promo_partners",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Washington%2C+DC&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abookstore&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 2,
+      "top": [
+        {
+          "name": "Politics and Prose",
+          "affinity": 0.91
+        },
+        {
+          "name": "Kramerbooks & Afterwords Cafe",
+          "affinity": 0.83
+        }
+      ]
+    },
+    {
+      "id": "rmv3hwfxg-179",
+      "tool": "find_promo_partners",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Washington%2C+DC&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abar%2Curn%3Atag%3Agenre%3Aplace%3Adive_bar&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 2,
+      "top": [
+        {
+          "name": "Tune Inn",
+          "affinity": 0.86
+        },
+        {
+          "name": "The Raven Grill",
+          "affinity": 0.79
+        }
+      ]
+    },
+    {
+      "id": "rmv3hwfxg-180",
+      "tool": "find_promo_partners",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Washington%2C+DC&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Athrift_store%2Curn%3Atag%3Agenre%3Aplace%3Avintage_store&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 2,
+      "top": [
+        {
+          "name": "Meeps Fashionmonger",
+          "affinity": 0.85
+        },
+        {
+          "name": "Secondi",
+          "affinity": 0.77
+        }
+      ]
+    }
+  ]
+}

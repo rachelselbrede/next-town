@@ -20,14 +20,14 @@
         {
           "entity_id": "B6119090-85AC-4E84-8223-45008C3A45F5",
           "name": "Justified",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.8,
           "properties": {},
           "tags": [
             {
+              "id": "urn:tag:genre:media:comedy_drama",
               "name": "Comedy-Drama",
-              "tag_id": "urn:tag:genre:media:comedy_drama",
               "type": "urn:tag:genre:media"
             }
           ],
@@ -38,7 +38,7 @@
         {
           "entity_id": "E3C6F04F-7F24-4D5C-88C7-79ACD9F57EAC",
           "name": "The Bear",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.865,
           "properties": {
@@ -51,7 +51,7 @@
         {
           "entity_id": "71389877-A42D-4256-A170-9F2E3C43B95E",
           "name": "Dolly Parton's Heartstrings",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.6,
           "query": {
@@ -61,7 +61,7 @@
         {
           "entity_id": "BAF90461-5DF2-4491-9523-F0057E492CF9",
           "name": "Succession",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.75,
           "properties": {
@@ -74,7 +74,7 @@
         {
           "entity_id": "DACD11F3-374F-4041-A309-263CECA1512C",
           "name": "Mr. Mayor",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.525,
           "query": {
@@ -84,7 +84,7 @@
         {
           "entity_id": "377A96F7-A073-43FE-B56D-6E3331A4308F",
           "name": "Gilmore Girls",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.755,
           "properties": {
@@ -97,13 +97,12 @@
         {
           "entity_id": "ADC55D1A-2B7B-4B9E-8D1A-E13AD873422E",
           "name": "Schitt's Creek",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.5,
           "properties": {
             "description": "Schitt's Creek (TV series)."
           },
-          "tags": [],
           "query": {
             "affinity": 0.815
           }
@@ -111,7 +110,7 @@
         {
           "entity_id": "D7BD04AA-3B47-4DA4-9E4F-40A542F5B7D1",
           "name": "Abbott Elementary",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.76,
           "properties": {
@@ -124,7 +123,7 @@
         {
           "entity_id": "F504DFDE-7861-486D-9F48-C6422671C57A",
           "name": "Reservation Dogs",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.875,
           "properties": {
@@ -137,7 +136,7 @@
         {
           "entity_id": "BCE6B26E-BD10-41E6-B83B-BBB8AAE55C39",
           "name": "The Rehearsal",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.695,
           "properties": {
@@ -150,7 +149,7 @@
         {
           "entity_id": "C224F1C3-59F5-457D-AA64-AE2DE94E82B4",
           "name": "I May Destroy You",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.685,
           "properties": {
@@ -163,7 +162,7 @@
         {
           "entity_id": "4ED236B4-9453-4512-8981-B49E9BB467A5",
           "name": "Atlanta",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.82,
           "properties": {
@@ -176,7 +175,7 @@
         {
           "entity_id": "0E925F8C-19E3-4F7B-A3BE-AE91C3784881",
           "name": "Heartstopper",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.745,
           "properties": {
@@ -189,7 +188,7 @@
         {
           "entity_id": "72E9BC0B-598B-43EF-8465-E61AD1CFF1DB",
           "name": "Parks and Recreation",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.635,
           "properties": {
@@ -202,11 +201,10 @@
         {
           "entity_id": "F1C619B0-E400-412A-A634-CE002E3CEDF5",
           "name": "Alone",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.62,
           "properties": {},
-          "tags": [],
           "query": {
             "affinity": 0.641
           }
@@ -214,7 +212,7 @@
         {
           "entity_id": "656078D4-7298-439C-B517-153F264014E1",
           "name": "Somebody Somewhere",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.87,
           "properties": {
@@ -227,7 +225,7 @@
         {
           "entity_id": "1726F37E-D9CA-43CC-8B62-4E9AF1FD2C5B",
           "name": "Severance",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.69,
           "properties": {
@@ -240,7 +238,7 @@
         {
           "entity_id": "628B7F67-F053-4D43-A259-869B267583A7",
           "name": "Russian Doll",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.64,
           "properties": {
@@ -253,7 +251,7 @@
         {
           "entity_id": "24AF387E-B347-4535-A921-D3B36CC057C9",
           "name": "Station Eleven",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.63,
           "properties": {
@@ -266,11 +264,10 @@
         {
           "entity_id": "E7F79DE3-6AB2-4018-8E5C-6E12DC640FA7",
           "name": "Chef's Table",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.64,
           "properties": {},
-          "tags": [],
           "query": {
             "affinity": 0.576
           }

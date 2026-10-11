@@ -20,11 +20,10 @@
         {
           "entity_id": "81FF9E58-99F1-4C63-9F2F-7D85FA8D6964",
           "name": "Patagonia",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.85,
           "properties": {},
-          "tags": [],
           "query": {
             "affinity": 0.9
           }
@@ -32,11 +31,10 @@
         {
           "entity_id": "AC8120D3-F632-4821-92A3-70E5C4A3343C",
           "name": "Subaru",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.83,
           "properties": {},
-          "tags": [],
           "query": {
             "affinity": 0.882
           }
@@ -44,11 +42,10 @@
         {
           "entity_id": "753F76AB-F8F3-4DB9-9076-5541D45875DF",
           "name": "Trader Joe's",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.81,
           "properties": {},
-          "tags": [],
           "query": {
             "affinity": 0.863
           }
@@ -56,11 +53,10 @@
         {
           "entity_id": "7C8DF92F-D4B9-45DE-9144-A0E36C0C6897",
           "name": "REI",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.79,
           "properties": {},
-          "tags": [],
           "query": {
             "affinity": 0.845
           }
@@ -68,11 +64,10 @@
         {
           "entity_id": "B95C6A49-82F6-4084-AFB9-CF08C2A11114",
           "name": "Blue Ridge Mountain Sports",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.77,
           "properties": {},
-          "tags": [],
           "query": {
             "affinity": 0.826
           }
@@ -80,11 +75,10 @@
         {
           "entity_id": "B33E9033-D54B-4B07-A439-14C0322C161D",
           "name": "Levi's",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.75,
           "properties": {},
-          "tags": [],
           "query": {
             "affinity": 0.808
           }
@@ -92,11 +86,10 @@
         {
           "entity_id": "79105CB8-2649-4620-A2F8-0B53D5B8A831",
           "name": "Fjallraven",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.73,
           "properties": {},
-          "tags": [],
           "query": {
             "affinity": 0.789
           }
@@ -104,11 +97,10 @@
         {
           "entity_id": "D9DF07E3-BB56-43DA-8843-547056364B13",
           "name": "Starr Hill Brewery",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.71,
           "properties": {},
-          "tags": [],
           "query": {
             "affinity": 0.771
           }
@@ -116,11 +108,10 @@
         {
           "entity_id": "47D5D80A-D8DA-4F3A-A4DF-A99635B1BCB7",
           "name": "Warby Parker",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.69,
           "properties": {},
-          "tags": [],
           "query": {
             "affinity": 0.753
           }
@@ -128,11 +119,10 @@
         {
           "entity_id": "D44CBBD6-C6E8-455A-94B4-88B6A05B0591",
           "name": "Blundstone",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.67,
           "properties": {},
-          "tags": [],
           "query": {
             "affinity": 0.734
           }
@@ -140,11 +130,10 @@
         {
           "entity_id": "1E64D934-320B-4FB7-921B-58DB10BE96EA",
           "name": "Birkenstock",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.65,
           "properties": {},
-          "tags": [],
           "query": {
             "affinity": 0.716
           }
@@ -152,11 +141,10 @@
         {
           "entity_id": "1C5AE16E-AD25-42A9-9908-2F073EE57471",
           "name": "Wegmans",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.63,
           "properties": {},
-          "tags": [],
           "query": {
             "affinity": 0.697
           }
@@ -164,11 +152,10 @@
         {
           "entity_id": "ABCCC90D-D407-428B-99C4-E3010A39A0C7",
           "name": "Bodo's Bagels",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.61,
           "properties": {},
-          "tags": [],
           "query": {
             "affinity": 0.679
           }
@@ -176,11 +163,10 @@
         {
           "entity_id": "52039753-DD87-4F1B-8D75-3F55850FAD13",
           "name": "La Colombe",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.59,
           "properties": {},
-          "tags": [],
           "query": {
             "affinity": 0.661
           }
@@ -188,11 +174,10 @@
         {
           "entity_id": "CA29596C-A583-4C49-8B03-1FCE2A53EA05",
           "name": "Carhartt",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.57,
           "properties": {},
-          "tags": [],
           "query": {
             "affinity": 0.642
           }
@@ -200,11 +185,10 @@
         {
           "entity_id": "D43783D2-ABF4-4021-A4C0-6A9DC5B7F743",
           "name": "Devils Backbone Brewing Company",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.55,
           "properties": {},
-          "tags": [],
           "query": {
             "affinity": 0.624
           }
@@ -212,11 +196,10 @@
         {
           "entity_id": "CC32F29D-F291-40D1-A315-06E800B57645",
           "name": "Hydro Flask",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.53,
           "properties": {},
-          "tags": [],
           "query": {
             "affinity": 0.605
           }
@@ -224,11 +207,10 @@
         {
           "entity_id": "F4D0AB50-60CD-4B17-BF5B-3224D267EB2B",
           "name": "Allbirds",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.51,
           "properties": {},
-          "tags": [],
           "query": {
             "affinity": 0.587
           }
@@ -236,11 +218,10 @@
         {
           "entity_id": "7C6060C9-9DBC-4FA4-B4E2-028826422BB5",
           "name": "Yeti",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.49,
           "properties": {},
-          "tags": [],
           "query": {
             "affinity": 0.568
           }
@@ -248,11 +229,10 @@
         {
           "entity_id": "67AF261C-2D54-4451-B245-4E00073352AC",
           "name": "Bold Rock Hard Cider",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.47,
           "properties": {},
-          "tags": [],
           "query": {
             "affinity": 0.55
           }

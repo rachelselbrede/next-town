@@ -1,0 +1,125 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_promo_partners",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?feature.explainability=true&filter.location.query=Wilmington%2C%20NC&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abookstore&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Wilmington, NC",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:genre:place:bookstore",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "sort_by": "affinity",
+      "take": 2,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "D41CD17A-272E-4DE7-A129-F312CBEF74C0",
+          "name": "Old Books on Front Street",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.51,
+          "location": {
+            "lat": 34.226,
+            "lon": -77.945
+          },
+          "properties": {
+            "description": "Sprawling used bookstore downtown with a community board.",
+            "address": "249 N Front St, Wilmington, NC 28401",
+            "geocode": {
+              "name": "Wilmington",
+              "city": "Wilmington",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.52,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:bookstore",
+              "name": "Bookstore",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.77,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.62
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.55
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.53
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "B2844E4A-D54A-4ADC-BEA3-AC864C6F01C8",
+          "name": "Pomegranate Books",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.45,
+          "location": {
+            "lat": 34.226,
+            "lon": -77.945
+          },
+          "properties": {
+            "description": "Independent bookshop with a reading series.",
+            "address": "4418 Park Ave, Wilmington, NC 28403",
+            "geocode": {
+              "name": "Wilmington",
+              "city": "Wilmington",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.74,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:bookstore",
+              "name": "Bookstore",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.75,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.62
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.56
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.51
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

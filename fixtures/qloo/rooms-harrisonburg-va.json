@@ -24,9 +24,13 @@
         {
           "entity_id": "638C28FD-F933-4938-B508-2E1A554DF066",
           "name": "The Golden Pony",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:music_venue",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "popularity": 0.74,
+          "location": {
+            "lat": 38.45,
+            "lon": -78.869
+          },
           "properties": {
             "description": "Downtown bar and venue that books touring indie, folk and punk acts most nights of the week.",
             "address": "181 N Main St, Harrisonburg, VA 22802",
@@ -41,42 +45,46 @@
           },
           "tags": [
             {
+              "id": "urn:tag:genre:place:music_venue",
               "name": "Music Venue",
-              "tag_id": "urn:tag:genre:place:music_venue",
               "type": "urn:tag:genre:place"
             },
             {
+              "id": "urn:tag:genre:place:bar:live_music",
               "name": "Bar With Live Music",
-              "tag_id": "urn:tag:genre:place:bar:live_music",
               "type": "urn:tag:genre:place"
             }
           ],
           "query": {
             "affinity": 0.93,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.78
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.7
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.63
                 }
-              }
+              ]
             }
           }
         },
         {
           "entity_id": "D4DFE374-E012-45AC-BB5F-9340F234C752",
           "name": "Clementine Cafe",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:music_venue",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "popularity": 0.68,
+          "location": {
+            "lat": 38.45,
+            "lon": -78.869
+          },
           "properties": {
             "description": "Restaurant with an upstairs stage that has hosted singer-songwriters and regional bands for years.",
             "address": "153 S Main St, Harrisonburg, VA 22801",
@@ -91,42 +99,46 @@
           },
           "tags": [
             {
+              "id": "urn:tag:genre:place:music_venue",
               "name": "Music Venue",
-              "tag_id": "urn:tag:genre:place:music_venue",
               "type": "urn:tag:genre:place"
             },
             {
+              "id": "urn:tag:category:place:live_music_venue",
               "name": "Live Music Venue",
-              "tag_id": "urn:tag:category:place:live_music_venue",
               "type": "urn:tag:category:place"
             }
           ],
           "query": {
             "affinity": 0.89,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.74
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.63
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.55
                 }
-              }
+              ]
             }
           }
         },
         {
           "entity_id": "26C8D3BD-1A47-4D85-AE05-99BB0CCB1D40",
           "name": "Court Square Theater",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:concert_hall",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "popularity": 0.62,
+          "location": {
+            "lat": 38.45,
+            "lon": -78.869
+          },
           "properties": {
             "description": "Seated downtown theater run by Arts Council of the Valley, good for a listening-room folk show.",
             "address": "41 Court Square, Harrisonburg, VA 22801",
@@ -141,42 +153,46 @@
           },
           "tags": [
             {
+              "id": "urn:tag:genre:place:concert_hall",
               "name": "Concert Hall",
-              "tag_id": "urn:tag:genre:place:concert_hall",
               "type": "urn:tag:genre:place"
             },
             {
+              "id": "urn:tag:category:place:live_music_venue",
               "name": "Live Music Venue",
-              "tag_id": "urn:tag:category:place:live_music_venue",
               "type": "urn:tag:category:place"
             }
           ],
           "query": {
             "affinity": 0.84,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.71
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.57
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.56
                 }
-              }
+              ]
             }
           }
         },
         {
           "entity_id": "2B17BAAF-77BF-4B2D-A18E-7178C624B3CE",
           "name": "Pale Fire Brewing Co.",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:bar",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "popularity": 0.71,
+          "location": {
+            "lat": 38.45,
+            "lon": -78.869
+          },
           "properties": {
             "description": "Taproom in the Ice House with a stage and a regular live-music calendar.",
             "address": "217 S Liberty St, Harrisonburg, VA 22801",
@@ -191,42 +207,46 @@
           },
           "tags": [
             {
+              "id": "urn:tag:genre:place:bar:live_music",
               "name": "Bar With Live Music",
-              "tag_id": "urn:tag:genre:place:bar:live_music",
               "type": "urn:tag:genre:place"
             },
             {
+              "id": "urn:tag:genre:place:music_venue",
               "name": "Music Venue",
-              "tag_id": "urn:tag:genre:place:music_venue",
               "type": "urn:tag:genre:place"
             }
           ],
           "query": {
             "affinity": 0.8,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.67
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.59
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.48
                 }
-              }
+              ]
             }
           }
         },
         {
           "entity_id": "C702ACE2-BF01-4C09-A6EB-6ED47471A6FC",
           "name": "Forbes Center for the Performing Arts",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:concert_hall",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "popularity": 0.66,
+          "location": {
+            "lat": 38.45,
+            "lon": -78.869
+          },
           "properties": {
             "description": "JMU's performing arts complex with a concert hall and a smaller recital hall.",
             "address": "147 Warsaw Ave, Harrisonburg, VA 22807",
@@ -241,37 +261,41 @@
           },
           "tags": [
             {
+              "id": "urn:tag:genre:place:concert_hall",
               "name": "Concert Hall",
-              "tag_id": "urn:tag:genre:place:concert_hall",
               "type": "urn:tag:genre:place"
             }
           ],
           "query": {
             "affinity": 0.75,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.63
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.52
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.48
                 }
-              }
+              ]
             }
           }
         },
         {
           "entity_id": "00954720-156D-4EAF-994C-8977515B6F7E",
           "name": "Brothers Craft Brewing",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:bar",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "popularity": 0.6,
+          "location": {
+            "lat": 38.45,
+            "lon": -78.869
+          },
           "properties": {
             "description": "Big taproom and patio that hosts weekend bands and the occasional touring act.",
             "address": "800 S High St, Harrisonburg, VA 22801",
@@ -286,42 +310,46 @@
           },
           "tags": [
             {
+              "id": "urn:tag:genre:place:bar:live_music",
               "name": "Bar With Live Music",
-              "tag_id": "urn:tag:genre:place:bar:live_music",
               "type": "urn:tag:genre:place"
             },
             {
+              "id": "urn:tag:genre:place:bar",
               "name": "Bar",
-              "tag_id": "urn:tag:genre:place:bar",
               "type": "urn:tag:genre:place"
             }
           ],
           "query": {
             "affinity": 0.71,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.6
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.46
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.41
                 }
-              }
+              ]
             }
           }
         },
         {
           "entity_id": "5FA58351-5620-486F-AB5E-62475D2A6D98",
           "name": "Three Notch'd Valley Collab House",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:bar",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "popularity": 0.52,
+          "location": {
+            "lat": 38.45,
+            "lon": -78.869
+          },
           "properties": {
             "description": "Brewpub a block from Court Square with acoustic sets and trivia nights.",
             "address": "241 E Market St, Harrisonburg, VA 22801",
@@ -336,42 +364,46 @@
           },
           "tags": [
             {
+              "id": "urn:tag:genre:place:bar:live_music",
               "name": "Bar With Live Music",
-              "tag_id": "urn:tag:genre:place:bar:live_music",
               "type": "urn:tag:genre:place"
             },
             {
+              "id": "urn:tag:genre:place:bar",
               "name": "Bar",
-              "tag_id": "urn:tag:genre:place:bar",
               "type": "urn:tag:genre:place"
             }
           ],
           "query": {
             "affinity": 0.67,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.56
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.48
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.41
                 }
-              }
+              ]
             }
           }
         },
         {
           "entity_id": "9D1EF732-B1BF-4312-8FEC-CAC7C0A29A20",
           "name": "Sage Bird Ciderworks",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:bar",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "popularity": 0.44,
+          "location": {
+            "lat": 38.45,
+            "lon": -78.869
+          },
           "properties": {
             "description": "Small-batch cidery with a cozy taproom that books local folk and bluegrass.",
             "address": "325 N Liberty St, Harrisonburg, VA 22802",
@@ -386,33 +418,33 @@
           },
           "tags": [
             {
+              "id": "urn:tag:genre:place:bar:live_music",
               "name": "Bar With Live Music",
-              "tag_id": "urn:tag:genre:place:bar:live_music",
               "type": "urn:tag:genre:place"
             },
             {
+              "id": "urn:tag:genre:place:bar",
               "name": "Bar",
-              "tag_id": "urn:tag:genre:place:bar",
               "type": "urn:tag:genre:place"
             }
           ],
           "query": {
             "affinity": 0.62,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.52
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.41
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.33
                 }
-              }
+              ]
             }
           }
         }

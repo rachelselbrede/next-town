@@ -1,0 +1,459 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_rooms",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?feature.explainability=true&filter.location.query=Durham%2C%20NC&filter.location.radius=15000&filter.tags=urn%3Atag%3Acategory%3Aplace%3Alive_music_venue%2Curn%3Atag%3Agenre%3Aplace%3Abar%3Alive_music%2Curn%3Atag%3Agenre%3Aplace%3Aconcert_hall%2Curn%3Atag%3Agenre%3Aplace%3Amusic_venue&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=8",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Durham, NC",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:category:place:live_music_venue,urn:tag:genre:place:bar:live_music,urn:tag:genre:place:concert_hall,urn:tag:genre:place:music_venue",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "sort_by": "affinity",
+      "take": 8,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "B7055B62-0B38-4A28-A7BD-09BAB73664FC",
+          "name": "Motorco Music Hall",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.74,
+          "location": {
+            "lat": 35.9937,
+            "lon": -78.8985
+          },
+          "properties": {
+            "description": "Converted garage-and-bar complex in Durham's Rigsbee corridor with a main room that suits touring indie and folk acts.",
+            "address": "723 Rigsbee Ave, Durham, NC 27701",
+            "geocode": {
+              "name": "Durham",
+              "city": "Durham",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.93,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.95
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.87
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.83
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "19DE68D6-0F50-4127-9903-58DE98D63AFF",
+          "name": "The Pinhook",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.7,
+          "location": {
+            "lat": 35.9969,
+            "lon": -78.9024
+          },
+          "properties": {
+            "description": "Small downtown bar-and-venue where touring indie bands play close to the crowd.",
+            "address": "117 W Main St, Durham, NC 27701",
+            "geocode": {
+              "name": "Durham",
+              "city": "Durham",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.88,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.92
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.82
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.78
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "1A99337F-47F1-4405-B021-E11D3F090581",
+          "name": "Carolina Theatre of Durham",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.76,
+          "location": {
+            "lat": 35.9976,
+            "lon": -78.9034
+          },
+          "properties": {
+            "description": "Restored downtown theatre with a seated hall that fits quieter, lyric-forward sets.",
+            "address": "309 W Morgan St, Durham, NC 27701",
+            "geocode": {
+              "name": "Durham",
+              "city": "Durham",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.84,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.88
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.78
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.74
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "4753A0B6-F9EA-4D0A-AE7B-A0AC1922C0C7",
+          "name": "Durham Performing Arts Center",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.84,
+          "location": {
+            "lat": 35.9935,
+            "lon": -78.904
+          },
+          "properties": {
+            "description": "Large downtown hall for bigger touring nights and the occasional folk headliner.",
+            "address": "123 Vivian St, Durham, NC 27701",
+            "geocode": {
+              "name": "Durham",
+              "city": "Durham",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.8,
+            "price_level": 3
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.79,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.83
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.73
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.69
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "5031AB55-ECCA-4802-9AEE-A9CB477211FF",
+          "name": "The Fruit",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.45,
+          "location": {
+            "lat": 35.9946,
+            "lon": -78.8997
+          },
+          "properties": {
+            "description": "Intimate downtown arts space known for DIY-leaning shows and small crowds.",
+            "address": "305 S Roxboro St, Durham, NC 27701",
+            "geocode": {
+              "name": "Durham",
+              "city": "Durham",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.74,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.78
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.68
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.64
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "0F49D4F3-0390-44BD-9E31-083DCB61C606",
+          "name": "Beyu Caffe",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.55,
+          "location": {
+            "lat": 35.9967,
+            "lon": -78.9042
+          },
+          "properties": {
+            "description": "Cafe on West Main with a small stage for acoustic and singer-songwriter evenings.",
+            "address": "341 W Main St, Durham, NC 27701",
+            "geocode": {
+              "name": "Durham",
+              "city": "Durham",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.4,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.69,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.73
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.63
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.59
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "AB95E392-3701-45C9-A157-AEC0F3BC15EA",
+          "name": "Fullsteam Brewery",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.58,
+          "location": {
+            "lat": 35.9941,
+            "lon": -78.8988
+          },
+          "properties": {
+            "description": "Local brewery taproom that hosts low-key live sets near the Rigsbee strip.",
+            "address": "726 Rigsbee Ave, Durham, NC 27701",
+            "geocode": {
+              "name": "Durham",
+              "city": "Durham",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.64,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.68
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.58
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.54
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "1E85174E-6A5B-4BC4-B9E3-89E7612A82F4",
+          "name": "Page Auditorium",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.62,
+          "location": {
+            "lat": 36.001,
+            "lon": -78.9399
+          },
+          "properties": {
+            "description": "Duke University's long-running concert hall for touring acts on the Durham campus.",
+            "address": "402 Chapel Dr, Durham, NC 27708",
+            "geocode": {
+              "name": "Durham",
+              "city": "Durham",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.6,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.64
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.54
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.5
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

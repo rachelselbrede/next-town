@@ -1,0 +1,459 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_rooms",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?feature.explainability=true&filter.location.query=Brooklyn%2C%20NY&filter.location.radius=15000&filter.tags=urn%3Atag%3Acategory%3Aplace%3Alive_music_venue%2Curn%3Atag%3Agenre%3Aplace%3Abar%3Alive_music%2Curn%3Atag%3Agenre%3Aplace%3Aconcert_hall%2Curn%3Atag%3Agenre%3Aplace%3Amusic_venue&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=8",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Brooklyn, NY",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:category:place:live_music_venue,urn:tag:genre:place:bar:live_music,urn:tag:genre:place:concert_hall,urn:tag:genre:place:music_venue",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "sort_by": "affinity",
+      "take": 8,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "F8C9B7C9-7F76-593C-A136-7F9B92248392",
+          "name": "Music Hall of Williamsburg",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.82,
+          "location": {
+            "lat": 40.7184,
+            "lon": -73.9626
+          },
+          "properties": {
+            "address": "66 N 6th St, Brooklyn, NY 11249",
+            "geocode": {
+              "name": "Brooklyn",
+              "city": "Brooklyn",
+              "admin1_region": "NY",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 2,
+            "description": "Williamsburg standby with a wide floor and a balcony, steady with touring indie and folk acts."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.92,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.9
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.82
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.76
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "4B606FF1-7B95-561C-AA4E-AC3D058AE205",
+          "name": "Baby's All Right",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.8,
+          "location": {
+            "lat": 40.71,
+            "lon": -73.9638
+          },
+          "properties": {
+            "address": "146 Broadway, Brooklyn, NY 11211",
+            "geocode": {
+              "name": "Brooklyn",
+              "city": "Brooklyn",
+              "admin1_region": "NY",
+              "country_code": "US"
+            },
+            "business_rating": 4.4,
+            "price_level": 2,
+            "description": "Small Broadway club with a front bar and a back room stage, popular for rising songwriters."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.89,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.81
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.89
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.77
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "7C9DE047-8A5C-52EE-B45C-7241FEF3D779",
+          "name": "Union Pool",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.78,
+          "location": {
+            "lat": 40.7143,
+            "lon": -73.9514
+          },
+          "properties": {
+            "address": "484 Union Ave, Brooklyn, NY 11211",
+            "geocode": {
+              "name": "Brooklyn",
+              "city": "Brooklyn",
+              "admin1_region": "NY",
+              "country_code": "US"
+            },
+            "business_rating": 4.4,
+            "price_level": 2,
+            "description": "Bar with a back patio and a stage inside, known for loose, loud, late indie shows."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.85,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.8
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.71
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.85
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "D8C98CF0-B139-55BD-8FAB-26AB4EA5415B",
+          "name": "Rough Trade NYC",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.79,
+          "location": {
+            "lat": 40.7216,
+            "lon": -73.9582
+          },
+          "properties": {
+            "address": "64 N 9th St, Brooklyn, NY 11249",
+            "geocode": {
+              "name": "Brooklyn",
+              "city": "Brooklyn",
+              "admin1_region": "NY",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 2,
+            "description": "Big record shop with a full-size room attached for album releases and in-store sets."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.81,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.79
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.71
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.65
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "C8FB370B-CDF6-593C-967D-A21929DE788B",
+          "name": "The Bell House",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.74,
+          "location": {
+            "lat": 40.6736,
+            "lon": -73.9921
+          },
+          "properties": {
+            "address": "149 7th St, Brooklyn, NY 11215",
+            "geocode": {
+              "name": "Brooklyn",
+              "city": "Brooklyn",
+              "admin1_region": "NY",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 2,
+            "description": "Converted Gowanus warehouse with a front bar and a room for around 400."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.76,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.68
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.76
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.64
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "06D1588D-C928-58E6-98B8-5FD3A882C7DF",
+          "name": "Pete's Candy Store",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.66,
+          "location": {
+            "lat": 40.7186,
+            "lon": -73.95
+          },
+          "properties": {
+            "address": "709 Lorimer St, Brooklyn, NY 11211",
+            "geocode": {
+              "name": "Brooklyn",
+              "city": "Brooklyn",
+              "admin1_region": "NY",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 1,
+            "description": "Narrow Williamsburg bar with a tiny back stage, a long run of songwriter nights."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.71,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.66
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.57
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.71
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "4C3F1DE9-952D-51FC-8843-472F1F713A78",
+          "name": "Elsewhere",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.76,
+          "location": {
+            "lat": 40.7066,
+            "lon": -73.9233
+          },
+          "properties": {
+            "address": "599 Johnson Ave, Brooklyn, NY 11237",
+            "geocode": {
+              "name": "Brooklyn",
+              "city": "Brooklyn",
+              "admin1_region": "NY",
+              "country_code": "US"
+            },
+            "business_rating": 4.4,
+            "price_level": 2,
+            "description": "Bushwick multi-room venue with a main hall, a rooftop and a smaller stage downstairs."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.66,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.64
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.56
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.5
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "B74DF510-CC68-5A2C-8765-F30160C782F5",
+          "name": "Brooklyn Bowl",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.77,
+          "location": {
+            "lat": 40.7219,
+            "lon": -73.9575
+          },
+          "properties": {
+            "address": "61 Wythe Ave, Brooklyn, NY 11249",
+            "geocode": {
+              "name": "Brooklyn",
+              "city": "Brooklyn",
+              "admin1_region": "NY",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 2,
+            "description": "Bowling alley with a full stage and a kitchen, hosts touring bands most nights."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.6,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.52
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.6
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.48
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

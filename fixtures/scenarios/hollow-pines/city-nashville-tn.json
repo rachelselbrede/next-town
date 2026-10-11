@@ -1,0 +1,933 @@
+{
+  "city": "Nashville, TN",
+  "home": "Richmond, VA",
+  "comps": [
+    {
+      "id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+      "name": "Big Thief",
+      "type": "urn:entity:artist",
+      "popularity": 0.93
+    },
+    {
+      "id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+      "name": "Waxahatchee",
+      "type": "urn:entity:artist",
+      "popularity": 0.88
+    },
+    {
+      "id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "name": "Adrianne Lenker",
+      "type": "urn:entity:artist",
+      "popularity": 0.85
+    }
+  ],
+  "rooms": [
+    {
+      "id": "30CFBE87-572B-4D05-AADA-3D3FBD799A2B",
+      "name": "The Basement East",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
+      "affinity": 0.92,
+      "popularity": 0.84,
+      "rating": 4.6,
+      "price_level": 2,
+      "address": "917 Woodland St, Nashville, TN 37206",
+      "city": "Nashville",
+      "description": "East Nashville room rebuilt after the 2020 tornado; a big stage for a mid-size crowd.",
+      "tags": [
+        "Music Venue",
+        "Live Music Venue"
+      ],
+      "tagIds": [
+        "urn:tag:genre:place:music_venue",
+        "urn:tag:category:place:live_music_venue"
+      ],
+      "why": [
+        "Big Thief (75%)",
+        "Waxahatchee (67%)",
+        "Adrianne Lenker (60%)"
+      ],
+      "lat": 36.1763,
+      "lon": -86.7509,
+      "region": "TN"
+    },
+    {
+      "id": "A1488BA8-2760-45B1-AFB2-413F4642E6DF",
+      "name": "Exit/In",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
+      "affinity": 0.87,
+      "popularity": 0.8,
+      "rating": 4.5,
+      "price_level": 2,
+      "address": "2208 Elliston Pl, Nashville, TN 37203",
+      "city": "Nashville",
+      "description": "Rock-and-roll club near Vanderbilt with decades of touring indie and folk acts on its stage.",
+      "tags": [
+        "Music Venue",
+        "Live Music Venue"
+      ],
+      "tagIds": [
+        "urn:tag:genre:place:music_venue",
+        "urn:tag:category:place:live_music_venue"
+      ],
+      "why": [
+        "Big Thief (73%)",
+        "Waxahatchee (60%)",
+        "Adrianne Lenker (59%)"
+      ],
+      "lat": 36.1514,
+      "lon": -86.8004,
+      "region": "TN"
+    },
+    {
+      "id": "8180F0B3-262C-4BC7-B760-E8C996D3444F",
+      "name": "The 5 Spot",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
+      "affinity": 0.82,
+      "popularity": 0.7,
+      "rating": 4.5,
+      "price_level": 1,
+      "address": "1006 Forrest Ave, Nashville, TN 37206",
+      "city": "Nashville",
+      "description": "Neighborhood East Nashville bar and stage where small touring bands play to a loyal local crowd.",
+      "tags": [
+        "Music Venue",
+        "Live Music Venue"
+      ],
+      "tagIds": [
+        "urn:tag:genre:place:music_venue",
+        "urn:tag:category:place:live_music_venue"
+      ],
+      "why": [
+        "Big Thief (71%)",
+        "Waxahatchee (59%)",
+        "Adrianne Lenker (52%)"
+      ],
+      "lat": 36.181,
+      "lon": -86.7438,
+      "region": "TN"
+    },
+    {
+      "id": "BBB5FC8E-AAB2-4622-AF69-7A906A00B839",
+      "name": "The Basement",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
+      "affinity": 0.78,
+      "popularity": 0.72,
+      "rating": 4.6,
+      "price_level": 2,
+      "address": "1604 8th Ave S, Nashville, TN 37203",
+      "city": "Nashville",
+      "description": "Intimate listening room under 8th Avenue South, a favorite for songwriters and early-career tours.",
+      "tags": [
+        "Music Venue",
+        "Live Music Venue"
+      ],
+      "tagIds": [
+        "urn:tag:genre:place:music_venue",
+        "urn:tag:category:place:live_music_venue"
+      ],
+      "why": [
+        "Big Thief (64%)",
+        "Waxahatchee (59%)",
+        "Adrianne Lenker (51%)"
+      ],
+      "lat": 36.1372,
+      "lon": -86.7885,
+      "region": "TN"
+    },
+    {
+      "id": "D4A1E883-16CE-4E55-A2F8-5F029304B1C1",
+      "name": "Mercy Lounge",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
+      "affinity": 0.74,
+      "popularity": 0.78,
+      "rating": 4.5,
+      "price_level": 2,
+      "address": "1 Cannery Row, Nashville, TN 37203",
+      "city": "Nashville",
+      "description": "Mid-size room in the Cannery with a long record of indie rock and Americana nights.",
+      "tags": [
+        "Music Venue",
+        "Live Music Venue"
+      ],
+      "tagIds": [
+        "urn:tag:genre:place:music_venue",
+        "urn:tag:category:place:live_music_venue"
+      ],
+      "why": [
+        "Big Thief (63%)",
+        "Waxahatchee (52%)",
+        "Adrianne Lenker (51%)"
+      ],
+      "lat": 36.1584,
+      "lon": -86.7713,
+      "region": "TN"
+    },
+    {
+      "id": "93FB5F5C-33FE-49E2-B44D-4EA4C05DA02B",
+      "name": "The Bluebird Cafe",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
+      "affinity": 0.69,
+      "popularity": 0.83,
+      "rating": 4.7,
+      "price_level": 2,
+      "address": "4104 Hillsboro Pike, Nashville, TN 37215",
+      "city": "Nashville",
+      "description": "Tiny songwriters-in-the-round room in Green Hills where the audience goes quiet for the song.",
+      "tags": [
+        "Music Venue",
+        "Live Music Venue"
+      ],
+      "tagIds": [
+        "urn:tag:genre:place:music_venue",
+        "urn:tag:category:place:live_music_venue"
+      ],
+      "why": [
+        "Big Thief (56%)",
+        "Waxahatchee (51%)",
+        "Adrianne Lenker (44%)"
+      ],
+      "lat": 36.1088,
+      "lon": -86.8179,
+      "region": "TN"
+    },
+    {
+      "id": "06866967-878C-4CCC-8DB7-D7779FA5D40C",
+      "name": "Station Inn",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
+      "affinity": 0.65,
+      "popularity": 0.74,
+      "rating": 4.7,
+      "price_level": 1,
+      "address": "402 12th Ave S, Nashville, TN 37203",
+      "city": "Nashville",
+      "description": "Cinder-block bluegrass and acoustic club in the Gulch, loved for its sound and no-frills seats.",
+      "tags": [
+        "Music Venue",
+        "Live Music Venue"
+      ],
+      "tagIds": [
+        "urn:tag:genre:place:music_venue",
+        "urn:tag:category:place:live_music_venue"
+      ],
+      "why": [
+        "Big Thief (55%)",
+        "Waxahatchee (44%)",
+        "Adrianne Lenker (44%)"
+      ],
+      "lat": 36.1564,
+      "lon": -86.7893,
+      "region": "TN"
+    },
+    {
+      "id": "1E82682B-AF16-4650-8035-31BACE4D7676",
+      "name": "Cannery Ballroom",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
+      "affinity": 0.6,
+      "popularity": 0.8,
+      "rating": 4.5,
+      "price_level": 2,
+      "address": "1 Cannery Row, Nashville, TN 37203",
+      "city": "Nashville",
+      "description": "Larger converted-cannery hall that works as a step-up room for touring acts with a growing draw.",
+      "tags": [
+        "Music Venue",
+        "Live Music Venue"
+      ],
+      "tagIds": [
+        "urn:tag:genre:place:music_venue",
+        "urn:tag:category:place:live_music_venue"
+      ],
+      "why": [
+        "Big Thief (53%)",
+        "Waxahatchee (43%)",
+        "Adrianne Lenker (37%)"
+      ],
+      "lat": 36.1582,
+      "lon": -86.7711,
+      "region": "TN"
+    }
+  ],
+  "promo": [
+    {
+      "kind": "record store",
+      "places": [
+        {
+          "id": "ACFC9592-51B4-4B06-8B16-02DBD539A59E",
+          "name": "Grimey's New & Preloved Music",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.9,
+          "popularity": 0.78,
+          "rating": 4.8,
+          "price_level": 2,
+          "address": "1060 E Trinity Ln, Nashville, TN 37216",
+          "city": "Nashville",
+          "description": "Independent record shop in East Nashville with deep indie and folk bins and frequent in-store sets.",
+          "tags": [
+            "Record Store"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:record_store"
+          ],
+          "why": [
+            "Big Thief (73%)",
+            "Waxahatchee (66%)",
+            "Adrianne Lenker (58%)"
+          ],
+          "lat": 36.1953,
+          "lon": -86.7416,
+          "region": "TN"
+        },
+        {
+          "id": "C3FC3EC6-E860-422F-94A5-2701C2C01B13",
+          "name": "Third Man Records Nashville",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.8,
+          "popularity": 0.8,
+          "rating": 4.7,
+          "price_level": 2,
+          "address": "623 7th Ave S, Nashville, TN 37203",
+          "city": "Nashville",
+          "description": "Jack White label shop and venue with vinyl, a pressing-plant window, and a small live room.",
+          "tags": [
+            "Record Store"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:record_store"
+          ],
+          "why": [
+            "Big Thief (67%)",
+            "Waxahatchee (55%)",
+            "Adrianne Lenker (54%)"
+          ],
+          "lat": 36.1573,
+          "lon": -86.7855,
+          "region": "TN"
+        }
+      ]
+    },
+    {
+      "kind": "coffee shop",
+      "places": [
+        {
+          "id": "A5485DD5-2B05-4483-89E4-85800BCE7744",
+          "name": "Barista Parlor",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.88,
+          "popularity": 0.74,
+          "rating": 4.6,
+          "price_level": 2,
+          "address": "519 Gallatin Ave, Nashville, TN 37206",
+          "city": "Nashville",
+          "description": "Bright East Nashville roaster in a converted garage where musicians and the morning crowd overlap.",
+          "tags": [
+            "Coffee Shop",
+            "Cafe"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:coffee_shop",
+            "urn:tag:genre:place:cafe"
+          ],
+          "why": [
+            "Big Thief (72%)",
+            "Waxahatchee (65%)",
+            "Adrianne Lenker (57%)"
+          ],
+          "lat": 36.1771,
+          "lon": -86.7527,
+          "region": "TN"
+        },
+        {
+          "id": "12D7D496-6539-491C-96FD-3056342312DF",
+          "name": "Frothy Monkey",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.79,
+          "popularity": 0.72,
+          "rating": 4.5,
+          "price_level": 2,
+          "address": "2509 12th Ave S, Nashville, TN 37204",
+          "city": "Nashville",
+          "description": "Neighborhood cafe in 12 South with a busy community board and a young, artsy daytime crowd.",
+          "tags": [
+            "Coffee Shop",
+            "Cafe"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:coffee_shop",
+            "urn:tag:genre:place:cafe"
+          ],
+          "why": [
+            "Big Thief (66%)",
+            "Waxahatchee (54%)",
+            "Adrianne Lenker (53%)"
+          ],
+          "lat": 36.1236,
+          "lon": -86.7922,
+          "region": "TN"
+        }
+      ]
+    },
+    {
+      "kind": "bookstore",
+      "places": [
+        {
+          "id": "E48FE379-4DC6-4735-9086-2CACDE73282C",
+          "name": "Parnassus Books",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.89,
+          "popularity": 0.76,
+          "rating": 4.8,
+          "price_level": 2,
+          "address": "3900 Hillsboro Pike, Nashville, TN 37215",
+          "city": "Nashville",
+          "description": "Independent bookstore in Green Hills, a go-to for author events and a community flyer wall.",
+          "tags": [
+            "Bookstore"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:bookstore"
+          ],
+          "why": [
+            "Big Thief (72%)",
+            "Waxahatchee (65%)",
+            "Adrianne Lenker (58%)"
+          ],
+          "lat": 36.1092,
+          "lon": -86.8143,
+          "region": "TN"
+        },
+        {
+          "id": "EA054BB5-443B-4113-9DA7-9C56D5A30A79",
+          "name": "East Side Story",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.78,
+          "popularity": 0.6,
+          "rating": 4.7,
+          "price_level": 2,
+          "address": "1108 Woodland St, Nashville, TN 37206",
+          "city": "Nashville",
+          "description": "East Nashville shop pairing books and records, with a local-music-heavy shelf and a loyal neighborhood crowd.",
+          "tags": [
+            "Bookstore"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:bookstore"
+          ],
+          "why": [
+            "Big Thief (66%)",
+            "Waxahatchee (54%)",
+            "Adrianne Lenker (53%)"
+          ],
+          "lat": 36.176,
+          "lon": -86.7511,
+          "region": "TN"
+        }
+      ]
+    },
+    {
+      "kind": "dive bar",
+      "places": [
+        {
+          "id": "B45AAE2F-6C96-4F7D-ADDA-1DA8E277F15B",
+          "name": "Springwater Supper Club & Lounge",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.87,
+          "popularity": 0.7,
+          "rating": 4.4,
+          "price_level": 1,
+          "address": "115 27th Ave N, Nashville, TN 37203",
+          "city": "Nashville",
+          "description": "Historic West End dive with cheap beer, a pool table, and a late-night crowd that overlaps with the club shows.",
+          "tags": [
+            "Dive Bar",
+            "Bar"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:dive_bar",
+            "urn:tag:genre:place:bar"
+          ],
+          "why": [
+            "Big Thief (71%)",
+            "Waxahatchee (64%)",
+            "Adrianne Lenker (56%)"
+          ],
+          "lat": 36.1505,
+          "lon": -86.8036,
+          "region": "TN"
+        },
+        {
+          "id": "C7A2694F-A27C-447D-B951-E4568DCB51CB",
+          "name": "Santa's Pub",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.77,
+          "popularity": 0.62,
+          "rating": 4.5,
+          "price_level": 1,
+          "address": "2225 Bransford Ave, Nashville, TN 37204",
+          "city": "Nashville",
+          "description": "Tiny karaoke dive in a converted house off Bransford Ave, known for its no-frills party-in-a-shack feel.",
+          "tags": [
+            "Dive Bar",
+            "Bar"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:dive_bar",
+            "urn:tag:genre:place:bar"
+          ],
+          "why": [
+            "Big Thief (65%)",
+            "Waxahatchee (53%)",
+            "Adrianne Lenker (52%)"
+          ],
+          "lat": 36.1306,
+          "lon": -86.7678,
+          "region": "TN"
+        }
+      ]
+    },
+    {
+      "kind": "vintage shop",
+      "places": [
+        {
+          "id": "A5565A0B-2619-4E79-A868-2AE4F7C8FB21",
+          "name": "Hip Zipper Vintage",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.85,
+          "popularity": 0.58,
+          "rating": 4.6,
+          "price_level": 2,
+          "address": "Woodland St, Nashville, TN 37206",
+          "city": "Nashville",
+          "description": "East Nashville vintage clothing shop with racks of denim, western wear, and band tees.",
+          "tags": [
+            "Vintage Store"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:vintage_store"
+          ],
+          "why": [
+            "Big Thief (69%)",
+            "Waxahatchee (62%)",
+            "Adrianne Lenker (55%)"
+          ],
+          "lat": 36.1758,
+          "lon": -86.7515,
+          "region": "TN"
+        },
+        {
+          "id": "44C7E401-7F9F-4CB9-B927-2715F989F76A",
+          "name": "Antique Archaeology Nashville",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.74,
+          "popularity": 0.7,
+          "rating": 4.5,
+          "price_level": 2,
+          "address": "1300 Clinton St, Nashville, TN 37203",
+          "city": "Nashville",
+          "description": "Mike Wolfe’s antiques and vintage-finds shop in Marathon Village, full of old signs, guitars, and curios.",
+          "tags": [
+            "Vintage Store"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:vintage_store"
+          ],
+          "why": [
+            "Big Thief (62%)",
+            "Waxahatchee (51%)",
+            "Adrianne Lenker (50%)"
+          ],
+          "lat": 36.1737,
+          "lon": -86.7953,
+          "region": "TN"
+        }
+      ]
+    }
+  ],
+  "who": {
+    "scope": "comps-overall",
+    "age": {
+      "24_and_younger": 0.23,
+      "25_to_29": 0.49,
+      "30_to_34": 0.51,
+      "35_to_44": 0.32,
+      "45_to_54": 0.06,
+      "55_and_older": -0.23
+    },
+    "gender": {
+      "female": 0.24,
+      "male": -0.1
+    },
+    "strongestAge": "30_to_34",
+    "suggestions": [
+      "Fans of your comps overall index highest at 30 to 34; consider leading with rooms and promo partners that program for that age range.",
+      "The under-25 band is also positive; consider asking rooms whether an all-ages or early show is an option.",
+      "The 55-and-older band indexes low; consider a later set time if the room offers a choice."
+    ]
+  },
+  "localColor": {
+    "brands": [
+      {
+        "id": "2838B3D8-5C49-4AF5-AA58-12015277F479",
+        "name": "Doc Martens",
+        "cityAffinity": 0.598,
+        "homeAffinity": 0.568,
+        "delta": 0.03
+      },
+      {
+        "id": "D44CBBD6-C6E8-455A-94B4-88B6A05B0591",
+        "name": "Blundstone",
+        "cityAffinity": 0.812,
+        "homeAffinity": 0.789,
+        "delta": 0.023
+      },
+      {
+        "id": "140AED23-2F58-4FA0-B636-C9D5D473E429",
+        "name": "Blue Bottle Coffee",
+        "cityAffinity": 0.676,
+        "homeAffinity": 0.661,
+        "delta": 0.015
+      },
+      {
+        "id": "1E64D934-320B-4FB7-921B-58DB10BE96EA",
+        "name": "Birkenstock",
+        "cityAffinity": 0.715,
+        "homeAffinity": 0.716,
+        "delta": -0.001
+      },
+      {
+        "id": "81FF9E58-99F1-4C63-9F2F-7D85FA8D6964",
+        "name": "Patagonia",
+        "cityAffinity": 0.89,
+        "homeAffinity": 0.9,
+        "delta": -0.01
+      }
+    ],
+    "shows": [
+      {
+        "id": "72E9BC0B-598B-43EF-8465-E61AD1CFF1DB",
+        "name": "Parks and Recreation",
+        "cityAffinity": 0.68,
+        "homeAffinity": 0.597,
+        "delta": 0.083
+      },
+      {
+        "id": "32301606-3709-4450-9B49-526F8932157B",
+        "name": "Fargo",
+        "cityAffinity": 0.7,
+        "homeAffinity": 0.689,
+        "delta": 0.011
+      },
+      {
+        "id": "F504DFDE-7861-486D-9F48-C6422671C57A",
+        "name": "Reservation Dogs",
+        "cityAffinity": 0.9,
+        "homeAffinity": 0.892,
+        "delta": 0.008
+      },
+      {
+        "id": "656078D4-7298-439C-B517-153F264014E1",
+        "name": "Somebody Somewhere",
+        "cityAffinity": 0.86,
+        "homeAffinity": 0.873,
+        "delta": -0.013
+      },
+      {
+        "id": "1726F37E-D9CA-43CC-8B62-4E9AF1FD2C5B",
+        "name": "Severance",
+        "cityAffinity": 0.62,
+        "homeAffinity": 0.652,
+        "delta": -0.032
+      }
+    ],
+    "homeAvailable": true
+  },
+  "locality": {
+    "id": "30CFBE87-572B-4D05-AADA-3D3FBD799A2B",
+    "name": "Nashville",
+    "label": "Nashville, TN",
+    "rank": 17,
+    "affinity": 0.829,
+    "state": "TN",
+    "population": 689454,
+    "lat": 36.1718,
+    "lon": -86.785,
+    "overIndex": false,
+    "why": [
+      "Waxahatchee (58%)",
+      "Adrianne Lenker (48%)",
+      "Big Thief (35%)"
+    ],
+    "topRoom": {
+      "id": "30CFBE87-572B-4D05-AADA-3D3FBD799A2B",
+      "name": "The Basement East",
+      "affinity": 0.829,
+      "why": [
+        "Waxahatchee (58%)",
+        "Adrianne Lenker (48%)",
+        "Big Thief (35%)"
+      ]
+    }
+  },
+  "card": {
+    "summary": "Nashville ranks #17 nationally for fans of your comps, with a locality affinity of 0.829 driven most by Waxahatchee (58%), followed by Adrianne Lenker (48%) and Big Thief (35%). It does not carry the over-index flag because its population sits above 250,000, and its top room for fans of your comps is The Basement East.",
+    "rooms_note": "Start with The Basement East, the highest-ranked room at 0.92 affinity for fans of your comps around Nashville, with Big Thief (75%) as its strongest driver.",
+    "promo_note": "Record stores lead the promo partners, and Grimey's New & Preloved Music tops the list at 0.9 affinity with Big Thief (73%) as its strongest driver. Parnassus Books (0.89) and Barista Parlor (0.88) are close behind.",
+    "who_note": "Fans of your comps overall index highest at 30 to 34 (0.51), with 25 to 29 close behind (0.49), so consider leading with rooms and promo partners that program for that late-twenties to early-thirties range.",
+    "local_color_note": "Parks and Recreation shows the biggest lift over Richmond (+0.083, 0.68 vs. 0.597), and Doc Martens edges ahead too (+0.03), which hints that warm, wry humor on the poster and boot-friendly merch styling could land with fans of your comps around Nashville.",
+    "promo_copy": [
+      "Big Thief and Waxahatchee fans in Nashville: a new tour is coming through town.",
+      "Love Adrianne Lenker? Nashville, this one's for you. Show details soon."
+    ],
+    "caution": "These are aggregate taste affinities, not attendance or sales figures, so confirm capacity, age policy, and availability directly with each room."
+  },
+  "receipts": [
+    {
+      "id": "rmv3hv65u-60",
+      "tool": "find_rooms",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Nashville%2C+TN&filter.location.radius=15000&filter.tags=urn%3Atag%3Acategory%3Aplace%3Alive_music_venue%2Curn%3Atag%3Agenre%3Aplace%3Abar%3Alive_music%2Curn%3Atag%3Agenre%3Aplace%3Aconcert_hall%2Curn%3Atag%3Agenre%3Aplace%3Amusic_venue&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=8&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 8,
+      "top": [
+        {
+          "name": "The Basement East",
+          "affinity": 0.92
+        },
+        {
+          "name": "Exit/In",
+          "affinity": 0.87
+        },
+        {
+          "name": "The 5 Spot",
+          "affinity": 0.82
+        }
+      ]
+    },
+    {
+      "id": "rmv3hv65u-61",
+      "tool": "who_shows_up",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Ademographics&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 3,
+      "top": []
+    },
+    {
+      "id": "rmv3hv65u-62",
+      "tool": "local_color",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Abrand&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Nashville%2C+TN&signal.location.radius=25000&take=20",
+      "mode": "demo",
+      "status": 200,
+      "ms": 1,
+      "resultCount": 20,
+      "top": [
+        {
+          "name": "Patagonia",
+          "affinity": 0.89
+        },
+        {
+          "name": "Fender",
+          "affinity": 0.871
+        },
+        {
+          "name": "Trader Joe's",
+          "affinity": 0.851
+        }
+      ]
+    },
+    {
+      "id": "rmv3hv65u-63",
+      "tool": "local_color",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Atv_show&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Nashville%2C+TN&signal.location.radius=25000&take=20",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 20,
+      "top": [
+        {
+          "name": "Reservation Dogs",
+          "affinity": 0.9
+        },
+        {
+          "name": "Nashville",
+          "affinity": 0.88
+        },
+        {
+          "name": "Somebody Somewhere",
+          "affinity": 0.86
+        }
+      ]
+    },
+    {
+      "id": "rmv3hv65u-64",
+      "tool": "local_color",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Abrand&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Richmond%2C+VA&signal.location.radius=25000&take=20",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 20,
+      "top": [
+        {
+          "name": "Patagonia",
+          "affinity": 0.9
+        },
+        {
+          "name": "Subaru",
+          "affinity": 0.882
+        },
+        {
+          "name": "Trader Joe's",
+          "affinity": 0.863
+        }
+      ]
+    },
+    {
+      "id": "rmv3hv65u-65",
+      "tool": "local_color",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Atv_show&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Richmond%2C+VA&signal.location.radius=25000&take=20",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 20,
+      "top": [
+        {
+          "name": "Fleabag",
+          "affinity": 0.91
+        },
+        {
+          "name": "Reservation Dogs",
+          "affinity": 0.892
+        },
+        {
+          "name": "Somebody Somewhere",
+          "affinity": 0.873
+        }
+      ]
+    },
+    {
+      "id": "rmv3hv65v-66",
+      "tool": "find_promo_partners",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Nashville%2C+TN&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Arecord_store&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 2,
+      "top": [
+        {
+          "name": "Grimey's New & Preloved Music",
+          "affinity": 0.9
+        },
+        {
+          "name": "Third Man Records Nashville",
+          "affinity": 0.8
+        }
+      ]
+    },
+    {
+      "id": "rmv3hv65v-67",
+      "tool": "find_promo_partners",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Nashville%2C+TN&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Acafe%2Curn%3Atag%3Agenre%3Aplace%3Acoffee_shop&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 2,
+      "top": [
+        {
+          "name": "Barista Parlor",
+          "affinity": 0.88
+        },
+        {
+          "name": "Frothy Monkey",
+          "affinity": 0.79
+        }
+      ]
+    },
+    {
+      "id": "rmv3hv65v-68",
+      "tool": "find_promo_partners",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Nashville%2C+TN&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abookstore&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 2,
+      "top": [
+        {
+          "name": "Parnassus Books",
+          "affinity": 0.89
+        },
+        {
+          "name": "East Side Story",
+          "affinity": 0.78
+        }
+      ]
+    },
+    {
+      "id": "rmv3hv65v-69",
+      "tool": "find_promo_partners",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Nashville%2C+TN&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abar%2Curn%3Atag%3Agenre%3Aplace%3Adive_bar&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 2,
+      "top": [
+        {
+          "name": "Springwater Supper Club & Lounge",
+          "affinity": 0.87
+        },
+        {
+          "name": "Santa's Pub",
+          "affinity": 0.77
+        }
+      ]
+    },
+    {
+      "id": "rmv3hv65v-70",
+      "tool": "find_promo_partners",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Nashville%2C+TN&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Athrift_store%2Curn%3Atag%3Agenre%3Aplace%3Avintage_store&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 2,
+      "top": [
+        {
+          "name": "Hip Zipper Vintage",
+          "affinity": 0.85
+        },
+        {
+          "name": "Antique Archaeology Nashville",
+          "affinity": 0.74
+        }
+      ]
+    }
+  ]
+}

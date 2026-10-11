@@ -1,0 +1,315 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "local_color",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Atv_show&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Northampton%2C%20MA&signal.location.radius=25000&take=20",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:tv_show",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "signal.location.query": "Northampton, MA",
+      "signal.location.radius": 25000,
+      "take": 20
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "0E925F8C-19E3-4F7B-A3BE-AE91C3784881",
+          "name": "Heartstopper",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.86,
+          "properties": {
+            "description": "Tender British teen romance adapted from a webcomic."
+          },
+          "query": {
+            "affinity": 0.9
+          },
+          "tags": []
+        },
+        {
+          "entity_id": "5AF4B18C-7F2E-4D54-B946-C924DBBC0E98",
+          "name": "Fleabag",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.84,
+          "properties": {
+            "description": "Phoebe Waller-Bridge's fourth-wall-breaking comedy about grief and bad decisions."
+          },
+          "query": {
+            "affinity": 0.883
+          },
+          "tags": []
+        },
+        {
+          "entity_id": "E3C6F04F-7F24-4D5C-88C7-79ACD9F57EAC",
+          "name": "The Bear",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.84,
+          "properties": {
+            "description": "A fine-dining chef takes over his late brother's Chicago sandwich shop."
+          },
+          "query": {
+            "affinity": 0.865
+          },
+          "tags": []
+        },
+        {
+          "entity_id": "CF469EC0-12AA-46E4-AC0D-0D78F2FE76C0",
+          "name": "Freaks and Geeks",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.84,
+          "properties": {
+            "description": "Freaks and Geeks: a TV show fans of these comps around Bloomington, IN over-index on."
+          },
+          "query": {
+            "affinity": 0.848
+          },
+          "tags": []
+        },
+        {
+          "entity_id": "4ED236B4-9453-4512-8981-B49E9BB467A5",
+          "name": "Atlanta",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.84,
+          "properties": {
+            "description": "Donald Glover's surreal comedy about two cousins in the Atlanta rap scene."
+          },
+          "query": {
+            "affinity": 0.83
+          },
+          "tags": []
+        },
+        {
+          "entity_id": "ADC55D1A-2B7B-4B9E-8D1A-E13AD873422E",
+          "name": "Schitt's Creek",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.81,
+          "properties": {
+            "description": "Schitt's Creek (TV series)."
+          },
+          "query": {
+            "affinity": 0.812
+          },
+          "tags": []
+        },
+        {
+          "entity_id": "D7BD04AA-3B47-4DA4-9E4F-40A542F5B7D1",
+          "name": "Abbott Elementary",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.81,
+          "properties": {
+            "description": "Mockumentary about teachers at an underfunded Philadelphia public school."
+          },
+          "query": {
+            "affinity": 0.795
+          },
+          "tags": []
+        },
+        {
+          "entity_id": "8846C890-2157-46DE-8C98-84D919CFB824",
+          "name": "Shrinking",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.81,
+          "properties": {
+            "description": "A grieving therapist starts breaking the rules with his patients."
+          },
+          "query": {
+            "affinity": 0.777
+          },
+          "tags": []
+        },
+        {
+          "entity_id": "A13215E0-C764-4D72-A2B1-801211C74A37",
+          "name": "Twin Peaks",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.8,
+          "properties": {
+            "description": "David Lynch's dreamlike mystery in a logging town."
+          },
+          "query": {
+            "affinity": 0.76
+          },
+          "tags": []
+        },
+        {
+          "entity_id": "C31EC8D8-0E4F-47D5-85AF-CB9F099F7134",
+          "name": "The Great British Baking Show",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.79,
+          "properties": {
+            "description": "The Great British Baking Show (TV series)."
+          },
+          "query": {
+            "affinity": 0.742
+          },
+          "tags": []
+        },
+        {
+          "entity_id": "72E9BC0B-598B-43EF-8465-E61AD1CFF1DB",
+          "name": "Parks and Recreation",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.78,
+          "properties": {
+            "description": "Mockumentary about an earnest Indiana parks department."
+          },
+          "query": {
+            "affinity": 0.725
+          },
+          "tags": []
+        },
+        {
+          "entity_id": "6655F705-B668-4671-8B58-68064B23BACA",
+          "name": "Derry Girls",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.78,
+          "properties": {
+            "description": "Derry Girls: a TV show fans of these comps around Bloomington, IN over-index on."
+          },
+          "query": {
+            "affinity": 0.708
+          },
+          "tags": []
+        },
+        {
+          "entity_id": "57D77BDC-90C5-46DE-91F9-1613D5BFC645",
+          "name": "Ted Lasso",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.77,
+          "properties": {
+            "description": "Ted Lasso: a TV show fans of these comps around Bloomington, IN over-index on."
+          },
+          "query": {
+            "affinity": 0.69
+          },
+          "tags": []
+        },
+        {
+          "entity_id": "F504DFDE-7861-486D-9F48-C6422671C57A",
+          "name": "Reservation Dogs",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.75,
+          "properties": {
+            "description": "Four Indigenous teens in rural Oklahoma dream of California."
+          },
+          "query": {
+            "affinity": 0.672
+          },
+          "tags": []
+        },
+        {
+          "entity_id": "656078D4-7298-439C-B517-153F264014E1",
+          "name": "Somebody Somewhere",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.75,
+          "properties": {
+            "description": "A woman returns to her Kansas hometown and finds a choir of misfits."
+          },
+          "query": {
+            "affinity": 0.655
+          },
+          "tags": []
+        },
+        {
+          "entity_id": "69B3C272-1C4A-4E37-B557-EF952ABE47F2",
+          "name": "Poker Face",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.74,
+          "properties": {
+            "description": "A woman with a lie-detecting gift drives across the country solving murders."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:media:comedy_drama",
+              "name": "Comedy-Drama",
+              "type": "urn:tag:genre:media"
+            }
+          ],
+          "query": {
+            "affinity": 0.637
+          }
+        },
+        {
+          "entity_id": "CBBD7C4F-EE93-4B17-8B5B-5251E5F73EB7",
+          "name": "Hacks",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.73,
+          "properties": {
+            "description": "A legendary Vegas comedian and a cancelled young writer need each other."
+          },
+          "query": {
+            "affinity": 0.62
+          },
+          "tags": []
+        },
+        {
+          "entity_id": "377A96F7-A073-43FE-B56D-6E3331A4308F",
+          "name": "Gilmore Girls",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.72,
+          "properties": {
+            "description": "Fast-talking mother and daughter in a small Connecticut town."
+          },
+          "query": {
+            "affinity": 0.603
+          },
+          "tags": []
+        },
+        {
+          "entity_id": "434F31AF-D190-4762-8C9B-5266F6D1A699",
+          "name": "Dickinson",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.71,
+          "properties": {
+            "description": "Comedy about young Emily Dickinson in 1850s Amherst, Massachusetts, set to a modern soundtrack."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:media:comedy_drama",
+              "name": "Comedy-Drama",
+              "type": "urn:tag:genre:media"
+            }
+          ],
+          "query": {
+            "affinity": 0.585
+          }
+        },
+        {
+          "entity_id": "1726F37E-D9CA-43CC-8B62-4E9AF1FD2C5B",
+          "name": "Severance",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.7,
+          "properties": {
+            "description": "Office workers whose memories are split between work and home."
+          },
+          "query": {
+            "affinity": 0.568
+          },
+          "tags": []
+        }
+      ]
+    }
+  }
+}

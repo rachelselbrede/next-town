@@ -24,9 +24,13 @@
         {
           "entity_id": "BFEFBC66-5CBA-4940-9859-5905AB4DD079",
           "name": "The Union Bar & Grill",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:music_venue",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "popularity": 0.72,
+          "location": {
+            "lat": 39.329,
+            "lon": -82.101
+          },
           "properties": {
             "description": "Court Street-adjacent club that has hosted touring indie and punk acts for decades, with a stage upstairs and a long bar below.",
             "address": "18 W Union St, Athens, OH 45701",
@@ -41,42 +45,46 @@
           },
           "tags": [
             {
+              "id": "urn:tag:genre:place:music_venue",
               "name": "Music Venue",
-              "tag_id": "urn:tag:genre:place:music_venue",
               "type": "urn:tag:genre:place"
             },
             {
+              "id": "urn:tag:genre:place:bar:live_music",
               "name": "Bar With Live Music",
-              "tag_id": "urn:tag:genre:place:bar:live_music",
               "type": "urn:tag:genre:place"
             }
           ],
           "query": {
             "affinity": 0.93,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.8
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.79
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.72
                 }
-              }
+              ]
             }
           }
         },
         {
           "entity_id": "BA5A9238-1E93-47E3-AC97-CF635BCE46AE",
           "name": "Casa Nueva",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:music_venue",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "popularity": 0.68,
+          "location": {
+            "lat": 39.329,
+            "lon": -82.101
+          },
           "properties": {
             "description": "Worker-owned cantina with a back room that books folk, roots and indie bands most weekends.",
             "address": "6 W State St, Athens, OH 45701",
@@ -91,42 +99,46 @@
           },
           "tags": [
             {
+              "id": "urn:tag:genre:place:music_venue",
               "name": "Music Venue",
-              "tag_id": "urn:tag:genre:place:music_venue",
               "type": "urn:tag:genre:place"
             },
             {
+              "id": "urn:tag:genre:place:bar:live_music",
               "name": "Bar With Live Music",
-              "tag_id": "urn:tag:genre:place:bar:live_music",
               "type": "urn:tag:genre:place"
             }
           ],
           "query": {
             "affinity": 0.89,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.77
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.7
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.68
                 }
-              }
+              ]
             }
           }
         },
         {
           "entity_id": "89B773CA-ECBB-46FD-9AB9-2BEC743AFD15",
           "name": "Stuart's Opera House",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:concert_hall",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "popularity": 0.81,
+          "location": {
+            "lat": 39.329,
+            "lon": -82.101
+          },
           "properties": {
             "description": "Restored 1879 opera house a short drive up Route 33 that presents national folk and Americana tours and runs the Nelsonville Music Festival.",
             "address": "52 Public Square, Nelsonville, OH 45764",
@@ -141,42 +153,46 @@
           },
           "tags": [
             {
+              "id": "urn:tag:genre:place:concert_hall",
               "name": "Concert Hall",
-              "tag_id": "urn:tag:genre:place:concert_hall",
               "type": "urn:tag:genre:place"
             },
             {
+              "id": "urn:tag:genre:place:music_venue",
               "name": "Music Venue",
-              "tag_id": "urn:tag:genre:place:music_venue",
               "type": "urn:tag:genre:place"
             }
           ],
           "query": {
             "affinity": 0.84,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.73
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.66
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.59
                 }
-              }
+              ]
             }
           }
         },
         {
           "entity_id": "4BDAB269-390C-40AA-9698-5796D8D279CF",
           "name": "Donkey Coffee & Espresso",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:music_venue",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "popularity": 0.6,
+          "location": {
+            "lat": 39.329,
+            "lon": -82.101
+          },
           "properties": {
             "description": "Coffeehouse with a small listening-room stage for singer-songwriter nights and open mics.",
             "address": "17 1/2 W Washington St, Athens, OH 45701",
@@ -191,37 +207,41 @@
           },
           "tags": [
             {
+              "id": "urn:tag:genre:place:music_venue",
               "name": "Music Venue",
-              "tag_id": "urn:tag:genre:place:music_venue",
               "type": "urn:tag:genre:place"
             }
           ],
           "query": {
             "affinity": 0.8,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.64
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.62
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.55
                 }
-              }
+              ]
             }
           }
         },
         {
           "entity_id": "BCEB979E-BC75-457E-9F98-7487D0035056",
           "name": "Jackie O's Taproom & Brewery",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:bar",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "popularity": 0.7,
+          "location": {
+            "lat": 39.329,
+            "lon": -82.101
+          },
           "properties": {
             "description": "Production brewery and taproom with a stage and outdoor space for touring bands and local showcases.",
             "address": "25 Campbell St, Athens, OH 45701",
@@ -236,42 +256,46 @@
           },
           "tags": [
             {
+              "id": "urn:tag:genre:place:bar:live_music",
               "name": "Bar With Live Music",
-              "tag_id": "urn:tag:genre:place:bar:live_music",
               "type": "urn:tag:genre:place"
             },
             {
+              "id": "urn:tag:genre:place:music_venue",
               "name": "Music Venue",
-              "tag_id": "urn:tag:genre:place:music_venue",
               "type": "urn:tag:genre:place"
             }
           ],
           "query": {
             "affinity": 0.75,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.6
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.53
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.51
                 }
-              }
+              ]
             }
           }
         },
         {
           "entity_id": "1354EB31-64EA-40D3-AFE2-C92D1C491BA9",
           "name": "Templeton-Blackburn Alumni Memorial Auditorium",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:concert_hall",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "popularity": 0.55,
+          "location": {
+            "lat": 39.329,
+            "lon": -82.101
+          },
           "properties": {
             "description": "Ohio University's 1,700-seat hall on College Green, used for larger touring shows and campus performing-arts series.",
             "address": "1 College Green, Athens, OH 45701",
@@ -286,37 +310,41 @@
           },
           "tags": [
             {
+              "id": "urn:tag:genre:place:concert_hall",
               "name": "Concert Hall",
-              "tag_id": "urn:tag:genre:place:concert_hall",
               "type": "urn:tag:genre:place"
             }
           ],
           "query": {
             "affinity": 0.71,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.5
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.48
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.41
                 }
-              }
+              ]
             }
           }
         },
         {
           "entity_id": "21FCA098-DD9A-4B1C-9240-8604E91E5B37",
           "name": "The Smiling Skull Saloon",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:bar",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "popularity": 0.47,
+          "location": {
+            "lat": 39.329,
+            "lon": -82.101
+          },
           "properties": {
             "description": "Low-ceilinged dive that puts rock, garage and folk-punk bands on a floor-level stage.",
             "address": "108 W Union St, Athens, OH 45701",
@@ -331,42 +359,46 @@
           },
           "tags": [
             {
+              "id": "urn:tag:genre:place:bar:live_music",
               "name": "Bar With Live Music",
-              "tag_id": "urn:tag:genre:place:bar:live_music",
               "type": "urn:tag:genre:place"
             },
             {
+              "id": "urn:tag:genre:place:bar",
               "name": "Bar",
-              "tag_id": "urn:tag:genre:place:bar",
               "type": "urn:tag:genre:place"
             }
           ],
           "query": {
             "affinity": 0.66,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.46
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.39
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.37
                 }
-              }
+              ]
             }
           }
         },
         {
           "entity_id": "29660854-9BD1-4910-BBDE-FE368E2AF128",
           "name": "Little Fish Brewing Company",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:bar",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "popularity": 0.5,
+          "location": {
+            "lat": 39.329,
+            "lon": -82.101
+          },
           "properties": {
             "description": "Farmhouse brewery on the edge of town with an outdoor stage that hosts acoustic and roots acts in warm months.",
             "address": "8675 Armitage Rd, Athens, OH 45701",
@@ -381,28 +413,28 @@
           },
           "tags": [
             {
+              "id": "urn:tag:genre:place:bar:live_music",
               "name": "Bar With Live Music",
-              "tag_id": "urn:tag:genre:place:bar:live_music",
               "type": "urn:tag:genre:place"
             }
           ],
           "query": {
             "affinity": 0.62,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.42
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.35
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.3
                 }
-              }
+              ]
             }
           }
         }

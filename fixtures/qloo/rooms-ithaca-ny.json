@@ -1,0 +1,449 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_rooms",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?feature.explainability=true&filter.location.query=Ithaca%2C%20NY&filter.location.radius=15000&filter.tags=urn%3Atag%3Acategory%3Aplace%3Alive_music_venue%2Curn%3Atag%3Agenre%3Aplace%3Abar%3Alive_music%2Curn%3Atag%3Agenre%3Aplace%3Aconcert_hall%2Curn%3Atag%3Agenre%3Aplace%3Amusic_venue&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=8",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Ithaca, NY",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:category:place:live_music_venue,urn:tag:genre:place:bar:live_music,urn:tag:genre:place:concert_hall,urn:tag:genre:place:music_venue",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "sort_by": "affinity",
+      "take": 8,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "0B32B171-268C-4F80-B642-3636B007FBF7",
+          "name": "The Haunt",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.72,
+          "location": {
+            "lat": 42.4469,
+            "lon": -76.5176
+          },
+          "properties": {
+            "address": "702 Willow Ave, Ithaca, NY 14850",
+            "geocode": {
+              "name": "Ithaca",
+              "city": "Ithaca",
+              "admin1_region": "NY",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 2,
+            "description": "Standing-room club in a converted Willow Ave warehouse that books touring indie, folk and rock acts."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.92,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.95
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.88
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.83
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "656A811E-B981-4246-835F-AEE7447C6870",
+          "name": "State Theatre of Ithaca",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.78,
+          "location": {
+            "lat": 42.4398,
+            "lon": -76.4981
+          },
+          "properties": {
+            "address": "107 W State St, Ithaca, NY 14850",
+            "geocode": {
+              "name": "Ithaca",
+              "city": "Ithaca",
+              "admin1_region": "NY",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 3,
+            "description": "Restored 1920s downtown theater that hosts touring bands, comedians and film nights."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            },
+            {
+              "id": "urn:tag:genre:place:concert_hall",
+              "name": "Concert Hall",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.88,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.9
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.83
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.78
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "D223BF8A-AD0B-4B78-8C0E-78760D31D6B1",
+          "name": "Castaways",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.66,
+          "location": {
+            "lat": 42.4472,
+            "lon": -76.5189
+          },
+          "properties": {
+            "address": "413 Willow Ave, Ithaca, NY 14850",
+            "geocode": {
+              "name": "Ithaca",
+              "city": "Ithaca",
+              "admin1_region": "NY",
+              "country_code": "US"
+            },
+            "business_rating": 4.4,
+            "price_level": 2,
+            "description": "Lakeside-neighborhood bar and stage with a regular run of local and regional bands."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            },
+            {
+              "id": "urn:tag:genre:place:bar:live_music",
+              "name": "Live Music Bar",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.84,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.85
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.78
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.73
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "3625D10F-F82F-4D51-A57B-71B01040B2B8",
+          "name": "Barnes Hall",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.6,
+          "location": {
+            "lat": 42.4479,
+            "lon": -76.4835
+          },
+          "properties": {
+            "address": "129 Ho Plaza, Cornell University, Ithaca, NY 14853",
+            "geocode": {
+              "name": "Ithaca",
+              "city": "Ithaca",
+              "admin1_region": "NY",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 2,
+            "description": "Small wood-paneled recital hall on the Cornell campus, good for quiet acoustic sets."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:concert_hall",
+              "name": "Concert Hall",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.8,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.83
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.76
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.71
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "ACF5EB78-2B87-4E71-9F64-C5CEBECD60DF",
+          "name": "Felicia's Atomic Lounge",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.58,
+          "location": {
+            "lat": 42.4423,
+            "lon": -76.5072
+          },
+          "properties": {
+            "address": "508 W State St, Ithaca, NY 14850",
+            "geocode": {
+              "name": "Ithaca",
+              "city": "Ithaca",
+              "admin1_region": "NY",
+              "country_code": "US"
+            },
+            "business_rating": 4.3,
+            "price_level": 1,
+            "description": "Neighborhood bar with a small stage, cheap drinks and local bands most weekends."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:bar:live_music",
+              "name": "Live Music Bar",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.76,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.78
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.71
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.66
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "C025729A-FBE4-4431-BAA0-070263C9E97F",
+          "name": "Ithaca Ale House",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.54,
+          "location": {
+            "lat": 42.4391,
+            "lon": -76.4977
+          },
+          "properties": {
+            "address": "111 N Cayuga St, Ithaca, NY 14850",
+            "geocode": {
+              "name": "Ithaca",
+              "city": "Ithaca",
+              "admin1_region": "NY",
+              "country_code": "US"
+            },
+            "business_rating": 4.2,
+            "price_level": 2,
+            "description": "Downtown pub with a stage corner and a steady calendar of folk and bluegrass nights."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:bar:live_music",
+              "name": "Live Music Bar",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.71,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.72
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.65
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.6
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "2EA5D7E1-1235-4978-9F11-3A8199138C62",
+          "name": "Bailey Hall",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.62,
+          "location": {
+            "lat": 42.4492,
+            "lon": -76.4789
+          },
+          "properties": {
+            "address": "Garden Ave, Cornell University, Ithaca, NY 14853",
+            "geocode": {
+              "name": "Ithaca",
+              "city": "Ithaca",
+              "admin1_region": "NY",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 3,
+            "description": "Large Cornell auditorium that books bigger touring acts and campus series."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:concert_hall",
+              "name": "Concert Hall",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.66,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.69
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.62
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.57
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "8AB82160-A3F0-498D-B111-281DD1A3535A",
+          "name": "Bernie Milton Pavilion",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.5,
+          "location": {
+            "lat": 42.4395,
+            "lon": -76.4966
+          },
+          "properties": {
+            "address": "Ithaca Commons, E State St, Ithaca, NY 14850",
+            "geocode": {
+              "name": "Ithaca",
+              "city": "Ithaca",
+              "admin1_region": "NY",
+              "country_code": "US"
+            },
+            "business_rating": 4.4,
+            "price_level": 1,
+            "description": "Open-air stage on the pedestrian Commons used for free summer concerts and festivals."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.6,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.62
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.55
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.5
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -2,1868 +2,2752 @@
   "_handAuthored": true,
   "_captured": null,
   "tool": "rank_markets",
-  "canonical": "https://hackathon.api.qloo.com/v2/insights?feature.explainability=true&filter.geocode.country_code=US&filter.type=urn%3Aentity%3Alocality&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&take=50",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?diversify.by=properties.geocode.city&diversify.take=1&feature.explainability=true&filter.geocode.country_code=US&filter.tags=urn%3Atag%3Acategory%3Aplace%3Alive_music_venue%2Curn%3Atag%3Agenre%3Aplace%3Abar%3Alive_music%2Curn%3Atag%3Agenre%3Aplace%3Aconcert_hall%2Curn%3Atag%3Agenre%3Aplace%3Amusic_venue&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&take=50",
   "query": {
     "path": "/v2/insights",
     "params": {
-      "filter.type": "urn:entity:locality",
-      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "filter.type": "urn:entity:place",
+      "filter.tags": "urn:tag:category:place:live_music_venue,urn:tag:genre:place:bar:live_music,urn:tag:genre:place:concert_hall,urn:tag:genre:place:music_venue",
+      "operator.filter.tags": "union",
       "filter.geocode.country_code": "US",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "diversify.by": "properties.geocode.city",
+      "diversify.take": 1,
       "take": 50,
       "feature.explainability": "true"
     }
   },
   "response": {
     "success": true,
+    "query": {
+      "explainability": {
+        "signal.interests.entities": [
+          {
+            "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+            "score": {
+              "top_10": 0.585,
+              "top_25": 0.557,
+              "top_50": 0.473,
+              "all": 0.473
+            }
+          },
+          {
+            "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+            "score": {
+              "top_10": 0.593,
+              "top_25": 0.538,
+              "top_50": 0.468,
+              "all": 0.468
+            }
+          },
+          {
+            "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+            "score": {
+              "top_10": 0.559,
+              "top_25": 0.522,
+              "top_50": 0.468,
+              "all": 0.468
+            }
+          }
+        ]
+      }
+    },
     "results": {
       "entities": [
         {
-          "entity_id": "E5610BEE-5F1C-4587-874E-2CA7A86DA0F0",
-          "name": "Asheville",
-          "type": "urn:entity:locality",
-          "subtype": "urn:entity:locality:city",
-          "popularity": 0.46,
-          "properties": {
-            "geocode": {
-              "name": "Asheville",
-              "admin1_region": "NC",
-              "country_code": "US"
-            }
-          },
+          "entity_id": "6211CB48-C3EC-4C54-9E26-C6F79ACF6F24",
+          "name": "The Grey Eagle",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.82,
           "location": {
             "lat": 35.595,
             "lon": -82.551
           },
+          "properties": {
+            "description": "Long-running listening room in the River Arts District where touring folk and indie acts play to a crowd that actually listens.",
+            "address": "185 Clingman Ave, Asheville, NC 28801",
+            "geocode": {
+              "name": "Asheville",
+              "city": "Asheville",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 2,
+            "website": "https://www.thegreyeagle.com"
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
           "query": {
             "affinity": 0.934,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.72
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.57
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.48
                 }
-              }
+              ]
             }
           }
         },
         {
-          "entity_id": "22913C74-465C-4F1D-8AD7-962C975E3CA5",
-          "name": "Carrboro",
-          "type": "urn:entity:locality",
-          "subtype": "urn:entity:locality:city",
-          "popularity": 0.24,
-          "properties": {
-            "geocode": {
-              "name": "Carrboro",
-              "admin1_region": "NC",
-              "country_code": "US"
-            }
-          },
+          "entity_id": "469A6A88-DD68-441B-A8D4-B2A7EFBE67C0",
+          "name": "Cat's Cradle",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.88,
           "location": {
             "lat": 35.91,
             "lon": -79.075
           },
+          "properties": {
+            "description": "The Triangle's landmark 750-cap indie room since 1969, where touring folk and indie acts play the main stage.",
+            "address": "300 E Main St, Carrboro, NC 27510",
+            "geocode": {
+              "name": "Carrboro",
+              "city": "Carrboro",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
           "query": {
             "affinity": 0.921,
             "explainability": {
-              "by_entity": {
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
-                  "score": 0.73
-                },
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.6
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.73
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.53
                 }
-              }
+              ]
             }
           }
         },
         {
-          "entity_id": "C800B6B3-FC9C-4D01-A854-4BA0A2401769",
-          "name": "Athens",
-          "type": "urn:entity:locality",
-          "subtype": "urn:entity:locality:city",
-          "popularity": 0.5,
-          "properties": {
-            "geocode": {
-              "name": "Athens",
-              "admin1_region": "GA",
-              "country_code": "US"
-            }
-          },
+          "entity_id": "32187797-A7DD-450D-969A-870890591D65",
+          "name": "40 Watt Club",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.46,
           "location": {
             "lat": 33.952,
             "lon": -83.358
           },
+          "properties": {
+            "description": "The downtown room every Athens band grows up wanting to play; touring indie and folk acts fill the week.",
+            "address": "285 W Washington St, Athens, GA 30601",
+            "geocode": {
+              "name": "Athens",
+              "city": "Athens",
+              "admin1_region": "GA",
+              "country_code": "US"
+            },
+            "business_rating": 4.34,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
           "query": {
             "affinity": 0.918,
             "explainability": {
-              "by_entity": {
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.5
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.75
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.64
-                },
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
-                  "score": 0.5
                 }
-              }
+              ]
             }
           }
         },
         {
-          "entity_id": "AB4042C7-18A5-4AAC-955A-696E9E6E94E4",
-          "name": "Bloomington",
-          "type": "urn:entity:locality",
-          "subtype": "urn:entity:locality:city",
-          "popularity": 0.42,
-          "properties": {
-            "geocode": {
-              "name": "Bloomington",
-              "admin1_region": "IN",
-              "country_code": "US"
-            }
-          },
+          "entity_id": "D63FA07E-EC8A-44CA-B3B1-17C65195D3A1",
+          "name": "The Bluebird",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.82,
           "location": {
             "lat": 39.165,
             "lon": -86.526
           },
+          "properties": {
+            "description": "Bloomington's long-running downtown club, the room most touring indie acts play when they come through town.",
+            "address": "216 N Walnut St, Bloomington, IN 47404",
+            "business_rating": 4.3,
+            "price_level": 2,
+            "geocode": {
+              "name": "Bloomington",
+              "city": "Bloomington",
+              "admin1_region": "IN",
+              "country_code": "US"
+            }
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:genre:place"
+            }
+          ],
           "query": {
             "affinity": 0.905,
             "explainability": {
-              "by_entity": {
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
-                  "score": 0.67
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.46
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.58
                 },
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
-                  "score": 0.46
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.67
                 }
-              }
+              ]
             }
           }
         },
         {
-          "entity_id": "F2CC972E-FAA6-4706-A990-510B8C2BC5A7",
-          "name": "Charlottesville",
-          "type": "urn:entity:locality",
-          "subtype": "urn:entity:locality:city",
-          "popularity": 0.36,
-          "properties": {
-            "geocode": {
-              "name": "Charlottesville",
-              "admin1_region": "VA",
-              "country_code": "US"
-            }
-          },
+          "entity_id": "3664B532-E711-46FE-99CF-CFE395D727E0",
+          "name": "The Jefferson Theater",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.86,
           "location": {
             "lat": 38.029,
             "lon": -78.477
           },
+          "properties": {
+            "description": "A restored 1912 vaudeville house on the Downtown Mall that is the city's main mid-size stop for touring indie and folk acts.",
+            "address": "110 E Main St, Charlottesville, VA 22902",
+            "geocode": {
+              "name": "Charlottesville",
+              "city": "Charlottesville",
+              "admin1_region": "VA",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 2,
+            "website": "https://jeffersontheater.com"
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:concert_hall",
+              "name": "Concert Hall",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:genre:place"
+            }
+          ],
           "query": {
             "affinity": 0.899,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.68
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.61
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.51
                 }
-              }
+              ]
             }
           }
         },
         {
-          "entity_id": "B41F6CC4-2A70-4FDA-A0C0-64643169DBAC",
-          "name": "Burlington",
-          "type": "urn:entity:locality",
-          "subtype": "urn:entity:locality:city",
-          "popularity": 0.36,
-          "properties": {
-            "geocode": {
-              "name": "Burlington",
-              "admin1_region": "VT",
-              "country_code": "US"
-            }
-          },
+          "entity_id": "E5DFF4CD-1C8E-438B-9518-A755F1147569",
+          "name": "Radio Bean",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.48,
           "location": {
             "lat": 44.476,
             "lon": -73.212
           },
+          "properties": {
+            "description": "Tiny Old North End coffeehouse-bar with live music most nights and a loyal local crowd.",
+            "address": "8 N Winooski Ave, Burlington, VT 05401",
+            "geocode": {
+              "name": "Burlington",
+              "city": "Burlington",
+              "admin1_region": "VT",
+              "country_code": "US"
+            },
+            "business_rating": 4.4,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
           "query": {
             "affinity": 0.893,
             "explainability": {
-              "by_entity": {
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
-                  "score": 0.69
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.47
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.55
                 },
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
-                  "score": 0.47
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.69
                 }
-              }
+              ]
             }
           }
         },
         {
-          "entity_id": "9AD37427-02E0-4988-96D9-2A2728F6C51A",
-          "name": "Northampton",
-          "type": "urn:entity:locality",
-          "subtype": "urn:entity:locality:city",
-          "popularity": 0.3,
+          "entity_id": "3E972C1E-0EDF-4F42-A90A-E1203F231CDF",
+          "name": "Iron Horse Music Hall",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.74,
+          "location": {
+            "lat": 42.3174,
+            "lon": -72.6293
+          },
           "properties": {
+            "address": "20 Center St, Northampton, MA 01060",
             "geocode": {
               "name": "Northampton",
+              "city": "Northampton",
               "admin1_region": "MA",
               "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 2,
+            "description": "Long-running Center Street listening room where folk and indie touring acts have played for decades."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            },
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
             }
-          },
-          "location": {
-            "lat": 42.325,
-            "lon": -72.641
-          },
+          ],
           "query": {
             "affinity": 0.887,
             "explainability": {
-              "by_entity": {
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
-                  "score": 0.71
-                },
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.59
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.53
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.71
                 }
-              }
+              ]
             }
           }
         },
         {
-          "entity_id": "3E6DA49F-C611-4DF0-BDC3-D5269A19A797",
-          "name": "Philadelphia",
-          "type": "urn:entity:locality",
-          "subtype": "urn:entity:locality:city",
-          "popularity": 0.93,
-          "properties": {
-            "geocode": {
-              "name": "Philadelphia",
-              "admin1_region": "PA",
-              "country_code": "US"
-            }
-          },
+          "entity_id": "459998EF-EDDD-40C6-96C1-E67EB1ECDC85",
+          "name": "Union Transfer",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.82,
           "location": {
             "lat": 39.953,
             "lon": -75.165
           },
+          "properties": {
+            "description": "Converted train depot turned mid-size room, a standard stop for touring indie acts.",
+            "address": "1026 Spring Garden St, Philadelphia, PA 19123",
+            "geocode": {
+              "name": "Philadelphia",
+              "city": "Philadelphia",
+              "admin1_region": "PA",
+              "country_code": "US"
+            },
+            "business_rating": 4.8,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
           "query": {
             "affinity": 0.881,
             "explainability": {
-              "by_entity": {
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
-                  "score": 0.63
-                },
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.53
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.63
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.4
                 }
-              }
+              ]
             }
           }
         },
         {
-          "entity_id": "C29D96AE-F1C4-4502-93DB-193A963CD3F6",
-          "name": "Durham",
-          "type": "urn:entity:locality",
-          "subtype": "urn:entity:locality:city",
-          "popularity": 0.66,
-          "properties": {
-            "geocode": {
-              "name": "Durham",
-              "admin1_region": "NC",
-              "country_code": "US"
-            }
-          },
+          "entity_id": "89C317BE-2772-41A5-A4F0-49E14A3DE534",
+          "name": "Motorco Music Hall",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.51,
           "location": {
             "lat": 35.994,
             "lon": -78.899
           },
+          "properties": {
+            "description": "Former car dealership turned music hall with a garage bar and a wide-open floor.",
+            "address": "723 Rigsbee Ave, Durham, NC 27701",
+            "geocode": {
+              "name": "Durham",
+              "city": "Durham",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
           "query": {
             "affinity": 0.874,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.64
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.56
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.45
                 }
-              }
+              ]
             }
           }
         },
         {
-          "entity_id": "ADBC1247-32F4-4C36-9D4C-C5AD366F8576",
-          "name": "Pittsburgh",
-          "type": "urn:entity:locality",
-          "subtype": "urn:entity:locality:city",
-          "popularity": 0.7,
-          "properties": {
-            "geocode": {
-              "name": "Pittsburgh",
-              "admin1_region": "PA",
-              "country_code": "US"
-            }
-          },
+          "entity_id": "FD45ACDD-F4E6-4BB1-B9F6-FFA3A845E532",
+          "name": "Mr. Smalls Theatre",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.82,
           "location": {
             "lat": 40.441,
             "lon": -79.996
           },
+          "properties": {
+            "description": "A converted church turned mid-size room in Millvale, long the first Pittsburgh stop for touring indie bands on the way up.",
+            "address": "400 Lincoln Ave, Millvale, PA 15209",
+            "geocode": {
+              "name": "Pittsburgh",
+              "city": "Pittsburgh",
+              "admin1_region": "PA",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category"
+            }
+          ],
           "query": {
             "affinity": 0.869,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.66
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
-                  "score": 0.51
-                },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.42
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.51
                 }
-              }
+              ]
             }
           }
         },
         {
-          "entity_id": "A2E17860-5E9F-45CE-ADCB-27399A13BEED",
-          "name": "Athens",
-          "type": "urn:entity:locality",
-          "subtype": "urn:entity:locality:city",
-          "popularity": 0.25,
-          "properties": {
-            "geocode": {
-              "name": "Athens",
-              "admin1_region": "OH",
-              "country_code": "US"
-            }
-          },
+          "entity_id": "BFEFBC66-5CBA-4940-9859-5905AB4DD079",
+          "name": "The Union Bar & Grill",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.72,
           "location": {
             "lat": 39.329,
             "lon": -82.101
           },
+          "properties": {
+            "description": "Court Street-adjacent club that has hosted touring indie and punk acts for decades, with a stage upstairs and a long bar below.",
+            "address": "18 W Union St, Athens, OH 45701",
+            "geocode": {
+              "name": "Athens",
+              "city": "Athens",
+              "admin1_region": "OH",
+              "country_code": "US"
+            },
+            "business_rating": 4.3,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:genre:place:bar:live_music",
+              "name": "Bar With Live Music",
+              "type": "urn:tag:genre:place"
+            }
+          ],
           "query": {
             "affinity": 0.862,
             "explainability": {
-              "by_entity": {
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
-                  "score": 0.67
-                },
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.54
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.47
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.67
                 }
-              }
+              ]
             }
           }
         },
         {
-          "entity_id": "6CDABEE7-97D2-4ADE-A6DD-A6E4FF89CD02",
-          "name": "Louisville",
-          "type": "urn:entity:locality",
-          "subtype": "urn:entity:locality:city",
-          "popularity": 0.78,
-          "properties": {
-            "geocode": {
-              "name": "Louisville",
-              "admin1_region": "KY",
-              "country_code": "US"
-            }
-          },
+          "entity_id": "F0F4F888-8DE0-4767-8AFB-F4F9304C4D57",
+          "name": "Headliners Music Hall",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.86,
           "location": {
             "lat": 38.253,
             "lon": -85.759
           },
+          "properties": {
+            "description": "Mid-size standing room off Lexington Road that has hosted most touring indie acts passing through Louisville.",
+            "address": "1386 Lexington Rd, Louisville, KY 40206",
+            "geocode": {
+              "name": "Louisville",
+              "city": "Louisville",
+              "admin1_region": "KY",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
           "query": {
             "affinity": 0.857,
             "explainability": {
-              "by_entity": {
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
-                  "score": 0.69
-                },
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.58
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.69
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.44
                 }
-              }
+              ]
             }
           }
         },
         {
-          "entity_id": "E1B8E632-F2A1-460F-A1DC-D051565A0F52",
-          "name": "Knoxville",
-          "type": "urn:entity:locality",
-          "subtype": "urn:entity:locality:city",
-          "popularity": 0.58,
-          "properties": {
-            "geocode": {
-              "name": "Knoxville",
-              "admin1_region": "TN",
-              "country_code": "US"
-            }
-          },
+          "entity_id": "A5634B56-8A02-476E-AA5A-BA19202673AE",
+          "name": "The Bijou Theatre",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.86,
           "location": {
             "lat": 35.961,
             "lon": -83.921
           },
+          "properties": {
+            "description": "A restored 1909 theater downtown with warm acoustics that national indie-folk tours treat as a seated listening room.",
+            "address": "803 S Gay St, Knoxville, TN 37902",
+            "geocode": {
+              "name": "Knoxville",
+              "city": "Knoxville",
+              "admin1_region": "TN",
+              "country_code": "US"
+            },
+            "business_rating": 4.8,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:concert_hall",
+              "name": "Concert Hall",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
           "query": {
             "affinity": 0.851,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.61
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.52
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.4
                 }
-              }
+              ]
             }
           }
         },
         {
-          "entity_id": "239107F1-26CE-4F51-B7A8-0C241B0B342B",
-          "name": "Harrisonburg",
-          "type": "urn:entity:locality",
-          "subtype": "urn:entity:locality:city",
-          "popularity": 0.33,
-          "properties": {
-            "geocode": {
-              "name": "Harrisonburg",
-              "admin1_region": "VA",
-              "country_code": "US"
-            }
-          },
+          "entity_id": "638C28FD-F933-4938-B508-2E1A554DF066",
+          "name": "The Golden Pony",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.74,
           "location": {
             "lat": 38.45,
             "lon": -78.869
           },
+          "properties": {
+            "description": "Downtown bar and venue that books touring indie, folk and punk acts most nights of the week.",
+            "address": "181 N Main St, Harrisonburg, VA 22802",
+            "geocode": {
+              "name": "Harrisonburg",
+              "city": "Harrisonburg",
+              "admin1_region": "VA",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:genre:place:bar:live_music",
+              "name": "Bar With Live Music",
+              "type": "urn:tag:genre:place"
+            }
+          ],
           "query": {
             "affinity": 0.846,
             "explainability": {
-              "by_entity": {
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
-                  "score": 0.63
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.46
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.56
                 },
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
-                  "score": 0.46
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.63
                 }
-              }
+              ]
             }
           }
         },
         {
-          "entity_id": "38EC53D8-E752-494C-AA79-74F9B3293166",
-          "name": "Ithaca",
-          "type": "urn:entity:locality",
-          "subtype": "urn:entity:locality:city",
-          "popularity": 0.31,
+          "entity_id": "0B32B171-268C-4F80-B642-3636B007FBF7",
+          "name": "The Haunt",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.72,
+          "location": {
+            "lat": 42.4469,
+            "lon": -76.5176
+          },
           "properties": {
+            "address": "702 Willow Ave, Ithaca, NY 14850",
             "geocode": {
               "name": "Ithaca",
+              "city": "Ithaca",
               "admin1_region": "NY",
               "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 2,
+            "description": "Standing-room club in a converted Willow Ave warehouse that books touring indie, folk and rock acts."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
             }
-          },
-          "location": {
-            "lat": 42.444,
-            "lon": -76.502
-          },
+          ],
           "query": {
             "affinity": 0.84,
             "explainability": {
-              "by_entity": {
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
-                  "score": 0.64
-                },
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.5
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.42
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.64
                 }
-              }
+              ]
             }
           }
         },
         {
-          "entity_id": "308C62B1-50D0-4C0E-A054-FA0EEC865D68",
-          "name": "Columbus",
-          "type": "urn:entity:locality",
-          "subtype": "urn:entity:locality:city",
-          "popularity": 0.84,
-          "properties": {
-            "geocode": {
-              "name": "Columbus",
-              "admin1_region": "OH",
-              "country_code": "US"
-            }
-          },
+          "entity_id": "84977C1C-DDD7-43B5-A0A6-8AAFC6B59BE4",
+          "name": "Ace of Cups",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.54,
           "location": {
             "lat": 39.961,
             "lon": -82.999
           },
+          "properties": {
+            "description": "Clintonville club in an old bank; the room indie and folk tours route through.",
+            "address": "2619 N High St, Columbus, OH 43202",
+            "geocode": {
+              "name": "Columbus",
+              "city": "Columbus",
+              "admin1_region": "OH",
+              "country_code": "US"
+            },
+            "business_rating": 4.45,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
           "query": {
             "affinity": 0.835,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.65
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
-                  "score": 0.53
-                },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.47
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.53
                 }
-              }
+              ]
             }
           }
         },
         {
-          "entity_id": "BB63F67A-5635-4BE4-9492-232FD8900294",
-          "name": "Nashville",
-          "type": "urn:entity:locality",
-          "subtype": "urn:entity:locality:city",
-          "popularity": 0.86,
-          "properties": {
-            "geocode": {
-              "name": "Nashville",
-              "admin1_region": "TN",
-              "country_code": "US"
-            }
-          },
+          "entity_id": "30CFBE87-572B-4D05-AADA-3D3FBD799A2B",
+          "name": "The Basement East",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.84,
           "location": {
             "lat": 36.163,
             "lon": -86.782
           },
+          "properties": {
+            "description": "East Nashville room rebuilt after the 2020 tornado; a big stage for a mid-size crowd.",
+            "address": "917 Woodland St, Nashville, TN 37206",
+            "geocode": {
+              "name": "Nashville",
+              "city": "Nashville",
+              "admin1_region": "TN",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
           "query": {
             "affinity": 0.829,
             "explainability": {
-              "by_entity": {
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.35
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.58
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.48
-                },
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
-                  "score": 0.35
                 }
-              }
+              ]
             }
           }
         },
         {
-          "entity_id": "8D9B8EFD-863A-4377-B5AA-36B73B6ADFC2",
-          "name": "Portland",
-          "type": "urn:entity:locality",
-          "subtype": "urn:entity:locality:city",
-          "popularity": 0.44,
-          "properties": {
-            "geocode": {
-              "name": "Portland",
-              "admin1_region": "ME",
-              "country_code": "US"
-            }
-          },
+          "entity_id": "8FFD5A55-D77E-400A-A8B2-4397495A40A0",
+          "name": "State Theatre",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.82,
           "location": {
             "lat": 43.659,
             "lon": -70.257
           },
+          "properties": {
+            "description": "Restored 1929 theater on Congress Street that anchors Portland's touring calendar.",
+            "address": "609 Congress St, Portland, ME 04101",
+            "geocode": {
+              "name": "Portland",
+              "city": "Portland",
+              "admin1_region": "ME",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
           "query": {
             "affinity": 0.824,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.59
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
-                  "score": 0.51
-                },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.4
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.51
                 }
-              }
+              ]
             }
           }
         },
         {
-          "entity_id": "BEF2C11B-A92B-4CEA-8B83-1C42D2BD3CEE",
-          "name": "Lexington",
-          "type": "urn:entity:locality",
-          "subtype": "urn:entity:locality:city",
-          "popularity": 0.64,
-          "properties": {
-            "geocode": {
-              "name": "Lexington",
-              "admin1_region": "KY",
-              "country_code": "US"
-            }
-          },
+          "entity_id": "444DABB1-B62B-48E7-8E63-70BF9F0ADBED",
+          "name": "The Burl",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.68,
           "location": {
             "lat": 38.041,
             "lon": -84.504
           },
+          "properties": {
+            "description": "Old train depot in the Distillery District with a listening-room feel and a patio.",
+            "address": "375 Thompson Rd, Lexington, KY 40508",
+            "geocode": {
+              "name": "Lexington",
+              "city": "Lexington",
+              "admin1_region": "KY",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
           "query": {
             "affinity": 0.818,
             "explainability": {
-              "by_entity": {
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.37
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.61
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.46
-                },
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
-                  "score": 0.37
                 }
-              }
+              ]
             }
           }
         },
         {
-          "entity_id": "6778B77B-981F-4039-B94D-F656F0B23C7D",
-          "name": "Wilmington",
-          "type": "urn:entity:locality",
-          "subtype": "urn:entity:locality:city",
-          "popularity": 0.47,
-          "properties": {
-            "geocode": {
-              "name": "Wilmington",
-              "admin1_region": "NC",
-              "country_code": "US"
-            }
-          },
+          "entity_id": "6F43E3B4-AAF0-414A-A925-C2C65EBF977D",
+          "name": "Bourgie Nights",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.53,
           "location": {
             "lat": 34.226,
             "lon": -77.945
           },
+          "properties": {
+            "description": "Downtown listening room where touring folk and indie bills land first.",
+            "address": "127 Princess St, Wilmington, NC 28401",
+            "geocode": {
+              "name": "Wilmington",
+              "city": "Wilmington",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.73,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
           "query": {
             "affinity": 0.812,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.62
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
-                  "score": 0.49
-                },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.42
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.49
                 }
-              }
+              ]
             }
           }
         },
         {
-          "entity_id": "F48396FA-F82C-46F0-95DC-24279202FC74",
-          "name": "Baltimore",
-          "type": "urn:entity:locality",
-          "subtype": "urn:entity:locality:city",
-          "popularity": 0.78,
-          "properties": {
-            "geocode": {
-              "name": "Baltimore",
-              "admin1_region": "MD",
-              "country_code": "US"
-            }
-          },
+          "entity_id": "9C9447C5-505C-4B34-84F8-03505CD8F351",
+          "name": "Ottobar",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.61,
           "location": {
             "lat": 39.29,
             "lon": -76.612
           },
+          "properties": {
+            "description": "Charles Village club with a downstairs stage and an upstairs bar, long on indie bills.",
+            "address": "2549 N Howard St, Baltimore, MD 21218",
+            "geocode": {
+              "name": "Baltimore",
+              "city": "Baltimore",
+              "admin1_region": "MD",
+              "country_code": "US"
+            },
+            "business_rating": 4.4,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
           "query": {
             "affinity": 0.807,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.64
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.53
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.39
                 }
-              }
+              ]
             }
           }
         },
         {
-          "entity_id": "BC5A60FF-055F-4E3B-9FA9-C72EE5B5A6F3",
-          "name": "Washington",
-          "type": "urn:entity:locality",
-          "subtype": "urn:entity:locality:city",
-          "popularity": 0.9,
+          "entity_id": "0CE05C06-60F7-4F2F-A33F-07F794D4A533",
+          "name": "9:30 Club",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.88,
+          "location": {
+            "lat": 38.9179,
+            "lon": -77.0239
+          },
           "properties": {
+            "address": "815 V St NW, Washington, DC 20001",
             "geocode": {
               "name": "Washington",
+              "city": "Washington",
               "admin1_region": "DC",
               "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 2,
+            "description": "U Street's flagship standing-room club, the stop every touring indie act hopes to play."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
             }
-          },
-          "location": {
-            "lat": 38.907,
-            "lon": -77.037
-          },
+          ],
           "query": {
             "affinity": 0.802,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.56
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
-                  "score": 0.47
-                },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.35
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.47
                 }
-              }
+              ]
             }
           }
         },
         {
-          "entity_id": "74AD9677-51CB-4B19-9412-8C27883F14AA",
-          "name": "Chicago",
-          "type": "urn:entity:locality",
-          "subtype": "urn:entity:locality:city",
-          "popularity": 0.95,
-          "properties": {
-            "geocode": {
-              "name": "Chicago",
-              "admin1_region": "IL",
-              "country_code": "US"
-            }
-          },
+          "entity_id": "E4BEF932-CDC5-4262-848A-7BCF29D20041",
+          "name": "Thalia Hall",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.8,
           "location": {
             "lat": 41.878,
             "lon": -87.63
           },
+          "properties": {
+            "description": "Ornate 1892 hall in Pilsen with balconies and a crowd that comes for the songs.",
+            "address": "1807 S Allport St, Chicago, IL 60608",
+            "geocode": {
+              "name": "Chicago",
+              "city": "Chicago",
+              "admin1_region": "IL",
+              "country_code": "US"
+            },
+            "business_rating": 4.3,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
           "query": {
             "affinity": 0.797,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.58
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.51
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.41
                 }
-              }
+              ]
             }
           }
         },
         {
-          "entity_id": "40A0A66F-D633-4623-8D81-267D879ABE68",
-          "name": "Brooklyn",
-          "type": "urn:entity:locality",
-          "subtype": "urn:entity:locality:city",
-          "popularity": 0.94,
+          "entity_id": "F8C9B7C9-7F76-593C-A136-7F9B92248392",
+          "name": "Music Hall of Williamsburg",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.82,
+          "location": {
+            "lat": 40.7184,
+            "lon": -73.9626
+          },
           "properties": {
+            "address": "66 N 6th St, Brooklyn, NY 11249",
             "geocode": {
               "name": "Brooklyn",
+              "city": "Brooklyn",
               "admin1_region": "NY",
               "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 2,
+            "description": "Williamsburg standby with a wide floor and a balcony, steady with touring indie and folk acts."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
             }
-          },
-          "location": {
-            "lat": 40.678,
-            "lon": -73.944
-          },
+          ],
           "query": {
             "affinity": 0.792,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.59
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
-                  "score": 0.45
-                },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.37
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.45
                 }
-              }
+              ]
             }
           }
         },
         {
-          "entity_id": "43B90ECB-22F8-41ED-96EC-160133D37A8B",
-          "name": "Austin",
-          "type": "urn:entity:locality",
-          "subtype": "urn:entity:locality:city",
-          "popularity": 0.89,
-          "properties": {
-            "geocode": {
-              "name": "Austin",
-              "admin1_region": "TX",
-              "country_code": "US"
-            }
-          },
+          "entity_id": "8CA6DB9A-8D57-45B5-AEEF-21C325D69B53",
+          "name": "Mohawk",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.72,
           "location": {
             "lat": 30.267,
             "lon": -97.743
           },
+          "properties": {
+            "description": "Red River club with an indoor stage and a tiered outdoor stage under the sky.",
+            "address": "912 Red River St, Austin, TX 78701",
+            "geocode": {
+              "name": "Austin",
+              "city": "Austin",
+              "admin1_region": "TX",
+              "country_code": "US"
+            },
+            "business_rating": 4.4,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
           "query": {
             "affinity": 0.787,
             "explainability": {
-              "by_entity": {
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.43
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.61
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.49
-                },
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
-                  "score": 0.43
                 }
-              }
+              ]
             }
           }
         },
         {
-          "entity_id": "E8557E9D-2A9E-43FE-A77C-25A25E57970A",
-          "name": "Charleston",
-          "type": "urn:entity:locality",
-          "subtype": "urn:entity:locality:city",
-          "popularity": 0.56,
-          "properties": {
-            "geocode": {
-              "name": "Charleston",
-              "admin1_region": "SC",
-              "country_code": "US"
-            }
-          },
+          "entity_id": "A623B350-3370-470A-903F-7AA90D97DA34",
+          "name": "Music Farm",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.5,
           "location": {
             "lat": 32.776,
             "lon": -79.931
           },
+          "properties": {
+            "description": "Brick warehouse room downtown that has hosted touring indie and roots acts for decades.",
+            "address": "32 Ann St, Charleston, SC 29403",
+            "geocode": {
+              "name": "Charleston",
+              "city": "Charleston",
+              "admin1_region": "SC",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
           "query": {
             "affinity": 0.781,
             "explainability": {
-              "by_entity": {
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
-                  "score": 0.53
-                },
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.43
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.53
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.3
                 }
-              }
+              ]
             }
           }
         },
         {
-          "entity_id": "B4234763-96AE-4C17-9FF8-0B9E22F5ED32",
-          "name": "Savannah",
-          "type": "urn:entity:locality",
-          "subtype": "urn:entity:locality:city",
-          "popularity": 0.53,
-          "properties": {
-            "geocode": {
-              "name": "Savannah",
-              "admin1_region": "GA",
-              "country_code": "US"
-            }
-          },
+          "entity_id": "A69B479B-33A5-43F1-AF6F-9302B699A8D0",
+          "name": "Victory North",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.6,
           "location": {
             "lat": 32.081,
             "lon": -81.091
           },
+          "properties": {
+            "description": "Mid-size room in the Starland District with a wide stage and good sound.",
+            "address": "2603 Whitaker St, Savannah, GA 31401",
+            "geocode": {
+              "name": "Savannah",
+              "city": "Savannah",
+              "admin1_region": "GA",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
           "query": {
             "affinity": 0.776,
             "explainability": {
-              "by_entity": {
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
-                  "score": 0.55
-                },
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.47
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.36
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.55
                 }
-              }
+              ]
             }
           }
         },
         {
-          "entity_id": "8C5746AD-D03D-402A-B366-2EB8901E7CD8",
-          "name": "Lancaster",
-          "type": "urn:entity:locality",
-          "subtype": "urn:entity:locality:city",
-          "popularity": 0.37,
+          "entity_id": "BEA5A05E-DA98-4F42-B116-D1B1E22E1703",
+          "name": "Tellus360",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.72,
+          "location": {
+            "lat": 40.0378,
+            "lon": -76.304
+          },
           "properties": {
+            "address": "24 E King St, Lancaster, PA 17602",
             "geocode": {
               "name": "Lancaster",
+              "city": "Lancaster",
               "admin1_region": "PA",
               "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 2,
+            "description": "Downtown King Street bar and venue with a rooftop, a local-food kitchen, and live music most nights."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:bar:live_music",
+              "name": "Live Music Bar",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
             }
-          },
-          "location": {
-            "lat": 40.038,
-            "lon": -76.306
-          },
+          ],
           "query": {
             "affinity": 0.771,
             "explainability": {
-              "by_entity": {
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
-                  "score": 0.56
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.32
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.41
                 },
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
-                  "score": 0.32
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.56
                 }
-              }
+              ]
             }
           }
         },
         {
-          "entity_id": "C666B8E2-24DB-4F22-8F2D-5C2C75EFDD0E",
-          "name": "Boone",
-          "type": "urn:entity:locality",
-          "subtype": "urn:entity:locality:city",
-          "popularity": 0.23,
-          "properties": {
-            "geocode": {
-              "name": "Boone",
-              "admin1_region": "NC",
-              "country_code": "US"
-            }
-          },
+          "entity_id": "A1557D37-06D2-4CD7-BEE2-17E95BF6F0D5",
+          "name": "Boone Saloon",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.52,
           "location": {
             "lat": 36.217,
             "lon": -81.675
           },
+          "properties": {
+            "description": "King Street bar with the town's steadiest live calendar; touring folk acts play upstairs.",
+            "address": "489 W King St, Boone, NC 28607",
+            "geocode": {
+              "name": "Boone",
+              "city": "Boone",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:bar:live_music",
+              "name": "Live Music Bar",
+              "type": "urn:tag:genre:place"
+            }
+          ],
           "query": {
             "affinity": 0.766,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.58
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.45
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.38
                 }
-              }
+              ]
             }
           }
         },
         {
-          "entity_id": "63B8A564-3976-4699-B68B-B63CB810563B",
-          "name": "Hudson",
-          "type": "urn:entity:locality",
-          "subtype": "urn:entity:locality:city",
-          "popularity": 0.2,
-          "properties": {
-            "geocode": {
-              "name": "Hudson",
-              "admin1_region": "NY",
-              "country_code": "US"
-            }
-          },
+          "entity_id": "E352DF83-3724-4050-BBD7-5B98CC7F5E08",
+          "name": "Club Helsinki Hudson",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.51,
           "location": {
             "lat": 42.253,
             "lon": -73.791
           },
+          "properties": {
+            "description": "Warm listening room and restaurant in a restored brick building, strong on folk and Americana.",
+            "address": "405 Columbia St, Hudson, NY 12534",
+            "geocode": {
+              "name": "Hudson",
+              "city": "Hudson",
+              "admin1_region": "NY",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
           "query": {
             "affinity": 0.761,
             "explainability": {
-              "by_entity": {
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
-                  "score": 0.59
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.34
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.48
                 },
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
-                  "score": 0.34
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.59
                 }
-              }
+              ]
             }
           }
         },
         {
-          "entity_id": "C0E7D491-F6BD-4C80-BC54-23FF151B0941",
-          "name": "Cincinnati",
-          "type": "urn:entity:locality",
-          "subtype": "urn:entity:locality:city",
-          "popularity": 0.7,
+          "entity_id": "C9DD8CF8-85F3-46D9-8FCD-FBDDB8CA93C4",
+          "name": "MOTR Pub",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.78,
+          "location": {
+            "lat": 39.1103,
+            "lon": -84.5146
+          },
           "properties": {
+            "address": "1345 Main St, Cincinnati, OH 45202",
             "geocode": {
               "name": "Cincinnati",
+              "city": "Cincinnati",
               "admin1_region": "OH",
               "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 2,
+            "description": "Over-the-Rhine rock club with a small stage, cheap beer, and a long run of touring indie and folk acts."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
             }
-          },
-          "location": {
-            "lat": 39.103,
-            "lon": -84.512
-          },
+          ],
           "query": {
             "affinity": 0.755,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.51
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.42
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.3
                 }
-              }
+              ]
             }
           }
         },
         {
-          "entity_id": "E9F49EEB-47B7-4DA2-A12E-ACD71E321E62",
-          "name": "Minneapolis",
-          "type": "urn:entity:locality",
-          "subtype": "urn:entity:locality:city",
-          "popularity": 0.76,
-          "properties": {
-            "geocode": {
-              "name": "Minneapolis",
-              "admin1_region": "MN",
-              "country_code": "US"
-            }
-          },
+          "entity_id": "7ADD1598-74DA-4427-9955-25BE46BB7F82",
+          "name": "First Avenue",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.67,
           "location": {
             "lat": 44.978,
             "lon": -93.265
           },
+          "properties": {
+            "description": "The star-covered downtown landmark; the 7th St Entry side room suits a first visit.",
+            "address": "701 N 1st Ave, Minneapolis, MN 55403",
+            "geocode": {
+              "name": "Minneapolis",
+              "city": "Minneapolis",
+              "admin1_region": "MN",
+              "country_code": "US"
+            },
+            "business_rating": 4.4,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
           "query": {
             "affinity": 0.75,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.53
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
-                  "score": 0.46
-                },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.36
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.46
                 }
-              }
+              ]
             }
           }
         },
         {
-          "entity_id": "14CA410A-EEDC-470A-A653-616102DC87C7",
-          "name": "Madison",
-          "type": "urn:entity:locality",
-          "subtype": "urn:entity:locality:city",
-          "popularity": 0.63,
-          "properties": {
-            "geocode": {
-              "name": "Madison",
-              "admin1_region": "WI",
-              "country_code": "US"
-            }
-          },
+          "entity_id": "A7590832-0203-4042-81B7-C4EF2D0B83D4",
+          "name": "High Noon Saloon",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.43,
           "location": {
             "lat": 43.073,
             "lon": -89.401
           },
+          "properties": {
+            "description": "Big wooden saloon on East Washington with a balcony and a steady indie calendar.",
+            "address": "701A E Washington Ave, Madison, WI 53703",
+            "geocode": {
+              "name": "Madison",
+              "city": "Madison",
+              "admin1_region": "WI",
+              "country_code": "US"
+            },
+            "business_rating": 4.4,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
           "query": {
             "affinity": 0.745,
             "explainability": {
-              "by_entity": {
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
-                  "score": 0.54
-                },
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.4
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.32
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.54
                 }
-              }
+              ]
             }
           }
         },
         {
-          "entity_id": "30AE6FFC-9C69-40E1-B3D8-4F3AE5EF16CF",
-          "name": "Ann Arbor",
-          "type": "urn:entity:locality",
-          "subtype": "urn:entity:locality:city",
-          "popularity": 0.49,
-          "properties": {
-            "geocode": {
-              "name": "Ann Arbor",
-              "admin1_region": "MI",
-              "country_code": "US"
-            }
-          },
+          "entity_id": "7DF261DF-4431-4037-934E-144EB53183FB",
+          "name": "The Ark",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.67,
           "location": {
             "lat": 42.281,
             "lon": -83.743
           },
+          "properties": {
+            "description": "Nonprofit folk listening room where the audience is quiet and the sound is careful.",
+            "address": "316 S Main St, Ann Arbor, MI 48104",
+            "geocode": {
+              "name": "Ann Arbor",
+              "city": "Ann Arbor",
+              "admin1_region": "MI",
+              "country_code": "US"
+            },
+            "business_rating": 4.4,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
           "query": {
             "affinity": 0.74,
             "explainability": {
-              "by_entity": {
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
-                  "score": 0.56
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.38
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.44
                 },
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
-                  "score": 0.38
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.56
                 }
-              }
+              ]
             }
           }
         },
         {
-          "entity_id": "B73A5919-CC8E-4AE5-BE37-1AFF8C121A55",
-          "name": "Grand Rapids",
-          "type": "urn:entity:locality",
-          "subtype": "urn:entity:locality:city",
-          "popularity": 0.57,
-          "properties": {
-            "geocode": {
-              "name": "Grand Rapids",
-              "admin1_region": "MI",
-              "country_code": "US"
-            }
-          },
+          "entity_id": "44FF0060-E524-4A76-9340-6A9B4A4E7850",
+          "name": "The Pyramid Scheme",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.44,
           "location": {
             "lat": 42.963,
             "lon": -85.668
           },
+          "properties": {
+            "description": "Pinball bar up front, 400-cap room in the back, in downtown Grand Rapids.",
+            "address": "68 Commerce Ave SW, Grand Rapids, MI 49503",
+            "geocode": {
+              "name": "Grand Rapids",
+              "city": "Grand Rapids",
+              "admin1_region": "MI",
+              "country_code": "US"
+            },
+            "business_rating": 4.8,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
           "query": {
             "affinity": 0.734,
             "explainability": {
-              "by_entity": {
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.25
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.48
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.38
-                },
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
-                  "score": 0.25
                 }
-              }
+              ]
             }
           }
         },
         {
-          "entity_id": "09D82534-1914-489D-85F8-BE15E786CEBC",
-          "name": "Portland",
-          "type": "urn:entity:locality",
-          "subtype": "urn:entity:locality:city",
-          "popularity": 0.84,
-          "properties": {
-            "geocode": {
-              "name": "Portland",
-              "admin1_region": "OR",
-              "country_code": "US"
-            }
-          },
+          "entity_id": "F1535330-B49B-49CB-9CA7-0C7ECFBE8B21",
+          "name": "Mississippi Studios",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.67,
           "location": {
             "lat": 45.515,
             "lon": -122.678
           },
+          "properties": {
+            "description": "Intimate North Portland room built by musicians, with Bar Bar next door.",
+            "address": "3939 N Mississippi Ave, Portland, OR 97227",
+            "geocode": {
+              "name": "Portland",
+              "city": "Portland",
+              "admin1_region": "OR",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
           "query": {
             "affinity": 0.729,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.5
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
-                  "score": 0.42
-                },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.31
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.42
                 }
-              }
+              ]
             }
           }
         },
         {
-          "entity_id": "B87C56DB-9154-4922-B8FC-D286CFABE71F",
-          "name": "Seattle",
-          "type": "urn:entity:locality",
-          "subtype": "urn:entity:locality:city",
-          "popularity": 0.88,
-          "properties": {
-            "geocode": {
-              "name": "Seattle",
-              "admin1_region": "WA",
-              "country_code": "US"
-            }
-          },
+          "entity_id": "70E9F893-B315-456F-9780-3CE9B2FC7427",
+          "name": "Neumos",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.55,
           "location": {
             "lat": 47.606,
             "lon": -122.332
           },
+          "properties": {
+            "description": "Capitol Hill club with a tall stage and a balcony, a regular indie stop.",
+            "address": "925 E Pike St, Seattle, WA 98122",
+            "geocode": {
+              "name": "Seattle",
+              "city": "Seattle",
+              "admin1_region": "WA",
+              "country_code": "US"
+            },
+            "business_rating": 4.3,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
           "query": {
             "affinity": 0.724,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.51
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.36
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.27
                 }
-              }
+              ]
             }
           }
         },
         {
-          "entity_id": "E430A31C-8E9C-4DDA-BB76-EF171BF9E732",
-          "name": "Denver",
-          "type": "urn:entity:locality",
-          "subtype": "urn:entity:locality:city",
-          "popularity": 0.87,
-          "properties": {
-            "geocode": {
-              "name": "Denver",
-              "admin1_region": "CO",
-              "country_code": "US"
-            }
-          },
+          "entity_id": "CFB546F1-33E4-48D9-B923-8125FCFDE84F",
+          "name": "Bluebird Theater",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.65,
           "location": {
             "lat": 39.739,
             "lon": -104.99
           },
+          "properties": {
+            "description": "1913 Colfax theater with a sloped floor so everyone can see.",
+            "address": "3317 E Colfax Ave, Denver, CO 80206",
+            "geocode": {
+              "name": "Denver",
+              "city": "Denver",
+              "admin1_region": "CO",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
           "query": {
             "affinity": 0.719,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.53
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
-                  "score": 0.4
-                },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.33
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.4
                 }
-              }
+              ]
             }
           }
         },
         {
-          "entity_id": "D4CB670C-6E0D-416B-BE09-8D8F3AC42069",
-          "name": "Fort Collins",
-          "type": "urn:entity:locality",
-          "subtype": "urn:entity:locality:city",
-          "popularity": 0.52,
-          "properties": {
-            "geocode": {
-              "name": "Fort Collins",
-              "admin1_region": "CO",
-              "country_code": "US"
-            }
-          },
+          "entity_id": "11F748C4-2A47-4B0E-B0DB-BD791A61B7B4",
+          "name": "Aggie Theatre",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.57,
           "location": {
             "lat": 40.585,
             "lon": -105.084
           },
+          "properties": {
+            "description": "Old College Avenue cinema turned 650-cap club near the university.",
+            "address": "204 S College Ave, Fort Collins, CO 80524",
+            "geocode": {
+              "name": "Fort Collins",
+              "city": "Fort Collins",
+              "admin1_region": "CO",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
           "query": {
             "affinity": 0.713,
             "explainability": {
-              "by_entity": {
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.29
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.54
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.43
-                },
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
-                  "score": 0.29
                 }
-              }
+              ]
             }
           }
         },
         {
-          "entity_id": "981D9467-5169-440D-AC87-37E2EDA65077",
-          "name": "Missoula",
-          "type": "urn:entity:locality",
-          "subtype": "urn:entity:locality:city",
-          "popularity": 0.4,
-          "properties": {
-            "geocode": {
-              "name": "Missoula",
-              "admin1_region": "MT",
-              "country_code": "US"
-            }
-          },
+          "entity_id": "F1D4674B-9733-4F85-B906-7D29BC3E27F9",
+          "name": "Top Hat Lounge",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.8,
           "location": {
             "lat": 46.872,
             "lon": -113.994
           },
+          "properties": {
+            "description": "Downtown Missoula bar and music hall with a wide stage and a restaurant up front.",
+            "address": "134 W Front St, Missoula, MT 59802",
+            "geocode": {
+              "name": "Missoula",
+              "city": "Missoula",
+              "admin1_region": "MT",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
           "query": {
             "affinity": 0.708,
             "explainability": {
-              "by_entity": {
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
-                  "score": 0.47
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.26
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.38
                 },
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
-                  "score": 0.26
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.47
                 }
-              }
+              ]
             }
           }
         },
         {
-          "entity_id": "0A56845E-B58A-428B-9854-028B8B88B341",
-          "name": "Boise",
-          "type": "urn:entity:locality",
-          "subtype": "urn:entity:locality:city",
-          "popularity": 0.6,
-          "properties": {
-            "geocode": {
-              "name": "Boise",
-              "admin1_region": "ID",
-              "country_code": "US"
-            }
-          },
+          "entity_id": "B73BF4AC-CAF3-4050-B521-050761A68EDE",
+          "name": "Neurolux",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.43,
           "location": {
             "lat": 43.615,
             "lon": -116.202
           },
+          "properties": {
+            "description": "Boise's long-running indie bar and venue, a small room with a big calendar.",
+            "address": "111 N 11th St, Boise, ID 83702",
+            "geocode": {
+              "name": "Boise",
+              "city": "Boise",
+              "admin1_region": "ID",
+              "country_code": "US"
+            },
+            "business_rating": 4.4,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
           "query": {
             "affinity": 0.703,
             "explainability": {
-              "by_entity": {
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.31
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.48
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.41
-                },
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
-                  "score": 0.31
                 }
-              }
+              ]
             }
           }
         },
         {
-          "entity_id": "3304972B-CD84-4913-A448-397583155252",
-          "name": "Los Angeles",
-          "type": "urn:entity:locality",
-          "subtype": "urn:entity:locality:city",
-          "popularity": 0.95,
-          "properties": {
-            "geocode": {
-              "name": "Los Angeles",
-              "admin1_region": "CA",
-              "country_code": "US"
-            }
-          },
+          "entity_id": "79AD68A7-DCCD-4816-A1BD-D410DA73BB1C",
+          "name": "The Echo",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.71,
           "location": {
             "lat": 34.052,
             "lon": -118.244
           },
+          "properties": {
+            "description": "Echo Park club that breaks indie acts in Los Angeles, with the larger Echoplex below.",
+            "address": "1822 Sunset Blvd, Los Angeles, CA 90026",
+            "geocode": {
+              "name": "Los Angeles",
+              "city": "Los Angeles",
+              "admin1_region": "CA",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
           "query": {
             "affinity": 0.698,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.5
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
-                  "score": 0.36
-                },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.28
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.36
                 }
-              }
+              ]
             }
           }
         },
         {
-          "entity_id": "4D95EF62-582D-41B5-BBBC-13A4C87C6A02",
-          "name": "Oakland",
-          "type": "urn:entity:locality",
-          "subtype": "urn:entity:locality:city",
-          "popularity": 0.72,
-          "properties": {
-            "geocode": {
-              "name": "Oakland",
-              "admin1_region": "CA",
-              "country_code": "US"
-            }
-          },
+          "entity_id": "910A4DC3-0B9B-4628-9A76-D0694E0CFC7C",
+          "name": "The New Parish",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.64,
           "location": {
             "lat": 37.804,
             "lon": -122.271
           },
+          "properties": {
+            "description": "Uptown Oakland room with a balcony wrapped around the floor.",
+            "address": "1743 San Pablo Ave, Oakland, CA 94612",
+            "geocode": {
+              "name": "Oakland",
+              "city": "Oakland",
+              "admin1_region": "CA",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
           "query": {
             "affinity": 0.692,
             "explainability": {
-              "by_entity": {
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
-                  "score": 0.51
-                },
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.39
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.33
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.51
                 }
-              }
+              ]
             }
           }
         },
         {
-          "entity_id": "3815E4A5-6CFE-4849-8E50-4ECD18F22899",
-          "name": "Santa Cruz",
-          "type": "urn:entity:locality",
-          "subtype": "urn:entity:locality:city",
-          "popularity": 0.41,
-          "properties": {
-            "geocode": {
-              "name": "Santa Cruz",
-              "admin1_region": "CA",
-              "country_code": "US"
-            }
-          },
+          "entity_id": "21FA4DB3-1461-4809-A5A9-FB30A183F8B4",
+          "name": "The Catalyst",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.78,
           "location": {
             "lat": 36.974,
             "lon": -122.031
           },
+          "properties": {
+            "description": "Pacific Avenue club with a main room and a smaller atrium stage.",
+            "address": "1011 Pacific Ave, Santa Cruz, CA 95060",
+            "geocode": {
+              "name": "Santa Cruz",
+              "city": "Santa Cruz",
+              "admin1_region": "CA",
+              "country_code": "US"
+            },
+            "business_rating": 4.4,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
           "query": {
             "affinity": 0.687,
             "explainability": {
-              "by_entity": {
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
-                  "score": 0.44
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.21
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.34
                 },
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
-                  "score": 0.21
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.44
                 }
-              }
+              ]
             }
           }
         },
         {
-          "entity_id": "1B6C9A88-5A06-4A2D-98C5-17307E996F19",
-          "name": "Tucson",
-          "type": "urn:entity:locality",
-          "subtype": "urn:entity:locality:city",
-          "popularity": 0.73,
-          "properties": {
-            "geocode": {
-              "name": "Tucson",
-              "admin1_region": "AZ",
-              "country_code": "US"
-            }
-          },
+          "entity_id": "0A15BCDA-9C94-46DE-9315-F173E0404D30",
+          "name": "Club Congress",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.41,
           "location": {
             "lat": 32.223,
             "lon": -110.975
           },
+          "properties": {
+            "description": "The venue inside Hotel Congress, a downtown Tucson institution for touring indie acts.",
+            "address": "311 E Congress St, Tucson, AZ 85701",
+            "geocode": {
+              "name": "Tucson",
+              "city": "Tucson",
+              "admin1_region": "AZ",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
           "query": {
             "affinity": 0.682,
             "explainability": {
-              "by_entity": {
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.26
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.45
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.37
-                },
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
-                  "score": 0.26
                 }
-              }
+              ]
             }
           }
         },
         {
-          "entity_id": "D6A869F0-D648-4AC4-BDE3-CD3114207DCF",
-          "name": "New Orleans",
-          "type": "urn:entity:locality",
-          "subtype": "urn:entity:locality:city",
-          "popularity": 0.77,
-          "properties": {
-            "geocode": {
-              "name": "New Orleans",
-              "admin1_region": "LA",
-              "country_code": "US"
-            }
-          },
+          "entity_id": "BD062916-0972-4266-8B4B-876703508DB8",
+          "name": "Tipitina's",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.46,
           "location": {
             "lat": 29.951,
             "lon": -90.072
           },
+          "properties": {
+            "description": "The Uptown landmark room, now owned by Galactic, with a dance floor and a balcony.",
+            "address": "501 Napoleon Ave, New Orleans, LA 70115",
+            "geocode": {
+              "name": "New Orleans",
+              "city": "New Orleans",
+              "admin1_region": "LA",
+              "country_code": "US"
+            },
+            "business_rating": 4.4,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
           "query": {
             "affinity": 0.677,
             "explainability": {
-              "by_entity": {
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
-                  "score": 0.47
-                },
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.32
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.47
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.23
                 }
-              }
+              ]
             }
           }
         },
         {
-          "entity_id": "EF4D973F-9099-4850-A87F-850778975E36",
-          "name": "Birmingham",
-          "type": "urn:entity:locality",
-          "subtype": "urn:entity:locality:city",
-          "popularity": 0.58,
-          "properties": {
-            "geocode": {
-              "name": "Birmingham",
-              "admin1_region": "AL",
-              "country_code": "US"
-            }
-          },
+          "entity_id": "79C64DB7-9F10-401F-90BD-D972A58752CF",
+          "name": "Saturn",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.55,
           "location": {
             "lat": 33.519,
             "lon": -86.81
           },
+          "properties": {
+            "description": "Avondale club with a coffee bar up front and a mid-size room in the back.",
+            "address": "200 41st St S, Birmingham, AL 35222",
+            "geocode": {
+              "name": "Birmingham",
+              "city": "Birmingham",
+              "admin1_region": "AL",
+              "country_code": "US"
+            },
+            "business_rating": 4.4,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
           "query": {
             "affinity": 0.671,
             "explainability": {
-              "by_entity": {
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.28
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.48
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.35
-                },
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
-                  "score": 0.28
                 }
-              }
+              ]
             }
           }
         },
         {
-          "entity_id": "85B5854D-E43A-4EC7-9B9D-1E4BD94AEAF6",
-          "name": "Saint Louis",
-          "type": "urn:entity:locality",
-          "subtype": "urn:entity:locality:city",
-          "popularity": 0.69,
-          "properties": {
-            "geocode": {
-              "name": "Saint Louis",
-              "admin1_region": "MO",
-              "country_code": "US"
-            }
-          },
+          "entity_id": "3D289D74-7F35-416C-B605-FCEE9947E217",
+          "name": "Off Broadway",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.38,
           "location": {
             "lat": 38.627,
             "lon": -90.199
           },
+          "properties": {
+            "description": "Cozy Benton Park room with a balcony that touring folk and indie acts come back to.",
+            "address": "3509 Lemp Ave, St. Louis, MO 63118",
+            "geocode": {
+              "name": "Saint Louis",
+              "city": "Saint Louis",
+              "admin1_region": "MO",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
           "query": {
             "affinity": 0.666,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.5
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
-                  "score": 0.39
-                },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.25
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.39
                 }
-              }
+              ]
             }
           }
         },
         {
-          "entity_id": "AE43B5F9-600C-46E4-B3F2-9600F8970298",
-          "name": "Lawrence",
-          "type": "urn:entity:locality",
-          "subtype": "urn:entity:locality:city",
-          "popularity": 0.43,
-          "properties": {
-            "geocode": {
-              "name": "Lawrence",
-              "admin1_region": "KS",
-              "country_code": "US"
-            }
-          },
+          "entity_id": "0ED61210-F83D-4B8F-8A39-3067B3B4318D",
+          "name": "The Bottleneck",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.55,
           "location": {
             "lat": 38.972,
             "lon": -95.235
           },
+          "properties": {
+            "description": "Downtown Lawrence club that has been booking indie bands since the 1980s.",
+            "address": "737 New Hampshire St, Lawrence, KS 66044",
+            "geocode": {
+              "name": "Lawrence",
+              "city": "Lawrence",
+              "admin1_region": "KS",
+              "country_code": "US"
+            },
+            "business_rating": 4.8,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
           "query": {
             "affinity": 0.661,
             "explainability": {
-              "by_entity": {
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.21
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.42
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.33
-                },
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
-                  "score": 0.21
                 }
-              }
+              ]
             }
           }
         },
         {
-          "entity_id": "5FE0670E-041E-417E-BB71-3D440D3B2640",
-          "name": "Omaha",
-          "type": "urn:entity:locality",
-          "subtype": "urn:entity:locality:city",
-          "popularity": 0.72,
-          "properties": {
-            "geocode": {
-              "name": "Omaha",
-              "admin1_region": "NE",
-              "country_code": "US"
-            }
-          },
+          "entity_id": "8FE3C7EB-397B-4DDF-9A24-EFC0E2CE83DF",
+          "name": "The Waiting Room Lounge",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.6,
           "location": {
             "lat": 41.257,
             "lon": -95.935
           },
+          "properties": {
+            "description": "Benson's indie room, booked by the people behind Saddle Creek-era Omaha.",
+            "address": "6212 Maple St, Omaha, NE 68104",
+            "geocode": {
+              "name": "Omaha",
+              "city": "Omaha",
+              "admin1_region": "NE",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
           "query": {
             "affinity": 0.655,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.44
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
-                  "score": 0.37
-                },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.27
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.37
                 }
-              }
+              ]
             }
           }
         }

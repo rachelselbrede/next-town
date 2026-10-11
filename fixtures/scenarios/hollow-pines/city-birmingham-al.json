@@ -1,0 +1,937 @@
+{
+  "city": "Birmingham, AL",
+  "home": "Richmond, VA",
+  "comps": [
+    {
+      "id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+      "name": "Big Thief",
+      "type": "urn:entity:artist",
+      "popularity": 0.93
+    },
+    {
+      "id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+      "name": "Waxahatchee",
+      "type": "urn:entity:artist",
+      "popularity": 0.88
+    },
+    {
+      "id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "name": "Adrianne Lenker",
+      "type": "urn:entity:artist",
+      "popularity": 0.85
+    }
+  ],
+  "rooms": [
+    {
+      "id": "79C64DB7-9F10-401F-90BD-D972A58752CF",
+      "name": "Saturn",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
+      "affinity": 0.92,
+      "popularity": 0.55,
+      "rating": 4.4,
+      "price_level": 2,
+      "address": "200 41st St S, Birmingham, AL 35222",
+      "city": "Birmingham",
+      "description": "Avondale club with a coffee bar up front and a mid-size room in the back where touring indie and folk acts land.",
+      "tags": [
+        "Music Venue",
+        "Live Music Venue"
+      ],
+      "tagIds": [
+        "urn:tag:genre:place:music_venue",
+        "urn:tag:category:place:live_music_venue"
+      ],
+      "why": [
+        "Big Thief (78%)",
+        "Waxahatchee (67%)",
+        "Adrianne Lenker (62%)"
+      ],
+      "lat": 33.5205,
+      "lon": -86.769,
+      "region": "AL"
+    },
+    {
+      "id": "B2FDF7FB-860C-4B3A-8355-E9E8F67DC370",
+      "name": "Workplay Theatre",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
+      "affinity": 0.86,
+      "popularity": 0.66,
+      "rating": 4.5,
+      "price_level": 2,
+      "address": "500 23rd St S, Birmingham, AL 35233",
+      "city": "Birmingham",
+      "description": "Southside theater and club with a proper stage and room for a few hundred, a regular stop for touring indie acts.",
+      "tags": [
+        "Music Venue",
+        "Live Music Venue"
+      ],
+      "tagIds": [
+        "urn:tag:genre:place:music_venue",
+        "urn:tag:category:place:live_music_venue"
+      ],
+      "why": [
+        "Big Thief (71%)",
+        "Waxahatchee (60%)",
+        "Adrianne Lenker (55%)"
+      ],
+      "lat": 33.5095,
+      "lon": -86.7955,
+      "region": "AL"
+    },
+    {
+      "id": "414DBCA3-2808-41F5-96AA-2B0D3CDDB160",
+      "name": "Zydeco",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
+      "affinity": 0.8,
+      "popularity": 0.6,
+      "rating": 4.3,
+      "price_level": 2,
+      "address": "2008 3rd Ave N, Birmingham, AL 35203",
+      "city": "Birmingham",
+      "description": "Downtown club with a long-running calendar of touring rock, folk and singer-songwriters.",
+      "tags": [
+        "Music Venue",
+        "Live Music Venue"
+      ],
+      "tagIds": [
+        "urn:tag:genre:place:music_venue",
+        "urn:tag:category:place:live_music_venue"
+      ],
+      "why": [
+        "Big Thief (64%)",
+        "Waxahatchee (53%)",
+        "Adrianne Lenker (48%)"
+      ],
+      "lat": 33.5188,
+      "lon": -86.8033,
+      "region": "AL"
+    },
+    {
+      "id": "73DDDC17-0EC2-446A-BB37-815410C4CCE3",
+      "name": "Iron City",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
+      "affinity": 0.76,
+      "popularity": 0.63,
+      "rating": 4.4,
+      "price_level": 2,
+      "address": "513 22nd St S, Birmingham, AL 35233",
+      "city": "Birmingham",
+      "description": "Southside music hall with a big stage and an outdoor patio, booking touring indie and Americana.",
+      "tags": [
+        "Music Venue",
+        "Live Music Venue"
+      ],
+      "tagIds": [
+        "urn:tag:genre:place:music_venue",
+        "urn:tag:category:place:live_music_venue"
+      ],
+      "why": [
+        "Big Thief (59%)",
+        "Waxahatchee (48%)",
+        "Adrianne Lenker (43%)"
+      ],
+      "lat": 33.5106,
+      "lon": -86.7975,
+      "region": "AL"
+    },
+    {
+      "id": "33808392-92C2-4AA7-8BB3-47CD87BB052E",
+      "name": "The Nick",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
+      "affinity": 0.72,
+      "popularity": 0.58,
+      "rating": 4.2,
+      "price_level": 1,
+      "address": "2514 10th Ave S, Birmingham, AL 35205",
+      "city": "Birmingham",
+      "description": "Scrappy Southside rock club that has hosted local and touring bands since the 1990s.",
+      "tags": [
+        "Music Venue",
+        "Live Music Venue"
+      ],
+      "tagIds": [
+        "urn:tag:genre:place:music_venue",
+        "urn:tag:category:place:live_music_venue"
+      ],
+      "why": [
+        "Big Thief (54%)",
+        "Waxahatchee (43%)",
+        "Adrianne Lenker (38%)"
+      ],
+      "lat": 33.5017,
+      "lon": -86.7985,
+      "region": "AL"
+    },
+    {
+      "id": "F8DE348C-84A1-4EFD-BBF6-A605853A0956",
+      "name": "Lyric Theatre",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
+      "affinity": 0.68,
+      "popularity": 0.6,
+      "rating": 4.7,
+      "price_level": 2,
+      "address": "1800 3rd Ave N, Birmingham, AL 35203",
+      "city": "Birmingham",
+      "description": "Restored 1914 vaudeville house downtown, now a seated room for touring acts.",
+      "tags": [
+        "Music Venue",
+        "Live Music Venue"
+      ],
+      "tagIds": [
+        "urn:tag:genre:place:music_venue",
+        "urn:tag:category:place:live_music_venue"
+      ],
+      "why": [
+        "Big Thief (49%)",
+        "Waxahatchee (38%)",
+        "Adrianne Lenker (33%)"
+      ],
+      "lat": 33.5187,
+      "lon": -86.8094,
+      "region": "AL"
+    },
+    {
+      "id": "5B7691CD-1FE1-4E7F-ADE2-032D5EC706E0",
+      "name": "Avondale Brewing Company",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
+      "affinity": 0.64,
+      "popularity": 0.52,
+      "rating": 4.6,
+      "price_level": 2,
+      "address": "201 41st St S, Birmingham, AL 35222",
+      "city": "Birmingham",
+      "description": "Avondale brewery with an outdoor stage and taproom that books regional Americana and indie bands.",
+      "tags": [
+        "Music Venue",
+        "Live Music Venue"
+      ],
+      "tagIds": [
+        "urn:tag:genre:place:music_venue",
+        "urn:tag:category:place:live_music_venue"
+      ],
+      "why": [
+        "Big Thief (44%)",
+        "Waxahatchee (33%)",
+        "Adrianne Lenker (28%)"
+      ],
+      "lat": 33.5203,
+      "lon": -86.7684,
+      "region": "AL"
+    },
+    {
+      "id": "873C6F13-3011-47F7-BEC9-91BCEB8BBD39",
+      "name": "Alabama Theatre",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
+      "affinity": 0.6,
+      "popularity": 0.7,
+      "rating": 4.8,
+      "price_level": 3,
+      "address": "1817 3rd Ave N, Birmingham, AL 35203",
+      "city": "Birmingham",
+      "description": "Historic 1927 movie palace downtown that hosts seated concerts for established touring artists.",
+      "tags": [
+        "Music Venue",
+        "Live Music Venue"
+      ],
+      "tagIds": [
+        "urn:tag:genre:place:music_venue",
+        "urn:tag:category:place:live_music_venue"
+      ],
+      "why": [
+        "Big Thief (39%)",
+        "Waxahatchee (28%)",
+        "Adrianne Lenker (23%)"
+      ],
+      "lat": 33.5186,
+      "lon": -86.8083,
+      "region": "AL"
+    }
+  ],
+  "promo": [
+    {
+      "kind": "record store",
+      "places": [
+        {
+          "id": "CE462801-5FA2-418C-BD2D-84E79ACD2C3A",
+          "name": "Charlemagne Records",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.9,
+          "popularity": 0.62,
+          "rating": 4.7,
+          "price_level": 2,
+          "address": "Southside, Birmingham, AL",
+          "city": "Birmingham",
+          "description": "Southside record shop stocked with new and used indie, folk and rock vinyl.",
+          "tags": [
+            "Record Store"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:record_store"
+          ],
+          "why": [
+            "Big Thief (76%)",
+            "Waxahatchee (65%)",
+            "Adrianne Lenker (60%)"
+          ],
+          "lat": 33.4985,
+          "lon": -86.7995,
+          "region": "AL"
+        },
+        {
+          "id": "BF18BF21-9241-483B-8560-A066523C0D95",
+          "name": "Seasick Records",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.84,
+          "popularity": 0.55,
+          "rating": 4.6,
+          "price_level": 2,
+          "address": "Birmingham, AL",
+          "city": "Birmingham",
+          "description": "Independent Birmingham record store with a deep used-vinyl bin and a local-music shelf.",
+          "tags": [
+            "Record Store"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:record_store"
+          ],
+          "why": [
+            "Big Thief (69%)",
+            "Waxahatchee (58%)",
+            "Adrianne Lenker (53%)"
+          ],
+          "lat": 33.513,
+          "lon": -86.799,
+          "region": "AL"
+        }
+      ]
+    },
+    {
+      "kind": "coffee shop",
+      "places": [
+        {
+          "id": "0D2ABE59-838A-4284-83D9-8B9C28AC788C",
+          "name": "Revelator Coffee Company",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.89,
+          "popularity": 0.64,
+          "rating": 4.6,
+          "price_level": 2,
+          "address": "Downtown Birmingham, AL",
+          "city": "Birmingham",
+          "description": "Downtown specialty roaster in a restored historic building, popular with the arts crowd.",
+          "tags": [
+            "Coffee Shop",
+            "Cafe"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:coffee_shop",
+            "urn:tag:genre:place:cafe"
+          ],
+          "why": [
+            "Big Thief (75%)",
+            "Waxahatchee (64%)",
+            "Adrianne Lenker (59%)"
+          ],
+          "lat": 33.5154,
+          "lon": -86.8105,
+          "region": "AL"
+        },
+        {
+          "id": "D1025D9B-14AC-42B5-88ED-9FA9E9B47547",
+          "name": "Red Cat Coffee House",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.83,
+          "popularity": 0.58,
+          "rating": 4.6,
+          "price_level": 1,
+          "address": "Southside, Birmingham, AL",
+          "city": "Birmingham",
+          "description": "Neighborhood coffee house with a loyal local following and a steady stream of acoustic regulars.",
+          "tags": [
+            "Coffee Shop",
+            "Cafe"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:coffee_shop",
+            "urn:tag:genre:place:cafe"
+          ],
+          "why": [
+            "Big Thief (68%)",
+            "Waxahatchee (57%)",
+            "Adrianne Lenker (52%)"
+          ],
+          "lat": 33.501,
+          "lon": -86.799,
+          "region": "AL"
+        }
+      ]
+    },
+    {
+      "kind": "bookstore",
+      "places": [
+        {
+          "id": "67037D52-EC77-4ED5-8E11-FF74463830F0",
+          "name": "Alabama Booksmith",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.88,
+          "popularity": 0.57,
+          "rating": 4.8,
+          "price_level": 2,
+          "address": "2626 19th Pl S, Homewood, AL 35209",
+          "city": "Birmingham",
+          "description": "Homewood independent bookstore known for its signed-first-edition shelves and author events.",
+          "tags": [
+            "Bookstore"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:bookstore"
+          ],
+          "why": [
+            "Big Thief (74%)",
+            "Waxahatchee (63%)",
+            "Adrianne Lenker (58%)"
+          ],
+          "lat": 33.4875,
+          "lon": -86.796,
+          "region": "AL"
+        },
+        {
+          "id": "87043F16-4821-432B-B91F-E28CD5DC78A4",
+          "name": "Little Professor Book Center",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.8,
+          "popularity": 0.5,
+          "rating": 4.7,
+          "price_level": 2,
+          "address": "Homewood, AL",
+          "city": "Birmingham",
+          "description": "Longtime Homewood independent bookstore with a strong local-interest and fiction selection.",
+          "tags": [
+            "Bookstore"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:bookstore"
+          ],
+          "why": [
+            "Big Thief (65%)",
+            "Waxahatchee (54%)",
+            "Adrianne Lenker (49%)"
+          ],
+          "lat": 33.487,
+          "lon": -86.8,
+          "region": "AL"
+        }
+      ]
+    },
+    {
+      "kind": "dive bar",
+      "places": [
+        {
+          "id": "098F5F1C-9925-4172-A01D-7B6FE88AAED3",
+          "name": "The Garage Cafe",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.87,
+          "popularity": 0.6,
+          "rating": 4.5,
+          "price_level": 1,
+          "address": "Southside, Birmingham, AL",
+          "city": "Birmingham",
+          "description": "Southside courtyard bar in a former garage, with mismatched furniture and a regular local band crowd.",
+          "tags": [
+            "Dive Bar",
+            "Bar"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:dive_bar",
+            "urn:tag:genre:place:bar"
+          ],
+          "why": [
+            "Big Thief (73%)",
+            "Waxahatchee (62%)",
+            "Adrianne Lenker (57%)"
+          ],
+          "lat": 33.501,
+          "lon": -86.797,
+          "region": "AL"
+        },
+        {
+          "id": "7B3A5201-8079-4129-BE55-DA98E515E644",
+          "name": "Parkside Cafe",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.8,
+          "popularity": 0.52,
+          "rating": 4.3,
+          "price_level": 1,
+          "address": "Lakeview, Birmingham, AL",
+          "city": "Birmingham",
+          "description": "Lakeview neighborhood bar and restaurant with a patio and a late-night crowd of musicians and regulars.",
+          "tags": [
+            "Dive Bar",
+            "Bar"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:dive_bar",
+            "urn:tag:genre:place:bar"
+          ],
+          "why": [
+            "Big Thief (65%)",
+            "Waxahatchee (54%)",
+            "Adrianne Lenker (49%)"
+          ],
+          "lat": 33.506,
+          "lon": -86.7975,
+          "region": "AL"
+        }
+      ]
+    },
+    {
+      "kind": "vintage shop",
+      "places": [
+        {
+          "id": "85FCC160-1517-4869-9AC2-2DD48048C121",
+          "name": "Birmingham Antique Mall",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.85,
+          "popularity": 0.5,
+          "rating": 4.4,
+          "price_level": 2,
+          "address": "Birmingham, AL",
+          "city": "Birmingham",
+          "description": "Large multi-dealer antique and vintage mall with a deep mix of clothes, records and housewares.",
+          "tags": [
+            "Vintage Store",
+            "Thrift Store"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:vintage_store",
+            "urn:tag:genre:place:thrift_store"
+          ],
+          "why": [
+            "Big Thief (71%)",
+            "Waxahatchee (60%)",
+            "Adrianne Lenker (55%)"
+          ],
+          "lat": 33.517,
+          "lon": -86.785,
+          "region": "AL"
+        },
+        {
+          "id": "51AF3C45-8D30-4A50-9236-870AC9FFF7E4",
+          "name": "Savers",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.76,
+          "popularity": 0.48,
+          "rating": 4,
+          "price_level": 1,
+          "address": "Birmingham, AL",
+          "city": "Birmingham",
+          "description": "Large thrift store with racks of secondhand clothing, records and housewares.",
+          "tags": [
+            "Vintage Store",
+            "Thrift Store"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:vintage_store",
+            "urn:tag:genre:place:thrift_store"
+          ],
+          "why": [
+            "Big Thief (61%)",
+            "Waxahatchee (50%)",
+            "Adrianne Lenker (45%)"
+          ],
+          "lat": 33.5,
+          "lon": -86.78,
+          "region": "AL"
+        }
+      ]
+    }
+  ],
+  "who": {
+    "scope": "comps-overall",
+    "age": {
+      "24_and_younger": 0.23,
+      "25_to_29": 0.49,
+      "30_to_34": 0.51,
+      "35_to_44": 0.32,
+      "45_to_54": 0.06,
+      "55_and_older": -0.23
+    },
+    "gender": {
+      "female": 0.24,
+      "male": -0.1
+    },
+    "strongestAge": "30_to_34",
+    "suggestions": [
+      "Fans of your comps overall index highest at 30 to 34; consider leading with rooms and promo partners that program for that age range.",
+      "The under-25 band is also positive; consider asking rooms whether an all-ages or early show is an option.",
+      "The 55-and-older band indexes low; consider a later set time if the room offers a choice."
+    ]
+  },
+  "localColor": {
+    "brands": [
+      {
+        "id": "F4D0AB50-60CD-4B17-BF5B-3224D267EB2B",
+        "name": "Allbirds",
+        "cityAffinity": 0.654,
+        "homeAffinity": 0.605,
+        "delta": 0.049
+      },
+      {
+        "id": "D44CBBD6-C6E8-455A-94B4-88B6A05B0591",
+        "name": "Blundstone",
+        "cityAffinity": 0.825,
+        "homeAffinity": 0.789,
+        "delta": 0.036
+      },
+      {
+        "id": "1E64D934-320B-4FB7-921B-58DB10BE96EA",
+        "name": "Birkenstock",
+        "cityAffinity": 0.749,
+        "homeAffinity": 0.716,
+        "delta": 0.033
+      },
+      {
+        "id": "47D5D80A-D8DA-4F3A-A4DF-A99635B1BCB7",
+        "name": "Warby Parker",
+        "cityAffinity": 0.711,
+        "homeAffinity": 0.679,
+        "delta": 0.032
+      },
+      {
+        "id": "140AED23-2F58-4FA0-B636-C9D5D473E429",
+        "name": "Blue Bottle Coffee",
+        "cityAffinity": 0.692,
+        "homeAffinity": 0.661,
+        "delta": 0.031
+      }
+    ],
+    "shows": [
+      {
+        "id": "5AF4B18C-7F2E-4D54-B946-C924DBBC0E98",
+        "name": "Fleabag",
+        "cityAffinity": 0.92,
+        "homeAffinity": 0.91,
+        "delta": 0.01
+      },
+      {
+        "id": "F504DFDE-7861-486D-9F48-C6422671C57A",
+        "name": "Reservation Dogs",
+        "cityAffinity": 0.901,
+        "homeAffinity": 0.892,
+        "delta": 0.009
+      },
+      {
+        "id": "656078D4-7298-439C-B517-153F264014E1",
+        "name": "Somebody Somewhere",
+        "cityAffinity": 0.882,
+        "homeAffinity": 0.873,
+        "delta": 0.009
+      },
+      {
+        "id": "D7BD04AA-3B47-4DA4-9E4F-40A542F5B7D1",
+        "name": "Abbott Elementary",
+        "cityAffinity": 0.768,
+        "homeAffinity": 0.763,
+        "delta": 0.005
+      },
+      {
+        "id": "72E9BC0B-598B-43EF-8465-E61AD1CFF1DB",
+        "name": "Parks and Recreation",
+        "cityAffinity": 0.597,
+        "homeAffinity": 0.597,
+        "delta": 0
+      }
+    ],
+    "homeAvailable": true
+  },
+  "locality": {
+    "id": "79C64DB7-9F10-401F-90BD-D972A58752CF",
+    "name": "Birmingham",
+    "label": "Birmingham, AL",
+    "rank": 47,
+    "affinity": 0.671,
+    "state": "AL",
+    "population": 200657,
+    "lat": 33.5272,
+    "lon": -86.797,
+    "overIndex": false,
+    "why": [
+      "Waxahatchee (48%)",
+      "Adrianne Lenker (35%)",
+      "Big Thief (28%)"
+    ],
+    "topRoom": {
+      "id": "79C64DB7-9F10-401F-90BD-D972A58752CF",
+      "name": "Saturn",
+      "affinity": 0.671,
+      "why": [
+        "Waxahatchee (48%)",
+        "Adrianne Lenker (35%)",
+        "Big Thief (28%)"
+      ]
+    }
+  },
+  "card": {
+    "summary": "Birmingham ranks #47 nationally for fans of your comps, with a locality affinity of 0.671, and it does not meet the over-index bar (population under 250,000 plus a rank of 20 or better) despite a population of 200,657. Waxahatchee is the strongest comp driving the town's match at 48%, and Saturn is the top room.",
+    "rooms_note": "Start with Saturn, the top-ranked room at 0.92 affinity, where Big Thief (78%) is the comp that drives the match, with Workplay Theatre close behind at 0.86.",
+    "promo_note": "Record stores are the strongest promo group, led by Charlemagne Records at 0.9 affinity with Big Thief (76%) as its top comp, and Revelator Coffee Company (0.89) is a close second option.",
+    "who_note": "Fans of your comps overall index highest at 30 to 34 (0.51), with 25 to 29 right behind (0.49), so consider leading with rooms and promo partners that program for that range.",
+    "local_color_note": "Blundstone has the highest city affinity among the brands (0.825) and is up 0.036 vs. Richmond, with Allbirds showing the biggest lift at +0.049, which hints that sturdy, everyday-wear styling could suit the poster and merch table.",
+    "promo_copy": [
+      "Big Thief and Waxahatchee fans in Birmingham: new tour dates coming soon.",
+      "Love Adrianne Lenker? A new folk act is headed to Birmingham. Ask us for details."
+    ],
+    "caution": "These are aggregate taste affinities, not attendance or sales data, so confirm capacity, age policy, and availability directly with each room."
+  },
+  "receipts": [
+    {
+      "id": "rmv3hx90n-236",
+      "tool": "find_rooms",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Birmingham%2C+AL&filter.location.radius=15000&filter.tags=urn%3Atag%3Acategory%3Aplace%3Alive_music_venue%2Curn%3Atag%3Agenre%3Aplace%3Abar%3Alive_music%2Curn%3Atag%3Agenre%3Aplace%3Aconcert_hall%2Curn%3Atag%3Agenre%3Aplace%3Amusic_venue&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=8&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 8,
+      "top": [
+        {
+          "name": "Saturn",
+          "affinity": 0.92
+        },
+        {
+          "name": "Workplay Theatre",
+          "affinity": 0.86
+        },
+        {
+          "name": "Zydeco",
+          "affinity": 0.8
+        }
+      ]
+    },
+    {
+      "id": "rmv3hx90n-237",
+      "tool": "who_shows_up",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Ademographics&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 3,
+      "top": []
+    },
+    {
+      "id": "rmv3hx90n-238",
+      "tool": "local_color",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Abrand&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Birmingham%2C+AL&signal.location.radius=25000&take=20",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 20,
+      "top": [
+        {
+          "name": "Patagonia",
+          "affinity": 0.92
+        },
+        {
+          "name": "Subaru",
+          "affinity": 0.901
+        },
+        {
+          "name": "Trader Joe's",
+          "affinity": 0.882
+        }
+      ]
+    },
+    {
+      "id": "rmv3hx90n-239",
+      "tool": "local_color",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Atv_show&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Birmingham%2C+AL&signal.location.radius=25000&take=20",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 20,
+      "top": [
+        {
+          "name": "Fleabag",
+          "affinity": 0.92
+        },
+        {
+          "name": "Reservation Dogs",
+          "affinity": 0.901
+        },
+        {
+          "name": "Somebody Somewhere",
+          "affinity": 0.882
+        }
+      ]
+    },
+    {
+      "id": "rmv3hx90n-240",
+      "tool": "local_color",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Abrand&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Richmond%2C+VA&signal.location.radius=25000&take=20",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 20,
+      "top": [
+        {
+          "name": "Patagonia",
+          "affinity": 0.9
+        },
+        {
+          "name": "Subaru",
+          "affinity": 0.882
+        },
+        {
+          "name": "Trader Joe's",
+          "affinity": 0.863
+        }
+      ]
+    },
+    {
+      "id": "rmv3hx90n-241",
+      "tool": "local_color",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Atv_show&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Richmond%2C+VA&signal.location.radius=25000&take=20",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 20,
+      "top": [
+        {
+          "name": "Fleabag",
+          "affinity": 0.91
+        },
+        {
+          "name": "Reservation Dogs",
+          "affinity": 0.892
+        },
+        {
+          "name": "Somebody Somewhere",
+          "affinity": 0.873
+        }
+      ]
+    },
+    {
+      "id": "rmv3hx90n-242",
+      "tool": "find_promo_partners",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Birmingham%2C+AL&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Arecord_store&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 2,
+      "top": [
+        {
+          "name": "Charlemagne Records",
+          "affinity": 0.9
+        },
+        {
+          "name": "Seasick Records",
+          "affinity": 0.84
+        }
+      ]
+    },
+    {
+      "id": "rmv3hx90n-243",
+      "tool": "find_promo_partners",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Birmingham%2C+AL&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Acafe%2Curn%3Atag%3Agenre%3Aplace%3Acoffee_shop&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 2,
+      "top": [
+        {
+          "name": "Revelator Coffee Company",
+          "affinity": 0.89
+        },
+        {
+          "name": "Red Cat Coffee House",
+          "affinity": 0.83
+        }
+      ]
+    },
+    {
+      "id": "rmv3hx90n-244",
+      "tool": "find_promo_partners",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Birmingham%2C+AL&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abookstore&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 2,
+      "top": [
+        {
+          "name": "Alabama Booksmith",
+          "affinity": 0.88
+        },
+        {
+          "name": "Little Professor Book Center",
+          "affinity": 0.8
+        }
+      ]
+    },
+    {
+      "id": "rmv3hx90n-245",
+      "tool": "find_promo_partners",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Birmingham%2C+AL&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abar%2Curn%3Atag%3Agenre%3Aplace%3Adive_bar&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 2,
+      "top": [
+        {
+          "name": "The Garage Cafe",
+          "affinity": 0.87
+        },
+        {
+          "name": "Parkside Cafe",
+          "affinity": 0.8
+        }
+      ]
+    },
+    {
+      "id": "rmv3hx90n-246",
+      "tool": "find_promo_partners",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Birmingham%2C+AL&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Athrift_store%2Curn%3Atag%3Agenre%3Aplace%3Avintage_store&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 2,
+      "top": [
+        {
+          "name": "Birmingham Antique Mall",
+          "affinity": 0.85
+        },
+        {
+          "name": "Savers",
+          "affinity": 0.76
+        }
+      ]
+    }
+  ]
+}

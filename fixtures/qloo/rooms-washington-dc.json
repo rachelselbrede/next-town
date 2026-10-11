@@ -1,0 +1,459 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_rooms",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?feature.explainability=true&filter.location.query=Washington%2C%20DC&filter.location.radius=15000&filter.tags=urn%3Atag%3Acategory%3Aplace%3Alive_music_venue%2Curn%3Atag%3Agenre%3Aplace%3Abar%3Alive_music%2Curn%3Atag%3Agenre%3Aplace%3Aconcert_hall%2Curn%3Atag%3Agenre%3Aplace%3Amusic_venue&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=8",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Washington, DC",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:category:place:live_music_venue,urn:tag:genre:place:bar:live_music,urn:tag:genre:place:concert_hall,urn:tag:genre:place:music_venue",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "sort_by": "affinity",
+      "take": 8,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "0CE05C06-60F7-4F2F-A33F-07F794D4A533",
+          "name": "9:30 Club",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.88,
+          "location": {
+            "lat": 38.9179,
+            "lon": -77.0239
+          },
+          "properties": {
+            "address": "815 V St NW, Washington, DC 20001",
+            "geocode": {
+              "name": "Washington",
+              "city": "Washington",
+              "admin1_region": "DC",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 2,
+            "description": "U Street's flagship standing-room club, the stop every touring indie act hopes to play."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.92,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.804
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.881
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.882
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "2E80829F-EAD0-4DBB-93C7-3C07E46C0BD2",
+          "name": "Black Cat",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.76,
+          "location": {
+            "lat": 38.9145,
+            "lon": -77.0316
+          },
+          "properties": {
+            "address": "1811 14th St NW, Washington, DC 20009",
+            "geocode": {
+              "name": "Washington",
+              "city": "Washington",
+              "admin1_region": "DC",
+              "country_code": "US"
+            },
+            "business_rating": 4.4,
+            "price_level": 2,
+            "description": "Two-stage rock club on 14th Street with a long indie and punk calendar."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:bar:live_music",
+              "name": "Live Music Bar",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.87,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.902
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.751
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.775
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "9644B51F-4F3C-41EC-B7A9-9A0290178DB6",
+          "name": "Union Stage",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.66,
+          "location": {
+            "lat": 38.8788,
+            "lon": -77.0227
+          },
+          "properties": {
+            "address": "740 Water St SW, Washington, DC 20024",
+            "geocode": {
+              "name": "Washington",
+              "city": "Washington",
+              "admin1_region": "DC",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 2,
+            "description": "Waterfront listening room with good sight lines and a seated-or-standing floor."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.82,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.8
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.791
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.837
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "2D57161B-1C84-4AB9-9248-864CEDD1C57C",
+          "name": "Songbyrd Music House",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.62,
+          "location": {
+            "lat": 38.9086,
+            "lon": -76.9977
+          },
+          "properties": {
+            "address": "540 Penn St NE, Washington, DC 20002",
+            "geocode": {
+              "name": "Washington",
+              "city": "Washington",
+              "admin1_region": "DC",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 2,
+            "description": "Small music house and record cafe near Union Market, built for emerging touring acts."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:bar:live_music",
+              "name": "Live Music Bar",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.78,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.75
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.786
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.794
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "6E7BB590-2839-422C-8B6E-67E128275858",
+          "name": "Lincoln Theatre",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.7,
+          "location": {
+            "lat": 38.917,
+            "lon": -77.0289
+          },
+          "properties": {
+            "address": "1215 U St NW, Washington, DC 20009",
+            "geocode": {
+              "name": "Washington",
+              "city": "Washington",
+              "admin1_region": "DC",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 3,
+            "description": "Restored 1920s theater on U Street with a seated main floor."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:concert_hall",
+              "name": "Concert Hall",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.74,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.75
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.717
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.648
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "7298C5F3-9616-460D-98CC-687956069D18",
+          "name": "DC9 Nightclub",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.6,
+          "location": {
+            "lat": 38.9164,
+            "lon": -77.0252
+          },
+          "properties": {
+            "address": "1940 9th St NW, Washington, DC 20001",
+            "geocode": {
+              "name": "Washington",
+              "city": "Washington",
+              "admin1_region": "DC",
+              "country_code": "US"
+            },
+            "business_rating": 4.3,
+            "price_level": 1,
+            "description": "Four-floor neighborhood club known for up-and-coming indie bands."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:bar:live_music",
+              "name": "Live Music Bar",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.7,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.683
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.582
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.723
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "39739556-1F45-46A6-B055-90F82D380C4E",
+          "name": "Pearl Street Warehouse",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.58,
+          "location": {
+            "lat": 38.8786,
+            "lon": -77.023
+          },
+          "properties": {
+            "address": "33 Pearl St SW, Washington, DC 20024",
+            "geocode": {
+              "name": "Washington",
+              "city": "Washington",
+              "admin1_region": "DC",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 2,
+            "description": "Intimate Wharf room with a warm sound and a roots-leaning booking slate."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.65,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.6
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.673
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.647
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "7479CDDD-DF72-40C3-BFC6-A36DDD754781",
+          "name": "The Anthem",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.84,
+          "location": {
+            "lat": 38.8795,
+            "lon": -77.0244
+          },
+          "properties": {
+            "address": "901 Wharf St SW, Washington, DC 20024",
+            "geocode": {
+              "name": "Washington",
+              "city": "Washington",
+              "admin1_region": "DC",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 3,
+            "description": "Large Wharf concert hall; a reach for a first record, a goal for later."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:concert_hall",
+              "name": "Concert Hall",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.6,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.596
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.502
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.51
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

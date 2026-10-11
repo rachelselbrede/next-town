@@ -5,14 +5,20 @@
   "type": "module",
   "description": "Find the towns that already love you. A tour-routing agent for independent acts, built on the Qloo taste graph and Claude.",
   "scripts": {
+    "prepare:data": "node scripts/scaffold-fixtures.mjs hollow-pines && node scripts/bundle-fixtures.mjs && node scripts/record.mjs --module-only",
+    "predev": "npm run prepare:data --silent",
     "dev": "node scripts/dev-node.mjs",
+    "predev:worker": "npm run prepare:data --silent",
     "dev:worker": "wrangler dev",
+    "predeploy": "npm run prepare:data --silent",
     "deploy": "wrangler deploy",
+    "pretest": "npm run prepare:data --silent",
     "test": "node --test --test-timeout=30000 tests/*.test.ts",
     "typecheck": "tsc --noEmit",
     "fixtures": "node scripts/scaffold-fixtures.mjs hollow-pines && node scripts/bundle-fixtures.mjs",
     "record": "node scripts/record.mjs",
     "verify": "node scripts/verify.mjs",
+    "prebuild:static": "npm run prepare:data --silent",
     "build:static": "node scripts/build-static.mjs"
   },
   "dependencies": {

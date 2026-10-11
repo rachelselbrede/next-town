@@ -3,8 +3,9 @@
 // inputs always produce the same canonical URL (see src/canonical.ts), so the demo is deterministic:
 // comp ids are sorted, param keys are lower-cased, and the API key is never part of the key.
 //
-// The fixtures themselves live in fixtures/qloo/*.json and are bundled into ./fixtures.generated.ts
-// by scripts/bundle-fixtures.mjs (`npm run fixtures`). Edit the JSON, re-run the bundler.
+// The public placeholder fixtures live in fixtures/qloo/*.json; live captures (never committed) live
+// in private/qloo/. scripts/bundle-fixtures.mjs (`npm run prepare:data`) bundles the public set and
+// overlays any private captures into ./fixtures.generated.ts, a gitignored build artifact.
 
 import type { DemoResolver, Params } from "../qloo.ts";
 import { canonicalUrl } from "../canonical.ts";
@@ -37,15 +38,17 @@ export function fixtureMeta(path: string, params: Params): { handAuthored: boole
 }
 
 // One line for the mode pill in the UI, summarizing the newest state of the whole fixture set.
-// As long as any fixture is still hand-authored the demo is a placeholder; once scripts/record.mjs
-// has captured everything live, the note carries the date of the newest capture.
+// As long as any bundled fixture is still hand-authored the demo is a placeholder (the frontend shows
+// the placeholder disclosure whenever this contains "placeholder"); once scripts/record.mjs has
+// captured everything live, the note carries the date of the newest capture.
+export const PLACEHOLDER_NOTE = "Recorded demo · placeholder Qloo data";
 export const FIXTURE_NOTE: string = describeFixtures(Object.values(fixtures));
 
-function describeFixtures(all: FixtureFile[]): string {
+export function describeFixtures(all: Pick<FixtureFile, "_handAuthored" | "_captured">[]): string {
   const anyHandAuthored = all.length === 0 || all.some((f) => f._handAuthored);
   const captures = all.map((f) => f._captured).filter((d): d is string => typeof d === "string" && d.length > 0);
   // ISO 8601 timestamps sort lexicographically, so the last one is the newest.
   const newest = captures.sort().at(-1);
-  if (anyHandAuthored || !newest) return "Recorded demo (pre-key placeholder)";
-  return `Recorded demo (captured ${newest.slice(0, 10)})`;
+  if (anyHandAuthored || !newest) return PLACEHOLDER_NOTE;
+  return `Recorded demo · Qloo data captured ${newest.slice(0, 10)}`;
 }

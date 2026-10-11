@@ -1,0 +1,125 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_promo_partners",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?feature.explainability=true&filter.location.query=Lancaster%2C%20PA&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Arecord_store&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Lancaster, PA",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:genre:place:record_store",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "sort_by": "affinity",
+      "take": 2,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "B9FB111A-3004-44A9-9217-FEF60BF56CD6",
+          "name": "Mr. Suit Records",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.5,
+          "location": {
+            "lat": 40.0402,
+            "lon": -76.3101
+          },
+          "properties": {
+            "address": "118 W Chestnut St, Lancaster, PA 17603",
+            "geocode": {
+              "name": "Lancaster",
+              "city": "Lancaster",
+              "admin1_region": "PA",
+              "country_code": "US"
+            },
+            "business_rating": 4.8,
+            "price_level": 1,
+            "description": "Small downtown shop with cheap, rare and better used records, open since 2007."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:record_store",
+              "name": "Record Store",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.88,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.951
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.772
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.808
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "A6CBF267-2B66-4388-810A-975E6B0B74BF",
+          "name": "A Day in the Life Records",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.46,
+          "location": {
+            "lat": 40.0414,
+            "lon": -76.3066
+          },
+          "properties": {
+            "address": "24A W Walnut St, Lancaster, PA 17603",
+            "geocode": {
+              "name": "Lancaster",
+              "city": "Lancaster",
+              "admin1_region": "PA",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 1,
+            "description": "New and used vinyl, CDs and cassettes with a selection that changes constantly."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:record_store",
+              "name": "Record Store",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.8,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.856
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.778
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.682
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

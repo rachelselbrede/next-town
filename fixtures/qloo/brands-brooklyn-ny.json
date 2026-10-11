@@ -1,0 +1,283 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "local_color",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Abrand&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Brooklyn%2C%20NY&signal.location.radius=25000&take=20",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:brand",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "signal.location.query": "Brooklyn, NY",
+      "signal.location.radius": 25000,
+      "take": 20
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "81FF9E58-99F1-4C63-9F2F-7D85FA8D6964",
+          "name": "Patagonia",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.85,
+          "properties": {
+            "description": "Outdoor apparel brand with a loud environmental mission."
+          },
+          "query": {
+            "affinity": 0.94
+          }
+        },
+        {
+          "entity_id": "DCBAA008-0604-58A2-B15F-E45F6CC2F772",
+          "name": "Brooklyn Brewery",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.8,
+          "properties": {
+            "description": "Williamsburg craft brewery behind the Brooklyn Lager."
+          },
+          "query": {
+            "affinity": 0.92
+          }
+        },
+        {
+          "entity_id": "140AED23-2F58-4FA0-B636-C9D5D473E429",
+          "name": "Blue Bottle Coffee",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.6,
+          "properties": {
+            "description": "Third-wave coffee chain with minimalist cafes."
+          },
+          "query": {
+            "affinity": 0.9
+          }
+        },
+        {
+          "entity_id": "47D5D80A-D8DA-4F3A-A4DF-A99635B1BCB7",
+          "name": "Warby Parker",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.61,
+          "properties": {
+            "description": "Direct-to-consumer eyewear brand with a try-at-home program."
+          },
+          "query": {
+            "affinity": 0.88
+          }
+        },
+        {
+          "entity_id": "F7D5C96B-E649-538D-A210-7B10A1BD5ACF",
+          "name": "Rough Trade",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.6,
+          "properties": {
+            "description": "Indie record shop and venue brand with a Brooklyn flagship."
+          },
+          "query": {
+            "affinity": 0.86
+          }
+        },
+        {
+          "entity_id": "B33E9033-D54B-4B07-A439-14C0322C161D",
+          "name": "Levi's",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.77,
+          "properties": {
+            "description": "Denim brand with a vintage-friendly back catalog."
+          },
+          "query": {
+            "affinity": 0.84
+          }
+        },
+        {
+          "entity_id": "1E64D934-320B-4FB7-921B-58DB10BE96EA",
+          "name": "Birkenstock",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.66,
+          "properties": {
+            "description": "German sandal maker with a cork footbed and a cult following."
+          },
+          "query": {
+            "affinity": 0.82
+          }
+        },
+        {
+          "entity_id": "52039753-DD87-4F1B-8D75-3F55850FAD13",
+          "name": "La Colombe",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.67,
+          "properties": {
+            "description": "Philadelphia coffee roaster with canned draft lattes in every co-op."
+          },
+          "query": {
+            "affinity": 0.8
+          }
+        },
+        {
+          "entity_id": "753F76AB-F8F3-4DB9-9076-5541D45875DF",
+          "name": "Trader Joe's",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.83,
+          "properties": {
+            "description": "Grocery chain known for cheap wine, frozen dumplings, and friendly cashiers."
+          },
+          "query": {
+            "affinity": 0.78
+          }
+        },
+        {
+          "entity_id": "2838B3D8-5C49-4AF5-AA58-12015277F479",
+          "name": "Doc Martens",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.49,
+          "properties": {
+            "description": "British boot brand with a permanent place in music subcultures."
+          },
+          "query": {
+            "affinity": 0.76
+          }
+        },
+        {
+          "entity_id": "6B05FE29-2D75-55EF-A6E5-B665F442F4FD",
+          "name": "Brooklyn Industries",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.55,
+          "properties": {
+            "description": "Local clothing label known for messenger bags and graphic tees."
+          },
+          "query": {
+            "affinity": 0.74
+          }
+        },
+        {
+          "entity_id": "F4D0AB50-60CD-4B17-BF5B-3224D267EB2B",
+          "name": "Allbirds",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.54,
+          "properties": {
+            "description": "Wool sneaker brand with a sustainability pitch."
+          },
+          "query": {
+            "affinity": 0.72
+          }
+        },
+        {
+          "entity_id": "CA29596C-A583-4C49-8B03-1FCE2A53EA05",
+          "name": "Carhartt",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.55,
+          "properties": {
+            "description": "Workwear brand adopted by musicians and carpenters alike."
+          },
+          "query": {
+            "affinity": 0.7
+          }
+        },
+        {
+          "entity_id": "BE94C1C3-F3C3-5735-9E5D-A137D0729458",
+          "name": "Mast Chocolate",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.6,
+          "properties": {
+            "description": "Bean-to-bar chocolate maker from Williamsburg."
+          },
+          "query": {
+            "affinity": 0.68
+          }
+        },
+        {
+          "entity_id": "7C8DF92F-D4B9-45DE-9144-A0E36C0C6897",
+          "name": "REI",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.79,
+          "properties": {
+            "description": "Outdoor gear co-op with a member dividend."
+          },
+          "query": {
+            "affinity": 0.66
+          }
+        },
+        {
+          "entity_id": "69EBE283-3B44-54ED-AB92-43D1B9B91CC0",
+          "name": "Aesop",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.7,
+          "properties": {
+            "description": "Skin care brand with minimalist apothecary-style stores."
+          },
+          "query": {
+            "affinity": 0.64
+          }
+        },
+        {
+          "entity_id": "44BB116D-25C3-556B-8DE6-9E7643FA2343",
+          "name": "Everlane",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.72,
+          "properties": {
+            "description": "Direct-to-consumer basics brand with transparent pricing."
+          },
+          "query": {
+            "affinity": 0.62
+          }
+        },
+        {
+          "entity_id": "D44CBBD6-C6E8-455A-94B4-88B6A05B0591",
+          "name": "Blundstone",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.73,
+          "properties": {
+            "description": "Tasmanian pull-on boot brand beloved by people who walk a lot."
+          },
+          "query": {
+            "affinity": 0.6
+          }
+        },
+        {
+          "entity_id": "4883633B-02DB-5A6B-8DAD-5A71C26F6397",
+          "name": "Oatly",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.68,
+          "properties": {
+            "description": "Swedish oat milk brand that shows up in nearly every coffee shop."
+          },
+          "query": {
+            "affinity": 0.58
+          }
+        },
+        {
+          "entity_id": "254CB052-F45E-5E08-8C71-60F093FD5697",
+          "name": "Sweetgreen",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.74,
+          "properties": {
+            "description": "Salad chain with a big Brooklyn presence."
+          },
+          "query": {
+            "affinity": 0.56
+          }
+        }
+      ]
+    }
+  }
+}

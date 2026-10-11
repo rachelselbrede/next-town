@@ -1,0 +1,283 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "local_color",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Abrand&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Lexington%2C%20KY&signal.location.radius=25000&take=20",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:brand",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "signal.location.query": "Lexington, KY",
+      "signal.location.radius": 25000,
+      "take": 20
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "81FF9E58-99F1-4C63-9F2F-7D85FA8D6964",
+          "name": "Patagonia",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.828,
+          "properties": {
+            "description": "Outdoor apparel brand with a strong following among indie-folk audiences."
+          },
+          "query": {
+            "affinity": 0.91
+          }
+        },
+        {
+          "entity_id": "AC8120D3-F632-4821-92A3-70E5C4A3343C",
+          "name": "Subaru",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.806,
+          "properties": {
+            "description": "Carmaker with a loyal base among outdoorsy, music-festival-going drivers."
+          },
+          "query": {
+            "affinity": 0.894
+          }
+        },
+        {
+          "entity_id": "7C8DF92F-D4B9-45DE-9144-A0E36C0C6897",
+          "name": "REI",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.74,
+          "properties": {
+            "description": "Outdoor co-op retailer with strong affinity in college and trail towns."
+          },
+          "query": {
+            "affinity": 0.878
+          }
+        },
+        {
+          "entity_id": "E17FBBA8-94DF-4FE3-853D-0700539EF9C2",
+          "name": "Heine Brothers' Coffee",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.696,
+          "properties": {
+            "description": "Louisville-born fair-trade coffee chain with shops across the city."
+          },
+          "query": {
+            "affinity": 0.862
+          }
+        },
+        {
+          "entity_id": "753F76AB-F8F3-4DB9-9076-5541D45875DF",
+          "name": "Trader Joe's",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.784,
+          "properties": {
+            "description": "Grocery chain popular with young professionals and grad students."
+          },
+          "query": {
+            "affinity": 0.846
+          }
+        },
+        {
+          "entity_id": "1E64D934-320B-4FB7-921B-58DB10BE96EA",
+          "name": "Birkenstock",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.542,
+          "properties": {
+            "description": "Sandal brand with a long-running crunchy-college-town following."
+          },
+          "query": {
+            "affinity": 0.83
+          }
+        },
+        {
+          "entity_id": "BC099722-157C-4DDB-897B-E3DC469394A6",
+          "name": "West Sixth Brewing",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.7,
+          "properties": {
+            "description": "Lexington craft brewery in a converted bakery, known for its Pay It Forward cold-brew coffee stout."
+          },
+          "query": {
+            "affinity": 0.814
+          }
+        },
+        {
+          "entity_id": "B33E9033-D54B-4B07-A439-14C0322C161D",
+          "name": "Levi's",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.674,
+          "properties": {
+            "description": "Denim staple for the indie and folk crowd."
+          },
+          "query": {
+            "affinity": 0.798
+          }
+        },
+        {
+          "entity_id": "D44CBBD6-C6E8-455A-94B4-88B6A05B0591",
+          "name": "Blundstone",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.608,
+          "properties": {
+            "description": "Australian boot brand worn by touring musicians everywhere."
+          },
+          "query": {
+            "affinity": 0.782
+          }
+        },
+        {
+          "entity_id": "79105CB8-2649-4620-A2F8-0B53D5B8A831",
+          "name": "Fjallraven",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.696,
+          "properties": {
+            "description": "Swedish backpack and outdoor clothing brand popular on campus and at shows."
+          },
+          "query": {
+            "affinity": 0.766
+          }
+        },
+        {
+          "entity_id": "899CFBE8-8603-45AC-83DD-9D67BD84C971",
+          "name": "Country Boy Brewing",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.66,
+          "properties": {
+            "description": "Lexington craft brewery with a taproom crowd of locals and a Kentucky-grown identity."
+          },
+          "query": {
+            "affinity": 0.75
+          }
+        },
+        {
+          "entity_id": "52039753-DD87-4F1B-8D75-3F55850FAD13",
+          "name": "La Colombe",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.63,
+          "properties": {
+            "description": "Specialty coffee roaster and canned-latte brand."
+          },
+          "query": {
+            "affinity": 0.734
+          }
+        },
+        {
+          "entity_id": "47D5D80A-D8DA-4F3A-A4DF-A99635B1BCB7",
+          "name": "Warby Parker",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.586,
+          "properties": {
+            "description": "Direct-to-consumer eyewear brand with a young, urban audience."
+          },
+          "query": {
+            "affinity": 0.718
+          }
+        },
+        {
+          "entity_id": "CE95A097-E8E6-4AF6-B43B-57AE60339812",
+          "name": "Buffalo Trace Distillery",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.82,
+          "properties": {
+            "description": "Franklin County bourbon distillery that anchors the Kentucky Bourbon Trail."
+          },
+          "query": {
+            "affinity": 0.702
+          }
+        },
+        {
+          "entity_id": "CA29596C-A583-4C49-8B03-1FCE2A53EA05",
+          "name": "Carhartt",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.55,
+          "properties": {
+            "description": "Workwear brand adopted by musicians and carpenters alike."
+          },
+          "query": {
+            "affinity": 0.686
+          }
+        },
+        {
+          "entity_id": "F4D0AB50-60CD-4B17-BF5B-3224D267EB2B",
+          "name": "Allbirds",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.476,
+          "properties": {
+            "description": "Wool sneaker brand with an eco-minded audience."
+          },
+          "query": {
+            "affinity": 0.67
+          }
+        },
+        {
+          "entity_id": "0756574B-8A21-4E60-9466-347AD3028515",
+          "name": "Woodford Reserve",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.78,
+          "properties": {
+            "description": "Bourbon from the Versailles distillery outside Lexington, a fixture of Bluegrass tasting trips."
+          },
+          "query": {
+            "affinity": 0.654
+          }
+        },
+        {
+          "entity_id": "8193C1A5-B44A-4DD8-BECA-39AE04CAADBB",
+          "name": "Good Foods Co-op",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.42,
+          "properties": {
+            "description": "Lexington's member-owned natural foods market and cafe."
+          },
+          "query": {
+            "affinity": 0.638
+          }
+        },
+        {
+          "entity_id": "8A06380C-A034-49D6-AD66-37D7BC5D1AA6",
+          "name": "Kroger",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.86,
+          "properties": {
+            "description": "Kroger: a brand fans of these comps around Athens, OH over-index on."
+          },
+          "query": {
+            "affinity": 0.622
+          }
+        },
+        {
+          "entity_id": "51683F5E-D434-48B0-A3C5-3F5D3BA131FA",
+          "name": "Rocky Boots",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.73,
+          "properties": {
+            "description": "Rocky Boots: a brand fans of these comps around Athens, OH over-index on."
+          },
+          "query": {
+            "affinity": 0.606
+          }
+        }
+      ]
+    }
+  }
+}

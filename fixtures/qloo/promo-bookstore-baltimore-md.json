@@ -1,0 +1,127 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_promo_partners",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?feature.explainability=true&filter.location.query=Baltimore%2C%20MD&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abookstore&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Baltimore, MD",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:genre:place:bookstore",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "sort_by": "affinity",
+      "take": 2,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "60BAFD34-D6F5-496C-958F-451D897B7DDB",
+          "name": "Atomic Books",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.52,
+          "location": {
+            "lat": 39.3335,
+            "lon": -76.638
+          },
+          "properties": {
+            "description": "Hampden indie bookstore and comics shop with a zine rack and a long record of author and band signings.",
+            "address": "3620 Falls Rd, Baltimore, MD 21211",
+            "geocode": {
+              "name": "Baltimore",
+              "city": "Baltimore",
+              "admin1_region": "MD",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 2,
+            "website": "https://www.atomicbooks.com"
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:bookstore",
+              "name": "Bookstore",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.92,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.74
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.69
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.59
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "0A3B4BBC-0248-43EF-AE8B-71CACB64DC73",
+          "name": "The Ivy Bookshop",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.5,
+          "location": {
+            "lat": 39.3667,
+            "lon": -76.6554
+          },
+          "properties": {
+            "description": "Independent neighborhood bookstore in Mount Washington with a busy author series and a cozy upstairs reading room.",
+            "address": "6080 Falls Rd, Baltimore, MD 21209",
+            "geocode": {
+              "name": "Baltimore",
+              "city": "Baltimore",
+              "admin1_region": "MD",
+              "country_code": "US"
+            },
+            "business_rating": 4.8,
+            "price_level": 2,
+            "website": "https://www.theivybookshop.com"
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:bookstore",
+              "name": "Bookstore",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.85,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.69
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.64
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.55
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

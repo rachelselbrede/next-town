@@ -1,0 +1,623 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "local_color",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Atv_show&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Lancaster%2C%20PA&signal.location.radius=25000&take=20",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:tv_show",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "signal.location.query": "Lancaster, PA",
+      "signal.location.radius": 25000,
+      "take": 20
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "32301606-3709-4450-9B49-526F8932157B",
+          "name": "Fargo",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.7,
+          "properties": {
+            "description": "Anthology crime series in the spirit of the Coen brothers."
+          },
+          "tags": [],
+          "query": {
+            "affinity": 0.91,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.88
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.849
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.831
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "ADC55D1A-2B7B-4B9E-8D1A-E13AD873422E",
+          "name": "Schitt's Creek",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.9,
+          "properties": {
+            "description": "A rich family loses everything and learns to love a motel in a small town."
+          },
+          "tags": [],
+          "query": {
+            "affinity": 0.891,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.878
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.836
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.713
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "8FE5FB3A-4220-4FC1-BE1A-E76BDEC656A1",
+          "name": "The Office",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.93,
+          "properties": {
+            "description": "Mockumentary about a paper company branch in Scranton, Pennsylvania."
+          },
+          "tags": [],
+          "query": {
+            "affinity": 0.872,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.805
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.92
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.857
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "1726F37E-D9CA-43CC-8B62-4E9AF1FD2C5B",
+          "name": "Severance",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.69,
+          "properties": {
+            "description": "Office workers whose memories are split between work and home."
+          },
+          "tags": [],
+          "query": {
+            "affinity": 0.853,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.826
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.853
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.715
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "E70F429F-63FF-4903-BC95-98EA71234EE5",
+          "name": "Barry",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.8,
+          "properties": {
+            "description": "A hitman finds an unlikely calling in an acting class."
+          },
+          "tags": [],
+          "query": {
+            "affinity": 0.834,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.767
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.788
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.794
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "5AF4B18C-7F2E-4D54-B946-C924DBBC0E98",
+          "name": "Fleabag",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.88,
+          "properties": {
+            "description": "Phoebe Waller-Bridge's fourth-wall-breaking comedy about grief and bad decisions."
+          },
+          "tags": [],
+          "query": {
+            "affinity": 0.815,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.701
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.759
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.816
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "57D77BDC-90C5-46DE-91F9-1613D5BFC645",
+          "name": "Ted Lasso",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.9,
+          "properties": {
+            "description": "An American football coach tries to win over an English soccer club with kindness."
+          },
+          "tags": [],
+          "query": {
+            "affinity": 0.796,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.798
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.845
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.636
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "F504DFDE-7861-486D-9F48-C6422671C57A",
+          "name": "Reservation Dogs",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.875,
+          "properties": {
+            "description": "Four Indigenous teens in rural Oklahoma dream of California."
+          },
+          "tags": [],
+          "query": {
+            "affinity": 0.777,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.839
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.794
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.602
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "3BF1181E-506F-4909-905E-F87166E9EB80",
+          "name": "Better Things",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.7,
+          "properties": {
+            "description": "Pamela Adlon's candid comedy about a single mother raising three daughters."
+          },
+          "tags": [],
+          "query": {
+            "affinity": 0.758,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.745
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.76
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.622
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "6655F705-B668-4671-8B58-68064B23BACA",
+          "name": "Derry Girls",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.8,
+          "properties": {
+            "description": "Teenage friends get through the 1990s in Northern Ireland."
+          },
+          "tags": [],
+          "query": {
+            "affinity": 0.739,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.749
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.759
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.718
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "D7BD04AA-3B47-4DA4-9E4F-40A542F5B7D1",
+          "name": "Abbott Elementary",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.76,
+          "properties": {
+            "description": "Mockumentary about teachers at an underfunded Philadelphia public school."
+          },
+          "tags": [],
+          "query": {
+            "affinity": 0.721,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.687
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.583
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.649
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "4ED236B4-9453-4512-8981-B49E9BB467A5",
+          "name": "Atlanta",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.82,
+          "properties": {
+            "description": "Donald Glover's surreal comedy about two cousins in the Atlanta rap scene."
+          },
+          "tags": [],
+          "query": {
+            "affinity": 0.702,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.62
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.66
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.576
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "E3C6F04F-7F24-4D5C-88C7-79ACD9F57EAC",
+          "name": "The Bear",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.865,
+          "properties": {
+            "description": "A fine-dining chef takes over his late brother's Chicago sandwich shop."
+          },
+          "tags": [],
+          "query": {
+            "affinity": 0.683,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.632
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.642
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.667
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "94517E1E-4D20-4604-A1D6-E4DEA4581FC2",
+          "name": "Mare of Easttown",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.84,
+          "properties": {
+            "description": "Kate Winslet plays a weary small-town Pennsylvania detective in a murder mystery."
+          },
+          "tags": [],
+          "query": {
+            "affinity": 0.664,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.739
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.595
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.485
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "656078D4-7298-439C-B517-153F264014E1",
+          "name": "Somebody Somewhere",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.87,
+          "properties": {
+            "description": "A woman returns to her Kansas hometown and finds a choir of misfits."
+          },
+          "tags": [],
+          "query": {
+            "affinity": 0.645,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.675
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.563
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.617
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "24AF387E-B347-4535-A921-D3B36CC057C9",
+          "name": "Station Eleven",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.63,
+          "properties": {
+            "description": "A traveling Shakespeare troupe in a post-pandemic Great Lakes region."
+          },
+          "tags": [],
+          "query": {
+            "affinity": 0.626,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.672
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.483
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.592
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "72E9BC0B-598B-43EF-8465-E61AD1CFF1DB",
+          "name": "Parks and Recreation",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.635,
+          "properties": {
+            "description": "Mockumentary about an earnest Indiana parks department."
+          },
+          "tags": [],
+          "query": {
+            "affinity": 0.607,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.544
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.521
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.494
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "377A96F7-A073-43FE-B56D-6E3331A4308F",
+          "name": "Gilmore Girls",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.755,
+          "properties": {
+            "description": "Fast-talking mother and daughter in a small Connecticut town."
+          },
+          "tags": [],
+          "query": {
+            "affinity": 0.588,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.576
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.487
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.507
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "F6F57765-0B75-4340-A73F-6DF99D75BD78",
+          "name": "What We Do in the Shadows",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.84,
+          "properties": {
+            "description": "Mockumentary about vampire roommates on Staten Island."
+          },
+          "tags": [],
+          "query": {
+            "affinity": 0.569,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.506
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.444
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.439
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "CBBD7C4F-EE93-4B17-8B5B-5251E5F73EB7",
+          "name": "Hacks",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.815,
+          "properties": {
+            "description": "A legendary Vegas comedian and a cancelled young writer need each other."
+          },
+          "tags": [],
+          "query": {
+            "affinity": 0.55,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.566
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.462
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.41
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

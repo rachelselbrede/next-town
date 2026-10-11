@@ -1,5 +1,7 @@
 // Server-Sent Events helpers. The agent yields events; this turns them into a streaming Response.
 
+import { friendlyErrorMessage } from "./agent.ts";
+
 export type SseEvent = { type: string; [key: string]: unknown };
 
 export function sseResponse(events: AsyncIterable<SseEvent>, extraHeaders: Record<string, string> = {}): Response {
@@ -21,7 +23,10 @@ export function sseResponse(events: AsyncIterable<SseEvent>, extraHeaders: Recor
           send(next.value);
         }
       } catch (err) {
-        send({ type: "error", message: err instanceof Error ? err.message : String(err) });
+        // The full error goes to the server log; the browser gets a plain sentence (an Anthropic
+        // API error names its HTTP status, anything else is "Something went wrong on the server.").
+        console.error("[sse] stream failed:", err);
+        send({ type: "error", message: friendlyErrorMessage(err) });
       } finally {
         if (!cancelled) controller.close();
       }

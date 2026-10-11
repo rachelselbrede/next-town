@@ -1,0 +1,434 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_rooms",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?feature.explainability=true&filter.location.query=Northampton%2C%20MA&filter.location.radius=15000&filter.tags=urn%3Atag%3Acategory%3Aplace%3Alive_music_venue%2Curn%3Atag%3Agenre%3Aplace%3Abar%3Alive_music%2Curn%3Atag%3Agenre%3Aplace%3Aconcert_hall%2Curn%3Atag%3Agenre%3Aplace%3Amusic_venue&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=8",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Northampton, MA",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:category:place:live_music_venue,urn:tag:genre:place:bar:live_music,urn:tag:genre:place:concert_hall,urn:tag:genre:place:music_venue",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "sort_by": "affinity",
+      "take": 8,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "3E972C1E-0EDF-4F42-A90A-E1203F231CDF",
+          "name": "Iron Horse Music Hall",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.74,
+          "location": {
+            "lat": 42.3174,
+            "lon": -72.6293
+          },
+          "properties": {
+            "address": "20 Center St, Northampton, MA 01060",
+            "geocode": {
+              "name": "Northampton",
+              "city": "Northampton",
+              "admin1_region": "MA",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 2,
+            "description": "Long-running Center Street listening room where folk and indie touring acts have played for decades."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            },
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.92,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.912
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.918
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.89
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "DBC03809-E832-49DD-9AAA-1CF2FD16A24F",
+          "name": "The Calvin Theatre",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.72,
+          "location": {
+            "lat": 42.3163,
+            "lon": -72.6347
+          },
+          "properties": {
+            "address": "19 King St, Northampton, MA 01060",
+            "geocode": {
+              "name": "Northampton",
+              "city": "Northampton",
+              "admin1_region": "MA",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 2,
+            "description": "Restored 1,300-seat movie palace on King Street that books larger songwriter and indie shows."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:concert_hall",
+              "name": "Concert Hall",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.88,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.777
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.944
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.791
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "91D44F27-356A-4710-9BA9-7D0EB5FDE427",
+          "name": "Pearl Street Nightclub",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.66,
+          "location": {
+            "lat": 42.319,
+            "lon": -72.632
+          },
+          "properties": {
+            "address": "10 Pearl St, Northampton, MA 01060",
+            "geocode": {
+              "name": "Northampton",
+              "city": "Northampton",
+              "admin1_region": "MA",
+              "country_code": "US"
+            },
+            "business_rating": 4.3,
+            "price_level": 2,
+            "description": "Standing-room club on Pearl Street with a big stage for rock, indie and DJ nights."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.83,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.846
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.917
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.893
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "E635C694-C8C9-4862-AFBD-2B06C7E5EC42",
+          "name": "The Parlor Room",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.5,
+          "location": {
+            "lat": 42.3185,
+            "lon": -72.6338
+          },
+          "properties": {
+            "address": "17 New South St, Northampton, MA 01060",
+            "geocode": {
+              "name": "Northampton",
+              "city": "Northampton",
+              "admin1_region": "MA",
+              "country_code": "US"
+            },
+            "business_rating": 4.8,
+            "price_level": 2,
+            "description": "Intimate acoustic concert series that books touring songwriters in a small arts-center hall."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.79,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.698
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.85
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.843
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "C590D350-F8C9-4327-B6E8-CD803964744B",
+          "name": "Academy of Music Theatre",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.62,
+          "location": {
+            "lat": 42.3175,
+            "lon": -72.635
+          },
+          "properties": {
+            "address": "274 Main St, Northampton, MA 01060",
+            "geocode": {
+              "name": "Northampton",
+              "city": "Northampton",
+              "admin1_region": "MA",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 2,
+            "description": "1891 Main Street theatre that hosts film, comedy and touring concerts."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:concert_hall",
+              "name": "Concert Hall",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.74,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.802
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.774
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.69
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "B7375769-BA8F-4734-A752-65CB42D17D43",
+          "name": "Bombyx Center for Arts & Equity",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.42,
+          "location": {
+            "lat": 42.3345,
+            "lon": -72.6648
+          },
+          "properties": {
+            "address": "130 Pine St, Florence, MA 01062",
+            "geocode": {
+              "name": "Florence",
+              "city": "Florence",
+              "admin1_region": "MA",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 2,
+            "description": "Community arts center in Florence with an outdoor stage and an indoor concert hall."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.7,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.775
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.661
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.76
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "D6CA4A49-2F1A-47F3-AB18-CA7D4A3D081B",
+          "name": "John M. Greene Hall",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.45,
+          "location": {
+            "lat": 42.3179,
+            "lon": -72.6397
+          },
+          "properties": {
+            "address": "10 Elm St, Northampton, MA 01060",
+            "geocode": {
+              "name": "Northampton",
+              "city": "Northampton",
+              "admin1_region": "MA",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 1,
+            "description": "Smith College's grand auditorium, used for campus concerts and visiting performers."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:concert_hall",
+              "name": "Concert Hall",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.65,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.706
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.535
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.593
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "7E7C2690-7980-45D5-9250-9F7F7E4EF580",
+          "name": "Northampton Brewery",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.4,
+          "location": {
+            "lat": 42.3158,
+            "lon": -72.6317
+          },
+          "properties": {
+            "address": "11 Brewster Ct, Northampton, MA 01060",
+            "geocode": {
+              "name": "Northampton",
+              "city": "Northampton",
+              "admin1_region": "MA",
+              "country_code": "US"
+            },
+            "business_rating": 4.2,
+            "price_level": 2,
+            "description": "Brewpub on Brewster Court with a long local history and an occasional music night."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:bar:live_music",
+              "name": "Live Music Bar",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.6,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.635
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.663
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.522
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_promo_partners",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?feature.explainability=true&filter.location.query=Bloomington%2C%20IN&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Arecord_store&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Bloomington, IN",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:genre:place:record_store",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "sort_by": "affinity",
+      "take": 2,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "B795EFB1-0356-4941-8AF8-1BB1AD21788C",
+          "name": "Landlocked Music",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.62,
+          "location": {
+            "lat": 39.165,
+            "lon": -86.526
+          },
+          "properties": {
+            "description": "Independent record shop on the west side of downtown with a deep new and used vinyl selection and an in-store show calendar.",
+            "address": "202 N Walnut St, Bloomington, IN 47404",
+            "business_rating": 4.8,
+            "price_level": 2,
+            "geocode": {
+              "name": "Bloomington",
+              "city": "Bloomington",
+              "admin1_region": "IN",
+              "country_code": "US"
+            }
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:record_store",
+              "name": "Record Store",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.92,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.8
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.77
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.73
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "ED818780-FD5A-4E1D-B2B5-7AB08C633050",
+          "name": "TD's CDs & LPs",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.49,
+          "location": {
+            "lat": 39.165,
+            "lon": -86.526
+          },
+          "properties": {
+            "description": "Longtime used record and CD store on Kirkwood with crates of indie, folk, and college-radio staples.",
+            "address": "322 E Kirkwood Ave, Bloomington, IN 47408",
+            "business_rating": 4.6,
+            "price_level": 1,
+            "geocode": {
+              "name": "Bloomington",
+              "city": "Bloomington",
+              "admin1_region": "IN",
+              "country_code": "US"
+            }
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:record_store",
+              "name": "Record Store",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.88,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.75
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.72
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.68
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

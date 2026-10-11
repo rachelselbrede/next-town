@@ -1,0 +1,937 @@
+{
+  "city": "Durham, NC",
+  "home": "Richmond, VA",
+  "comps": [
+    {
+      "id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+      "name": "Big Thief",
+      "type": "urn:entity:artist",
+      "popularity": 0.93
+    },
+    {
+      "id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+      "name": "Waxahatchee",
+      "type": "urn:entity:artist",
+      "popularity": 0.88
+    },
+    {
+      "id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "name": "Adrianne Lenker",
+      "type": "urn:entity:artist",
+      "popularity": 0.85
+    }
+  ],
+  "rooms": [
+    {
+      "id": "B7055B62-0B38-4A28-A7BD-09BAB73664FC",
+      "name": "Motorco Music Hall",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
+      "affinity": 0.93,
+      "popularity": 0.74,
+      "rating": 4.6,
+      "price_level": 2,
+      "address": "723 Rigsbee Ave, Durham, NC 27701",
+      "city": "Durham",
+      "description": "Converted garage-and-bar complex in Durham's Rigsbee corridor with a main room that suits touring indie and folk acts.",
+      "tags": [
+        "Music Venue",
+        "Live Music Venue"
+      ],
+      "tagIds": [
+        "urn:tag:genre:place:music_venue",
+        "urn:tag:category:place:live_music_venue"
+      ],
+      "why": [
+        "Big Thief (95%)",
+        "Waxahatchee (87%)",
+        "Adrianne Lenker (83%)"
+      ],
+      "lat": 35.9937,
+      "lon": -78.8985,
+      "region": "NC"
+    },
+    {
+      "id": "19DE68D6-0F50-4127-9903-58DE98D63AFF",
+      "name": "The Pinhook",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
+      "affinity": 0.88,
+      "popularity": 0.7,
+      "rating": 4.5,
+      "price_level": 2,
+      "address": "117 W Main St, Durham, NC 27701",
+      "city": "Durham",
+      "description": "Small downtown bar-and-venue where touring indie bands play close to the crowd.",
+      "tags": [
+        "Music Venue",
+        "Live Music Venue"
+      ],
+      "tagIds": [
+        "urn:tag:genre:place:music_venue",
+        "urn:tag:category:place:live_music_venue"
+      ],
+      "why": [
+        "Big Thief (92%)",
+        "Waxahatchee (82%)",
+        "Adrianne Lenker (78%)"
+      ],
+      "lat": 35.9969,
+      "lon": -78.9024,
+      "region": "NC"
+    },
+    {
+      "id": "1A99337F-47F1-4405-B021-E11D3F090581",
+      "name": "Carolina Theatre of Durham",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
+      "affinity": 0.84,
+      "popularity": 0.76,
+      "rating": 4.7,
+      "price_level": 2,
+      "address": "309 W Morgan St, Durham, NC 27701",
+      "city": "Durham",
+      "description": "Restored downtown theatre with a seated hall that fits quieter, lyric-forward sets.",
+      "tags": [
+        "Music Venue",
+        "Live Music Venue"
+      ],
+      "tagIds": [
+        "urn:tag:genre:place:music_venue",
+        "urn:tag:category:place:live_music_venue"
+      ],
+      "why": [
+        "Big Thief (88%)",
+        "Waxahatchee (78%)",
+        "Adrianne Lenker (74%)"
+      ],
+      "lat": 35.9976,
+      "lon": -78.9034,
+      "region": "NC"
+    },
+    {
+      "id": "4753A0B6-F9EA-4D0A-AE7B-A0AC1922C0C7",
+      "name": "Durham Performing Arts Center",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
+      "affinity": 0.79,
+      "popularity": 0.84,
+      "rating": 4.8,
+      "price_level": 3,
+      "address": "123 Vivian St, Durham, NC 27701",
+      "city": "Durham",
+      "description": "Large downtown hall for bigger touring nights and the occasional folk headliner.",
+      "tags": [
+        "Music Venue",
+        "Live Music Venue"
+      ],
+      "tagIds": [
+        "urn:tag:genre:place:music_venue",
+        "urn:tag:category:place:live_music_venue"
+      ],
+      "why": [
+        "Big Thief (83%)",
+        "Waxahatchee (73%)",
+        "Adrianne Lenker (69%)"
+      ],
+      "lat": 35.9935,
+      "lon": -78.904,
+      "region": "NC"
+    },
+    {
+      "id": "5031AB55-ECCA-4802-9AEE-A9CB477211FF",
+      "name": "The Fruit",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
+      "affinity": 0.74,
+      "popularity": 0.45,
+      "rating": 4.5,
+      "price_level": 1,
+      "address": "305 S Roxboro St, Durham, NC 27701",
+      "city": "Durham",
+      "description": "Intimate downtown arts space known for DIY-leaning shows and small crowds.",
+      "tags": [
+        "Music Venue",
+        "Live Music Venue"
+      ],
+      "tagIds": [
+        "urn:tag:genre:place:music_venue",
+        "urn:tag:category:place:live_music_venue"
+      ],
+      "why": [
+        "Big Thief (78%)",
+        "Waxahatchee (68%)",
+        "Adrianne Lenker (64%)"
+      ],
+      "lat": 35.9946,
+      "lon": -78.8997,
+      "region": "NC"
+    },
+    {
+      "id": "0F49D4F3-0390-44BD-9E31-083DCB61C606",
+      "name": "Beyu Caffe",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
+      "affinity": 0.69,
+      "popularity": 0.55,
+      "rating": 4.4,
+      "price_level": 2,
+      "address": "341 W Main St, Durham, NC 27701",
+      "city": "Durham",
+      "description": "Cafe on West Main with a small stage for acoustic and singer-songwriter evenings.",
+      "tags": [
+        "Music Venue",
+        "Live Music Venue"
+      ],
+      "tagIds": [
+        "urn:tag:genre:place:music_venue",
+        "urn:tag:category:place:live_music_venue"
+      ],
+      "why": [
+        "Big Thief (73%)",
+        "Waxahatchee (63%)",
+        "Adrianne Lenker (59%)"
+      ],
+      "lat": 35.9967,
+      "lon": -78.9042,
+      "region": "NC"
+    },
+    {
+      "id": "AB95E392-3701-45C9-A157-AEC0F3BC15EA",
+      "name": "Fullsteam Brewery",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
+      "affinity": 0.64,
+      "popularity": 0.58,
+      "rating": 4.5,
+      "price_level": 2,
+      "address": "726 Rigsbee Ave, Durham, NC 27701",
+      "city": "Durham",
+      "description": "Local brewery taproom that hosts low-key live sets near the Rigsbee strip.",
+      "tags": [
+        "Music Venue",
+        "Live Music Venue"
+      ],
+      "tagIds": [
+        "urn:tag:genre:place:music_venue",
+        "urn:tag:category:place:live_music_venue"
+      ],
+      "why": [
+        "Big Thief (68%)",
+        "Waxahatchee (58%)",
+        "Adrianne Lenker (54%)"
+      ],
+      "lat": 35.9941,
+      "lon": -78.8988,
+      "region": "NC"
+    },
+    {
+      "id": "1E85174E-6A5B-4BC4-B9E3-89E7612A82F4",
+      "name": "Page Auditorium",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
+      "affinity": 0.6,
+      "popularity": 0.62,
+      "rating": 4.6,
+      "price_level": 2,
+      "address": "402 Chapel Dr, Durham, NC 27708",
+      "city": "Durham",
+      "description": "Duke University's long-running concert hall for touring acts on the Durham campus.",
+      "tags": [
+        "Music Venue",
+        "Live Music Venue"
+      ],
+      "tagIds": [
+        "urn:tag:genre:place:music_venue",
+        "urn:tag:category:place:live_music_venue"
+      ],
+      "why": [
+        "Big Thief (64%)",
+        "Waxahatchee (54%)",
+        "Adrianne Lenker (50%)"
+      ],
+      "lat": 36.001,
+      "lon": -78.9399,
+      "region": "NC"
+    }
+  ],
+  "promo": [
+    {
+      "kind": "record store",
+      "places": [
+        {
+          "id": "53101553-83ED-4A51-A94E-5DABDBA57321",
+          "name": "Bull City Records",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.91,
+          "popularity": 0.55,
+          "rating": 4.7,
+          "price_level": 2,
+          "address": "1002 Broad St, Durham, NC 27705",
+          "city": "Durham",
+          "description": "Independent record shop with new and used vinyl and a steady in-store event calendar.",
+          "tags": [
+            "Record Store"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:record_store"
+          ],
+          "why": [
+            "Big Thief (95%)",
+            "Waxahatchee (85%)",
+            "Adrianne Lenker (81%)"
+          ],
+          "lat": 36.0067,
+          "lon": -78.923,
+          "region": "NC"
+        },
+        {
+          "id": "501E0CE5-E652-452A-B83E-F6263ABA5DAA",
+          "name": "Nice Price Books & Records",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.82,
+          "popularity": 0.5,
+          "rating": 4.5,
+          "price_level": 1,
+          "address": "Durham, NC 27701",
+          "city": "Durham",
+          "description": "Used books and vinyl shop with crates for browsing.",
+          "tags": [
+            "Record Store"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:record_store"
+          ],
+          "why": [
+            "Big Thief (86%)",
+            "Waxahatchee (76%)",
+            "Adrianne Lenker (72%)"
+          ],
+          "lat": 35.997,
+          "lon": -78.901,
+          "region": "NC"
+        }
+      ]
+    },
+    {
+      "kind": "coffee shop",
+      "places": [
+        {
+          "id": "4A9E746C-D114-441B-A7BE-5E08F6C43FBF",
+          "name": "Cocoa Cinnamon",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.9,
+          "popularity": 0.6,
+          "rating": 4.6,
+          "price_level": 2,
+          "address": "420 W Geer St, Durham, NC 27701",
+          "city": "Durham",
+          "description": "Neighborhood cafe known for coffee and drinking chocolate, popular with a quiet-afternoon crowd.",
+          "tags": [
+            "Coffee Shop",
+            "Cafe"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:coffee_shop",
+            "urn:tag:genre:place:cafe"
+          ],
+          "why": [
+            "Big Thief (94%)",
+            "Waxahatchee (84%)",
+            "Adrianne Lenker (80%)"
+          ],
+          "lat": 36.0047,
+          "lon": -78.908,
+          "region": "NC"
+        },
+        {
+          "id": "EA7DBFC6-B0F0-496C-A6E3-0E7BB50591AE",
+          "name": "Counter Culture Coffee",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.84,
+          "popularity": 0.66,
+          "rating": 4.7,
+          "price_level": 2,
+          "address": "812 Elizabeth St, Durham, NC 27701",
+          "city": "Durham",
+          "description": "Durham-founded roaster with a tasting room and a loyal local following.",
+          "tags": [
+            "Coffee Shop",
+            "Cafe"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:coffee_shop",
+            "urn:tag:genre:place:cafe"
+          ],
+          "why": [
+            "Big Thief (88%)",
+            "Waxahatchee (78%)",
+            "Adrianne Lenker (74%)"
+          ],
+          "lat": 35.996,
+          "lon": -78.8963,
+          "region": "NC"
+        }
+      ]
+    },
+    {
+      "kind": "bookstore",
+      "places": [
+        {
+          "id": "56B45D5D-A8A7-4534-85B1-6737EBF44B8A",
+          "name": "The Regulator Bookshop",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.92,
+          "popularity": 0.7,
+          "rating": 4.8,
+          "price_level": 2,
+          "address": "720 9th St, Durham, NC 27705",
+          "city": "Durham",
+          "description": "Long-standing independent bookstore on Ninth Street with an active reading and events schedule.",
+          "tags": [
+            "Bookstore"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:bookstore"
+          ],
+          "why": [
+            "Big Thief (95%)",
+            "Waxahatchee (86%)",
+            "Adrianne Lenker (82%)"
+          ],
+          "lat": 36.0095,
+          "lon": -78.9227,
+          "region": "NC"
+        },
+        {
+          "id": "46120CB1-7BA3-4EA5-836E-A248026E4866",
+          "name": "Letters Bookshop",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.8,
+          "popularity": 0.45,
+          "rating": 4.7,
+          "price_level": 2,
+          "address": "Durham, NC 27701",
+          "city": "Durham",
+          "description": "Independent downtown bookshop with a curated stock of new titles.",
+          "tags": [
+            "Bookstore"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:bookstore"
+          ],
+          "why": [
+            "Big Thief (84%)",
+            "Waxahatchee (74%)",
+            "Adrianne Lenker (70%)"
+          ],
+          "lat": 35.9972,
+          "lon": -78.902,
+          "region": "NC"
+        }
+      ]
+    },
+    {
+      "kind": "dive bar",
+      "places": [
+        {
+          "id": "066C080A-A5B3-4A55-A2D4-EA9DDDA584EA",
+          "name": "Bull McCabe's Irish Pub",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.87,
+          "popularity": 0.55,
+          "rating": 4.4,
+          "price_level": 2,
+          "address": "427 W Main St, Durham, NC 27701",
+          "city": "Durham",
+          "description": "Downtown pub with a local crowd and regular live music nights.",
+          "tags": [
+            "Dive Bar",
+            "Bar"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:dive_bar",
+            "urn:tag:genre:place:bar"
+          ],
+          "why": [
+            "Big Thief (91%)",
+            "Waxahatchee (81%)",
+            "Adrianne Lenker (77%)"
+          ],
+          "lat": 35.9967,
+          "lon": -78.9047,
+          "region": "NC"
+        },
+        {
+          "id": "9A849F52-A031-4A8D-8313-9A29C0279894",
+          "name": "Boxcar Bar + Arcade",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.78,
+          "popularity": 0.5,
+          "rating": 4.4,
+          "price_level": 1,
+          "address": "Durham, NC 27701",
+          "city": "Durham",
+          "description": "Bar with pinball and arcade games and an easygoing, late-night crowd.",
+          "tags": [
+            "Dive Bar",
+            "Bar"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:dive_bar",
+            "urn:tag:genre:place:bar"
+          ],
+          "why": [
+            "Big Thief (82%)",
+            "Waxahatchee (72%)",
+            "Adrianne Lenker (68%)"
+          ],
+          "lat": 35.995,
+          "lon": -78.898,
+          "region": "NC"
+        }
+      ]
+    },
+    {
+      "kind": "vintage shop",
+      "places": [
+        {
+          "id": "8435438C-559D-4C13-B7D4-18FF934080B4",
+          "name": "Parker & Otis",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.83,
+          "popularity": 0.5,
+          "rating": 4.6,
+          "price_level": 2,
+          "address": "112 S Duke St, Durham, NC 27701",
+          "city": "Durham",
+          "description": "Downtown shop of gifts, vintage-leaning finds and curated goods.",
+          "tags": [
+            "Vintage Store",
+            "Thrift Store"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:vintage_store",
+            "urn:tag:genre:place:thrift_store"
+          ],
+          "why": [
+            "Big Thief (87%)",
+            "Waxahatchee (77%)",
+            "Adrianne Lenker (73%)"
+          ],
+          "lat": 35.9973,
+          "lon": -78.8986,
+          "region": "NC"
+        },
+        {
+          "id": "D703B578-EB6B-4765-B65A-C5C32C527B62",
+          "name": "The Scrap Exchange",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "affinity": 0.76,
+          "popularity": 0.52,
+          "rating": 4.6,
+          "price_level": 1,
+          "address": "548 Foster St, Durham, NC 27701",
+          "city": "Durham",
+          "description": "Creative reuse center and thrift-style shop packed with reclaimed materials and odds and ends.",
+          "tags": [
+            "Vintage Store",
+            "Thrift Store"
+          ],
+          "tagIds": [
+            "urn:tag:genre:place:vintage_store",
+            "urn:tag:genre:place:thrift_store"
+          ],
+          "why": [
+            "Big Thief (80%)",
+            "Waxahatchee (70%)",
+            "Adrianne Lenker (66%)"
+          ],
+          "lat": 35.9999,
+          "lon": -78.9,
+          "region": "NC"
+        }
+      ]
+    }
+  ],
+  "who": {
+    "scope": "comps-overall",
+    "age": {
+      "24_and_younger": 0.23,
+      "25_to_29": 0.49,
+      "30_to_34": 0.51,
+      "35_to_44": 0.32,
+      "45_to_54": 0.06,
+      "55_and_older": -0.23
+    },
+    "gender": {
+      "female": 0.24,
+      "male": -0.1
+    },
+    "strongestAge": "30_to_34",
+    "suggestions": [
+      "Fans of your comps overall index highest at 30 to 34; consider leading with rooms and promo partners that program for that age range.",
+      "The under-25 band is also positive; consider asking rooms whether an all-ages or early show is an option.",
+      "The 55-and-older band indexes low; consider a later set time if the room offers a choice."
+    ]
+  },
+  "localColor": {
+    "brands": [
+      {
+        "id": "CA29596C-A583-4C49-8B03-1FCE2A53EA05",
+        "name": "Carhartt",
+        "cityAffinity": 0.68,
+        "homeAffinity": 0.624,
+        "delta": 0.056
+      },
+      {
+        "id": "F4D0AB50-60CD-4B17-BF5B-3224D267EB2B",
+        "name": "Allbirds",
+        "cityAffinity": 0.65,
+        "homeAffinity": 0.605,
+        "delta": 0.045
+      },
+      {
+        "id": "140AED23-2F58-4FA0-B636-C9D5D473E429",
+        "name": "Blue Bottle Coffee",
+        "cityAffinity": 0.7,
+        "homeAffinity": 0.661,
+        "delta": 0.039
+      },
+      {
+        "id": "47D5D80A-D8DA-4F3A-A4DF-A99635B1BCB7",
+        "name": "Warby Parker",
+        "cityAffinity": 0.71,
+        "homeAffinity": 0.679,
+        "delta": 0.031
+      },
+      {
+        "id": "52039753-DD87-4F1B-8D75-3F55850FAD13",
+        "name": "La Colombe",
+        "cityAffinity": 0.76,
+        "homeAffinity": 0.734,
+        "delta": 0.026
+      }
+    ],
+    "shows": [
+      {
+        "id": "72E9BC0B-598B-43EF-8465-E61AD1CFF1DB",
+        "name": "Parks and Recreation",
+        "cityAffinity": 0.73,
+        "homeAffinity": 0.597,
+        "delta": 0.133
+      },
+      {
+        "id": "1726F37E-D9CA-43CC-8B62-4E9AF1FD2C5B",
+        "name": "Severance",
+        "cityAffinity": 0.74,
+        "homeAffinity": 0.652,
+        "delta": 0.088
+      },
+      {
+        "id": "377A96F7-A073-43FE-B56D-6E3331A4308F",
+        "name": "Gilmore Girls",
+        "cityAffinity": 0.79,
+        "homeAffinity": 0.744,
+        "delta": 0.046
+      },
+      {
+        "id": "BAF90461-5DF2-4491-9523-F0057E492CF9",
+        "name": "Succession",
+        "cityAffinity": 0.77,
+        "homeAffinity": 0.726,
+        "delta": 0.044
+      },
+      {
+        "id": "D7BD04AA-3B47-4DA4-9E4F-40A542F5B7D1",
+        "name": "Abbott Elementary",
+        "cityAffinity": 0.8,
+        "homeAffinity": 0.763,
+        "delta": 0.037
+      }
+    ],
+    "homeAvailable": true
+  },
+  "locality": {
+    "id": "89C317BE-2772-41A5-A4F0-49E14A3DE534",
+    "name": "Durham",
+    "label": "Durham, NC",
+    "rank": 9,
+    "affinity": 0.874,
+    "state": "NC",
+    "population": 283662,
+    "lat": 35.98,
+    "lon": -78.901,
+    "overIndex": false,
+    "why": [
+      "Big Thief (64%)",
+      "Waxahatchee (56%)",
+      "Adrianne Lenker (45%)"
+    ],
+    "topRoom": {
+      "id": "89C317BE-2772-41A5-A4F0-49E14A3DE534",
+      "name": "Motorco Music Hall",
+      "affinity": 0.874,
+      "why": [
+        "Big Thief (64%)",
+        "Waxahatchee (56%)",
+        "Adrianne Lenker (45%)"
+      ]
+    }
+  },
+  "card": {
+    "summary": "Durham ranks #9 nationally for fans of your comps, with a locality affinity of 0.874 led by Big Thief (64%), followed by Waxahatchee (56%) and Adrianne Lenker (45%). It does not carry the over-index flag (its population is above 250,000), but its top room, Motorco Music Hall, makes it a strong anchor on the route.",
+    "rooms_note": "Motorco Music Hall is the top room for fans of your comps around Durham at 0.93 affinity, driven most by Big Thief (95%), with The Pinhook close behind at 0.88.",
+    "promo_note": "Bookstores lead the promo partners, with The Regulator Bookshop at 0.92 affinity (Big Thief 95%), and Bull City Records at 0.91 is a natural record-store pairing.",
+    "who_note": "Fans of your comps overall index highest at 30 to 34 (0.51), with 25 to 29 close behind (0.49), so consider leading with rooms and promo partners that program for that late-twenties to early-thirties range.",
+    "local_color_note": "Parks and Recreation shows the biggest lift over Richmond (0.73 vs. 0.597, a +0.133 delta) and Carhartt leads brands at +0.056, hinting that a warm, small-town-humor poster and sturdy workwear-style merch could land with fans of your comps around Durham.",
+    "promo_copy": [
+      "Big Thief fans in Durham: there's a new record you'll want to hear.",
+      "For the Waxahatchee and Adrianne Lenker crowd in Durham, a tour stop is coming."
+    ],
+    "caution": "These are aggregate taste affinities, not attendance or sales figures, so confirm capacity, age policy, and availability directly with each room."
+  },
+  "receipts": [
+    {
+      "id": "rmv3hxk4s-258",
+      "tool": "find_rooms",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Durham%2C+NC&filter.location.radius=15000&filter.tags=urn%3Atag%3Acategory%3Aplace%3Alive_music_venue%2Curn%3Atag%3Agenre%3Aplace%3Abar%3Alive_music%2Curn%3Atag%3Agenre%3Aplace%3Aconcert_hall%2Curn%3Atag%3Agenre%3Aplace%3Amusic_venue&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=8&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 8,
+      "top": [
+        {
+          "name": "Motorco Music Hall",
+          "affinity": 0.93
+        },
+        {
+          "name": "The Pinhook",
+          "affinity": 0.88
+        },
+        {
+          "name": "Carolina Theatre of Durham",
+          "affinity": 0.84
+        }
+      ]
+    },
+    {
+      "id": "rmv3hxk4s-259",
+      "tool": "who_shows_up",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Ademographics&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 3,
+      "top": []
+    },
+    {
+      "id": "rmv3hxk4s-260",
+      "tool": "local_color",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Abrand&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Durham%2C+NC&signal.location.radius=25000&take=20",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 20,
+      "top": [
+        {
+          "name": "Patagonia",
+          "affinity": 0.92
+        },
+        {
+          "name": "Merge Records",
+          "affinity": 0.91
+        },
+        {
+          "name": "Subaru",
+          "affinity": 0.89
+        }
+      ]
+    },
+    {
+      "id": "rmv3hxk4s-261",
+      "tool": "local_color",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Atv_show&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Durham%2C+NC&signal.location.radius=25000&take=20",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 20,
+      "top": [
+        {
+          "name": "Fleabag",
+          "affinity": 0.92
+        },
+        {
+          "name": "Reservation Dogs",
+          "affinity": 0.91
+        },
+        {
+          "name": "Somebody Somewhere",
+          "affinity": 0.89
+        }
+      ]
+    },
+    {
+      "id": "rmv3hxk4s-262",
+      "tool": "local_color",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Abrand&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Richmond%2C+VA&signal.location.radius=25000&take=20",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 20,
+      "top": [
+        {
+          "name": "Patagonia",
+          "affinity": 0.9
+        },
+        {
+          "name": "Subaru",
+          "affinity": 0.882
+        },
+        {
+          "name": "Trader Joe's",
+          "affinity": 0.863
+        }
+      ]
+    },
+    {
+      "id": "rmv3hxk4s-263",
+      "tool": "local_color",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Atv_show&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Richmond%2C+VA&signal.location.radius=25000&take=20",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 20,
+      "top": [
+        {
+          "name": "Fleabag",
+          "affinity": 0.91
+        },
+        {
+          "name": "Reservation Dogs",
+          "affinity": 0.892
+        },
+        {
+          "name": "Somebody Somewhere",
+          "affinity": 0.873
+        }
+      ]
+    },
+    {
+      "id": "rmv3hxk4s-264",
+      "tool": "find_promo_partners",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Durham%2C+NC&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Arecord_store&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 2,
+      "top": [
+        {
+          "name": "Bull City Records",
+          "affinity": 0.91
+        },
+        {
+          "name": "Nice Price Books & Records",
+          "affinity": 0.82
+        }
+      ]
+    },
+    {
+      "id": "rmv3hxk4s-265",
+      "tool": "find_promo_partners",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Durham%2C+NC&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Acafe%2Curn%3Atag%3Agenre%3Aplace%3Acoffee_shop&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 2,
+      "top": [
+        {
+          "name": "Cocoa Cinnamon",
+          "affinity": 0.9
+        },
+        {
+          "name": "Counter Culture Coffee",
+          "affinity": 0.84
+        }
+      ]
+    },
+    {
+      "id": "rmv3hxk4s-266",
+      "tool": "find_promo_partners",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Durham%2C+NC&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abookstore&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 2,
+      "top": [
+        {
+          "name": "The Regulator Bookshop",
+          "affinity": 0.92
+        },
+        {
+          "name": "Letters Bookshop",
+          "affinity": 0.8
+        }
+      ]
+    },
+    {
+      "id": "rmv3hxk4s-267",
+      "tool": "find_promo_partners",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Durham%2C+NC&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abar%2Curn%3Atag%3Agenre%3Aplace%3Adive_bar&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 2,
+      "top": [
+        {
+          "name": "Bull McCabe's Irish Pub",
+          "affinity": 0.87
+        },
+        {
+          "name": "Boxcar Bar + Arcade",
+          "affinity": 0.78
+        }
+      ]
+    },
+    {
+      "id": "rmv3hxk4s-268",
+      "tool": "find_promo_partners",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Durham%2C+NC&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Athrift_store%2Curn%3Atag%3Agenre%3Aplace%3Avintage_store&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 2,
+      "top": [
+        {
+          "name": "Parker & Otis",
+          "affinity": 0.83
+        },
+        {
+          "name": "The Scrap Exchange",
+          "affinity": 0.76
+        }
+      ]
+    }
+  ]
+}

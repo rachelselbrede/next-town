@@ -24,9 +24,13 @@
         {
           "entity_id": "F0F4F888-8DE0-4767-8AFB-F4F9304C4D57",
           "name": "Headliners Music Hall",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:music_venue",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "popularity": 0.86,
+          "location": {
+            "lat": 38.253,
+            "lon": -85.759
+          },
           "properties": {
             "description": "Mid-size standing room off Lexington Road that has hosted most touring indie acts passing through Louisville.",
             "address": "1386 Lexington Rd, Louisville, KY 40206",
@@ -41,42 +45,46 @@
           },
           "tags": [
             {
+              "id": "urn:tag:genre:place:music_venue",
               "name": "Music Venue",
-              "tag_id": "urn:tag:genre:place:music_venue",
               "type": "urn:tag:genre:place"
             },
             {
+              "id": "urn:tag:category:place:live_music_venue",
               "name": "Live Music Venue",
-              "tag_id": "urn:tag:category:place:live_music_venue",
               "type": "urn:tag:category:place"
             }
           ],
           "query": {
             "affinity": 0.93,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.736
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.656
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.596
                 }
-              }
+              ]
             }
           }
         },
         {
           "entity_id": "6A727F29-D379-4B75-97E6-DE18EFACBD88",
           "name": "Zanzabar",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:bar",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "popularity": 0.74,
+          "location": {
+            "lat": 38.253,
+            "lon": -85.759
+          },
           "properties": {
             "description": "Schnitzelburg bar with pinball, a kitchen, and a back room stage that leans on indie and folk bills.",
             "address": "2100 S Preston St, Louisville, KY 40217",
@@ -91,42 +99,46 @@
           },
           "tags": [
             {
+              "id": "urn:tag:genre:place:bar:live_music",
               "name": "Bar with Live Music",
-              "tag_id": "urn:tag:genre:place:bar:live_music",
               "type": "urn:tag:genre:place"
             },
             {
+              "id": "urn:tag:genre:place:music_venue",
               "name": "Music Venue",
-              "tag_id": "urn:tag:genre:place:music_venue",
               "type": "urn:tag:genre:place"
             }
           ],
           "query": {
             "affinity": 0.886,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.66
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.58
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.52
                 }
-              }
+              ]
             }
           }
         },
         {
           "entity_id": "5158B56A-587E-452A-ABFD-83406FAE388C",
           "name": "Old Forester's Paristown Hall",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:concert_hall",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "popularity": 0.78,
+          "location": {
+            "lat": 38.253,
+            "lon": -85.759
+          },
           "properties": {
             "description": "Newer hall in the Paristown district with a tall room and clean sound for bigger indie nights.",
             "address": "724 Brent St, Louisville, KY 40204",
@@ -141,42 +153,46 @@
           },
           "tags": [
             {
+              "id": "urn:tag:genre:place:concert_hall",
               "name": "Concert Hall",
-              "tag_id": "urn:tag:genre:place:concert_hall",
               "type": "urn:tag:genre:place"
             },
             {
+              "id": "urn:tag:category:place:live_music_venue",
               "name": "Live Music Venue",
-              "tag_id": "urn:tag:category:place:live_music_venue",
               "type": "urn:tag:category:place"
             }
           ],
           "query": {
             "affinity": 0.841,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.663
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.583
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.523
                 }
-              }
+              ]
             }
           }
         },
         {
           "entity_id": "ACB91000-900C-4385-BA91-1EAA66B49C1F",
           "name": "Mercury Ballroom",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:music_venue",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "popularity": 0.76,
+          "location": {
+            "lat": 38.253,
+            "lon": -85.759
+          },
           "properties": {
             "description": "Downtown ballroom on Fourth Street that books a broad mix of touring bands.",
             "address": "611 S 4th St, Louisville, KY 40202",
@@ -191,42 +207,46 @@
           },
           "tags": [
             {
+              "id": "urn:tag:genre:place:music_venue",
               "name": "Music Venue",
-              "tag_id": "urn:tag:genre:place:music_venue",
               "type": "urn:tag:genre:place"
             },
             {
+              "id": "urn:tag:category:place:live_music_venue",
               "name": "Live Music Venue",
-              "tag_id": "urn:tag:category:place:live_music_venue",
               "type": "urn:tag:category:place"
             }
           ],
           "query": {
             "affinity": 0.797,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.596
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.516
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.456
                 }
-              }
+              ]
             }
           }
         },
         {
           "entity_id": "1F3E81C3-BBFF-4CBF-A163-F29F1D878211",
           "name": "Whirling Tiger",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:bar",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "popularity": 0.55,
+          "location": {
+            "lat": 38.253,
+            "lon": -85.759
+          },
           "properties": {
             "description": "Butchertown bar and stage with a loyal local-music crowd and a low door.",
             "address": "1335 Story Ave, Louisville, KY 40206",
@@ -241,42 +261,46 @@
           },
           "tags": [
             {
+              "id": "urn:tag:genre:place:bar:live_music",
               "name": "Bar with Live Music",
-              "tag_id": "urn:tag:genre:place:bar:live_music",
               "type": "urn:tag:genre:place"
             },
             {
+              "id": "urn:tag:genre:place:music_venue",
               "name": "Music Venue",
-              "tag_id": "urn:tag:genre:place:music_venue",
               "type": "urn:tag:genre:place"
             }
           ],
           "query": {
             "affinity": 0.753,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.62
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.54
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.48
                 }
-              }
+              ]
             }
           }
         },
         {
           "entity_id": "E9579697-70BA-4995-B33F-868FB117A464",
           "name": "Monnik Beer Co.",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:bar",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "popularity": 0.5,
+          "location": {
+            "lat": 38.253,
+            "lon": -85.759
+          },
           "properties": {
             "description": "Schnitzelburg brewery and kitchen that hosts occasional acoustic and small-band nights.",
             "address": "1036 E Burnett Ave, Louisville, KY 40217",
@@ -291,37 +315,41 @@
           },
           "tags": [
             {
+              "id": "urn:tag:genre:place:bar:live_music",
               "name": "Bar with Live Music",
-              "tag_id": "urn:tag:genre:place:bar:live_music",
               "type": "urn:tag:genre:place"
             }
           ],
           "query": {
             "affinity": 0.709,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.573
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.493
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.433
                 }
-              }
+              ]
             }
           }
         },
         {
           "entity_id": "2314E9C1-56EF-4B79-80A0-47B27A8092C5",
           "name": "Louisville Palace",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:concert_hall",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "popularity": 0.84,
+          "location": {
+            "lat": 38.253,
+            "lon": -85.759
+          },
           "properties": {
             "description": "Ornate 1928 theater on Fourth Street that seats a few thousand for the biggest folk and indie draws.",
             "address": "625 S 4th St, Louisville, KY 40202",
@@ -336,37 +364,41 @@
           },
           "tags": [
             {
+              "id": "urn:tag:genre:place:concert_hall",
               "name": "Concert Hall",
-              "tag_id": "urn:tag:genre:place:concert_hall",
               "type": "urn:tag:genre:place"
             }
           ],
           "query": {
             "affinity": 0.664,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.536
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.456
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.396
                 }
-              }
+              ]
             }
           }
         },
         {
           "entity_id": "EDAE8426-3615-4672-9376-9157B6BEF791",
           "name": "Kentucky Center (Bomhard Theater)",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:concert_hall",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "popularity": 0.72,
+          "location": {
+            "lat": 38.253,
+            "lon": -85.759
+          },
           "properties": {
             "description": "Riverside arts center whose smaller Bomhard Theater suits seated listening-room shows.",
             "address": "501 W Main St, Louisville, KY 40202",
@@ -381,28 +413,28 @@
           },
           "tags": [
             {
+              "id": "urn:tag:genre:place:concert_hall",
               "name": "Concert Hall",
-              "tag_id": "urn:tag:genre:place:concert_hall",
               "type": "urn:tag:genre:place"
             }
           ],
           "query": {
             "affinity": 0.62,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.545
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.465
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.405
                 }
-              }
+              ]
             }
           }
         }

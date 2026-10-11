@@ -1,0 +1,283 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "local_color",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Abrand&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Baltimore%2C%20MD&signal.location.radius=25000&take=20",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:brand",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "signal.location.query": "Baltimore, MD",
+      "signal.location.radius": 25000,
+      "take": 20
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "81FF9E58-99F1-4C63-9F2F-7D85FA8D6964",
+          "name": "Patagonia",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.86,
+          "properties": {
+            "description": "Outdoor apparel brand with a loud environmental mission."
+          },
+          "query": {
+            "affinity": 0.91
+          }
+        },
+        {
+          "entity_id": "AC8120D3-F632-4821-92A3-70E5C4A3343C",
+          "name": "Subaru",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.84,
+          "properties": {
+            "description": "Carmaker whose all-wheel-drive wagons are a fixture at trailheads and farmers markets."
+          },
+          "query": {
+            "affinity": 0.885
+          }
+        },
+        {
+          "entity_id": "753F76AB-F8F3-4DB9-9076-5541D45875DF",
+          "name": "Trader Joe's",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.83,
+          "properties": {
+            "description": "Grocery chain known for cheap wine, frozen dumplings, and friendly cashiers."
+          },
+          "query": {
+            "affinity": 0.866
+          }
+        },
+        {
+          "entity_id": "7C8DF92F-D4B9-45DE-9144-A0E36C0C6897",
+          "name": "REI",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.79,
+          "properties": {
+            "description": "Outdoor gear co-op with a member dividend."
+          },
+          "query": {
+            "affinity": 0.846
+          }
+        },
+        {
+          "entity_id": "2E0AAE19-E8CF-46FB-A508-B3E176D78310",
+          "name": "Wawa",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.78,
+          "properties": {
+            "description": "Mid-Atlantic convenience chain with a cult following for hoagies and coffee."
+          },
+          "query": {
+            "affinity": 0.83
+          }
+        },
+        {
+          "entity_id": "27D55E00-0CF5-4565-82B7-F2FEFB015D45",
+          "name": "Under Armour",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "properties": {
+            "description": "Performance apparel company founded in Baltimore, with a headquarters on the Locust Point waterfront."
+          },
+          "popularity": 0.77,
+          "query": {
+            "affinity": 0.812
+          }
+        },
+        {
+          "entity_id": "77FB5E40-2CD4-4746-8744-3E14DC6BAD39",
+          "name": "Union Craft Brewing",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "properties": {
+            "description": "Woodberry craft brewery with a big taproom, known for Duckpin Pale Ale and bocce on the lawn."
+          },
+          "popularity": 0.74,
+          "query": {
+            "affinity": 0.795
+          }
+        },
+        {
+          "entity_id": "52039753-DD87-4F1B-8D75-3F55850FAD13",
+          "name": "La Colombe",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.7,
+          "properties": {
+            "description": "Philadelphia coffee roaster with canned draft lattes in every co-op."
+          },
+          "query": {
+            "affinity": 0.775
+          }
+        },
+        {
+          "entity_id": "B33E9033-D54B-4B07-A439-14C0322C161D",
+          "name": "Levi's",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.69,
+          "properties": {
+            "description": "Denim brand with a vintage-friendly back catalog."
+          },
+          "query": {
+            "affinity": 0.757
+          }
+        },
+        {
+          "entity_id": "D44CBBD6-C6E8-455A-94B4-88B6A05B0591",
+          "name": "Blundstone",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.68,
+          "properties": {
+            "description": "Tasmanian pull-on boot brand beloved by people who walk a lot."
+          },
+          "query": {
+            "affinity": 0.738
+          }
+        },
+        {
+          "entity_id": "140AED23-2F58-4FA0-B636-C9D5D473E429",
+          "name": "Blue Bottle Coffee",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.66,
+          "properties": {
+            "description": "Third-wave coffee chain with minimalist cafes."
+          },
+          "query": {
+            "affinity": 0.72
+          }
+        },
+        {
+          "entity_id": "C383BC81-095F-4365-A7BC-1ECB0B52A75D",
+          "name": "Old Bay",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "properties": {
+            "description": "Spice blend that Baltimore puts on crabs, fries and just about everything else."
+          },
+          "popularity": 0.65,
+          "query": {
+            "affinity": 0.702
+          }
+        },
+        {
+          "entity_id": "1E64D934-320B-4FB7-921B-58DB10BE96EA",
+          "name": "Birkenstock",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.63,
+          "properties": {
+            "description": "German sandal maker with a cork footbed and a cult following."
+          },
+          "query": {
+            "affinity": 0.685
+          }
+        },
+        {
+          "entity_id": "1C5AE16E-AD25-42A9-9908-2F073EE57471",
+          "name": "Wegmans",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.62,
+          "properties": {
+            "description": "Family-owned regional grocery chain with a devoted following."
+          },
+          "query": {
+            "affinity": 0.668
+          }
+        },
+        {
+          "entity_id": "47D5D80A-D8DA-4F3A-A4DF-A99635B1BCB7",
+          "name": "Warby Parker",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.6,
+          "properties": {
+            "description": "Direct-to-consumer eyewear brand with a try-at-home program."
+          },
+          "query": {
+            "affinity": 0.65
+          }
+        },
+        {
+          "entity_id": "FDA81678-4C17-4303-9441-418469E37D76",
+          "name": "Royal Farms",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "properties": {
+            "description": "Chicken-and-coffee convenience stores that are a Baltimore road-trip staple."
+          },
+          "popularity": 0.58,
+          "query": {
+            "affinity": 0.632
+          }
+        },
+        {
+          "entity_id": "AA63C1DD-01CA-4577-8C56-B3572ED68CB3",
+          "name": "Cava",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.56,
+          "properties": {
+            "description": "Mediterranean fast-casual chain that began in the DC area."
+          },
+          "query": {
+            "affinity": 0.615
+          }
+        },
+        {
+          "entity_id": "CA29596C-A583-4C49-8B03-1FCE2A53EA05",
+          "name": "Carhartt",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.54,
+          "properties": {
+            "description": "Workwear brand adopted by musicians and carpenters alike."
+          },
+          "query": {
+            "affinity": 0.598
+          }
+        },
+        {
+          "entity_id": "79105CB8-2649-4620-A2F8-0B53D5B8A831",
+          "name": "Fjallraven",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.52,
+          "properties": {
+            "description": "Swedish outdoor brand known for the Kanken backpack."
+          },
+          "query": {
+            "affinity": 0.58
+          }
+        },
+        {
+          "entity_id": "AEE0A3F7-DDD4-44CA-8546-9328E070D642",
+          "name": "Yuengling",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.5,
+          "properties": {
+            "description": "America's oldest brewery, from Pottsville, found on nearly every Pennsylvania tap line."
+          },
+          "query": {
+            "affinity": 0.562
+          }
+        }
+      ]
+    }
+  }
+}

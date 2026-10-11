@@ -1,0 +1,466 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_rooms",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?feature.explainability=true&filter.location.query=Nashville%2C%20TN&filter.location.radius=15000&filter.tags=urn%3Atag%3Acategory%3Aplace%3Alive_music_venue%2Curn%3Atag%3Agenre%3Aplace%3Abar%3Alive_music%2Curn%3Atag%3Agenre%3Aplace%3Aconcert_hall%2Curn%3Atag%3Agenre%3Aplace%3Amusic_venue&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=8",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Nashville, TN",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:category:place:live_music_venue,urn:tag:genre:place:bar:live_music,urn:tag:genre:place:concert_hall,urn:tag:genre:place:music_venue",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "sort_by": "affinity",
+      "take": 8,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "30CFBE87-572B-4D05-AADA-3D3FBD799A2B",
+          "name": "The Basement East",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.84,
+          "location": {
+            "lat": 36.1763,
+            "lon": -86.7509
+          },
+          "properties": {
+            "description": "East Nashville room rebuilt after the 2020 tornado; a big stage for a mid-size crowd.",
+            "address": "917 Woodland St, Nashville, TN 37206",
+            "geocode": {
+              "name": "Nashville",
+              "city": "Nashville",
+              "admin1_region": "TN",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 2,
+            "website": "https://thebasementeast.com"
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.92,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.75
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.67
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.6
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "A1488BA8-2760-45B1-AFB2-413F4642E6DF",
+          "name": "Exit/In",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.8,
+          "location": {
+            "lat": 36.1514,
+            "lon": -86.8004
+          },
+          "properties": {
+            "description": "Rock-and-roll club near Vanderbilt with decades of touring indie and folk acts on its stage.",
+            "address": "2208 Elliston Pl, Nashville, TN 37203",
+            "geocode": {
+              "name": "Nashville",
+              "city": "Nashville",
+              "admin1_region": "TN",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 2,
+            "website": "https://exitin.com"
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.87,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.73
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.6
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.59
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "8180F0B3-262C-4BC7-B760-E8C996D3444F",
+          "name": "The 5 Spot",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.7,
+          "location": {
+            "lat": 36.181,
+            "lon": -86.7438
+          },
+          "properties": {
+            "description": "Neighborhood East Nashville bar and stage where small touring bands play to a loyal local crowd.",
+            "address": "1006 Forrest Ave, Nashville, TN 37206",
+            "geocode": {
+              "name": "Nashville",
+              "city": "Nashville",
+              "admin1_region": "TN",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.82,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.71
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.59
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.52
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "BBB5FC8E-AAB2-4622-AF69-7A906A00B839",
+          "name": "The Basement",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.72,
+          "location": {
+            "lat": 36.1372,
+            "lon": -86.7885
+          },
+          "properties": {
+            "description": "Intimate listening room under 8th Avenue South, a favorite for songwriters and early-career tours.",
+            "address": "1604 8th Ave S, Nashville, TN 37203",
+            "geocode": {
+              "name": "Nashville",
+              "city": "Nashville",
+              "admin1_region": "TN",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 2,
+            "website": "https://thebasementnashville.com"
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.78,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.64
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.59
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.51
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "D4A1E883-16CE-4E55-A2F8-5F029304B1C1",
+          "name": "Mercy Lounge",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.78,
+          "location": {
+            "lat": 36.1584,
+            "lon": -86.7713
+          },
+          "properties": {
+            "description": "Mid-size room in the Cannery with a long record of indie rock and Americana nights.",
+            "address": "1 Cannery Row, Nashville, TN 37203",
+            "geocode": {
+              "name": "Nashville",
+              "city": "Nashville",
+              "admin1_region": "TN",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 2,
+            "website": "https://mercylounge.com"
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.74,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.63
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.52
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.51
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "93FB5F5C-33FE-49E2-B44D-4EA4C05DA02B",
+          "name": "The Bluebird Cafe",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.83,
+          "location": {
+            "lat": 36.1088,
+            "lon": -86.8179
+          },
+          "properties": {
+            "description": "Tiny songwriters-in-the-round room in Green Hills where the audience goes quiet for the song.",
+            "address": "4104 Hillsboro Pike, Nashville, TN 37215",
+            "geocode": {
+              "name": "Nashville",
+              "city": "Nashville",
+              "admin1_region": "TN",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 2,
+            "website": "https://bluebirdcafe.com"
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.69,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.56
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.51
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.44
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "06866967-878C-4CCC-8DB7-D7779FA5D40C",
+          "name": "Station Inn",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.74,
+          "location": {
+            "lat": 36.1564,
+            "lon": -86.7893
+          },
+          "properties": {
+            "description": "Cinder-block bluegrass and acoustic club in the Gulch, loved for its sound and no-frills seats.",
+            "address": "402 12th Ave S, Nashville, TN 37203",
+            "geocode": {
+              "name": "Nashville",
+              "city": "Nashville",
+              "admin1_region": "TN",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 1,
+            "website": "https://stationinn.com"
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.65,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.55
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.44
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.44
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "1E82682B-AF16-4650-8035-31BACE4D7676",
+          "name": "Cannery Ballroom",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.8,
+          "location": {
+            "lat": 36.1582,
+            "lon": -86.7711
+          },
+          "properties": {
+            "description": "Larger converted-cannery hall that works as a step-up room for touring acts with a growing draw.",
+            "address": "1 Cannery Row, Nashville, TN 37203",
+            "geocode": {
+              "name": "Nashville",
+              "city": "Nashville",
+              "admin1_region": "TN",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 2,
+            "website": "https://cannerynashville.com"
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:music_venue",
+              "name": "Music Venue",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:category:place:live_music_venue",
+              "name": "Live Music Venue",
+              "type": "urn:tag:category:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.6,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.53
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.43
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.37
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -20,7 +20,7 @@
         {
           "entity_id": "81FF9E58-99F1-4C63-9F2F-7D85FA8D6964",
           "name": "Patagonia",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.85,
           "properties": {
@@ -33,7 +33,7 @@
         {
           "entity_id": "AC8120D3-F632-4821-92A3-70E5C4A3343C",
           "name": "Subaru",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.83,
           "properties": {
@@ -46,7 +46,7 @@
         {
           "entity_id": "753F76AB-F8F3-4DB9-9076-5541D45875DF",
           "name": "Trader Joe's",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.81,
           "properties": {
@@ -59,7 +59,7 @@
         {
           "entity_id": "7C8DF92F-D4B9-45DE-9144-A0E36C0C6897",
           "name": "REI",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.79,
           "properties": {
@@ -72,7 +72,7 @@
         {
           "entity_id": "72503455-6D19-4291-99BC-B7BAE250674B",
           "name": "Grist House Craft Brewery",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.77,
           "properties": {
@@ -85,7 +85,7 @@
         {
           "entity_id": "B33E9033-D54B-4B07-A439-14C0322C161D",
           "name": "Levi's",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.75,
           "properties": {
@@ -98,7 +98,7 @@
         {
           "entity_id": "A9788DFF-927F-4229-8494-CC28180A6B5C",
           "name": "East End Brewing Company",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.73,
           "properties": {
@@ -111,7 +111,7 @@
         {
           "entity_id": "79105CB8-2649-4620-A2F8-0B53D5B8A831",
           "name": "Fjallraven",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.71,
           "properties": {
@@ -124,7 +124,7 @@
         {
           "entity_id": "52039753-DD87-4F1B-8D75-3F55850FAD13",
           "name": "La Colombe",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.69,
           "properties": {
@@ -137,7 +137,7 @@
         {
           "entity_id": "D44CBBD6-C6E8-455A-94B4-88B6A05B0591",
           "name": "Blundstone",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.67,
           "properties": {
@@ -150,7 +150,7 @@
         {
           "entity_id": "B44CB639-CB3E-4931-ABA5-4A2F5B2DAAAC",
           "name": "Dancing Gnome",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.65,
           "properties": {
@@ -163,7 +163,7 @@
         {
           "entity_id": "47D5D80A-D8DA-4F3A-A4DF-A99635B1BCB7",
           "name": "Warby Parker",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.63,
           "properties": {
@@ -176,7 +176,7 @@
         {
           "entity_id": "E02ADCAF-5406-4313-BB26-67758B3A101B",
           "name": "Giant Eagle",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.61,
           "properties": {
@@ -189,7 +189,7 @@
         {
           "entity_id": "1E64D934-320B-4FB7-921B-58DB10BE96EA",
           "name": "Birkenstock",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.59,
           "properties": {
@@ -202,7 +202,7 @@
         {
           "entity_id": "9DE83486-ADBD-4F37-A27A-FB06674B0F90",
           "name": "Prantl's Bakery",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.57,
           "properties": {
@@ -215,7 +215,7 @@
         {
           "entity_id": "CC32F29D-F291-40D1-A315-06E800B57645",
           "name": "Hydro Flask",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.55,
           "properties": {
@@ -228,7 +228,7 @@
         {
           "entity_id": "723BD692-EAE6-4058-87C0-8DC8B614511C",
           "name": "La Prima Espresso",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.53,
           "properties": {
@@ -241,7 +241,7 @@
         {
           "entity_id": "F4D0AB50-60CD-4B17-BF5B-3224D267EB2B",
           "name": "Allbirds",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.51,
           "properties": {
@@ -254,7 +254,7 @@
         {
           "entity_id": "2F0226A6-5920-4EE7-9C9C-FB2B1522C413",
           "name": "Iron City Beer",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.49,
           "properties": {
@@ -267,7 +267,7 @@
         {
           "entity_id": "521076DF-3EFD-445E-B86C-B5E4864B2841",
           "name": "Heinz",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.47,
           "properties": {

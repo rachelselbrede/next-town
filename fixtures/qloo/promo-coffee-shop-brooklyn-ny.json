@@ -1,0 +1,135 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_promo_partners",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?feature.explainability=true&filter.location.query=Brooklyn%2C%20NY&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Acafe%2Curn%3Atag%3Agenre%3Aplace%3Acoffee_shop&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Brooklyn, NY",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:genre:place:cafe,urn:tag:genre:place:coffee_shop",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "sort_by": "affinity",
+      "take": 2,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "6D4C0742-C16A-52E3-87D0-C3BA5E659A1D",
+          "name": "Devoción",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.66,
+          "location": {
+            "lat": 40.7222,
+            "lon": -73.9627
+          },
+          "properties": {
+            "address": "69 Grand St, Brooklyn, NY 11249",
+            "geocode": {
+              "name": "Brooklyn",
+              "city": "Brooklyn",
+              "admin1_region": "NY",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 2,
+            "description": "Skylit Williamsburg cafe roasting Colombian beans."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:coffee_shop",
+              "name": "Coffee Shop",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:genre:place:cafe",
+              "name": "Cafe",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.86,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.84
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.76
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.7
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "DECC6651-0C9B-5F6F-81DA-49341A018225",
+          "name": "Sey Coffee",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.52,
+          "location": {
+            "lat": 40.706,
+            "lon": -73.9327
+          },
+          "properties": {
+            "address": "18 Grattan St, Brooklyn, NY 11206",
+            "geocode": {
+              "name": "Brooklyn",
+              "city": "Brooklyn",
+              "admin1_region": "NY",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 2,
+            "description": "Light-roast specialty coffee bar in a bright Bushwick space."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:coffee_shop",
+              "name": "Coffee Shop",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:genre:place:cafe",
+              "name": "Cafe",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.79,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.71
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.79
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.67
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

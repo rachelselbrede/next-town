@@ -1,0 +1,283 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "local_color",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Abrand&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Northampton%2C%20MA&signal.location.radius=25000&take=20",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:brand",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "signal.location.query": "Northampton, MA",
+      "signal.location.radius": 25000,
+      "take": 20
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "753F76AB-F8F3-4DB9-9076-5541D45875DF",
+          "name": "Trader Joe's",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.86,
+          "properties": {
+            "description": "Grocery chain known for cheap wine, frozen dumplings, and friendly cashiers."
+          },
+          "query": {
+            "affinity": 0.9
+          }
+        },
+        {
+          "entity_id": "6D1767D4-52AE-4594-84D2-EFC446664609",
+          "name": "King Arthur Baking Company",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.85,
+          "properties": {
+            "description": "Vermont flour maker and baking school with a devoted home-baker following."
+          },
+          "query": {
+            "affinity": 0.883
+          }
+        },
+        {
+          "entity_id": "79105CB8-2649-4620-A2F8-0B53D5B8A831",
+          "name": "Fjallraven",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.85,
+          "properties": {
+            "description": "Swedish outdoor brand known for the Kanken backpack."
+          },
+          "query": {
+            "affinity": 0.865
+          }
+        },
+        {
+          "entity_id": "47D5D80A-D8DA-4F3A-A4DF-A99635B1BCB7",
+          "name": "Warby Parker",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.84,
+          "properties": {
+            "description": "Direct-to-consumer eyewear brand with a try-at-home program."
+          },
+          "query": {
+            "affinity": 0.848
+          }
+        },
+        {
+          "entity_id": "1E64D934-320B-4FB7-921B-58DB10BE96EA",
+          "name": "Birkenstock",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.82,
+          "properties": {
+            "description": "German sandal maker with a cork footbed and a cult following."
+          },
+          "query": {
+            "affinity": 0.83
+          }
+        },
+        {
+          "entity_id": "81FF9E58-99F1-4C63-9F2F-7D85FA8D6964",
+          "name": "Patagonia",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.83,
+          "properties": {
+            "description": "Outdoor apparel brand with a loud environmental mission."
+          },
+          "query": {
+            "affinity": 0.812
+          }
+        },
+        {
+          "entity_id": "5FCE39FB-0BBB-45C7-8943-6FDAE3045BF0",
+          "name": "Ben & Jerry's",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.82,
+          "properties": {
+            "description": "Vermont ice cream company known for chunky flavors and a loud progressive streak."
+          },
+          "query": {
+            "affinity": 0.795
+          }
+        },
+        {
+          "entity_id": "7C8DF92F-D4B9-45DE-9144-A0E36C0C6897",
+          "name": "REI",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.8,
+          "properties": {
+            "description": "Outdoor gear co-op with a member dividend."
+          },
+          "query": {
+            "affinity": 0.777
+          }
+        },
+        {
+          "entity_id": "42822EE9-0CEC-419A-B3E2-CF7F82C4FF6A",
+          "name": "Bandcamp",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.79,
+          "properties": {
+            "description": "Bandcamp: a brand fans of these comps around Bloomington, IN over-index on."
+          },
+          "query": {
+            "affinity": 0.76
+          }
+        },
+        {
+          "entity_id": "92AE7889-8825-41F9-9786-BDC1C2B1807A",
+          "name": "Merge Records",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.79,
+          "properties": {
+            "description": "The Durham indie label that grew out of the Chapel Hill scene."
+          },
+          "query": {
+            "affinity": 0.742
+          }
+        },
+        {
+          "entity_id": "08B5BD80-4466-4D0A-8C7D-978AEEC693A4",
+          "name": "Cabot Creamery",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.77,
+          "properties": {
+            "description": "Cooperative dairy brand from Vermont known for sharp cheddar."
+          },
+          "query": {
+            "affinity": 0.725
+          }
+        },
+        {
+          "entity_id": "AC8120D3-F632-4821-92A3-70E5C4A3343C",
+          "name": "Subaru",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.78,
+          "properties": {
+            "description": "Carmaker whose all-wheel-drive wagons are a fixture at trailheads and farmers markets."
+          },
+          "query": {
+            "affinity": 0.708
+          }
+        },
+        {
+          "entity_id": "CA29596C-A583-4C49-8B03-1FCE2A53EA05",
+          "name": "Carhartt",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.77,
+          "properties": {
+            "description": "Workwear brand adopted by musicians and carpenters alike."
+          },
+          "query": {
+            "affinity": 0.69
+          }
+        },
+        {
+          "entity_id": "F4D0AB50-60CD-4B17-BF5B-3224D267EB2B",
+          "name": "Allbirds",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.76,
+          "properties": {
+            "description": "Wool sneaker brand with a sustainability pitch."
+          },
+          "query": {
+            "affinity": 0.672
+          }
+        },
+        {
+          "entity_id": "D44CBBD6-C6E8-455A-94B4-88B6A05B0591",
+          "name": "Blundstone",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.76,
+          "properties": {
+            "description": "Tasmanian pull-on boot brand beloved by people who walk a lot."
+          },
+          "query": {
+            "affinity": 0.655
+          }
+        },
+        {
+          "entity_id": "B33E9033-D54B-4B07-A439-14C0322C161D",
+          "name": "Levi's",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.74,
+          "properties": {
+            "description": "Denim brand with a vintage-friendly back catalog."
+          },
+          "query": {
+            "affinity": 0.637
+          }
+        },
+        {
+          "entity_id": "C9667048-9036-4149-A3E5-F41066A75FAD",
+          "name": "Darn Tough",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.73,
+          "properties": {
+            "description": "Darn Tough, a brand fans of your comps around Knoxville over-index on."
+          },
+          "query": {
+            "affinity": 0.62
+          }
+        },
+        {
+          "entity_id": "771B05B6-3B43-4DC1-8E6F-559C112AA016",
+          "name": "Stonyfield Organic",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.72,
+          "properties": {
+            "description": "Organic yogurt brand from New Hampshire."
+          },
+          "query": {
+            "affinity": 0.603
+          }
+        },
+        {
+          "entity_id": "5263D641-CCE2-4F25-A68F-B0B54B6C0A5B",
+          "name": "Tom's of Maine",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.72,
+          "properties": {
+            "description": "Natural personal-care brand with a New England origin story."
+          },
+          "query": {
+            "affinity": 0.585
+          }
+        },
+        {
+          "entity_id": "2838B3D8-5C49-4AF5-AA58-12015277F479",
+          "name": "Doc Martens",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.7,
+          "properties": {
+            "description": "British boot brand with a permanent place in music subcultures."
+          },
+          "query": {
+            "affinity": 0.568
+          }
+        }
+      ]
+    }
+  }
+}

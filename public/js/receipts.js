@@ -2,7 +2,7 @@
 // read the parameters, copy a curl line, and jump to the call behind any card ("Show the query").
 //
 // Contract: class Receipts { constructor(drawerEl, countEl); add(receipt); clear(); open(); close(); toggle(); highlight(id) }
-//   Receipt = { id, tool, method, url, mode, status, ms, resultCount, top: [{ name, affinity }], note? }
+//   Receipt = { id, tool, method, url, mode, status, ms, resultCount, top: [{ name, affinity }], note?, resolved?, cached? }
 //
 // The drawer slides in from the right (class "is-open" on drawerEl; styles in public/cards.css).
 
@@ -16,6 +16,7 @@ const TOOL_LABEL = {
   rank_markets: "Rank markets",
   find_rooms: "Find rooms",
   find_promo_partners: "Promo partners",
+  find_promo_group: "Promo partners",
   who_shows_up: "Who shows up",
   local_color: "Local color",
   openers_to_ask: "Openers to ask",
@@ -44,6 +45,7 @@ export class Receipts {
       <div class="receipts-empty">No Qloo calls yet.</div>`;
     this.list = this.drawer.querySelector(".receipts-list");
     this.empty = this.drawer.querySelector(".receipts-empty");
+    this.sub = this.drawer.querySelector(".receipts-sub");
     this.drawer.querySelector('[data-action="close"]').addEventListener("click", () => this.close());
     this.list.addEventListener("click", (e) => this.onClick(e));
     document.addEventListener("keydown", (e) => {
@@ -67,6 +69,11 @@ export class Receipts {
       this.items.set(receipt.id, { receipt, el });
     }
     this.updateCount();
+  }
+
+  // The subtitle says where these answers came from (app.js sets it from the server's fixture note).
+  setNote(text) {
+    if (this.sub) this.sub.textContent = text || "Every Qloo call, in order. Key never shown.";
   }
 
   clear() {
@@ -153,6 +160,7 @@ function renderEntry(r, n) {
       <span class="receipt-path"><span class="receipt-method">${esc(r.method || "GET")}</span> ${esc(path)}</span>
       <span class="receipt-meta">
         <span class="pb-pill pb-pill-mini ${r.mode === "live" ? "pb-pill-live" : ""}">${esc(r.mode)}</span>
+        ${r.cached ? `<span class="pb-pill pb-pill-mini" title="Served from this server's private in-memory cache of a live answer">cached</span>` : ""}
         <span class="receipt-status">HTTP ${esc(r.status)}</span>
         <span class="receipt-ms">${esc(r.ms)} ms</span>
         <span class="receipt-count">${esc(r.resultCount)} ${r.resultCount === 1 ? "result" : "results"}</span>
@@ -168,6 +176,7 @@ function renderEntry(r, n) {
           ? `<div class="receipt-top"><div class="pb-suggest-label">Top ${esc(top.length)}</div><ol>${top.map((t) => `<li>${esc(t.name)}${typeof t.affinity === "number" ? ` <span class="pb-fine">${esc(pct(t.affinity))}</span>` : ""}</li>`).join("")}</ol></div>`
           : ""
       }
+      ${r.resolved ? `<p class="receipt-resolved pb-fine">Qloo matched the location to <b>${esc(r.resolved)}</b>.</p>` : ""}
       ${r.note ? `<p class="receipt-note">${esc(r.note)}</p>` : ""}
       <div class="receipt-url"><code>${esc(r.url)}</code></div>
       <div class="receipt-actions">

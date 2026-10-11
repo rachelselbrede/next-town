@@ -7,13 +7,17 @@
 // rail update while the agent is still talking.
 
 import type { ToolDef, ToolContext, AgentEvent } from "./agent.ts";
-import type { QlooClient, QlooResult } from "./qloo.ts";
-import { entitiesOf, normalize } from "./qloo.ts";
+import type { QlooClient, QlooEntity, QlooResult } from "./qloo.ts";
+import { entitiesOf, explainEntries, normalize } from "./qloo.ts";
 import type { AppEvent, Comp, Format, Locality, ObviousRoute, Receipt, Route } from "./types.ts";
 import * as Q from "./queries.ts";
 import { findPlace as findPlaceInCensus, type PlaceRow } from "./places.ts";
 import { compareObvious, planRoute } from "./routing.ts";
 import obviousRoute from "../data/obvious-route.json" with { type: "json" };
+import tagsFile from "../data/tags.json" with { type: "json" };
+
+const TAG_GROUPS = tagsFile.groups as Record<string, string[]>;
+export const tagsFor = (groups: readonly string[]): string[] => groups.flatMap((g) => TAG_GROUPS[g] ?? []);
 
 export interface ToolsContext {
   qloo: QlooClient;
@@ -40,8 +44,20 @@ function emitApp(ctx: ToolContext, e: AppEvent): void {
 
 let receiptSeq = 0;
 
+// Location queries echo the locality Qloo fuzzy-matched at body.query.locality.signal; it may be a
+// string or an object with name and disambiguation ("Asheville", "North Carolina, United States").
+export function resolvedLocality(body: any): string | undefined {
+  const sig = body?.query?.locality?.signal;
+  if (typeof sig === "string") return sig.trim() || undefined;
+  if (!sig || typeof sig !== "object") return undefined;
+  const parts = [sig.name, sig.disambiguation].filter((x): x is string => typeof x === "string" && x.trim().length > 0).map((x) => x.trim());
+  const text = parts.filter((p, i) => parts.indexOf(p) === i).join(", ");
+  return text || undefined;
+}
+
 // One line per Qloo request for the Receipts drawer: exact URL (no key), mode, status, timing, and
-// the top three results so a judge can eyeball the call without opening it.
+// the top three results so a judge can eyeball the call without opening it. Carries the client's
+// note (retry/fallback), whether the answer came from the private cache, and the locality Qloo matched.
 export function toReceipt(tool: string, r: QlooResult, body?: any): Receipt {
   const data = body ?? r.body;
   const entities = entitiesOf(data);
@@ -51,6 +67,8 @@ export function toReceipt(tool: string, r: QlooResult, body?: any): Receipt {
     const affinity = typeof e.query?.affinity === "number" ? e.query.affinity : undefined;
     return affinity === undefined ? { name: e.name } : { name: e.name, affinity };
   });
+  const note = r.note ?? (r.ok ? undefined : typeof data?.error === "string" ? data.error : `HTTP ${r.status}`);
+  const resolved = resolvedLocality(data);
   receiptSeq += 1;
   return {
     id: `r${Date.now().toString(36)}-${receiptSeq}`,
@@ -62,16 +80,27 @@ export function toReceipt(tool: string, r: QlooResult, body?: any): Receipt {
     ms: r.ms,
     resultCount,
     top,
-    ...(r.ok ? {} : { note: typeof data?.error === "string" ? data.error : `HTTP ${r.status}` }),
+    ...(note ? { note } : {}),
+    ...(resolved ? { resolved } : {}),
+    ...(r.cached ? { cached: true } : {}),
   };
 }
 
-function compFromEntity(e: ReturnType<typeof entitiesOf>[number]): Comp {
+// /search results carry `types: [...]`; insights entities carry `type`. Accept either.
+function entityTypes(e: QlooEntity): string[] {
+  const out: string[] = [];
+  if (typeof e.type === "string") out.push(e.type);
+  if (Array.isArray(e.types)) for (const t of e.types) if (typeof t === "string") out.push(t);
+  return out;
+}
+
+function compFromEntity(e: QlooEntity, wantedType: string): Comp {
   const rec = normalize(e);
+  const types = entityTypes(e);
   return {
     id: e.entity_id,
     name: e.name,
-    type: e.type ?? (Array.isArray(e.types) ? String(e.types[0]) : ""),
+    type: types.includes(wantedType) ? wantedType : (types[0] ?? ""),
     ...(typeof rec.popularity === "number" ? { popularity: rec.popularity } : {}),
     ...(rec.image ? { image: rec.image } : {}),
   };
@@ -83,17 +112,26 @@ function bestCandidate(name: string, candidates: Comp[]): Comp | undefined {
   return candidates.find((c) => c.name.trim().toLowerCase() === wanted) ?? [...candidates].sort((a, b) => (b.popularity ?? 0) - (a.popularity ?? 0))[0];
 }
 
-function toLocality(e: ReturnType<typeof entitiesOf>[number], rank: number, findPlace: (label: string) => PlaceRow | undefined): Locality {
-  const state: string | undefined = e.properties?.geocode?.admin1_region || undefined;
-  const label = state ? `${e.name}, ${state}` : e.name;
-  const place = findPlace(label);
-  const lat = typeof e.location?.lat === "number" ? e.location.lat : place?.lat;
-  const lon = typeof e.location?.lon === "number" ? e.location.lon : place?.lon;
+// Turns one venue from the nationwide rank_markets query into the town it stands for. The Census
+// table gives the canonical label, population and coordinates; when it misses, the venue's own
+// coordinates keep the town on the map (no population, so it can never be an over-index town).
+export function venueToLocality(e: QlooEntity, rank: number, findPlace: (label: string) => PlaceRow | undefined, names?: Record<string, string>): Locality {
+  const rec = normalize(e, false, names);
+  const geo = e.properties?.geocode ?? {};
+  const cityName: string = String(geo.city || geo.name || rec.city || "").trim();
+  const region: string = String(geo.admin1_region ?? "").trim();
+  const guess = cityName ? (region ? `${cityName}, ${region}` : cityName) : "";
+  const place = guess ? findPlace(guess) : undefined;
+  const name = place?.name ?? (cityName || e.name);
+  const state = place?.state ?? (region || undefined);
+  const label = place?.label ?? (state ? `${name}, ${state}` : name);
+  const lat = place?.lat ?? rec.lat;
+  const lon = place?.lon ?? rec.lon;
   const population = place?.population;
-  const affinity = typeof e.query?.affinity === "number" ? e.query.affinity : 0;
+  const affinity = typeof rec.affinity === "number" ? rec.affinity : 0;
   return {
     id: e.entity_id,
-    name: e.name,
+    name,
     ...(state ? { state } : {}),
     label,
     rank,
@@ -102,8 +140,34 @@ function toLocality(e: ReturnType<typeof entitiesOf>[number], rank: number, find
     ...(lat !== undefined ? { lat } : {}),
     ...(lon !== undefined ? { lon } : {}),
     overIndex: population !== undefined && population < Q.C.OVER_INDEX_POP && rank <= Q.C.OVER_INDEX_RANK,
-    why: normalize(e).why,
+    why: rec.why,
+    topRoom: { id: e.entity_id, name: e.name, ...(typeof rec.affinity === "number" ? { affinity: rec.affinity } : {}), why: rec.why },
   };
+}
+
+// One sentence from the top-level query.explainability (each input entity's average influence over
+// the top-N subsets), or nothing when it is absent, a warning, or names nothing we can label.
+export function topLevelExplainSentence(body: any, names: Record<string, string>): string | undefined {
+  const ex = body?.query?.explainability;
+  if (!ex || typeof ex !== "object") return undefined;
+  if (typeof ex.warning === "string" || typeof ex.error === "string") return undefined;
+  // At the top level each entry's score may itself be the per-subset averages ({ top_10, all, ... });
+  // flatten that to one number ("all" first) so explainEntries can rank the entries.
+  const flat = (x: any) => {
+    if (!x || typeof x !== "object" || typeof x.score !== "object" || x.score === null) return x;
+    const s = x.score as Record<string, unknown>;
+    const pick = ["all", "average", "avg"].map((k) => s[k]).find((v) => typeof v === "number") ?? Object.values(s).find((v) => typeof v === "number");
+    return typeof pick === "number" ? { ...x, score: pick } : x;
+  };
+  const list = ex["signal.interests.entities"];
+  const source = Array.isArray(list) ? { ...ex, "signal.interests.entities": list.map(flat) } : ex;
+  const items = explainEntries(source, names).filter((i) => typeof i.score === "number" && names[i.id]);
+  if (!items.length) return undefined;
+  const lead = items[0];
+  if (items.length >= 2 && Math.abs((items[1].score as number) - (lead.score as number)) < 0.02) {
+    return `${names[lead.id]} and ${names[items[1].id]} drive the top markets about equally.`;
+  }
+  return `${names[lead.id]} drives most of the top markets.`;
 }
 
 const pct = (x: number) => `${Math.round(x * 100)}%`;
@@ -139,20 +203,28 @@ export function makeTools(ctx: ToolsContext): { tools: ToolDef[]; state: ToolsSt
       const name = String(input?.name ?? "").trim();
       if (!name) throw new Error("name is required");
       const q = Q.searchAct(name, format);
-      const r = await qloo.get(q.path, q.params);
+      const r = await qloo.get(q.path, q.params, toolCtx.signal);
       const receipt = record(q.tool, r, toolCtx);
+      if (!r.ok) {
+        // Never blame the artist for a failed call: say what actually happened.
+        if (r.mode === "demo" && r.status === 404) throw new Error(`No recorded demo answer for "${name}" (Qloo was not called; the live key is not set)`);
+        throw new Error(`Qloo search failed (HTTP ${r.status})`);
+      }
       const wantedType = q.params.types as string;
       const candidates = entitiesOf(r.body)
-        .filter((e) => e.type === wantedType || (Array.isArray(e.types) && e.types.includes(wantedType)))
+        .filter((e) => entityTypes(e).includes(wantedType))
         .slice(0, 3)
-        .map(compFromEntity);
+        .map((e) => compFromEntity(e, wantedType));
       for (const c of candidates) candidatesById.set(c.id, c);
       const best = bestCandidate(name, candidates);
       if (best) guesses.set(name.toLowerCase(), best);
       emitApp(toolCtx, { type: "comps", comps: [...guesses.values()] });
+      const kind = format === "comedy" ? "comedian" : "artist";
       const summary = candidates.length
         ? `${candidates.length} candidate${candidates.length === 1 ? "" : "s"} for "${name}": ${candidates.map((c) => c.name).join(", ")}`
-        : `No ${format === "comedy" ? "comedian" : "artist"} named "${name}" found in Qloo`;
+        : r.mode === "live"
+          ? `Qloo found no ${kind} named "${name}"`
+          : `The recorded demo answer for "${name}" holds no ${kind} candidates`;
       return { candidates, qloo: receipt, summary };
     },
   };
@@ -160,7 +232,7 @@ export function makeTools(ctx: ToolsContext): { tools: ToolDef[]; state: ToolsSt
   const rankMarkets: ToolDef<{ compIds: string[] }> = {
     name: "rank_markets",
     description:
-      "Ask Qloo which US localities rank highest for fans of the chosen comps (top 50, with explainability). Joins Census population and coordinates and flags over-index towns: population under 250k with an affinity rank in the top 20. Call it once, after every comp is resolved.",
+      "Ask Qloo for the US towns whose best-matching live-music room ranks highest for fans of the chosen comps: one nationwide venue query grouped by city (top 50, with explainability). Joins Census population and coordinates and flags over-index towns: population under 250k with a national rank in the top 20. Call it once, after every comp is resolved.",
     input_schema: {
       type: "object",
       properties: {
@@ -176,20 +248,34 @@ export function makeTools(ctx: ToolsContext): { tools: ToolDef[]; state: ToolsSt
       // The chosen ids are the final comps; fall back to a bare id if Claude passed one we never saw.
       state.comps = compIds.map((id) => candidatesById.get(id) ?? { id, name: id, type: "" });
       emitApp(toolCtx, { type: "comps", comps: state.comps });
+      const names: Record<string, string> = Object.fromEntries(state.comps.filter((c) => c.name && c.name !== c.id).map((c) => [c.id, c.name]));
 
-      const q = Q.rankMarkets(compIds);
-      const r = await qloo.get(q.path, q.params);
+      const venueTags = tagsFor(format === "comedy" ? Q.COMEDY_TAG_GROUPS : Q.VENUE_TAG_GROUPS);
+      const q = Q.rankMarkets(compIds, venueTags);
+      const r = await qloo.get(q.path, q.params, toolCtx.signal);
       const receipt = record(q.tool, r, toolCtx);
       if (!r.ok) throw new Error(`Qloo rank_markets failed (HTTP ${r.status})`);
 
-      const localities = entitiesOf(r.body).map((e, i) => toLocality(e, i + 1, findPlace));
+      // One town per label: diversify.take=1 already groups by city, but spellings can still collide
+      // after the Census join (e.g. "Saint Louis" and "St. Louis"), so the first venue keeps the town.
+      const localities: Locality[] = [];
+      const seen = new Set<string>();
+      for (const e of entitiesOf(r.body)) {
+        const probe = venueToLocality(e, localities.length + 1, findPlace, names);
+        const key = probe.label.toLowerCase();
+        if (seen.has(key)) continue;
+        seen.add(key);
+        localities.push(probe);
+      }
       state.localities = localities;
       emitApp(toolCtx, { type: "markets", localities });
 
       const over = localities.filter((l) => l.overIndex);
       const usual = localities.filter((l) => obviousRoute.cities.includes(l.label)).slice(0, 3);
-      const parts = [`${localities.length} localities ranked.`];
-      if (over.length) parts.push(`${over.length} over-index towns (under 250k, rank <= 20): ${over.slice(0, 5).map((l) => `${l.label} #${l.rank} (${pct(l.affinity)})`).join(", ")}.`);
+      const parts = [`${localities.length} towns ranked, each by the room there that ranks highest for fans of your comps (towns whose best-matching room ranks highest).`];
+      const lead = topLevelExplainSentence(r.body, names);
+      if (lead) parts.push(lead);
+      if (over.length) parts.push(`${over.length} over-index towns (under 250k, national rank <= 20): ${over.slice(0, 5).map((l) => `${l.label} #${l.rank} (${pct(l.affinity)}, ${l.topRoom?.name ?? "top room"})`).join(", ")}.`);
       if (usual.length) parts.push(`Usual suspects: ${usual.map((l) => `${l.label} #${l.rank}`).join(", ")}.`);
       return { localities, qloo: receipt, summary: parts.join(" ") };
     },
@@ -198,7 +284,7 @@ export function makeTools(ctx: ToolsContext): { tools: ToolDef[]; state: ToolsSt
   const planRouteTool: ToolDef<{ days: number; driveHoursCap: number; mustInclude: string[]; exclude: string[] }> = {
     name: "plan_route",
     description:
-      "Build the driving loop from home through the ranked markets (over-index towns first), respecting the daily drive cap, and compare it with the obvious big-market route. No Qloo call. Requires rank_markets to have run. Pass empty arrays for mustInclude and exclude when the user named no towns.",
+      "Build the driving loop from home through the ranked markets (over-index towns first), respecting the daily drive cap, and compare it with the obvious big-market route. Drive hours are straight-line estimates. No Qloo call. Requires rank_markets to have run. Pass empty arrays for mustInclude and exclude when the user named no towns.",
     input_schema: {
       type: "object",
       properties: {
@@ -233,7 +319,7 @@ export function makeTools(ctx: ToolsContext): { tools: ToolDef[]; state: ToolsSt
       state.obvious = obvious;
       emitApp(toolCtx, { type: "route", route, obvious });
 
-      const summary = `${route.stops.length} stops over ${route.days} days, ${Math.round(route.totalMiles)} miles, ${route.driveDays} drive day${route.driveDays === 1 ? "" : "s"}. ${obvious.summary}`;
+      const summary = `${route.stops.length} stops over ${route.days} days, about ${Math.round(route.totalMiles)} miles (est.), ${route.driveDays} drive day${route.driveDays === 1 ? "" : "s"}. ${obvious.summary}`;
       return { route, obvious, summary };
     },
   };

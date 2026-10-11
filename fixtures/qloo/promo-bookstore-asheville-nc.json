@@ -1,0 +1,126 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_promo_partners",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?feature.explainability=true&filter.location.query=Asheville%2C%20NC&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abookstore&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Asheville, NC",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:genre:place:bookstore",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "sort_by": "affinity",
+      "take": 2,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "FA657A23-92E7-4C9A-A5F4-760954DDFB0C",
+          "name": "Malaprop's Bookstore/Cafe",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.76,
+          "location": {
+            "lat": 35.595,
+            "lon": -82.551
+          },
+          "properties": {
+            "description": "Downtown independent bookstore and cafe, the city's go-to spot for author readings and flyer boards.",
+            "address": "55 Haywood St, Asheville, NC 28801",
+            "geocode": {
+              "name": "Asheville",
+              "city": "Asheville",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.8,
+            "price_level": 2,
+            "website": "https://www.malaprops.com"
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:bookstore",
+              "name": "Bookstore",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.86,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.68
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.59
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.57
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "55F9AAEB-7273-44EA-BBFF-8A117D6BA226",
+          "name": "Firestorm Books",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.44,
+          "location": {
+            "lat": 35.595,
+            "lon": -82.551
+          },
+          "properties": {
+            "description": "Worker-owned radical bookstore and community space in West Asheville that hosts readings and small shows.",
+            "address": "1022 Haywood Rd, Asheville, NC 28806",
+            "geocode": {
+              "name": "Asheville",
+              "city": "Asheville",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:bookstore",
+              "name": "Bookstore",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.72,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.53
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.47
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.51
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

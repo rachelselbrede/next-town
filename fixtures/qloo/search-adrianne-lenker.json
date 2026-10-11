@@ -16,7 +16,6 @@
       {
         "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
         "name": "Adrianne Lenker",
-        "type": "urn:entity:artist",
         "types": [
           "urn:entity:artist"
         ],
@@ -26,18 +25,18 @@
         },
         "tags": [
           {
+            "id": "urn:tag:genre:music:indie_folk",
             "name": "Indie Folk",
-            "tag_id": "urn:tag:genre:music:indie_folk",
             "type": "urn:tag:genre:music"
           },
           {
+            "id": "urn:tag:genre:music:singer_songwriter",
             "name": "Singer-Songwriter",
-            "tag_id": "urn:tag:genre:music:singer_songwriter",
             "type": "urn:tag:genre:music"
           },
           {
+            "id": "urn:tag:genre:music:folk",
             "name": "Folk",
-            "tag_id": "urn:tag:genre:music:folk",
             "type": "urn:tag:genre:music"
           }
         ]
@@ -45,7 +44,6 @@
       {
         "entity_id": "DA8D767B-F4A1-4501-84D6-2962A71479BC",
         "name": "Adrianne Lenker & Buck Meek",
-        "type": "urn:entity:artist",
         "types": [
           "urn:entity:artist"
         ],
@@ -55,13 +53,13 @@
         },
         "tags": [
           {
+            "id": "urn:tag:genre:music:indie_folk",
             "name": "Indie Folk",
-            "tag_id": "urn:tag:genre:music:indie_folk",
             "type": "urn:tag:genre:music"
           },
           {
+            "id": "urn:tag:genre:music:folk",
             "name": "Folk",
-            "tag_id": "urn:tag:genre:music:folk",
             "type": "urn:tag:genre:music"
           }
         ]
@@ -69,7 +67,6 @@
       {
         "entity_id": "B736B17A-1E04-40F3-9941-0A5F98070003",
         "name": "Lenka",
-        "type": "urn:entity:artist",
         "types": [
           "urn:entity:artist"
         ],
@@ -79,13 +76,13 @@
         },
         "tags": [
           {
+            "id": "urn:tag:genre:music:indie_pop",
             "name": "Indie Pop",
-            "tag_id": "urn:tag:genre:music:indie_pop",
             "type": "urn:tag:genre:music"
           },
           {
+            "id": "urn:tag:genre:music:pop",
             "name": "Pop",
-            "tag_id": "urn:tag:genre:music:pop",
             "type": "urn:tag:genre:music"
           }
         ]
@@ -93,7 +90,6 @@
       {
         "entity_id": "7BF5CE05-28AA-4D57-A06C-AA7FABE25E65",
         "name": "Adrian Younge",
-        "type": "urn:entity:artist",
         "types": [
           "urn:entity:artist"
         ],
@@ -103,18 +99,18 @@
         },
         "tags": [
           {
+            "id": "urn:tag:genre:music:soul",
             "name": "Soul",
-            "tag_id": "urn:tag:genre:music:soul",
             "type": "urn:tag:genre:music"
           },
           {
+            "id": "urn:tag:genre:music:jazz",
             "name": "Jazz",
-            "tag_id": "urn:tag:genre:music:jazz",
             "type": "urn:tag:genre:music"
           },
           {
+            "id": "urn:tag:genre:music:hip_hop",
             "name": "Hip Hop",
-            "tag_id": "urn:tag:genre:music:hip_hop",
             "type": "urn:tag:genre:music"
           }
         ]
@@ -122,7 +118,6 @@
       {
         "entity_id": "E74C3640-5A8D-44C7-8D27-0D3CDEFAF93B",
         "name": "Adrian Belew",
-        "type": "urn:entity:artist",
         "types": [
           "urn:entity:artist"
         ],
@@ -132,13 +127,13 @@
         },
         "tags": [
           {
+            "id": "urn:tag:genre:music:progressive_rock",
             "name": "Progressive Rock",
-            "tag_id": "urn:tag:genre:music:progressive_rock",
             "type": "urn:tag:genre:music"
           },
           {
+            "id": "urn:tag:genre:music:art_rock",
             "name": "Art Rock",
-            "tag_id": "urn:tag:genre:music:art_rock",
             "type": "urn:tag:genre:music"
           }
         ]

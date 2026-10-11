@@ -1,6 +1,8 @@
 // Recorded-scenario replay. Judges click the sample and get the exact stream a real run produced,
-// at a human reading pace, with no Anthropic key involved. The recording lives in
-// fixtures/scenarios/hollow-pines/ and is bundled into ./recorded.generated.ts by scripts/record.mjs.
+// at a human reading pace, with no Anthropic key involved. The public recording (made against the
+// placeholder fixtures) lives in fixtures/scenarios/hollow-pines/; a recording made against live
+// Qloo lives in private/scenarios/hollow-pines/ and is never committed. scripts/record.mjs bundles
+// whichever exists (private first) into ./recorded.generated.ts, a gitignored build artifact.
 
 import { slug } from "./canonical.ts";
 import type { Pitch, Playbook } from "./types.ts";
@@ -35,6 +37,16 @@ export function recordedPlaybook(city: string): Playbook | undefined {
   // Tolerate a label that slugs differently from the recorded one (e.g. "Asheville NC" vs "Asheville, NC").
   const wanted = city.trim().toLowerCase();
   return Object.values(playbooks).find((p) => typeof p?.city === "string" && p.city.trim().toLowerCase() === wanted) as Playbook | undefined;
+}
+
+// Labels of every city with a recorded playbook (e.g. "Asheville, NC"), in recording order, for
+// /api/health so the client knows which towns can replay without a key.
+export function recordedCityLabels(): string[] {
+  const labels: string[] = [];
+  for (const p of Object.values(playbooks)) {
+    if (typeof p?.city === "string" && p.city.trim() && !labels.includes(p.city)) labels.push(p.city);
+  }
+  return labels;
 }
 
 export function recordedPitch(): Pitch | undefined {

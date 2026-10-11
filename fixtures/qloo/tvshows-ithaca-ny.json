@@ -1,0 +1,283 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "local_color",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Atv_show&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Ithaca%2C%20NY&signal.location.radius=25000&take=20",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:tv_show",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "signal.location.query": "Ithaca, NY",
+      "signal.location.radius": 25000,
+      "take": 20
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "5AF4B18C-7F2E-4D54-B946-C924DBBC0E98",
+          "name": "Fleabag",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.88,
+          "properties": {
+            "description": "Phoebe Waller-Bridge's fourth-wall-breaking comedy about grief and bad decisions."
+          },
+          "query": {
+            "affinity": 0.92
+          }
+        },
+        {
+          "entity_id": "F504DFDE-7861-486D-9F48-C6422671C57A",
+          "name": "Reservation Dogs",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.875,
+          "properties": {
+            "description": "Four Indigenous teens in rural Oklahoma dream of California."
+          },
+          "query": {
+            "affinity": 0.901
+          }
+        },
+        {
+          "entity_id": "656078D4-7298-439C-B517-153F264014E1",
+          "name": "Somebody Somewhere",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.87,
+          "properties": {
+            "description": "A woman returns to her Kansas hometown and finds a choir of misfits."
+          },
+          "query": {
+            "affinity": 0.882
+          }
+        },
+        {
+          "entity_id": "ADC55D1A-2B7B-4B9E-8D1A-E13AD873422E",
+          "name": "Schitt's Creek",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.86,
+          "properties": {
+            "description": "A wealthy family loses everything and lands in a motel in a small town."
+          },
+          "query": {
+            "affinity": 0.863
+          }
+        },
+        {
+          "entity_id": "E3C6F04F-7F24-4D5C-88C7-79ACD9F57EAC",
+          "name": "The Bear",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.865,
+          "properties": {
+            "description": "A fine-dining chef takes over his late brother's Chicago sandwich shop."
+          },
+          "query": {
+            "affinity": 0.844
+          }
+        },
+        {
+          "entity_id": "57D77BDC-90C5-46DE-91F9-1613D5BFC645",
+          "name": "Ted Lasso",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.85,
+          "properties": {
+            "description": "An American football coach is hired to manage an English soccer club."
+          },
+          "query": {
+            "affinity": 0.825
+          }
+        },
+        {
+          "entity_id": "4ED236B4-9453-4512-8981-B49E9BB467A5",
+          "name": "Atlanta",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.82,
+          "properties": {
+            "description": "Donald Glover's surreal comedy about two cousins in the Atlanta rap scene."
+          },
+          "query": {
+            "affinity": 0.806
+          }
+        },
+        {
+          "entity_id": "CBBD7C4F-EE93-4B17-8B5B-5251E5F73EB7",
+          "name": "Hacks",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.815,
+          "properties": {
+            "description": "A legendary Vegas comedian and a cancelled young writer need each other."
+          },
+          "query": {
+            "affinity": 0.787
+          }
+        },
+        {
+          "entity_id": "F6F57765-0B75-4340-A73F-6DF99D75BD78",
+          "name": "What We Do in the Shadows",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.79,
+          "properties": {
+            "description": "Mockumentary about vampire roommates on Staten Island."
+          },
+          "query": {
+            "affinity": 0.768
+          }
+        },
+        {
+          "entity_id": "A13215E0-C764-4D72-A2B1-801211C74A37",
+          "name": "Twin Peaks",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.81,
+          "properties": {
+            "description": "David Lynch's dreamlike mystery in a logging town."
+          },
+          "query": {
+            "affinity": 0.749
+          }
+        },
+        {
+          "entity_id": "D7BD04AA-3B47-4DA4-9E4F-40A542F5B7D1",
+          "name": "Abbott Elementary",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.76,
+          "properties": {
+            "description": "Mockumentary about teachers at an underfunded Philadelphia public school."
+          },
+          "query": {
+            "affinity": 0.731
+          }
+        },
+        {
+          "entity_id": "ECBC7E57-8869-4257-AE7C-68B5D54EAA7B",
+          "name": "Only Murders in the Building",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.77,
+          "properties": {
+            "description": "Three neighbors who love true crime start a podcast about a death in their building."
+          },
+          "query": {
+            "affinity": 0.712
+          }
+        },
+        {
+          "entity_id": "377A96F7-A073-43FE-B56D-6E3331A4308F",
+          "name": "Gilmore Girls",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.755,
+          "properties": {
+            "description": "Fast-talking mother and daughter in a small Connecticut town."
+          },
+          "query": {
+            "affinity": 0.693
+          }
+        },
+        {
+          "entity_id": "6655F705-B668-4671-8B58-68064B23BACA",
+          "name": "Derry Girls",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.74,
+          "properties": {
+            "description": "Teenage friends in 1990s Northern Ireland get into scrapes during the Troubles."
+          },
+          "query": {
+            "affinity": 0.674
+          }
+        },
+        {
+          "entity_id": "0E925F8C-19E3-4F7B-A3BE-AE91C3784881",
+          "name": "Heartstopper",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.745,
+          "properties": {
+            "description": "Tender British teen romance adapted from a webcomic."
+          },
+          "query": {
+            "affinity": 0.655
+          }
+        },
+        {
+          "entity_id": "1726F37E-D9CA-43CC-8B62-4E9AF1FD2C5B",
+          "name": "Severance",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.69,
+          "properties": {
+            "description": "Office workers whose memories are split between work and home."
+          },
+          "query": {
+            "affinity": 0.636
+          }
+        },
+        {
+          "entity_id": "13C3B4AE-71EB-432F-B21A-590CE0299F39",
+          "name": "Bob's Burgers",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.72,
+          "properties": {
+            "description": "The Belcher family runs a struggling burger restaurant."
+          },
+          "query": {
+            "affinity": 0.617
+          }
+        },
+        {
+          "entity_id": "9BD17FB8-9C32-45EE-ABBC-A4EC36ABFC51",
+          "name": "The Good Place",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.7,
+          "properties": {
+            "description": "A woman finds out she is in the afterlife by mistake."
+          },
+          "query": {
+            "affinity": 0.598
+          }
+        },
+        {
+          "entity_id": "72E9BC0B-598B-43EF-8465-E61AD1CFF1DB",
+          "name": "Parks and Recreation",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.635,
+          "properties": {
+            "description": "Mockumentary about an earnest Indiana parks department."
+          },
+          "query": {
+            "affinity": 0.579
+          }
+        },
+        {
+          "entity_id": "7C21F4D5-23AF-4E9A-8D44-21AD60A50494",
+          "name": "PEN15",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.6,
+          "properties": {
+            "description": "Two adult women play themselves as middle schoolers in 2000."
+          },
+          "query": {
+            "affinity": 0.56
+          }
+        }
+      ]
+    }
+  }
+}

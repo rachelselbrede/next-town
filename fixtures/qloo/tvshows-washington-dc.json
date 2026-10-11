@@ -1,0 +1,603 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "local_color",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Atv_show&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Washington%2C%20DC&signal.location.radius=25000&take=20",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:tv_show",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "signal.location.query": "Washington, DC",
+      "signal.location.radius": 25000,
+      "take": 20
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "5AF4B18C-7F2E-4D54-B946-C924DBBC0E98",
+          "name": "Fleabag",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.88,
+          "properties": {
+            "description": "Phoebe Waller-Bridge's fourth-wall-breaking comedy about grief and bad decisions."
+          },
+          "query": {
+            "affinity": 0.9,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.842
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.85
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.763
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "F18A5682-1DD5-4CEB-A36B-9CC7A776BE9C",
+          "name": "Veep",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.8,
+          "properties": {
+            "description": "Political satire set in the vice president's office."
+          },
+          "query": {
+            "affinity": 0.89,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.789
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.753
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.771
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "F504DFDE-7861-486D-9F48-C6422671C57A",
+          "name": "Reservation Dogs",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.875,
+          "properties": {
+            "description": "Four Indigenous teens in rural Oklahoma dream of California."
+          },
+          "query": {
+            "affinity": 0.87,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.73
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.846
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.916
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "656078D4-7298-439C-B517-153F264014E1",
+          "name": "Somebody Somewhere",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.87,
+          "properties": {
+            "description": "A woman returns to her Kansas hometown and finds a choir of misfits."
+          },
+          "query": {
+            "affinity": 0.85,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.727
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.869
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.76
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "81F263B2-D8CC-4EFF-9743-8209D19EC053",
+          "name": "The West Wing",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.84,
+          "properties": {
+            "description": "Long-running Washington drama about a fictional White House staff."
+          },
+          "query": {
+            "affinity": 0.84,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.878
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.71
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.769
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "E3C6F04F-7F24-4D5C-88C7-79ACD9F57EAC",
+          "name": "The Bear",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.865,
+          "properties": {
+            "description": "A fine-dining chef takes over his late brother's Chicago sandwich shop."
+          },
+          "query": {
+            "affinity": 0.82,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.804
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.83
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.871
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "833E0B4B-456A-4350-A9D9-704C48A3BBA3",
+          "name": "The Wire",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.88,
+          "properties": {
+            "description": "Baltimore crime drama beloved by DC-area viewers."
+          },
+          "query": {
+            "affinity": 0.8,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.731
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.814
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.665
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "4ED236B4-9453-4512-8981-B49E9BB467A5",
+          "name": "Atlanta",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.82,
+          "properties": {
+            "description": "Donald Glover's surreal comedy about two cousins in the Atlanta rap scene."
+          },
+          "query": {
+            "affinity": 0.79,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.784
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.777
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.681
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "3C69D9BE-8D0A-4B69-B3BC-52BEBB189C0F",
+          "name": "Slow Horses",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.7,
+          "properties": {
+            "description": "Spy comedy-drama about a team of disgraced intelligence agents."
+          },
+          "query": {
+            "affinity": 0.77,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.732
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.696
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.691
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "CBBD7C4F-EE93-4B17-8B5B-5251E5F73EB7",
+          "name": "Hacks",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.815,
+          "properties": {
+            "description": "A legendary Vegas comedian and a cancelled young writer need each other."
+          },
+          "query": {
+            "affinity": 0.76,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.683
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.737
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.774
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "344DEF6D-BEB2-41A7-AF82-DED598750305",
+          "name": "Ted Lasso",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.86,
+          "properties": {
+            "description": "Optimistic sports comedy about an American coach in England."
+          },
+          "query": {
+            "affinity": 0.74,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.665
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.624
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.79
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "D7BD04AA-3B47-4DA4-9E4F-40A542F5B7D1",
+          "name": "Abbott Elementary",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.76,
+          "properties": {
+            "description": "Mockumentary about teachers at an underfunded Philadelphia public school."
+          },
+          "query": {
+            "affinity": 0.73,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.78
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.688
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.734
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "E70F429F-63FF-4903-BC95-98EA71234EE5",
+          "name": "Barry",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.75,
+          "properties": {
+            "description": "Dark comedy about a hitman who takes an acting class."
+          },
+          "query": {
+            "affinity": 0.71,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.684
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.731
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.601
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "BAF90461-5DF2-4491-9523-F0057E492CF9",
+          "name": "Succession",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.75,
+          "properties": {
+            "description": "A media dynasty's children fight over the throne."
+          },
+          "query": {
+            "affinity": 0.7,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.587
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.605
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.678
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "5EBD1CEF-DA82-464F-B871-966E297A9CCD",
+          "name": "House of Cards",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.8,
+          "properties": {
+            "description": "Political thriller set in Washington power circles."
+          },
+          "query": {
+            "affinity": 0.68,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.644
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.627
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.607
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "1726F37E-D9CA-43CC-8B62-4E9AF1FD2C5B",
+          "name": "Severance",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.69,
+          "properties": {
+            "description": "Office workers whose memories are split between work and home."
+          },
+          "query": {
+            "affinity": 0.67,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.722
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.705
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.631
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "C3E6990F-A1EA-4D04-933F-97D8DEDAE2B7",
+          "name": "Scandal",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.76,
+          "properties": {
+            "description": "Political drama about a Washington crisis manager."
+          },
+          "query": {
+            "affinity": 0.65,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.63
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.646
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.524
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "628B7F67-F053-4D43-A259-869B267583A7",
+          "name": "Russian Doll",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.64,
+          "properties": {
+            "description": "A woman keeps dying and restarting at her own birthday party."
+          },
+          "query": {
+            "affinity": 0.64,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.517
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.634
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.687
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "72E9BC0B-598B-43EF-8465-E61AD1CFF1DB",
+          "name": "Parks and Recreation",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.635,
+          "properties": {
+            "description": "Mockumentary about an earnest Indiana parks department."
+          },
+          "query": {
+            "affinity": 0.61,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.627
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.653
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.531
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "24AF387E-B347-4535-A921-D3B36CC057C9",
+          "name": "Station Eleven",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.63,
+          "properties": {
+            "description": "A traveling Shakespeare troupe in a post-pandemic Great Lakes region."
+          },
+          "query": {
+            "affinity": 0.58,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.522
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.602
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.544
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -101,6 +101,7 @@ export function createMap(el) {
       `#${esc(loc.rank)} · affinity ${Math.round((loc.affinity ?? 0) * 100)}%` +
       (loc.overIndex ? ` · <span class="tip-gold">over-index</span>` : "") +
       `<br>pop. ${fmtPop(loc.population)}` +
+      (loc.topRoom?.name ? `<br>top room: ${esc(loc.topRoom.name)}` : "") +
       (why ? `<br><span class="tip-why">because ${esc(why)}</span>` : "");
   }
 
@@ -148,7 +149,7 @@ export function createMap(el) {
       });
       line.bindTooltip(
         `<span class="tip-title">${esc(from.label)} → ${esc(to.label)}</span>` +
-          (hours != null ? `${fmtHours(hours)} drive` : "drive home") +
+          (hours != null ? `${fmtHours(hours)} est. drive` : "drive home") +
           (miles != null ? ` · ${fmtMiles(miles)}` : "") +
           (stop?.driveDay ? `<br><span class="tip-why">over the daily cap: a drive day comes first</span>` : ""),
         { className: "nt-tip", sticky: true },
@@ -162,7 +163,7 @@ export function createMap(el) {
     route.stops.forEach((s) => {
       const icon = L.divIcon({ className: "", iconSize: [24, 24], iconAnchor: [12, 12], html: `<div class="marker-day" data-label="${esc(s.label)}">${s.day}</div>` });
       L.marker([s.lat, s.lon], { icon, zIndexOffset: 400 })
-        .bindTooltip(`<span class="tip-title">Day ${s.day}: ${esc(s.label)}</span>${s.legHours ? fmtHours(s.legHours) + " from the last stop" : "first stop"}` +
+        .bindTooltip(`<span class="tip-title">Day ${s.day}: ${esc(s.label)}</span>${s.legHours ? fmtHours(s.legHours) + " est. from the last stop" : "first stop"}` +
           (s.overIndex ? ` · <span class="tip-gold">over-index</span>` : ""), { className: "nt-tip", direction: "top", offset: [0, -10] })
         .addTo(layers.route);
     });

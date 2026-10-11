@@ -20,18 +20,21 @@ export interface Comp {
   image?: string;
 }
 
+// A market: a town whose best-matching live-music room ranks highest for fans of the comps
+// (rank_markets is a nationwide place query grouped by city; see src/queries.ts).
 export interface Locality {
-  id: string;
+  id: string; // the representative venue's Qloo entity id
   name: string; // "Asheville"
   state?: string; // "NC"
-  label: string; // "Asheville, NC"
-  rank: number; // 1-based affinity rank from Qloo
-  affinity: number; // 0..1
+  label: string; // "Asheville, NC" (Census spelling when the town is in data/us-places.json)
+  rank: number; // 1-based national rank among the towns Qloo returned
+  affinity: number; // 0..1, the top room's affinity
   population?: number; // from data/us-places.json (Census)
   lat?: number;
   lon?: number;
-  overIndex: boolean; // population < 250k && rank <= 20
+  overIndex: boolean; // population < 250k && rank <= 20 (not a comparison with home)
   why: string[]; // explainability chips, e.g. "Big Thief (71%)"
+  topRoom?: { id: string; name: string; affinity?: number; why: string[] }; // the room that put the town here
 }
 
 export interface RouteStop {
@@ -77,6 +80,8 @@ export interface Receipt {
   resultCount: number;
   top: Array<{ name: string; affinity?: number }>;
   note?: string; // e.g. "served from recorded fixture after a live timeout"
+  resolved?: string; // the locality Qloo matched for a location query (body.query.locality.signal)
+  cached?: boolean; // served from this server's private in-memory cache of a live answer
 }
 
 export interface PromoGroup {
@@ -85,6 +90,7 @@ export interface PromoGroup {
 }
 
 export interface Demographics {
+  scope: "comps-overall"; // urn:demographics takes no location: this read is for fans of the comps everywhere
   age: Record<string, number>; // band -> affinity, e.g. "24_and_younger": 0.42
   gender: Record<string, number>;
   strongestAge: string;
@@ -96,7 +102,7 @@ export interface Delta {
   name: string;
   image?: string;
   cityAffinity: number;
-  homeAffinity: number | null; // null = not in the home top list
+  homeAffinity: number | null; // null = not in the home top list, or the home comparison was unavailable
   delta: number | null;
 }
 
@@ -117,7 +123,7 @@ export interface Playbook {
   rooms: Rec[];
   promo: PromoGroup[];
   who: Demographics | null;
-  localColor: { brands: Delta[]; shows: Delta[] };
+  localColor: { brands: Delta[]; shows: Delta[]; homeAvailable: boolean }; // homeAvailable=false when the home calls failed
   card: CardCopy;
   receipts: Receipt[];
   locality?: Locality;

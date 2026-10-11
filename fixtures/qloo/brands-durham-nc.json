@@ -1,0 +1,261 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "local_color",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Abrand&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Durham%2C%20NC&signal.location.radius=25000&take=20",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:brand",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "signal.location.query": "Durham, NC",
+      "signal.location.radius": 25000,
+      "take": 20
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "81FF9E58-99F1-4C63-9F2F-7D85FA8D6964",
+          "name": "Patagonia",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.85,
+          "properties": {},
+          "query": {
+            "affinity": 0.92
+          }
+        },
+        {
+          "entity_id": "92AE7889-8825-41F9-9786-BDC1C2B1807A",
+          "name": "Merge Records",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.718,
+          "properties": {
+            "description": "The Durham indie label that grew out of the Chapel Hill scene."
+          },
+          "query": {
+            "affinity": 0.91
+          }
+        },
+        {
+          "entity_id": "AC8120D3-F632-4821-92A3-70E5C4A3343C",
+          "name": "Subaru",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.825,
+          "properties": {},
+          "query": {
+            "affinity": 0.89
+          }
+        },
+        {
+          "entity_id": "753F76AB-F8F3-4DB9-9076-5541D45875DF",
+          "name": "Trader Joe's",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.775,
+          "properties": {},
+          "query": {
+            "affinity": 0.88
+          }
+        },
+        {
+          "entity_id": "7C8DF92F-D4B9-45DE-9144-A0E36C0C6897",
+          "name": "REI",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.8,
+          "properties": {},
+          "query": {
+            "affinity": 0.86
+          }
+        },
+        {
+          "entity_id": "7B6FB381-3093-4C50-A15E-6D21EA7E78E7",
+          "name": "Counter Culture Coffee",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.762,
+          "properties": {
+            "description": "Durham-based specialty roaster served in cafes across the Triangle."
+          },
+          "query": {
+            "affinity": 0.85
+          }
+        },
+        {
+          "entity_id": "D2211532-7B69-4259-9174-37814BEAF070",
+          "name": "Fullsteam Brewery",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.652,
+          "properties": {
+            "description": "Durham brewery known for Southern-ingredient beers and live music nights."
+          },
+          "query": {
+            "affinity": 0.83
+          }
+        },
+        {
+          "entity_id": "B33E9033-D54B-4B07-A439-14C0322C161D",
+          "name": "Levi's",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.65,
+          "properties": {},
+          "query": {
+            "affinity": 0.82
+          }
+        },
+        {
+          "entity_id": "D44CBBD6-C6E8-455A-94B4-88B6A05B0591",
+          "name": "Blundstone",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.7,
+          "properties": {},
+          "query": {
+            "affinity": 0.8
+          }
+        },
+        {
+          "entity_id": "79EEE04F-A222-4904-AD68-3BA71F6C4464",
+          "name": "Weaver Street Market",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.85,
+          "properties": {
+            "description": "Carrboro's co-op grocery and lawn, the town square for shows and morning coffee."
+          },
+          "query": {
+            "affinity": 0.79
+          }
+        },
+        {
+          "entity_id": "79105CB8-2649-4620-A2F8-0B53D5B8A831",
+          "name": "Fjallraven",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.725,
+          "properties": {},
+          "query": {
+            "affinity": 0.77
+          }
+        },
+        {
+          "entity_id": "52039753-DD87-4F1B-8D75-3F55850FAD13",
+          "name": "La Colombe",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.6,
+          "properties": {},
+          "query": {
+            "affinity": 0.76
+          }
+        },
+        {
+          "entity_id": "1E64D934-320B-4FB7-921B-58DB10BE96EA",
+          "name": "Birkenstock",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.675,
+          "properties": {},
+          "query": {
+            "affinity": 0.74
+          }
+        },
+        {
+          "entity_id": "C73FFA8F-5C54-4D3C-B005-D446B1E83030",
+          "name": "Carolina Brewery",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.498,
+          "properties": {
+            "description": "Chapel Hill brewpub on Franklin Street, a local since 1995."
+          },
+          "query": {
+            "affinity": 0.73
+          }
+        },
+        {
+          "entity_id": "47D5D80A-D8DA-4F3A-A4DF-A99635B1BCB7",
+          "name": "Warby Parker",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.575,
+          "properties": {},
+          "query": {
+            "affinity": 0.71
+          }
+        },
+        {
+          "entity_id": "140AED23-2F58-4FA0-B636-C9D5D473E429",
+          "name": "Blue Bottle Coffee",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.6,
+          "properties": {
+            "description": "Third-wave coffee chain with minimalist cafes."
+          },
+          "query": {
+            "affinity": 0.7
+          }
+        },
+        {
+          "entity_id": "CA29596C-A583-4C49-8B03-1FCE2A53EA05",
+          "name": "Carhartt",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.55,
+          "properties": {
+            "description": "Workwear brand adopted by musicians and carpenters alike."
+          },
+          "query": {
+            "affinity": 0.68
+          }
+        },
+        {
+          "entity_id": "46C6D46A-8D86-4E6B-8182-CDEFE7BDF6E2",
+          "name": "Mast General Store",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.55,
+          "properties": {},
+          "query": {
+            "affinity": 0.67
+          }
+        },
+        {
+          "entity_id": "F4D0AB50-60CD-4B17-BF5B-3224D267EB2B",
+          "name": "Allbirds",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.54,
+          "properties": {
+            "description": "Wool sneaker brand with a sustainability pitch."
+          },
+          "query": {
+            "affinity": 0.65
+          }
+        },
+        {
+          "entity_id": "42822EE9-0CEC-419A-B3E2-CF7F82C4FF6A",
+          "name": "Bandcamp",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.85,
+          "properties": {
+            "description": "Bandcamp: a brand fans of these comps around Athens, OH over-index on."
+          },
+          "query": {
+            "affinity": 0.64
+          }
+        }
+      ]
+    }
+  }
+}

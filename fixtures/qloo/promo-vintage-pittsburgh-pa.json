@@ -1,0 +1,135 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_promo_partners",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?feature.explainability=true&filter.location.query=Pittsburgh%2C%20PA&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Athrift_store%2Curn%3Atag%3Agenre%3Aplace%3Avintage_store&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Pittsburgh, PA",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:genre:place:thrift_store,urn:tag:genre:place:vintage_store",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "sort_by": "affinity",
+      "take": 2,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "520005AA-4246-4457-A9CD-558E0C9F4655",
+          "name": "Avalon Exchange",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.48,
+          "location": {
+            "lat": 40.441,
+            "lon": -79.996
+          },
+          "properties": {
+            "description": "A buy-sell-trade vintage and resale shop in Squirrel Hill that leans flannel, denim, and worn-in boots.",
+            "address": "5858 Forbes Ave, Pittsburgh, PA 15217",
+            "geocode": {
+              "name": "Squirrel Hill",
+              "city": "Pittsburgh",
+              "admin1_region": "PA",
+              "country_code": "US"
+            },
+            "business_rating": 4.3,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:vintage_store",
+              "name": "Vintage Store",
+              "type": "urn:tag:genre"
+            },
+            {
+              "id": "urn:tag:genre:place:thrift_store",
+              "name": "Thrift Store",
+              "type": "urn:tag:genre"
+            }
+          ],
+          "query": {
+            "affinity": 0.81,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.5
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.63
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.57
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "1B9E1D4B-57F7-4072-BFB7-6C19FDCDABCE",
+          "name": "Thriftique",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.36,
+          "location": {
+            "lat": 40.441,
+            "lon": -79.996
+          },
+          "properties": {
+            "description": "A nonprofit Lawrenceville thrift shop with a well-picked clothing floor and a steady stream of twenty-somethings.",
+            "address": "125 51st St, Pittsburgh, PA 15201",
+            "geocode": {
+              "name": "Lawrenceville",
+              "city": "Pittsburgh",
+              "admin1_region": "PA",
+              "country_code": "US"
+            },
+            "business_rating": 4.2,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:thrift_store",
+              "name": "Thrift Store",
+              "type": "urn:tag:genre"
+            },
+            {
+              "id": "urn:tag:genre:place:vintage_store",
+              "name": "Vintage Store",
+              "type": "urn:tag:genre"
+            }
+          ],
+          "query": {
+            "affinity": 0.63,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.4
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.53
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.47
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

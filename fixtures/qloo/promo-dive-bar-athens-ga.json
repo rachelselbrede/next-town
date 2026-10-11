@@ -1,0 +1,135 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_promo_partners",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?feature.explainability=true&filter.location.query=Athens%2C%20GA&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abar%2Curn%3Atag%3Agenre%3Aplace%3Adive_bar&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Athens, GA",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:genre:place:bar,urn:tag:genre:place:dive_bar",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "sort_by": "affinity",
+      "take": 2,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "62BDACB1-55E4-4700-961C-424DA785B497",
+          "name": "Normal Bar",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.49,
+          "location": {
+            "lat": 33.952,
+            "lon": -83.358
+          },
+          "properties": {
+            "description": "Neighborhood bar in Normaltown; the pre-show meetup for anyone on the Prince Avenue side.",
+            "address": "1365 Prince Ave, Athens, GA 30601",
+            "geocode": {
+              "name": "Athens",
+              "city": "Athens",
+              "admin1_region": "GA",
+              "country_code": "US"
+            },
+            "business_rating": 4.83,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:dive_bar",
+              "name": "Dive Bar",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:genre:place:bar",
+              "name": "Bar",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.76,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.62
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.55
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.49
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "62109291-63F6-49AE-8F76-77D26B69570A",
+          "name": "The Manhattan Café",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.55,
+          "location": {
+            "lat": 33.952,
+            "lon": -83.358
+          },
+          "properties": {
+            "description": "Downtown dive with a jukebox the bands program.",
+            "address": "337 N Hull St, Athens, GA 30601",
+            "geocode": {
+              "name": "Athens",
+              "city": "Athens",
+              "admin1_region": "GA",
+              "country_code": "US"
+            },
+            "business_rating": 4.68,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:dive_bar",
+              "name": "Dive Bar",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:genre:place:bar",
+              "name": "Bar",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.73,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.59
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.52
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.48
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

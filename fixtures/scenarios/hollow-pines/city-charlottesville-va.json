@@ -25,8 +25,8 @@
     {
       "id": "3664B532-E711-46FE-99CF-CFE395D727E0",
       "name": "The Jefferson Theater",
-      "type": "urn:entity:place",
-      "subtype": "urn:entity:place:concert_hall",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
       "affinity": 0.93,
       "popularity": 0.86,
       "rating": 4.6,
@@ -38,17 +38,24 @@
         "Concert Hall",
         "Live Music Venue"
       ],
+      "tagIds": [
+        "urn:tag:genre:place:concert_hall",
+        "urn:tag:category:place:live_music_venue"
+      ],
       "why": [
         "Big Thief (76%)",
         "Waxahatchee (63%)",
         "Adrianne Lenker (56%)"
-      ]
+      ],
+      "lat": 38.029,
+      "lon": -78.477,
+      "region": "VA"
     },
     {
       "id": "1FDBE482-8B9E-47B5-B58B-591E6BCB9153",
       "name": "The Southern Cafe & Music Hall",
-      "type": "urn:entity:place",
-      "subtype": "urn:entity:place:music_venue",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
       "affinity": 0.886,
       "popularity": 0.78,
       "rating": 4.5,
@@ -60,17 +67,24 @@
         "Music Venue",
         "Live Music Venue"
       ],
+      "tagIds": [
+        "urn:tag:genre:place:music_venue",
+        "urn:tag:category:place:live_music_venue"
+      ],
       "why": [
         "Big Thief (77%)",
         "Waxahatchee (56%)",
         "Adrianne Lenker (55%)"
-      ]
+      ],
+      "lat": 38.029,
+      "lon": -78.477,
+      "region": "VA"
     },
     {
       "id": "BB6637BD-FB97-46A1-AB04-E2EEE4E3D5F1",
       "name": "Sprint Pavilion",
-      "type": "urn:entity:place",
-      "subtype": "urn:entity:place:concert_hall",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
       "affinity": 0.841,
       "popularity": 0.82,
       "rating": 4.4,
@@ -82,17 +96,24 @@
         "Concert Hall",
         "Live Music Venue"
       ],
+      "tagIds": [
+        "urn:tag:genre:place:concert_hall",
+        "urn:tag:category:place:live_music_venue"
+      ],
       "why": [
         "Big Thief (77%)",
-        "Waxahatchee (49%)",
-        "Adrianne Lenker (55%)"
-      ]
+        "Adrianne Lenker (55%)",
+        "Waxahatchee (49%)"
+      ],
+      "lat": 38.029,
+      "lon": -78.477,
+      "region": "VA"
     },
     {
       "id": "698635CB-7161-43CE-BF88-FF43AA1D85F9",
       "name": "The Paramount Theater",
-      "type": "urn:entity:place",
-      "subtype": "urn:entity:place:concert_hall",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
       "affinity": 0.797,
       "popularity": 0.8,
       "rating": 4.7,
@@ -103,17 +124,23 @@
       "tags": [
         "Concert Hall"
       ],
+      "tagIds": [
+        "urn:tag:genre:place:concert_hall"
+      ],
       "why": [
         "Big Thief (67%)",
         "Waxahatchee (52%)",
         "Adrianne Lenker (49%)"
-      ]
+      ],
+      "lat": 38.029,
+      "lon": -78.477,
+      "region": "VA"
     },
     {
       "id": "AF4C0066-2DE0-48CA-92A9-2A528EE95C54",
       "name": "The Front Porch",
-      "type": "urn:entity:place",
-      "subtype": "urn:entity:place:music_venue",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
       "affinity": 0.753,
       "popularity": 0.52,
       "rating": 4.8,
@@ -125,17 +152,24 @@
         "Music Venue",
         "Live Music Venue"
       ],
+      "tagIds": [
+        "urn:tag:genre:place:music_venue",
+        "urn:tag:category:place:live_music_venue"
+      ],
       "why": [
         "Big Thief (68%)",
-        "Waxahatchee (45%)",
-        "Adrianne Lenker (48%)"
-      ]
+        "Adrianne Lenker (48%)",
+        "Waxahatchee (45%)"
+      ],
+      "lat": 38.029,
+      "lon": -78.477,
+      "region": "VA"
     },
     {
       "id": "52EB9058-5289-4D9C-B285-55929DC86374",
       "name": "Starr Hill Brewery Downtown",
-      "type": "urn:entity:place",
-      "subtype": "urn:entity:place:bar",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
       "affinity": 0.709,
       "popularity": 0.6,
       "rating": 4.3,
@@ -147,17 +181,24 @@
         "Live Music Bar",
         "Bar"
       ],
+      "tagIds": [
+        "urn:tag:genre:place:bar:live_music",
+        "urn:tag:genre:place:bar"
+      ],
       "why": [
         "Big Thief (58%)",
         "Waxahatchee (48%)",
         "Adrianne Lenker (43%)"
-      ]
+      ],
+      "lat": 38.029,
+      "lon": -78.477,
+      "region": "VA"
     },
     {
       "id": "0C744B5D-653C-4E59-99EE-D4A60CEB2915",
       "name": "Champion Brewing Company",
-      "type": "urn:entity:place",
-      "subtype": "urn:entity:place:bar",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
       "affinity": 0.664,
       "popularity": 0.55,
       "rating": 4.3,
@@ -169,17 +210,24 @@
         "Live Music Bar",
         "Bar"
       ],
+      "tagIds": [
+        "urn:tag:genre:place:bar:live_music",
+        "urn:tag:genre:place:bar"
+      ],
       "why": [
         "Big Thief (59%)",
-        "Waxahatchee (41%)",
-        "Adrianne Lenker (42%)"
-      ]
+        "Adrianne Lenker (42%)",
+        "Waxahatchee (41%)"
+      ],
+      "lat": 38.029,
+      "lon": -78.477,
+      "region": "VA"
     },
     {
       "id": "D9973B0F-BAF4-4603-95DE-BD67B1089741",
       "name": "Old Cabell Hall",
-      "type": "urn:entity:place",
-      "subtype": "urn:entity:place:concert_hall",
+      "type": "urn:entity",
+      "subtype": "urn:entity:place",
       "affinity": 0.62,
       "popularity": 0.47,
       "rating": 4.6,
@@ -190,11 +238,17 @@
       "tags": [
         "Concert Hall"
       ],
+      "tagIds": [
+        "urn:tag:genre:place:concert_hall"
+      ],
       "why": [
         "Big Thief (59%)",
-        "Waxahatchee (34%)",
-        "Adrianne Lenker (41%)"
-      ]
+        "Adrianne Lenker (41%)",
+        "Waxahatchee (34%)"
+      ],
+      "lat": 38.029,
+      "lon": -78.477,
+      "region": "VA"
     }
   ],
   "promo": [
@@ -204,8 +258,8 @@
         {
           "id": "5BFBDB53-943C-4825-A724-ED3543C7FB33",
           "name": "Sidetracks Music",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:record_store",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "affinity": 0.91,
           "popularity": 0.58,
           "rating": 4.7,
@@ -216,17 +270,23 @@
           "tags": [
             "Record Store"
           ],
+          "tagIds": [
+            "urn:tag:genre:place:record_store"
+          ],
           "why": [
             "Big Thief (77%)",
             "Waxahatchee (60%)",
             "Adrianne Lenker (56%)"
-          ]
+          ],
+          "lat": 38.029,
+          "lon": -78.477,
+          "region": "VA"
         },
         {
           "id": "420B1D9F-6E70-45B4-9B69-B06061F34684",
           "name": "Melody Supreme",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:record_store",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "affinity": 0.882,
           "popularity": 0.54,
           "rating": 4.8,
@@ -237,11 +297,17 @@
           "tags": [
             "Record Store"
           ],
+          "tagIds": [
+            "urn:tag:genre:place:record_store"
+          ],
           "why": [
             "Big Thief (78%)",
-            "Waxahatchee (54%)",
-            "Adrianne Lenker (56%)"
-          ]
+            "Adrianne Lenker (56%)",
+            "Waxahatchee (54%)"
+          ],
+          "lat": 38.029,
+          "lon": -78.477,
+          "region": "VA"
         }
       ]
     },
@@ -251,8 +317,8 @@
         {
           "id": "8E41574F-87D7-45A5-8EE8-213CB5854FBC",
           "name": "Mudhouse Coffee Roasters",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:coffee_shop",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "affinity": 0.854,
           "popularity": 0.66,
           "rating": 4.5,
@@ -264,17 +330,24 @@
             "Coffee Shop",
             "Cafe"
           ],
+          "tagIds": [
+            "urn:tag:genre:place:coffee_shop",
+            "urn:tag:genre:place:cafe"
+          ],
           "why": [
             "Big Thief (70%)",
             "Waxahatchee (58%)",
             "Adrianne Lenker (51%)"
-          ]
+          ],
+          "lat": 38.029,
+          "lon": -78.477,
+          "region": "VA"
         },
         {
           "id": "E608517D-E0AD-4D27-929E-63A8E67D2FF3",
           "name": "Grit Coffee",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:coffee_shop",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "affinity": 0.825,
           "popularity": 0.62,
           "rating": 4.4,
@@ -286,11 +359,18 @@
             "Coffee Shop",
             "Cafe"
           ],
+          "tagIds": [
+            "urn:tag:genre:place:coffee_shop",
+            "urn:tag:genre:place:cafe"
+          ],
           "why": [
             "Big Thief (72%)",
             "Waxahatchee (52%)",
             "Adrianne Lenker (52%)"
-          ]
+          ],
+          "lat": 38.029,
+          "lon": -78.477,
+          "region": "VA"
         }
       ]
     },
@@ -300,8 +380,8 @@
         {
           "id": "CA3F57D3-2071-421F-BFCC-4AB07A33D2E0",
           "name": "New Dominion Bookshop",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:bookstore",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "affinity": 0.797,
           "popularity": 0.56,
           "rating": 4.8,
@@ -312,17 +392,23 @@
           "tags": [
             "Bookstore"
           ],
+          "tagIds": [
+            "urn:tag:genre:place:bookstore"
+          ],
           "why": [
             "Big Thief (73%)",
-            "Waxahatchee (46%)",
-            "Adrianne Lenker (52%)"
-          ]
+            "Adrianne Lenker (52%)",
+            "Waxahatchee (46%)"
+          ],
+          "lat": 38.029,
+          "lon": -78.477,
+          "region": "VA"
         },
         {
           "id": "5197985A-3A1F-44ED-BF66-12F842E93700",
           "name": "Daedalus Bookshop",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:bookstore",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "affinity": 0.769,
           "popularity": 0.5,
           "rating": 4.7,
@@ -333,11 +419,17 @@
           "tags": [
             "Bookstore"
           ],
+          "tagIds": [
+            "urn:tag:genre:place:bookstore"
+          ],
           "why": [
             "Big Thief (65%)",
             "Waxahatchee (50%)",
             "Adrianne Lenker (47%)"
-          ]
+          ],
+          "lat": 38.029,
+          "lon": -78.477,
+          "region": "VA"
         }
       ]
     },
@@ -347,8 +439,8 @@
         {
           "id": "2107DD5D-CA7A-4420-BA3C-43CBDCB41B3E",
           "name": "Miller's Downtown",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:dive_bar",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "affinity": 0.741,
           "popularity": 0.63,
           "rating": 4.3,
@@ -360,17 +452,24 @@
             "Dive Bar",
             "Bar"
           ],
+          "tagIds": [
+            "urn:tag:genre:place:dive_bar",
+            "urn:tag:genre:place:bar"
+          ],
           "why": [
             "Big Thief (67%)",
-            "Waxahatchee (44%)",
-            "Adrianne Lenker (48%)"
-          ]
+            "Adrianne Lenker (48%)",
+            "Waxahatchee (44%)"
+          ],
+          "lat": 38.029,
+          "lon": -78.477,
+          "region": "VA"
         },
         {
           "id": "23462239-3AB7-4BF2-B693-CA250B2B216B",
           "name": "Durty Nelly's Pub",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:dive_bar",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "affinity": 0.713,
           "popularity": 0.48,
           "rating": 4.4,
@@ -382,11 +481,18 @@
             "Dive Bar",
             "Bar"
           ],
+          "tagIds": [
+            "urn:tag:genre:place:dive_bar",
+            "urn:tag:genre:place:bar"
+          ],
           "why": [
             "Big Thief (58%)",
             "Waxahatchee (49%)",
             "Adrianne Lenker (43%)"
-          ]
+          ],
+          "lat": 38.029,
+          "lon": -78.477,
+          "region": "VA"
         }
       ]
     },
@@ -396,8 +502,8 @@
         {
           "id": "9EB6A2A7-15F3-4D1F-9560-6E77B921B796",
           "name": "Low Vintage",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:vintage_store",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "affinity": 0.685,
           "popularity": 0.46,
           "rating": 4.6,
@@ -408,17 +514,23 @@
           "tags": [
             "Vintage Store"
           ],
+          "tagIds": [
+            "urn:tag:genre:place:vintage_store"
+          ],
           "why": [
             "Big Thief (60%)",
-            "Waxahatchee (43%)",
-            "Adrianne Lenker (43%)"
-          ]
+            "Adrianne Lenker (43%)",
+            "Waxahatchee (43%)"
+          ],
+          "lat": 38.029,
+          "lon": -78.477,
+          "region": "VA"
         },
         {
           "id": "E5BE7AE3-F13B-4D55-81CF-15C496BFFF8A",
           "name": "Rethreads",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:vintage_store",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "affinity": 0.656,
           "popularity": 0.44,
           "rating": 4.4,
@@ -430,31 +542,39 @@
             "Thrift Store",
             "Vintage Store"
           ],
+          "tagIds": [
+            "urn:tag:genre:place:thrift_store",
+            "urn:tag:genre:place:vintage_store"
+          ],
           "why": [
             "Big Thief (62%)",
-            "Waxahatchee (37%)",
-            "Adrianne Lenker (43%)"
-          ]
+            "Adrianne Lenker (43%)",
+            "Waxahatchee (37%)"
+          ],
+          "lat": 38.029,
+          "lon": -78.477,
+          "region": "VA"
         }
       ]
     }
   ],
   "who": {
+    "scope": "comps-overall",
     "age": {
-      "24_and_younger": 0.3,
-      "25_to_29": 0.5,
-      "30_to_34": 0.49,
-      "35_to_44": 0.27,
-      "45_to_54": 0.03,
+      "24_and_younger": 0.23,
+      "25_to_29": 0.49,
+      "30_to_34": 0.51,
+      "35_to_44": 0.32,
+      "45_to_54": 0.06,
       "55_and_older": -0.23
     },
     "gender": {
       "female": 0.24,
       "male": -0.1
     },
-    "strongestAge": "25_to_29",
+    "strongestAge": "30_to_34",
     "suggestions": [
-      "Fans of your comps here index highest at 25 to 29; consider pitching rooms and promo partners that already draw that crowd.",
+      "Fans of your comps overall index highest at 30 to 34; consider leading with rooms and promo partners that program for that age range.",
       "The under-25 band is also positive; consider asking rooms whether an all-ages or early show is an option.",
       "The 55-and-older band indexes low; consider a later set time if the room offers a choice."
     ]
@@ -533,40 +653,51 @@
         "homeAffinity": 0.818,
         "delta": 0.03
       }
-    ]
+    ],
+    "homeAvailable": true
   },
   "locality": {
-    "id": "F2CC972E-FAA6-4706-A990-510B8C2BC5A7",
+    "id": "3664B532-E711-46FE-99CF-CFE395D727E0",
     "name": "Charlottesville",
-    "state": "VA",
     "label": "Charlottesville, VA",
     "rank": 5,
     "affinity": 0.899,
+    "state": "VA",
     "population": 46553,
-    "lat": 38.029,
-    "lon": -78.477,
+    "lat": 38.0377,
+    "lon": -78.4854,
     "overIndex": true,
     "why": [
       "Big Thief (68%)",
       "Waxahatchee (61%)",
       "Adrianne Lenker (51%)"
-    ]
+    ],
+    "topRoom": {
+      "id": "3664B532-E711-46FE-99CF-CFE395D727E0",
+      "name": "The Jefferson Theater",
+      "affinity": 0.899,
+      "why": [
+        "Big Thief (68%)",
+        "Waxahatchee (61%)",
+        "Adrianne Lenker (51%)"
+      ]
+    }
   },
   "card": {
-    "summary": "Charlottesville ranks 5th for your comps with a 0.899 affinity and over-indexes, so fans of your comps around Charlottesville punch above the city's 46,553 population. Big Thief is the strongest pull here at 68%, followed by Waxahatchee at 61% and Adrianne Lenker at 51%.",
-    "rooms_note": "The Jefferson Theater tops the room list at 0.93 affinity, driven most by Big Thief (76%), with The Southern Cafe & Music Hall close behind at 0.886.",
-    "promo_note": "Record stores are the strongest promo group, led by Sidetracks Music at 0.91 affinity with Big Thief at 77%, and Melody Supreme right behind at 0.882.",
-    "who_note": "Fans of your comps around Charlottesville index highest at 25 to 29 (0.5), with 30 to 34 nearly as strong (0.49), so consider pitching rooms and partners that already draw that crowd.",
-    "local_color_note": "Gilmore Girls shows the biggest lift over Richmond (+0.087) and Warby Parker leads the brands (+0.074), hinting that a cozy, bookish, small-town look could suit the poster and merch table.",
+    "summary": "Charlottesville ranks #5 nationally for fans of your comps, with a locality affinity of 0.899, and it over-indexes, meaning a population under 250,000 paired with a national rank of 20 or better. Big Thief is the strongest comp here at 68%, and The Jefferson Theater is the top-ranked room.",
+    "rooms_note": "Start with The Jefferson Theater, the highest-ranked room at 0.93 affinity, driven mainly by Big Thief (76%).",
+    "promo_note": "Record stores are the strongest promo partner group, led by Sidetracks Music at 0.91 affinity with Big Thief at 77%, and Melody Supreme close behind at 0.882.",
+    "who_note": "Fans of your comps overall index highest at 30 to 34 (0.51), with 25 to 29 close behind (0.49), so consider pitching rooms and promo partners that program for late-20s and early-30s listeners.",
+    "local_color_note": "Fans of your comps around Charlottesville rank Gilmore Girls higher than the home market does (+0.087 vs. Richmond), and Warby Parker leads the brands (+0.074), which hints that a cozy, small-town, bookish look could suit the poster and merch table.",
     "promo_copy": [
-      "Big Thief fans in Charlottesville: a new songwriter is coming through town.",
-      "Love Waxahatchee? Ask us about the next indie folk show in Charlottesville."
+      "Big Thief and Waxahatchee fans in Charlottesville: new tour dates are coming.",
+      "If Adrianne Lenker is on your turntable, catch our Charlottesville stop this tour."
     ],
     "caution": "These are aggregate taste affinities, not attendance or sales figures, so confirm capacity, age policy, and availability directly with each room."
   },
   "receipts": [
     {
-      "id": "rmv3fcwwu-5",
+      "id": "rmv3huh4x-5",
       "tool": "find_rooms",
       "method": "GET",
       "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Charlottesville%2C+VA&filter.location.radius=15000&filter.tags=urn%3Atag%3Acategory%3Aplace%3Alive_music_venue%2Curn%3Atag%3Agenre%3Aplace%3Abar%3Alive_music%2Curn%3Atag%3Agenre%3Aplace%3Aconcert_hall%2Curn%3Atag%3Agenre%3Aplace%3Amusic_venue&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=8&feature.explainability=true",
@@ -590,34 +721,10 @@
       ]
     },
     {
-      "id": "rmv3fcwwu-6",
-      "tool": "find_promo_partners",
-      "method": "GET",
-      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Charlottesville%2C+VA&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abar%2Curn%3Atag%3Agenre%3Aplace%3Abookstore%2Curn%3Atag%3Agenre%3Aplace%3Acafe%2Curn%3Atag%3Agenre%3Aplace%3Acoffee_shop%2Curn%3Atag%3Agenre%3Aplace%3Adive_bar%2Curn%3Atag%3Agenre%3Aplace%3Arecord_store%2Curn%3Atag%3Agenre%3Aplace%3Athrift_store%2Curn%3Atag%3Agenre%3Aplace%3Avintage_store&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&diversify.by=properties.subtype&diversify.take=2&sort_by=affinity&take=12&feature.explainability=true",
-      "mode": "demo",
-      "status": 200,
-      "ms": 0,
-      "resultCount": 12,
-      "top": [
-        {
-          "name": "Sidetracks Music",
-          "affinity": 0.91
-        },
-        {
-          "name": "Melody Supreme",
-          "affinity": 0.882
-        },
-        {
-          "name": "Mudhouse Coffee Roasters",
-          "affinity": 0.854
-        }
-      ]
-    },
-    {
-      "id": "rmv3fcwwu-7",
+      "id": "rmv3huh4x-6",
       "tool": "who_shows_up",
       "method": "GET",
-      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Ademographics&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Charlottesville%2C+VA&signal.location.radius=25000",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Ademographics&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
       "mode": "demo",
       "status": 200,
       "ms": 0,
@@ -625,7 +732,7 @@
       "top": []
     },
     {
-      "id": "rmv3fcwwu-8",
+      "id": "rmv3huh4x-7",
       "tool": "local_color",
       "method": "GET",
       "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Abrand&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Charlottesville%2C+VA&signal.location.radius=25000&take=20",
@@ -649,7 +756,7 @@
       ]
     },
     {
-      "id": "rmv3fcwwu-9",
+      "id": "rmv3huh4x-8",
       "tool": "local_color",
       "method": "GET",
       "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Atv_show&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Charlottesville%2C+VA&signal.location.radius=25000&take=20",
@@ -673,7 +780,7 @@
       ]
     },
     {
-      "id": "rmv3fcwwu-10",
+      "id": "rmv3huh4x-9",
       "tool": "local_color",
       "method": "GET",
       "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Abrand&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Richmond%2C+VA&signal.location.radius=25000&take=20",
@@ -697,7 +804,7 @@
       ]
     },
     {
-      "id": "rmv3fcwwu-11",
+      "id": "rmv3huh4x-10",
       "tool": "local_color",
       "method": "GET",
       "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Atv_show&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Richmond%2C+VA&signal.location.radius=25000&take=20",
@@ -717,6 +824,106 @@
         {
           "name": "Somebody Somewhere",
           "affinity": 0.873
+        }
+      ]
+    },
+    {
+      "id": "rmv3huh4x-11",
+      "tool": "find_promo_partners",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Charlottesville%2C+VA&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Arecord_store&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 2,
+      "top": [
+        {
+          "name": "Sidetracks Music",
+          "affinity": 0.91
+        },
+        {
+          "name": "Melody Supreme",
+          "affinity": 0.882
+        }
+      ]
+    },
+    {
+      "id": "rmv3huh4x-12",
+      "tool": "find_promo_partners",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Charlottesville%2C+VA&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Acafe%2Curn%3Atag%3Agenre%3Aplace%3Acoffee_shop&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 2,
+      "top": [
+        {
+          "name": "Mudhouse Coffee Roasters",
+          "affinity": 0.854
+        },
+        {
+          "name": "Grit Coffee",
+          "affinity": 0.825
+        }
+      ]
+    },
+    {
+      "id": "rmv3huh4x-13",
+      "tool": "find_promo_partners",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Charlottesville%2C+VA&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abookstore&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 2,
+      "top": [
+        {
+          "name": "New Dominion Bookshop",
+          "affinity": 0.797
+        },
+        {
+          "name": "Daedalus Bookshop",
+          "affinity": 0.769
+        }
+      ]
+    },
+    {
+      "id": "rmv3huh4x-14",
+      "tool": "find_promo_partners",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Charlottesville%2C+VA&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abar%2Curn%3Atag%3Agenre%3Aplace%3Adive_bar&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 2,
+      "top": [
+        {
+          "name": "Miller's Downtown",
+          "affinity": 0.741
+        },
+        {
+          "name": "Durty Nelly's Pub",
+          "affinity": 0.713
+        }
+      ]
+    },
+    {
+      "id": "rmv3huh4x-15",
+      "tool": "find_promo_partners",
+      "method": "GET",
+      "url": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Aplace&filter.location.query=Charlottesville%2C+VA&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Athrift_store%2Curn%3Atag%3Agenre%3Aplace%3Avintage_store&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2&feature.explainability=true",
+      "mode": "demo",
+      "status": 200,
+      "ms": 0,
+      "resultCount": 2,
+      "top": [
+        {
+          "name": "Low Vintage",
+          "affinity": 0.685
+        },
+        {
+          "name": "Rethreads",
+          "affinity": 0.656
         }
       ]
     }

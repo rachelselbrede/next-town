@@ -1,0 +1,283 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "local_color",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Abrand&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Ithaca%2C%20NY&signal.location.radius=25000&take=20",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:brand",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "signal.location.query": "Ithaca, NY",
+      "signal.location.radius": 25000,
+      "take": 20
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "81FF9E58-99F1-4C63-9F2F-7D85FA8D6964",
+          "name": "Patagonia",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.85,
+          "properties": {
+            "description": "Outdoor apparel brand with a loud environmental mission."
+          },
+          "query": {
+            "affinity": 0.92
+          }
+        },
+        {
+          "entity_id": "AC8120D3-F632-4821-92A3-70E5C4A3343C",
+          "name": "Subaru",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.84,
+          "properties": {
+            "description": "Carmaker whose all-wheel-drive wagons are a fixture at trailheads and farmers markets."
+          },
+          "query": {
+            "affinity": 0.901
+          }
+        },
+        {
+          "entity_id": "753F76AB-F8F3-4DB9-9076-5541D45875DF",
+          "name": "Trader Joe's",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.83,
+          "properties": {
+            "description": "Grocery chain known for cheap wine, frozen dumplings, and friendly cashiers."
+          },
+          "query": {
+            "affinity": 0.882
+          }
+        },
+        {
+          "entity_id": "7C8DF92F-D4B9-45DE-9144-A0E36C0C6897",
+          "name": "REI",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.79,
+          "properties": {
+            "description": "Outdoor gear co-op with a member dividend."
+          },
+          "query": {
+            "affinity": 0.863
+          }
+        },
+        {
+          "entity_id": "0EACA57A-61E3-4D50-B37F-F1E8AB86335E",
+          "name": "GreenStar Natural Foods Market",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.72,
+          "properties": {
+            "description": "Ithaca's member-owned natural-foods co-op with two locations."
+          },
+          "query": {
+            "affinity": 0.844
+          }
+        },
+        {
+          "entity_id": "B33E9033-D54B-4B07-A439-14C0322C161D",
+          "name": "Levi's",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.77,
+          "properties": {
+            "description": "Denim brand with a vintage-friendly back catalog."
+          },
+          "query": {
+            "affinity": 0.825
+          }
+        },
+        {
+          "entity_id": "D44CBBD6-C6E8-455A-94B4-88B6A05B0591",
+          "name": "Blundstone",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.73,
+          "properties": {
+            "description": "Tasmanian pull-on boot brand beloved by people who walk a lot."
+          },
+          "query": {
+            "affinity": 0.806
+          }
+        },
+        {
+          "entity_id": "9166499A-B82B-4074-A2AE-65E2087C3EBE",
+          "name": "Ithaca Beer Company",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.76,
+          "properties": {
+            "description": "Ithaca craft brewery best known for Flower Power IPA."
+          },
+          "query": {
+            "affinity": 0.787
+          }
+        },
+        {
+          "entity_id": "79105CB8-2649-4620-A2F8-0B53D5B8A831",
+          "name": "Fjallraven",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.71,
+          "properties": {
+            "description": "Swedish outdoor brand known for the Kanken backpack."
+          },
+          "query": {
+            "affinity": 0.768
+          }
+        },
+        {
+          "entity_id": "1E64D934-320B-4FB7-921B-58DB10BE96EA",
+          "name": "Birkenstock",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.66,
+          "properties": {
+            "description": "German sandal maker with a cork footbed and a cult following."
+          },
+          "query": {
+            "affinity": 0.749
+          }
+        },
+        {
+          "entity_id": "944568A1-543D-4425-B13B-143D1E90F151",
+          "name": "Moosewood Restaurant",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.74,
+          "properties": {
+            "description": "Landmark vegetarian restaurant whose cookbooks made Ithaca famous."
+          },
+          "query": {
+            "affinity": 0.731
+          }
+        },
+        {
+          "entity_id": "47D5D80A-D8DA-4F3A-A4DF-A99635B1BCB7",
+          "name": "Warby Parker",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.61,
+          "properties": {
+            "description": "Direct-to-consumer eyewear brand with a try-at-home program."
+          },
+          "query": {
+            "affinity": 0.712
+          }
+        },
+        {
+          "entity_id": "DF2B76FB-0B6E-463B-BF7F-703294C7462C",
+          "name": "Gimme! Coffee",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.64,
+          "properties": {
+            "description": "Ithaca-born roaster with cafes around town and a strong local following."
+          },
+          "query": {
+            "affinity": 0.693
+          }
+        },
+        {
+          "entity_id": "CA29596C-A583-4C49-8B03-1FCE2A53EA05",
+          "name": "Carhartt",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.55,
+          "properties": {
+            "description": "Workwear brand adopted by musicians and carpenters alike."
+          },
+          "query": {
+            "affinity": 0.674
+          }
+        },
+        {
+          "entity_id": "1C5AE16E-AD25-42A9-9908-2F073EE57471",
+          "name": "Wegmans",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.7,
+          "properties": {
+            "description": "Upstate New York grocery chain that locals treat as a civic institution."
+          },
+          "query": {
+            "affinity": 0.655
+          }
+        },
+        {
+          "entity_id": "F4D0AB50-60CD-4B17-BF5B-3224D267EB2B",
+          "name": "Allbirds",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.54,
+          "properties": {
+            "description": "Wool sneaker brand with a sustainability pitch."
+          },
+          "query": {
+            "affinity": 0.636
+          }
+        },
+        {
+          "entity_id": "3BD3783E-6F0B-4E45-98B2-FA5B4381B620",
+          "name": "Purity Ice Cream",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.6,
+          "properties": {
+            "description": "Ithaca ice cream shop on Cayuga Street with a long summer line."
+          },
+          "query": {
+            "affinity": 0.617
+          }
+        },
+        {
+          "entity_id": "2838B3D8-5C49-4AF5-AA58-12015277F479",
+          "name": "Doc Martens",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.49,
+          "properties": {
+            "description": "British boot brand with a permanent place in music subcultures."
+          },
+          "query": {
+            "affinity": 0.598
+          }
+        },
+        {
+          "entity_id": "4BA22E24-A43D-411A-94A0-7C9CE860DA6D",
+          "name": "Ithaca Bakery",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.52,
+          "properties": {
+            "description": "Downtown bakery and lunch counter popular with students and lifers alike."
+          },
+          "query": {
+            "affinity": 0.579
+          }
+        },
+        {
+          "entity_id": "5C23F79B-9BB4-4538-AE17-CAADAFFD0835",
+          "name": "Ithaca Coffee Company",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.5,
+          "properties": {
+            "description": "Local coffee roaster with a cafe on North Aurora Street."
+          },
+          "query": {
+            "affinity": 0.56
+          }
+        }
+      ]
+    }
+  }
+}

@@ -20,14 +20,14 @@
         {
           "entity_id": "5AF4B18C-7F2E-4D54-B946-C924DBBC0E98",
           "name": "Fleabag",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.88,
           "properties": {},
           "tags": [
             {
+              "id": "urn:tag:genre:media:comedy_drama",
               "name": "Comedy-Drama",
-              "tag_id": "urn:tag:genre:media:comedy_drama",
               "type": "urn:tag:genre:media"
             }
           ],
@@ -38,14 +38,14 @@
         {
           "entity_id": "F504DFDE-7861-486D-9F48-C6422671C57A",
           "name": "Reservation Dogs",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.86,
           "properties": {},
           "tags": [
             {
+              "id": "urn:tag:genre:media:comedy_drama",
               "name": "Comedy-Drama",
-              "tag_id": "urn:tag:genre:media:comedy_drama",
               "type": "urn:tag:genre:media"
             }
           ],
@@ -56,14 +56,14 @@
         {
           "entity_id": "656078D4-7298-439C-B517-153F264014E1",
           "name": "Somebody Somewhere",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.84,
           "properties": {},
           "tags": [
             {
+              "id": "urn:tag:genre:media:comedy_drama",
               "name": "Comedy-Drama",
-              "tag_id": "urn:tag:genre:media:comedy_drama",
               "type": "urn:tag:genre:media"
             }
           ],
@@ -74,14 +74,14 @@
         {
           "entity_id": "E3C6F04F-7F24-4D5C-88C7-79ACD9F57EAC",
           "name": "The Bear",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.82,
           "properties": {},
           "tags": [
             {
+              "id": "urn:tag:genre:media:comedy_drama",
               "name": "Comedy-Drama",
-              "tag_id": "urn:tag:genre:media:comedy_drama",
               "type": "urn:tag:genre:media"
             }
           ],
@@ -92,14 +92,14 @@
         {
           "entity_id": "B6119090-85AC-4E84-8223-45008C3A45F5",
           "name": "Justified",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.8,
           "properties": {},
           "tags": [
             {
+              "id": "urn:tag:genre:media:comedy_drama",
               "name": "Comedy-Drama",
-              "tag_id": "urn:tag:genre:media:comedy_drama",
               "type": "urn:tag:genre:media"
             }
           ],
@@ -110,14 +110,14 @@
         {
           "entity_id": "4ED236B4-9453-4512-8981-B49E9BB467A5",
           "name": "Atlanta",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.78,
           "properties": {},
           "tags": [
             {
+              "id": "urn:tag:genre:media:comedy_drama",
               "name": "Comedy-Drama",
-              "tag_id": "urn:tag:genre:media:comedy_drama",
               "type": "urn:tag:genre:media"
             }
           ],
@@ -128,14 +128,14 @@
         {
           "entity_id": "CBBD7C4F-EE93-4B17-8B5B-5251E5F73EB7",
           "name": "Hacks",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.76,
           "properties": {},
           "tags": [
             {
+              "id": "urn:tag:genre:media:comedy_drama",
               "name": "Comedy-Drama",
-              "tag_id": "urn:tag:genre:media:comedy_drama",
               "type": "urn:tag:genre:media"
             }
           ],
@@ -146,14 +146,14 @@
         {
           "entity_id": "DB8450A9-DDD4-4A01-8081-D65A68F670C9",
           "name": "Detroiters",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.74,
           "properties": {},
           "tags": [
             {
+              "id": "urn:tag:genre:media:comedy_drama",
               "name": "Comedy-Drama",
-              "tag_id": "urn:tag:genre:media:comedy_drama",
               "type": "urn:tag:genre:media"
             }
           ],
@@ -164,14 +164,14 @@
         {
           "entity_id": "A13215E0-C764-4D72-A2B1-801211C74A37",
           "name": "Twin Peaks",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.72,
           "properties": {},
           "tags": [
             {
+              "id": "urn:tag:genre:media:comedy_drama",
               "name": "Comedy-Drama",
-              "tag_id": "urn:tag:genre:media:comedy_drama",
               "type": "urn:tag:genre:media"
             }
           ],
@@ -182,14 +182,14 @@
         {
           "entity_id": "D7BD04AA-3B47-4DA4-9E4F-40A542F5B7D1",
           "name": "Abbott Elementary",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.7,
           "properties": {},
           "tags": [
             {
+              "id": "urn:tag:genre:media:comedy_drama",
               "name": "Comedy-Drama",
-              "tag_id": "urn:tag:genre:media:comedy_drama",
               "type": "urn:tag:genre:media"
             }
           ],
@@ -200,14 +200,14 @@
         {
           "entity_id": "377A96F7-A073-43FE-B56D-6E3331A4308F",
           "name": "Gilmore Girls",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.68,
           "properties": {},
           "tags": [
             {
+              "id": "urn:tag:genre:media:comedy_drama",
               "name": "Comedy-Drama",
-              "tag_id": "urn:tag:genre:media:comedy_drama",
               "type": "urn:tag:genre:media"
             }
           ],
@@ -218,14 +218,14 @@
         {
           "entity_id": "BAF90461-5DF2-4491-9523-F0057E492CF9",
           "name": "Succession",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.66,
           "properties": {},
           "tags": [
             {
+              "id": "urn:tag:genre:media:comedy_drama",
               "name": "Comedy-Drama",
-              "tag_id": "urn:tag:genre:media:comedy_drama",
               "type": "urn:tag:genre:media"
             }
           ],
@@ -236,14 +236,14 @@
         {
           "entity_id": "0E925F8C-19E3-4F7B-A3BE-AE91C3784881",
           "name": "Heartstopper",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.64,
           "properties": {},
           "tags": [
             {
+              "id": "urn:tag:genre:media:comedy_drama",
               "name": "Comedy-Drama",
-              "tag_id": "urn:tag:genre:media:comedy_drama",
               "type": "urn:tag:genre:media"
             }
           ],
@@ -254,14 +254,14 @@
         {
           "entity_id": "C1AD222B-2117-44E1-8F0A-ACCDCCF3AF3B",
           "name": "Dark Winds",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.62,
           "properties": {},
           "tags": [
             {
+              "id": "urn:tag:genre:media:comedy_drama",
               "name": "Comedy-Drama",
-              "tag_id": "urn:tag:genre:media:comedy_drama",
               "type": "urn:tag:genre:media"
             }
           ],
@@ -272,14 +272,14 @@
         {
           "entity_id": "D78C092C-C13E-4E87-A069-48792AC7CA28",
           "name": "Mo",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.6,
           "properties": {},
           "tags": [
             {
+              "id": "urn:tag:genre:media:comedy_drama",
               "name": "Comedy-Drama",
-              "tag_id": "urn:tag:genre:media:comedy_drama",
               "type": "urn:tag:genre:media"
             }
           ],
@@ -290,14 +290,14 @@
         {
           "entity_id": "246B7374-1459-47A8-BC6A-2DBA9A16E4C7",
           "name": "Righteous Gemstones",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.58,
           "properties": {},
           "tags": [
             {
+              "id": "urn:tag:genre:media:comedy_drama",
               "name": "Comedy-Drama",
-              "tag_id": "urn:tag:genre:media:comedy_drama",
               "type": "urn:tag:genre:media"
             }
           ],
@@ -308,14 +308,14 @@
         {
           "entity_id": "9F6379AC-3815-4883-B069-902D1283CB5A",
           "name": "Jury Duty",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.56,
           "properties": {},
           "tags": [
             {
+              "id": "urn:tag:genre:media:comedy_drama",
               "name": "Comedy-Drama",
-              "tag_id": "urn:tag:genre:media:comedy_drama",
               "type": "urn:tag:genre:media"
             }
           ],
@@ -326,14 +326,14 @@
         {
           "entity_id": "69B3C272-1C4A-4E37-B557-EF952ABE47F2",
           "name": "Poker Face",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.54,
           "properties": {},
           "tags": [
             {
+              "id": "urn:tag:genre:media:comedy_drama",
               "name": "Comedy-Drama",
-              "tag_id": "urn:tag:genre:media:comedy_drama",
               "type": "urn:tag:genre:media"
             }
           ],
@@ -344,14 +344,14 @@
         {
           "entity_id": "916D06B3-103A-41B0-BBB0-17E8F54050F9",
           "name": "Party Down",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.52,
           "properties": {},
           "tags": [
             {
+              "id": "urn:tag:genre:media:comedy_drama",
               "name": "Comedy-Drama",
-              "tag_id": "urn:tag:genre:media:comedy_drama",
               "type": "urn:tag:genre:media"
             }
           ],
@@ -362,14 +362,14 @@
         {
           "entity_id": "434F31AF-D190-4762-8C9B-5266F6D1A699",
           "name": "Dickinson",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.5,
           "properties": {},
           "tags": [
             {
+              "id": "urn:tag:genre:media:comedy_drama",
               "name": "Comedy-Drama",
-              "tag_id": "urn:tag:genre:media:comedy_drama",
               "type": "urn:tag:genre:media"
             }
           ],

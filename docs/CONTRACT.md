@@ -1,5 +1,17 @@
 # Next Town: build contract
 
+> **Revisions after review (2026-10-11).** The sections below were the original build plan. These points override them where they differ; the code is the source of truth.
+>
+> - **Markets are ranked through venues.** Qloo's docs say `urn:entity:locality` only accepts locality signals, so `rank_markets` now runs `rankMarkets(compIds, venueTagIds)`: `filter.type=urn:entity:place`, venue tags with `operator.filter.tags=union`, `filter.geocode.country_code=US`, `diversify.by=properties.geocode.city`, `diversify.take=1`, `take=50`, explainability on. Each result is a town's best-matching room; the town's label, population and coordinates come from the Census table (venue coordinates as fallback). `Locality.topRoom` carries the room.
+> - **Promo partners are one call per kind** (`findPromoGroup`, `take=2`); `diversify.by=properties.subtype` was not a documented value. `groupPromo` takes `[{ group, places }]`.
+> - **Demographics are comps-overall.** `whoShowsUp(compIds)` sends no location (location is not a documented input for `urn:demographics`); the card says so and `Demographics.scope` is `"comps-overall"`.
+> - **Explainability** is parsed in Qloo's documented shape: an array under `signal.interests.entities` with `entity_id` and `score`, mapped to comp names by the caller. Fixtures use that shape, `type: "urn:entity"`, subtypes like `urn:entity:place`, and tags as `{ id, name, type }`.
+> - **Data rule.** Live Qloo responses are never committed or published. `private/` (gitignored) holds live captures and the live recording; `src/demo/fixtures.generated.ts` and `src/recorded.generated.ts` are build artifacts made by `npm run prepare:data`. `fixtures/` holds only hand-written placeholders flagged `_handAuthored: true`.
+> - **Routing** uses straight-line miles times a 1.25 road factor at 55 mph, labeled as estimates everywhere; pins never reorder the loop (a pinned stop already on the route is a no-op; an off-route pin is inserted at its cheapest slot).
+> - **Server hardening.** Strict request validation, home checked against the Census table before any Claude turn, 64 KB body cap, per-field caps, a per-visitor limit on Claude-spending routes (`LIVE_LIMITER` binding with an in-memory fallback), sanitized error messages, and a 503 for custom acts while Qloo is in placeholder mode. `/api/health` returns `{ ok, qloo, model, claude, recorded, fixtureNote, recordedCities }`.
+> - **Live-call policy** in `src/qloo.ts`: 8 s timeout, abort support, retries on 429/5xx, four calls in flight, private in-memory cache, fallback to a recorded answer with a receipt note.
+> - **Honesty labels.** While fixtures are placeholders the UI says so on the landing, in the footer, in Receipts, on playbooks and on printed sheets. `FIXTURE_NOTE` is "Recorded demo · placeholder Qloo data" or "Recorded demo · Qloo data captured <date>".
+
 Read this before touching any file. It defines what every module owns, the shapes they exchange, and the rules that keep the demo deterministic. `src/types.ts`, `src/queries.ts`, `src/canonical.ts`, `src/qloo.ts`, `src/agent.ts`, `src/sse.ts` are the backbone and are already written; do not change their exported signatures. Add exports if you must, never rename or remove.
 
 ## Product in one paragraph

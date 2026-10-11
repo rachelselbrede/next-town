@@ -1,0 +1,283 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "local_color",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Atv_show&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Baltimore%2C%20MD&signal.location.radius=25000&take=20",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:tv_show",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "signal.location.query": "Baltimore, MD",
+      "signal.location.radius": 25000,
+      "take": 20
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "833E0B4B-456A-4350-A9D9-704C48A3BBA3",
+          "name": "The Wire",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.9,
+          "properties": {
+            "description": "Baltimore crime drama beloved by DC-area viewers."
+          },
+          "query": {
+            "affinity": 0.93
+          }
+        },
+        {
+          "entity_id": "5AF4B18C-7F2E-4D54-B946-C924DBBC0E98",
+          "name": "Fleabag",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.88,
+          "properties": {
+            "description": "Phoebe Waller-Bridge's fourth-wall-breaking comedy about grief and bad decisions."
+          },
+          "query": {
+            "affinity": 0.905
+          }
+        },
+        {
+          "entity_id": "F504DFDE-7861-486D-9F48-C6422671C57A",
+          "name": "Reservation Dogs",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.875,
+          "properties": {
+            "description": "Four Indigenous teens in rural Oklahoma dream of California."
+          },
+          "query": {
+            "affinity": 0.89
+          }
+        },
+        {
+          "entity_id": "656078D4-7298-439C-B517-153F264014E1",
+          "name": "Somebody Somewhere",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.87,
+          "properties": {
+            "description": "A woman returns to her Kansas hometown and finds a choir of misfits."
+          },
+          "query": {
+            "affinity": 0.875
+          }
+        },
+        {
+          "entity_id": "E3C6F04F-7F24-4D5C-88C7-79ACD9F57EAC",
+          "name": "The Bear",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.865,
+          "properties": {
+            "description": "A fine-dining chef takes over his late brother's Chicago sandwich shop."
+          },
+          "query": {
+            "affinity": 0.857
+          }
+        },
+        {
+          "entity_id": "D7BD04AA-3B47-4DA4-9E4F-40A542F5B7D1",
+          "name": "Abbott Elementary",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.8,
+          "properties": {
+            "description": "Mockumentary about teachers at an underfunded Philadelphia public school."
+          },
+          "query": {
+            "affinity": 0.838
+          }
+        },
+        {
+          "entity_id": "F18A5682-1DD5-4CEB-A36B-9CC7A776BE9C",
+          "name": "Veep",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.79,
+          "properties": {
+            "description": "Political satire set in the vice president's office."
+          },
+          "query": {
+            "affinity": 0.82
+          }
+        },
+        {
+          "entity_id": "4ED236B4-9453-4512-8981-B49E9BB467A5",
+          "name": "Atlanta",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.78,
+          "properties": {
+            "description": "Donald Glover's surreal comedy about two cousins in the Atlanta rap scene."
+          },
+          "query": {
+            "affinity": 0.8
+          }
+        },
+        {
+          "entity_id": "CBBD7C4F-EE93-4B17-8B5B-5251E5F73EB7",
+          "name": "Hacks",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.77,
+          "properties": {
+            "description": "A legendary Vegas comedian and a cancelled young writer need each other."
+          },
+          "query": {
+            "affinity": 0.783
+          }
+        },
+        {
+          "entity_id": "D9A9BCC6-A991-46BA-BEA3-5CB0DC1984DE",
+          "name": "Homicide: Life on the Street",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "properties": {
+            "description": "Gritty Baltimore police drama adapted from David Simon's year with the city's homicide unit."
+          },
+          "popularity": 0.74,
+          "query": {
+            "affinity": 0.765
+          }
+        },
+        {
+          "entity_id": "5EBD1CEF-DA82-464F-B871-966E297A9CCD",
+          "name": "House of Cards",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.73,
+          "properties": {
+            "description": "Political thriller set in Washington power circles."
+          },
+          "query": {
+            "affinity": 0.748
+          }
+        },
+        {
+          "entity_id": "BAF90461-5DF2-4491-9523-F0057E492CF9",
+          "name": "Succession",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.72,
+          "properties": {
+            "description": "A media dynasty's children fight over the throne."
+          },
+          "query": {
+            "affinity": 0.73
+          }
+        },
+        {
+          "entity_id": "1726F37E-D9CA-43CC-8B62-4E9AF1FD2C5B",
+          "name": "Severance",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.7,
+          "properties": {
+            "description": "Office workers whose memories are split between work and home."
+          },
+          "query": {
+            "affinity": 0.712
+          }
+        },
+        {
+          "entity_id": "3C69D9BE-8D0A-4B69-B3BC-52BEBB189C0F",
+          "name": "Slow Horses",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.69,
+          "properties": {
+            "description": "Spy comedy-drama about a team of disgraced intelligence agents."
+          },
+          "query": {
+            "affinity": 0.694
+          }
+        },
+        {
+          "entity_id": "94517E1E-4D20-4604-A1D6-E4DEA4581FC2",
+          "name": "Mare of Easttown",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.67,
+          "properties": {
+            "description": "Kate Winslet plays a weary small-town Pennsylvania detective in a murder mystery."
+          },
+          "query": {
+            "affinity": 0.676
+          }
+        },
+        {
+          "entity_id": "32301606-3709-4450-9B49-526F8932157B",
+          "name": "Fargo",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.66,
+          "properties": {
+            "description": "Anthology crime series in the spirit of the Coen brothers."
+          },
+          "query": {
+            "affinity": 0.658
+          }
+        },
+        {
+          "entity_id": "72E9BC0B-598B-43EF-8465-E61AD1CFF1DB",
+          "name": "Parks and Recreation",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.64,
+          "properties": {
+            "description": "Mockumentary about an earnest Indiana parks department."
+          },
+          "query": {
+            "affinity": 0.64
+          }
+        },
+        {
+          "entity_id": "ECBC7E57-8869-4257-AE7C-68B5D54EAA7B",
+          "name": "Only Murders in the Building",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.62,
+          "properties": {
+            "description": "Three neighbors who love true crime start a podcast about a death in their building."
+          },
+          "query": {
+            "affinity": 0.622
+          }
+        },
+        {
+          "entity_id": "69B3C272-1C4A-4E37-B557-EF952ABE47F2",
+          "name": "Poker Face",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.6,
+          "properties": {
+            "description": "Natasha Lyonne drives across America solving murders because she can always tell when someone is lying."
+          },
+          "query": {
+            "affinity": 0.604
+          }
+        },
+        {
+          "entity_id": "628B7F67-F053-4D43-A259-869B267583A7",
+          "name": "Russian Doll",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.58,
+          "properties": {
+            "description": "A woman keeps dying and restarting at her own birthday party."
+          },
+          "query": {
+            "affinity": 0.586
+          }
+        }
+      ]
+    }
+  }
+}

@@ -24,9 +24,13 @@
         {
           "entity_id": "84977C1C-DDD7-43B5-A0A6-8AAFC6B59BE4",
           "name": "Ace of Cups",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:music_venue",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "popularity": 0.54,
+          "location": {
+            "lat": 39.961,
+            "lon": -82.999
+          },
           "properties": {
             "description": "Clintonville club in an old bank; the room indie and folk tours route through.",
             "address": "2619 N High St, Columbus, OH 43202",
@@ -41,42 +45,46 @@
           },
           "tags": [
             {
+              "id": "urn:tag:genre:place:music_venue",
               "name": "Music Venue",
-              "tag_id": "urn:tag:genre:place:music_venue",
               "type": "urn:tag:genre:place"
             },
             {
+              "id": "urn:tag:category:place:live_music_venue",
               "name": "Live Music Venue",
-              "tag_id": "urn:tag:category:place:live_music_venue",
               "type": "urn:tag:category:place"
             }
           ],
           "query": {
             "affinity": 0.9,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.77
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.69
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.64
                 }
-              }
+              ]
             }
           }
         },
         {
           "entity_id": "188B90D2-9902-4113-ADA8-E783350764B5",
           "name": "Rumba Café",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:live_music_bar",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "popularity": 0.74,
+          "location": {
+            "lat": 39.961,
+            "lon": -82.999
+          },
           "properties": {
             "description": "Small Summit Street bar with a stage that suits a quiet, close set.",
             "address": "2507 Summit St, Columbus, OH 43202",
@@ -91,37 +99,41 @@
           },
           "tags": [
             {
+              "id": "urn:tag:genre:place:bar:live_music",
               "name": "Live Music Bar",
-              "tag_id": "urn:tag:genre:place:bar:live_music",
               "type": "urn:tag:genre:place"
             }
           ],
           "query": {
             "affinity": 0.87,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.73
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.68
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.61
                 }
-              }
+              ]
             }
           }
         },
         {
           "entity_id": "7E7D1D93-59E2-49AA-82B0-0032CCB1D940",
           "name": "Newport Music Hall",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:concert_hall",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "popularity": 0.68,
+          "location": {
+            "lat": 39.961,
+            "lon": -82.999
+          },
           "properties": {
             "description": "Campus-strip hall that has hosted touring acts for a century; the step-up room.",
             "address": "1722 N High St, Columbus, OH 43201",
@@ -136,37 +148,41 @@
           },
           "tags": [
             {
+              "id": "urn:tag:genre:place:concert_hall",
               "name": "Concert Hall",
-              "tag_id": "urn:tag:genre:place:concert_hall",
               "type": "urn:tag:genre:place"
             }
           ],
           "query": {
             "affinity": 0.85,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.7
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.63
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.57
                 }
-              }
+              ]
             }
           }
         },
         {
           "entity_id": "CFD2DA3A-1EAF-4339-A25D-2740BB2C3166",
           "name": "The Basement",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:music_venue",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "popularity": 0.8,
+          "location": {
+            "lat": 39.961,
+            "lon": -82.999
+          },
           "properties": {
             "description": "Low-ceilinged Arena District club for a first Columbus show.",
             "address": "391 Neil Ave, Columbus, OH 43215",
@@ -181,42 +197,46 @@
           },
           "tags": [
             {
+              "id": "urn:tag:genre:place:music_venue",
               "name": "Music Venue",
-              "tag_id": "urn:tag:genre:place:music_venue",
               "type": "urn:tag:genre:place"
             },
             {
+              "id": "urn:tag:category:place:live_music_venue",
               "name": "Live Music Venue",
-              "tag_id": "urn:tag:category:place:live_music_venue",
               "type": "urn:tag:category:place"
             }
           ],
           "query": {
             "affinity": 0.81,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.68
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.64
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.53
                 }
-              }
+              ]
             }
           }
         },
         {
           "entity_id": "D35BB39C-C2E4-48D9-BF98-FCCB6E0154CA",
           "name": "A&R Music Bar",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:music_venue",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "popularity": 0.77,
+          "location": {
+            "lat": 39.961,
+            "lon": -82.999
+          },
           "properties": {
             "description": "Mid-size room next door to The Basement when the draw grows.",
             "address": "391 Neil Ave, Columbus, OH 43215",
@@ -231,42 +251,46 @@
           },
           "tags": [
             {
+              "id": "urn:tag:genre:place:music_venue",
               "name": "Music Venue",
-              "tag_id": "urn:tag:genre:place:music_venue",
               "type": "urn:tag:genre:place"
             },
             {
+              "id": "urn:tag:category:place:live_music_venue",
               "name": "Live Music Venue",
-              "tag_id": "urn:tag:category:place:live_music_venue",
               "type": "urn:tag:category:place"
             }
           ],
           "query": {
             "affinity": 0.79,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.68
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.58
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.51
                 }
-              }
+              ]
             }
           }
         },
         {
           "entity_id": "F553F5AB-31C9-487F-B5B3-53431A8A8FBC",
           "name": "Skully's Music-Diner",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:live_music_bar",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "popularity": 0.78,
+          "location": {
+            "lat": 39.961,
+            "lon": -82.999
+          },
           "properties": {
             "description": "Short North diner and dance bar with a weeknight live stage.",
             "address": "1151 N High St, Columbus, OH 43201",
@@ -281,37 +305,41 @@
           },
           "tags": [
             {
+              "id": "urn:tag:genre:place:bar:live_music",
               "name": "Live Music Bar",
-              "tag_id": "urn:tag:genre:place:bar:live_music",
               "type": "urn:tag:genre:place"
             }
           ],
           "query": {
             "affinity": 0.76,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.64
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.57
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.5
                 }
-              }
+              ]
             }
           }
         },
         {
           "entity_id": "C28F527F-3CAB-4F4B-B63F-47558C8587CD",
           "name": "Woodlands Tavern",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:live_music_bar",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "popularity": 0.76,
+          "location": {
+            "lat": 39.961,
+            "lon": -82.999
+          },
           "properties": {
             "description": "Grandview tavern with a listening-room back half and a folk-friendly calendar.",
             "address": "1200 W 3rd Ave, Columbus, OH 43212",
@@ -326,37 +354,41 @@
           },
           "tags": [
             {
+              "id": "urn:tag:genre:place:bar:live_music",
               "name": "Live Music Bar",
-              "tag_id": "urn:tag:genre:place:bar:live_music",
               "type": "urn:tag:genre:place"
             }
           ],
           "query": {
             "affinity": 0.72,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.57
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.52
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.45
                 }
-              }
+              ]
             }
           }
         },
         {
           "entity_id": "CB715AA9-1BA2-4D33-8E62-C0D984694801",
           "name": "Natalie's Grandview",
-          "type": "urn:entity:place",
-          "subtype": "urn:entity:place:music_venue",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
           "popularity": 0.83,
+          "location": {
+            "lat": 39.961,
+            "lon": -82.999
+          },
           "properties": {
             "description": "Seated listening room with a reputation for songwriter bills.",
             "address": "945 King Ave, Columbus, OH 43212",
@@ -371,33 +403,33 @@
           },
           "tags": [
             {
+              "id": "urn:tag:genre:place:music_venue",
               "name": "Music Venue",
-              "tag_id": "urn:tag:genre:place:music_venue",
               "type": "urn:tag:genre:place"
             },
             {
+              "id": "urn:tag:category:place:live_music_venue",
               "name": "Live Music Venue",
-              "tag_id": "urn:tag:category:place:live_music_venue",
               "type": "urn:tag:category:place"
             }
           ],
           "query": {
             "affinity": 0.7,
             "explainability": {
-              "by_entity": {
-                "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60": {
-                  "name": "Big Thief",
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
                   "score": 0.55
                 },
-                "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71": {
-                  "name": "Waxahatchee",
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
                   "score": 0.47
                 },
-                "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92": {
-                  "name": "Adrianne Lenker",
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
                   "score": 0.45
                 }
-              }
+              ]
             }
           }
         }

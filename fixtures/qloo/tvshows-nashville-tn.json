@@ -1,0 +1,283 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "local_color",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Atv_show&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Nashville%2C%20TN&signal.location.radius=25000&take=20",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:tv_show",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "signal.location.query": "Nashville, TN",
+      "signal.location.radius": 25000,
+      "take": 20
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "F504DFDE-7861-486D-9F48-C6422671C57A",
+          "name": "Reservation Dogs",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.875,
+          "properties": {
+            "description": "Four Indigenous teens in rural Oklahoma dream of California."
+          },
+          "query": {
+            "affinity": 0.9
+          }
+        },
+        {
+          "entity_id": "2BB51812-1010-437A-BE9C-D20A6E469369",
+          "name": "Nashville",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.74,
+          "properties": {
+            "description": "Drama about rival country singers and the Nashville music business."
+          },
+          "query": {
+            "affinity": 0.88
+          }
+        },
+        {
+          "entity_id": "656078D4-7298-439C-B517-153F264014E1",
+          "name": "Somebody Somewhere",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.87,
+          "properties": {
+            "description": "A woman returns to her Kansas hometown and finds a choir of misfits."
+          },
+          "query": {
+            "affinity": 0.86
+          }
+        },
+        {
+          "entity_id": "5AF4B18C-7F2E-4D54-B946-C924DBBC0E98",
+          "name": "Fleabag",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.88,
+          "properties": {
+            "description": "Phoebe Waller-Bridge's fourth-wall-breaking comedy about grief and bad decisions."
+          },
+          "query": {
+            "affinity": 0.84
+          }
+        },
+        {
+          "entity_id": "71389877-A42D-4256-A170-9F2E3C43B95E",
+          "name": "Dolly Parton's Heartstrings",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.62,
+          "properties": {
+            "description": "Anthology series of stories inspired by Dolly Parton songs."
+          },
+          "query": {
+            "affinity": 0.82
+          }
+        },
+        {
+          "entity_id": "4ED236B4-9453-4512-8981-B49E9BB467A5",
+          "name": "Atlanta",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.82,
+          "properties": {
+            "description": "Donald Glover's surreal comedy about two cousins in the Atlanta rap scene."
+          },
+          "query": {
+            "affinity": 0.8
+          }
+        },
+        {
+          "entity_id": "E3C6F04F-7F24-4D5C-88C7-79ACD9F57EAC",
+          "name": "The Bear",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.865,
+          "properties": {
+            "description": "A fine-dining chef takes over his late brother's Chicago sandwich shop."
+          },
+          "query": {
+            "affinity": 0.78
+          }
+        },
+        {
+          "entity_id": "937DE301-AC97-46EB-BD17-559D518E8DD6",
+          "name": "Rectify",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.7,
+          "properties": {
+            "description": "Slow-burn drama about a man released after nearly two decades on death row."
+          },
+          "query": {
+            "affinity": 0.76
+          }
+        },
+        {
+          "entity_id": "CBBD7C4F-EE93-4B17-8B5B-5251E5F73EB7",
+          "name": "Hacks",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.815,
+          "properties": {
+            "description": "A legendary Vegas comedian and a cancelled young writer need each other."
+          },
+          "query": {
+            "affinity": 0.74
+          }
+        },
+        {
+          "entity_id": "B6119090-85AC-4E84-8223-45008C3A45F5",
+          "name": "Justified",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.78,
+          "properties": {
+            "description": "Modern western crime drama about a Kentucky deputy marshal."
+          },
+          "query": {
+            "affinity": 0.72
+          }
+        },
+        {
+          "entity_id": "32301606-3709-4450-9B49-526F8932157B",
+          "name": "Fargo",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.7,
+          "properties": {
+            "description": "Anthology crime series in the spirit of the Coen brothers."
+          },
+          "query": {
+            "affinity": 0.7
+          }
+        },
+        {
+          "entity_id": "72E9BC0B-598B-43EF-8465-E61AD1CFF1DB",
+          "name": "Parks and Recreation",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.635,
+          "properties": {
+            "description": "Mockumentary about an earnest Indiana parks department."
+          },
+          "query": {
+            "affinity": 0.68
+          }
+        },
+        {
+          "entity_id": "8C92A1DF-AF9B-409E-BA49-6FFEFB641979",
+          "name": "Ozark",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.8,
+          "properties": {
+            "description": "Crime drama about a family laundering money at a Missouri lake resort."
+          },
+          "query": {
+            "affinity": 0.66
+          }
+        },
+        {
+          "entity_id": "377A96F7-A073-43FE-B56D-6E3331A4308F",
+          "name": "Gilmore Girls",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.755,
+          "properties": {
+            "description": "Fast-talking mother and daughter in a small Connecticut town."
+          },
+          "query": {
+            "affinity": 0.64
+          }
+        },
+        {
+          "entity_id": "1726F37E-D9CA-43CC-8B62-4E9AF1FD2C5B",
+          "name": "Severance",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.69,
+          "properties": {
+            "description": "Office workers whose memories are split between work and home."
+          },
+          "query": {
+            "affinity": 0.62
+          }
+        },
+        {
+          "entity_id": "7F75EEE6-1524-4148-A801-1648D95D53BF",
+          "name": "The Righteous Gemstones",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.72,
+          "properties": {
+            "description": "Dark comedy about a family of Southern televangelists."
+          },
+          "query": {
+            "affinity": 0.6
+          }
+        },
+        {
+          "entity_id": "D7BD04AA-3B47-4DA4-9E4F-40A542F5B7D1",
+          "name": "Abbott Elementary",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.76,
+          "properties": {
+            "description": "Mockumentary about teachers at an underfunded Philadelphia public school."
+          },
+          "query": {
+            "affinity": 0.58
+          }
+        },
+        {
+          "entity_id": "BAF90461-5DF2-4491-9523-F0057E492CF9",
+          "name": "Succession",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.75,
+          "properties": {
+            "description": "A media dynasty's children fight over the throne."
+          },
+          "query": {
+            "affinity": 0.56
+          }
+        },
+        {
+          "entity_id": "434F31AF-D190-4762-8C9B-5266F6D1A699",
+          "name": "Dickinson",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.55,
+          "properties": {
+            "description": "Anachronistic comedy-drama about the young Emily Dickinson."
+          },
+          "query": {
+            "affinity": 0.54
+          }
+        },
+        {
+          "entity_id": "E046DBDF-2886-42D6-8B3D-B0389D7FF7EE",
+          "name": "Normal People",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.6,
+          "properties": {
+            "description": "Adaptation of Sally Rooney’s novel about two Irish teenagers."
+          },
+          "query": {
+            "affinity": 0.52
+          }
+        }
+      ]
+    }
+  }
+}

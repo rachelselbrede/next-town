@@ -1,0 +1,136 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_promo_partners",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?feature.explainability=true&filter.location.query=Baltimore%2C%20MD&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Athrift_store%2Curn%3Atag%3Agenre%3Aplace%3Avintage_store&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Baltimore, MD",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:genre:place:thrift_store,urn:tag:genre:place:vintage_store",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "sort_by": "affinity",
+      "take": 2,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "ED8CCD24-8DD0-4C3B-80F3-ED7F34E351D2",
+          "name": "Doubledutch Boutique",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.4,
+          "location": {
+            "lat": 39.332,
+            "lon": -76.6381
+          },
+          "properties": {
+            "description": "Hampden vintage-and-new boutique with racks of secondhand dresses, denim and band tees.",
+            "address": "3600 Falls Rd, Baltimore, MD 21211",
+            "geocode": {
+              "name": "Baltimore",
+              "city": "Baltimore",
+              "admin1_region": "MD",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:vintage_store",
+              "name": "Vintage Store",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:genre:place:thrift_store",
+              "name": "Thrift Store",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.87,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.76
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.65
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.59
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "2264C88B-59F2-4DA8-987D-0EF8D5ACD796",
+          "name": "Second Chance",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.5,
+          "location": {
+            "lat": 39.2976,
+            "lon": -76.6584
+          },
+          "properties": {
+            "description": "Warehouse of salvaged fixtures, furniture and vintage finds on Warwick Avenue, a Baltimore thrift landmark.",
+            "address": "1645 Warwick Ave, Baltimore, MD 21223",
+            "geocode": {
+              "name": "Baltimore",
+              "city": "Baltimore",
+              "admin1_region": "MD",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 2,
+            "website": "https://www.secondchanceinc.org"
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:vintage_store",
+              "name": "Vintage Store",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:genre:place:thrift_store",
+              "name": "Thrift Store",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.8,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.64
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.58
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.53
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

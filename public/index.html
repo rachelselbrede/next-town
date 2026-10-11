@@ -56,7 +56,7 @@
 
         <div class="hero-actions">
           <button type="button" class="btn btn-primary btn-lg" id="btn-sample">Try it with Hollow Pines</button>
-          <a href="#act-form" class="btn btn-secondary btn-lg" id="btn-live" hidden>Run it live</a>
+          <button type="button" class="btn btn-secondary btn-lg" id="btn-live" hidden>Run it live</button>
         </div>
         <p class="resume-row" id="resume-row" hidden>
           <button type="button" class="link-btn" id="resume-link">Resume last tour</button>
@@ -70,11 +70,13 @@
           <p class="sample-blurb" id="sample-blurb"></p>
           <dl class="sample-facts" id="sample-facts"></dl>
         </aside>
+        <!-- Honesty banner: shown whenever the server's fixtures are hand-written placeholders. -->
+        <p class="honesty-banner" id="placeholder-banner" role="note" hidden></p>
       </div>
 
       <ol class="how" aria-label="How it works">
         <li><span class="how-n">1</span><div><strong>Resolve your comps.</strong><span>The agent finds each comparable artist in Qloo so the signal is an entity, not a string.</span></div></li>
-        <li><span class="how-n">2</span><div><strong>Rank the localities.</strong><span>Qloo returns the US towns where fans of those comps rank highest. Towns under 250k in the top 20 get a gold over-index badge.</span></div></li>
+        <li><span class="how-n">2</span><div><strong>Rank the markets.</strong><span>Qloo ranks US rooms for fans of those comps, one per town, so each market is the town whose best-matching room ranks highest. Towns under 250k in the top 20 get a gold over-index badge.</span></div></li>
         <li><span class="how-n">3</span><div><strong>Route the loop.</strong><span>A drive-capped loop from home, side by side with the "obvious" big-market route, every Qloo call receipted.</span></div></li>
       </ol>
 
@@ -82,7 +84,7 @@
       <form class="act-form" id="act-form" novalidate>
         <div class="form-head">
           <h2>Or route your own act</h2>
-          <p class="muted" id="form-note">Custom routing runs the agent live and needs an Anthropic key on the server. The sample above works without one.</p>
+          <p class="muted" id="form-note">Custom routing runs the agent live and needs Qloo and Anthropic keys on the server. The sample above works without them.</p>
         </div>
 
         <fieldset class="comps-fieldset">
@@ -148,7 +150,7 @@
           <div class="map-wrap">
             <div id="map" class="map" role="region" aria-label="Map of ranked localities and the route"></div>
             <div class="map-legend" aria-hidden="true">
-              <span><i class="lg-dot"></i> locality, sized by affinity</span>
+              <span><i class="lg-dot"></i> market, sized by affinity</span>
               <span><i class="lg-dot lg-gold"></i> over-index town</span>
               <span><i class="lg-line"></i> your route</span>
               <span><i class="lg-dot lg-grey"></i> obvious route</span>
@@ -165,7 +167,7 @@
     <section class="screen screen-playbook" data-screen="playbook" aria-labelledby="playbook-title">
       <div class="screen-head">
         <button type="button" class="btn btn-ghost btn-sm" id="btn-back-route">← Back to route</button>
-        <h1 id="playbook-title" class="screen-title">Playbook</h1>
+        <h1 id="playbook-title" class="screen-title sr-only">Playbook</h1>
         <span class="muted" id="playbook-pos"></span>
       </div>
       <div class="status-lines" id="playbook-status" aria-live="polite" hidden></div>
@@ -176,7 +178,7 @@
     <section class="screen screen-tour" data-screen="tour" aria-labelledby="tour-title">
       <div class="screen-head">
         <button type="button" class="btn btn-ghost btn-sm" id="btn-tour-back">← Back to route</button>
-        <h1 id="tour-title" class="screen-title">Your tour</h1>
+        <h1 id="tour-title" class="screen-title sr-only">Your tour</h1>
         <span class="muted" id="tour-status"></span>
       </div>
       <div id="tour-view" class="tour-view"></div>
@@ -190,7 +192,7 @@
   <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
 
   <footer class="foot">
-    <span>Built for the Qloo Agentic Hackathon. Taste data by Qloo, planning by Claude.</span>
+    <span id="foot-text">Built for the Qloo Agentic Hackathon. Taste data by Qloo, planning by Claude.</span>
   </footer>
 
   <script type="module" src="js/app.js"></script>

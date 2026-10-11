@@ -20,7 +20,7 @@
         {
           "entity_id": "5AF4B18C-7F2E-4D54-B946-C924DBBC0E98",
           "name": "Fleabag",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.88,
           "properties": {
@@ -33,7 +33,7 @@
         {
           "entity_id": "F504DFDE-7861-486D-9F48-C6422671C57A",
           "name": "Reservation Dogs",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.875,
           "properties": {
@@ -46,7 +46,7 @@
         {
           "entity_id": "656078D4-7298-439C-B517-153F264014E1",
           "name": "Somebody Somewhere",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.87,
           "properties": {
@@ -59,7 +59,7 @@
         {
           "entity_id": "E3C6F04F-7F24-4D5C-88C7-79ACD9F57EAC",
           "name": "The Bear",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.865,
           "properties": {
@@ -72,7 +72,7 @@
         {
           "entity_id": "4ED236B4-9453-4512-8981-B49E9BB467A5",
           "name": "Atlanta",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.82,
           "properties": {
@@ -85,7 +85,7 @@
         {
           "entity_id": "CBBD7C4F-EE93-4B17-8B5B-5251E5F73EB7",
           "name": "Hacks",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.815,
           "properties": {
@@ -98,7 +98,7 @@
         {
           "entity_id": "A13215E0-C764-4D72-A2B1-801211C74A37",
           "name": "Twin Peaks",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.81,
           "properties": {
@@ -111,7 +111,7 @@
         {
           "entity_id": "DB8450A9-DDD4-4A01-8081-D65A68F670C9",
           "name": "Detroiters",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.805,
           "properties": {
@@ -124,7 +124,7 @@
         {
           "entity_id": "D7BD04AA-3B47-4DA4-9E4F-40A542F5B7D1",
           "name": "Abbott Elementary",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.76,
           "properties": {
@@ -137,7 +137,7 @@
         {
           "entity_id": "377A96F7-A073-43FE-B56D-6E3331A4308F",
           "name": "Gilmore Girls",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.755,
           "properties": {
@@ -150,7 +150,7 @@
         {
           "entity_id": "BAF90461-5DF2-4491-9523-F0057E492CF9",
           "name": "Succession",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.75,
           "properties": {
@@ -163,7 +163,7 @@
         {
           "entity_id": "0E925F8C-19E3-4F7B-A3BE-AE91C3784881",
           "name": "Heartstopper",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.745,
           "properties": {
@@ -176,7 +176,7 @@
         {
           "entity_id": "32301606-3709-4450-9B49-526F8932157B",
           "name": "Fargo",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.7,
           "properties": {
@@ -189,7 +189,7 @@
         {
           "entity_id": "BCE6B26E-BD10-41E6-B83B-BBB8AAE55C39",
           "name": "The Rehearsal",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.695,
           "properties": {
@@ -202,7 +202,7 @@
         {
           "entity_id": "1726F37E-D9CA-43CC-8B62-4E9AF1FD2C5B",
           "name": "Severance",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.69,
           "properties": {
@@ -215,7 +215,7 @@
         {
           "entity_id": "C224F1C3-59F5-457D-AA64-AE2DE94E82B4",
           "name": "I May Destroy You",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.685,
           "properties": {
@@ -228,7 +228,7 @@
         {
           "entity_id": "628B7F67-F053-4D43-A259-869B267583A7",
           "name": "Russian Doll",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.64,
           "properties": {
@@ -241,7 +241,7 @@
         {
           "entity_id": "72E9BC0B-598B-43EF-8465-E61AD1CFF1DB",
           "name": "Parks and Recreation",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.635,
           "properties": {
@@ -254,7 +254,7 @@
         {
           "entity_id": "24AF387E-B347-4535-A921-D3B36CC057C9",
           "name": "Station Eleven",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.63,
           "properties": {
@@ -267,7 +267,7 @@
         {
           "entity_id": "E27DD42F-04F6-4D52-80D1-274A159366ED",
           "name": "Girls5eva",
-          "type": "urn:entity:tv_show",
+          "type": "urn:entity",
           "subtype": "urn:entity:tv_show",
           "popularity": 0.625,
           "properties": {

@@ -1,0 +1,125 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_promo_partners",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?feature.explainability=true&filter.location.query=Charlottesville%2C%20VA&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abookstore&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Charlottesville, VA",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:genre:place:bookstore",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "sort_by": "affinity",
+      "take": 2,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "CA3F57D3-2071-421F-BFCC-4AB07A33D2E0",
+          "name": "New Dominion Bookshop",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.56,
+          "location": {
+            "lat": 38.029,
+            "lon": -78.477
+          },
+          "properties": {
+            "description": "Virginia's oldest independent bookstore, with a mezzanine that hosts readings and a loyal literary crowd.",
+            "address": "404 E Main St, Charlottesville, VA 22902",
+            "geocode": {
+              "name": "Charlottesville",
+              "city": "Charlottesville",
+              "admin1_region": "VA",
+              "country_code": "US"
+            },
+            "business_rating": 4.8,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:bookstore",
+              "name": "Bookstore",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.797,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.734
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.462
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.518
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "5197985A-3A1F-44ED-BF66-12F842E93700",
+          "name": "Daedalus Bookshop",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.5,
+          "location": {
+            "lat": 38.029,
+            "lon": -78.477
+          },
+          "properties": {
+            "description": "Three floors of used books stacked to the ceiling, a beloved browse for the city's readers.",
+            "address": "123 4th St NE, Charlottesville, VA 22902",
+            "geocode": {
+              "name": "Charlottesville",
+              "city": "Charlottesville",
+              "admin1_region": "VA",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:bookstore",
+              "name": "Bookstore",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.769,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.651
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.503
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.471
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

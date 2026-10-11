@@ -1,0 +1,135 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_promo_partners",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?feature.explainability=true&filter.location.query=Asheville%2C%20NC&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Acafe%2Curn%3Atag%3Agenre%3Aplace%3Acoffee_shop&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Asheville, NC",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:genre:place:cafe,urn:tag:genre:place:coffee_shop",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "sort_by": "affinity",
+      "take": 2,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "9FE9DBB0-9FCF-4A69-9822-1776D5FF3786",
+          "name": "High Five Coffee",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.63,
+          "location": {
+            "lat": 35.595,
+            "lon": -82.551
+          },
+          "properties": {
+            "description": "Local roaster with a bright, busy Broadway cafe where the morning crowd skews young and artsy.",
+            "address": "13 Rankin Ave, Asheville, NC 28801",
+            "geocode": {
+              "name": "Asheville",
+              "city": "Asheville",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:coffee_shop",
+              "name": "Coffee Shop",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:genre:place:cafe",
+              "name": "Cafe",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.88,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.7
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.6
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.56
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "091940AD-4473-478E-902D-A7B2FAD0E353",
+          "name": "Odd's Cafe",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.41,
+          "location": {
+            "lat": 35.595,
+            "lon": -82.551
+          },
+          "properties": {
+            "description": "West Asheville neighborhood coffee shop with a community board and a loyal regulars crowd.",
+            "address": "800 Haywood Rd, Asheville, NC 28806",
+            "geocode": {
+              "name": "Asheville",
+              "city": "Asheville",
+              "admin1_region": "NC",
+              "country_code": "US"
+            },
+            "business_rating": 4.6,
+            "price_level": 1
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:coffee_shop",
+              "name": "Coffee Shop",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:genre:place:cafe",
+              "name": "Cafe",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.75,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.56
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.5
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.46
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

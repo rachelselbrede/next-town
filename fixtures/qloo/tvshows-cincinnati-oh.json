@@ -1,0 +1,283 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "local_color",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Atv_show&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Cincinnati%2C%20OH&signal.location.radius=25000&take=20",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:tv_show",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "signal.location.query": "Cincinnati, OH",
+      "signal.location.radius": 25000,
+      "take": 20
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "5AF4B18C-7F2E-4D54-B946-C924DBBC0E98",
+          "name": "Fleabag",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.88,
+          "properties": {
+            "description": "Phoebe Waller-Bridge's fourth-wall-breaking comedy about grief and bad decisions."
+          },
+          "query": {
+            "affinity": 0.91
+          }
+        },
+        {
+          "entity_id": "F504DFDE-7861-486D-9F48-C6422671C57A",
+          "name": "Reservation Dogs",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.875,
+          "properties": {
+            "description": "Four Indigenous teens in rural Oklahoma dream of California."
+          },
+          "query": {
+            "affinity": 0.892
+          }
+        },
+        {
+          "entity_id": "656078D4-7298-439C-B517-153F264014E1",
+          "name": "Somebody Somewhere",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.87,
+          "properties": {
+            "description": "A woman returns to her Kansas hometown and finds a choir of misfits."
+          },
+          "query": {
+            "affinity": 0.873
+          }
+        },
+        {
+          "entity_id": "CB10AB75-96F8-4B8D-B653-C3D8BAF7C6D2",
+          "name": "WKRP in Cincinnati",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.834,
+          "properties": {
+            "description": "Sitcom about the staff of a struggling Cincinnati radio station in the rock-and-roll era."
+          },
+          "query": {
+            "affinity": 0.855
+          }
+        },
+        {
+          "entity_id": "E3C6F04F-7F24-4D5C-88C7-79ACD9F57EAC",
+          "name": "The Bear",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.865,
+          "properties": {
+            "description": "A fine-dining chef takes over his late brother's Chicago sandwich shop."
+          },
+          "query": {
+            "affinity": 0.836
+          }
+        },
+        {
+          "entity_id": "4ED236B4-9453-4512-8981-B49E9BB467A5",
+          "name": "Atlanta",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.82,
+          "properties": {
+            "description": "Donald Glover's surreal comedy about two cousins in the Atlanta rap scene."
+          },
+          "query": {
+            "affinity": 0.818
+          }
+        },
+        {
+          "entity_id": "CBBD7C4F-EE93-4B17-8B5B-5251E5F73EB7",
+          "name": "Hacks",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.815,
+          "properties": {
+            "description": "A legendary Vegas comedian and a cancelled young writer need each other."
+          },
+          "query": {
+            "affinity": 0.799
+          }
+        },
+        {
+          "entity_id": "57D77BDC-90C5-46DE-91F9-1613D5BFC645",
+          "name": "Ted Lasso",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.81,
+          "properties": {
+            "description": "An American football coach is hired to manage an English soccer club."
+          },
+          "query": {
+            "affinity": 0.781
+          }
+        },
+        {
+          "entity_id": "A13215E0-C764-4D72-A2B1-801211C74A37",
+          "name": "Twin Peaks",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.81,
+          "properties": {
+            "description": "David Lynch's dreamlike mystery in a logging town."
+          },
+          "query": {
+            "affinity": 0.763
+          }
+        },
+        {
+          "entity_id": "D7BD04AA-3B47-4DA4-9E4F-40A542F5B7D1",
+          "name": "Abbott Elementary",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.76,
+          "properties": {
+            "description": "Mockumentary about teachers at an underfunded Philadelphia public school."
+          },
+          "query": {
+            "affinity": 0.744
+          }
+        },
+        {
+          "entity_id": "377A96F7-A073-43FE-B56D-6E3331A4308F",
+          "name": "Gilmore Girls",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.755,
+          "properties": {
+            "description": "Fast-talking mother and daughter in a small Connecticut town."
+          },
+          "query": {
+            "affinity": 0.726
+          }
+        },
+        {
+          "entity_id": "ADC55D1A-2B7B-4B9E-8D1A-E13AD873422E",
+          "name": "Schitt's Creek",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.5,
+          "properties": {
+            "description": "A wealthy family loses everything and relocates to a small town."
+          },
+          "query": {
+            "affinity": 0.707
+          }
+        },
+        {
+          "entity_id": "BAF90461-5DF2-4491-9523-F0057E492CF9",
+          "name": "Succession",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.75,
+          "properties": {
+            "description": "A media dynasty's children fight over the throne."
+          },
+          "query": {
+            "affinity": 0.689
+          }
+        },
+        {
+          "entity_id": "3BF1181E-506F-4909-905E-F87166E9EB80",
+          "name": "Better Things",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.714,
+          "properties": {
+            "description": "Pamela Adlon's wry comedy about a working actress raising three daughters."
+          },
+          "query": {
+            "affinity": 0.671
+          }
+        },
+        {
+          "entity_id": "1726F37E-D9CA-43CC-8B62-4E9AF1FD2C5B",
+          "name": "Severance",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.69,
+          "properties": {
+            "description": "Office workers whose memories are split between work and home."
+          },
+          "query": {
+            "affinity": 0.652
+          }
+        },
+        {
+          "entity_id": "6655F705-B668-4671-8B58-68064B23BACA",
+          "name": "Derry Girls",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.53,
+          "properties": {
+            "description": "Teenagers navigate school and friendship in 1990s Northern Ireland."
+          },
+          "query": {
+            "affinity": 0.634
+          }
+        },
+        {
+          "entity_id": "72E9BC0B-598B-43EF-8465-E61AD1CFF1DB",
+          "name": "Parks and Recreation",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.635,
+          "properties": {
+            "description": "Mockumentary about an earnest Indiana parks department."
+          },
+          "query": {
+            "affinity": 0.615
+          }
+        },
+        {
+          "entity_id": "E70F429F-63FF-4903-BC95-98EA71234EE5",
+          "name": "Barry",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.75,
+          "properties": {
+            "description": "A hitman takes an acting class in Los Angeles and tries to change."
+          },
+          "query": {
+            "affinity": 0.597
+          }
+        },
+        {
+          "entity_id": "E046DBDF-2886-42D6-8B3D-B0389D7FF7EE",
+          "name": "Normal People",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.654,
+          "properties": {
+            "description": "Quiet Irish romance about two classmates whose lives keep crossing."
+          },
+          "query": {
+            "affinity": 0.578
+          }
+        },
+        {
+          "entity_id": "BC54CCD9-384D-44FA-9501-168687F7C811",
+          "name": "Mythic Quest",
+          "type": "urn:entity",
+          "subtype": "urn:entity:tv_show",
+          "popularity": 0.54,
+          "properties": {
+            "description": "Workplace comedy set inside the studio making a hit online game."
+          },
+          "query": {
+            "affinity": 0.56
+          }
+        }
+      ]
+    }
+  }
+}

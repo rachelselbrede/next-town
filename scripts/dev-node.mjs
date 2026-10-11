@@ -7,6 +7,7 @@
 
 import http from "node:http";
 import fs from "node:fs";
+import os from "node:os";
 import path from "node:path";
 import { Readable } from "node:stream";
 import { fileURLToPath } from "node:url";
@@ -47,6 +48,19 @@ const ASSETS = {
   },
 };
 
+// DEV=1 tells the server Claude is reachable without ANTHROPIC_API_KEY in env: the SDK can also use
+// ANTHROPIC_AUTH_TOKEN or an `ant auth login` profile under ~/.config/anthropic. It is only set when
+// one of those is actually present, so a machine with none of them gets the recorded sample and
+// honest 503s instead of a Claude client that fails on first use.
+const PROFILE_DIR = path.join(os.homedir(), ".config", "anthropic");
+const claudeSource = process.env.ANTHROPIC_API_KEY?.trim()
+  ? "ANTHROPIC_API_KEY"
+  : process.env.ANTHROPIC_AUTH_TOKEN?.trim()
+    ? "ANTHROPIC_AUTH_TOKEN"
+    : fs.existsSync(PROFILE_DIR)
+      ? `profile in ${PROFILE_DIR}`
+      : null;
+
 const env = {
   ASSETS,
   MODEL: process.env.MODEL || "claude-opus-5-5",
@@ -54,7 +68,7 @@ const env = {
   QLOO_API_KEY: process.env.QLOO_API_KEY,
   QLOO_BASE_URL: process.env.QLOO_BASE_URL,
   ANTHROPIC_API_KEY: process.env.ANTHROPIC_API_KEY,
-  DEV: "1",
+  ...(claudeSource ? { DEV: "1" } : {}),
 };
 
 const worker = (await import("../src/index.ts")).default;
@@ -77,5 +91,7 @@ const server = http.createServer(async (req, res) => {
 });
 
 server.listen(PORT, () => {
-  console.log(`dev server on http://localhost:${PORT}  (model ${env.MODEL}, qloo ${env.QLOO_API_KEY ? "live" : "demo"})`);
+  const qlooMode = env.QLOO_MODE === "demo" ? "demo" : env.QLOO_API_KEY ? "live" : "demo";
+  console.log(`dev server on http://localhost:${PORT}  (model ${env.MODEL}, qloo ${qlooMode})`);
+  console.log(claudeSource ? `  claude: available via ${claudeSource} (DEV=1)` : "  claude: unavailable (no ANTHROPIC_API_KEY, no ANTHROPIC_AUTH_TOKEN, no ~/.config/anthropic); the recorded sample still works");
 });

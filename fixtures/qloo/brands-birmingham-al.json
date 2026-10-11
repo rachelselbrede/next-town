@@ -1,0 +1,261 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "local_color",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?filter.type=urn%3Aentity%3Abrand&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&signal.location.query=Birmingham%2C%20AL&signal.location.radius=25000&take=20",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:brand",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "signal.location.query": "Birmingham, AL",
+      "signal.location.radius": 25000,
+      "take": 20
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "81FF9E58-99F1-4C63-9F2F-7D85FA8D6964",
+          "name": "Patagonia",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.85,
+          "properties": {},
+          "query": {
+            "affinity": 0.92
+          }
+        },
+        {
+          "entity_id": "AC8120D3-F632-4821-92A3-70E5C4A3343C",
+          "name": "Subaru",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.825,
+          "properties": {},
+          "query": {
+            "affinity": 0.901
+          }
+        },
+        {
+          "entity_id": "753F76AB-F8F3-4DB9-9076-5541D45875DF",
+          "name": "Trader Joe's",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.775,
+          "properties": {},
+          "query": {
+            "affinity": 0.882
+          }
+        },
+        {
+          "entity_id": "AA5DDDC2-4B06-4EAC-9390-AC336006302E",
+          "name": "Good People Brewing Company",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.52,
+          "properties": {
+            "description": "Birmingham craft brewery in Southside, a fixture of the local scene."
+          },
+          "query": {
+            "affinity": 0.863
+          }
+        },
+        {
+          "entity_id": "7C8DF92F-D4B9-45DE-9144-A0E36C0C6897",
+          "name": "REI",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.8,
+          "properties": {},
+          "query": {
+            "affinity": 0.844
+          }
+        },
+        {
+          "entity_id": "D44CBBD6-C6E8-455A-94B4-88B6A05B0591",
+          "name": "Blundstone",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.7,
+          "properties": {},
+          "query": {
+            "affinity": 0.825
+          }
+        },
+        {
+          "entity_id": "B33E9033-D54B-4B07-A439-14C0322C161D",
+          "name": "Levi's",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.65,
+          "properties": {},
+          "query": {
+            "affinity": 0.806
+          }
+        },
+        {
+          "entity_id": "7FB04AB8-1757-4865-8F21-F0D5D370A567",
+          "name": "Avondale Brewing Company",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.5,
+          "properties": {
+            "description": "Avondale brewery and taproom with an outdoor stage for live music."
+          },
+          "query": {
+            "affinity": 0.787
+          }
+        },
+        {
+          "entity_id": "79105CB8-2649-4620-A2F8-0B53D5B8A831",
+          "name": "Fjallraven",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.725,
+          "properties": {},
+          "query": {
+            "affinity": 0.768
+          }
+        },
+        {
+          "entity_id": "1E64D934-320B-4FB7-921B-58DB10BE96EA",
+          "name": "Birkenstock",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.675,
+          "properties": {},
+          "query": {
+            "affinity": 0.749
+          }
+        },
+        {
+          "entity_id": "8A06380C-A034-49D6-AD66-37D7BC5D1AA6",
+          "name": "Kroger",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.86,
+          "properties": {
+            "description": "Kroger: a brand fans of these comps around Athens, OH over-index on."
+          },
+          "query": {
+            "affinity": 0.73
+          }
+        },
+        {
+          "entity_id": "47D5D80A-D8DA-4F3A-A4DF-A99635B1BCB7",
+          "name": "Warby Parker",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.575,
+          "properties": {},
+          "query": {
+            "affinity": 0.711
+          }
+        },
+        {
+          "entity_id": "140AED23-2F58-4FA0-B636-C9D5D473E429",
+          "name": "Blue Bottle Coffee",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.6,
+          "properties": {
+            "description": "Third-wave coffee chain with minimalist cafes."
+          },
+          "query": {
+            "affinity": 0.692
+          }
+        },
+        {
+          "entity_id": "CC32F29D-F291-40D1-A315-06E800B57645",
+          "name": "Hydro Flask",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.5,
+          "properties": {},
+          "query": {
+            "affinity": 0.673
+          }
+        },
+        {
+          "entity_id": "F4D0AB50-60CD-4B17-BF5B-3224D267EB2B",
+          "name": "Allbirds",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.54,
+          "properties": {
+            "description": "Wool sneaker brand with a sustainability pitch."
+          },
+          "query": {
+            "affinity": 0.654
+          }
+        },
+        {
+          "entity_id": "42822EE9-0CEC-419A-B3E2-CF7F82C4FF6A",
+          "name": "Bandcamp",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.85,
+          "properties": {
+            "description": "Bandcamp: a brand fans of these comps around Athens, OH over-index on."
+          },
+          "query": {
+            "affinity": 0.635
+          }
+        },
+        {
+          "entity_id": "495957A9-F1C0-4F5B-907B-435FD109CFAF",
+          "name": "Milo's Tea Company",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.6,
+          "properties": {
+            "description": "Birmingham-founded sweet tea brand sold across the South."
+          },
+          "query": {
+            "affinity": 0.616
+          }
+        },
+        {
+          "entity_id": "CA29596C-A583-4C49-8B03-1FCE2A53EA05",
+          "name": "Carhartt",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.55,
+          "properties": {
+            "description": "Workwear brand adopted by musicians and carpenters alike."
+          },
+          "query": {
+            "affinity": 0.597
+          }
+        },
+        {
+          "entity_id": "7C6060C9-9DBC-4FA4-B4E2-028826422BB5",
+          "name": "Yeti",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.49,
+          "properties": {},
+          "query": {
+            "affinity": 0.578
+          }
+        },
+        {
+          "entity_id": "395417FB-4616-4AF6-AFDD-0A4AC3DFB93B",
+          "name": "Alabama Goods",
+          "type": "urn:entity",
+          "subtype": "urn:entity:brand",
+          "popularity": 0.4,
+          "properties": {
+            "description": "Shop and brand for Alabama-made food, art and gifts."
+          },
+          "query": {
+            "affinity": 0.559
+          }
+        }
+      ]
+    }
+  }
+}

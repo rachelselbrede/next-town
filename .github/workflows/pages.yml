@@ -1,6 +1,11 @@
 # Publishes the static mirror (recorded sample, Qloo fixtures, no API keys) to GitHub Pages on every
 # push to main, after the tests and type check pass. The live agent runs on Cloudflare Workers; see
 # docs/DEPLOY.md.
+#
+# Data rule: the two generated modules (src/demo/fixtures.generated.ts, src/recorded.generated.ts)
+# are build artifacts, not committed, so `npm run prepare:data` rebuilds them here first. A fresh
+# checkout has no private/ directory, so the build only ever sees the public placeholder fixtures
+# and the placeholder recording; live Qloo captures can never reach this mirror.
 name: Pages
 
 on:
@@ -27,6 +32,7 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
+      - run: npm run prepare:data
       - run: npm test
       - run: npm run typecheck
       - run: npm run build:static

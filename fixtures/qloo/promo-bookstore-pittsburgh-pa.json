@@ -1,0 +1,125 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_promo_partners",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?feature.explainability=true&filter.location.query=Pittsburgh%2C%20PA&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abookstore&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Pittsburgh, PA",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:genre:place:bookstore",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "sort_by": "affinity",
+      "take": 2,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "273ADAE8-89EA-432C-B074-232BB68FD1AB",
+          "name": "White Whale Bookstore",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.5,
+          "location": {
+            "lat": 40.441,
+            "lon": -79.996
+          },
+          "properties": {
+            "description": "An independent Bloomfield bookshop with a strong poetry shelf and a packed reading calendar, a natural fit for songwriter fans.",
+            "address": "4754 Liberty Ave, Pittsburgh, PA 15224",
+            "geocode": {
+              "name": "Bloomfield",
+              "city": "Pittsburgh",
+              "admin1_region": "PA",
+              "country_code": "US"
+            },
+            "business_rating": 4.8,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:bookstore",
+              "name": "Bookstore",
+              "type": "urn:tag:genre"
+            }
+          ],
+          "query": {
+            "affinity": 0.86,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.64
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.68
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.7
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "B04816A8-B7B8-4FDB-B3F8-08AA33CF4B8F",
+          "name": "City Books",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.4,
+          "location": {
+            "lat": 40.441,
+            "lon": -79.996
+          },
+          "properties": {
+            "description": "Pittsburgh's oldest used bookstore, now on the North Side, with a loyal literary crowd and a small events series.",
+            "address": "908 Galveston Ave, Pittsburgh, PA 15233",
+            "geocode": {
+              "name": "North Side",
+              "city": "Pittsburgh",
+              "admin1_region": "PA",
+              "country_code": "US"
+            },
+            "business_rating": 4.7,
+            "price_level": 2
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:bookstore",
+              "name": "Bookstore",
+              "type": "urn:tag:genre"
+            }
+          ],
+          "query": {
+            "affinity": 0.73,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.52
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.6
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.64
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

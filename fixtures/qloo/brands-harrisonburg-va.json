@@ -20,13 +20,12 @@
         {
           "entity_id": "81FF9E58-99F1-4C63-9F2F-7D85FA8D6964",
           "name": "Patagonia",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.85,
           "properties": {
             "description": "Patagonia: a brand fans of these comps around Harrisonburg over-index on."
           },
-          "tags": [],
           "query": {
             "affinity": 0.9
           }
@@ -34,13 +33,12 @@
         {
           "entity_id": "AC8120D3-F632-4821-92A3-70E5C4A3343C",
           "name": "Subaru",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.83,
           "properties": {
             "description": "Subaru: a brand fans of these comps around Harrisonburg over-index on."
           },
-          "tags": [],
           "query": {
             "affinity": 0.88
           }
@@ -48,13 +46,12 @@
         {
           "entity_id": "753F76AB-F8F3-4DB9-9076-5541D45875DF",
           "name": "Trader Joe's",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.8,
           "properties": {
             "description": "Trader Joe's: a brand fans of these comps around Harrisonburg over-index on."
           },
-          "tags": [],
           "query": {
             "affinity": 0.86
           }
@@ -62,13 +59,12 @@
         {
           "entity_id": "7C8DF92F-D4B9-45DE-9144-A0E36C0C6897",
           "name": "REI",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.77,
           "properties": {
             "description": "REI: a brand fans of these comps around Harrisonburg over-index on."
           },
-          "tags": [],
           "query": {
             "affinity": 0.84
           }
@@ -76,13 +72,12 @@
         {
           "entity_id": "AC4A6D96-B820-496A-983D-38DB84CC0ACD",
           "name": "Pale Fire Brewing Co.",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.75,
           "properties": {
             "description": "Pale Fire Brewing Co.: a brand fans of these comps around Harrisonburg over-index on."
           },
-          "tags": [],
           "query": {
             "affinity": 0.83
           }
@@ -90,13 +85,12 @@
         {
           "entity_id": "B33E9033-D54B-4B07-A439-14C0322C161D",
           "name": "Levi's",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.73,
           "properties": {
             "description": "Levi's: a brand fans of these comps around Harrisonburg over-index on."
           },
-          "tags": [],
           "query": {
             "affinity": 0.81
           }
@@ -104,13 +98,12 @@
         {
           "entity_id": "934EFCB5-1EE4-40BA-ABCC-EA1F14045CB3",
           "name": "Friendly City Food Co-op",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.7,
           "properties": {
             "description": "Friendly City Food Co-op: a brand fans of these comps around Harrisonburg over-index on."
           },
-          "tags": [],
           "query": {
             "affinity": 0.79
           }
@@ -118,13 +111,12 @@
         {
           "entity_id": "79105CB8-2649-4620-A2F8-0B53D5B8A831",
           "name": "Fjallraven",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.68,
           "properties": {
             "description": "Fjallraven: a brand fans of these comps around Harrisonburg over-index on."
           },
-          "tags": [],
           "query": {
             "affinity": 0.77
           }
@@ -132,13 +124,12 @@
         {
           "entity_id": "D44CBBD6-C6E8-455A-94B4-88B6A05B0591",
           "name": "Blundstone",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.65,
           "properties": {
             "description": "Blundstone: a brand fans of these comps around Harrisonburg over-index on."
           },
-          "tags": [],
           "query": {
             "affinity": 0.75
           }
@@ -146,13 +137,12 @@
         {
           "entity_id": "9FAB12FA-573F-4E54-9B43-DE048AA4043B",
           "name": "Walkabout Outfitter",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.63,
           "properties": {
             "description": "Walkabout Outfitter: a brand fans of these comps around Harrisonburg over-index on."
           },
-          "tags": [],
           "query": {
             "affinity": 0.73
           }
@@ -160,13 +150,12 @@
         {
           "entity_id": "1E64D934-320B-4FB7-921B-58DB10BE96EA",
           "name": "Birkenstock",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.6,
           "properties": {
             "description": "Birkenstock: a brand fans of these comps around Harrisonburg over-index on."
           },
-          "tags": [],
           "query": {
             "affinity": 0.72
           }
@@ -174,13 +163,12 @@
         {
           "entity_id": "52039753-DD87-4F1B-8D75-3F55850FAD13",
           "name": "La Colombe",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.57,
           "properties": {
             "description": "La Colombe: a brand fans of these comps around Harrisonburg over-index on."
           },
-          "tags": [],
           "query": {
             "affinity": 0.7
           }
@@ -188,13 +176,12 @@
         {
           "entity_id": "47D5D80A-D8DA-4F3A-A4DF-A99635B1BCB7",
           "name": "Warby Parker",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.55,
           "properties": {
             "description": "Warby Parker: a brand fans of these comps around Harrisonburg over-index on."
           },
-          "tags": [],
           "query": {
             "affinity": 0.68
           }
@@ -202,13 +189,12 @@
         {
           "entity_id": "1CCC017B-08D4-4A70-A969-8B00219DBC6F",
           "name": "Shenandoah Joe Coffee",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.52,
           "properties": {
             "description": "Shenandoah Joe Coffee: a brand fans of these comps around Harrisonburg over-index on."
           },
-          "tags": [],
           "query": {
             "affinity": 0.66
           }
@@ -216,13 +202,12 @@
         {
           "entity_id": "CC32F29D-F291-40D1-A315-06E800B57645",
           "name": "Hydro Flask",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.5,
           "properties": {
             "description": "Hydro Flask: a brand fans of these comps around Harrisonburg over-index on."
           },
-          "tags": [],
           "query": {
             "affinity": 0.64
           }
@@ -230,13 +215,12 @@
         {
           "entity_id": "C9667048-9036-4149-A3E5-F41066A75FAD",
           "name": "Darn Tough",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.48,
           "properties": {
             "description": "Darn Tough: a brand fans of these comps around Harrisonburg over-index on."
           },
-          "tags": [],
           "query": {
             "affinity": 0.62
           }
@@ -244,13 +228,12 @@
         {
           "entity_id": "2CF0B914-E5A7-4789-BA80-F2649DEBA9CA",
           "name": "Blue Ridge Outdoors",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.45,
           "properties": {
             "description": "Blue Ridge Outdoors: a brand fans of these comps around Harrisonburg over-index on."
           },
-          "tags": [],
           "query": {
             "affinity": 0.61
           }
@@ -258,13 +241,12 @@
         {
           "entity_id": "F0FD8AD9-68B0-49D9-84CE-66B9F835ADCF",
           "name": "Toyota",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.42,
           "properties": {
             "description": "Toyota: a brand fans of these comps around Harrisonburg over-index on."
           },
-          "tags": [],
           "query": {
             "affinity": 0.59
           }
@@ -272,13 +254,12 @@
         {
           "entity_id": "F4D0AB50-60CD-4B17-BF5B-3224D267EB2B",
           "name": "Allbirds",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.4,
           "properties": {
             "description": "Allbirds: a brand fans of these comps around Harrisonburg over-index on."
           },
-          "tags": [],
           "query": {
             "affinity": 0.57
           }
@@ -286,13 +267,12 @@
         {
           "entity_id": "42822EE9-0CEC-419A-B3E2-CF7F82C4FF6A",
           "name": "Bandcamp",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.37,
           "properties": {
             "description": "Bandcamp: a brand fans of these comps around Harrisonburg over-index on."
           },
-          "tags": [],
           "query": {
             "affinity": 0.55
           }

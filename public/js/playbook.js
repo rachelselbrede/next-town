@@ -4,9 +4,13 @@
 //
 // Contract: renderPlaybook(el, playbook, { onShowQuery, onOpenReceipt, onPrev, onNext, onPrint })
 // Optional extras the app may pass in the same options object:
-//   stop       a RouteStop for this city (gives "x h drive from <previous stop>")
-//   prevLabel  the previous stop's label (home city for the first stop)
+//   stop         a RouteStop for this city (gives "x h est. drive from <previous stop>")
+//   prevLabel    the previous stop's label (home city for the first stop)
 //   hasPrev / hasNext  disable the arrow buttons at the ends of the route
+//   fixtureNote  the server's fixture note; when it says "placeholder" the footer carries the disclosure
+//
+// Headings: the screen's own <h1> is visually hidden, so the city name is an <h2>, cards are <h3>,
+// groups inside a card are <h4>.
 //
 // Styles live in public/cards.css (screen) and public/print.css (print).
 
@@ -24,6 +28,18 @@ const PROMO_ASK = {
   "vintage shop": "Ask: a poster in the window or fitting room. Their regulars are the people who come out to shows.",
 };
 const PROMO_ASK_DEFAULT = "Ask: a poster in the window and a flyer by the register, two weeks out.";
+
+// Shown verbatim while the Qloo answers are hand-written placeholders (fixture note contains "placeholder").
+export const PLACEHOLDER_DISCLOSURE =
+  "Until our Qloo API key arrives, the Qloo answers in this demo are hand-written placeholders in Qloo's documented response shape. Place names are real; every score, rating and affinity is invented.";
+
+// "" for live answers; the disclosure for placeholders; a dated line for captured data.
+export function disclosureFor(note) {
+  if (!note) return "";
+  if (/placeholder/i.test(note)) return PLACEHOLDER_DISCLOSURE;
+  const m = /captured\s+(\d{4}-\d{2}-\d{2})/i.exec(note);
+  return m ? `Qloo data captured ${m[1]}.` : "";
+}
 
 // Human labels for Qloo demographic bands.
 const AGE_LABEL = {
@@ -63,6 +79,7 @@ export function renderPlaybook(el, playbook, opts = {}) {
       }
       <footer class="pb-foot">
         <span class="pb-fine">${esc(receipts.length)} Qloo ${receipts.length === 1 ? "call" : "calls"} behind this page. Everything here is an aggregate taste affinity for fans of your comps, not a fact about any person.</span>
+        ${disclosureFor(opts.fixtureNote) ? `<span class="pb-fine pb-disclosure">${esc(disclosureFor(opts.fixtureNote))}</span>` : ""}
       </footer>
     </article>`;
 
@@ -100,12 +117,13 @@ function renderHeader(p, comps, card, opts) {
   const loc = p.locality || {};
   const stop = opts.stop || p.stop || null;
   const chips = [];
-  if (typeof loc.rank === "number") chips.push(`<span class="pb-pill pb-pill-forest" title="Where this locality ranks among US localities for fans of your comps">#${esc(loc.rank)} affinity rank${typeof loc.affinity === "number" ? ` &middot; ${esc(pct(loc.affinity))}` : ""}</span>`);
+  if (typeof loc.rank === "number") chips.push(`<span class="pb-pill pb-pill-forest" title="National rank among US markets for fans of your comps: the town whose best-matching room ranks highest">#${esc(loc.rank)} national affinity rank${typeof loc.affinity === "number" ? ` &middot; ${esc(pct(loc.affinity))}` : ""}</span>`);
   if (typeof loc.population === "number") chips.push(`<span class="pb-pill">Pop. ${esc(fmtInt(loc.population))} <span class="pb-fine">Census 2020</span></span>`);
-  if (loc.overIndex) chips.push(`<span class="pb-badge-gold" title="Under 250k people and a top-20 affinity rank">Over-index town</span>`);
+  if (loc.overIndex) chips.push(`<span class="pb-badge-gold" title="Population under 250,000 and a national affinity rank of 20 or better (not a comparison with home)">Over-index town</span>`);
+  if (loc.topRoom?.name) chips.push(`<span class="pb-pill" title="The room whose affinity ranked this town">Top room: ${esc(loc.topRoom.name)}</span>`);
   if (stop && typeof stop.legHours === "number" && stop.legHours > 0) {
     const from = opts.prevLabel || p.prevLabel;
-    chips.push(`<span class="pb-pill">${esc(stop.legHours.toFixed(1))} h drive${from ? ` from ${esc(from)}` : " from the previous stop"}${stop.driveDay ? " (drive day first)" : ""}</span>`);
+    chips.push(`<span class="pb-pill" title="Straight-line estimate: miles x 1.25 road factor at 55 mph">${esc(stop.legHours.toFixed(1))} h est. drive${from ? ` from ${esc(from)}` : " from the previous stop"}${stop.driveDay ? " (drive day first)" : ""}</span>`);
   }
   if (stop && typeof stop.day === "number") chips.push(`<span class="pb-pill">Day ${esc(stop.day)}</span>`);
 
@@ -115,7 +133,7 @@ function renderHeader(p, comps, card, opts) {
   return `
     <header class="pb-head">
       <div class="pb-kicker">City playbook</div>
-      <h1 class="pb-title">${esc(p.city)}</h1>
+      <h2 class="pb-title">${esc(p.city)}</h2>
       <div class="pb-chips">${chips.join("")}</div>
       <p class="pb-audience">${audience}</p>
       ${card.summary ? `<p class="pb-summary">${esc(card.summary)}</p>` : ""}
@@ -164,7 +182,7 @@ function renderPromo(promo, card, receipts) {
           const kind = String(g.kind || "");
           return `
             <section class="pb-group">
-              <h3 class="pb-group-title">${esc(capitalize(kind))}${places.length > 1 ? "s" : ""}</h3>
+              <h4 class="pb-group-title">${esc(capitalize(kind))}${places.length > 1 ? "s" : ""}</h4>
               <ul class="pb-list">${places
                 .map(
                   (pl) => `
@@ -187,6 +205,7 @@ function renderPromo(promo, card, receipts) {
     receipts,
     note: card.promo_note,
     body,
+    caption: "One Qloo call per kind of place, near this city. Pick the two you'd actually walk into.",
   });
 }
 
@@ -202,13 +221,14 @@ function renderWho(who, card, receipts) {
     .join("");
   const suggestions = Array.isArray(who.suggestions) ? who.suggestions.filter(Boolean) : [];
   const body = `
+    <p class="pb-scope">Qloo's demographics read is for fans of your comps overall, not just this city.</p>
     <div class="pb-demo">
       <div class="pb-demo-col">
-        <h3 class="pb-group-title">Age bands <span class="pb-fine">affinity vs. baseline</span></h3>
+        <h4 class="pb-group-title">Age bands <span class="pb-fine">affinity vs. baseline</span></h4>
         <div class="pb-bars">${ageRows || `<p class="pb-none">No age bands returned.</p>`}</div>
       </div>
       <div class="pb-demo-col">
-        <h3 class="pb-group-title">Gender <span class="pb-fine">affinity vs. baseline</span></h3>
+        <h4 class="pb-group-title">Gender <span class="pb-fine">affinity vs. baseline</span></h4>
         <div class="pb-bars">${genderRows || `<p class="pb-none">No gender bands returned.</p>`}</div>
       </div>
     </div>
@@ -219,12 +239,12 @@ function renderWho(who, card, receipts) {
     }`;
   return cardShell({
     id: "who",
-    title: "Who shows up here",
+    title: "Who your comps draw",
     tool: "who_shows_up",
     receipts,
     note: card.who_note,
     body,
-    caption: "Age and gender are affinities for fans of your comps near this city, averaged across comps. Positive means over-represented versus Qloo's baseline.",
+    caption: "Age and gender are affinities for fans of your comps everywhere, averaged across comps. Positive means over-represented versus Qloo's baseline. Qloo's demographics query takes no location, so this is not a read on this town.",
   });
 }
 
@@ -234,17 +254,21 @@ function renderLocalColor(localColor, city, home, card, receipts) {
   const shows = Array.isArray(lc.shows) ? lc.shows : [];
   const cityShort = String(city || "").split(",")[0];
   const homeShort = String(home || "").split(",")[0];
+  // homeAvailable === false: the home-city calls failed, so there is nothing to compare against.
+  // Show this city's list on its own and say so; never "not in the home top list".
+  const homeOk = lc.homeAvailable !== false;
   const table = (rows, label) =>
     rows.length
       ? `
-      <h3 class="pb-group-title">${esc(label)}</h3>
+      <h4 class="pb-group-title">${esc(label)}</h4>
       <table class="pb-delta">
-        <thead><tr><th scope="col">${esc(label)}</th><th scope="col">${esc(cityShort)}</th><th scope="col">${esc(homeShort)}</th><th scope="col">Delta</th></tr></thead>
-        <tbody>${rows.map(deltaRow).join("")}</tbody>
+        <thead><tr><th scope="col">${esc(label)}</th><th scope="col">${esc(cityShort)}</th>${homeOk ? `<th scope="col">${esc(homeShort)}</th><th scope="col">Delta</th>` : ""}</tr></thead>
+        <tbody>${rows.map((d) => deltaRow(d, homeOk)).join("")}</tbody>
       </table>`
-      : `<h3 class="pb-group-title">${esc(label)}</h3><p class="pb-none">Nothing returned.</p>`;
+      : `<h4 class="pb-group-title">${esc(label)}</h4><p class="pb-none">Nothing returned.</p>`;
   const promoCopy = Array.isArray(card.promo_copy) ? card.promo_copy.filter(Boolean).slice(0, 2) : [];
   const body = `
+    ${homeOk ? "" : `<p class="pb-scope">Home comparison unavailable for this run: the ${esc(homeShort || "home")} calls did not come back, so these are this city's affinities on their own.</p>`}
     <div class="pb-color">
       <div class="pb-color-col">${table(brands, "Brands")}</div>
       <div class="pb-color-col">${table(shows, "TV shows")}</div>
@@ -253,7 +277,7 @@ function renderLocalColor(localColor, city, home, card, receipts) {
     ${card.caution ? `<p class="pb-caution">${esc(card.caution)}</p>` : ""}`;
   return cardShell({
     id: "color",
-    title: `Local color: what this crowd loves that ${esc(homeShort || "home")} doesn't`,
+    title: homeOk ? `Local color: what this crowd loves that ${esc(homeShort || "home")} doesn't` : "Local color: what this crowd loves",
     titleIsHtml: true,
     tool: "local_color",
     receipts,
@@ -262,8 +286,9 @@ function renderLocalColor(localColor, city, home, card, receipts) {
   });
 }
 
-function deltaRow(d) {
+function deltaRow(d, homeOk = true) {
   const cityV = pct(d.cityAffinity);
+  if (!homeOk) return `<tr><td class="pb-delta-name">${esc(d.name)}</td><td class="pb-num">${esc(cityV)}</td></tr>`;
   const hasHome = typeof d.homeAffinity === "number";
   const homeV = hasHome ? pct(d.homeAffinity) : `<span class="pb-fine">not in home top 20</span>`;
   let delta = "";
@@ -288,7 +313,7 @@ function cardShell({ id, title, titleIsHtml, tool, receipts, note, body, caption
   return `
     <section class="pb-card" data-card="${esc(id)}" data-tool="${esc(tool)}">
       <div class="pb-card-head">
-        <h2 class="pb-card-title">${titleIsHtml ? title : esc(title)}</h2>
+        <h3 class="pb-card-title">${titleIsHtml ? title : esc(title)}</h3>
         <button type="button" class="pb-query no-print" data-action="query" data-tool="${esc(tool)}" ${receiptId ? `data-receipt="${esc(receiptId)}"` : ""} title="Open the Receipts drawer at this request">
           Show the query${count > 1 ? ` (${esc(count)})` : ""}
         </button>

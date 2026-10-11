@@ -40,6 +40,26 @@ export interface RunAgentOptions {
 
 const MAX_RESULT_CHARS = 24_000;
 
+// What the browser is told when Claude fails. The raw error (which can carry request ids, the
+// model name, quota details) goes to the server log; the stream only gets a plain sentence.
+export const GENERIC_ERROR_MESSAGE = "Something went wrong on the server.";
+export const SAMPLE_STILL_WORKS = "The Hollow Pines sample still works.";
+
+export function isApiError(err: unknown): boolean {
+  if (err instanceof Anthropic.APIError) return true;
+  return typeof (err as { status?: unknown } | null)?.status === "number";
+}
+
+export function friendlyErrorMessage(err: unknown): string {
+  if (isApiError(err)) {
+    const status = (err as { status?: unknown }).status;
+    return typeof status === "number"
+      ? `Claude is unavailable right now (HTTP ${status}). ${SAMPLE_STILL_WORKS}`
+      : `Claude is unavailable right now. ${SAMPLE_STILL_WORKS}`;
+  }
+  return GENERIC_ERROR_MESSAGE;
+}
+
 function toApiTools(tools: ToolDef[]): Anthropic.Tool[] {
   return tools.map((t) => ({
     name: t.name,
@@ -89,18 +109,27 @@ export async function* runAgent(opts: RunAgentOptions): AsyncGenerator<AgentEven
     );
 
     let textThisTurn = "";
-    for await (const event of stream) {
-      if (event.type === "content_block_delta") {
-        if (event.delta.type === "text_delta") {
-          textThisTurn += event.delta.text;
-          yield { type: "text", delta: event.delta.text };
-        } else if (event.delta.type === "thinking_delta" && event.delta.thinking) {
-          yield { type: "thinking", text: event.delta.thinking };
+    let message: Anthropic.Message;
+    try {
+      for await (const event of stream) {
+        if (event.type === "content_block_delta") {
+          if (event.delta.type === "text_delta") {
+            textThisTurn += event.delta.text;
+            yield { type: "text", delta: event.delta.text };
+          } else if (event.delta.type === "thinking_delta" && event.delta.thinking) {
+            yield { type: "thinking", text: event.delta.thinking };
+          }
         }
       }
+      message = await stream.finalMessage();
+    } catch (err) {
+      // The reader went away (tab closed, "Stop"): nobody is listening, so just end quietly.
+      if (signal?.aborted) return;
+      // Never forward the SDK's error text (request ids, quota details) to the browser.
+      console.error(`[agent] Claude request failed on turn ${turn}:`, err);
+      yield { type: "error", message: friendlyErrorMessage(err) };
+      return;
     }
-
-    const message = await stream.finalMessage();
     usage.input += message.usage.input_tokens;
     usage.output += message.usage.output_tokens;
 

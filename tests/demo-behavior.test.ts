@@ -29,21 +29,36 @@ const route: Route = {
 };
 const obvious = { cities: ["Pittsburgh, PA", "Nashville, TN"], overlap: ["Pittsburgh, PA"], smallTowns: 1, summary: "x" };
 
+const demographics = { success: true, results: { demographics: [{ entity_id: comps[0].id, query: { age: { "25_to_29": 0.4, "30_to_34": 0.5 }, gender: { female: 0.2, male: -0.1 } } }] } };
+
 test("a demo city with no recorded fixtures says so instead of showing empty Qloo results", async () => {
   const qloo = new QlooClient({}, () => undefined); // demo mode, every lookup misses
   const events: any[] = [];
   const pb = await buildPlaybook({ qloo, client: null, model: "m", city: "Lancaster, PA", home: "Richmond, VA", comps, emit: (e) => events.push(e) });
   assert.equal(pb.noDemoData, true);
   assert.match(pb.card.summary, /only carries recorded Qloo answers/);
-  assert.equal(pb.receipts.length, 7);
+  assert.equal(pb.receipts.length, 11, "rooms, five promo kinds, demographics, city brand+tv, home brand+tv");
   assert.ok(pb.receipts.every((r) => r.status === 404 && r.mode === "demo"));
+  assert.equal(pb.localColor.homeAvailable, false);
   assert.equal(events.filter((e) => e.type === "playbook").length, 1);
 });
 
-test("a city with fixtures is not flagged", async () => {
-  const qloo = new QlooClient({}, (path) => (path === "/v2/insights" ? { results: { entities: [{ entity_id: "1", name: "Room", query: { affinity: 0.9 } }] } } : undefined));
+test("the shared demographics fixture alone does not make a city 'recorded'", async () => {
+  // Demographics is one read for the comps overall; only the city's own calls count.
+  const qloo = new QlooClient({}, (_path, params) => (params["filter.type"] === "urn:demographics" ? demographics : undefined));
+  const pb = await buildPlaybook({ qloo, client: null, model: "m", city: "Lancaster, PA", home: "Richmond, VA", comps, emit: () => {} });
+  assert.equal(pb.noDemoData, true);
+  assert.equal(pb.who?.strongestAge, "30_to_34", "the shared read still comes through");
+});
+
+test("a city with any of its own fixtures is not flagged", async () => {
+  const qloo = new QlooClient({}, (path, params) => (path === "/v2/insights" && params["filter.type"] === "urn:entity:place" ? { results: { entities: [{ entity_id: "1", name: "Room", type: "urn:entity", subtype: "urn:entity:place", query: { affinity: 0.9 } }] } } : undefined));
   const pb = await buildPlaybook({ qloo, client: null, model: "m", city: "Asheville, NC", home: "Richmond, VA", comps, emit: () => {} });
   assert.notEqual(pb.noDemoData, true);
+  assert.equal(pb.rooms[0]?.name, "Room");
+  assert.equal(pb.who, null);
+  assert.equal(pb.localColor.homeAvailable, false, "home calls missed, so the comparison is unavailable");
+  assert.match(pb.card.who_note, /no demographic read/i);
 });
 
 test("the recorded pitch is served only when the client says the loop is untouched", async () => {
@@ -62,12 +77,30 @@ test("the recorded pitch is served only when the client says the loop is untouch
   if (rec) assert.equal((await call(true)).text, rec.text);
 });
 
-test("template pitch formats miles and states the big-market overlap once", () => {
+test("template pitch formats miles as an estimate and states the big-market overlap once", () => {
   const opts = { route, playbooks: [], comps: comps as any, home: "Richmond, VA", obvious };
   const text = fallbackPitchText(opts, pitchItinerary(route, []));
-  assert.match(text, /about 1,535 miles/);
+  assert.match(text, /about 1,535 miles \(est\.\)/);
   assert.match(text, /1 of the 2 stops are on the usual big-market list\./);
   assert.equal(text.match(/towns under 250k/g)?.length, 1);
+  assert.doesNotMatch(text, /show up|attend|draw\b|booked|confirmed/i);
+});
+
+test("pitch helpers survive a missing obvious list and playbooks without rooms or promo", () => {
+  const playbooks: any[] = [
+    { city: "Charlottesville, VA", who: { strongestAge: "30_to_34" } }, // no rooms, no promo
+    { city: "Pittsburgh, PA", rooms: [{ name: "Mr. Smalls" }], promo: [{ kind: "record store", places: [] }, { kind: "dive bar", places: [{ name: "Gooski's" }] }] },
+    null,
+  ];
+  const itinerary = pitchItinerary(route, playbooks);
+  assert.deepEqual(itinerary.map((r) => r.topRoom), [undefined, "Mr. Smalls"]);
+  assert.deepEqual(itinerary.map((r) => r.topPromo), [undefined, "Gooski's"]);
+  assert.deepEqual(itinerary.map((r) => r.ageRead), ["30 to 34", undefined]);
+  const text = fallbackPitchText({ route, playbooks, comps: comps as any, home: "Richmond, VA", obvious: {} as any }, itinerary);
+  assert.match(text, /Mr\. Smalls in Pittsburgh, PA/);
+  assert.match(text, /would like to approach/);
+  assert.doesNotMatch(text, /big-market list/, "no obvious list, no overlap claim");
+  assert.deepEqual(pitchItinerary({ ...route, stops: undefined as any }, []), []);
 });
 
 test("cancelling an SSE response stops the generator behind it", async () => {

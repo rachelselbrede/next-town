@@ -1,19 +1,19 @@
 {
-  "text": "We're an independent act out of Richmond, Virginia, and we've put together a 12-stop run across 12 days and 1,936 total miles that we think fits rooms on your roster well. For fans of Big Thief, Waxahatchee, and Adrianne Lenker, the routing is based on Qloo taste affinities, and it skips the usual big-city circuit entirely: none of our stops overlap with the standard major markets, and nine of the twelve are over-index towns where listeners like ours show up stronger than you'd expect. The loop opens at The Jefferson Theater in Charlottesville and The Golden Pony in Harrisonburg, swings out through Pittsburgh, Columbus, and Bloomington, then works back down through The Grey Eagle in Asheville, 40 Watt Club in Athens, Georgia, and closes at Cat's Cradle in Carrboro. Every leg is a show day with no lost drive days, and the core audience at most stops reads 30 to 34. We'd love to talk about making it happen.",
+  "text": "Hi, we're an independent band out of Richmond, VA, writing about a 12-stop run over 12 days for fans of Big Thief, Waxahatchee, and Adrianne Lenker. The routing is based on Qloo taste affinities for fans of those comps, and it loops about 2,292 miles from Charlottesville through Pittsburgh, Bloomington, Nashville, Knoxville, Athens, GA, and Asheville before closing in Wilmington, with no full drive days. Only one stop, Nashville, overlaps the usual big-city circuit. Nine are over-index towns, places under 250,000 people where the best-matching room ranks in the national top 20 for fans of our comps. We'd love to approach rooms like The Golden Pony, The Bijou Theatre, 40 Watt Club, The Grey Eagle, and Cat's Cradle, and to partner with shops like Grimey's and Harvest Records along the way. The strongest age band for fans of these comps is 30 to 34. We'd be glad to talk through dates whenever works for you.",
   "itinerary": [
     {
       "day": 1,
       "city": "Charlottesville, VA",
-      "driveHours": 1.2,
+      "driveHours": 1.5,
       "overIndex": true,
       "topRoom": "The Jefferson Theater",
       "topPromo": "Sidetracks Music",
-      "ageRead": "25 to 29"
+      "ageRead": "30 to 34"
     },
     {
       "day": 2,
       "city": "Harrisonburg, VA",
-      "driveHours": 0.7,
+      "driveHours": 0.8,
       "overIndex": true,
       "topRoom": "The Golden Pony",
       "topPromo": "Downtown Records",
@@ -22,7 +22,7 @@
     {
       "day": 3,
       "city": "Pittsburgh, PA",
-      "driveHours": 2.7,
+      "driveHours": 3.4,
       "overIndex": false,
       "topRoom": "Mr. Smalls Theatre",
       "topPromo": "The Attic Record Store",
@@ -30,85 +30,85 @@
     },
     {
       "day": 4,
-      "city": "Columbus, OH",
-      "driveHours": 2.9,
-      "overIndex": false,
-      "topRoom": "Ace of Cups",
-      "topPromo": "Used Kids Records",
-      "ageRead": "30 to 34"
-    },
-    {
-      "day": 5,
-      "city": "Bloomington, IN",
-      "driveHours": 3.6,
-      "overIndex": true,
-      "topRoom": "The Bluebird",
-      "topPromo": "Landlocked Music",
-      "ageRead": "25 to 29"
-    },
-    {
-      "day": 6,
       "city": "Athens, OH",
-      "driveHours": 4.3,
+      "driveHours": 3.1,
       "overIndex": true,
       "topRoom": "The Union Bar & Grill",
       "topPromo": "Haffa's Records",
       "ageRead": "30 to 34"
     },
     {
-      "day": 7,
-      "city": "Boone, NC",
-      "driveHours": 3.9,
+      "day": 5,
+      "city": "Bloomington, IN",
+      "driveHours": 5.4,
+      "overIndex": true,
+      "topRoom": "The Bluebird",
+      "topPromo": "Landlocked Music",
+      "ageRead": "30 to 34"
+    },
+    {
+      "day": 6,
+      "city": "Nashville, TN",
+      "driveHours": 4.7,
       "overIndex": false,
-      "topRoom": "Boone Saloon",
-      "topPromo": "Doc's Record Barn",
+      "topRoom": "The Basement East",
+      "topPromo": "Grimey's New & Preloved Music",
+      "ageRead": "30 to 34"
+    },
+    {
+      "day": 7,
+      "city": "Knoxville, TN",
+      "driveHours": 3.6,
+      "overIndex": true,
+      "topRoom": "The Bijou Theatre",
+      "topPromo": "Lost & Found Records",
       "ageRead": "30 to 34"
     },
     {
       "day": 8,
-      "city": "Asheville, NC",
-      "driveHours": 1.2,
-      "overIndex": true,
-      "topRoom": "The Grey Eagle",
-      "topPromo": "Harvest Records",
-      "ageRead": "30 to 34"
-    },
-    {
-      "day": 9,
-      "city": "Knoxville, TN",
-      "driveHours": 1.5,
-      "overIndex": true,
-      "topRoom": "The Bijou Theatre",
-      "topPromo": "Lost & Found Records",
-      "ageRead": "25 to 29"
-    },
-    {
-      "day": 10,
       "city": "Athens, GA",
-      "driveHours": 2.6,
+      "driveHours": 3.3,
       "overIndex": true,
       "topRoom": "40 Watt Club",
       "topPromo": "Wuxtry Records",
       "ageRead": "30 to 34"
     },
     {
-      "day": 11,
-      "city": "Wilmington, NC",
-      "driveHours": 5.6,
+      "day": 9,
+      "city": "Asheville, NC",
+      "driveHours": 2.8,
       "overIndex": true,
-      "topRoom": "Bourgie Nights",
-      "topPromo": "Gravity Records",
+      "topRoom": "The Grey Eagle",
+      "topPromo": "Harvest Records",
       "ageRead": "30 to 34"
     },
     {
-      "day": 12,
+      "day": 10,
+      "city": "Boone, NC",
+      "driveHours": 1.5,
+      "overIndex": false,
+      "topRoom": "Boone Saloon",
+      "topPromo": "Doc's Record Barn",
+      "ageRead": "30 to 34"
+    },
+    {
+      "day": 11,
       "city": "Carrboro, NC",
-      "driveHours": 2.4,
+      "driveHours": 3.3,
       "overIndex": true,
       "topRoom": "Cat's Cradle",
       "topPromo": "All Day Records",
       "ageRead": "30 to 34"
+    },
+    {
+      "day": 12,
+      "city": "Wilmington, NC",
+      "driveHours": 3.1,
+      "overIndex": true,
+      "topRoom": "Bourgie Nights",
+      "topPromo": "Gravity Records",
+      "ageRead": "30 to 34"
     }
   ],
-  "totalMiles": 1936
+  "totalMiles": 2292
 }

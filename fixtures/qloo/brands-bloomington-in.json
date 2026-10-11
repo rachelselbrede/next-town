@@ -20,13 +20,12 @@
         {
           "entity_id": "81FF9E58-99F1-4C63-9F2F-7D85FA8D6964",
           "name": "Patagonia",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.52,
           "properties": {
             "description": "Patagonia: a brand fans of these comps around Bloomington, IN over-index on."
           },
-          "tags": [],
           "query": {
             "affinity": 0.9
           }
@@ -34,13 +33,12 @@
         {
           "entity_id": "AC8120D3-F632-4821-92A3-70E5C4A3343C",
           "name": "Subaru",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.64,
           "properties": {
             "description": "Subaru: a brand fans of these comps around Bloomington, IN over-index on."
           },
-          "tags": [],
           "query": {
             "affinity": 0.88
           }
@@ -48,13 +46,12 @@
         {
           "entity_id": "753F76AB-F8F3-4DB9-9076-5541D45875DF",
           "name": "Trader Joe's",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.7,
           "properties": {
             "description": "Trader Joe's: a brand fans of these comps around Bloomington, IN over-index on."
           },
-          "tags": [],
           "query": {
             "affinity": 0.86
           }
@@ -62,13 +59,12 @@
         {
           "entity_id": "F8ACBCF5-9752-4C61-B655-EE1286CC0D40",
           "name": "Upland Brewing Company",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.33,
           "properties": {
             "description": "Upland Brewing Company: a brand fans of these comps around Bloomington, IN over-index on."
           },
-          "tags": [],
           "query": {
             "affinity": 0.84
           }
@@ -76,13 +72,12 @@
         {
           "entity_id": "7C8DF92F-D4B9-45DE-9144-A0E36C0C6897",
           "name": "REI",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.6,
           "properties": {
             "description": "REI: a brand fans of these comps around Bloomington, IN over-index on."
           },
-          "tags": [],
           "query": {
             "affinity": 0.83
           }
@@ -90,13 +85,12 @@
         {
           "entity_id": "B33E9033-D54B-4B07-A439-14C0322C161D",
           "name": "Levi's",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.68,
           "properties": {
             "description": "Levi's: a brand fans of these comps around Bloomington, IN over-index on."
           },
-          "tags": [],
           "query": {
             "affinity": 0.81
           }
@@ -104,13 +98,12 @@
         {
           "entity_id": "79105CB8-2649-4620-A2F8-0B53D5B8A831",
           "name": "Fjallraven",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.41,
           "properties": {
             "description": "Fjallraven: a brand fans of these comps around Bloomington, IN over-index on."
           },
-          "tags": [],
           "query": {
             "affinity": 0.79
           }
@@ -118,13 +111,12 @@
         {
           "entity_id": "F91AD4B2-272B-4CA2-8FA2-7D60529F34CD",
           "name": "Bloomingfoods Co-op",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.24,
           "properties": {
             "description": "Bloomingfoods Co-op: a brand fans of these comps around Bloomington, IN over-index on."
           },
-          "tags": [],
           "query": {
             "affinity": 0.77
           }
@@ -132,13 +124,12 @@
         {
           "entity_id": "D44CBBD6-C6E8-455A-94B4-88B6A05B0591",
           "name": "Blundstone",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.39,
           "properties": {
             "description": "Blundstone: a brand fans of these comps around Bloomington, IN over-index on."
           },
-          "tags": [],
           "query": {
             "affinity": 0.75
           }
@@ -146,13 +137,12 @@
         {
           "entity_id": "52039753-DD87-4F1B-8D75-3F55850FAD13",
           "name": "La Colombe",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.45,
           "properties": {
             "description": "La Colombe: a brand fans of these comps around Bloomington, IN over-index on."
           },
-          "tags": [],
           "query": {
             "affinity": 0.73
           }
@@ -160,13 +150,12 @@
         {
           "entity_id": "1E64D934-320B-4FB7-921B-58DB10BE96EA",
           "name": "Birkenstock",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.55,
           "properties": {
             "description": "Birkenstock: a brand fans of these comps around Bloomington, IN over-index on."
           },
-          "tags": [],
           "query": {
             "affinity": 0.72
           }
@@ -174,13 +163,12 @@
         {
           "entity_id": "47D5D80A-D8DA-4F3A-A4DF-A99635B1BCB7",
           "name": "Warby Parker",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.5,
           "properties": {
             "description": "Warby Parker: a brand fans of these comps around Bloomington, IN over-index on."
           },
-          "tags": [],
           "query": {
             "affinity": 0.7
           }
@@ -188,13 +176,12 @@
         {
           "entity_id": "85B51AEC-55D3-47D1-858C-A7F4A4156161",
           "name": "Secretly Canadian",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.3,
           "properties": {
             "description": "Secretly Canadian: a brand fans of these comps around Bloomington, IN over-index on."
           },
-          "tags": [],
           "query": {
             "affinity": 0.68
           }
@@ -202,13 +189,12 @@
         {
           "entity_id": "CA29596C-A583-4C49-8B03-1FCE2A53EA05",
           "name": "Carhartt",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.62,
           "properties": {
             "description": "Carhartt: a brand fans of these comps around Bloomington, IN over-index on."
           },
-          "tags": [],
           "query": {
             "affinity": 0.66
           }
@@ -216,13 +202,12 @@
         {
           "entity_id": "8A06380C-A034-49D6-AD66-37D7BC5D1AA6",
           "name": "Kroger",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.72,
           "properties": {
             "description": "Kroger: a brand fans of these comps around Bloomington, IN over-index on."
           },
-          "tags": [],
           "query": {
             "affinity": 0.64
           }
@@ -230,13 +215,12 @@
         {
           "entity_id": "42822EE9-0CEC-419A-B3E2-CF7F82C4FF6A",
           "name": "Bandcamp",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.36,
           "properties": {
             "description": "Bandcamp: a brand fans of these comps around Bloomington, IN over-index on."
           },
-          "tags": [],
           "query": {
             "affinity": 0.62
           }
@@ -244,13 +228,12 @@
         {
           "entity_id": "589E23F9-7B32-4CDA-9A6B-87308139EEFD",
           "name": "Hopscotch Coffee",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.22,
           "properties": {
             "description": "Hopscotch Coffee: a brand fans of these comps around Bloomington, IN over-index on."
           },
-          "tags": [],
           "query": {
             "affinity": 0.61
           }
@@ -258,13 +241,12 @@
         {
           "entity_id": "CF1F4DF2-0EBC-4DDB-B2DA-58092A3E7571",
           "name": "Oliver Winery",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.28,
           "properties": {
             "description": "Oliver Winery: a brand fans of these comps around Bloomington, IN over-index on."
           },
-          "tags": [],
           "query": {
             "affinity": 0.59
           }
@@ -272,13 +254,12 @@
         {
           "entity_id": "F4D0AB50-60CD-4B17-BF5B-3224D267EB2B",
           "name": "Allbirds",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.42,
           "properties": {
             "description": "Allbirds: a brand fans of these comps around Bloomington, IN over-index on."
           },
-          "tags": [],
           "query": {
             "affinity": 0.57
           }
@@ -286,13 +267,12 @@
         {
           "entity_id": "D3BC7DCE-3159-435B-9CC4-A3345E5F6D54",
           "name": "Dr. Martens",
-          "type": "urn:entity:brand",
+          "type": "urn:entity",
           "subtype": "urn:entity:brand",
           "popularity": 0.58,
           "properties": {
             "description": "Dr. Martens: a brand fans of these comps around Bloomington, IN over-index on."
           },
-          "tags": [],
           "query": {
             "affinity": 0.55
           }

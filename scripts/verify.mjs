@@ -14,13 +14,18 @@
 //   2. /v2/tags for every group term in data/tags.json (music venue, record store, ...) and matches the
 //      returned tags to the groups by name, so filter.tags carries ids Qloo actually knows.
 //   3. /v2/insights for each shape the app sends, with the live comp ids and the live tag ids:
-//      rank_markets (urn:entity:locality), rooms and promo partners (urn:entity:place), who_shows_up
-//      (urn:demographics), local color (urn:entity:brand, urn:entity:tv_show), openers (urn:entity:artist).
+//      rank_markets (urn:entity:place nationwide, diversified by geocode city: checks the results are
+//      distinct cities), rooms (urn:entity:place), one promo call per PROMO_TAG_GROUPS group,
+//      who_shows_up (urn:demographics, comps overall: it takes no city, since location is not a
+//      documented input), local color (urn:entity:brand, urn:entity:tv_show), openers (urn:entity:artist).
+//      Per-result and top-level explainability shapes are printed.
 //   4. One compact report line per check, a summary of what worked, then data/tags.json is rewritten
-//      from step 2 (groups kept, _handAuthored set to false).
+//      from step 2 (groups kept, _handAuthored set to false). Tag ids are identifiers, not response
+//      data, so committing that file is fine.
 //
 // Every request goes through QlooClient and the builders in src/queries.ts, exactly like the server,
-// so what passes here is what the app will send. Nothing else is written.
+// so what passes here is what the app will send. Nothing else is written: no Qloo response is saved
+// anywhere by this script (the data rule; scripts/record.mjs captures them privately).
 
 import fs from "node:fs";
 import path from "node:path";
@@ -110,20 +115,37 @@ export function shapeOf(value) {
     .join(" ");
 }
 
-// How feature.explainability came back, e.g. "by_entity[3] -> {name,score}" or "none".
-export function explainabilityShape(entity) {
-  const ex = entity?.query?.explainability;
+// How an explainability object came back, e.g. "signal.interests.entities[3] -> {entity_id,score}" or "none".
+// Works for the per-result one (entity.query.explainability) and the top-level one (body.query.explainability).
+export function explainabilityShape(entityOrHolder) {
+  const ex = entityOrHolder?.query?.explainability;
   if (ex === undefined) return "none";
   if (!ex || typeof ex !== "object") return typeof ex;
   const parts = Object.entries(ex).map(([k, v]) => {
+    if (Array.isArray(v)) {
+      const inner = v[0];
+      const innerShape = inner && typeof inner === "object" ? `{${Object.keys(inner).join(",")}}` : typeof inner;
+      return `${k}[${v.length}] (array) -> ${innerShape}`;
+    }
     if (v && typeof v === "object") {
       const inner = Object.values(v)[0];
       const innerShape = inner && typeof inner === "object" ? `{${Object.keys(inner).join(",")}}` : typeof inner;
-      return `${k}[${Object.keys(v).length}] -> ${innerShape}`;
+      return `${k}{${Object.keys(v).length}} (object) -> ${innerShape}`;
     }
     return `${k}: ${typeof v}`;
   });
   return parts.join("; ") || "empty object";
+}
+
+// Distinct "City, ST" labels among place results (what diversify.by=properties.geocode.city should give).
+export function distinctCities(body) {
+  const seen = new Set();
+  for (const e of entitiesOf(body)) {
+    const g = e.properties?.geocode ?? {};
+    const city = g.city ?? g.name;
+    if (city) seen.add(`${city}, ${g.admin1_region ?? "?"}`);
+  }
+  return [...seen];
 }
 
 // A query on one line without the long id lists, for the no-key plan and the summary.
@@ -141,15 +163,16 @@ export function describeQuery(q) {
   return `GET ${q.path}  ${params.join("  ")}`;
 }
 
-// Top results in one line, with state for localities and subtype for places: "The Grey Eagle [music_venue] 87%; ..."
-function topLine(body, n = 4) {
+// Top results in one line, with the geocode city for places and the subtype: "The Grey Eagle (Asheville, NC) [place] 87%; ..."
+function topLine(body, n = 4, { withCity = false } = {}) {
   return entitiesOf(body)
     .slice(0, n)
     .map((e) => {
-      const state = e.type === "urn:entity:locality" ? e.properties?.geocode?.admin1_region : undefined;
-      const sub = e.subtype && e.type !== "urn:entity:locality" ? ` [${e.subtype.split(":").at(-1)}]` : "";
+      const g = e.properties?.geocode;
+      const city = withCity && g ? ` (${g.city ?? g.name ?? "?"}, ${g.admin1_region ?? "?"})` : "";
+      const sub = e.subtype ? ` [${String(e.subtype).split(":").at(-1)}]` : "";
       const aff = typeof e.query?.affinity === "number" ? ` ${pct(e.query.affinity)}` : "";
-      return `${e.name}${state ? `, ${state}` : ""}${sub}${aff}`;
+      return `${e.name}${city}${sub}${aff}`;
     })
     .join("; ");
 }
@@ -227,8 +250,7 @@ function makeChecker(client, checks, opts) {
 function printPlan(scenario, groups, city) {
   const format = scenario.request.format;
   const compIds = scenario.comps.map((c) => c.id);
-  const venueTags = Q.VENUE_TAG_GROUPS.flatMap((g) => groups[g] ?? []);
-  const promoTags = Q.PROMO_TAG_GROUPS.flatMap((g) => groups[g] ?? []);
+  const venueTags = (format === "comedy" ? Q.COMEDY_TAG_GROUPS : Q.VENUE_TAG_GROUPS).flatMap((g) => groups[g] ?? []);
 
   console.log("QLOO_API_KEY is not set, so nothing was called. With a key, scripts/verify.mjs runs these checks in order:");
   heading("1. Resolve the comps");
@@ -238,17 +260,19 @@ function printPlan(scenario, groups, city) {
     for (const term of TAG_TERMS[group]?.terms ?? [humanize(group)]) line("plan", `tags "${term}" -> ${group}`, describeQuery(Q.findTags(term)));
   }
   heading(`3. Insights for ${city}, with the resolved comp ids and the live tag ids`);
-  line("plan", "rank_markets (urn:entity:locality)", describeQuery(Q.rankMarkets(compIds)));
+  line("plan", "rank_markets (place, diversify by city)", describeQuery(Q.rankMarkets(compIds, venueTags)));
   line("plan", "find_rooms (urn:entity:place)", describeQuery(Q.findRooms(compIds, city, venueTags)));
-  line("plan", "find_promo_partners (place, diversify)", describeQuery(Q.findPromoPartners(compIds, city, promoTags)));
-  line("plan", "who_shows_up (urn:demographics)", describeQuery(Q.whoShowsUp(compIds, city)));
+  for (const group of Q.PROMO_TAG_GROUPS) line("plan", `find_promo_partners (${group})`, describeQuery(Q.findPromoGroup(compIds, city, groups[group] ?? [])));
+  line("plan", "who_shows_up (demographics, no city)", describeQuery(Q.whoShowsUp(compIds)));
   line("plan", "local_color (urn:entity:brand)", describeQuery(Q.localColor(compIds, city, "brand")));
   line("plan", "local_color (urn:entity:tv_show)", describeQuery(Q.localColor(compIds, city, "tv_show")));
   line("plan", "openers_to_ask (urn:entity:artist)", describeQuery(Q.openersToAsk(compIds, city)));
   heading("4. Then");
-  console.log(`  - print status, result count, first entity's field names and explainability shape per check,`);
-  console.log(`    and whether urn:entity:locality and urn:demographics worked`);
+  console.log(`  - print status, result count, first entity's field names and the per-result and top-level explainability shapes per check`);
+  console.log(`  - report whether rank_markets returned distinct cities (one venue per city) and whether urn:demographics worked`);
+  console.log(`    (demographics is read once for fans of the comps overall; location is not a documented input, so it cannot differ by city)`);
   console.log(`  - rewrite data/tags.json groups (${Object.keys(groups).join(", ")}) from the live tag results, _handAuthored: false`);
+  console.log(`  - save no Qloo response anywhere (data rule); scripts/record.mjs captures them under private/ later`);
   console.log(`\nThe comp ids shown are the scenario's placeholders from data/scenarios/hollow-pines.json; the live run uses whatever /search returns.`);
 }
 
@@ -331,27 +355,44 @@ async function main(argv) {
     }
   }
   const venueTags = (format === "comedy" ? Q.COMEDY_TAG_GROUPS : Q.VENUE_TAG_GROUPS).flatMap((g) => liveGroups[g] ?? []);
-  const promoTags = Q.PROMO_TAG_GROUPS.flatMap((g) => liveGroups[g] ?? []);
 
   // 3. Insights, one call per shape the app sends.
   heading(`3. Insights for ${city} (/v2/insights)`);
-  const markets = await check("rank_markets (urn:entity:locality)", Q.rankMarkets(compIds));
-  if (markets.n) console.log(`      top: ${topLine(markets.r.body, 5)}`);
-  const localityEntities = markets.n ? entitiesOf(markets.r.body) : [];
-  const localityWorked = localityEntities.length > 0;
-  const localityHasCoords = localityEntities.some((e) => typeof e.location?.lat === "number" && typeof e.location?.lon === "number");
-  const localityHasState = localityEntities.some((e) => typeof e.properties?.geocode?.admin1_region === "string");
+  // Markets: a nationwide place query diversified by geocode city, so each result should be a
+  // different town represented by its best-matching venue (urn:entity:locality does not accept
+  // artist signals on the hackathon host).
+  const markets = await check("rank_markets (place, diversify by city)", Q.rankMarkets(compIds, venueTags));
+  const marketEntities = markets.n ? entitiesOf(markets.r.body) : [];
+  const marketCities = distinctCities(markets.r.body);
+  const marketsWorked = marketEntities.length > 0;
+  const marketsDistinct = marketsWorked && marketCities.length === marketEntities.length;
+  const marketsHaveCoords = marketEntities.some((e) => typeof e.location?.lat === "number" && typeof e.location?.lon === "number");
+  const marketsHaveCity = marketEntities.some((e) => typeof e.properties?.geocode?.city === "string" || typeof e.properties?.geocode?.name === "string");
+  if (markets.n) {
+    console.log(`      top: ${topLine(markets.r.body, 5, { withCity: true })}`);
+    console.log(`      distinct cities: ${marketCities.length} of ${marketEntities.length} results${marketsDistinct ? "" : "   <- NOT distinct; diversify.by did not group by city"}`);
+    console.log(`      top-level explainability: ${explainabilityShape(markets.r.body)}`);
+  }
 
   const rooms = await check("find_rooms (urn:entity:place)", Q.findRooms(compIds, city, venueTags));
   if (rooms.n) console.log(`      top: ${topLine(rooms.r.body)}`);
-  const promo = await check("find_promo_partners (place, diversify)", Q.findPromoPartners(compIds, city, promoTags));
-  if (promo.n) console.log(`      top: ${topLine(promo.r.body)}`);
 
-  const who = await check("who_shows_up (urn:demographics)", Q.whoShowsUp(compIds, city), { count: (b) => demographicRows(b).length, first: (b) => demographicRows(b)[0] });
+  // Promo partners: one call per kind with that kind's tag ids (diversify.by cannot group by subtype).
+  const promoResults = {};
+  for (const group of Q.PROMO_TAG_GROUPS) {
+    const promo = await check(`find_promo_partners (${group})`, Q.findPromoGroup(compIds, city, liveGroups[group] ?? []), { shape: group === Q.PROMO_TAG_GROUPS[0] });
+    promoResults[group] = promo.n;
+    if (promo.n) console.log(`      top: ${topLine(promo.r.body)}`);
+  }
+
+  // Demographics: one read for fans of the comps overall. urn:demographics documents only
+  // signal.interests.entities / tags as inputs, so there is no per-city variant to compare against.
+  const who = await check("who_shows_up (demographics, comps overall)", Q.whoShowsUp(compIds), { count: (b) => demographicRows(b).length, first: (b) => demographicRows(b)[0] });
   const demographicsWorked = who.n > 0;
   if (demographicsWorked) {
     const ages = who.sample?.query?.age ?? who.sample?.age;
     if (ages && typeof ages === "object") console.log(`      age bands: ${Object.keys(ages).join(", ")}`);
+    console.log(`      scope: comps-overall (whoShowsUp takes no city; location is not a documented input, so the read cannot differ by city)`);
   }
 
   const brands = await check("local_color (urn:entity:brand)", Q.localColor(compIds, city, "brand"));
@@ -367,13 +408,18 @@ async function main(argv) {
   const empty = checks.filter((c) => c.status === "WARN");
   console.log(`${checks.length} checks: ${checks.length - failed.length - empty.length} ok, ${empty.length} empty, ${failed.length} failed`);
   console.log(
-    `urn:entity:locality: ${localityWorked ? `worked (${localityEntities.length} localities; location.lat/lon ${localityHasCoords ? "present" : "MISSING, the Census join will supply coordinates"}; geocode.admin1_region ${localityHasState ? "present" : "MISSING, labels will lack a state"})` : "did NOT work"}`,
+    `rank_markets (place, diversify.by=properties.geocode.city): ${
+      marketsWorked
+        ? `worked (${marketEntities.length} venues in ${marketCities.length} distinct cities${marketsDistinct ? "" : ": NOT one per city"}; location.lat/lon ${marketsHaveCoords ? "present" : "MISSING, the Census join will supply coordinates"}; geocode city ${marketsHaveCity ? "present" : "MISSING, markets cannot be labeled"})`
+        : "did NOT work"
+    }`,
   );
-  console.log(`urn:demographics: ${demographicsWorked ? `worked (${who.n} rows in results.demographics)` : "did NOT work"}`);
+  console.log(`find_promo_partners: ${Q.PROMO_TAG_GROUPS.map((g) => `${g} ${promoResults[g] ?? 0}`).join(", ")} results per group`);
+  console.log(`urn:demographics: ${demographicsWorked ? `worked (${who.n} rows in results.demographics; comps-overall, not per city)` : "did NOT work"}`);
   if (failed.length) console.log(`failed: ${failed.map((c) => `${c.label} (HTTP ${c.httpStatus})`).join("; ")}`);
   if (empty.length) console.log(`empty: ${empty.map((c) => c.label).join("; ")}`);
   if (changedComps.length) {
-    console.log(`\nLive comp ids differ from data/scenarios/hollow-pines.json. Update scenario "comps" to these, then run \`npm run fixtures\` and \`npm run record\`:`);
+    console.log(`\nLive comp ids differ from data/scenarios/hollow-pines.json. Update scenario "comps" to these, then run \`npm run prepare:data\` and \`npm run record\`:`);
     console.log(JSON.stringify(comps.map((c) => ({ id: c.id, name: c.name, type: format === "comedy" ? "urn:entity:person" : "urn:entity:artist", ...(typeof c.popularity === "number" ? { popularity: c.popularity } : {}) })), null, 2));
   }
 
@@ -392,7 +438,7 @@ async function main(argv) {
     }
     writeTags(tagsFile, liveGroups, stillHandAuthored);
     console.log(`wrote ${path.relative(process.cwd(), TAGS_PATH)} (${matchedGroups}/${Object.keys(groups).length} groups from live tags${stillHandAuthored.length ? `; still hand-authored: ${stillHandAuthored.join(", ")}` : ""})`);
-    console.log("Next: npm run fixtures && npm run record   (re-keys the fixture index for the new tag ids and re-records the sample)");
+    console.log("Next: npm run prepare:data && npm run record   (re-keys the public fixture index for the new tag ids, then records the sample privately against live Qloo)");
   }
   return failed.length ? 1 : 0;
 }
@@ -401,7 +447,7 @@ function writeTags(previous, liveGroups, stillHandAuthored) {
   const now = new Date().toISOString();
   const out = {
     _handAuthored: false,
-    _note: `Place tag ids per group, rewritten by scripts/verify.mjs from GET /v2/tags results on ${now.slice(0, 10)}. Each group may hold several tag ids; queries pass them with operator.filter.tags=union. Re-run \`npm run verify\` to refresh, then \`npm run fixtures\` and \`npm run record\`.`,
+    _note: `Place tag ids per group, rewritten by scripts/verify.mjs from GET /v2/tags results on ${now.slice(0, 10)}. Each group may hold several tag ids; queries pass them with operator.filter.tags=union. Tag ids are identifiers, not response data, so this file is fine to commit. Re-run \`npm run verify\` to refresh, then \`npm run prepare:data\` and \`npm run record\`.`,
     _verified: now,
     ...(stillHandAuthored.length ? { _stillHandAuthored: stillHandAuthored } : {}),
     groups: Object.fromEntries(Object.keys(previous.groups ?? {}).map((g) => [g, liveGroups[g]])),

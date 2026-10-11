@@ -1,0 +1,135 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_promo_partners",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?feature.explainability=true&filter.location.query=Washington%2C%20DC&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Athrift_store%2Curn%3Atag%3Agenre%3Aplace%3Avintage_store&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Washington, DC",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:genre:place:thrift_store,urn:tag:genre:place:vintage_store",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "sort_by": "affinity",
+      "take": 2,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "69908D03-E18A-43D2-BBAE-34D24B30F3D7",
+          "name": "Meeps Fashionmonger",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.5,
+          "location": {
+            "lat": 38.917,
+            "lon": -77.042
+          },
+          "properties": {
+            "address": "2104 18th St NW, Washington, DC 20009",
+            "geocode": {
+              "name": "Washington",
+              "city": "Washington",
+              "admin1_region": "DC",
+              "country_code": "US"
+            },
+            "business_rating": 4.5,
+            "price_level": 2,
+            "description": "Adams Morgan vintage clothing shop with a costume-y, thrift-adjacent floor."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:vintage_store",
+              "name": "Vintage Store",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:genre:place:thrift_store",
+              "name": "Thrift Store",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.85,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.808
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.893
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.762
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "A53E5760-494A-476F-9EFB-66AD4FF775FC",
+          "name": "Secondi",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.48,
+          "location": {
+            "lat": 38.9132,
+            "lon": -77.046
+          },
+          "properties": {
+            "address": "1702 Connecticut Ave NW, Washington, DC 20009",
+            "geocode": {
+              "name": "Washington",
+              "city": "Washington",
+              "admin1_region": "DC",
+              "country_code": "US"
+            },
+            "business_rating": 4.4,
+            "price_level": 2,
+            "description": "Dupont Circle consignment boutique with designer and vintage finds."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:vintage_store",
+              "name": "Vintage Store",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:genre:place:thrift_store",
+              "name": "Thrift Store",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.77,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.714
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.815
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.726
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

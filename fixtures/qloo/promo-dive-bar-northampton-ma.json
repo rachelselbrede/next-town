@@ -1,0 +1,135 @@
+{
+  "_handAuthored": true,
+  "_captured": null,
+  "tool": "find_promo_partners",
+  "canonical": "https://hackathon.api.qloo.com/v2/insights?feature.explainability=true&filter.location.query=Northampton%2C%20MA&filter.location.radius=15000&filter.tags=urn%3Atag%3Agenre%3Aplace%3Abar%2Curn%3Atag%3Agenre%3Aplace%3Adive_bar&filter.type=urn%3Aentity%3Aplace&operator.filter.tags=union&signal.interests.entities=4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60%2C7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71%2C9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92&sort_by=affinity&take=2",
+  "query": {
+    "path": "/v2/insights",
+    "params": {
+      "filter.type": "urn:entity:place",
+      "filter.location.query": "Northampton, MA",
+      "filter.location.radius": 15000,
+      "filter.tags": "urn:tag:genre:place:bar,urn:tag:genre:place:dive_bar",
+      "operator.filter.tags": "union",
+      "signal.interests.entities": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60,7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71,9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+      "sort_by": "affinity",
+      "take": 2,
+      "feature.explainability": "true"
+    }
+  },
+  "response": {
+    "success": true,
+    "results": {
+      "entities": [
+        {
+          "entity_id": "E9CA8B76-0CCF-4F31-9A24-7EE940774B68",
+          "name": "The Dirty Truth",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.43,
+          "location": {
+            "lat": 42.3149,
+            "lon": -72.6337
+          },
+          "properties": {
+            "address": "29 Strong Ave, Northampton, MA 01060",
+            "geocode": {
+              "name": "Northampton",
+              "city": "Northampton",
+              "admin1_region": "MA",
+              "country_code": "US"
+            },
+            "business_rating": 4.4,
+            "price_level": 2,
+            "description": "Strong Avenue bar with a big beer list and a local-regulars crowd."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:bar",
+              "name": "Bar",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:genre:place:dive_bar",
+              "name": "Dive Bar",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.85,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.867
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.817
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.895
+                }
+              ]
+            }
+          }
+        },
+        {
+          "entity_id": "F42ABD26-EB2C-4207-BCAC-44023CBDF171",
+          "name": "Packard's",
+          "type": "urn:entity",
+          "subtype": "urn:entity:place",
+          "popularity": 0.4,
+          "location": {
+            "lat": 42.3211,
+            "lon": -72.6307
+          },
+          "properties": {
+            "address": "14 Masonic St, Northampton, MA 01060",
+            "geocode": {
+              "name": "Northampton",
+              "city": "Northampton",
+              "admin1_region": "MA",
+              "country_code": "US"
+            },
+            "business_rating": 4.2,
+            "price_level": 1,
+            "description": "Masonic Street pub with pool, cheap pints and a spot at the end of the night."
+          },
+          "tags": [
+            {
+              "id": "urn:tag:genre:place:bar",
+              "name": "Bar",
+              "type": "urn:tag:genre:place"
+            },
+            {
+              "id": "urn:tag:genre:place:dive_bar",
+              "name": "Dive Bar",
+              "type": "urn:tag:genre:place"
+            }
+          ],
+          "query": {
+            "affinity": 0.78,
+            "explainability": {
+              "signal.interests.entities": [
+                {
+                  "entity_id": "4F3A0B2C-0C2E-4E0C-9F1A-1B2C3D4E5F60",
+                  "score": 0.71
+                },
+                {
+                  "entity_id": "7A9C1D3E-5F7B-4A9C-8D1E-2F3A4B5C6D71",
+                  "score": 0.807
+                },
+                {
+                  "entity_id": "9B1D3F5A-7C9E-4B1D-AF3A-4B5C6D7E8F92",
+                  "score": 0.784
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}
